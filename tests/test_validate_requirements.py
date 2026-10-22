@@ -71,4 +71,30 @@ class RequirementsValidationTests(unittest.TestCase):
         errors=v.crud_errors([{'module':'GDRS','name':'resource','operations':ops}],data)
         self.assertTrue(any('invalid target' in e for e in errors))
 
+    def test_legacy_controls_remain_usable_as_page_evidence(self):
+        ops={k:{'opened':k=='add','evidence':['E1'],'businessWriteExecuted':False} for k in ['list','detail','add','edit','delete']}
+        self.assertEqual([],v.crud_errors([{'module':'MDM','name':'collection','operations':ops}],{'E1':{'controls':[{'tag':'INPUT','label':'任务名称'}]}}))
+
+    def test_observed_card_requires_matching_visible_text(self):
+        ops={k:{'opened':k=='list','evidence':['E1'],'businessWriteExecuted':False} for k in ['list','detail','add','edit','delete']}
+        ops['list']['observedCards']=['P20250728001']
+        self.assertEqual([],v.crud_errors([{'module':'SPACE','name':'space','operations':ops}],{'E1':{'text':'工作空间 P20250728001'}}))
+        self.assertTrue(v.crud_errors([{'module':'SPACE','name':'space','operations':ops}],{'E1':{'text':'工作台'}}))
+
+    def test_expanded_field_table_rejects_unsupported_length(self):
+        row='| 名称 | text；可输入 | 有 | 示例 | maxlength=200 | [E1](../evidence/E1.png) |'
+        data={'E1':{'elements':{'fields':[{'label':'名称','maxlength':100}]}}}
+        self.assertTrue(v.field_constraint_errors(row,data,'DS'))
+        self.assertEqual([],v.field_constraint_errors(row.replace('200','100'),data,'DS'))
+
+    def test_historical_field_table_and_placeholder_are_checked(self):
+        row='| 请输入账号 | text | 请输入账号 | maxlength=20 | [E1](../evidence/E1.png) |'
+        data={'E1':{'controls':[{'placeholder':'请输入账号','maxlength':'20'}]}}
+        self.assertEqual([],v.field_constraint_errors(row,data,'AUTH'))
+        self.assertTrue(v.field_constraint_errors(row.replace('20','21'),data,'AUTH'))
+
+    def test_summary_row_is_not_a_field_definition(self):
+        row='| 账号 | text；maxlength=20 | [E1](../evidence/E1.png) |'
+        self.assertEqual([],v.field_constraint_errors(row,{'E1':{}},'AUTH'))
+
 if __name__=='__main__':unittest.main()

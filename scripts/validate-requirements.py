@@ -81,7 +81,26 @@ def crud_errors(objects,data):
             if op.get('businessWriteExecuted'):errors.append(f'{key}/{kind}: business write exceeds read-only scope')
             if op.get('opened') and any(data.get(k,{}).get('quality',{}).get('targetValid') is False for k in sources):
                 errors.append(f'{key}/{kind}: opened claim includes invalid target content')
-            if op.get('opened') and not any(data.get(k,{}).get('elements',{}).get(a) for k in sources for a in ['fields','forms','headers','rows','options']):errors.append(f'{key}/{kind}: opened claim has navigation-only evidence')
+            structured=any(data.get(k,{}).get('elements',{}).get(a) for k in sources for a in ['fields','forms','headers','rows','options'])
+            legacy_controls=any(c.get('tag') in ['INPUT','TEXTAREA','SELECT'] for k in sources for c in data.get(k,{}).get('controls',[]))
+            card_labels=op.get('observedCards',[])
+            cards=kind=='list' and bool(card_labels) and any(all(label in (data.get(k,{}).get('text') or '') for label in card_labels) for k in sources)
+            if op.get('opened') and not (structured or legacy_controls or cards):errors.append(f'{key}/{kind}: opened claim has navigation-only evidence')
+    return errors
+
+def field_constraint_errors(text,data,module):
+    """Check both historical and expanded field tables against raw captures."""
+    errors=[]
+    for row in text.splitlines():
+        if not row.startswith('|') or 'maxlength=' not in row:continue
+        if len(row.strip().strip('|').split('|')) not in [5,6]:continue
+        sources=re.findall(r'\]\(\.\./evidence/([^)]*)\.png\)',row)
+        if not sources:continue
+        label=row.split('|')[1].strip()
+        controls=[c for key in sources for c in (data.get(key,{}).get('controls',[])+data.get(key,{}).get('elements',{}).get('fields',[]))]
+        for value in re.findall(r'maxlength=(\d+)',row):
+            if not any(str(c.get('maxlength'))==value and label in [c.get('label'),c.get('placeholder')] for c in controls):
+                errors.append(f'{module}: unsupported maxlength for {label}')
     return errors
 
 def validate(root):
@@ -129,13 +148,7 @@ def validate(root):
         for case,row in zip(m['acceptance'],AC.findall(text)):
             if case['executed'] and not case['evidence']:errors.append(f'{case["id"]}: executed case lacks evidence')
             if not case['executed'] and '【拟定，未执行】' not in row:errors.append(f'{case["id"]}: planned case mislabeled')
-        for row in text.splitlines():
-            if not row.startswith('|') or 'maxlength=' not in row or len(row.split('|'))!=7:continue
-            ev=re.search(r'\]\(../evidence/([^)]*)\.png\)',row)
-            if not ev:continue
-            label=row.split('|')[1].strip();source=data[ev.group(1)]
-            for value in re.findall(r'maxlength=(\d+)',row):
-                if not any(str(c.get('maxlength'))==value and (c.get('label') or c.get('placeholder'))==label for c in source['controls']):errors.append(f'{m["code"]}: unsupported maxlength for {label}')
+        errors+=field_constraint_errors(text,data,m['code'])
     if len(all_ids)!=len(set(all_ids)):errors.append('IDs overlap across modules')
     for path in root.rglob('*'):
         if not path.is_file() or path.suffix not in ['.md','.json','.py']:continue
