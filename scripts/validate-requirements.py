@@ -14,14 +14,26 @@ REQ=re.compile(r'^### ([A-Z]+-\d{3})\b',re.M)
 AC=re.compile(r'^\| [A-Z]+-AC-\d{3} \|.*$',re.M)
 PLACEHOLDERS=('['+'当前用户'+']','['+'当前账号'+']','['+'样本数据行已隐去'+']')
 
+def heading_anchors(text):
+    anchors=set();counts={}
+    for title in re.findall(r'^#{1,6}\s+(.+?)\s*#*$',text,re.M):
+        base=re.sub(r'[^\w\-\s]','',title).lower().replace(' ','-')
+        n=counts.get(base,0);counts[base]=n+1
+        anchors.add(base if not n else f'{base}-{n}')
+    return anchors
+
 def markdown_errors(text,path,root):
-    errors=[]
+    errors=[];anchor_cache={}
     for target in LINK.findall(text):
         target=target.strip().strip('<>')
-        if urlparse(target).scheme or target.startswith('#'):continue
+        if urlparse(target).scheme:continue
         local=unquote(target.split('#',1)[0])
-        dest=(path.parent/local).resolve()
+        dest=(path.parent/local).resolve() if local else path.resolve()
         if not dest.is_file():errors.append(f'{path.relative_to(root)}: missing link {local}')
+        elif '#' in target and dest.suffix=='.md':
+            if dest not in anchor_cache:anchor_cache[dest]=heading_anchors(dest.read_text(encoding='utf-8'))
+            if unquote(target.split('#',1)[1]) not in anchor_cache[dest]:
+                errors.append(f'{path.relative_to(root)}: missing fragment {target}')
     for pattern,label in [(REQ,'requirement'),(AC,'acceptance')]:
         values=pattern.findall(text)
         if pattern is AC:values=[row.split('|')[1].strip() for row in values]

@@ -97,4 +97,15 @@ class RequirementsValidationTests(unittest.TestCase):
         row='| 账号 | text；maxlength=20 | [E1](../evidence/E1.png) |'
         self.assertEqual([],v.field_constraint_errors(row,{'E1':{}},'AUTH'))
 
+    def test_missing_markdown_fragment_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'需求.md').write_text('## 4. 字段、枚举和约束\n',encoding='utf8')
+            errors=v.markdown_errors('[字段](./需求.md#absent)',root/'index.md',root)
+            self.assertTrue(any('missing fragment' in e for e in errors))
+
+    def test_existing_unicode_fragment_resolves(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'需求.md').write_text('## 4. 字段、枚举和约束\n',encoding='utf8')
+            self.assertEqual([],v.markdown_errors('[字段](./需求.md#4-字段枚举和约束)',root/'index.md',root))
+
 if __name__=='__main__':unittest.main()
