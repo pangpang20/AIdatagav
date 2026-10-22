@@ -130,6 +130,27 @@ class DeepRequirementsTests(unittest.TestCase):
         self.assertNotIn('old-confirm', builder.historical_delete('Y', '资源管理', [record]))
         self.assertNotIn('old-confirm', builder.historical_delete('X', '资源管理', [record,record]))
 
+    def test_model_directory_form_does_not_define_model_record_fields(self):
+        sample = {'url':'/ais/modelManagement/nl2SqlModelList',
+                  'text':'NL2SQL模型管理\n模型名称\n新增\n上层目录\n目录名称\n0/100\n取消确定',
+                  'forms':[{'label':'上层目录'},{'label':'目录名称'}]}
+        self.assertEqual('NL2SQL模型目录', builder.operation_scope(sample))
+        self.assertEqual('', builder.operation_scope({
+            'url':sample['url'], 'text':'新增\n模型名称\n使用库',
+            'forms':[{'label':'模型名称'}]}))
+
+    def test_crud_columns_exclude_category_forms_and_directory_prerequisites(self):
+        for name, sample in [
+            ('新增', {'url':'/dacs/dataAsset/assetCatalog', 'text':'添加资产类目\n类目名称\n取消\n确认'}),
+            ('修改', {'url':'/ais/modelManagement/nl2SqlModelList', 'text':'系统提示\n请选择目录！\n关闭'}),
+            ('分类新增', {'url':'/ais/modelManagement/nl2SqlModelList', 'text':'新增\n上层目录\n目录名称',
+                         'forms':[{'label':'上层目录'},{'label':'目录名称'}]}),
+        ]:
+            self.assertEqual('其他', builder.operation_column(name, sample))
+        self.assertEqual('新增', builder.operation_column('新增', {'url':'/records/add', 'forms':[{'label':'名称'}]}))
+        self.assertEqual('编辑', builder.operation_column('编辑', {'url':'/records/edit', 'forms':[{'label':'名称'}]}))
+        self.assertEqual('详情', builder.operation_column('详情', {'url':'/records/view'}))
+
     def test_business_notes_require_all_sources_to_be_present_and_valid(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp)/'notes.json'

@@ -96,6 +96,10 @@ def prerequisite(sample):
 
 def operation_scope(sample):
     """Qualify a reviewed subobject without inferring from the clicked label."""
+    if sample.get('url') == '/ais/modelManagement/nl2SqlModelList':
+        labels = {form.get('label') for form in sample.get('forms', [])}
+        if {'上层目录', '目录名称'} <= labels:
+            return 'NL2SQL模型目录'
     reviewed = {
         '/dacs/dataAsset/assetCatalog': ({'添加资产类目', '修改资产类目'}, '资产类目'),
         '/dss/standard/system/dataSetList': ({'添加标准模型表分类', '修改标准模型表分类', '编辑标准模型表分类'}, '标准模型表分类'),
@@ -108,6 +112,22 @@ def operation_scope(sample):
         if any(line.strip() in titles for line in lines):
             return scope
     return ''
+
+
+def operation_column(name, sample):
+    """Keep category maintenance out of business-record CRUD columns."""
+    directory_prompt = (sample.get('url') == '/ais/modelManagement/nl2SqlModelList'
+                        and bool(prerequisite(sample)))
+    if operation_scope(sample) or directory_prompt or name.startswith('分类'):
+        return '其他'
+    for column, names in [
+        ('详情', {'查看', '详情', '查看详情'}),
+        ('新增', {'新增', '新建', '库表注册', '第三方接口注册', '资源导入'}),
+        ('编辑', {'编辑', '修改'}),
+    ]:
+        if name in names:
+            return column
+    return '其他'
 
 
 def historical_delete(code, name, records):
@@ -230,13 +250,12 @@ def build(root=ROOT):
                 '| 对象/分区 | 查询/展示 | 详情 | 新增/注册/导入 | 编辑/修改 | 删除 | 其他已进入目标 |', '|---|---|---|---|---|---|---|']
         for obj in objects[code].values():
             ops = obj['operations']
-            def op_links(names):
-                selected = [('仅前置提示；' if prerequisite(samples[op['source']]) else '') + evidence_link(op['source']) for name, op in ops.items() if name in names]
+            def op_links(column):
+                selected = [('仅前置提示；' if prerequisite(samples[op['source']]) else '') + evidence_link(op['source']) for name, op in ops.items() if operation_column(name, samples[op['source']]) == column]
                 return '；'.join(selected) or '未取得；适用性和目标待确认'
             columns = [obj['name'], evidence_link(obj['source']) if obj.get('source') else '未取得',
-                       op_links(['查看','详情','查看详情']), op_links(['新增','新建','库表注册','第三方接口注册','资源导入']),
-                       op_links(['编辑','修改']), historical_delete(code, obj['name'], registry.get('crudObjects', [])),
-                       '、'.join(name for name in ops if name not in ['查看','详情','查看详情','新增','新建','库表注册','第三方接口注册','资源导入','编辑','修改']) or '未取得']
+                       op_links('详情'), op_links('新增'), op_links('编辑'), historical_delete(code, obj['name'], registry.get('crudObjects', [])),
+                       '；'.join(name + ('（'+operation_scope(samples[op['source']])+'）' if operation_scope(samples[op['source']]) else '（目录前置提示）' if samples[op['source']].get('url') == '/ais/modelManagement/nl2SqlModelList' and prerequisite(samples[op['source']]) else '') + '：'+evidence_link(op['source']) for name, op in ops.items() if operation_column(name, samples[op['source']]) == '其他') or '未取得']
             out.append('| '+' | '.join(cell(v) for v in columns)+' |')
         out += ['', '## 3. 编号功能需求', '']
         field_sections = []
