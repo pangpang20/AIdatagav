@@ -1,0 +1,241 @@
+{
+  "time": "2026-10-22T04:17:21.175Z",
+  "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/detail?optType=add",
+  "title": "报告模板",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n报告模板\n· 模板管理\n新增模板管理\n温馨提示：请不要在模板里面粘贴图片，否则可能会导致功能异常。\n返回\n模板名称\n适用对象\n报告类型\n模板文件\n 上传文档只能上传Word文档docx格式的文件，且大小不能超过10MB！\n模板说明\n取 消下一步",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请填写模板名称",
+      "label": "模板名称",
+      "min": null,
+      "max": null,
+      "maxlength": "200"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请填写适用对象",
+      "label": "适用对象",
+      "min": null,
+      "max": null,
+      "maxlength": "200"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择报告类型",
+      "label": "报告类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": " 上传文档",
+      "placeholder": null,
+      "label": "模板文件",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请填写模板说明",
+      "label": "模板说明",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "下一步",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "模板名称",
+        "requiredMarker": true,
+        "text": "模板名称"
+      },
+      {
+        "label": "适用对象",
+        "requiredMarker": false,
+        "text": "适用对象"
+      },
+      {
+        "label": "报告类型",
+        "requiredMarker": true,
+        "text": "报告类型"
+      },
+      {
+        "label": "模板文件",
+        "requiredMarker": false,
+        "text": "模板文件\n 上传文档只能上传Word文档docx格式的文件，且大小不能超过10MB！"
+      },
+      {
+        "label": "模板说明",
+        "requiredMarker": false,
+        "text": "模板说明"
+      }
+    ],
+    "fields": [
+      {
+        "label": "模板名称",
+        "type": "text",
+        "placeholder": "请填写模板名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 200,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "适用对象",
+        "type": "text",
+        "placeholder": "请填写适用对象",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 200,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "报告类型",
+        "type": "text",
+        "placeholder": "请选择报告类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "模板说明",
+        "type": "textarea",
+        "placeholder": "请填写模板说明",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 250,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "报告模板管理\n报告模板\n· 模板管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "报告模板管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "报告模板\n· 模板管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "报告模板",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 模板管理",
+        "cls": "el-menu-item is-active"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "BUTTON",
+        "text": " 上传文档",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button upload-btn el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "下一步",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}

@@ -1,0 +1,56 @@
+{
+  "time": "2026-10-22T03:33:20.490Z",
+  "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+  "title": "数据质量检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n数据质量检测\n评价管理\n列分析\n查询重置展开\n序号\t任务名称\t数据源名称\t表名称\t分析类型\t任务状态\t创建人\t创建时间\t分析报告\t操作\n暂无数据",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入任务名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择数据源名称",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入表名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "replacesTextSamples": [
+    "E055-quality-check",
+    "E056-evaluation"
+  ],
+  "provenance": "按用户要求重新采样，保留全部可见业务内容。使用本次实际时间，不改写历史时间。"
+}

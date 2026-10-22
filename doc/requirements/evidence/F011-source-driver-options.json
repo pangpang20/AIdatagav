@@ -1,0 +1,697 @@
+{
+  "time": "2026-10-22T04:09:26.929Z",
+  "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+  "title": "数据源管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n新增数据源\n返回\n数据源名称\n0/100\n驱动\n所属部门\n\t\t\n是否数仓\n状态\n可见范围\n应用场景\n使用场景\n描述\n0/500\n \nApi\nAtomData\nDameng\nETL_GREENPLUM\nETL_Oracle大数据\nETL_Sparkjar\nETL_Sparksql\nETL_flinkjar\nETL_flinksql\nETL_京东大数据平台\nETL_人大金仓KingbaseAnalyticsDB\nETL_华为DWS\nETL_华为LIBRA\nETL_华为MRS\nETL_华为MRS_ClickHouse\nETL_华为MRS_Hudi\nETL_华为大数据平台\nETL_星环大数据平台\nETL_百度大数据平台\nETL_石原子大数据\nETL_腾讯TBASE\nETL_腾讯大数据平台\nETL_达梦大数据\nETL_阿里EMR\nElasticSearch(人大金仓ES)\nGBase\nGaussDB-HWY\nGaussDB100\nHWHBaseKerberosJdbc\nHiveKerberosJdbc\nKingbaseAnalyticsDB(人大金仓KADB)\nKingbaseES\nMppDB(GaussDB200)\nMrs-kafka\nMysql\nOracle_ServiceName\nOracle_Sid\nOracle_ssl\nPostgreSqlSSL\nPostgresql\nSFTP\nSFTP(Python)\nSFTP(shell)\nSQLServer\nYaShanDB",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入数据源名称",
+      "label": "数据源名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "驱动",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "",
+      "label": "驱动",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "所属部门",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "是否数仓",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "状态",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "可见范围",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择应用场景",
+      "label": "应用场景",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入使用场景",
+      "label": "使用场景",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入描述",
+      "label": "描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "数据源名称",
+        "requiredMarker": true,
+        "text": "数据源名称\n0/100"
+      },
+      {
+        "label": "驱动",
+        "requiredMarker": true,
+        "text": "驱动"
+      },
+      {
+        "label": "所属部门",
+        "requiredMarker": true,
+        "text": "所属部门\n\t\t"
+      },
+      {
+        "label": "是否数仓",
+        "requiredMarker": false,
+        "text": "是否数仓"
+      },
+      {
+        "label": "状态",
+        "requiredMarker": true,
+        "text": "状态"
+      },
+      {
+        "label": "可见范围",
+        "requiredMarker": true,
+        "text": "可见范围"
+      },
+      {
+        "label": "应用场景",
+        "requiredMarker": false,
+        "text": "应用场景"
+      },
+      {
+        "label": "使用场景",
+        "requiredMarker": true,
+        "text": "使用场景"
+      },
+      {
+        "label": "描述",
+        "requiredMarker": false,
+        "text": "描述\n0/500"
+      }
+    ],
+    "fields": [
+      {
+        "label": "数据源名称",
+        "type": "text",
+        "placeholder": "请输入数据源名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "驱动",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "驱动",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "所属部门",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "是否数仓",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "状态",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "启用",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "可见范围",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "应用场景",
+        "type": "text",
+        "placeholder": "请选择应用场景",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "使用场景",
+        "type": "text",
+        "placeholder": "请输入使用场景",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "描述",
+        "type": "textarea",
+        "placeholder": "请输入描述",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "数据源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "数据源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 驱动管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 数据源管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 部门数据源",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 数据源列表",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "API数据源",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "kafka数据源",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "新增数据源",
+        "title": "新增数据源",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "DIV",
+        "text": "",
+        "title": "Clear value",
+        "href": null,
+        "cls": "vue-treeselect__x-container"
+      },
+      {
+        "tag": "DIV",
+        "text": "Api",
+        "title": "Api",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "AtomData",
+        "title": "AtomData",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Dameng",
+        "title": "Dameng",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_GREENPLUM",
+        "title": "ETL_GREENPLUM",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_Oracle大数据",
+        "title": "ETL_Oracle大数据",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_Sparkjar",
+        "title": "ETL_Sparkjar",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_Sparksql",
+        "title": "ETL_Sparksql",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_flinkjar",
+        "title": "ETL_flinkjar",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_flinksql",
+        "title": "ETL_flinksql",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_京东大数据平台",
+        "title": "ETL_京东大数据平台",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_人大金仓KingbaseAnalyticsDB",
+        "title": "ETL_人大金仓KingbaseAnalyticsDB",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_华为DWS",
+        "title": "ETL_华为DWS",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_华为LIBRA",
+        "title": "ETL_华为LIBRA",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_华为MRS",
+        "title": "ETL_华为MRS",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_华为MRS_ClickHouse",
+        "title": "ETL_华为MRS_ClickHouse",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_华为MRS_Hudi",
+        "title": "ETL_华为MRS_Hudi",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_华为大数据平台",
+        "title": "ETL_华为大数据平台",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_星环大数据平台",
+        "title": "ETL_星环大数据平台",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_百度大数据平台",
+        "title": "ETL_百度大数据平台",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_石原子大数据",
+        "title": "ETL_石原子大数据",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_腾讯TBASE",
+        "title": "ETL_腾讯TBASE",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_腾讯大数据平台",
+        "title": "ETL_腾讯大数据平台",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_达梦大数据",
+        "title": "ETL_达梦大数据",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ETL_阿里EMR",
+        "title": "ETL_阿里EMR",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "ElasticSearch(人大金仓ES)",
+        "title": "ElasticSearch(人大金仓ES)",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "GBase",
+        "title": "GBase",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "GaussDB-HWY",
+        "title": "GaussDB-HWY",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "GaussDB100",
+        "title": "GaussDB100",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "HWHBaseKerberosJdbc",
+        "title": "HWHBaseKerberosJdbc",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "HiveKerberosJdbc",
+        "title": "HiveKerberosJdbc",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "KingbaseAnalyticsDB(人大金仓KADB)",
+        "title": "KingbaseAnalyticsDB(人大金仓KADB)",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "KingbaseES",
+        "title": "KingbaseES",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "MppDB(GaussDB200)",
+        "title": "MppDB(GaussDB200)",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Mrs-kafka",
+        "title": "Mrs-kafka",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Mysql",
+        "title": "Mysql",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Oracle_ServiceName",
+        "title": "Oracle_ServiceName",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Oracle_Sid",
+        "title": "Oracle_Sid",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Oracle_ssl",
+        "title": "Oracle_ssl",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "PostgreSqlSSL",
+        "title": "PostgreSqlSSL",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "Postgresql",
+        "title": "Postgresql",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "SFTP",
+        "title": "SFTP",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "SFTP(Python)",
+        "title": "SFTP(Python)",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "SFTP(shell)",
+        "title": "SFTP(shell)",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "SQLServer",
+        "title": "SQLServer",
+        "href": null,
+        "cls": "global-ellipsis"
+      },
+      {
+        "tag": "DIV",
+        "text": "YaShanDB",
+        "title": "YaShanDB",
+        "href": null,
+        "cls": "global-ellipsis"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": [
+      "Api\nAtomData\nDameng\nETL_GREENPLUM\nETL_Oracle大数据\nETL_Sparkjar\nETL_Sparksql\nETL_flinkjar\nETL_flinksql\nETL_京东大数据平台\nETL_人大金仓KingbaseAnalyticsDB\nETL_华为DWS\nETL_华为LIBRA\nETL_华为MRS\nETL_华为MRS_ClickHouse\nETL_华为MRS_Hudi\nETL_华为大数据平台\nETL_星环大数据平台\nETL_百度大数据平台\nETL_石原子大数据\nETL_腾讯TBASE\nETL_腾讯大数据平台\nETL_达梦大数据\nETL_阿里EMR\nElasticSearch(人大金仓ES)\nGBase\nGaussDB-HWY\nGaussDB100\nHWHBaseKerberosJdbc\nHiveKerberosJdbc\nKingbaseAnalyticsDB(人大金仓KADB)\nKingbaseES\nMppDB(GaussDB200)\nMrs-kafka\nMysql\nOracle_ServiceName\nOracle_Sid\nOracle_ssl\nPostgreSqlSSL\nPostgresql\nSFTP\nSFTP(Python)\nSFTP(shell)\nSQLServer\nYaShanDB"
+    ]
+  },
+  "scopeNote": "仅页面/表单/确认框只读采样；未提交业务写入或执行任务。"
+}

@@ -1,0 +1,196 @@
+{
+  "time": "2026-10-22T02:14:53.163Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/overview/chart",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n 调研实施\n调研报告\n 数据归集\n 参考文档\n 配置管理\n项目一张图\nmyspace\n项目目标\n空间管理员\n陈云亮",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "hidden",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Play Video",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Play",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Mute",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Playback Rate",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Chapters",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Descriptions",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Subtitles",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Audio Track",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Fullscreen",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Reset restore all settings to the default values",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Done",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Close Modal Dialog",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ]
+}

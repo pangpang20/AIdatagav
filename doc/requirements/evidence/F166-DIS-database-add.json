@@ -1,0 +1,403 @@
+{
+  "time": "2026-10-22T04:37:52.812Z",
+  "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/libraryMigration/edit?optType=add",
+  "title": "数据集成采集",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析\n库离线同步任务新增\n返回\n任务基本信息\n任务名称\n告警用户\n告警渠道\n邮件\n任务描述\n数据通道控制\n最大期望并发数\n数据同步限速\nMB/S\n输入配置\n输入配置\n输出配置\n目的库类型\n所属部门\n取 消提 交\n\n连接数据源失败",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入任务名称",
+      "label": "任务名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择告警用户",
+      "label": "告警用户",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "label": "告警渠道",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "任务描述",
+      "min": null,
+      "max": null,
+      "maxlength": "200"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入最大期望并发数,区间为1-10",
+      "label": "最大期望并发数",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入数据同步速率,单位为：M/s",
+      "label": "数据同步限速",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择来源库类型",
+      "label": "输入配置",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择目的库类型",
+      "label": "目的库类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "所属部门",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "任务名称",
+        "requiredMarker": true,
+        "text": "任务名称"
+      },
+      {
+        "label": "告警用户",
+        "requiredMarker": false,
+        "text": "告警用户"
+      },
+      {
+        "label": "告警渠道",
+        "requiredMarker": false,
+        "text": "告警渠道\n邮件"
+      },
+      {
+        "label": "任务描述",
+        "requiredMarker": false,
+        "text": "任务描述"
+      },
+      {
+        "label": "最大期望并发数",
+        "requiredMarker": true,
+        "text": "最大期望并发数"
+      },
+      {
+        "label": "数据同步限速",
+        "requiredMarker": false,
+        "text": "数据同步限速\nMB/S"
+      },
+      {
+        "label": "输入配置",
+        "requiredMarker": true,
+        "text": "输入配置"
+      },
+      {
+        "label": "目的库类型",
+        "requiredMarker": true,
+        "text": "目的库类型"
+      },
+      {
+        "label": "所属部门",
+        "requiredMarker": true,
+        "text": "所属部门"
+      }
+    ],
+    "fields": [
+      {
+        "label": "任务名称",
+        "type": "text",
+        "placeholder": "请输入任务名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "告警用户",
+        "type": "text",
+        "placeholder": "请选择告警用户",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "告警渠道",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "任务描述",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 200,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "最大期望并发数",
+        "type": "text",
+        "placeholder": "请输入最大期望并发数,区间为1-10",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "数据同步限速",
+        "type": "text",
+        "placeholder": "请输入数据同步速率,单位为：M/s",
+        "value": "10",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "输入配置",
+        "type": "text",
+        "placeholder": "请选择来源库类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "目的库类型",
+        "type": "text",
+        "placeholder": "请选择目的库类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "所属部门",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "数据集成",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 首页",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "任务",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "离线数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 表离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 库离线同步",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 接口及文件解析",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 文件离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "库离线同步任务新增",
+        "title": "库离线同步任务新增",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提 交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}

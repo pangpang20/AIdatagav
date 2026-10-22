@@ -1,0 +1,234 @@
+{
+  "time": "2026-10-22T04:41:52.216Z",
+  "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n标准审批管理\n标准查询\n标准术语管理\n查询重置\n批量删除\n新增\n\t序号\t术语名称\t定义\t术语来源\t术语类型\t创建人\t创建时间\t操作\n暂无数据",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入术语名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择术语类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入术语名称",
+        "value": "__只读调研无匹配样本__",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择术语类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n标准审批管理\n标准查询",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准体系文档管理\n· 标准文档管理\n· 标准术语管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准体系文档管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 标准文档管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 标准术语管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "标准体系管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准体系管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "标准术语管理",
+        "title": "标准术语管理",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "批量删除",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-delete-new"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "术语名称",
+      "定义",
+      "术语来源",
+      "术语类型",
+      "创建人",
+      "创建时间",
+      "操作"
+    ],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "查询条件请输入术语名称=__只读调研无匹配样本__；结果仅是本次样本，不判定搜索故障。"
+}

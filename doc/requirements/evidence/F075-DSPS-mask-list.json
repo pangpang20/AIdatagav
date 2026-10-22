@@ -1,0 +1,90 @@
+{
+  "time": "2026-10-22T04:18:45.403Z",
+  "url": "http://www.audaqueproxy.com:10223/dsps/mask/list",
+  "title": "数据安全保护",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据水印管理",
+  "controls": [],
+  "elements": {
+    "forms": [],
+    "fields": [],
+    "menus": [
+      {
+        "text": "数据脱敏管理\n数据脱敏\n数据字典\n数据算法",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "数据脱敏管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "数据脱敏",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "数据字典",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "数据算法",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "数据加密管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "数据加密管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "数据水印管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "数据水印管理",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "通过真实应用/侧栏入口进入，采集查询条件、表头、样本行、状态和行操作。"
+}

@@ -1,0 +1,77 @@
+{
+  "time": "2026-10-22T03:29:03.641Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team/edit?optType=add",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n调研计划\n 调研实施\n调研报告\n 数据归集\n 参考文档\n 配置管理\n新增调研团队信息\n返回\n团队名称\n团队组长\n团队成员\n描述\n取 消提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入团队名称",
+      "label": "团队名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入团队组长",
+      "label": "团队组长",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "团队成员",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入选择团队成员",
+      "label": "团队成员",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入描述",
+      "label": "描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "replacesTextSamples": [
+    "E020-demand-team-add"
+  ],
+  "provenance": "按用户要求重新采样，保留全部可见业务内容。使用本次实际时间，不改写历史时间。"
+}

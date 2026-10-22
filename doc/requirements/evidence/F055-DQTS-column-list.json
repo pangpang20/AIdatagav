@@ -1,0 +1,94 @@
+{
+  "time": "2026-10-22T04:15:44.891Z",
+  "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+  "title": "数据质量检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n评价管理",
+  "controls": [],
+  "elements": {
+    "forms": [],
+    "fields": [],
+    "menus": [
+      {
+        "text": "智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "智能识别管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "列分析",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "智能分期",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "规则识别",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "质量规则推荐",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "数据质量检测",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "数据质量检测",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "评价管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "评价管理",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "通过真实应用/侧栏入口进入，采集查询条件、表头、样本行、状态和行操作。"
+}

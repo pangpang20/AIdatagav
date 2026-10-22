@@ -1,0 +1,88 @@
+{
+  "time": "2026-10-22T03:18:10.840Z",
+  "url": "http://www.audaqueproxy.com:10223/workorder/workbench/workflowReviewList",
+  "title": "我的工单",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n我的工单\n工单管理\n我的待办\n查询重置展开\n序号\t数字空间标识\t来源应用\t工单类型\t流水号\t业务编号\t业务名称\t节点名称\t申请标题\t发起人\t发起时间\t节点期限\t流程状态\t操作\n1\n\t\n\t\n\t\n其他\n\t\n120a0ad7-392f-11f1-9989-969e31c94183\n\t\nresource_catalogue\n\t\n资源目录编目\n\t\n部门审批\n\t\n目录编目审批[sdfsdf]\n\t\nCUST017\n\t\n2026-04-16 08:56:15\n\t\n-\n\t\n处理中\n\t\n办理\n共 1 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择业务名称",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入申请标题",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入发起人",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ]
+}

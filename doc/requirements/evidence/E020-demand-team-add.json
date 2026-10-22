@@ -1,0 +1,76 @@
+{
+  "time": "2026-10-22T02:51:07.087Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team/edit?optType=add",
+  "title": "数据需求管理",
+  "text": null,
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入团队名称",
+      "label": "团队名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入团队组长",
+      "label": "团队组长",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "团队成员",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入选择团队成员",
+      "label": "团队成员",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入描述",
+      "label": "描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "replacementTextSample": "C005-original-content",
+  "textDisposition": "历史文字曾被人工处理，无法精确反推；本条保留原采样时间和控件属性。原时刻业务内容见同名已恢复的原始截图；完整文字另见独立补采，使用补采实际时间。",
+  "screenshotDisposition": "已恢复原始截图，不遮盖业务内容。密码输入区域不展示。"
+}

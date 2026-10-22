@@ -1,0 +1,183 @@
+{
+  "time": "2026-10-22T03:30:55.915Z",
+  "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?optType=add",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n新增标准文档\n返回\n基本信息关联标准术语关联标准模型表关联标准字段关联标准代码\n标准名称\n英文名称\n标准编号\n批准发布部门\n标准分级\n 国际标准\n 国家标准\n 行业标准\n 地方标准\n 团体标准\n 企业标准\n 其他\n标准状态\n 现行\n 废止\n发布日期\n实施日期\n标准文档上传\n上传文件*支持文件格式：PDF\n替代以下标准\n标准适用范围\n取消提交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "标准名称",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "英文名称",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "标准编号",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "批准发布部门",
+      "min": null,
+      "max": null,
+      "maxlength": "255"
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准状态",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准状态",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "发布日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "实施日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "替代以下标准",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "标准适用范围",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "replacesTextSamples": [
+    "E034-standard-add"
+  ],
+  "provenance": "按用户要求重新采样，保留全部可见业务内容。使用本次实际时间，不改写历史时间。"
+}

@@ -1,0 +1,29 @@
+{
+  "time": "2026-10-22T02:57:22.314Z",
+  "url": "http://www.audaqueproxy.com:10223/gdrs/index/indexInfo",
+  "title": "数据直报",
+  "text": null,
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    }
+  ],
+  "replacementTextSample": "C016-original-content",
+  "textDisposition": "历史文字曾被人工处理，无法精确反推；本条保留原采样时间和控件属性。原时刻业务内容见同名已恢复的原始截图；完整文字另见独立补采，使用补采实际时间。",
+  "screenshotDisposition": "已恢复原始截图，不遮盖业务内容。密码输入区域不展示。"
+}

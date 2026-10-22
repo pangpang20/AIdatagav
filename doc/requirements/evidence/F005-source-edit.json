@@ -1,0 +1,966 @@
+{
+  "time": "2026-10-22T04:07:02.300Z",
+  "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=10063&optType=edit&name=%E8%BE%BE%E6%A2%A6B&busType=adminDataSource",
+  "title": "数据源管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n编辑数据源\n返回\n数据源名称\n3/100\n驱动\nDameng\n所属部门\n根部门\n\t\t\n是否数仓\n状态\n可见范围\n应用场景\n使用场景\n描述\n0/500\n驱动数据信息\n\n提示：多驱动配置项，支持部分系统（集成、共享、规范建模）获取多个驱动配置参数。其他系统只能获取第一个驱动配置参数。\n\nDameng\n驱动类型\n是否支持测试连接\n 支持\n 不支持\n模板类型\n 内置\n 自定义\n内置连接器\n上传驱动文件\nDm8JdbcDriver18-8.1.1.49.jar\n静态参数\nIP/主机\n端口号\n数据库\n用户名\n密码\nSchema\n取 消测试连接提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入数据源名称",
+      "label": "数据源名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "驱动",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "",
+      "label": "驱动",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "所属部门",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "是否数仓",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "状态",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "可见范围",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择应用场景",
+      "label": "应用场景",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入使用场景",
+      "label": "使用场景",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入描述",
+      "label": "描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "驱动类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "是否支持测试连接",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "是否支持测试连接",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "模板类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "模板类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择内置连接器",
+      "label": "内置连接器",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "第1行-键",
+      "label": "静态参数",
+      "min": null,
+      "max": null,
+      "maxlength": "50",
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "第1行-值",
+      "label": "静态参数",
+      "min": null,
+      "max": null,
+      "maxlength": "250",
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "第2行-键",
+      "label": "静态参数",
+      "min": null,
+      "max": null,
+      "maxlength": "50",
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "第2行-值",
+      "label": "静态参数",
+      "min": null,
+      "max": null,
+      "maxlength": "250",
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "password",
+      "placeholder": null,
+      "label": "IP/主机",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "端口号",
+      "min": "-Infinity",
+      "max": "Infinity",
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "数据库",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "用户名",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "password",
+      "placeholder": null,
+      "label": "密码",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "Schema",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "测试连接",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "数据源名称",
+        "requiredMarker": true,
+        "text": "数据源名称\n3/100"
+      },
+      {
+        "label": "驱动",
+        "requiredMarker": true,
+        "text": "驱动\nDameng"
+      },
+      {
+        "label": "所属部门",
+        "requiredMarker": true,
+        "text": "所属部门\n根部门\n\t\t"
+      },
+      {
+        "label": "是否数仓",
+        "requiredMarker": false,
+        "text": "是否数仓"
+      },
+      {
+        "label": "状态",
+        "requiredMarker": true,
+        "text": "状态"
+      },
+      {
+        "label": "可见范围",
+        "requiredMarker": true,
+        "text": "可见范围"
+      },
+      {
+        "label": "应用场景",
+        "requiredMarker": false,
+        "text": "应用场景"
+      },
+      {
+        "label": "使用场景",
+        "requiredMarker": true,
+        "text": "使用场景"
+      },
+      {
+        "label": "描述",
+        "requiredMarker": false,
+        "text": "描述\n0/500"
+      },
+      {
+        "label": "驱动类型",
+        "requiredMarker": false,
+        "text": "驱动类型"
+      },
+      {
+        "label": "是否支持测试连接",
+        "requiredMarker": false,
+        "text": "是否支持测试连接\n 支持\n 不支持"
+      },
+      {
+        "label": "模板类型",
+        "requiredMarker": false,
+        "text": "模板类型\n 内置\n 自定义"
+      },
+      {
+        "label": "内置连接器",
+        "requiredMarker": false,
+        "text": "内置连接器"
+      },
+      {
+        "label": "上传驱动文件",
+        "requiredMarker": false,
+        "text": "上传驱动文件\nDm8JdbcDriver18-8.1.1.49.jar"
+      },
+      {
+        "label": "静态参数",
+        "requiredMarker": false,
+        "text": "静态参数"
+      },
+      {
+        "label": "IP/主机",
+        "requiredMarker": true,
+        "text": "IP/主机"
+      },
+      {
+        "label": "端口号",
+        "requiredMarker": true,
+        "text": "端口号"
+      },
+      {
+        "label": "数据库",
+        "requiredMarker": true,
+        "text": "数据库"
+      },
+      {
+        "label": "用户名",
+        "requiredMarker": true,
+        "text": "用户名"
+      },
+      {
+        "label": "密码",
+        "requiredMarker": true,
+        "text": "密码"
+      },
+      {
+        "label": "Schema",
+        "requiredMarker": true,
+        "text": "Schema"
+      }
+    ],
+    "fields": [
+      {
+        "label": "数据源名称",
+        "type": "text",
+        "placeholder": "请输入数据源名称",
+        "value": "达梦B",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "驱动",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "驱动",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "所属部门",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "是否数仓",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "状态",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "启用",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "可见范围",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "公开",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "应用场景",
+        "type": "text",
+        "placeholder": "请选择应用场景",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "使用场景",
+        "type": "text",
+        "placeholder": "请输入使用场景",
+        "value": "测试运行",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "描述",
+        "type": "textarea",
+        "placeholder": "请输入描述",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "驱动类型",
+        "type": "text",
+        "placeholder": "",
+        "value": "dameng",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "是否支持测试连接",
+        "type": "radio",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "是否支持测试连接",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "模板类型",
+        "type": "radio",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "模板类型",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "内置连接器",
+        "type": "text",
+        "placeholder": "请选择内置连接器",
+        "value": "Dameng",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "静态参数",
+        "type": "text",
+        "placeholder": "第1行-键",
+        "value": "url",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "静态参数",
+        "type": "text",
+        "placeholder": "第1行-值",
+        "value": "jdbc:dm://{host}:{port}/{database}",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 250,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "静态参数",
+        "type": "text",
+        "placeholder": "第2行-键",
+        "value": "driverClass",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "静态参数",
+        "type": "text",
+        "placeholder": "第2行-值",
+        "value": "dm.jdbc.driver.DmDriver",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 250,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "端口号",
+        "type": "text",
+        "placeholder": "",
+        "value": "5236",
+        "min": "-Infinity",
+        "max": "Infinity",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "数据库",
+        "type": "text",
+        "placeholder": "",
+        "value": "DTM8101A",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "用户名",
+        "type": "text",
+        "placeholder": "",
+        "value": "DTM8101A",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "Schema",
+        "type": "text",
+        "placeholder": "",
+        "value": "DTM8101A",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "数据源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "数据源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 驱动管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 数据源管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 部门数据源",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 数据源列表",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "API数据源",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "kafka数据源",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "编辑数据源",
+        "title": "编辑数据源",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "达梦B",
+        "href": null,
+        "disabled": false,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "SPAN",
+        "text": "Dameng",
+        "title": "Dameng",
+        "href": null,
+        "cls": "el-tag el-tag--info el-tag--small el-tag--light"
+      },
+      {
+        "tag": "DIV",
+        "text": "",
+        "title": "Clear value",
+        "href": null,
+        "cls": "vue-treeselect__x-container"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "dameng",
+        "href": null,
+        "disabled": true,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "A",
+        "text": "Dm8JdbcDriver18-8.1.1.49.jar",
+        "title": "",
+        "href": null,
+        "cls": "el-upload-list__item-name"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "url",
+        "href": null,
+        "disabled": true,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "jdbc:dm://{host}:{port}/{database}",
+        "href": null,
+        "disabled": true,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "driverClass",
+        "href": null,
+        "disabled": true,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "dm.jdbc.driver.DmDriver",
+        "href": null,
+        "disabled": true,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "SPAN",
+        "text": "IP/主机",
+        "title": "IP/主机",
+        "href": null,
+        "cls": "data-source-dynamic-form-item"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "172.16.1.116",
+        "href": null,
+        "disabled": false,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "SPAN",
+        "text": "端口号",
+        "title": "端口号",
+        "href": null,
+        "cls": "data-source-dynamic-form-item"
+      },
+      {
+        "tag": "SPAN",
+        "text": "数据库",
+        "title": "数据库",
+        "href": null,
+        "cls": "data-source-dynamic-form-item"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "DTM8101A",
+        "href": null,
+        "disabled": false,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "SPAN",
+        "text": "用户名",
+        "title": "用户名",
+        "href": null,
+        "cls": "data-source-dynamic-form-item"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "DTM8101A",
+        "href": null,
+        "disabled": false,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "SPAN",
+        "text": "密码",
+        "title": "密码",
+        "href": null,
+        "cls": "data-source-dynamic-form-item"
+      },
+      {
+        "tag": "SPAN",
+        "text": "Schema",
+        "title": "Schema",
+        "href": null,
+        "cls": "data-source-dynamic-form-item"
+      },
+      {
+        "tag": "INPUT",
+        "text": "",
+        "title": "DTM8101A",
+        "href": null,
+        "disabled": false,
+        "cls": "el-input__inner"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "测试连接",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--success el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提 交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅页面/表单/确认框只读采样；未提交业务写入或执行任务。"
+}

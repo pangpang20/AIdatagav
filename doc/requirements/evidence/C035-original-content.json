@@ -1,0 +1,84 @@
+{
+  "time": "2026-10-22T03:33:44.780Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/projectSpace/index",
+  "title": "工作空间",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n工作空间\n 工作空间管理\n工作空间\n查询重置\n政务-二期数据实施分析\nP20260903003\n工作空间管理员：yyc\n项目介绍：\nAAA\nP20260406001\n工作空间管理员：CUST001\n项目介绍：\ntest001\nP20250924001\n工作空间管理员：陈云亮\n项目介绍：\nmyspace\nP20250728001\n工作空间管理员：陈云亮\n项目介绍：\n共 4 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入工作空间名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ],
+  "replacesTextSamples": [
+    "E060-workspaces"
+  ],
+  "provenance": "按用户要求重新采样，保留全部可见业务内容。使用本次实际时间，不改写历史时间。"
+}

@@ -1,0 +1,603 @@
+{
+  "time": "2026-10-22T04:41:21.308Z",
+  "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?id=25&optType=edit",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n标准审批管理\n标准查询\n修改标准文档\n返回\n基本信息关联标准术语关联标准模型表关联标准字段关联标准代码\n标准名称\n英文名称\n标准编号\n批准发布部门\n标准分级\n 国际标准\n 国家标准\n 行业标准\n 地方标准\n 团体标准\n 企业标准\n 其他\n标准状态\n 现行\n 废止\n发布日期\n实施日期\n标准文档上传\n上传文件*支持文件格式：PDF\n考前集训100题-解析版.pdf\n替代以下标准\n标准适用范围\n取消提交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "标准名称",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "英文名称",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "标准编号",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "批准发布部门",
+      "min": null,
+      "max": null,
+      "maxlength": "255"
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准状态",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "label": "标准状态",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "发布日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "实施日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "替代以下标准",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "标准适用范围",
+      "min": null,
+      "max": null,
+      "maxlength": "250"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "标准名称",
+        "requiredMarker": true,
+        "text": "标准名称"
+      },
+      {
+        "label": "英文名称",
+        "requiredMarker": false,
+        "text": "英文名称"
+      },
+      {
+        "label": "标准编号",
+        "requiredMarker": true,
+        "text": "标准编号"
+      },
+      {
+        "label": "批准发布部门",
+        "requiredMarker": true,
+        "text": "批准发布部门"
+      },
+      {
+        "label": "标准分级",
+        "requiredMarker": true,
+        "text": "标准分级\n 国际标准\n 国家标准\n 行业标准\n 地方标准\n 团体标准\n 企业标准\n 其他"
+      },
+      {
+        "label": "标准状态",
+        "requiredMarker": true,
+        "text": "标准状态\n 现行\n 废止"
+      },
+      {
+        "label": "发布日期",
+        "requiredMarker": true,
+        "text": "发布日期"
+      },
+      {
+        "label": "实施日期",
+        "requiredMarker": true,
+        "text": "实施日期"
+      },
+      {
+        "label": "标准文档上传",
+        "requiredMarker": false,
+        "text": "标准文档上传\n上传文件*支持文件格式：PDF\n考前集训100题-解析版.pdf"
+      },
+      {
+        "label": "替代以下标准",
+        "requiredMarker": false,
+        "text": "替代以下标准"
+      },
+      {
+        "label": "标准适用范围",
+        "requiredMarker": false,
+        "text": "标准适用范围"
+      }
+    ],
+    "fields": [
+      {
+        "label": "标准名称",
+        "type": "text",
+        "placeholder": "",
+        "value": "人口综合库数据规范",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 250,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "英文名称",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 250,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "标准编号",
+        "type": "text",
+        "placeholder": "",
+        "value": "DB33/T 2234-2019",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "批准发布部门",
+        "type": "text",
+        "placeholder": "",
+        "value": "浙江省市场监督管理局",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 255,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准分级",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准状态",
+        "type": "radio",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "标准状态",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "发布日期",
+        "type": "text",
+        "placeholder": "",
+        "value": "2023-05-16",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "实施日期",
+        "type": "text",
+        "placeholder": "",
+        "value": "2024-07-31",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "替代以下标准",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "标准适用范围",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 250,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n标准审批管理\n标准查询",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准体系文档管理\n· 标准文档管理\n· 标准术语管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准体系文档管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 标准文档管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 标准术语管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "标准体系管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准体系管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "修改标准文档",
+        "title": "修改标准文档",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "I",
+        "text": "返回",
+        "title": "",
+        "href": null,
+        "cls": "dss-back-btn iconfontmain audaque-action-icon--opreate main-back-new"
+      },
+      {
+        "tag": "I",
+        "text": "上传文件",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-shangchuan"
+      },
+      {
+        "tag": "A",
+        "text": "考前集训100题-解析版.pdf",
+        "title": "",
+        "href": null,
+        "cls": "el-upload-list__item-name"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "打开现有记录编辑；不改变业务值、不提交。"
+}

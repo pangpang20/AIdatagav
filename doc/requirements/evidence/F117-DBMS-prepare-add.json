@@ -1,0 +1,368 @@
+{
+  "time": "2026-10-22T04:31:08.214Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office/editSubject?optType=add",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n 调研实施\n调研报告\n 数据归集\n 参考文档\n 配置管理\n新增调研委办局\n返回\n调研委办局\n委办局领导\n联系人\n联系人职务\n联系人电话\n科室\n委办局地址\n描述\n取 消提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入调研委办局",
+      "label": "调研委办局",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入委办局领导",
+      "label": "委办局领导",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入联系人",
+      "label": "联系人",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入联系人职务",
+      "label": "联系人职务",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入联系人电话",
+      "label": "联系人电话",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入科室",
+      "label": "科室",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入委办局地址",
+      "label": "委办局地址",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入描述",
+      "label": "描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "调研委办局",
+        "requiredMarker": true,
+        "text": "调研委办局"
+      },
+      {
+        "label": "委办局领导",
+        "requiredMarker": true,
+        "text": "委办局领导"
+      },
+      {
+        "label": "联系人",
+        "requiredMarker": true,
+        "text": "联系人"
+      },
+      {
+        "label": "联系人职务",
+        "requiredMarker": true,
+        "text": "联系人职务"
+      },
+      {
+        "label": "联系人电话",
+        "requiredMarker": true,
+        "text": "联系人电话"
+      },
+      {
+        "label": "科室",
+        "requiredMarker": false,
+        "text": "科室"
+      },
+      {
+        "label": "委办局地址",
+        "requiredMarker": false,
+        "text": "委办局地址"
+      },
+      {
+        "label": "描述",
+        "requiredMarker": false,
+        "text": "描述"
+      }
+    ],
+    "fields": [
+      {
+        "label": "调研委办局",
+        "type": "text",
+        "placeholder": "请输入调研委办局",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "委办局领导",
+        "type": "text",
+        "placeholder": "请输入委办局领导",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "联系人",
+        "type": "text",
+        "placeholder": "请输入联系人",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "联系人职务",
+        "type": "text",
+        "placeholder": "请输入联系人职务",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "联系人电话",
+        "type": "text",
+        "placeholder": "请输入联系人电话",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "科室",
+        "type": "text",
+        "placeholder": "请输入科室",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "委办局地址",
+        "type": "text",
+        "placeholder": "请输入委办局地址",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "描述",
+        "type": "textarea",
+        "placeholder": "请输入描述",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 调研概览",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研准备\n委办局信息\n调研团队信息\n参考文档",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "调研准备",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "委办局信息",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "调研团队信息",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "参考文档",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研计划",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "调研计划",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 调研实施",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研报告",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "调研报告",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 数据归集",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 参考文档",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 配置管理",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "新增调研委办局",
+        "title": "新增调研委办局",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提 交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}

@@ -1,0 +1,964 @@
+{
+  "time": "2026-10-22T04:42:41.658Z",
+  "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n标准查询\n标准模型表管理\n标准模型表分类\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t标准模型表编码\t标准模型表名称\t标准模型表说明\t审批状态\t关联标准字段\t更新时间\t操作\n\t\n1\n\t\ng876trdfgh\n\t\ndfgh\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-07-09 11:37:11\n\t\n编辑删除\n\n\n\t\n2\n\t\nuserinfo\n\t\nuserinfo\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-05-15 11:31:22\n\t\n编辑删除\n\n\n\t\n3\n\t\nPDM0000009\n\t\n人口基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-11-14 19:24:55\n\t\n编辑删除\n\n\n\t\n4\n\t\nPDM0000013\n\t\n民政基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:55:57\n\t\n编辑删除\n\n\n\t\n5\n\t\nPDM0000017\n\t\n住房基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:55:21\n\t\n编辑删除\n\n\n\t\n6\n\t\nPDM0000016\n\t\n住房公积金基础信息\n\t\n\t\n审批通过\n\t\n5\n\t\n2025-08-11 11:55:02\n\t\n编辑删除\n\n\n\t\n7\n\t\nPDM0000015\n\t\n社会保险基础信息\n\t\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:54:37\n\t\n编辑删除\n\n\n\t\n8\n\t\nPDM0000014\n\t\n劳动就业基础信息\n\t\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:54:16\n\t\n编辑删除\n\n\n\t\n9\n\t\nPDM0000012\n\t\n卫生健康基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:53:14\n\t\n编辑删除\n\n\n\t\n10\n\t\nPDM0000011\n\t\n教育基础信息\n\t\n\t\n审批通过\n\t\n7\n\t\n2025-08-11 11:52:52\n\t\n编辑删除\n\n\n\t\n11\n\t\nPDM0000010\n\t\n户籍基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:52:17\n\t\n编辑删除\n共 11 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入要搜索的内容",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入标准模型表名称",
+      "min": null,
+      "max": null,
+      "maxlength": "255"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入要搜索的内容",
+        "value": "__只读调研无匹配样本__",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入标准模型表名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 255,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "20条/页",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "number",
+        "placeholder": "",
+        "value": "1",
+        "min": "1",
+        "max": "1",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n标准查询",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准体系文档管理\n· 标准文档管理\n· 标准术语管理",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "标准体系文档管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 标准文档管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 标准术语管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准体系管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 标准模型表管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 标准字段管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 标准代码管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "标准模型表管理",
+        "title": "标准模型表管理",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "I",
+        "text": "",
+        "title": "删除",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--title-tree main-delete-new"
+      },
+      {
+        "tag": "I",
+        "text": "",
+        "title": "修改",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--title-tree main-edit-new"
+      },
+      {
+        "tag": "I",
+        "text": "",
+        "title": "新增",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--title-tree main-add-new"
+      },
+      {
+        "tag": "I",
+        "text": "",
+        "title": "关闭左侧",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "批量删除",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-delete-new"
+      },
+      {
+        "tag": "I",
+        "text": "导出",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dssms-daochu"
+      },
+      {
+        "tag": "I",
+        "text": "导入",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dssms-daoru"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+      },
+      {
+        "tag": "I",
+        "text": "dfgh",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "1",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "userinfo",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "1",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "人口基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "10",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "民政基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "10",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "住房基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "10",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "住房公积金基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "5",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "社会保险基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "4",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "劳动就业基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "4",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "卫生健康基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "10",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "教育基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "7",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "户籍基础信息",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "10",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--danger"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "标准模型表编码",
+      "标准模型表名称",
+      "标准模型表说明",
+      "审批状态",
+      "关联标准字段",
+      "更新时间",
+      "操作"
+    ],
+    "rows": [
+      {
+        "text": "\t\n1\n\t\ng876trdfgh\n\t\ndfgh\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-07-09 11:37:11\n\t\n编辑删除",
+        "actions": [
+          {
+            "text": "dfgh",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--key--active"
+          },
+          {
+            "text": "1",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--key--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--danger"
+          }
+        ]
+      },
+      {
+        "text": "\t\n2\n\t\nuserinfo\n\t\nuserinfo\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-05-15 11:31:22\n\t\n编辑删除",
+        "actions": [
+          {
+            "text": "userinfo",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--key--active"
+          },
+          {
+            "text": "1",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--key--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--danger"
+          }
+        ]
+      },
+      {
+        "text": "\t\n3\n\t\nPDM0000009\n\t\n人口基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-11-14 19:24:55\n\t\n编辑删除",
+        "actions": [
+          {
+            "text": "人口基础信息",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--key--active"
+          },
+          {
+            "text": "10",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--key--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--danger"
+          }
+        ]
+      }
+    ],
+    "options": []
+  },
+  "scopeNote": "查询条件请输入要搜索的内容=__只读调研无匹配样本__；结果仅是本次样本，不判定搜索故障。"
+}

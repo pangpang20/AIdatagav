@@ -1,0 +1,269 @@
+{
+  "time": "2026-10-22T04:38:40.998Z",
+  "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/list",
+  "title": "数据集成采集",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析\n文件采集\n查询重置\n生成调度流程\n新增\n\t序号\t任务名称\t所属部门\t采集模式\t执行次数\t采集文件数\t创建时间\t任务状态\t操作\n暂无数据",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入任务名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择任务状态",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入任务名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择任务状态",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 首页",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "任务",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "离线数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 表离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 库离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 接口及文件解析",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 文件离线同步",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "文件采集",
+        "title": "文件采集",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "生成调度流程",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dis-xinzeng"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dis-xinzeng"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "任务名称",
+      "所属部门",
+      "采集模式",
+      "执行次数",
+      "采集文件数",
+      "创建时间",
+      "任务状态",
+      "操作"
+    ],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "查询条件请输入任务名称=__只读调研无匹配样本__；结果仅是本次样本，不判定搜索故障。"
+}

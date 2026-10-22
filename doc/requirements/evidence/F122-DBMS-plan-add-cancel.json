@@ -1,0 +1,146 @@
+{
+  "time": "2026-10-22T04:31:34.660Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/plan/milepost",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n 数据归集\n 参考文档\n 配置管理\n调研里程碑\n新增\n\ntest\n\n总负责人：陈云亮\n\n截止时间： 2025/09/23 - 2025/09/30\n\n描 述：\n\n2025/09/23\n\n2025/09/30\n\n目前进展：100%",
+  "controls": [],
+  "elements": {
+    "forms": [],
+    "fields": [],
+    "menus": [
+      {
+        "text": " 调研概览",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研准备\n委办局信息\n调研团队信息\n参考文档",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "调研准备",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "委办局信息",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研团队信息",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "参考文档",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研计划\n调研里程碑\n调研计划列表",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "调研计划",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "调研里程碑",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "调研计划列表",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 调研实施",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研报告",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "调研报告",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 数据归集",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 参考文档",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 配置管理",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "调研里程碑",
+        "title": "调研里程碑",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--title main-add-new"
+      },
+      {
+        "tag": "P",
+        "text": "test",
+        "title": "test",
+        "href": null,
+        "cls": ""
+      },
+      {
+        "tag": "P",
+        "text": "描 述：",
+        "title": "",
+        "href": null,
+        "cls": "remark"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "实际点击取 消；仅记录返回结果，不推定未发生后台写入。"
+}

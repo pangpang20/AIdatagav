@@ -1,0 +1,45 @@
+{
+  "time": "2026-10-22T03:10:37.998Z",
+  "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+  "title": "元数据管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n自动采集\n手动采集\n新增\n序号\t任务名称\t调度策略\t数据来源名称\t任务状态\t最后执行时间\t采集日志\t调度状态\t操作\n1\n\t\nHIVE22\n\t\nDAY\n\t\nMRS-Presto\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n调度中\n\t\n暂停调度\n手动执行\n\n\n2\n\t\nHIVE1\n\t\nDAY\n\t\nhive_sql计算引擎\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n调度中\n\t\n暂停调度\n手动执行\n\n\n3\n\t\ndm\n\t\nDAY\n\t\n达梦B\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n暂停调度\n\t\n启动调度\n编辑\n删除\n手动执行\n\n\n4\n\t\ndam\n\t\nDAY\n\t\n达梦A\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n暂停调度\n\t\n启动调度\n编辑\n删除\n手动执行\n\n\n5\n\t\nZFX演示数据源_源库\n\t\n十五分钟策略\n\t\nZFX演示数据源_源库\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n暂停调度\n\t\n启动调度\n编辑\n删除\n手动执行\n\n\n6\n\t\nZFX演示数据源_目标库\n\t\n十五分钟策略\n\t\nZFX演示数据源_目标库\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n暂停调度\n\t\n启动调度\n编辑\n删除\n手动执行\n\n\n7\n\t\nPostgreSQL PostGIS-TEST\n\t\nDAY\n\t\nPostgreSQL PostGIS-TEST\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n暂停调度\n\t\n启动调度\n编辑\n删除\n手动执行\n\n\n8\n\t\nMYSQL\n\t\nDAY\n\t\nmysql106\n\t\n采集成功\n\t\n-\n\t\n采集日志\n\t\n暂停调度\n\t\n启动调度\n编辑\n删除\n手动执行\n共 8 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ]
+}

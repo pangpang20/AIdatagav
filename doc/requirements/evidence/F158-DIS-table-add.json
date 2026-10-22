@@ -1,0 +1,485 @@
+{
+  "time": "2026-10-22T04:37:11.507Z",
+  "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/edit?optType=add",
+  "title": "数据集成采集",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析\n表同步任务新增\n返回\n任务基本信息\n任务名称\n告警用户\n告警渠道\n邮件\n任务描述\n数据通道控制\n最大期望并发数\n数据同步限速\nMB/S\n脏数据条数范围\n输入配置\n分库分表\n数据源\nschema\n来源表标识\n选择来源表\n序号\t数据源\t来源表标识\t来源表\t采集方式\t\n筛选表达式\n\t增量起始时间\t\n切分字段\n\t采集字段\t操作\n暂无数据\n输出配置\n数据源类型\n取 消提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入任务名称",
+      "label": "任务名称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择告警用户",
+      "label": "告警用户",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "label": "告警渠道",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "任务描述",
+      "min": null,
+      "max": null,
+      "maxlength": "200"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入最大期望并发数,区间为1-10",
+      "label": "最大期望并发数",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入数据同步速率,单位为：M/s",
+      "label": "数据同步限速",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入脏数据条数范围",
+      "label": "脏数据条数范围",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "分库分表",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择数据源",
+      "label": "数据源",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择schema",
+      "label": "schema",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "选择来源表",
+      "placeholder": null,
+      "label": "来源表标识",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择目的源类型",
+      "label": "数据源类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "任务名称",
+        "requiredMarker": true,
+        "text": "任务名称"
+      },
+      {
+        "label": "告警用户",
+        "requiredMarker": false,
+        "text": "告警用户"
+      },
+      {
+        "label": "告警渠道",
+        "requiredMarker": false,
+        "text": "告警渠道\n邮件"
+      },
+      {
+        "label": "任务描述",
+        "requiredMarker": false,
+        "text": "任务描述"
+      },
+      {
+        "label": "最大期望并发数",
+        "requiredMarker": true,
+        "text": "最大期望并发数"
+      },
+      {
+        "label": "数据同步限速",
+        "requiredMarker": false,
+        "text": "数据同步限速\nMB/S"
+      },
+      {
+        "label": "脏数据条数范围",
+        "requiredMarker": false,
+        "text": "脏数据条数范围"
+      },
+      {
+        "label": "数据源",
+        "requiredMarker": true,
+        "text": "数据源"
+      },
+      {
+        "label": "schema",
+        "requiredMarker": true,
+        "text": "schema"
+      },
+      {
+        "label": "来源表标识",
+        "requiredMarker": false,
+        "text": "来源表标识\n选择来源表"
+      },
+      {
+        "requiredMarker": false,
+        "text": ""
+      },
+      {
+        "label": "数据源类型",
+        "requiredMarker": true,
+        "text": "数据源类型"
+      }
+    ],
+    "fields": [
+      {
+        "label": "任务名称",
+        "type": "text",
+        "placeholder": "请输入任务名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "告警用户",
+        "type": "text",
+        "placeholder": "请选择告警用户",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "告警渠道",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "任务描述",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 200,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "最大期望并发数",
+        "type": "text",
+        "placeholder": "请输入最大期望并发数,区间为1-10",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "数据同步限速",
+        "type": "text",
+        "placeholder": "请输入数据同步速率,单位为：M/s",
+        "value": "10",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "脏数据条数范围",
+        "type": "text",
+        "placeholder": "请输入脏数据条数范围",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "数据源",
+        "type": "text",
+        "placeholder": "请选择数据源",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "schema",
+        "type": "text",
+        "placeholder": "请选择schema",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "数据源类型",
+        "type": "text",
+        "placeholder": "请选择目的源类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 首页",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "任务",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "离线数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 表离线同步",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 库离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 接口及文件解析",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 文件离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "表同步任务新增",
+        "title": "表同步任务新增",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "分库分表",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--small"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "选择来源表",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提 交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [
+      "序号",
+      "数据源",
+      "来源表标识",
+      "来源表",
+      "采集方式",
+      "筛选表达式",
+      "增量起始时间",
+      "切分字段",
+      "采集字段",
+      "操作"
+    ],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}

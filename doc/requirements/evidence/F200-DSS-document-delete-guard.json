@@ -1,0 +1,213 @@
+{
+  "time": "2026-10-22T04:41:29.644Z",
+  "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n标准审批管理\n标准查询\n标准文档管理\n目录分类\n全部\n标准分类\n测试分类\n无标待立标\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t标准名称\t标准编号\t标准分级\t发布单位\t审批状态\t创建时间\t操作\n\t\n1\n\t\n人口综合库数据规范\n\t\nDB33/T 2234-2019\n\t\n地方标准\n\t\n浙江省市场监督管理局\n\t\n审批通过\n\t\n2026-05-22 11:35:04\n\t\n编辑删除\n\n\n\t\n2\n\t\n人口数据\n\t\n人口数据\n\t\n国际标准\n\t\n人口数据\n\t\n待审批\n\t\n2025-11-19 03:32:47\n\t\n\n\n\t\n3\n\t\n编码及数据要求\n\t\ncjt214-2007\n\t\n团体标准\n\t\n城管\n\t\n审批通过\n\t\n2025-08-26 19:08:31\n\t\n编辑删除\n\n\n\t\n4\n\t\n全国组织、干部、人事管理信息\n\t\nGBT 14946-2019\n\t\n国家标准\n\t\n国家市场监管总局、中国国家标准化管理委员会\n\t\n审批通过\n\t\n2025-08-11 11:17:15\n\t\n编辑删除\n\n\n\t\n5\n\t\n人口信息管理代码（第7部分）常驻人口信息级别代码\n\t\nGA 324.7-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:10:28\n\t\n编辑删除\n\n\n\t\n6\n\t\n人口信息管理代码（第6部分）血型代码\n\t\nGA 324.6-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:09:52\n\t\n编辑删除\n\n\n\t\n7\n\t\n人口信息管理代码（第5部分）申领居民身份证原因代码\n\t\nGA 324.5-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:08:46\n\t\n编辑删除\n\n\n\t\n8\n\t\n人口信息管理代码（第4部分）缴销居民身份证情况代码\n\t\nGA 324.4-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:08:11\n\t\n编辑删除\n\n\n\t\n9\n\t\n人口信息管理代码（第3部分）户口迁移变动分类代码\n\t\nGA 324.3-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:07:26\n\t\n编辑删除\n\n\n\t\n10\n\t\n人口信息管理代码（第2部分）户口迁移变动分类代码\n\t\nGA 324.2-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:06:19\n\t\n编辑删除\n\n\n\t\n11\n\t\n人口信息管理代码（第1部分）户口类别代码\n\t\nGA 324.1-2001\n\t\n国家标准\n\t\n中华人民共和国公安部\n\t\n审批通过\n\t\n2025-08-11 11:05:24\n\t\n编辑删除\n共 11 条\n1\n前往页\n警告\n删除操作不能恢复，确定删除吗？\n取 消 确 认",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "输入关键字进行过滤",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入标准名称",
+      "min": null,
+      "max": null,
+      "maxlength": "255"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择标准分级",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确 认",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "blockedRequests": []
+}

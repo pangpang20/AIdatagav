@@ -1,0 +1,932 @@
+{
+  "time": "2026-10-22T04:19:29.959Z",
+  "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+  "title": "AI数据智能辅助",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\nAI数据智能辅助\n库管理\n识别召回库\nNL2SQL库\n在线验证\n模型管理\n 分级目录\n 接口授权\n召回库管理\n查询重置\n同步\n模板下载\n上传至算法库\n新增\n本地导入\n刷新\n选择\t序号\t召回库名称\t召回库英文名\t召回库类型\t字段数量\t召回库来源\t创建时间\t创建人\t操作\n\t\n1\n\t\ntest2221\n\t\nets_field_20270718\n\t\n字段识别\n\t\n1\n\t\n本系统\n\t\n2026-07-17 10:50:21\n\t\nyyc\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n2\n\t\npeople_field_20240517\n\t\npeople_field_20240517\n\t\n字段识别\n\t\n1\n\t\n本系统\n\t\n2025-11-25 11:14:47\n\t\n贺小飞\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n3\n\t\ntest_field_20240603\n\t\ntest_field_20240603\n\t\n字段识别\n\t\n1\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n4\n\t\nlonghua_field_20240712\n\t\nlonghua_field_20240712\n\t\n字段识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n5\n\t\npeoplecorp_table_20240125\n\t\npeoplecorp_table_20240125\n\t\n表识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n编辑\n删除\n\n\n\t\n6\n\t\nall3w_field_20240510\n\t\nall3w_field_20240510\n\t\n字段识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n7\n\t\ntest_table_20240604\n\t\ntest_table_20240604\n\t\n表识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n编辑\n删除\n\n\n\t\n8\n\t\ntest_field_20240604\n\t\ntest_field_20240604\n\t\n字段识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n9\n\t\npeoplecorp_field_20231225\n\t\npeoplecorp_field_20231225\n\t\n字段识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n10\n\t\ntest_table_20240603\n\t\ntest_table_20240603\n\t\n表识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n编辑\n删除\n\n\n\t\n11\n\t\nall3w_finance_field_20240510\n\t\nall3w_finance_field_20240510\n\t\n字段识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除\n\n\n\t\n12\n\t\ntest_table_20240225\n\t\ntest_table_20240225\n\t\n表识别\n\t\n0\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n编辑\n删除\n共 12 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入召回库名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择召回库类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入召回库名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择召回库类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "radio",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "20条/页",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "number",
+        "placeholder": "",
+        "value": "1",
+        "min": "1",
+        "max": "1",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "库管理\n识别召回库\nNL2SQL库",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "库管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "识别召回库",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "NL2SQL库",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "在线验证",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "在线验证",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "模型管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "模型管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 分级目录",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 接口授权",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "召回库管理",
+        "title": "召回库管理",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "同步",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate ais-bianzu"
+      },
+      {
+        "tag": "I",
+        "text": "模板下载",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate ais-xiazai"
+      },
+      {
+        "tag": "I",
+        "text": "上传至算法库",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate ais-shangchuan"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+      },
+      {
+        "tag": "I",
+        "text": "本地导入",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate ais-daoru"
+      },
+      {
+        "tag": "I",
+        "text": "刷新",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate ais-shuaxin"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "活动记录",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "内容管理",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      }
+    ],
+    "headers": [
+      "选择",
+      "序号",
+      "召回库名称",
+      "召回库英文名",
+      "召回库类型",
+      "字段数量",
+      "召回库来源",
+      "创建时间",
+      "创建人",
+      "操作"
+    ],
+    "rows": [
+      {
+        "text": "\t\n1\n\t\ntest2221\n\t\nets_field_20270718\n\t\n字段识别\n\t\n1\n\t\n本系统\n\t\n2026-07-17 10:50:21\n\t\nyyc\n\t\n内容管理\n活动记录\n编辑\n删除",
+        "actions": [
+          {
+            "text": "内容管理",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "活动记录",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          }
+        ]
+      },
+      {
+        "text": "\t\n2\n\t\npeople_field_20240517\n\t\npeople_field_20240517\n\t\n字段识别\n\t\n1\n\t\n本系统\n\t\n2025-11-25 11:14:47\n\t\n贺小飞\n\t\n内容管理\n活动记录\n编辑\n删除",
+        "actions": [
+          {
+            "text": "内容管理",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "活动记录",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          }
+        ]
+      },
+      {
+        "text": "\t\n3\n\t\ntest_field_20240603\n\t\ntest_field_20240603\n\t\n字段识别\n\t\n1\n\t\n算法端\n\t\n2025-11-06 10:48:31\n\t\n马睿\n\t\n内容管理\n活动记录\n编辑\n删除",
+        "actions": [
+          {
+            "text": "内容管理",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "活动记录",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          }
+        ]
+      }
+    ],
+    "options": []
+  },
+  "scopeNote": "实际点击重置，记录条件和列表恢复。"
+}

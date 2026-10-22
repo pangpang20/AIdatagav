@@ -1,0 +1,227 @@
+{
+  "time": "2026-10-22T04:27:30.137Z",
+  "url": "http://www.audaqueproxy.com:10223/drms/project/edit?id=9&optType=edit",
+  "title": "业务需求管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n业务需求管理系统\n需求看板\n需求看板\n项目管理\n我的项目\n需求管理\n任务中心\n需求咨询\n编辑项目\n返回\n项目名称\n4/50\n所属部门\n项目描述\n0/500\n取 消提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入项目名称",
+      "label": "项目名称",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择所属部门",
+      "label": "所属部门",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true,
+      "disabled": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "项目描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "项目名称",
+        "requiredMarker": true,
+        "text": "项目名称\n4/50"
+      },
+      {
+        "label": "所属部门",
+        "requiredMarker": true,
+        "text": "所属部门"
+      },
+      {
+        "label": "项目描述",
+        "requiredMarker": false,
+        "text": "项目描述\n0/500"
+      }
+    ],
+    "fields": [
+      {
+        "label": "项目名称",
+        "type": "text",
+        "placeholder": "请输入项目名称",
+        "value": "test",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "所属部门",
+        "type": "text",
+        "placeholder": "请选择所属部门",
+        "value": "数据集成",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "项目描述",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "需求看板\n需求看板",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "需求看板",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "需求看板",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "项目管理\n我的项目",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "项目管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "我的项目",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "需求管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "需求管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "任务中心",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "任务中心",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "需求咨询",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "需求咨询",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "编辑项目",
+        "title": "编辑项目",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提 交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "打开现有记录编辑；不改变业务值、不提交。"
+}

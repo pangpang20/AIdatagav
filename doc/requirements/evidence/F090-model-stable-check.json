@@ -1,0 +1,94 @@
+{
+  "time": "2026-10-22T04:21:32.197Z",
+  "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+  "title": "规范化数据建模",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置",
+  "controls": [],
+  "elements": {
+    "forms": [],
+    "fields": [],
+    "menus": [
+      {
+        "text": "模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "模型管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "模型管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 模型设计",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 模型物化",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 模型分析",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 模型数据统计",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "系统配置",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "系统配置",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅页面/表单/确认框只读采样；未提交业务写入或执行任务。"
+}

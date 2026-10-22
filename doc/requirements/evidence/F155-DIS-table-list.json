@@ -1,0 +1,216 @@
+{
+  "time": "2026-10-22T04:36:52.760Z",
+  "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+  "title": "数据集成采集",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析\n任务总数(次)\n0\n今日实例成功次数(次)\n0\n昨日：0\n今日实例失败次数(次)\n0\n昨日：0\n今日新增目的表\n0\n昨日：0\n今日新增表包含字段\n0\n昨日：0\n今日写入表数据量\n0\n昨日：0\n今日任务运行情况\n表离线同步\n0%\n运行中\n运行实例总数：0\n0\n运行成功\n0\n运行失败\n库离线同步\n0%\n运行中\n运行实例总数：0\n0\n运行成功\n0\n运行失败\n接口及文件解析\n0%\n运行中\n运行实例总数：0\n0\n运行成功\n0\n运行失败\n文件离线同步\n0%\n运行中\n运行实例总数：0\n0\n运行成功\n0\n运行失败\n表实时同步\n0%\n运行中\n运行实例总数：0\n-\n运行成功\n0\n停止\nKAFKA同步\n0%\n运行中\n运行实例总数：0\n-\n运行成功\n0\n停止",
+  "controls": [],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入任务名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择任务状态",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 首页",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "任务",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "离线数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 表离线同步",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 库离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 接口及文件解析",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 文件离线同步",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "实时数据同步",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "监控",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "分析",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "表同步",
+        "title": "表同步",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "生成调度流程",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dis-xinzeng"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dis-xinzeng"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "任务名称",
+      "所属部门",
+      "数据源类型",
+      "目的源类型",
+      "执行次数",
+      "采集数据量",
+      "创建时间",
+      "任务状态",
+      "操作"
+    ],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "通过真实应用/侧栏入口进入，采集查询条件、表头、样本行、状态和行操作。"
+}

@@ -1,0 +1,210 @@
+{
+  "time": "2026-10-22T05:13:13.559Z",
+  "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManageEdit?optType=add",
+  "title": "数据直报",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据直报\n 首页\n直报管理\n库表资源管理\n文件资源管理\n类别管理\n数据上报\n 审核管理\n上报统计\n 帮助\n 消息\n新增类别\n返回\n类别名\n备注\n取消提交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入类别名",
+      "label": "类别名",
+      "min": null,
+      "max": null,
+      "maxlength": "64"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入备注",
+      "label": "备注",
+      "min": null,
+      "max": null,
+      "maxlength": "255"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "类别名",
+        "requiredMarker": true,
+        "text": "类别名"
+      },
+      {
+        "label": "备注",
+        "requiredMarker": false,
+        "text": "备注"
+      }
+    ],
+    "fields": [
+      {
+        "label": "类别名",
+        "type": "text",
+        "placeholder": "请输入类别名",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 64,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "备注",
+        "type": "textarea",
+        "placeholder": "请输入备注",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 255,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 首页",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "直报管理\n库表资源管理\n文件资源管理\n类别管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "直报管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "库表资源管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "库表资源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "文件资源管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "文件资源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "类别管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "数据上报",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "数据上报",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 审核管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "上报统计",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "上报统计",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 帮助",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 消息",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "新增类别",
+        "title": "新增类别",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}

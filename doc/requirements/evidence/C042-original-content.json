@@ -1,0 +1,48 @@
+{
+  "time": "2026-10-22T03:34:49.482Z",
+  "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/edit?optType=add",
+  "title": "评价管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n评价任务\n 评价报告\n 我的评价\n添加方案\n返回\n方案名称\n0/50\n应用描述\n0/500\n方案附件\n点击上传支持格式.doc, .docx, .xls, .xlsx, .pdf, .ppt, .pptx, .zip, .rar, .png, .jpg, .jpeg文件\n序号\t附件名称\t操作\n取 消提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入方案名称",
+      "label": "方案名称",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入应用描述信息",
+      "label": "应用描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "replacesTextSamples": [
+    "E067-evaluation-add"
+  ],
+  "provenance": "按用户要求重新采样，保留全部可见业务内容。使用本次实际时间，不改写历史时间。"
+}

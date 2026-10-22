@@ -1,0 +1,74 @@
+{
+  "time": "2026-10-22T02:55:37.750Z",
+  "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+  "title": "数据源管理",
+  "text": null,
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入API名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ],
+  "replacementTextSample": "C010-original-content",
+  "textDisposition": "历史文字曾被人工处理，无法精确反推；本条保留原采样时间和控件属性。原时刻业务内容见同名已恢复的原始截图；完整文字另见独立补采，使用补采实际时间。",
+  "screenshotDisposition": "已恢复原始截图，不遮盖业务内容。密码输入区域不展示。"
+}

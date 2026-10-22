@@ -1,0 +1,47 @@
+{
+  "time": "2026-10-22T03:03:41.411Z",
+  "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/edit?optType=add",
+  "title": "评价管理",
+  "text": null,
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入方案名称",
+      "label": "方案名称",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入应用描述信息",
+      "label": "应用描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "replacementTextSample": "C042-original-content",
+  "textDisposition": "历史文字曾被人工处理，无法精确反推；本条保留原采样时间和控件属性。原时刻业务内容见同名已恢复的原始截图；完整文字另见独立补采，使用补采实际时间。",
+  "screenshotDisposition": "已恢复原始截图，不遮盖业务内容。密码输入区域不展示。"
+}

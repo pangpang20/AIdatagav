@@ -1,0 +1,382 @@
+{
+  "time": "2026-10-22T04:42:50.188Z",
+  "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetEdit?datasetId=3&optType=add",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n标准查询\n新增标准表\n返回\n标准模型表名称\n标准模型表编码\n简称\n生效日期\n标准参考文档\n清除\n参考标准编号\n说明\n取消提交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "标准模型表名称",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "输入内容为大小写字母、数字",
+      "label": "标准模型表编码",
+      "min": null,
+      "max": null,
+      "maxlength": "10"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "简称",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "生效日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "标准参考文档",
+      "min": null,
+      "max": null,
+      "maxlength": "100",
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "label": "标准参考文档",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "清除",
+      "placeholder": null,
+      "label": "标准参考文档",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": null,
+      "label": "参考标准编号",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "说明",
+      "min": null,
+      "max": null,
+      "maxlength": "100"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "标准模型表名称",
+        "requiredMarker": true,
+        "text": "标准模型表名称"
+      },
+      {
+        "label": "标准模型表编码",
+        "requiredMarker": true,
+        "text": "标准模型表编码"
+      },
+      {
+        "label": "简称",
+        "requiredMarker": false,
+        "text": "简称"
+      },
+      {
+        "label": "生效日期",
+        "requiredMarker": true,
+        "text": "生效日期"
+      },
+      {
+        "label": "标准参考文档",
+        "requiredMarker": false,
+        "text": "标准参考文档\n清除"
+      },
+      {
+        "label": "参考标准编号",
+        "requiredMarker": false,
+        "text": "参考标准编号"
+      },
+      {
+        "label": "说明",
+        "requiredMarker": false,
+        "text": "说明"
+      }
+    ],
+    "fields": [
+      {
+        "label": "标准模型表名称",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "标准模型表编码",
+        "type": "text",
+        "placeholder": "输入内容为大小写字母、数字",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 10,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "简称",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "生效日期",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "标准参考文档",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "参考标准编号",
+        "type": "text",
+        "placeholder": "",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "说明",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 100,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n标准查询",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准体系文档管理\n· 标准文档管理\n· 标准术语管理",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "标准体系文档管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 标准文档管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 标准术语管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准体系管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 标准模型表管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 标准字段管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 标准代码管理",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准审批管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "标准查询",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "新增标准表",
+        "title": "新增标准表",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "I",
+        "text": "返回",
+        "title": "",
+        "href": null,
+        "cls": "dss-back-btn iconfontmain audaque-action-icon--opreate main-back-new"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "清除",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}

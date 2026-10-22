@@ -1,0 +1,386 @@
+{
+  "time": "2026-10-22T04:36:22.646Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/edit?optType=view&componentNameId=5",
+  "title": "构件管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n构件管理\n 构件超市\n 构件开发\n构件配置\n构件名称\n构件分类\n我的构件\n我的构件\n导出记录\n查看\n返回\n构件类型:\n正则规则\n数据库对象:\nHIVE\n*规则内容: （注:规则内容中的变量参数用{变量名称}代替,如:{vid}）\n构件名称\n构件分类\n业务分类\n引用标准\n需求描述\n规则说明\n参考代码\n开发者\n校验者",
+  "controls": [
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入规则内容",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入内容",
+      "label": "构件名称",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "构件分类",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "label": "业务分类",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入引用标准",
+      "label": "引用标准",
+      "min": null,
+      "max": null,
+      "maxlength": "50",
+      "disabled": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入需求描述",
+      "label": "需求描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500",
+      "disabled": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入规则说明",
+      "label": "规则说明",
+      "min": null,
+      "max": null,
+      "maxlength": "500",
+      "disabled": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "请输入参考代码",
+      "label": "参考代码",
+      "min": null,
+      "max": null,
+      "maxlength": "500",
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入开发者",
+      "label": "开发者",
+      "min": null,
+      "max": null,
+      "maxlength": "50",
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入校验者",
+      "label": "校验者",
+      "min": null,
+      "max": null,
+      "maxlength": "50",
+      "disabled": true
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "构件类型:",
+        "requiredMarker": true,
+        "text": "构件类型:\n正则规则"
+      },
+      {
+        "label": "数据库对象:",
+        "requiredMarker": true,
+        "text": "数据库对象:\nHIVE"
+      },
+      {
+        "requiredMarker": true,
+        "text": ""
+      },
+      {
+        "label": "构件名称",
+        "requiredMarker": true,
+        "text": "构件名称"
+      },
+      {
+        "label": "构件分类",
+        "requiredMarker": true,
+        "text": "构件分类"
+      },
+      {
+        "label": "业务分类",
+        "requiredMarker": true,
+        "text": "业务分类"
+      },
+      {
+        "label": "引用标准",
+        "requiredMarker": false,
+        "text": "引用标准"
+      },
+      {
+        "label": "需求描述",
+        "requiredMarker": false,
+        "text": "需求描述"
+      },
+      {
+        "label": "规则说明",
+        "requiredMarker": false,
+        "text": "规则说明"
+      },
+      {
+        "label": "参考代码",
+        "requiredMarker": false,
+        "text": "参考代码"
+      },
+      {
+        "label": "开发者",
+        "requiredMarker": false,
+        "text": "开发者"
+      },
+      {
+        "label": "校验者",
+        "requiredMarker": false,
+        "text": "校验者"
+      }
+    ],
+    "fields": [
+      {
+        "label": "",
+        "type": "textarea",
+        "placeholder": "请输入规则内容",
+        "value": "xxxx",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "构件名称",
+        "type": "text",
+        "placeholder": "请输入内容",
+        "value": "测试规则",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "构件分类",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "标准检测",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "业务分类",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "人口类",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "引用标准",
+        "type": "text",
+        "placeholder": "请输入引用标准",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "需求描述",
+        "type": "textarea",
+        "placeholder": "请输入需求描述",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "规则说明",
+        "type": "textarea",
+        "placeholder": "请输入规则说明",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "参考代码",
+        "type": "textarea",
+        "placeholder": "请输入参考代码",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "开发者",
+        "type": "text",
+        "placeholder": "请输入开发者",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "校验者",
+        "type": "text",
+        "placeholder": "请输入校验者",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 构件超市",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 构件开发",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "构件配置\n构件名称\n构件分类",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "构件配置",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "构件名称",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "构件分类",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "我的构件\n我的构件\n导出记录",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "我的构件",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "我的构件",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "导出记录",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "查看",
+        "title": "查看",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "打开现有记录查看；不改变业务值、不提交。"
+}

@@ -1,0 +1,249 @@
+{
+  "time": "2026-10-22T04:33:11.473Z",
+  "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+  "title": "任务编排与调度",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n 概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n告警管理\n资源管理\nGLDM开发IDE\n 调度统计\n配置管理\n流程调度管理\n查询重置\n调度配置\n单次运行\n流程启动\n流程停止\n\t序号\t流程名称\t\n流程状态\n\t发布人\t\n调度策略\n\t发布时间\n\t操作\n暂无数据",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入流程名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入流程名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 概览",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "流程开发\n我的流程",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "流程开发",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "我的流程",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "流程调度\n流程调度管理\n流程监控\n告警管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "流程调度",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "流程调度管理",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "流程监控",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "流程监控",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "告警管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "告警管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "资源管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "资源管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "GLDM开发IDE",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "GLDM开发IDE",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 调度统计",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "配置管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "配置管理",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "流程调度管理",
+        "title": "流程调度管理",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "调度配置",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+      },
+      {
+        "tag": "I",
+        "text": "单次运行",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate sms-shougongyunhang"
+      },
+      {
+        "tag": "I",
+        "text": "流程启动",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate sms-qidonggongzuoliu"
+      },
+      {
+        "tag": "I",
+        "text": "流程停止",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate sms-tingzhi"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "流程名称",
+      "流程状态",
+      "发布人",
+      "调度策略",
+      "发布时间",
+      "操作"
+    ],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "通过真实应用/侧栏入口进入，采集查询条件、表头、样本行、状态和行操作。"
+}

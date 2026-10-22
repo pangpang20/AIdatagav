@@ -1,0 +1,915 @@
+{
+  "time": "2026-10-22T04:17:26.446Z",
+  "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+  "title": "报告模板",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n报告模板\n· 模板管理\n模板管理\n查询重置\n复制\n发布\n取消发布\n新增\n\t序号\t模板名称\t部门名称\t适用对象\t模板说明\t报告类型\t状态\t被引用数\t创建时间\n\t操作\n\t\n1\n\t\n测试007238482\n\t\n某委办局\n\t\n\t\n\t\n质量检测报告\n\t\n未发布\n\t\n0\n\t\n2026-05-07 19:56:14\n\t\n编辑\n删除\n发布\n\n\n\t\n2\n\t\n测试000000\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n未发布\n\t\n0\n\t\n2026-03-26 18:31:53\n\t\n编辑\n删除\n发布\n\n\n\t\n3\n\t\n测试02-复制\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n未发布\n\t\n0\n\t\n2025-12-04 20:16:59\n\t\n编辑\n删除\n发布\n\n\n\t\n4\n\t\n测试\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n未发布\n\t\n0\n\t\n2025-12-04 20:16:42\n\t\n编辑\n删除\n发布\n\n\n\t\n5\n\t\n测试模板123\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-28 09:53:31\n\t\n编辑\n取消发布\n\n\n\t\n6\n\t\n测试模板\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-16 18:08:11\n\t\n编辑\n取消发布\n\n\n\t\n7\n\t\n评价系统报告模板\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n已发布\n\t\n0\n\t\n2025-08-07 16:52:12\n\t\n编辑\n取消发布\n\n\n\t\n8\n\t\n数据质量检测系统报告模板\n\t\n某委办局\n\t\n\t\n\t\n质量检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-07 15:55:47\n\t\n编辑\n取消发布\n\n\n\t\n9\n\t\n数据安全检测报告模板\n\t\n某委办局\n\t\n\t\n\t\n安全检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-07 15:44:43\n\t\n编辑\n取消发布\n\n\n\t\n10\n\t\nTEST\n\t\n某委办局\n\t\n\t\n\t\n安全检测报告\n\t\n已发布\n\t\n0\n\t\n2025-05-21 18:18:12\n\t\n编辑\n取消发布\n共 10 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入模板名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择报告类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择状态",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入模板名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择报告类型",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择状态",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "20条/页",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "number",
+        "placeholder": "",
+        "value": "1",
+        "min": "1",
+        "max": "1",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "报告模板管理\n报告模板\n· 模板管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "报告模板管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "报告模板\n· 模板管理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "报告模板",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 模板管理",
+        "cls": "el-menu-item is-active"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "模板管理",
+        "title": "模板管理",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "复制",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dssms-fuzhi"
+      },
+      {
+        "tag": "I",
+        "text": "发布",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dssms-fabu1"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dssms-quxiaohuoguanbi"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate dssms-tianjiahuoxinzeng"
+      },
+      {
+        "tag": "I",
+        "text": "测试007238482",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "测试000000",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "测试02-复制",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "测试",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "删除",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+      },
+      {
+        "tag": "I",
+        "text": "发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "测试模板123",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "测试模板",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "评价系统报告模板",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "数据质量检测系统报告模板",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "数据安全检测报告模板",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "TEST",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "编辑",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "取消发布",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "模板名称",
+      "部门名称",
+      "适用对象",
+      "模板说明",
+      "报告类型",
+      "状态",
+      "被引用数",
+      "创建时间",
+      "操作"
+    ],
+    "rows": [
+      {
+        "text": "\t\n1\n\t\n测试007238482\n\t\n某委办局\n\t\n\t\n\t\n质量检测报告\n\t\n未发布\n\t\n0\n\t\n2026-05-07 19:56:14\n\t\n编辑\n删除\n发布",
+        "actions": [
+          {
+            "text": "测试007238482",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+          },
+          {
+            "text": "0",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          },
+          {
+            "text": "发布",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          }
+        ]
+      },
+      {
+        "text": "\t\n2\n\t\n测试000000\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n未发布\n\t\n0\n\t\n2026-03-26 18:31:53\n\t\n编辑\n删除\n发布",
+        "actions": [
+          {
+            "text": "测试000000",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+          },
+          {
+            "text": "0",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          },
+          {
+            "text": "发布",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          }
+        ]
+      },
+      {
+        "text": "\t\n3\n\t\n测试02-复制\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n未发布\n\t\n0\n\t\n2025-12-04 20:16:59\n\t\n编辑\n删除\n发布",
+        "actions": [
+          {
+            "text": "测试02-复制",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+          },
+          {
+            "text": "0",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "编辑",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          },
+          {
+            "text": "发布",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          }
+        ]
+      }
+    ],
+    "options": []
+  },
+  "scopeNote": "实际点击取 消；仅记录返回结果，不推定未发生后台写入。"
+}

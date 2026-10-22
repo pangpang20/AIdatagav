@@ -1,0 +1,82 @@
+{
+  "time": "2026-10-22T04:18:15.272Z",
+  "url": "http://www.audaqueproxy.com:10223/dsts/standard/plan/list",
+  "title": "数据标准检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准检测\n标准检测\n检测方案\n标准检测\n检测报告\n数据评价",
+  "controls": [],
+  "elements": {
+    "forms": [],
+    "fields": [],
+    "menus": [
+      {
+        "text": "标准检测\n检测方案\n标准检测\n检测报告",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "标准检测",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "检测方案",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "标准检测",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "检测报告",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "数据评价",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "数据评价",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "通过真实应用/侧栏入口进入，采集查询条件、表头、样本行、状态和行操作。"
+}

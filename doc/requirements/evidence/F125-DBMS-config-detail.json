@@ -1,0 +1,392 @@
+{
+  "time": "2026-10-22T04:31:48.606Z",
+  "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/edit?id=79&optType=view",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n 数据归集\n 参考文档\n 配置管理\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n返回\n查看配置\n选择\t资源名称\n\t\n*单位名称\n\n\n\t\n*科室名称\n\n\n\t\n*系统名称\n\n\n\t\n*是否垂管\n\n\n\t\n*数据存储方式\n\n\n\t\n*数据更新频率\n\n\n\t\n*系统访问入口（系统网址）\n\n\n\t\n*网络位置\n\n\n\t\n*共享方式\n\n\n\t\n*建设单位负责人及其联系方式\n\n\n\t\n数据格式\n\n\n\t\n当前数据量\n\n\n\t\n使用范围(用户范围)\n\n\n\t\n系统数据库类型及版本\n\n\n\t\n建设单位\n\n\n\t\n承建单位\n\n\n\t\n承建单位联系人及联系方式\n\n\n\t\n用户\n\n\n\t\n系统功能描述\n\n\n\t\n备注",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": true,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": " 调研概览",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研准备\n委办局信息\n调研团队信息\n参考文档",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "调研准备",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "委办局信息",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研团队信息",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "参考文档",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研计划\n调研里程碑\n调研计划列表",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "调研计划",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "调研里程碑",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研计划列表",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 调研实施",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "调研报告",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "调研报告",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": " 数据归集",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 参考文档",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": " 配置管理",
+        "cls": "el-menu-item is-active"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "I",
+        "text": "返回",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--title main-back-new"
+      },
+      {
+        "tag": "DIV",
+        "text": "查看配置",
+        "title": "查看配置",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      }
+    ],
+    "headers": [
+      "选择",
+      "资源名称"
+    ],
+    "rows": [
+      {
+        "text": "\t\n*单位名称",
+        "actions": []
+      },
+      {
+        "text": "\t\n*科室名称",
+        "actions": []
+      },
+      {
+        "text": "\t\n*系统名称",
+        "actions": []
+      }
+    ],
+    "options": []
+  },
+  "scopeNote": "打开现有记录查看；不改变业务值、不提交。"
+}

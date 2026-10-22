@@ -1,0 +1,98 @@
+{
+  "time": "2026-10-22T03:14:41.836Z",
+  "url": "http://www.audaqueproxy.com:10223/gsp-portal/samcheong",
+  "title": "",
+  "text": "数据服务门户\n首页\n业务图谱\n数据资源\n数据清单\n资料下载\n购数车\n欢迎，陈云亮 \n首页\n数据清单\n查询\n重置\n责任清单负面清单\n序号\t目录名称\t目录分类\t提供方\t资源类型\t安全等级\t更新周期\t共享类型\t供数方式\t关联事项名称\n1\n\t\n数据原名_test_api\n\t\n交通管理局\n\t\n交通管理部门\n\t\nAPI\n\t\n-\n\t\n每年\n\t\n有条件共享\n\t\nAPI\n\t\n交通管理事项\n\n\n2\n\t\n文件abc\n\t\n交通管理局\n\t\n交通管理部门\n\t\n文件\n\t\n-\n\t\n其他\n\t\n有条件共享\n\t\n文件\n\t\n医疗事项\n\n\n3\n\t\n文件123\n\t\n交通管理局\n\t\n交通管理部门\n\t\n文件\n\t\n-\n\t\n其他\n\t\n有条件共享\n\t\n文件\n\t\n医疗事项\n\n\n4\n\t\n公积金人口信息\n\t\n交通管理局\n\t\n交通管理部门\n\t\n库表\n\t\n五级\n\t\n每日\n\t\n有条件共享\n\t\n服务API | 库表\n\t\n公积金\n\n\n5\n\t\n人口流动信息目录\n\t\n交通管理局\n\t\n交通管理部门\n\t\n库表\n\t\n-\n\t\n其他\n\t\n有条件共享\n\t\n服务API | 库表\n\t\n交通管理事项\n\n\n6\n\t\n交通管理信息目录\n\t\n交通管理局\n\t\n交通管理部门\n\t\n库表\n\t\n-\n\t\n其他\n\t\n有条件共享\n\t\n库表\n\t\n交通管理事项\n\n\n7\n\t\n人口信息数据目录\n\t\n交通管理局\n\t\n交通管理部门\n\t\n库表\n\t\n-\n\t\n其他\n\t\n有条件共享\n\t\n服务API | 库表\n\t\n交通管理事项\n共 7 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入目录名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择目录分类",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择信息资源类型",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择更新周期",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ]
+}

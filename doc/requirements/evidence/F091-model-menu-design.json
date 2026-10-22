@@ -1,0 +1,421 @@
+{
+  "time": "2026-10-22T04:21:48.128Z",
+  "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+  "title": "规范化数据建模",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n模型管理\n-\n查询重置展开\n新增\n导入\n模型对比\n\t序号\t模型名称\t模型属性\t模型类型\t实体/表\t创建时间\t创建人\t状态\t版本\t操作\n\t\n1\n\t\ntest\n\t\n普通模型\n\t\n概念/逻辑模型\n\t\n7\n\t\n2025-09-24 18:39:17\n\t\n陈云亮\n\t\n正常\n\t\nV1.0.0\n\t\n设计\n锁定\n复制\n更多\n共 1 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入模型名称",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入创建人",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "开始日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "结束日期",
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "placeholder": null,
+      "min": "1",
+      "max": "1",
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [],
+    "fields": [
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入模型名称",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请输入创建人",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "开始日期",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "结束日期",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "checkbox",
+        "placeholder": "",
+        "checked": false,
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "text",
+        "placeholder": "请选择",
+        "value": "20条/页",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "",
+        "type": "number",
+        "placeholder": "",
+        "value": "1",
+        "min": "1",
+        "max": "1",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "模型管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "模型管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "· 模型设计",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "· 模型物化",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 模型分析",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "· 模型数据统计",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "系统配置",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "系统配置",
+        "cls": "el-submenu__title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "模型管理",
+        "title": "模型管理",
+        "href": null,
+        "cls": "audaque-table-title__title-text"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "查询",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--primary el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "重置",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button audaque-form-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "I",
+        "text": "新增",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+      },
+      {
+        "tag": "I",
+        "text": "导入",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate iconfont dms-model-daoru"
+      },
+      {
+        "tag": "I",
+        "text": "模型对比",
+        "title": "",
+        "href": null,
+        "cls": "iconfont audaque-action-icon--opreate iconfont dms-model-moxingduibi-01"
+      },
+      {
+        "tag": "I",
+        "text": "test",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "V1.0.0",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+      },
+      {
+        "tag": "I",
+        "text": "设计",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "锁定",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "I",
+        "text": "复制",
+        "title": "",
+        "href": null,
+        "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+      },
+      {
+        "tag": "SPAN",
+        "text": "更多",
+        "title": "",
+        "href": null,
+        "cls": "audaque-table-operate-column__more-text el-dropdown-selfdefine"
+      }
+    ],
+    "headers": [
+      "",
+      "序号",
+      "模型名称",
+      "模型属性",
+      "模型类型",
+      "实体/表",
+      "创建时间",
+      "创建人",
+      "状态",
+      "版本",
+      "操作"
+    ],
+    "rows": [
+      {
+        "text": "\t\n1\n\t\ntest\n\t\n普通模型\n\t\n概念/逻辑模型\n\t\n7\n\t\n2025-09-24 18:39:17\n\t\n陈云亮\n\t\n正常\n\t\nV1.0.0\n\t\n设计\n锁定\n复制\n更多",
+        "actions": [
+          {
+            "text": "test",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+          },
+          {
+            "text": "V1.0.0",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+          },
+          {
+            "text": "设计",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "锁定",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "复制",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          },
+          {
+            "text": "删除",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+          },
+          {
+            "text": "定时监测配置",
+            "title": "",
+            "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+          }
+        ]
+      }
+    ],
+    "options": []
+  },
+  "scopeNote": "仅页面/表单/确认框只读采样；未提交业务写入或执行任务。"
+}

@@ -1,0 +1,307 @@
+{
+  "time": "2026-10-22T04:30:20.117Z",
+  "url": "http://www.audaqueproxy.com:10223/drms/advisory/edit?optType=add&business=list",
+  "title": "业务需求管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n业务需求管理系统\n需求看板\n需求看板\n项目管理\n需求管理\n任务中心\n我发起的任务\n待处理任务\n已处理任务\n需求咨询\n咨询列表\n咨询处理\n新增咨询\n返回\n标题\n发起部门\n发起人\n相关附件\n上传附件\n\n暂无数据\n\n需求描述\n0/500\n预计应用成效\n0/500\n取 消提 交",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请输入标题",
+      "label": "标题",
+      "min": null,
+      "max": null,
+      "maxlength": "50"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "请选择发起部门",
+      "label": "发起部门",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "placeholder": "",
+      "label": "发起人",
+      "min": null,
+      "max": null,
+      "maxlength": null,
+      "disabled": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "需求描述",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": null,
+      "label": "预计应用成效",
+      "min": null,
+      "max": null,
+      "maxlength": "500"
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "placeholder": null,
+      "min": null,
+      "max": null,
+      "maxlength": null
+    }
+  ],
+  "elements": {
+    "forms": [
+      {
+        "label": "标题",
+        "requiredMarker": true,
+        "text": "标题"
+      },
+      {
+        "label": "发起部门",
+        "requiredMarker": true,
+        "text": "发起部门"
+      },
+      {
+        "label": "发起人",
+        "requiredMarker": false,
+        "text": "发起人"
+      },
+      {
+        "label": "相关附件",
+        "requiredMarker": true,
+        "text": "相关附件\n上传附件\n\n暂无数据"
+      },
+      {
+        "label": "需求描述",
+        "requiredMarker": true,
+        "text": "需求描述\n0/500"
+      },
+      {
+        "label": "预计应用成效",
+        "requiredMarker": true,
+        "text": "预计应用成效\n0/500"
+      }
+    ],
+    "fields": [
+      {
+        "label": "标题",
+        "type": "text",
+        "placeholder": "请输入标题",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": 50,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "发起部门",
+        "type": "text",
+        "placeholder": "请选择发起部门",
+        "value": "",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": true,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "发起人",
+        "type": "text",
+        "placeholder": "",
+        "value": "陈云亮",
+        "min": "",
+        "max": "",
+        "minlength": -1,
+        "maxlength": -1,
+        "readonly": false,
+        "disabled": true,
+        "required": false
+      },
+      {
+        "label": "需求描述",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      },
+      {
+        "label": "预计应用成效",
+        "type": "textarea",
+        "placeholder": "",
+        "value": "",
+        "minlength": -1,
+        "maxlength": 500,
+        "readonly": false,
+        "disabled": false,
+        "required": false
+      }
+    ],
+    "menus": [
+      {
+        "text": "需求看板\n需求看板",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "需求看板",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "需求看板",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "项目管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "项目管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "需求管理",
+        "cls": "el-submenu"
+      },
+      {
+        "text": "需求管理",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "任务中心\n我发起的任务\n待处理任务\n已处理任务",
+        "cls": "el-submenu is-opened"
+      },
+      {
+        "text": "任务中心",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "我发起的任务",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "待处理任务",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "已处理任务",
+        "cls": "el-menu-item"
+      },
+      {
+        "text": "需求咨询\n咨询列表\n咨询处理",
+        "cls": "el-submenu is-active is-opened"
+      },
+      {
+        "text": "需求咨询",
+        "cls": "el-submenu__title"
+      },
+      {
+        "text": "咨询列表",
+        "cls": "el-menu-item is-active"
+      },
+      {
+        "text": "咨询处理",
+        "cls": "el-menu-item"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "DIV",
+        "text": "myspace",
+        "title": "",
+        "href": null,
+        "cls": "project-content el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "myspace",
+        "title": "myspace",
+        "href": null,
+        "cls": "project-text"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "",
+        "href": null,
+        "cls": "el-dropdown-link el-dropdown-selfdefine"
+      },
+      {
+        "tag": "SPAN",
+        "text": "默认租户",
+        "title": "默认租户",
+        "href": null,
+        "cls": "active-tenant-name"
+      },
+      {
+        "tag": "SPAN",
+        "text": "欢迎，陈云亮",
+        "title": "",
+        "href": null,
+        "cls": "audaque-menu-dark el-dropdown-selfdefine"
+      },
+      {
+        "tag": "DIV",
+        "text": "新增咨询",
+        "title": "新增咨询",
+        "href": null,
+        "cls": "audaque-edit-tab__title-text"
+      },
+      {
+        "tag": "I",
+        "text": "上传附件",
+        "title": "",
+        "href": null,
+        "cls": "iconfontmain audaque-action-icon--opreate main-shangchuan el-popover__reference"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "取 消",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--default el-button--medium"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "提 交",
+        "title": "",
+        "href": null,
+        "disabled": false,
+        "cls": "el-button el-button--primary el-button--medium"
+      }
+    ],
+    "headers": [],
+    "rows": [],
+    "options": []
+  },
+  "scopeNote": "仅打开新增表单；未保存/提交/上传。"
+}
