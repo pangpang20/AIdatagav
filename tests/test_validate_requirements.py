@@ -65,4 +65,10 @@ class RequirementsValidationTests(unittest.TestCase):
         ops={k:{'opened':k=='list','evidence':['E1'],'businessWriteExecuted':False} for k in ['list','detail','add','edit','delete']}
         self.assertEqual([],v.crud_errors([{'module':'DS','name':'source','operations':ops}],{'E1':{'elements':{'headers':['name']}}}))
 
+    def test_stale_route_content_cannot_prove_operation_opened(self):
+        ops={k:{'opened':k=='add','evidence':['E1'],'businessWriteExecuted':False} for k in ['list','detail','add','edit','delete']}
+        data={'E1':{'quality':{'targetValid':False,'reason':'previous page retained'},'elements':{'fields':[{'label':'old form'}]}}}
+        errors=v.crud_errors([{'module':'GDRS','name':'resource','operations':ops}],data)
+        self.assertTrue(any('invalid target' in e for e in errors))
+
 if __name__=='__main__':unittest.main()

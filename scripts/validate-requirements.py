@@ -79,6 +79,8 @@ def crud_errors(objects,data):
             sources=op.get('evidence',[])
             if not sources or any(k not in data for k in sources):errors.append(f'{key}/{kind}: missing CRUD evidence')
             if op.get('businessWriteExecuted'):errors.append(f'{key}/{kind}: business write exceeds read-only scope')
+            if op.get('opened') and any(data.get(k,{}).get('quality',{}).get('targetValid') is False for k in sources):
+                errors.append(f'{key}/{kind}: opened claim includes invalid target content')
             if op.get('opened') and not any(data.get(k,{}).get('elements',{}).get(a) for k in sources for a in ['fields','forms','headers','rows','options']):errors.append(f'{key}/{kind}: opened claim has navigation-only evidence')
     return errors
 
