@@ -58,6 +58,8 @@ def target_limitation(d):
     reason = INVALID.get(d['id'], '')
     if not (d.get('text') or '').strip():
         reason = reason or '页面正文为空，未取得目标内容。'
+    if '您访问的内容不存在，请确认访问地址是否正确' in (d.get('text') or ''):
+        reason = reason or '实际取得内容不存在错误页；截图保留，但未取得所选业务目标内容。'
     if d.get('operation', {}).get('changedContent') is False:
         reason = reason or '操作后正文和目标路径未变化，未取得独立目标内容。'
     if not d.get('forms') and not d.get('headers') and not d.get('actions'):

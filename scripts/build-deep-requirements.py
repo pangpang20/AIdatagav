@@ -67,7 +67,7 @@ DECISIONS = {
     'WO': '同一申请可产生多个节点工单；办理、撤回、催办和查看分别授权，不能按按钮名称推定执行结果。',
     'SPACE': '空间成员关系不等同部门或租户角色；空间切换后的资源范围和授权继承需确认。',
 }
-READ_ACTIONS = {'查看', '查看详情', '详情', '运行结果', '版本管理', '业务信息', '数据字典',
+READ_ACTIONS = {'查看', '查看详情', '详情', '资源详情', '资源信息', '运行结果', '版本管理', '业务信息', '数据字典',
                 '变更信息', '查看流程图', '查看节点', '配置节点信息', '表单信息', '审核历史'}
 
 
@@ -96,10 +96,17 @@ def prerequisite(sample):
 
 def operation_scope(sample):
     """Qualify a reviewed subobject without inferring from the clicked label."""
-    if sample.get('url') == '/dacs/dataAsset/assetCatalog':
+    reviewed = {
+        '/dacs/dataAsset/assetCatalog': ({'添加资产类目', '修改资产类目'}, '资产类目'),
+        '/dss/standard/system/dataSetList': ({'添加标准模型表分类', '修改标准模型表分类', '编辑标准模型表分类'}, '标准模型表分类'),
+        '/dss/standard/system/indexItemList': ({'新增节点'}, '标准字段分类节点'),
+        '/dss/standard/system/indexCodeList': ({'新增节点'}, '标准代码分类节点'),
+    }
+    if sample.get('url') in reviewed:
+        titles, scope = reviewed[sample['url']]
         lines = (sample.get('text') or '').splitlines()[-12:]
-        if any(line.strip() in {'添加资产类目', '修改资产类目'} for line in lines):
-            return '资产类目'
+        if any(line.strip() in titles for line in lines):
+            return scope
     return ''
 
 
@@ -273,7 +280,7 @@ def build(root=ROOT):
                         '3. 页面中的最终保存、提交、删除、运行或审批动作未执行。取消后的返回位置仅在独立操作记录明确记载时作为已观察结果。', '',
                         '【拟定需求】维护表单提交前逐字段校验；出错定位字段并保留非秘密输入。保存期间防重复提交；超时先核查结果再允许重试。修改按稳定标识回读目标与版本，取消不改变原记录。以上为拟定开发行为。', '']
             if kind != '页面' and operation_scope(d):
-                out += ['【操作观察】本次打开的是“'+operation_scope(d)+'”维护弹窗；不作为资产登记或资产记录编辑的目标证据。自定义控件标签与原始文字见来源，未提取到HTML表单属性不代表该弹窗无字段。', '']
+                out += ['【操作观察】本次打开的是“'+operation_scope(d)+'”维护弹窗；仅定义该分类或类目，不能作为列表业务记录的新增或编辑证据。自定义控件标签与原始文字见来源，未提取到HTML表单属性不代表该弹窗无字段。', '']
             if '暂无数据' in d.get('text',''):
                 out += ['【页面观察】采样中出现“暂无数据”；它可能属于列表、下拉或子表，须结合截图定位。不能据此宣称整个模块无数据，也不能用空列表证明查询失败。', '']
             if '请求异常' in d.get('text',''):

@@ -33,6 +33,13 @@ class LiveIndexTests(unittest.TestCase):
             self.assertTrue(idx.target_limitation(sample))
         self.assertFalse(idx.target_limitation({'id':'form', 'text':'新增', 'forms':[{'label':'名称'}]}))
 
+    def test_not_found_page_is_preserved_but_is_not_business_target_content(self):
+        sample = {'id':'not-found', 'text':'数据运营平台\n您访问的内容不存在，请确认访问地址是否正确\n返回',
+                  'actions':[{'text':'返回'}]}
+        self.assertIn('错误页', idx.target_limitation(sample))
+        self.assertFalse(idx.target_limitation({'id':'valid', 'text':'消息模板\n错误页模板',
+                                                'headers':['模板名称']}))
+
     def test_later_unprocessed_queue_keeps_prior_page_and_operation_visible(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); live = root / 'evidence/live-recheck-20261022'; live.mkdir(parents=True)

@@ -109,6 +109,17 @@ class DeepRequirementsTests(unittest.TestCase):
         self.assertEqual('', builder.operation_scope({
             'url':sample['url'], 'text':'数据资产目录\n新增\n资产名称'}))
 
+    def test_standard_tree_maintenance_is_distinct_from_record_maintenance(self):
+        for path, title, scope in [
+            ('/dss/standard/system/dataSetList', '添加标准模型表分类', '标准模型表分类'),
+            ('/dss/standard/system/dataSetList', '编辑标准模型表分类', '标准模型表分类'),
+            ('/dss/standard/system/indexItemList', '新增节点', '标准字段分类节点'),
+            ('/dss/standard/system/indexCodeList', '新增节点', '标准代码分类节点'),
+        ]:
+            self.assertEqual(scope, builder.operation_scope({'url':path, 'text':title+'\n名称\n取消\n确认'}))
+            self.assertEqual('', builder.operation_scope({'url':path, 'text':'编辑标准字段\n字段名称'}))
+        self.assertEqual('', builder.operation_scope({'url':'/other', 'text':'新增节点'}))
+
     def test_delete_confirmation_is_reused_only_for_an_exact_unique_object(self):
         record = {'module':'X', 'name':'资源管理', 'operations':{'delete':{
             'opened':True, 'confirmationObserved':True, 'evidence':['old-confirm']}}}
