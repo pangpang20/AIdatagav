@@ -13,6 +13,75 @@ LINK=re.compile(r'!?\[[^\]]*\]\(([^)]+)\)')
 REQ=re.compile(r'^### ([A-Z]+-\d{3})\b',re.M)
 AC=re.compile(r'^\| [A-Z]+-AC-\d{3} \|.*$',re.M)
 PLACEHOLDERS=('['+'当前用户'+']','['+'当前账号'+']','['+'样本数据行已隐去'+']')
+DEPLOYMENT_ORIGIN=re.compile(r'https?://'+re.escape('www.'+'audaqueproxy'+'.com')+r':10223',re.I)
+
+def deployment_errors(text,label):
+    return [f'{label}: deployment origin must be route-only'] if DEPLOYMENT_ORIGIN.search(text) else []
+
+def development_errors(text,module):
+    errors=[];code=module['code'];review=module.get('developmentReview',{})
+    ids=[r['id'] for r in module.get('businessRequirements',[])]
+    if review.get('status')!='partial-ui-only' or review.get('productionReady') is not False:
+        errors.append(f'{code}: partial evidence cannot be production-ready')
+    if not review.get('criticalDecisions') or not review.get('objectBoundary'):
+        errors.append(f'{code}: development decisions/boundary missing')
+    if review.get('expandedOperations')!=ids:
+        errors.append(f'{code}: development operation registry mismatch')
+    for rid in ids:
+        block=re.search(r'^### '+re.escape(rid)+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
+        if not block or '**开发处理细则【拟定需求】**' not in block.group(1):
+            errors.append(f'{rid}: development handling details missing')
+    return errors
+
+def ai_errors(text,records,module_codes,common_acceptance=()):
+    errors=[];ids=[r['id'] for r in records]
+    if REQ.findall(text)!=ids or len(ids)!=len(set(ids)):
+        errors.append('AI: scenario registry/unique ID mismatch')
+    expected=[]
+    labels=['业务目标与入口','授权输入','输出与依据','操作流程','采纳与写入边界','异常与恢复','依赖与待确认']
+    for record in records:
+        rid=record['id'];expected+=record.get('acceptance',[])
+        if record.get('status')!='proposed-unexecuted' or record.get('priority') not in ['P1','P2']:
+            errors.append(f'{rid}: proposal status/priority missing')
+        if not record.get('modules') or not set(record['modules'])<=module_codes:
+            errors.append(f'{rid}: invalid module association')
+        block=re.search(r'^### '+re.escape(rid)+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
+        if not block or '【拟定需求】' not in block.group(1):
+            errors.append(f'{rid}: proposal marker missing');continue
+        for label in labels:
+            if not re.search(r'\*\*'+label+r'\*\*[：:]\S',block.group(1)):
+                errors.append(f'{rid}: missing {label}')
+        rows=AC.findall(block.group(1))
+        if [r.split('|')[1].strip() for r in rows]!=record.get('acceptance',[]):
+            errors.append(f'{rid}: acceptance registry mismatch')
+        if not rows:errors.append(f'{rid}: no planned acceptance')
+        for row in rows:
+            refs=re.findall(r'(?<![A-Z-])AI-\d{3}\b',row)
+            if refs!=[rid]:errors.append(f'{rid}: invalid acceptance reference')
+    rows=AC.findall(text);expected+=list(common_acceptance)
+    if [r.split('|')[1].strip() for r in rows]!=expected or len(expected)!=len(set(expected)):
+        errors.append('AI: acceptance set/unique ID mismatch')
+    if any('【拟定，未执行】' not in row or '【已执行' in row for row in rows):
+        errors.append('AI: acceptance must remain unexecuted')
+    return errors
+
+def supplement_errors(text,record):
+    errors=[];ids=record.get('requirements',[])
+    if REQ.findall(text)!=ids or len(ids)!=len(set(ids)):
+        errors.append('user menu: supplement requirement registry mismatch')
+    rows=AC.findall(text)
+    if [r.split('|')[1].strip() for r in rows]!=record.get('acceptance',[]):
+        errors.append('user menu: supplement acceptance registry mismatch')
+    for n in range(1,9):
+        if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'user menu: missing section {n}')
+    if '【页面观察】' not in text or '目标页' not in text or '待确认' not in text:
+        errors.append('user menu: evidence boundary missing')
+    for row in rows:
+        refs=re.findall(r'(?<![A-Z-])UAC-\d{3}\b',row)
+        if len(refs)!=1 or refs[0] not in ids:errors.append('user menu: invalid acceptance reference')
+        if '【拟定，未执行】' not in row or '【已执行' in row:
+            errors.append('user menu: acceptance must remain unexecuted')
+    return errors
 
 def heading_anchors(text):
     anchors=set();counts={}
@@ -211,6 +280,7 @@ def validate(root):
             errors+=archive_errors(path,m)
             business=(folder/'需求说明.md').read_text(encoding='utf-8')
             errors+=business_errors(business,m,text,data)
+            errors+=development_errors(business,m)
             business_ids+=REQ.findall(business)+[r.split('|')[1].strip() for r in AC.findall(business)]
         for n in range(1,9):
             if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{m["code"]}: missing section {n}')
@@ -235,10 +305,38 @@ def validate(root):
         errors+=field_constraint_errors(text,data,m['code'])
     if len(all_ids)!=len(set(all_ids)):errors.append('IDs overlap across modules')
     if len(business_ids)!=len(set(business_ids)):errors.append('business IDs overlap across modules')
+    ai_path=root/'AI能力规划.md'
+    ai_records=manifest.get('aiCapabilities',[])
+    if not ai_path.is_file() or len(ai_records)!=10:errors.append('AI: expected 10 proposed scenarios')
+    else:errors+=ai_errors(ai_path.read_text(encoding='utf-8'),ai_records,set(codes),manifest.get('aiCommonAcceptance',[]))
+    supplements=manifest.get('businessSupplements',[])
+    for record in supplements:
+        supplement=root/record['file']
+        if not supplement.is_file():errors.append('supplement document missing');continue
+        errors+=supplement_errors(supplement.read_text(encoding='utf-8'),record)
+    user_sources=manifest.get('userSuppliedEvidence',[])
+    for record in user_sources:
+        path=root/record['image']
+        if not path.is_file():errors.append(f'{record["id"]}: user image missing');continue
+        try:png_check(path)
+        except Exception as exc:errors.append(f'{record["id"]}: {exc}')
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=record.get('sha256'):
+            errors.append(f'{record["id"]}: user image hash mismatch')
+        meta=root/record['metadata']
+        if not meta.is_file():errors.append(f'{record["id"]}: user image metadata missing');continue
+        captured=json.loads(meta.read_text(encoding='utf-8'))
+        if captured.get('sourceType')!='user-supplied-screenshot' or captured.get('capturedAt') is not None:
+            errors.append(f'{record["id"]}: user image source/time misclassified')
+        if captured.get('targetPagesObserved') is not False or len(captured.get('visibleMenuItems',[]))!=5:
+            errors.append(f'{record["id"]}: menu/target observation mismatch')
+        if record['image'] not in index or record['metadata'] not in index:
+            errors.append(f'{record["id"]}: user image index missing')
+    if len(supplements)!=1 or len(user_sources)!=1:errors.append('user menu supplement/evidence registration missing')
     for path in root.rglob('*'):
         if not path.is_file() or path.suffix not in ['.md','.json','.py']:continue
         text=path.read_text(encoding='utf-8')
         errors+=secret_errors(text,str(path.relative_to(root)))
+        errors+=deployment_errors(text,str(path.relative_to(root)))
         if any(p in text for p in PLACEHOLDERS):errors.append(f'{path.name}: leftover business replacement placeholder')
         if path.suffix=='.md':errors+=markdown_errors(text,path,root)
     for short in ['E001','E003','E025','E026','E041','E056','E078','E090','E103']:
@@ -250,6 +348,13 @@ def validate(root):
     idqs=next(m for m in modules if m['code']=='IDQS')
     if any(k.startswith('E048') for k in idqs['evidence']):errors.append('asset evidence incorrectly assigned to intelligent query')
     stats={'modules':len(modules),'crud_objects':len(manifest.get('crudObjects',[])),'samples':len(samples),'requirements':sum(len(m['requirements']) for m in modules),'acceptance_cases':sum(len(m['acceptance']) for m in modules),'business_requirements':sum(len(m.get('businessRequirements',[])) for m in modules),'business_acceptance_cases':sum(len(m.get('businessAcceptance',[])) for m in modules),'research_archives':sum(bool(m.get('researchFile')) for m in modules),'pngs_decoded':len(png_files),'errors':len(errors)}
+    stats.update({'development_reviews':sum(bool(m.get('developmentReview')) for m in modules),
+                  'production_ready_modules':sum(m.get('developmentReview',{}).get('productionReady') is True for m in modules),
+                  'ai_scenarios':len(ai_records),
+                  'ai_acceptance_cases':sum(len(r.get('acceptance',[])) for r in ai_records)+len(manifest.get('aiCommonAcceptance',[])),
+                  'supplement_requirements':sum(len(r.get('requirements',[])) for r in supplements),
+                  'supplement_acceptance_cases':sum(len(r.get('acceptance',[])) for r in supplements),
+                  'user_supplied_images':len(user_sources)})
     return errors,stats
 
 if __name__=='__main__':
