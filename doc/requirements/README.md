@@ -87,3 +87,5 @@
 目标仓库：git@github.com:pangpang20/AIdatagav.git；分支main；调研前基线8df55b5b96450f2a80b80c1f3c1fefdfa03beace。原指定工作目录不存在，使用此前为空的C:/chenyunliang/code/AIdatagav克隆，原README与LICENSE保留。
 
 校验工具已独立提交9e87826、09ed455、ffa0f05、b203e42；文档、截图与会话记录单独提交。实际提交/推送回执以最终报告和Git历史为准，不把待执行操作写成已完成。命令和结果见[校验说明](./校验说明.md)；文档校验不能替代应用端到端验收。
+
+2026-10-22 14:37 +08:00回执：文档提交5d1da4b5c6fc214948b24ebb67584926988f7074，已推送origin/main，git ls-remote确认远端SHA相同。当时工作区干净；本段及会话回执随后另作记录提交。页面全量取证仍未完成，具体缺口见矩阵。
