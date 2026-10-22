@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:13:37.555Z",
-  "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+  "url": "/dis/taskManagement/dataAcquisition/list",
   "title": "数据集成采集",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析\n表同步\n查询重置\n生成调度流程\n新增\n\t序号\t任务名称\t所属部门\t数据源类型\t目的源类型\t执行次数\t采集数据量\t创建时间\t任务状态\t操作\n\t\n1\n\t\ntest\n\t\n数据集成\n\t\n库表\n\t\n库表\n\t\n0\n\t\n0\n\t\n2025-09-24 18:30:22\n\t\n暂存中\n\t\n手动运行\n运行结果\n编辑\n更多\n\n\n\t\n2\n\t\ntest002_copy_copy\n\t\n数据集成\n\t\n库表\n\t\n库表\n\t\n2\n\t\n6\n\t\n2025-08-25 10:26:40\n\t\n已结束\n\t\n手动运行\n运行结果\n编辑\n更多\n\n\n\t\n3\n\t\ntest002_copy\n\t\n数据集成\n\t\n库表\n\t\n库表\n\t\n1\n\t\n2\n\t\n2025-08-19 16:57:40\n\t\n已结束\n\t\n手动运行\n运行结果\n编辑\n更多\n\n\n\t\n4\n\t\ntest002\n\t\n数据集成\n\t\n库表\n\t\n库表\n\t\n1\n\t\n2\n\t\n2025-08-19 16:55:48\n\t\n已结束\n\t\n手动运行\n运行结果\n编辑\n更多\n\n\n\t\n5\n\t\ntest001\n\t\n数据集成\n\t\n库表\n\t\n库表\n\t\n5\n\t\n10\n\t\n2025-08-19 15:49:43\n\t\n已结束\n\t\n手动运行\n运行结果\n编辑\n更多\n\n\n\t\n6\n\t\ntest_cyl\n\t\n数据集成\n\t\n库表\n\t\n库表\n\t\n10\n\t\n0\n\t\n2025-08-11 17:04:12\n\t\n已结束\n\t\n手动运行\n运行结果\n编辑\n更多\n\n\n\t\n7\n\t\ntest01\n\t\n根部门\n\t\n库表\n\t\n库表\n\t\n5\n\t\n4\n\t\n2025-07-28 10:46:16\n\t\n已结束\n\t\n手动运行\n运行结果\n编辑\n更多\n共 7 条\n1\n前往页",
   "controls": [

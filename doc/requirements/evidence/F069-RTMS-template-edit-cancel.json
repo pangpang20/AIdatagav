@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:17:43.588Z",
-  "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+  "url": "/rtms/report/reportTemplate/list",
   "title": "报告模板",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n报告模板\n· 模板管理\n模板管理\n查询重置\n复制\n发布\n取消发布\n新增\n\t序号\t模板名称\t部门名称\t适用对象\t模板说明\t报告类型\t状态\t被引用数\t创建时间\n\t操作\n\t\n1\n\t\n测试007238482\n\t\n某委办局\n\t\n\t\n\t\n质量检测报告\n\t\n未发布\n\t\n0\n\t\n2026-05-07 19:56:14\n\t\n编辑\n删除\n发布\n\n\n\t\n2\n\t\n测试000000\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n未发布\n\t\n0\n\t\n2026-03-26 18:31:53\n\t\n编辑\n删除\n发布\n\n\n\t\n3\n\t\n测试02-复制\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n未发布\n\t\n0\n\t\n2025-12-04 20:16:59\n\t\n编辑\n删除\n发布\n\n\n\t\n4\n\t\n测试\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n未发布\n\t\n0\n\t\n2025-12-04 20:16:42\n\t\n编辑\n删除\n发布\n\n\n\t\n5\n\t\n测试模板123\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-28 09:53:31\n\t\n编辑\n取消发布\n\n\n\t\n6\n\t\n测试模板\n\t\n根部门\n\t\n\t\n\t\n质量检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-16 18:08:11\n\t\n编辑\n取消发布\n\n\n\t\n7\n\t\n评价系统报告模板\n\t\n某委办局\n\t\n\t\n\t\n评价报告\n\t\n已发布\n\t\n0\n\t\n2025-08-07 16:52:12\n\t\n编辑\n取消发布\n\n\n\t\n8\n\t\n数据质量检测系统报告模板\n\t\n某委办局\n\t\n\t\n\t\n质量检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-07 15:55:47\n\t\n编辑\n取消发布\n\n\n\t\n9\n\t\n数据安全检测报告模板\n\t\n某委办局\n\t\n\t\n\t\n安全检测报告\n\t\n已发布\n\t\n0\n\t\n2025-08-07 15:44:43\n\t\n编辑\n取消发布\n\n\n\t\n10\n\t\nTEST\n\t\n某委办局\n\t\n\t\n\t\n安全检测报告\n\t\n已发布\n\t\n0\n\t\n2025-05-21 18:18:12\n\t\n编辑\n取消发布\n共 10 条\n1\n前往页",
   "controls": [

@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:31:52.387Z",
-  "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+  "url": "/mdm/metadata/manage/collectList",
   "title": "元数据管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n元数据分析\n自动采集\n手动采集\n序号\t任务名称\t调度策略\t数据来源名称\t任务状态\t最后执行时间\t采集日志\t调度状态\t操作\n共 8 条\n1\n前往页",
   "controls": [

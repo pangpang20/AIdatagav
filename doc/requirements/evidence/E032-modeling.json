@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:56:26.917Z",
-  "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+  "url": "/dms/modelManagement/list",
   "title": "规范化数据建模",
   "text": null,
   "controls": [

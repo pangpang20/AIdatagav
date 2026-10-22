@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:50:59.906Z",
-  "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/index",
+  "url": "/dop/dbms/config/applyConfig/index",
   "title": "数据需求管理",
   "text": null,
   "controls": [

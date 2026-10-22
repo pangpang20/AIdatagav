@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:16:21.169Z",
-  "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+  "url": "/ems/programmeManage/list",
   "title": "评价管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n评价任务\n 评价报告\n 我的评价\n方案管理\n查询重置\n新增\n序号\t方案编号\t方案名称\t应用描述\t所属部门\t关联指标\t关联任务\t关联模板\t创建时间\t状态\t操作\n暂无数据",
   "controls": [

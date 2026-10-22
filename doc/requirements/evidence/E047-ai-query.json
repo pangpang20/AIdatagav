@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:00:03.350Z",
-  "url": "http://www.audaqueproxy.com:10223/idqs/inquire",
+  "url": "/idqs/inquire",
   "title": "智能查询系统",
   "text": null,
   "controls": [

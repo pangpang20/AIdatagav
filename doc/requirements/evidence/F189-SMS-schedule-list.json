@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:39:52.309Z",
-  "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+  "url": "/sms/schedule/manage/scheduleList",
   "title": "任务编排与调度",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n 概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n告警管理\n资源管理\nGLDM开发IDE\n 调度统计\n配置管理\n流程调度管理\n查询重置\n调度配置\n单次运行\n流程启动\n流程停止\n\t序号\t流程名称\t\n流程状态\n\t发布人\t\n调度策略\n\t发布时间\n\t操作\n暂无数据",
   "controls": [

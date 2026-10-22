@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:51:07.087Z",
-  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team/edit?optType=add",
+  "url": "/dop/dbms/requirement/prepare/team/edit?optType=add",
   "title": "数据需求管理",
   "text": null,
   "controls": [

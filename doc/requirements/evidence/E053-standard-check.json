@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:01:19.212Z",
-  "url": "http://www.audaqueproxy.com:10223/dsts/standard/plan/list",
+  "url": "/dsts/standard/plan/list",
   "title": "数据标准检测",
   "text": null,
   "controls": [

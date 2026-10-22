@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:01:27.608Z",
-  "url": "http://www.audaqueproxy.com:10223/dsets/tableAwaitList/list",
+  "url": "/dsets/tableAwaitList/list",
   "title": "数据安全检测",
   "text": null,
   "controls": [

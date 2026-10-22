@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:32:52.779Z",
-  "url": "http://www.audaqueproxy.com:10223/dsts/standard/plan/list",
+  "url": "/dsts/standard/plan/list",
   "title": "数据标准检测",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准检测\n标准检测\n数据评价\n检测方案\n查询重置\n复制\n启用\n取消启用\n\t序号\t方案名称\t适用对象\t方案说明\t状态\t适用标准字段\t任务\t创建时间\t操作\n暂无数据",
   "controls": [

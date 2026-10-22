@@ -86,7 +86,34 @@
           "executed": false,
           "evidence": []
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "3b183c92f31107f9f41cca2d3e90f9481c64acb1ca76c34e5e73a5b75233fe81",
+      "businessRequirements": [
+        {
+          "id": "AUTH-001",
+          "object": "登录",
+          "operation": "entry",
+          "evidence": [
+            "E002-login-ready",
+            "E004-portal-ready"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "AUTH-AC-001",
+        "AUTH-AC-002"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "账号身份来源、锁定/验证码策略、会话有效期、登出及单点登录协议",
+        "objectBoundary": "账号、认证结果与登录会话",
+        "expandedOperations": [
+          "AUTH-001"
+        ]
+      }
     },
     {
       "code": "HOME",
@@ -184,7 +211,50 @@
           "executed": false,
           "evidence": []
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "c8cba043b9e15f0a0f9698b637aa78cdbdbe265c97538ddecae51c7d3be41c5c",
+      "businessRequirements": [
+        {
+          "id": "HOME-001",
+          "object": "工作台",
+          "operation": "entry",
+          "evidence": [
+            "E005-demand-nav",
+            "E021-development-nav",
+            "E037-unification-nav",
+            "E043-assets-nav",
+            "E052-evaluation-nav",
+            "E059-backend-nav"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "HOME-002",
+          "object": "工作台",
+          "operation": "entry",
+          "evidence": [
+            "E004-portal-ready"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "HOME-AC-001",
+        "HOME-AC-002",
+        "HOME-AC-003",
+        "HOME-AC-004"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "菜单授权来源、空间切换影响、事项去重/计数及已读同步",
+        "objectBoundary": "应用入口、个人事项与当前空间/租户上下文",
+        "expandedOperations": [
+          "HOME-001",
+          "HOME-002"
+        ]
+      }
     },
     {
       "code": "DRMS",
@@ -877,6 +947,200 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "d3f1a0fc6c23025e68e64014bf93830936b8f61b7d36cb9f9ff15603fdc18493",
+      "businessRequirements": [
+        {
+          "id": "DRMS-100",
+          "object": "项目管理",
+          "operation": "list",
+          "evidence": [
+            "F097-DRMS-project-edit-cancel",
+            "F092-DRMS-project-query",
+            "F093-DRMS-project-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-102",
+          "object": "项目管理",
+          "operation": "add",
+          "evidence": [
+            "F094-DRMS-project-add",
+            "F095-DRMS-project-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-103",
+          "object": "项目管理",
+          "operation": "edit",
+          "evidence": [
+            "F096-DRMS-project-edit",
+            "F097-DRMS-project-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-105",
+          "object": "需求管理",
+          "operation": "list",
+          "evidence": [
+            "F103-DRMS-demand-add-cancel",
+            "F100-DRMS-demand-query",
+            "F101-DRMS-demand-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-107",
+          "object": "需求管理",
+          "operation": "add",
+          "evidence": [
+            "F102-DRMS-demand-add",
+            "F103-DRMS-demand-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-110",
+          "object": "任务中心",
+          "operation": "list",
+          "evidence": [
+            "F106-DRMS-task-reset",
+            "F105-DRMS-task-query"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-115",
+          "object": "需求咨询",
+          "operation": "list",
+          "evidence": [
+            "F112-DRMS-consult-add-cancel",
+            "F109-DRMS-consult-query",
+            "F110-DRMS-consult-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-117",
+          "object": "需求咨询",
+          "operation": "add",
+          "evidence": [
+            "F111-DRMS-consult-add",
+            "F112-DRMS-consult-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-001",
+          "object": "业务需求管理系统",
+          "operation": "entry",
+          "evidence": [
+            "E063-business-requirements"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DRMS-002",
+          "object": "业务需求管理系统",
+          "operation": "entry",
+          "evidence": [
+            "E063-business-requirements"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DRMS-AC-001",
+        "DRMS-AC-002",
+        "DRMS-AC-003",
+        "DRMS-AC-004",
+        "DRMS-AC-005",
+        "DRMS-AC-006",
+        "DRMS-AC-007",
+        "DRMS-AC-008",
+        "DRMS-AC-009",
+        "DRMS-AC-010",
+        "DRMS-AC-011",
+        "DRMS-AC-012",
+        "DRMS-AC-013",
+        "DRMS-AC-014",
+        "DRMS-AC-015",
+        "DRMS-AC-016",
+        "DRMS-AC-017",
+        "DRMS-AC-018",
+        "DRMS-AC-019",
+        "DRMS-AC-020",
+        "DRMS-AC-021",
+        "DRMS-AC-022",
+        "DRMS-AC-023",
+        "DRMS-AC-024",
+        "DRMS-AC-025",
+        "DRMS-AC-026",
+        "DRMS-AC-027",
+        "DRMS-AC-028",
+        "DRMS-AC-029",
+        "DRMS-AC-030",
+        "DRMS-AC-031",
+        "DRMS-AC-032",
+        "DRMS-AC-033",
+        "DRMS-AC-034",
+        "DRMS-AC-035",
+        "DRMS-AC-036",
+        "DRMS-AC-037",
+        "DRMS-AC-038",
+        "DRMS-AC-039",
+        "DRMS-AC-040",
+        "DRMS-AC-041",
+        "DRMS-AC-042",
+        "DRMS-AC-043",
+        "DRMS-AC-044",
+        "DRMS-AC-045",
+        "DRMS-AC-046",
+        "DRMS-AC-047",
+        "DRMS-AC-048",
+        "DRMS-AC-049",
+        "DRMS-AC-050",
+        "DRMS-AC-051",
+        "DRMS-AC-052",
+        "DRMS-AC-053",
+        "DRMS-AC-054",
+        "DRMS-AC-055",
+        "DRMS-AC-056",
+        "DRMS-AC-057",
+        "DRMS-AC-058",
+        "DRMS-AC-059",
+        "DRMS-AC-060",
+        "DRMS-AC-061",
+        "DRMS-AC-062",
+        "DRMS-AC-063",
+        "DRMS-AC-064",
+        "DRMS-AC-065",
+        "DRMS-AC-066"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "需求后三步、提交/受理/退回状态、任务是否自动生成、项目/附件删除保护",
+        "objectBoundary": "项目、需求申请、咨询与协作任务",
+        "expandedOperations": [
+          "DRMS-100",
+          "DRMS-102",
+          "DRMS-103",
+          "DRMS-105",
+          "DRMS-107",
+          "DRMS-110",
+          "DRMS-115",
+          "DRMS-117",
+          "DRMS-001",
+          "DRMS-002"
+        ]
+      },
+      "aiProposals": [
+        "AI-001"
       ]
     },
     {
@@ -2297,7 +2561,217 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "104b53fcc385d42f67ed7c3fbe1a3e4548290d18e55a75106f4ceb992550976d",
+      "businessRequirements": [
+        {
+          "id": "DBMS-100",
+          "object": "调研委办局",
+          "operation": "list",
+          "evidence": [
+            "F118-DBMS-prepare-add-cancel",
+            "F115-DBMS-prepare-query",
+            "F116-DBMS-prepare-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-102",
+          "object": "调研委办局",
+          "operation": "add",
+          "evidence": [
+            "F117-DBMS-prepare-add",
+            "F118-DBMS-prepare-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-105",
+          "object": "调研里程碑",
+          "operation": "list",
+          "evidence": [
+            "E011-demand-milestone"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-107",
+          "object": "调研里程碑",
+          "operation": "add",
+          "evidence": [
+            "F121-DBMS-plan-add",
+            "F122-DBMS-plan-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-110",
+          "object": "配置管理",
+          "operation": "list",
+          "evidence": [
+            "F124-DBMS-config-list"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-111",
+          "object": "配置管理",
+          "operation": "detail",
+          "evidence": [
+            "F125-DBMS-config-detail",
+            "F126-DBMS-config-detail-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-115",
+          "object": "调研团队",
+          "operation": "list",
+          "evidence": [
+            "E009-demand-team"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-117",
+          "object": "调研团队",
+          "operation": "add",
+          "evidence": [
+            "E020-demand-team-add"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-120",
+          "object": "调研计划列表",
+          "operation": "list",
+          "evidence": [
+            "E012-demand-plans"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-125",
+          "object": "调研实施",
+          "operation": "list",
+          "evidence": [
+            "E013-demand-execution"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-130",
+          "object": "数据归集",
+          "operation": "list",
+          "evidence": [
+            "C003-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DBMS-001",
+          "object": "数据需求管理",
+          "operation": "entry",
+          "evidence": [
+            "E007-demand-prepare-nav",
+            "E010-demand-plan-nav",
+            "E014-demand-report-nav"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DBMS-AC-001",
+        "DBMS-AC-002",
+        "DBMS-AC-003",
+        "DBMS-AC-004",
+        "DBMS-AC-005",
+        "DBMS-AC-006",
+        "DBMS-AC-007",
+        "DBMS-AC-008",
+        "DBMS-AC-009",
+        "DBMS-AC-010",
+        "DBMS-AC-011",
+        "DBMS-AC-012",
+        "DBMS-AC-013",
+        "DBMS-AC-014",
+        "DBMS-AC-015",
+        "DBMS-AC-016",
+        "DBMS-AC-017",
+        "DBMS-AC-018",
+        "DBMS-AC-019",
+        "DBMS-AC-020",
+        "DBMS-AC-021",
+        "DBMS-AC-022",
+        "DBMS-AC-023",
+        "DBMS-AC-024",
+        "DBMS-AC-025",
+        "DBMS-AC-026",
+        "DBMS-AC-027",
+        "DBMS-AC-028",
+        "DBMS-AC-029",
+        "DBMS-AC-030",
+        "DBMS-AC-031",
+        "DBMS-AC-032",
+        "DBMS-AC-033",
+        "DBMS-AC-034",
+        "DBMS-AC-035",
+        "DBMS-AC-036",
+        "DBMS-AC-037",
+        "DBMS-AC-038",
+        "DBMS-AC-039",
+        "DBMS-AC-040",
+        "DBMS-AC-041",
+        "DBMS-AC-042",
+        "DBMS-AC-043",
+        "DBMS-AC-044",
+        "DBMS-AC-045",
+        "DBMS-AC-046",
+        "DBMS-AC-047",
+        "DBMS-AC-048",
+        "DBMS-AC-049",
+        "DBMS-AC-050",
+        "DBMS-AC-051",
+        "DBMS-AC-052",
+        "DBMS-AC-053",
+        "DBMS-AC-054",
+        "DBMS-AC-055",
+        "DBMS-AC-056",
+        "DBMS-AC-057",
+        "DBMS-AC-058",
+        "DBMS-AC-059",
+        "DBMS-AC-060",
+        "DBMS-AC-061",
+        "DBMS-AC-062",
+        "DBMS-AC-063",
+        "DBMS-AC-064",
+        "DBMS-AC-065",
+        "DBMS-AC-066",
+        "DBMS-AC-067",
+        "DBMS-AC-068",
+        "DBMS-AC-069"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "计划/实施/成果的字段、阶段完成口径、人员选择范围、日期先后及重叠规则",
+        "objectBoundary": "委办局联系人、团队、里程碑、计划、实施资料与归集成果",
+        "expandedOperations": [
+          "DBMS-100",
+          "DBMS-102",
+          "DBMS-105",
+          "DBMS-107",
+          "DBMS-110",
+          "DBMS-111",
+          "DBMS-115",
+          "DBMS-117",
+          "DBMS-120",
+          "DBMS-125",
+          "DBMS-130",
+          "DBMS-001"
+        ]
+      }
     },
     {
       "code": "CMS",
@@ -3162,7 +3636,195 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "f79e8db227eb26493396034bcad6ebd118b40bccc2bcd735e9fce86bcabf183b",
+      "businessRequirements": [
+        {
+          "id": "CMS-100",
+          "object": "构件开发",
+          "operation": "list",
+          "evidence": [
+            "F136-CMS-develop-add-cancel",
+            "F133-CMS-develop-query",
+            "F134-CMS-develop-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-101",
+          "object": "构件开发",
+          "operation": "detail",
+          "evidence": [
+            "F137-CMS-develop-detail",
+            "F133-CMS-develop-query",
+            "F134-CMS-develop-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-102",
+          "object": "构件开发",
+          "operation": "add",
+          "evidence": [
+            "F135-CMS-develop-add",
+            "F136-CMS-develop-add-cancel",
+            "F133-CMS-develop-query",
+            "F134-CMS-develop-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-105",
+          "object": "构件名称配置",
+          "operation": "list",
+          "evidence": [
+            "F148-CMS-config-delete-cancel",
+            "F140-CMS-config-query",
+            "F141-CMS-config-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-107",
+          "object": "构件名称配置",
+          "operation": "add",
+          "evidence": [
+            "F142-CMS-config-add",
+            "F143-CMS-config-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-108",
+          "object": "构件名称配置",
+          "operation": "edit",
+          "evidence": [
+            "F144-CMS-config-edit",
+            "F145-CMS-config-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-109",
+          "object": "构件名称配置",
+          "operation": "delete",
+          "evidence": [
+            "F147-CMS-config-delete",
+            "F146-CMS-config-delete-guard",
+            "F148-CMS-config-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-110",
+          "object": "我的构件",
+          "operation": "list",
+          "evidence": [
+            "F151-CMS-mine-reset",
+            "F150-CMS-mine-query"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-111",
+          "object": "我的构件",
+          "operation": "detail",
+          "evidence": [
+            "F152-CMS-mine-detail"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "CMS-001",
+          "object": "构件管理",
+          "operation": "entry",
+          "evidence": [
+            "E064-components"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "CMS-AC-001",
+        "CMS-AC-002",
+        "CMS-AC-003",
+        "CMS-AC-004",
+        "CMS-AC-005",
+        "CMS-AC-006",
+        "CMS-AC-007",
+        "CMS-AC-008",
+        "CMS-AC-009",
+        "CMS-AC-010",
+        "CMS-AC-011",
+        "CMS-AC-012",
+        "CMS-AC-013",
+        "CMS-AC-014",
+        "CMS-AC-015",
+        "CMS-AC-016",
+        "CMS-AC-017",
+        "CMS-AC-018",
+        "CMS-AC-019",
+        "CMS-AC-020",
+        "CMS-AC-021",
+        "CMS-AC-022",
+        "CMS-AC-023",
+        "CMS-AC-024",
+        "CMS-AC-025",
+        "CMS-AC-026",
+        "CMS-AC-027",
+        "CMS-AC-028",
+        "CMS-AC-029",
+        "CMS-AC-030",
+        "CMS-AC-031",
+        "CMS-AC-032",
+        "CMS-AC-033",
+        "CMS-AC-034",
+        "CMS-AC-035",
+        "CMS-AC-036",
+        "CMS-AC-037",
+        "CMS-AC-038",
+        "CMS-AC-039",
+        "CMS-AC-040",
+        "CMS-AC-041",
+        "CMS-AC-042",
+        "CMS-AC-043",
+        "CMS-AC-044",
+        "CMS-AC-045",
+        "CMS-AC-046",
+        "CMS-AC-047",
+        "CMS-AC-048",
+        "CMS-AC-049",
+        "CMS-AC-050",
+        "CMS-AC-051",
+        "CMS-AC-052",
+        "CMS-AC-053",
+        "CMS-AC-054",
+        "CMS-AC-055",
+        "CMS-AC-056",
+        "CMS-AC-057",
+        "CMS-AC-058",
+        "CMS-AC-059",
+        "CMS-AC-060"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "四种规则编辑器、保存/确认/发布语义、分类/导出页及个人移除的真实范围",
+        "objectBoundary": "构件规则、构件名称配置与个人使用记录",
+        "expandedOperations": [
+          "CMS-100",
+          "CMS-101",
+          "CMS-102",
+          "CMS-105",
+          "CMS-107",
+          "CMS-108",
+          "CMS-109",
+          "CMS-110",
+          "CMS-111",
+          "CMS-001"
+        ]
+      }
     },
     {
       "code": "WO",
@@ -3378,6 +4040,50 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "b5a636a559f24ebf71f3f975783af52357c9712ad37f2fce566ff42c5138e3f2",
+      "businessRequirements": [
+        {
+          "id": "WO-100",
+          "object": "我的待办工单",
+          "operation": "list",
+          "evidence": [
+            "C040-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "WO-001",
+          "object": "我的工单",
+          "operation": "entry",
+          "evidence": [
+            "E065-workorders",
+            "E101-current-complete"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "WO-AC-001",
+        "WO-AC-002",
+        "WO-AC-003",
+        "WO-AC-004",
+        "WO-AC-005",
+        "WO-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "每类工单动作/意见、候选人、委派/撤回、节点期限、失败补偿及状态映射",
+        "objectBoundary": "源业务单、工单实例、流程节点与办理记录",
+        "expandedOperations": [
+          "WO-100",
+          "WO-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-001"
       ]
     },
     {
@@ -4463,6 +5169,351 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "28757a352fbebc1a7512d819c3ca26fcb0b0e8641cf0f4ec206b644082f131e5",
+      "businessRequirements": [
+        {
+          "id": "DS-100",
+          "object": "API数据源",
+          "operation": "list",
+          "evidence": [
+            "F029-DS-api-delete-cancel",
+            "F021-DS-api-query",
+            "F022-DS-api-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-102",
+          "object": "API数据源",
+          "operation": "add",
+          "evidence": [
+            "F023-DS-api-add",
+            "F024-DS-api-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-103",
+          "object": "API数据源",
+          "operation": "edit",
+          "evidence": [
+            "F025-DS-api-edit",
+            "F026-DS-api-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-104",
+          "object": "API数据源",
+          "operation": "delete",
+          "evidence": [
+            "F028-DS-api-delete",
+            "F027-DS-api-delete-guard",
+            "F029-DS-api-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-105",
+          "object": "kafka数据源",
+          "operation": "list",
+          "evidence": [
+            "F039-DS-kafka-delete-cancel",
+            "F031-DS-kafka-query",
+            "F032-DS-kafka-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-107",
+          "object": "kafka数据源",
+          "operation": "add",
+          "evidence": [
+            "F033-DS-kafka-add",
+            "F034-DS-kafka-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-108",
+          "object": "kafka数据源",
+          "operation": "edit",
+          "evidence": [
+            "F035-DS-kafka-edit",
+            "F036-DS-kafka-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-109",
+          "object": "kafka数据源",
+          "operation": "delete",
+          "evidence": [
+            "F038-DS-kafka-delete",
+            "F037-DS-kafka-delete-guard",
+            "F039-DS-kafka-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-110",
+          "object": "部门数据源",
+          "operation": "list",
+          "evidence": [
+            "F042-DS-department-reset",
+            "F041-DS-department-query"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-112",
+          "object": "部门数据源",
+          "operation": "add",
+          "evidence": [
+            "F043-DS-department-add"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-115",
+          "object": "数据源列表",
+          "operation": "list",
+          "evidence": [
+            "F047-DS-sources-reset",
+            "F046-DS-sources-query"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-120",
+          "object": "驱动管理",
+          "operation": "list",
+          "evidence": [
+            "F001-datasource-entry"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-122",
+          "object": "驱动管理",
+          "operation": "add",
+          "evidence": [
+            "F003-driver-add-elements"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-125",
+          "object": "数据源管理",
+          "operation": "list",
+          "evidence": [
+            "F009-source-reset",
+            "F006-source-query",
+            "F005-source-edit",
+            "F011-source-driver-options"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-127",
+          "object": "数据源管理",
+          "operation": "add",
+          "evidence": [
+            "F010-source-add-before-driver",
+            "F005-source-edit",
+            "F011-source-driver-options"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-128",
+          "object": "数据源管理",
+          "operation": "edit",
+          "evidence": [
+            "F005-source-edit",
+            "F011-source-driver-options"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DS-129",
+          "object": "数据源管理",
+          "operation": "delete",
+          "evidence": [
+            "F008-source-delete-elements",
+            "F007-source-delete-confirm",
+            "F005-source-edit",
+            "F011-source-driver-options"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DS-AC-001",
+        "DS-AC-002",
+        "DS-AC-003",
+        "DS-AC-004",
+        "DS-AC-005",
+        "DS-AC-006",
+        "DS-AC-007",
+        "DS-AC-008",
+        "DS-AC-009",
+        "DS-AC-010",
+        "DS-AC-011",
+        "DS-AC-012",
+        "DS-AC-013",
+        "DS-AC-014",
+        "DS-AC-015",
+        "DS-AC-016",
+        "DS-AC-017",
+        "DS-AC-018",
+        "DS-AC-019",
+        "DS-AC-020",
+        "DS-AC-021",
+        "DS-AC-022",
+        "DS-AC-023",
+        "DS-AC-024",
+        "DS-AC-025",
+        "DS-AC-026",
+        "DS-AC-027",
+        "DS-AC-028",
+        "DS-AC-029",
+        "DS-AC-030",
+        "DS-AC-031",
+        "DS-AC-032",
+        "DS-AC-033",
+        "DS-AC-034",
+        "DS-AC-035",
+        "DS-AC-036",
+        "DS-AC-037",
+        "DS-AC-038",
+        "DS-AC-039",
+        "DS-AC-040",
+        "DS-AC-041",
+        "DS-AC-042",
+        "DS-AC-043",
+        "DS-AC-044",
+        "DS-AC-045",
+        "DS-AC-046",
+        "DS-AC-047",
+        "DS-AC-048",
+        "DS-AC-049",
+        "DS-AC-050",
+        "DS-AC-051",
+        "DS-AC-052",
+        "DS-AC-053",
+        "DS-AC-054",
+        "DS-AC-055",
+        "DS-AC-056",
+        "DS-AC-057",
+        "DS-AC-058",
+        "DS-AC-059",
+        "DS-AC-060",
+        "DS-AC-061",
+        "DS-AC-062",
+        "DS-AC-063",
+        "DS-AC-064",
+        "DS-AC-065",
+        "DS-AC-066",
+        "DS-AC-067",
+        "DS-AC-068",
+        "DS-AC-069",
+        "DS-AC-070",
+        "DS-AC-071",
+        "DS-AC-072",
+        "DS-AC-073",
+        "DS-AC-074",
+        "DS-AC-075",
+        "DS-AC-076",
+        "DS-AC-077",
+        "DS-AC-078",
+        "DS-AC-079",
+        "DS-AC-080",
+        "DS-AC-081",
+        "DS-AC-082",
+        "DS-AC-083",
+        "DS-AC-084",
+        "DS-AC-085",
+        "DS-AC-086",
+        "DS-AC-087",
+        "DS-AC-088",
+        "DS-AC-089",
+        "DS-AC-090",
+        "DS-AC-091",
+        "DS-AC-092",
+        "DS-AC-093",
+        "DS-AC-094",
+        "DS-AC-095",
+        "DS-AC-096",
+        "DS-AC-097",
+        "DS-AC-098",
+        "DS-AC-099",
+        "DS-AC-100",
+        "DS-AC-101",
+        "DS-AC-102",
+        "DS-AC-103",
+        "DS-AC-104",
+        "DS-AC-105",
+        "DS-AC-106",
+        "DS-AC-107",
+        "DS-AC-108",
+        "DS-AC-109",
+        "DS-AC-110",
+        "DS-AC-111",
+        "DS-AC-112",
+        "DS-AC-113",
+        "DS-AC-114",
+        "DS-AC-115",
+        "DS-AC-116",
+        "DS-AC-117",
+        "DS-AC-118",
+        "DS-AC-119",
+        "DS-AC-120",
+        "DS-AC-121",
+        "DS-AC-122",
+        "DS-AC-123",
+        "DS-AC-124",
+        "DS-AC-125",
+        "DS-AC-126",
+        "DS-AC-127",
+        "DS-AC-128",
+        "DS-AC-129",
+        "DS-AC-130",
+        "DS-AC-131",
+        "DS-AC-132",
+        "DS-AC-133",
+        "DS-AC-134",
+        "DS-AC-135"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "驱动字段协议、来源标识共享、API/Topic子项、连接测试副作用、密文保留及可见范围授权",
+        "objectBoundary": "驱动模板、连接定义、API定义与Kafka Topic配置",
+        "expandedOperations": [
+          "DS-100",
+          "DS-102",
+          "DS-103",
+          "DS-104",
+          "DS-105",
+          "DS-107",
+          "DS-108",
+          "DS-109",
+          "DS-110",
+          "DS-112",
+          "DS-115",
+          "DS-120",
+          "DS-122",
+          "DS-125",
+          "DS-127",
+          "DS-128",
+          "DS-129"
+        ]
+      },
+      "aiProposals": [
+        "AI-003"
       ]
     },
     {
@@ -5496,6 +6547,264 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "c5b2d6be1e3a8b8af2ccf2c46ef056a312a889a90a8b2dd3a76aa0f1c09573d7",
+      "businessRequirements": [
+        {
+          "id": "DIS-100",
+          "object": "表离线同步",
+          "operation": "list",
+          "evidence": [
+            "F161-DIS-table-edit-cancel",
+            "F156-DIS-table-query",
+            "F157-DIS-table-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-102",
+          "object": "表离线同步",
+          "operation": "add",
+          "evidence": [
+            "F158-DIS-table-add",
+            "F159-DIS-table-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-103",
+          "object": "表离线同步",
+          "operation": "edit",
+          "evidence": [
+            "F160-DIS-table-edit",
+            "F161-DIS-table-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-105",
+          "object": "库离线同步",
+          "operation": "list",
+          "evidence": [
+            "F167-DIS-database-add-cancel",
+            "F164-DIS-database-query",
+            "F165-DIS-database-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-107",
+          "object": "库离线同步",
+          "operation": "add",
+          "evidence": [
+            "F166-DIS-database-add",
+            "F167-DIS-database-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-110",
+          "object": "接口及文件解析",
+          "operation": "list",
+          "evidence": [
+            "F173-DIS-api-add-cancel",
+            "F170-DIS-api-query",
+            "F171-DIS-api-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-112",
+          "object": "接口及文件解析",
+          "operation": "add",
+          "evidence": [
+            "F172-DIS-api-add",
+            "F173-DIS-api-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-115",
+          "object": "文件离线同步",
+          "operation": "list",
+          "evidence": [
+            "F179-DIS-file-add-cancel",
+            "F176-DIS-file-query",
+            "F177-DIS-file-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-117",
+          "object": "文件离线同步",
+          "operation": "add",
+          "evidence": [
+            "F178-DIS-file-add",
+            "F179-DIS-file-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-120",
+          "object": "表实时同步",
+          "operation": "list",
+          "evidence": [
+            "F185-DIS-realtime-add-cancel",
+            "F182-DIS-realtime-query",
+            "F183-DIS-realtime-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-122",
+          "object": "表实时同步",
+          "operation": "add",
+          "evidence": [
+            "F184-DIS-realtime-add",
+            "F185-DIS-realtime-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DIS-001",
+          "object": "数据集成采集",
+          "operation": "entry",
+          "evidence": [
+            "E028-integration",
+            "E089-integration-task-nav",
+            "E092-offline-nav"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DIS-AC-001",
+        "DIS-AC-002",
+        "DIS-AC-003",
+        "DIS-AC-004",
+        "DIS-AC-005",
+        "DIS-AC-006",
+        "DIS-AC-007",
+        "DIS-AC-008",
+        "DIS-AC-009",
+        "DIS-AC-010",
+        "DIS-AC-011",
+        "DIS-AC-012",
+        "DIS-AC-013",
+        "DIS-AC-014",
+        "DIS-AC-015",
+        "DIS-AC-016",
+        "DIS-AC-017",
+        "DIS-AC-018",
+        "DIS-AC-019",
+        "DIS-AC-020",
+        "DIS-AC-021",
+        "DIS-AC-022",
+        "DIS-AC-023",
+        "DIS-AC-024",
+        "DIS-AC-025",
+        "DIS-AC-026",
+        "DIS-AC-027",
+        "DIS-AC-028",
+        "DIS-AC-029",
+        "DIS-AC-030",
+        "DIS-AC-031",
+        "DIS-AC-032",
+        "DIS-AC-033",
+        "DIS-AC-034",
+        "DIS-AC-035",
+        "DIS-AC-036",
+        "DIS-AC-037",
+        "DIS-AC-038",
+        "DIS-AC-039",
+        "DIS-AC-040",
+        "DIS-AC-041",
+        "DIS-AC-042",
+        "DIS-AC-043",
+        "DIS-AC-044",
+        "DIS-AC-045",
+        "DIS-AC-046",
+        "DIS-AC-047",
+        "DIS-AC-048",
+        "DIS-AC-049",
+        "DIS-AC-050",
+        "DIS-AC-051",
+        "DIS-AC-052",
+        "DIS-AC-053",
+        "DIS-AC-054",
+        "DIS-AC-055",
+        "DIS-AC-056",
+        "DIS-AC-057",
+        "DIS-AC-058",
+        "DIS-AC-059",
+        "DIS-AC-060",
+        "DIS-AC-061",
+        "DIS-AC-062",
+        "DIS-AC-063",
+        "DIS-AC-064",
+        "DIS-AC-065",
+        "DIS-AC-066",
+        "DIS-AC-067",
+        "DIS-AC-068",
+        "DIS-AC-069",
+        "DIS-AC-070",
+        "DIS-AC-071",
+        "DIS-AC-072",
+        "DIS-AC-073",
+        "DIS-AC-074",
+        "DIS-AC-075",
+        "DIS-AC-076",
+        "DIS-AC-077",
+        "DIS-AC-078",
+        "DIS-AC-079",
+        "DIS-AC-080",
+        "DIS-AC-081",
+        "DIS-AC-082",
+        "DIS-AC-083",
+        "DIS-AC-084",
+        "DIS-AC-085",
+        "DIS-AC-086",
+        "DIS-AC-087",
+        "DIS-AC-088",
+        "DIS-AC-089",
+        "DIS-AC-090",
+        "DIS-AC-091",
+        "DIS-AC-092",
+        "DIS-AC-093",
+        "DIS-AC-094",
+        "DIS-AC-095",
+        "DIS-AC-096",
+        "DIS-AC-097",
+        "DIS-AC-098",
+        "DIS-AC-099",
+        "DIS-AC-100",
+        "DIS-AC-101",
+        "DIS-AC-102",
+        "DIS-AC-103"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "子表配置、增量/CDC/分页/文件规则、并发和限速单位、运行状态下变更及断点恢复",
+        "objectBoundary": "任务定义、输入集合、输出集合、映射与运行实例",
+        "expandedOperations": [
+          "DIS-100",
+          "DIS-102",
+          "DIS-103",
+          "DIS-105",
+          "DIS-107",
+          "DIS-110",
+          "DIS-112",
+          "DIS-115",
+          "DIS-117",
+          "DIS-120",
+          "DIS-122",
+          "DIS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-003"
       ]
     },
     {
@@ -6432,6 +7741,80 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "412a1006e2da10975b7fe51f4f6a1a4ab99db7b834066985e1d168efc46bb0aa",
+      "businessRequirements": [
+        {
+          "id": "SMS-100",
+          "object": "流程开发",
+          "operation": "list",
+          "evidence": [
+            "F128-SMS-flow-list"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SMS-105",
+          "object": "流程调度",
+          "operation": "list",
+          "evidence": [
+            "F191-SMS-schedule-reset",
+            "F190-SMS-schedule-query"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SMS-110",
+          "object": "归集表查询",
+          "operation": "list",
+          "evidence": [
+            "F193-SMS-resource-list"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SMS-001",
+          "object": "任务编排与调度",
+          "operation": "entry",
+          "evidence": [
+            "E029-scheduling",
+            "E030-process-dev-nav",
+            "E031-process-schedule-nav"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "SMS-AC-001",
+        "SMS-AC-002",
+        "SMS-AC-003",
+        "SMS-AC-004",
+        "SMS-AC-005",
+        "SMS-AC-006",
+        "SMS-AC-007",
+        "SMS-AC-008",
+        "SMS-AC-009",
+        "SMS-AC-010",
+        "SMS-AC-011",
+        "SMS-AC-012",
+        "SMS-AC-013",
+        "SMS-AC-014"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "画布节点/连线、循环检测、依赖参数、调度时区/补数、停止与重跑范围",
+        "objectBoundary": "流程组、流程定义/版本、调度计划、执行实例与归集表",
+        "expandedOperations": [
+          "SMS-100",
+          "SMS-105",
+          "SMS-110",
+          "SMS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-010"
       ]
     },
     {
@@ -6922,7 +8305,47 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "5cd478dcccf3b6ac14ddf12c61ca716212b0e649672e548a66ebf3094a6eeecc",
+      "businessRequirements": [
+        {
+          "id": "DMS-100",
+          "object": "模型管理",
+          "operation": "list",
+          "evidence": [
+            "F091-model-menu-design"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DMS-001",
+          "object": "规范化数据建模",
+          "operation": "entry",
+          "evidence": [
+            "E032-modeling"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DMS-AC-001",
+        "DMS-AC-002",
+        "DMS-AC-003",
+        "DMS-AC-004",
+        "DMS-AC-005",
+        "DMS-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "实体字段结构、画布保存、版本兼容、物化SQL/事务/回退以及比较规则",
+        "objectBoundary": "模型、实体/字段/关系、模型版本与物化记录",
+        "expandedOperations": [
+          "DMS-100",
+          "DMS-001"
+        ]
+      }
     },
     {
       "code": "DSS",
@@ -7955,6 +9378,261 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "2070aab42e2581e0f853d49a9c15f3e2ee008df8c346651179b829051e30232b",
+      "businessRequirements": [
+        {
+          "id": "DSS-100",
+          "object": "标准文档管理",
+          "operation": "list",
+          "evidence": [
+            "F202-DSS-document-delete-cancel",
+            "F196-DSS-document-query",
+            "F197-DSS-document-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-102",
+          "object": "标准文档管理",
+          "operation": "add",
+          "evidence": [
+            "E034-standard-add"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-103",
+          "object": "标准文档管理",
+          "operation": "edit",
+          "evidence": [
+            "F198-DSS-document-edit",
+            "F053-DSS-document-edit-cancel",
+            "F199-DSS-document-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-104",
+          "object": "标准文档管理",
+          "operation": "delete",
+          "evidence": [
+            "F201-DSS-document-delete",
+            "F200-DSS-document-delete-guard",
+            "F202-DSS-document-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-105",
+          "object": "标准术语管理",
+          "operation": "list",
+          "evidence": [
+            "F212-DSS-term-delete-cancel",
+            "F204-DSS-term-query",
+            "F205-DSS-term-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-107",
+          "object": "标准术语管理",
+          "operation": "add",
+          "evidence": [
+            "F206-DSS-term-add",
+            "F207-DSS-term-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-108",
+          "object": "标准术语管理",
+          "operation": "edit",
+          "evidence": [
+            "F208-DSS-term-edit",
+            "F209-DSS-term-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-109",
+          "object": "标准术语管理",
+          "operation": "delete",
+          "evidence": [
+            "F211-DSS-term-delete",
+            "F210-DSS-term-delete-guard",
+            "F212-DSS-term-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-110",
+          "object": "标准模型表管理",
+          "operation": "list",
+          "evidence": [
+            "F222-DSS-system-delete-cancel",
+            "F214-DSS-system-query",
+            "F215-DSS-system-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-112",
+          "object": "标准模型表管理",
+          "operation": "add",
+          "evidence": [
+            "F216-DSS-system-add",
+            "F217-DSS-system-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-113",
+          "object": "标准模型表管理",
+          "operation": "edit",
+          "evidence": [
+            "F218-DSS-system-edit",
+            "F219-DSS-system-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSS-114",
+          "object": "标准模型表管理",
+          "operation": "delete",
+          "evidence": [
+            "F221-DSS-system-delete",
+            "F220-DSS-system-delete-guard",
+            "F222-DSS-system-delete-cancel"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DSS-AC-001",
+        "DSS-AC-002",
+        "DSS-AC-003",
+        "DSS-AC-004",
+        "DSS-AC-005",
+        "DSS-AC-006",
+        "DSS-AC-007",
+        "DSS-AC-008",
+        "DSS-AC-009",
+        "DSS-AC-010",
+        "DSS-AC-011",
+        "DSS-AC-012",
+        "DSS-AC-013",
+        "DSS-AC-014",
+        "DSS-AC-015",
+        "DSS-AC-016",
+        "DSS-AC-017",
+        "DSS-AC-018",
+        "DSS-AC-019",
+        "DSS-AC-020",
+        "DSS-AC-021",
+        "DSS-AC-022",
+        "DSS-AC-023",
+        "DSS-AC-024",
+        "DSS-AC-025",
+        "DSS-AC-026",
+        "DSS-AC-027",
+        "DSS-AC-028",
+        "DSS-AC-029",
+        "DSS-AC-030",
+        "DSS-AC-031",
+        "DSS-AC-032",
+        "DSS-AC-033",
+        "DSS-AC-034",
+        "DSS-AC-035",
+        "DSS-AC-036",
+        "DSS-AC-037",
+        "DSS-AC-038",
+        "DSS-AC-039",
+        "DSS-AC-040",
+        "DSS-AC-041",
+        "DSS-AC-042",
+        "DSS-AC-043",
+        "DSS-AC-044",
+        "DSS-AC-045",
+        "DSS-AC-046",
+        "DSS-AC-047",
+        "DSS-AC-048",
+        "DSS-AC-049",
+        "DSS-AC-050",
+        "DSS-AC-051",
+        "DSS-AC-052",
+        "DSS-AC-053",
+        "DSS-AC-054",
+        "DSS-AC-055",
+        "DSS-AC-056",
+        "DSS-AC-057",
+        "DSS-AC-058",
+        "DSS-AC-059",
+        "DSS-AC-060",
+        "DSS-AC-061",
+        "DSS-AC-062",
+        "DSS-AC-063",
+        "DSS-AC-064",
+        "DSS-AC-065",
+        "DSS-AC-066",
+        "DSS-AC-067",
+        "DSS-AC-068",
+        "DSS-AC-069",
+        "DSS-AC-070",
+        "DSS-AC-071",
+        "DSS-AC-072",
+        "DSS-AC-073",
+        "DSS-AC-074",
+        "DSS-AC-075",
+        "DSS-AC-076",
+        "DSS-AC-077",
+        "DSS-AC-078",
+        "DSS-AC-079",
+        "DSS-AC-080",
+        "DSS-AC-081",
+        "DSS-AC-082",
+        "DSS-AC-083",
+        "DSS-AC-084",
+        "DSS-AC-085",
+        "DSS-AC-086",
+        "DSS-AC-087",
+        "DSS-AC-088",
+        "DSS-AC-089",
+        "DSS-AC-090",
+        "DSS-AC-091",
+        "DSS-AC-092",
+        "DSS-AC-093",
+        "DSS-AC-094",
+        "DSS-AC-095",
+        "DSS-AC-096",
+        "DSS-AC-097",
+        "DSS-AC-098",
+        "DSS-AC-099",
+        "DSS-AC-100"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "字段/代码页、审批状态机、标准编号唯一域、日期关系、文件和引用保护策略",
+        "objectBoundary": "标准文档、术语、模型表、字段、代码及审批版本",
+        "expandedOperations": [
+          "DSS-100",
+          "DSS-102",
+          "DSS-103",
+          "DSS-104",
+          "DSS-105",
+          "DSS-107",
+          "DSS-108",
+          "DSS-109",
+          "DSS-110",
+          "DSS-112",
+          "DSS-113",
+          "DSS-114"
+        ]
+      },
+      "aiProposals": [
+        "AI-002"
       ]
     },
     {
@@ -9439,7 +11117,71 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "2c9f9623f7c8642acdab3a940ca8617fbe71dd0eeae5f0c60afdcfd81a701314",
+      "businessRequirements": [
+        {
+          "id": "GDRS-100",
+          "object": "类别管理",
+          "operation": "list",
+          "evidence": [
+            "F244-GDRS-category-add-cancel",
+            "F226-GDRS-report-query",
+            "F241-GDRS-category-query",
+            "F227-GDRS-report-reset",
+            "F242-GDRS-category-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "GDRS-102",
+          "object": "类别管理",
+          "operation": "add",
+          "evidence": [
+            "F243-GDRS-category-add",
+            "F229-GDRS-report-add-cancel",
+            "F244-GDRS-category-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "GDRS-001",
+          "object": "数据直报",
+          "operation": "entry",
+          "evidence": [
+            "E035-reporting"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "GDRS-AC-001",
+        "GDRS-AC-002",
+        "GDRS-AC-003",
+        "GDRS-AC-004",
+        "GDRS-AC-005",
+        "GDRS-AC-006",
+        "GDRS-AC-007",
+        "GDRS-AC-008",
+        "GDRS-AC-009",
+        "GDRS-AC-010",
+        "GDRS-AC-011",
+        "GDRS-AC-012",
+        "GDRS-AC-013",
+        "GDRS-AC-014"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "九个未取目标页、表单版本兼容、上报/审核/退回及授权范围",
+        "objectBoundary": "类别、资源、表单/模板、授权、直报任务与上报批次",
+        "expandedOperations": [
+          "GDRS-100",
+          "GDRS-102",
+          "GDRS-001"
+        ]
+      }
     },
     {
       "code": "DQ",
@@ -9929,6 +11671,49 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "fe9d7c2294ab28eb3064b76037aefaed3b2c2e0edefe8f7e1c36248fecdb586f",
+      "businessRequirements": [
+        {
+          "id": "DQ-100",
+          "object": "我的查询",
+          "operation": "list",
+          "evidence": [
+            "C017-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DQ-001",
+          "object": "数据查询系统",
+          "operation": "entry",
+          "evidence": [
+            "E036-query"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DQ-AC-001",
+        "DQ-AC-002",
+        "DQ-AC-003",
+        "DQ-AC-004",
+        "DQ-AC-005",
+        "DQ-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "SQL编辑器/来源选择、只读语句判定、行列权限、超时/截断与日志留存",
+        "objectBoundary": "查询定义、SQL执行与查询日志",
+        "expandedOperations": [
+          "DQ-100",
+          "DQ-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-004"
       ]
     },
     {
@@ -10414,6 +12199,47 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "99873ccc11298aca78a340f8f688841e4c3d338b088fd09a4e50e71dd3d27628",
+      "businessRequirements": [
+        {
+          "id": "DCS-001",
+          "object": "目录管理系统",
+          "operation": "entry",
+          "evidence": [
+            "E038-catalog"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DCS-002",
+          "object": "目录管理系统",
+          "operation": "entry",
+          "evidence": [
+            "E038-catalog"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DCS-AC-001",
+        "DCS-AC-002",
+        "DCS-AC-003",
+        "DCS-AC-004"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "目标页CRUD、目录属性、审批/发布/订阅及TOP5和时间统计口径",
+        "objectBoundary": "资源目录条目、编目版本、上报批次与发布记录",
+        "expandedOperations": [
+          "DCS-001",
+          "DCS-002"
+        ]
+      },
+      "aiProposals": [
+        "AI-007"
       ]
     },
     {
@@ -10762,7 +12588,45 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "8741e47dd1136b505539b2eec9b18ceb33063d8c3a358dfb42f1afc9d4364612",
+      "businessRequirements": [
+        {
+          "id": "DSE-001",
+          "object": "数据共享交换",
+          "operation": "entry",
+          "evidence": [
+            "E039-exchange"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSE-002",
+          "object": "数据共享交换",
+          "operation": "entry",
+          "evidence": [
+            "E039-exchange"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DSE-AC-001",
+        "DSE-AC-002",
+        "DSE-AC-003",
+        "DSE-AC-004"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "交换协议、映射/调度、前置机心跳、幂等和重试/停止/恢复策略",
+        "objectBoundary": "交换任务、输入输出、前置机与交换运行实例",
+        "expandedOperations": [
+          "DSE-001",
+          "DSE-002"
+        ]
+      }
     },
     {
       "code": "GSB",
@@ -11387,7 +13251,47 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "c0b9a61b29dd4b99131cc5f82eda08b7b6ef2c26b88c7f7497654cf802e14071",
+      "businessRequirements": [
+        {
+          "id": "GSB-100",
+          "object": "服务目录",
+          "operation": "list",
+          "evidence": [
+            "C020-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "GSB-001",
+          "object": "数据服务支撑",
+          "operation": "entry",
+          "evidence": [
+            "E040-api-service"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "GSB-AC-001",
+        "GSB-AC-002",
+        "GSB-AC-003",
+        "GSB-AC-004",
+        "GSB-AC-005",
+        "GSB-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "API协议/参数/错误、认证授权、限流单位、审批发布和旧版本兼容",
+        "objectBoundary": "服务目录、服务定义/版本、发布审批与调用控制",
+        "expandedOperations": [
+          "GSB-100",
+          "GSB-001"
+        ]
+      }
     },
     {
       "code": "GSP",
@@ -11621,6 +13525,49 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "ec30652d862eb9196cf4bfaa1373e59b618055c446983802eba0eaf390193043",
+      "businessRequirements": [
+        {
+          "id": "GSP-100",
+          "object": "数据清单",
+          "operation": "list",
+          "evidence": [
+            "E096-portal-data-list"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "GSP-001",
+          "object": "数据服务门户",
+          "operation": "entry",
+          "evidence": [
+            "E095-portal-tab"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "GSP-AC-001",
+        "GSP-AC-002",
+        "GSP-AC-003",
+        "GSP-AC-004",
+        "GSP-AC-005",
+        "GSP-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "详情、购数车/申请/订单流程、下载鉴权、授权期限与订阅变更",
+        "objectBoundary": "门户数据清单、资源详情、申请/订单与订阅",
+        "expandedOperations": [
+          "GSP-100",
+          "GSP-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-007"
       ]
     },
     {
@@ -11837,7 +13784,48 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "d8fbd58d9b0d237034d435a9f3c8f6f929d9e93a01816f4845915d294c909580",
+      "businessRequirements": [
+        {
+          "id": "GSPA-100",
+          "object": "快捷入口管理",
+          "operation": "list",
+          "evidence": [
+            "C021-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "GSPA-001",
+          "object": "数据服务门户后台管理",
+          "operation": "entry",
+          "evidence": [
+            "E042-portal-admin",
+            "E043-assets-nav"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "GSPA-AC-001",
+        "GSPA-AC-002",
+        "GSPA-AC-003",
+        "GSPA-AC-004",
+        "GSPA-AC-005",
+        "GSPA-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "图标/链接/排序表单、内置条目、发布生效和缓存失效规则",
+        "objectBoundary": "门户快捷入口与内容配置/发布版本",
+        "expandedOperations": [
+          "GSPA-100",
+          "GSPA-001"
+        ]
+      }
     },
     {
       "code": "MDM",
@@ -12692,6 +14680,107 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "3898a0c999cc3635280c6dc808dbfda38534d914e48a0816b02f7400f3a1b4fb",
+      "businessRequirements": [
+        {
+          "id": "MDM-100",
+          "object": "自动采集",
+          "operation": "list",
+          "evidence": [
+            "E085-delete-cancel",
+            "E077-metadata-edit",
+            "E103-metadata-edit-cancel-ready"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "MDM-102",
+          "object": "自动采集",
+          "operation": "add",
+          "evidence": [
+            "E073-metadata-add",
+            "E077-metadata-edit",
+            "E103-metadata-edit-cancel-ready"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "MDM-103",
+          "object": "自动采集",
+          "operation": "edit",
+          "evidence": [
+            "E102-metadata-edit-values",
+            "E077-metadata-edit",
+            "E103-metadata-edit-cancel-ready"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "MDM-104",
+          "object": "自动采集",
+          "operation": "delete",
+          "evidence": [
+            "E081-metadata-delete-confirm",
+            "E085-delete-cancel",
+            "E077-metadata-edit",
+            "E103-metadata-edit-cancel-ready"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "MDM-001",
+          "object": "元数据管理",
+          "operation": "entry",
+          "evidence": [
+            "E072-metadata-original"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "MDM-AC-001",
+        "MDM-AC-002",
+        "MDM-AC-003",
+        "MDM-AC-004",
+        "MDM-AC-005",
+        "MDM-AC-006",
+        "MDM-AC-007",
+        "MDM-AC-008",
+        "MDM-AC-009",
+        "MDM-AC-010",
+        "MDM-AC-011",
+        "MDM-AC-012",
+        "MDM-AC-013",
+        "MDM-AC-014",
+        "MDM-AC-015",
+        "MDM-AC-016",
+        "MDM-AC-017",
+        "MDM-AC-018",
+        "MDM-AC-019",
+        "MDM-AC-020",
+        "MDM-AC-021",
+        "MDM-AC-022",
+        "MDM-AC-023",
+        "MDM-AC-024",
+        "MDM-AC-025"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "来源唯一域、周期与策略组合、状态迁移、日志/版本/变更及取消返回异常",
+        "objectBoundary": "采集任务定义、调度策略、执行实例、元数据快照与变更",
+        "expandedOperations": [
+          "MDM-100",
+          "MDM-102",
+          "MDM-103",
+          "MDM-104",
+          "MDM-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-002"
       ]
     },
     {
@@ -13042,6 +15131,49 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "9d49cc6a9c03d3ba33842b49e1ff3f825e201c385bae513cc11aa5e1725fef5d",
+      "businessRequirements": [
+        {
+          "id": "DAP-100",
+          "object": "指标数据源管理",
+          "operation": "list",
+          "evidence": [
+            "C023-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DAP-001",
+          "object": "指标管理",
+          "operation": "entry",
+          "evidence": [
+            "E045-indicator"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DAP-AC-001",
+        "DAP-AC-002",
+        "DAP-AC-003",
+        "DAP-AC-004",
+        "DAP-AC-005",
+        "DAP-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "指标研发字段、公式/聚合/空值/精度、数据域/周期、依赖及发布运算",
+        "objectBoundary": "指标来源、口径定义、统计周期、发布版本与计算实例",
+        "expandedOperations": [
+          "DAP-100",
+          "DAP-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-008"
       ]
     },
     {
@@ -13534,6 +15666,47 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "a3a374db658ca1059b0106f8c5c417898bcf517e5e44ce46d3c6f752626ffe27",
+      "businessRequirements": [
+        {
+          "id": "TMS-001",
+          "object": "标签管理",
+          "operation": "entry",
+          "evidence": [
+            "E046-tags"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "TMS-002",
+          "object": "标签管理",
+          "operation": "entry",
+          "evidence": [
+            "E046-tags"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "TMS-AC-001",
+        "TMS-AC-002",
+        "TMS-AC-003",
+        "TMS-AC-004"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "三目标页、模型实体、规则/分群、成员权限、上线/作废和热门统计",
+        "objectBoundary": "工作组、标签模型、标签定义/版本与应用关系",
+        "expandedOperations": [
+          "TMS-001",
+          "TMS-002"
+        ]
+      },
+      "aiProposals": [
+        "AI-008"
       ]
     },
     {
@@ -13745,6 +15918,47 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "e7ccb97a522bdb8aa760d3e803cb071588f40776afe11eefbd18bb6f00140772",
+      "businessRequirements": [
+        {
+          "id": "IDQS-001",
+          "object": "智能查询系统",
+          "operation": "entry",
+          "evidence": [
+            "E047-ai-query"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "IDQS-002",
+          "object": "智能查询系统",
+          "operation": "entry",
+          "evidence": [
+            "E047-ai-query"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "IDQS-AC-001",
+        "IDQS-AC-002",
+        "IDQS-AC-003",
+        "IDQS-AC-004"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "范围配置页、关联表/连接条件、运算符、排序分页、自然语言/SQL边界",
+        "objectBoundary": "查询范围、条件/显示列配置、保存配置与查询结果",
+        "expandedOperations": [
+          "IDQS-001",
+          "IDQS-002"
+        ]
+      },
+      "aiProposals": [
+        "AI-004"
       ]
     },
     {
@@ -14242,6 +16456,59 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "3a2385ba2cc7fdbdc84bb8b16725c1c00b934423b6861e454ca4ae57ff6d1bf5",
+      "businessRequirements": [
+        {
+          "id": "DACS-001",
+          "object": "资产目录系统",
+          "operation": "entry",
+          "evidence": [
+            "E048-asset-catalog"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DACS-002",
+          "object": "资产目录系统",
+          "operation": "entry",
+          "evidence": [
+            "E048-asset-catalog"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DACS-003",
+          "object": "资产目录系统",
+          "operation": "entry",
+          "evidence": [
+            "E048-asset-catalog"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DACS-AC-001",
+        "DACS-AC-002",
+        "DACS-AC-003",
+        "DACS-AC-004",
+        "DACS-AC-005",
+        "DACS-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "三目标页字段、资源转资产、审批/授权/下架和估值/台账口径",
+        "objectBoundary": "数据资源、资产登记、审批与资产台账",
+        "expandedOperations": [
+          "DACS-001",
+          "DACS-002",
+          "DACS-003"
+        ]
+      },
+      "aiProposals": [
+        "AI-007"
       ]
     },
     {
@@ -15008,7 +17275,48 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "d2885878e462728cc0723100174e71d565796ab0101a89e173dd762161a98ebe",
+      "businessRequirements": [
+        {
+          "id": "DSPS-100",
+          "object": "数据脱敏任务",
+          "operation": "list",
+          "evidence": [
+            "E099-mask-list-original"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSPS-001",
+          "object": "数据安全保护",
+          "operation": "entry",
+          "evidence": [
+            "E049-security",
+            "E099-mask-list-original"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DSPS-AC-001",
+        "DSPS-AC-002",
+        "DSPS-AC-003",
+        "DSPS-AC-004",
+        "DSPS-AC-005",
+        "DSPS-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "全部保护表单、算法参数/可逆性、源目标边界、密钥生命周期与水印检测",
+        "objectBoundary": "保护任务、算法/字典版本、输出对象与密钥引用",
+        "expandedOperations": [
+          "DSPS-100",
+          "DSPS-001"
+        ]
+      }
     },
     {
       "code": "DTM",
@@ -15222,7 +17530,47 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "b2f9b483eb6326602cf1db7da6f64d40c783eec593f4b8f3380873d0cd45df53",
+      "businessRequirements": [
+        {
+          "id": "DTM-100",
+          "object": "数据库信息",
+          "operation": "list",
+          "evidence": [
+            "C028-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DTM-001",
+          "object": "数据表管理",
+          "operation": "entry",
+          "evidence": [
+            "E050-tables"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DTM-AC-001",
+        "DTM-AC-002",
+        "DTM-AC-003",
+        "DTM-AC-004",
+        "DTM-AC-005",
+        "DTM-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "资源是否复用公共来源、预览页、权限申请/审批/撤销、到期和行列控制",
+        "objectBoundary": "数据库资源、表资源、授权申请与权限记录",
+        "expandedOperations": [
+          "DTM-100",
+          "DTM-001"
+        ]
+      }
     },
     {
       "code": "OSS",
@@ -15438,7 +17786,47 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "42d4b6387f96922d4a927de37311503ed1fd122c1ebf4656880f2a56d1c04efb",
+      "businessRequirements": [
+        {
+          "id": "OSS-100",
+          "object": "部门目录中心",
+          "operation": "list",
+          "evidence": [
+            "C029-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "OSS-001",
+          "object": "运营汇总系统",
+          "operation": "entry",
+          "evidence": [
+            "E051-operations-summary"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "OSS-AC-001",
+        "OSS-AC-002",
+        "OSS-AC-003",
+        "OSS-AC-004",
+        "OSS-AC-005",
+        "OSS-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "统计同步关系、订阅/开发记录目标页、跨系统口径和刷新延迟",
+        "objectBoundary": "运营目录视图、订阅/开发记录与统计快照",
+        "expandedOperations": [
+          "OSS-100",
+          "OSS-001"
+        ]
+      }
     },
     {
       "code": "DSTS",
@@ -15789,6 +18177,49 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "be26e6a7aefcfe589942f1e7ae6ef52b22386b8b13d5cef3a76826bd446977c0",
+      "businessRequirements": [
+        {
+          "id": "DSTS-100",
+          "object": "检测方案",
+          "operation": "list",
+          "evidence": [
+            "C030-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSTS-001",
+          "object": "数据标准检测",
+          "operation": "entry",
+          "evidence": [
+            "E053-standard-check"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DSTS-AC-001",
+        "DSTS-AC-002",
+        "DSTS-AC-003",
+        "DSTS-AC-004",
+        "DSTS-AC-005",
+        "DSTS-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "方案配置、阈值/标准匹配、启用条件、检测算法和报告/失败重试",
+        "objectBoundary": "检测方案、标准版本、检测任务与报告",
+        "expandedOperations": [
+          "DSTS-100",
+          "DSTS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-005"
       ]
     },
     {
@@ -16276,6 +18707,49 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "98a7f0ad794c9970dd5c8482ac8d25d81c71ede0a9afcebeaedf5992bda2a6fe",
+      "businessRequirements": [
+        {
+          "id": "DSETS-100",
+          "object": "库表待办列表",
+          "operation": "list",
+          "evidence": [
+            "C031-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DSETS-001",
+          "object": "数据安全检测",
+          "operation": "entry",
+          "evidence": [
+            "E054-security-check"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DSETS-AC-001",
+        "DSETS-AC-002",
+        "DSETS-AC-003",
+        "DSETS-AC-004",
+        "DSETS-AC-005",
+        "DSETS-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "新增库表选择、识别参数、分类分级规则、复核动作及报告",
+        "objectBoundary": "待识别库表、识别任务、分类分级结果与复核",
+        "expandedOperations": [
+          "DSETS-100",
+          "DSETS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-006"
       ]
     },
     {
@@ -16934,6 +19408,68 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "a42a9cc492f82414e3fb52b3de54566d85f0f498a699b2f755c35171c23acad1",
+      "businessRequirements": [
+        {
+          "id": "DQTS-100",
+          "object": "列分析",
+          "operation": "list",
+          "evidence": [
+            "E074-quality-original"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DQTS-102",
+          "object": "列分析",
+          "operation": "add",
+          "evidence": [
+            "E075-quality-add"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "DQTS-001",
+          "object": "数据质量检测",
+          "operation": "entry",
+          "evidence": [
+            "E055-quality-check",
+            "E074-quality-original"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "DQTS-AC-001",
+        "DQTS-AC-002",
+        "DQTS-AC-003",
+        "DQTS-AC-004",
+        "DQTS-AC-005",
+        "DQTS-AC-006",
+        "DQTS-AC-007",
+        "DQTS-AC-008",
+        "DQTS-AC-009",
+        "DQTS-AC-010",
+        "DQTS-AC-011",
+        "DQTS-AC-012",
+        "DQTS-AC-013",
+        "DQTS-AC-014"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "来源/表联动、分析指标算法/抽样/精度、执行状态、规则推荐和质量检测",
+        "objectBoundary": "列分析定义、选定字段集合、分析实例与报告",
+        "expandedOperations": [
+          "DQTS-100",
+          "DQTS-102",
+          "DQTS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-005"
       ]
     },
     {
@@ -17468,6 +20004,70 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "6f40b411171041a99fdea6aab98f361c40b2911b1c2f75c20dddaabdab2c9441",
+      "businessRequirements": [
+        {
+          "id": "EMS-100",
+          "object": "评价方案",
+          "operation": "list",
+          "evidence": [
+            "F061-EMS-scheme-add-cancel",
+            "F058-EMS-scheme-query",
+            "F059-EMS-scheme-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "EMS-102",
+          "object": "评价方案",
+          "operation": "add",
+          "evidence": [
+            "F060-EMS-scheme-add",
+            "F061-EMS-scheme-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "EMS-001",
+          "object": "评价管理",
+          "operation": "entry",
+          "evidence": [
+            "E066-evaluation-correct"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "EMS-AC-001",
+        "EMS-AC-002",
+        "EMS-AC-003",
+        "EMS-AC-004",
+        "EMS-AC-005",
+        "EMS-AC-006",
+        "EMS-AC-007",
+        "EMS-AC-008",
+        "EMS-AC-009",
+        "EMS-AC-010",
+        "EMS-AC-011",
+        "EMS-AC-012",
+        "EMS-AC-013",
+        "EMS-AC-014"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "指标与任务页、主客观评分、权重归一、空值、四舍五入和报告形成",
+        "objectBoundary": "评价方案、指标关联、评价任务、模板与评分结果",
+        "expandedOperations": [
+          "EMS-100",
+          "EMS-102",
+          "EMS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-009"
       ]
     },
     {
@@ -18127,6 +20727,105 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "15f8fdf83f22b1d59645879ab83e1b7563ab86e360a23cdf377b67b8ec65fb17",
+      "businessRequirements": [
+        {
+          "id": "AIS-100",
+          "object": "召回库",
+          "operation": "list",
+          "evidence": [
+            "F086-AIS-recall-delete-cancel",
+            "F078-AIS-recall-query",
+            "F079-AIS-recall-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "AIS-102",
+          "object": "召回库",
+          "operation": "add",
+          "evidence": [
+            "F080-AIS-recall-add",
+            "F081-AIS-recall-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "AIS-103",
+          "object": "召回库",
+          "operation": "edit",
+          "evidence": [
+            "F082-AIS-recall-edit",
+            "F083-AIS-recall-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "AIS-104",
+          "object": "召回库",
+          "operation": "delete",
+          "evidence": [
+            "F085-AIS-recall-delete",
+            "F084-AIS-recall-delete-guard",
+            "F086-AIS-recall-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "AIS-001",
+          "object": "AI数据智能辅助",
+          "operation": "entry",
+          "evidence": [
+            "E057-ai-assistant"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "AIS-AC-001",
+        "AIS-AC-002",
+        "AIS-AC-003",
+        "AIS-AC-004",
+        "AIS-AC-005",
+        "AIS-AC-006",
+        "AIS-AC-007",
+        "AIS-AC-008",
+        "AIS-AC-009",
+        "AIS-AC-010",
+        "AIS-AC-011",
+        "AIS-AC-012",
+        "AIS-AC-013",
+        "AIS-AC-014",
+        "AIS-AC-015",
+        "AIS-AC-016",
+        "AIS-AC-017",
+        "AIS-AC-018",
+        "AIS-AC-019",
+        "AIS-AC-020",
+        "AIS-AC-021",
+        "AIS-AC-022",
+        "AIS-AC-023",
+        "AIS-AC-024",
+        "AIS-AC-025",
+        "AIS-AC-026"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "库内容/导入/同步规则、命名/类型枚举、模型参数、数据外发和接口鉴权",
+        "objectBoundary": "召回库、识别内容、模型/算法版本与接口授权",
+        "expandedOperations": [
+          "AIS-100",
+          "AIS-102",
+          "AIS-103",
+          "AIS-104",
+          "AIS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-006"
       ]
     },
     {
@@ -18377,6 +21076,110 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "9c8405a5a7ca08d0189c8fd1cc96f4f14d7920f6573e065814f072f5377f1d82",
+      "businessRequirements": [
+        {
+          "id": "RTMS-100",
+          "object": "报告模板",
+          "operation": "list",
+          "evidence": [
+            "F072-RTMS-template-delete-cancel",
+            "F064-RTMS-template-query",
+            "F065-RTMS-template-reset"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "RTMS-102",
+          "object": "报告模板",
+          "operation": "add",
+          "evidence": [
+            "F066-RTMS-template-add",
+            "F067-RTMS-template-add-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "RTMS-103",
+          "object": "报告模板",
+          "operation": "edit",
+          "evidence": [
+            "F068-RTMS-template-edit",
+            "F069-RTMS-template-edit-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "RTMS-104",
+          "object": "报告模板",
+          "operation": "delete",
+          "evidence": [
+            "F071-RTMS-template-delete",
+            "F070-RTMS-template-delete-guard",
+            "F072-RTMS-template-delete-cancel"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "RTMS-001",
+          "object": "报告模板",
+          "operation": "entry",
+          "evidence": [
+            "E058-report-template"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "RTMS-AC-001",
+        "RTMS-AC-002",
+        "RTMS-AC-003",
+        "RTMS-AC-004",
+        "RTMS-AC-005",
+        "RTMS-AC-006",
+        "RTMS-AC-007",
+        "RTMS-AC-008",
+        "RTMS-AC-009",
+        "RTMS-AC-010",
+        "RTMS-AC-011",
+        "RTMS-AC-012",
+        "RTMS-AC-013",
+        "RTMS-AC-014",
+        "RTMS-AC-015",
+        "RTMS-AC-016",
+        "RTMS-AC-017",
+        "RTMS-AC-018",
+        "RTMS-AC-019",
+        "RTMS-AC-020",
+        "RTMS-AC-021",
+        "RTMS-AC-022",
+        "RTMS-AC-023",
+        "RTMS-AC-024",
+        "RTMS-AC-025",
+        "RTMS-AC-026",
+        "RTMS-AC-027",
+        "RTMS-AC-028",
+        "RTMS-AC-029",
+        "RTMS-AC-030",
+        "RTMS-AC-031"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "设计器/绑定、适用对象与类型联动、文件边界、发布/引用保护和导出",
+        "objectBoundary": "报告模板基础信息、模板文件/设计版本与引用",
+        "expandedOperations": [
+          "RTMS-100",
+          "RTMS-102",
+          "RTMS-103",
+          "RTMS-104",
+          "RTMS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-009"
       ]
     },
     {
@@ -18597,7 +21400,47 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "f1c8fc03209279d6dc438e03d8583595ffd1f1d447076c01b59a960ff481c370",
+      "businessRequirements": [
+        {
+          "id": "SPACE-100",
+          "object": "工作空间",
+          "operation": "list",
+          "evidence": [
+            "C035-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SPACE-001",
+          "object": "工作空间",
+          "operation": "entry",
+          "evidence": [
+            "E060-workspaces"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "SPACE-AC-001",
+        "SPACE-AC-002",
+        "SPACE-AC-003",
+        "SPACE-AC-004",
+        "SPACE-AC-005",
+        "SPACE-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "创建/成员页、空间隔离、角色继承、配额、删除/归档与当前空间保护",
+        "objectBoundary": "工作空间、成员角色与业务对象归属",
+        "expandedOperations": [
+          "SPACE-100",
+          "SPACE-001"
+        ]
+      }
     },
     {
       "code": "OMMS",
@@ -18950,6 +21793,35 @@
             }
           }
         }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "1f3b005df34a0f02d8a776f3091d05b028a6930b202075683d3e223043a174bc",
+      "businessRequirements": [
+        {
+          "id": "OMMS-001",
+          "object": "运维监控",
+          "operation": "entry",
+          "evidence": [
+            "E061-monitoring"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "OMMS-AC-001",
+        "OMMS-AC-002"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "目标/告警页、采样/轮询周期、阈值/抑制、通知渠道及恢复条件",
+        "objectBoundary": "监控目标、指标采样、告警规则与告警事件",
+        "expandedOperations": [
+          "OMMS-001"
+        ]
+      },
+      "aiProposals": [
+        "AI-010"
       ]
     },
     {
@@ -19572,14 +22444,40 @@
             }
           }
         }
-      ]
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "0a264a28e67a496bf0539a0713eef0f5b1b91c6dde0d281a9daa7270ad694018",
+      "businessRequirements": [
+        {
+          "id": "PLAT-001",
+          "object": "微服务平台",
+          "operation": "entry",
+          "evidence": [
+            "E062-platform"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "PLAT-AC-001",
+        "PLAT-AC-002"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "全部目标页、实际子对象清单、配置生效、工作流版本、权限与日志留存",
+        "objectBoundary": "平台管理分区及其独立配置/工作流/日志对象",
+        "expandedOperations": [
+          "PLAT-001"
+        ]
+      }
     }
   ],
   "samples": [
     {
       "id": "C001-original-content",
       "time": "2026-10-22T03:28:24.124Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/overview/chart",
+      "url": "/dop/dbms/requirement/overview/chart",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -19593,7 +22491,7 @@
     {
       "id": "C002-original-content",
       "time": "2026-10-22T03:28:41.945Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/report/chart",
+      "url": "/dop/dbms/requirement/report/chart",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -19607,7 +22505,7 @@
     {
       "id": "C003-original-content",
       "time": "2026-10-22T03:28:49.388Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/collection",
+      "url": "/dop/dbms/requirement/collection",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -19621,7 +22519,7 @@
     {
       "id": "C004-original-content",
       "time": "2026-10-22T03:28:56.512Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/index",
+      "url": "/dop/dbms/config/applyConfig/index",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -19635,7 +22533,7 @@
     {
       "id": "C005-original-content",
       "time": "2026-10-22T03:29:03.641Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team/edit?optType=add",
+      "url": "/dop/dbms/requirement/prepare/team/edit?optType=add",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -19649,7 +22547,7 @@
     {
       "id": "C006-original-content",
       "time": "2026-10-22T03:29:10.760Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team",
+      "url": "/dop/dbms/requirement/prepare/team",
       "title": "数据需求管理",
       "modules": [
         "HOME"
@@ -19663,7 +22561,7 @@
     {
       "id": "C007-original-content",
       "time": "2026-10-22T03:29:30.836Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/driveList",
+      "url": "/datasource/dataSource/driveList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -19677,7 +22575,7 @@
     {
       "id": "C008-original-content",
       "time": "2026-10-22T03:29:50.765Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -19691,7 +22589,7 @@
     {
       "id": "C009-original-content",
       "time": "2026-10-22T03:29:58.381Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -19705,7 +22603,7 @@
     {
       "id": "C010-original-content",
       "time": "2026-10-22T03:30:18.019Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -19719,7 +22617,7 @@
     {
       "id": "C011-original-content",
       "time": "2026-10-22T03:30:25.438Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/home",
+      "url": "/dis/home",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -19733,7 +22631,7 @@
     {
       "id": "C012-original-content",
       "time": "2026-10-22T03:30:32.878Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/home",
+      "url": "/sms/home",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -19747,7 +22645,7 @@
     {
       "id": "C013-original-content",
       "time": "2026-10-22T03:30:40.852Z",
-      "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+      "url": "/dms/modelManagement/list",
       "title": "规范化数据建模",
       "modules": [
         "DMS"
@@ -19761,7 +22659,7 @@
     {
       "id": "C014-original-content",
       "time": "2026-10-22T03:30:48.827Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -19775,7 +22673,7 @@
     {
       "id": "C015-original-content",
       "time": "2026-10-22T03:30:55.915Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?optType=add",
+      "url": "/dss/standard/document/docEdit?optType=add",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -19789,7 +22687,7 @@
     {
       "id": "C016-original-content",
       "time": "2026-10-22T03:31:04.030Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/index/indexInfo",
+      "url": "/gdrs/index/indexInfo",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -19803,7 +22701,7 @@
     {
       "id": "C017-original-content",
       "time": "2026-10-22T03:31:12.078Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm-dq/dataQuery/myQuery",
+      "url": "/mdm-dq/dataQuery/myQuery",
       "title": "数据查询系统",
       "modules": [
         "HOME",
@@ -19818,7 +22716,7 @@
     {
       "id": "C018-original-content",
       "time": "2026-10-22T03:31:20.123Z",
-      "url": "http://www.audaqueproxy.com:10223/dcs/analyze/internal",
+      "url": "/dcs/analyze/internal",
       "title": "目录管理系统",
       "modules": [
         "DCS"
@@ -19832,7 +22730,7 @@
     {
       "id": "C019-original-content",
       "time": "2026-10-22T03:31:28.102Z",
-      "url": "http://www.audaqueproxy.com:10223/dse/board/1",
+      "url": "/dse/board/1",
       "title": "数据共享交换",
       "modules": [
         "DSE"
@@ -19846,7 +22744,7 @@
     {
       "id": "C020-original-content",
       "time": "2026-10-22T03:31:36.104Z",
-      "url": "http://www.audaqueproxy.com:10223/gsb/catalog/list",
+      "url": "/gsb/catalog/list",
       "title": "数据服务支撑",
       "modules": [
         "GSB"
@@ -19860,7 +22758,7 @@
     {
       "id": "C021-original-content",
       "time": "2026-10-22T03:31:44.347Z",
-      "url": "http://www.audaqueproxy.com:10223/gsp/entrance/list",
+      "url": "/gsp/entrance/list",
       "title": "数据服务门户",
       "modules": [
         "HOME",
@@ -19875,7 +22773,7 @@
     {
       "id": "C022-original-content",
       "time": "2026-10-22T03:31:52.387Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -19889,7 +22787,7 @@
     {
       "id": "C023-original-content",
       "time": "2026-10-22T03:32:00.378Z",
-      "url": "http://www.audaqueproxy.com:10223/dap/manage/dataSource/dataSourceList",
+      "url": "/dap/manage/dataSource/dataSourceList",
       "title": "指标管理",
       "modules": [
         "DAP"
@@ -19903,7 +22801,7 @@
     {
       "id": "C024-original-content",
       "time": "2026-10-22T03:32:07.441Z",
-      "url": "http://www.audaqueproxy.com:10223/tms/overview/index",
+      "url": "/tms/overview/index",
       "title": "标签管理",
       "modules": [
         "TMS"
@@ -19917,7 +22815,7 @@
     {
       "id": "C025-original-content",
       "time": "2026-10-22T03:32:14.556Z",
-      "url": "http://www.audaqueproxy.com:10223/idqs/inquire",
+      "url": "/idqs/inquire",
       "title": "智能查询系统",
       "modules": [
         "IDQS"
@@ -19931,7 +22829,7 @@
     {
       "id": "C026-original-content",
       "time": "2026-10-22T03:32:21.819Z",
-      "url": "http://www.audaqueproxy.com:10223/dacs/overview/overview",
+      "url": "/dacs/overview/overview",
       "title": "资产目录系统",
       "modules": [
         "DACS"
@@ -19945,7 +22843,7 @@
     {
       "id": "C027-original-content",
       "time": "2026-10-22T03:32:29.718Z",
-      "url": "http://www.audaqueproxy.com:10223/dsps/mask/list",
+      "url": "/dsps/mask/list",
       "title": "数据安全保护",
       "modules": [
         "DSPS"
@@ -19959,7 +22857,7 @@
     {
       "id": "C028-original-content",
       "time": "2026-10-22T03:32:37.851Z",
-      "url": "http://www.audaqueproxy.com:10223/da-dtm/warehouseResources/warehouseResourcesList",
+      "url": "/da-dtm/warehouseResources/warehouseResourcesList",
       "title": "数据表管理",
       "modules": [
         "DTM"
@@ -19973,7 +22871,7 @@
     {
       "id": "C029-original-content",
       "time": "2026-10-22T03:32:44.932Z",
-      "url": "http://www.audaqueproxy.com:10223/oss/deptCataCenter/list",
+      "url": "/oss/deptCataCenter/list",
       "title": "运营汇总系统",
       "modules": [
         "HOME",
@@ -19988,7 +22886,7 @@
     {
       "id": "C030-original-content",
       "time": "2026-10-22T03:32:52.779Z",
-      "url": "http://www.audaqueproxy.com:10223/dsts/standard/plan/list",
+      "url": "/dsts/standard/plan/list",
       "title": "数据标准检测",
       "modules": [
         "DSTS"
@@ -20002,7 +22900,7 @@
     {
       "id": "C031-original-content",
       "time": "2026-10-22T03:33:12.379Z",
-      "url": "http://www.audaqueproxy.com:10223/dsets/tableAwaitList/list",
+      "url": "/dsets/tableAwaitList/list",
       "title": "数据安全检测",
       "modules": [
         "DSETS"
@@ -20016,7 +22914,7 @@
     {
       "id": "C032-original-content",
       "time": "2026-10-22T03:33:20.490Z",
-      "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+      "url": "/dqts/columnAnalysis/list",
       "title": "数据质量检测",
       "modules": [
         "DQTS"
@@ -20030,7 +22928,7 @@
     {
       "id": "C033-original-content",
       "time": "2026-10-22T03:33:29.534Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -20044,7 +22942,7 @@
     {
       "id": "C034-original-content",
       "time": "2026-10-22T03:33:36.664Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "HOME",
@@ -20059,7 +22957,7 @@
     {
       "id": "C035-original-content",
       "time": "2026-10-22T03:33:44.780Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/projectSpace/index",
+      "url": "/dop/projectSpace/index",
       "title": "工作空间",
       "modules": [
         "SPACE"
@@ -20073,7 +22971,7 @@
     {
       "id": "C036-original-content",
       "time": "2026-10-22T03:33:52.711Z",
-      "url": "http://www.audaqueproxy.com:10223/omms/overview",
+      "url": "/omms/overview",
       "title": "运维监控",
       "modules": [
         "OMMS"
@@ -20087,7 +22985,7 @@
     {
       "id": "C037-original-content",
       "time": "2026-10-22T03:34:00.716Z",
-      "url": "http://www.audaqueproxy.com:10223/module-common/index",
+      "url": "/module-common/index",
       "title": "微服务平台",
       "modules": [
         "PLAT"
@@ -20101,7 +22999,7 @@
     {
       "id": "C038-original-content",
       "time": "2026-10-22T03:34:08.783Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/kanban",
+      "url": "/drms/kanban",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -20115,7 +23013,7 @@
     {
       "id": "C039-original-content",
       "time": "2026-10-22T03:34:15.872Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/supermarket/index",
+      "url": "/dop/cms/comfactory/supermarket/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -20129,7 +23027,7 @@
     {
       "id": "C040-original-content",
       "time": "2026-10-22T03:34:24.167Z",
-      "url": "http://www.audaqueproxy.com:10223/workorder/workbench/workflowReviewList",
+      "url": "/workorder/workbench/workflowReviewList",
       "title": "我的工单",
       "modules": [
         "WO"
@@ -20143,7 +23041,7 @@
     {
       "id": "C041-original-content",
       "time": "2026-10-22T03:34:31.411Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -20157,7 +23055,7 @@
     {
       "id": "C042-original-content",
       "time": "2026-10-22T03:34:49.482Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/edit?optType=add",
+      "url": "/ems/programmeManage/edit?optType=add",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -20171,7 +23069,7 @@
     {
       "id": "E001-login",
       "time": "2026-10-22T02:11:06.283Z",
-      "url": "http://www.audaqueproxy.com:10223/module-login/login",
+      "url": "/module-login/login",
       "title": "未知",
       "modules": [],
       "status": "无效：加载态",
@@ -20183,7 +23081,7 @@
     {
       "id": "E002-login-ready",
       "time": "2026-10-22T02:11:17.026Z",
-      "url": "http://www.audaqueproxy.com:10223/module-login/login",
+      "url": "/module-login/login",
       "title": "未知",
       "modules": [
         "AUTH"
@@ -20197,7 +23095,7 @@
     {
       "id": "E003-portal",
       "time": "2026-10-22T02:11:33.031Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/stage",
+      "url": "/dop/stage",
       "title": "未知",
       "modules": [],
       "status": "无效：加载态",
@@ -20209,7 +23107,7 @@
     {
       "id": "E004-portal-ready",
       "time": "2026-10-22T02:11:57.246Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/stage",
+      "url": "/dop/stage",
       "title": "工作台",
       "modules": [
         "AUTH",
@@ -20224,7 +23122,7 @@
     {
       "id": "E005-demand-nav",
       "time": "2026-10-22T02:13:05.554Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/stage",
+      "url": "/dop/stage",
       "title": "工作台",
       "modules": [
         "HOME"
@@ -20238,7 +23136,7 @@
     {
       "id": "E006-demand",
       "time": "2026-10-22T02:13:27.565Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/overview/chart",
+      "url": "/dop/dbms/requirement/overview/chart",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20252,7 +23150,7 @@
     {
       "id": "E007-demand-prepare-nav",
       "time": "2026-10-22T02:14:53.163Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/overview/chart",
+      "url": "/dop/dbms/requirement/overview/chart",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20266,7 +23164,7 @@
     {
       "id": "E008-demand-bureaus",
       "time": "2026-10-22T02:15:07.010Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office",
+      "url": "/dop/dbms/requirement/prepare/office",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20280,7 +23178,7 @@
     {
       "id": "E009-demand-team",
       "time": "2026-10-22T02:15:10.679Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team",
+      "url": "/dop/dbms/requirement/prepare/team",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20294,7 +23192,7 @@
     {
       "id": "E010-demand-plan-nav",
       "time": "2026-10-22T02:15:14.247Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team",
+      "url": "/dop/dbms/requirement/prepare/team",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20308,7 +23206,7 @@
     {
       "id": "E011-demand-milestone",
       "time": "2026-10-22T02:15:38.961Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/plan/milepost",
+      "url": "/dop/dbms/requirement/plan/milepost",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20322,7 +23220,7 @@
     {
       "id": "E012-demand-plans",
       "time": "2026-10-22T02:15:42.557Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/plan/list",
+      "url": "/dop/dbms/requirement/plan/list",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20336,7 +23234,7 @@
     {
       "id": "E013-demand-execution",
       "time": "2026-10-22T02:15:46.145Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/implementation/track",
+      "url": "/dop/dbms/requirement/implementation/track",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20350,7 +23248,7 @@
     {
       "id": "E014-demand-report-nav",
       "time": "2026-10-22T02:15:49.727Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/implementation/track",
+      "url": "/dop/dbms/requirement/implementation/track",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20364,7 +23262,7 @@
     {
       "id": "E016-report-navigation",
       "time": "2026-10-22T02:50:30.620Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/overview/chart",
+      "url": "/dop/dbms/requirement/overview/chart",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20378,7 +23276,7 @@
     {
       "id": "E017-demand-report",
       "time": "2026-10-22T02:50:50.867Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/report/chart",
+      "url": "/dop/dbms/requirement/report/chart",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20392,7 +23290,7 @@
     {
       "id": "E018-demand-collection",
       "time": "2026-10-22T02:50:55.424Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/collection",
+      "url": "/dop/dbms/requirement/collection",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20406,7 +23304,7 @@
     {
       "id": "E019-demand-config",
       "time": "2026-10-22T02:50:59.906Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/index",
+      "url": "/dop/dbms/config/applyConfig/index",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20420,7 +23318,7 @@
     {
       "id": "E020-demand-team-add",
       "time": "2026-10-22T02:51:07.087Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team/edit?optType=add",
+      "url": "/dop/dbms/requirement/prepare/team/edit?optType=add",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -20434,7 +23332,7 @@
     {
       "id": "E021-development-nav",
       "time": "2026-10-22T02:51:38.459Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/team",
+      "url": "/dop/dbms/requirement/prepare/team",
       "title": "数据需求管理",
       "modules": [
         "HOME"
@@ -20448,7 +23346,7 @@
     {
       "id": "E022-datasource-list",
       "time": "2026-10-22T02:51:57.931Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/driveList",
+      "url": "/datasource/dataSource/driveList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -20462,7 +23360,7 @@
     {
       "id": "E023-datasources",
       "time": "2026-10-22T02:52:11.496Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -20476,7 +23374,7 @@
     {
       "id": "E024-datasource-add",
       "time": "2026-10-22T02:52:15.983Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -20490,7 +23388,7 @@
     {
       "id": "E025-datasource-drivers",
       "time": "2026-10-22T02:52:36.736Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -20504,7 +23402,7 @@
     {
       "id": "E026-datasource-driver-options",
       "time": "2026-10-22T02:52:57.461Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -20518,7 +23416,7 @@
     {
       "id": "E027-api-source",
       "time": "2026-10-22T02:55:37.750Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -20532,7 +23430,7 @@
     {
       "id": "E028-integration",
       "time": "2026-10-22T02:55:43.556Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/home",
+      "url": "/dis/home",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -20546,7 +23444,7 @@
     {
       "id": "E029-scheduling",
       "time": "2026-10-22T02:55:59.391Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/home",
+      "url": "/sms/home",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -20560,7 +23458,7 @@
     {
       "id": "E030-process-dev-nav",
       "time": "2026-10-22T02:56:16.622Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/home",
+      "url": "/sms/home",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -20574,7 +23472,7 @@
     {
       "id": "E031-process-schedule-nav",
       "time": "2026-10-22T02:56:21.083Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/home",
+      "url": "/sms/home",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -20588,7 +23486,7 @@
     {
       "id": "E032-modeling",
       "time": "2026-10-22T02:56:26.917Z",
-      "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+      "url": "/dms/modelManagement/list",
       "title": "规范化数据建模",
       "modules": [
         "DMS"
@@ -20602,7 +23500,7 @@
     {
       "id": "E033-standards",
       "time": "2026-10-22T02:56:37.759Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -20616,7 +23514,7 @@
     {
       "id": "E034-standard-add",
       "time": "2026-10-22T02:56:55.704Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?optType=add",
+      "url": "/dss/standard/document/docEdit?optType=add",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -20630,7 +23528,7 @@
     {
       "id": "E035-reporting",
       "time": "2026-10-22T02:57:22.314Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/index/indexInfo",
+      "url": "/gdrs/index/indexInfo",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -20644,7 +23542,7 @@
     {
       "id": "E036-query",
       "time": "2026-10-22T02:57:28.151Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm-dq/dataQuery/myQuery",
+      "url": "/mdm-dq/dataQuery/myQuery",
       "title": "数据查询系统",
       "modules": [
         "DQ"
@@ -20658,7 +23556,7 @@
     {
       "id": "E037-unification-nav",
       "time": "2026-10-22T02:57:32.668Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm-dq/dataQuery/myQuery",
+      "url": "/mdm-dq/dataQuery/myQuery",
       "title": "数据查询系统",
       "modules": [
         "HOME",
@@ -20673,7 +23571,7 @@
     {
       "id": "E038-catalog",
       "time": "2026-10-22T02:57:50.748Z",
-      "url": "http://www.audaqueproxy.com:10223/dcs/analyze/internal",
+      "url": "/dcs/analyze/internal",
       "title": "目录管理系统",
       "modules": [
         "DCS"
@@ -20687,7 +23585,7 @@
     {
       "id": "E039-exchange",
       "time": "2026-10-22T02:57:56.676Z",
-      "url": "http://www.audaqueproxy.com:10223/dse/board/1",
+      "url": "/dse/board/1",
       "title": "数据共享交换",
       "modules": [
         "DSE"
@@ -20701,7 +23599,7 @@
     {
       "id": "E040-api-service",
       "time": "2026-10-22T02:58:02.541Z",
-      "url": "http://www.audaqueproxy.com:10223/gsb/catalog/list",
+      "url": "/gsb/catalog/list",
       "title": "数据服务支撑",
       "modules": [
         "GSB"
@@ -20715,7 +23613,7 @@
     {
       "id": "E041-service-portal",
       "time": "2026-10-22T02:58:17.526Z",
-      "url": "http://www.audaqueproxy.com:10223/gsb/catalog/list",
+      "url": "/gsb/catalog/list",
       "title": "数据服务支撑",
       "modules": [],
       "status": "目标未采到",
@@ -20727,7 +23625,7 @@
     {
       "id": "E042-portal-admin",
       "time": "2026-10-22T02:58:24.736Z",
-      "url": "http://www.audaqueproxy.com:10223/gsp/entrance/list",
+      "url": "/gsp/entrance/list",
       "title": "数据服务门户后台管理",
       "modules": [
         "GSPA"
@@ -20741,7 +23639,7 @@
     {
       "id": "E043-assets-nav",
       "time": "2026-10-22T02:58:44.633Z",
-      "url": "http://www.audaqueproxy.com:10223/gsp/entrance/list",
+      "url": "/gsp/entrance/list",
       "title": "数据服务门户后台管理",
       "modules": [
         "HOME",
@@ -20756,7 +23654,7 @@
     {
       "id": "E044-metadata",
       "time": "2026-10-22T02:59:01.068Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -20770,7 +23668,7 @@
     {
       "id": "E045-indicator",
       "time": "2026-10-22T02:59:09.485Z",
-      "url": "http://www.audaqueproxy.com:10223/dap/manage/dataSource/dataSourceList",
+      "url": "/dap/manage/dataSource/dataSourceList",
       "title": "指标管理",
       "modules": [
         "DAP"
@@ -20784,7 +23682,7 @@
     {
       "id": "E046-tags",
       "time": "2026-10-22T02:59:17.817Z",
-      "url": "http://www.audaqueproxy.com:10223/tms/overview/index",
+      "url": "/tms/overview/index",
       "title": "标签管理",
       "modules": [
         "TMS"
@@ -20798,7 +23696,7 @@
     {
       "id": "E047-ai-query",
       "time": "2026-10-22T03:00:03.350Z",
-      "url": "http://www.audaqueproxy.com:10223/idqs/inquire",
+      "url": "/idqs/inquire",
       "title": "智能查询系统",
       "modules": [
         "IDQS"
@@ -20812,7 +23710,7 @@
     {
       "id": "E048-asset-catalog",
       "time": "2026-10-22T03:00:11.944Z",
-      "url": "http://www.audaqueproxy.com:10223/dacs/overview/overview",
+      "url": "/dacs/overview/overview",
       "title": "资产目录系统",
       "modules": [
         "DACS"
@@ -20826,7 +23724,7 @@
     {
       "id": "E049-security",
       "time": "2026-10-22T03:00:26.727Z",
-      "url": "http://www.audaqueproxy.com:10223/dsps/mask/list",
+      "url": "/dsps/mask/list",
       "title": "数据安全保护",
       "modules": [
         "DSPS"
@@ -20840,7 +23738,7 @@
     {
       "id": "E050-tables",
       "time": "2026-10-22T03:00:35.099Z",
-      "url": "http://www.audaqueproxy.com:10223/da-dtm/warehouseResources/warehouseResourcesList",
+      "url": "/da-dtm/warehouseResources/warehouseResourcesList",
       "title": "数据表管理",
       "modules": [
         "DTM"
@@ -20854,7 +23752,7 @@
     {
       "id": "E051-operations-summary",
       "time": "2026-10-22T03:00:43.513Z",
-      "url": "http://www.audaqueproxy.com:10223/oss/deptCataCenter/list",
+      "url": "/oss/deptCataCenter/list",
       "title": "运营汇总系统",
       "modules": [
         "OSS"
@@ -20868,7 +23766,7 @@
     {
       "id": "E052-evaluation-nav",
       "time": "2026-10-22T03:00:55.283Z",
-      "url": "http://www.audaqueproxy.com:10223/oss/deptCataCenter/list",
+      "url": "/oss/deptCataCenter/list",
       "title": "运营汇总系统",
       "modules": [
         "HOME",
@@ -20883,7 +23781,7 @@
     {
       "id": "E053-standard-check",
       "time": "2026-10-22T03:01:19.212Z",
-      "url": "http://www.audaqueproxy.com:10223/dsts/standard/plan/list",
+      "url": "/dsts/standard/plan/list",
       "title": "数据标准检测",
       "modules": [
         "DSTS"
@@ -20897,7 +23795,7 @@
     {
       "id": "E054-security-check",
       "time": "2026-10-22T03:01:27.608Z",
-      "url": "http://www.audaqueproxy.com:10223/dsets/tableAwaitList/list",
+      "url": "/dsets/tableAwaitList/list",
       "title": "数据安全检测",
       "modules": [
         "DSETS"
@@ -20911,7 +23809,7 @@
     {
       "id": "E055-quality-check",
       "time": "2026-10-22T03:01:35.988Z",
-      "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+      "url": "/dqts/columnAnalysis/list",
       "title": "数据质量检测",
       "modules": [
         "DQTS"
@@ -20925,7 +23823,7 @@
     {
       "id": "E056-evaluation",
       "time": "2026-10-22T03:01:56.291Z",
-      "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+      "url": "/dqts/columnAnalysis/list",
       "title": "数据质量检测",
       "modules": [],
       "status": "目标未采到",
@@ -20937,7 +23835,7 @@
     {
       "id": "E057-ai-assistant",
       "time": "2026-10-22T03:02:02.992Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -20951,7 +23849,7 @@
     {
       "id": "E058-report-template",
       "time": "2026-10-22T03:02:11.406Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -20965,7 +23863,7 @@
     {
       "id": "E059-backend-nav",
       "time": "2026-10-22T03:02:14.480Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "HOME",
@@ -20980,7 +23878,7 @@
     {
       "id": "E060-workspaces",
       "time": "2026-10-22T03:02:35.367Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/projectSpace/index",
+      "url": "/dop/projectSpace/index",
       "title": "工作空间",
       "modules": [
         "SPACE"
@@ -20994,7 +23892,7 @@
     {
       "id": "E061-monitoring",
       "time": "2026-10-22T03:02:43.761Z",
-      "url": "http://www.audaqueproxy.com:10223/omms/overview",
+      "url": "/omms/overview",
       "title": "运维监控",
       "modules": [
         "OMMS"
@@ -21008,7 +23906,7 @@
     {
       "id": "E062-platform",
       "time": "2026-10-22T03:02:52.195Z",
-      "url": "http://www.audaqueproxy.com:10223/module-common/index",
+      "url": "/module-common/index",
       "title": "微服务平台",
       "modules": [
         "PLAT"
@@ -21022,7 +23920,7 @@
     {
       "id": "E063-business-requirements",
       "time": "2026-10-22T03:03:09.459Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/kanban",
+      "url": "/drms/kanban",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -21036,7 +23934,7 @@
     {
       "id": "E064-components",
       "time": "2026-10-22T03:03:17.887Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/supermarket/index",
+      "url": "/dop/cms/comfactory/supermarket/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -21050,7 +23948,7 @@
     {
       "id": "E065-workorders",
       "time": "2026-10-22T03:03:26.395Z",
-      "url": "http://www.audaqueproxy.com:10223/workorder/workbench/workflowReviewList",
+      "url": "/workorder/workbench/workflowReviewList",
       "title": "我的工单",
       "modules": [
         "WO"
@@ -21064,7 +23962,7 @@
     {
       "id": "E066-evaluation-correct",
       "time": "2026-10-22T03:03:36.147Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -21078,7 +23976,7 @@
     {
       "id": "E067-evaluation-add",
       "time": "2026-10-22T03:03:41.411Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/edit?optType=add",
+      "url": "/ems/programmeManage/edit?optType=add",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -21092,7 +23990,7 @@
     {
       "id": "E068-evaluation-cancel",
       "time": "2026-10-22T03:04:19.529Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -21106,7 +24004,7 @@
     {
       "id": "E072-metadata-original",
       "time": "2026-10-22T03:06:56.294Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21120,7 +24018,7 @@
     {
       "id": "E073-metadata-add",
       "time": "2026-10-22T03:07:00.779Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectEdit?optType=add",
+      "url": "/mdm/metadata/manage/collectEdit?optType=add",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21134,7 +24032,7 @@
     {
       "id": "E074-quality-original",
       "time": "2026-10-22T03:07:13.817Z",
-      "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+      "url": "/dqts/columnAnalysis/list",
       "title": "数据质量检测",
       "modules": [
         "DQTS"
@@ -21148,7 +24046,7 @@
     {
       "id": "E075-quality-add",
       "time": "2026-10-22T03:07:18.263Z",
-      "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/edit?optType=add",
+      "url": "/dqts/columnAnalysis/edit?optType=add",
       "title": "数据质量检测",
       "modules": [
         "DQTS"
@@ -21162,7 +24060,7 @@
     {
       "id": "E076-metadata-list",
       "time": "2026-10-22T03:09:27.313Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21176,7 +24074,7 @@
     {
       "id": "E077-metadata-edit",
       "time": "2026-10-22T03:09:31.752Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectEdit?id=6&optType=edit",
+      "url": "/mdm/metadata/manage/collectEdit?id=6&optType=edit",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21190,7 +24088,7 @@
     {
       "id": "E078-metadata-edit-cancel",
       "time": "2026-10-22T03:09:36.200Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21204,7 +24102,7 @@
     {
       "id": "E080-metadata-before-delete",
       "time": "2026-10-22T03:10:37.998Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21218,7 +24116,7 @@
     {
       "id": "E081-metadata-delete-confirm",
       "time": "2026-10-22T03:10:39.537Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21232,7 +24130,7 @@
     {
       "id": "E085-delete-cancel",
       "time": "2026-10-22T03:11:23.339Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21246,7 +24144,7 @@
     {
       "id": "E086-process-list",
       "time": "2026-10-22T03:11:31.171Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/develop/taskDevelop",
+      "url": "/sms/develop/taskDevelop",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -21260,7 +24158,7 @@
     {
       "id": "E088-schedule-list",
       "time": "2026-10-22T03:12:09.508Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+      "url": "/sms/schedule/manage/scheduleList",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -21274,7 +24172,7 @@
     {
       "id": "E089-integration-task-nav",
       "time": "2026-10-22T03:12:15.746Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/home",
+      "url": "/dis/home",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -21288,7 +24186,7 @@
     {
       "id": "E090-integration-offline",
       "time": "2026-10-22T03:12:58.474Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/home",
+      "url": "/dis/home",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -21302,7 +24200,7 @@
     {
       "id": "E092-offline-nav",
       "time": "2026-10-22T03:13:20.264Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/home",
+      "url": "/dis/home",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -21316,7 +24214,7 @@
     {
       "id": "E093-offline-list",
       "time": "2026-10-22T03:13:37.555Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+      "url": "/dis/taskManagement/dataAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -21330,7 +24228,7 @@
     {
       "id": "E094-offline-add",
       "time": "2026-10-22T03:13:42.015Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/edit?optType=add",
+      "url": "/dis/taskManagement/dataAcquisition/edit?optType=add",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -21344,7 +24242,7 @@
     {
       "id": "E095-portal-tab",
       "time": "2026-10-22T03:14:18.620Z",
-      "url": "http://www.audaqueproxy.com:10223/gsp-portal/home",
+      "url": "/gsp-portal/home",
       "title": "未知",
       "modules": [
         "GSP"
@@ -21358,7 +24256,7 @@
     {
       "id": "E096-portal-data-list",
       "time": "2026-10-22T03:14:41.836Z",
-      "url": "http://www.audaqueproxy.com:10223/gsp-portal/samcheong",
+      "url": "/gsp-portal/samcheong",
       "title": "未知",
       "modules": [
         "GSP"
@@ -21372,7 +24270,7 @@
     {
       "id": "E099-mask-list-original",
       "time": "2026-10-22T03:15:41.828Z",
-      "url": "http://www.audaqueproxy.com:10223/dsps/mask/list",
+      "url": "/dsps/mask/list",
       "title": "数据安全保护",
       "modules": [
         "DSPS"
@@ -21386,7 +24284,7 @@
     {
       "id": "E101-current-complete",
       "time": "2026-10-22T03:27:41.212Z",
-      "url": "http://www.audaqueproxy.com:10223/workorder/workbench/workflowReviewList",
+      "url": "/workorder/workbench/workflowReviewList",
       "title": "我的工单",
       "modules": [
         "WO"
@@ -21400,7 +24298,7 @@
     {
       "id": "E102-metadata-edit-values",
       "time": "2026-10-22T03:37:46.762Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectEdit?id=6&optType=edit",
+      "url": "/mdm/metadata/manage/collectEdit?id=6&optType=edit",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -21414,7 +24312,7 @@
     {
       "id": "E103-metadata-edit-cancel-ready",
       "time": "2026-10-22T03:37:49.818Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/edit?optType=add",
+      "url": "/ems/programmeManage/edit?optType=add",
       "title": "未知",
       "modules": [
         "MDM"
@@ -21428,7 +24326,7 @@
     {
       "id": "F001-datasource-entry",
       "time": "2026-10-22T03:57:20.253Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/driveList",
+      "url": "/datasource/dataSource/driveList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21442,7 +24340,7 @@
     {
       "id": "F002-driver-add",
       "time": "2026-10-22T03:57:47.885Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/driveDesign?optType=add",
+      "url": "/datasource/dataSource/driveDesign?optType=add",
       "title": "数据源管理",
       "modules": [],
       "status": "有效：只读补采",
@@ -21454,7 +24352,7 @@
     {
       "id": "F003-driver-add-elements",
       "time": "2026-10-22T04:00:34.836Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/driveDesign?optType=add",
+      "url": "/datasource/dataSource/driveDesign?optType=add",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21468,7 +24366,7 @@
     {
       "id": "F004-source-list-actions",
       "time": "2026-10-22T04:00:42.617Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21482,7 +24380,7 @@
     {
       "id": "F005-source-edit",
       "time": "2026-10-22T04:07:02.300Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=10063&optType=edit&name=%E8%BE%BE%E6%A2%A6B&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=10063&optType=edit&name=%E8%BE%BE%E6%A2%A6B&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21496,7 +24394,7 @@
     {
       "id": "F006-source-query",
       "time": "2026-10-22T04:07:55.361Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21510,7 +24408,7 @@
     {
       "id": "F007-source-delete-confirm",
       "time": "2026-10-22T04:07:56.884Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21524,7 +24422,7 @@
     {
       "id": "F008-source-delete-elements",
       "time": "2026-10-22T04:08:00.475Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21538,7 +24436,7 @@
     {
       "id": "F009-source-reset",
       "time": "2026-10-22T04:08:07.823Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21552,7 +24450,7 @@
     {
       "id": "F010-source-add-before-driver",
       "time": "2026-10-22T04:08:58.847Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21566,7 +24464,7 @@
     {
       "id": "F011-source-driver-options",
       "time": "2026-10-22T04:09:26.929Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=adminDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21580,7 +24478,7 @@
     {
       "id": "F020-DS-api-list",
       "time": "2026-10-22T04:11:29.043Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21594,7 +24492,7 @@
     {
       "id": "F021-DS-api-query",
       "time": "2026-10-22T04:11:37.345Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21608,7 +24506,7 @@
     {
       "id": "F022-DS-api-reset",
       "time": "2026-10-22T04:11:41.578Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21622,7 +24520,7 @@
     {
       "id": "F023-DS-api-add",
       "time": "2026-10-22T04:11:45.869Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/edit?optType=add",
+      "url": "/datasource/api/edit?optType=add",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21636,7 +24534,7 @@
     {
       "id": "F024-DS-api-add-cancel",
       "time": "2026-10-22T04:11:50.650Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21650,7 +24548,7 @@
     {
       "id": "F025-DS-api-edit",
       "time": "2026-10-22T04:11:59.892Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/edit?id=10013&optType=edit",
+      "url": "/datasource/api/edit?id=10013&optType=edit",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21664,7 +24562,7 @@
     {
       "id": "F026-DS-api-edit-cancel",
       "time": "2026-10-22T04:12:05.152Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21678,7 +24576,7 @@
     {
       "id": "F027-DS-api-delete-guard",
       "time": "2026-10-22T04:12:09.165Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21692,7 +24590,7 @@
     {
       "id": "F028-DS-api-delete",
       "time": "2026-10-22T04:12:12.752Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21706,7 +24604,7 @@
     {
       "id": "F029-DS-api-delete-cancel",
       "time": "2026-10-22T04:12:16.991Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21720,7 +24618,7 @@
     {
       "id": "F030-DS-kafka-list",
       "time": "2026-10-22T04:12:24.828Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21734,7 +24632,7 @@
     {
       "id": "F031-DS-kafka-query",
       "time": "2026-10-22T04:12:32.608Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21748,7 +24646,7 @@
     {
       "id": "F032-DS-kafka-reset",
       "time": "2026-10-22T04:12:36.848Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21762,7 +24660,7 @@
     {
       "id": "F033-DS-kafka-add",
       "time": "2026-10-22T04:12:41.125Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/edit?optType=add",
+      "url": "/datasource/kafka/edit?optType=add",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21776,7 +24674,7 @@
     {
       "id": "F034-DS-kafka-add-cancel",
       "time": "2026-10-22T04:12:45.570Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21790,7 +24688,7 @@
     {
       "id": "F035-DS-kafka-edit",
       "time": "2026-10-22T04:12:54.809Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/edit?id=10013&optType=edit",
+      "url": "/datasource/kafka/edit?id=10013&optType=edit",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21804,7 +24702,7 @@
     {
       "id": "F036-DS-kafka-edit-cancel",
       "time": "2026-10-22T04:12:59.034Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21818,7 +24716,7 @@
     {
       "id": "F037-DS-kafka-delete-guard",
       "time": "2026-10-22T04:13:03.045Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21832,7 +24730,7 @@
     {
       "id": "F038-DS-kafka-delete",
       "time": "2026-10-22T04:13:06.631Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21846,7 +24744,7 @@
     {
       "id": "F039-DS-kafka-delete-cancel",
       "time": "2026-10-22T04:13:10.868Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/kafka/list",
+      "url": "/datasource/kafka/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21860,7 +24758,7 @@
     {
       "id": "F040-DS-department-list",
       "time": "2026-10-22T04:13:19.647Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/myDataSourceManageList",
+      "url": "/datasource/dataSource/myDataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21874,7 +24772,7 @@
     {
       "id": "F041-DS-department-query",
       "time": "2026-10-22T04:13:27.961Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/myDataSourceManageList",
+      "url": "/datasource/dataSource/myDataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21888,7 +24786,7 @@
     {
       "id": "F042-DS-department-reset",
       "time": "2026-10-22T04:13:33.194Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/myDataSourceManageList",
+      "url": "/datasource/dataSource/myDataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21902,7 +24800,7 @@
     {
       "id": "F043-DS-department-add",
       "time": "2026-10-22T04:13:37.472Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=myDataSource",
+      "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=myDataSource",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21916,7 +24814,7 @@
     {
       "id": "F045-DS-sources-list",
       "time": "2026-10-22T04:13:59.495Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/iCanUsedDataSourceList",
+      "url": "/datasource/dataSource/iCanUsedDataSourceList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21930,7 +24828,7 @@
     {
       "id": "F046-DS-sources-query",
       "time": "2026-10-22T04:14:07.822Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/iCanUsedDataSourceList",
+      "url": "/datasource/dataSource/iCanUsedDataSourceList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21944,7 +24842,7 @@
     {
       "id": "F047-DS-sources-reset",
       "time": "2026-10-22T04:14:12.057Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/iCanUsedDataSourceList",
+      "url": "/datasource/dataSource/iCanUsedDataSourceList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -21958,7 +24856,7 @@
     {
       "id": "F049-DMS-model-list",
       "time": "2026-10-22T04:14:33.036Z",
-      "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+      "url": "/dms/modelManagement/list",
       "title": "规范化数据建模",
       "modules": [],
       "status": "部分有效：仅导航/未取得目标内容",
@@ -21970,7 +24868,7 @@
     {
       "id": "F051-DSS-document-list",
       "time": "2026-10-22T04:15:02.493Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -21984,7 +24882,7 @@
     {
       "id": "F052-DSS-document-edit",
       "time": "2026-10-22T04:15:17.756Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?id=25&optType=edit",
+      "url": "/dss/standard/document/docEdit?id=25&optType=edit",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -21998,7 +24896,7 @@
     {
       "id": "F053-DSS-document-edit-cancel",
       "time": "2026-10-22T04:15:23.211Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -22012,7 +24910,7 @@
     {
       "id": "F055-DQTS-column-list",
       "time": "2026-10-22T04:15:44.891Z",
-      "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+      "url": "/dqts/columnAnalysis/list",
       "title": "数据质量检测",
       "modules": [
         "DQTS"
@@ -22026,7 +24924,7 @@
     {
       "id": "F057-EMS-scheme-list",
       "time": "2026-10-22T04:16:13.389Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -22040,7 +24938,7 @@
     {
       "id": "F058-EMS-scheme-query",
       "time": "2026-10-22T04:16:21.169Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -22054,7 +24952,7 @@
     {
       "id": "F059-EMS-scheme-reset",
       "time": "2026-10-22T04:16:26.415Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -22068,7 +24966,7 @@
     {
       "id": "F060-EMS-scheme-add",
       "time": "2026-10-22T04:16:30.674Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/edit?optType=add",
+      "url": "/ems/programmeManage/edit?optType=add",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -22082,7 +24980,7 @@
     {
       "id": "F061-EMS-scheme-add-cancel",
       "time": "2026-10-22T04:16:35.314Z",
-      "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+      "url": "/ems/programmeManage/list",
       "title": "评价管理",
       "modules": [
         "EMS"
@@ -22096,7 +24994,7 @@
     {
       "id": "F063-RTMS-template-list",
       "time": "2026-10-22T04:17:03.814Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22110,7 +25008,7 @@
     {
       "id": "F064-RTMS-template-query",
       "time": "2026-10-22T04:17:11.662Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22124,7 +25022,7 @@
     {
       "id": "F065-RTMS-template-reset",
       "time": "2026-10-22T04:17:16.897Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22138,7 +25036,7 @@
     {
       "id": "F066-RTMS-template-add",
       "time": "2026-10-22T04:17:21.175Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/detail?optType=add",
+      "url": "/rtms/report/reportTemplate/detail?optType=add",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22152,7 +25050,7 @@
     {
       "id": "F067-RTMS-template-add-cancel",
       "time": "2026-10-22T04:17:26.446Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22166,7 +25064,7 @@
     {
       "id": "F068-RTMS-template-edit",
       "time": "2026-10-22T04:17:38.830Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/detail?id=27&optType=edit&isQuoted=false",
+      "url": "/rtms/report/reportTemplate/detail?id=27&optType=edit&isQuoted=false",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22180,7 +25078,7 @@
     {
       "id": "F069-RTMS-template-edit-cancel",
       "time": "2026-10-22T04:17:43.588Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22194,7 +25092,7 @@
     {
       "id": "F070-RTMS-template-delete-guard",
       "time": "2026-10-22T04:17:49.957Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22208,7 +25106,7 @@
     {
       "id": "F071-RTMS-template-delete",
       "time": "2026-10-22T04:17:53.535Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22222,7 +25120,7 @@
     {
       "id": "F072-RTMS-template-delete-cancel",
       "time": "2026-10-22T04:17:57.793Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "RTMS"
@@ -22236,7 +25134,7 @@
     {
       "id": "F073-DSTS-plan-list",
       "time": "2026-10-22T04:18:15.272Z",
-      "url": "http://www.audaqueproxy.com:10223/dsts/standard/plan/list",
+      "url": "/dsts/standard/plan/list",
       "title": "数据标准检测",
       "modules": [
         "DSTS"
@@ -22250,7 +25148,7 @@
     {
       "id": "F075-DSPS-mask-list",
       "time": "2026-10-22T04:18:45.403Z",
-      "url": "http://www.audaqueproxy.com:10223/dsps/mask/list",
+      "url": "/dsps/mask/list",
       "title": "数据安全保护",
       "modules": [
         "DSPS"
@@ -22264,7 +25162,7 @@
     {
       "id": "F077-AIS-recall-list",
       "time": "2026-10-22T04:19:15.893Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22278,7 +25176,7 @@
     {
       "id": "F078-AIS-recall-query",
       "time": "2026-10-22T04:19:24.717Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22292,7 +25190,7 @@
     {
       "id": "F079-AIS-recall-reset",
       "time": "2026-10-22T04:19:29.959Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22306,7 +25204,7 @@
     {
       "id": "F080-AIS-recall-add",
       "time": "2026-10-22T04:19:34.286Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22320,7 +25218,7 @@
     {
       "id": "F081-AIS-recall-add-cancel",
       "time": "2026-10-22T04:19:38.549Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22334,7 +25232,7 @@
     {
       "id": "F082-AIS-recall-edit",
       "time": "2026-10-22T04:19:51.252Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22348,7 +25246,7 @@
     {
       "id": "F083-AIS-recall-edit-cancel",
       "time": "2026-10-22T04:19:56.507Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22362,7 +25260,7 @@
     {
       "id": "F084-AIS-recall-delete-guard",
       "time": "2026-10-22T04:20:06.934Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22376,7 +25274,7 @@
     {
       "id": "F085-AIS-recall-delete",
       "time": "2026-10-22T04:20:10.507Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22390,7 +25288,7 @@
     {
       "id": "F086-AIS-recall-delete-cancel",
       "time": "2026-10-22T04:20:14.763Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -22404,7 +25302,7 @@
     {
       "id": "F087-SPACE-space-list",
       "time": "2026-10-22T04:20:36.932Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/projectSpace/index",
+      "url": "/dop/projectSpace/index",
       "title": "工作空间",
       "modules": [
         "SPACE"
@@ -22418,7 +25316,7 @@
     {
       "id": "F088-DRMS-project-list",
       "time": "2026-10-22T04:23:14.342Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/kanban",
+      "url": "/drms/kanban",
       "title": "业务需求管理系统",
       "modules": [],
       "status": "目标未采到",
@@ -22430,7 +25328,7 @@
     {
       "id": "F090-DRMS-demand-list",
       "time": "2026-10-22T04:23:42.431Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/kanban",
+      "url": "/drms/kanban",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22444,7 +25342,7 @@
     {
       "id": "F090-model-stable-check",
       "time": "2026-10-22T04:21:32.197Z",
-      "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+      "url": "/dms/modelManagement/list",
       "title": "规范化数据建模",
       "modules": [],
       "status": "部分有效：仅导航/未取得目标内容",
@@ -22456,7 +25354,7 @@
     {
       "id": "F091-DRMS-project-list",
       "time": "2026-10-22T04:26:20.075Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/my",
+      "url": "/drms/project/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS",
@@ -22471,7 +25369,7 @@
     {
       "id": "F091-model-menu-design",
       "time": "2026-10-22T04:21:48.128Z",
-      "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+      "url": "/dms/modelManagement/list",
       "title": "规范化数据建模",
       "modules": [
         "DMS"
@@ -22485,7 +25383,7 @@
     {
       "id": "F092-DRMS-project-query",
       "time": "2026-10-22T04:26:27.798Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/my",
+      "url": "/drms/project/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22499,7 +25397,7 @@
     {
       "id": "F093-DRMS-project-reset",
       "time": "2026-10-22T04:26:32.020Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/my",
+      "url": "/drms/project/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22513,7 +25411,7 @@
     {
       "id": "F094-DRMS-project-add",
       "time": "2026-10-22T04:26:36.319Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/edit?optType=add",
+      "url": "/drms/project/edit?optType=add",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22527,7 +25425,7 @@
     {
       "id": "F095-DRMS-project-add-cancel",
       "time": "2026-10-22T04:26:41.493Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/my",
+      "url": "/drms/project/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22541,7 +25439,7 @@
     {
       "id": "F096-DRMS-project-edit",
       "time": "2026-10-22T04:27:30.137Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/edit?id=9&optType=edit",
+      "url": "/drms/project/edit?id=9&optType=edit",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22555,7 +25453,7 @@
     {
       "id": "F097-DRMS-project-edit-cancel",
       "time": "2026-10-22T04:27:34.413Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/project/my",
+      "url": "/drms/project/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22569,7 +25467,7 @@
     {
       "id": "F099-DRMS-demand-list",
       "time": "2026-10-22T04:28:31.481Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/requirement/my",
+      "url": "/drms/requirement/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22583,7 +25481,7 @@
     {
       "id": "F100-DRMS-demand-query",
       "time": "2026-10-22T04:28:39.173Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/requirement/my",
+      "url": "/drms/requirement/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22597,7 +25495,7 @@
     {
       "id": "F101-DRMS-demand-reset",
       "time": "2026-10-22T04:28:43.356Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/requirement/my",
+      "url": "/drms/requirement/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22611,7 +25509,7 @@
     {
       "id": "F102-DRMS-demand-add",
       "time": "2026-10-22T04:28:47.656Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/requirement/edit?optType=add",
+      "url": "/drms/requirement/edit?optType=add",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22625,7 +25523,7 @@
     {
       "id": "F103-DRMS-demand-add-cancel",
       "time": "2026-10-22T04:28:52.386Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/requirement/my",
+      "url": "/drms/requirement/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22639,7 +25537,7 @@
     {
       "id": "F104-DRMS-task-list",
       "time": "2026-10-22T04:29:39.450Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/task/my",
+      "url": "/drms/task/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22653,7 +25551,7 @@
     {
       "id": "F105-DRMS-task-query",
       "time": "2026-10-22T04:29:47.151Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/task/my",
+      "url": "/drms/task/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22667,7 +25565,7 @@
     {
       "id": "F106-DRMS-task-reset",
       "time": "2026-10-22T04:29:51.389Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/task/my",
+      "url": "/drms/task/my",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22681,7 +25579,7 @@
     {
       "id": "F108-DRMS-consult-list",
       "time": "2026-10-22T04:30:03.398Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/advisory/list",
+      "url": "/drms/advisory/list",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22695,7 +25593,7 @@
     {
       "id": "F109-DRMS-consult-query",
       "time": "2026-10-22T04:30:11.623Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/advisory/list",
+      "url": "/drms/advisory/list",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22709,7 +25607,7 @@
     {
       "id": "F110-DRMS-consult-reset",
       "time": "2026-10-22T04:30:15.820Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/advisory/list",
+      "url": "/drms/advisory/list",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22723,7 +25621,7 @@
     {
       "id": "F111-DRMS-consult-add",
       "time": "2026-10-22T04:30:20.117Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/advisory/edit?optType=add&business=list",
+      "url": "/drms/advisory/edit?optType=add&business=list",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22737,7 +25635,7 @@
     {
       "id": "F112-DRMS-consult-add-cancel",
       "time": "2026-10-22T04:30:25.297Z",
-      "url": "http://www.audaqueproxy.com:10223/drms/advisory/list",
+      "url": "/drms/advisory/list",
       "title": "业务需求管理系统",
       "modules": [
         "DRMS"
@@ -22751,7 +25649,7 @@
     {
       "id": "F114-DBMS-prepare-list",
       "time": "2026-10-22T04:30:51.946Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office",
+      "url": "/dop/dbms/requirement/prepare/office",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22765,7 +25663,7 @@
     {
       "id": "F115-DBMS-prepare-query",
       "time": "2026-10-22T04:30:59.681Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office",
+      "url": "/dop/dbms/requirement/prepare/office",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22779,7 +25677,7 @@
     {
       "id": "F116-DBMS-prepare-reset",
       "time": "2026-10-22T04:31:03.914Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office",
+      "url": "/dop/dbms/requirement/prepare/office",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22793,7 +25691,7 @@
     {
       "id": "F117-DBMS-prepare-add",
       "time": "2026-10-22T04:31:08.214Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office/editSubject?optType=add",
+      "url": "/dop/dbms/requirement/prepare/office/editSubject?optType=add",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22807,7 +25705,7 @@
     {
       "id": "F118-DBMS-prepare-add-cancel",
       "time": "2026-10-22T04:31:13.385Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/prepare/office",
+      "url": "/dop/dbms/requirement/prepare/office",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22821,7 +25719,7 @@
     {
       "id": "F120-DBMS-plan-list",
       "time": "2026-10-22T04:31:25.401Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/plan/milepost",
+      "url": "/dop/dbms/requirement/plan/milepost",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22835,7 +25733,7 @@
     {
       "id": "F121-DBMS-plan-add",
       "time": "2026-10-22T04:31:30.527Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/plan/milepost/edit?optType=add",
+      "url": "/dop/dbms/requirement/plan/milepost/edit?optType=add",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22849,7 +25747,7 @@
     {
       "id": "F122-DBMS-plan-add-cancel",
       "time": "2026-10-22T04:31:34.660Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/plan/milepost",
+      "url": "/dop/dbms/requirement/plan/milepost",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22863,7 +25761,7 @@
     {
       "id": "F124-DBMS-config-list",
       "time": "2026-10-22T04:31:43.401Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/index",
+      "url": "/dop/dbms/config/applyConfig/index",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22877,7 +25775,7 @@
     {
       "id": "F125-DBMS-config-detail",
       "time": "2026-10-22T04:31:48.606Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/edit?id=79&optType=view",
+      "url": "/dop/dbms/config/applyConfig/edit?id=79&optType=view",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22891,7 +25789,7 @@
     {
       "id": "F126-DBMS-config-detail-cancel",
       "time": "2026-10-22T04:31:52.940Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/index",
+      "url": "/dop/dbms/config/applyConfig/index",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -22905,7 +25803,7 @@
     {
       "id": "F128-SMS-flow-list",
       "time": "2026-10-22T04:32:58.587Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/develop/taskDevelop",
+      "url": "/sms/develop/taskDevelop",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -22919,7 +25817,7 @@
     {
       "id": "F130-SMS-schedule-list",
       "time": "2026-10-22T04:33:11.473Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+      "url": "/sms/schedule/manage/scheduleList",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -22933,7 +25831,7 @@
     {
       "id": "F131-CMS-develop-list",
       "time": "2026-10-22T04:33:30.525Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/index",
+      "url": "/dop/cms/comfactory/development/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -22947,7 +25845,7 @@
     {
       "id": "F132-CMS-develop-list",
       "time": "2026-10-22T04:34:33.292Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/index",
+      "url": "/dop/cms/comfactory/development/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -22961,7 +25859,7 @@
     {
       "id": "F133-CMS-develop-query",
       "time": "2026-10-22T04:34:42.183Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/index",
+      "url": "/dop/cms/comfactory/development/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -22975,7 +25873,7 @@
     {
       "id": "F134-CMS-develop-reset",
       "time": "2026-10-22T04:34:48.771Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/index",
+      "url": "/dop/cms/comfactory/development/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -22989,7 +25887,7 @@
     {
       "id": "F135-CMS-develop-add",
       "time": "2026-10-22T04:34:53.009Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/edit?optType=add&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&id=&componentInfoExtId=&componentNameId=",
+      "url": "/dop/cms/comfactory/development/edit?optType=add&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&id=&componentInfoExtId=&componentNameId=",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23003,7 +25901,7 @@
     {
       "id": "F136-CMS-develop-add-cancel",
       "time": "2026-10-22T04:34:57.620Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/index",
+      "url": "/dop/cms/comfactory/development/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23017,7 +25915,7 @@
     {
       "id": "F137-CMS-develop-detail",
       "time": "2026-10-22T04:35:01.959Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/edit?optType=view&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&id=5&componentInfoExtId=7&componentNameId=5",
+      "url": "/dop/cms/comfactory/development/edit?optType=view&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&id=5&componentInfoExtId=7&componentNameId=5",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23031,7 +25929,7 @@
     {
       "id": "F139-CMS-config-list",
       "time": "2026-10-22T04:35:17.764Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23045,7 +25943,7 @@
     {
       "id": "F140-CMS-config-query",
       "time": "2026-10-22T04:35:25.479Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23059,7 +25957,7 @@
     {
       "id": "F141-CMS-config-reset",
       "time": "2026-10-22T04:35:29.710Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23073,7 +25971,7 @@
     {
       "id": "F142-CMS-config-add",
       "time": "2026-10-22T04:35:34.001Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23087,7 +25985,7 @@
     {
       "id": "F143-CMS-config-add-cancel",
       "time": "2026-10-22T04:35:38.237Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23101,7 +25999,7 @@
     {
       "id": "F144-CMS-config-edit",
       "time": "2026-10-22T04:35:42.575Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23115,7 +26013,7 @@
     {
       "id": "F145-CMS-config-edit-cancel",
       "time": "2026-10-22T04:35:46.847Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23129,7 +26027,7 @@
     {
       "id": "F146-CMS-config-delete-guard",
       "time": "2026-10-22T04:35:48.474Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23143,7 +26041,7 @@
     {
       "id": "F147-CMS-config-delete",
       "time": "2026-10-22T04:35:51.989Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23157,7 +26055,7 @@
     {
       "id": "F148-CMS-config-delete-cancel",
       "time": "2026-10-22T04:35:56.135Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/manage/componentName/index",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23171,7 +26069,7 @@
     {
       "id": "F149-CMS-mine-list",
       "time": "2026-10-22T04:36:06.378Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/mine/index",
+      "url": "/dop/cms/comfactory/mine/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23185,7 +26083,7 @@
     {
       "id": "F150-CMS-mine-query",
       "time": "2026-10-22T04:36:14.110Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/mine/index",
+      "url": "/dop/cms/comfactory/mine/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23199,7 +26097,7 @@
     {
       "id": "F151-CMS-mine-reset",
       "time": "2026-10-22T04:36:18.319Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/mine/index",
+      "url": "/dop/cms/comfactory/mine/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23213,7 +26111,7 @@
     {
       "id": "F152-CMS-mine-detail",
       "time": "2026-10-22T04:36:22.646Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/edit?optType=view&componentNameId=5",
+      "url": "/dop/cms/comfactory/development/edit?optType=view&componentNameId=5",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23227,7 +26125,7 @@
     {
       "id": "F153-CMS-mine-delete-guard",
       "time": "2026-10-22T04:36:30.120Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/mine/index",
+      "url": "/dop/cms/comfactory/mine/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23241,7 +26139,7 @@
     {
       "id": "F154-CMS-mine-delete",
       "time": "2026-10-22T04:36:33.599Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/mine/index",
+      "url": "/dop/cms/comfactory/mine/index",
       "title": "构件管理",
       "modules": [
         "CMS"
@@ -23255,7 +26153,7 @@
     {
       "id": "F155-DIS-table-list",
       "time": "2026-10-22T04:36:52.760Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+      "url": "/dis/taskManagement/dataAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23269,7 +26167,7 @@
     {
       "id": "F156-DIS-table-query",
       "time": "2026-10-22T04:37:00.934Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+      "url": "/dis/taskManagement/dataAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23283,7 +26181,7 @@
     {
       "id": "F157-DIS-table-reset",
       "time": "2026-10-22T04:37:07.161Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+      "url": "/dis/taskManagement/dataAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23297,7 +26195,7 @@
     {
       "id": "F158-DIS-table-add",
       "time": "2026-10-22T04:37:11.507Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/edit?optType=add",
+      "url": "/dis/taskManagement/dataAcquisition/edit?optType=add",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23311,7 +26209,7 @@
     {
       "id": "F159-DIS-table-add-cancel",
       "time": "2026-10-22T04:37:16.706Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+      "url": "/dis/taskManagement/dataAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23325,7 +26223,7 @@
     {
       "id": "F160-DIS-table-edit",
       "time": "2026-10-22T04:37:22.758Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/edit?id=49&optType=edit",
+      "url": "/dis/taskManagement/dataAcquisition/edit?id=49&optType=edit",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23339,7 +26237,7 @@
     {
       "id": "F161-DIS-table-edit-cancel",
       "time": "2026-10-22T04:37:27.949Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/dataAcquisition/list",
+      "url": "/dis/taskManagement/dataAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23353,7 +26251,7 @@
     {
       "id": "F163-DIS-database-list",
       "time": "2026-10-22T04:37:36.087Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/libraryMigration/list",
+      "url": "/dis/taskManagement/libraryMigration/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23367,7 +26265,7 @@
     {
       "id": "F164-DIS-database-query",
       "time": "2026-10-22T04:37:44.309Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/libraryMigration/list",
+      "url": "/dis/taskManagement/libraryMigration/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23381,7 +26279,7 @@
     {
       "id": "F165-DIS-database-reset",
       "time": "2026-10-22T04:37:48.546Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/libraryMigration/list",
+      "url": "/dis/taskManagement/libraryMigration/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23395,7 +26293,7 @@
     {
       "id": "F166-DIS-database-add",
       "time": "2026-10-22T04:37:52.812Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/libraryMigration/edit?optType=add",
+      "url": "/dis/taskManagement/libraryMigration/edit?optType=add",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23409,7 +26307,7 @@
     {
       "id": "F167-DIS-database-add-cancel",
       "time": "2026-10-22T04:37:57.256Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/libraryMigration/list",
+      "url": "/dis/taskManagement/libraryMigration/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23423,7 +26321,7 @@
     {
       "id": "F169-DIS-api-list",
       "time": "2026-10-22T04:38:04.431Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/apiAndFileCollection/public",
+      "url": "/dis/taskManagement/apiAndFileCollection/public",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23437,7 +26335,7 @@
     {
       "id": "F170-DIS-api-query",
       "time": "2026-10-22T04:38:12.128Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/apiAndFileCollection/public",
+      "url": "/dis/taskManagement/apiAndFileCollection/public",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23451,7 +26349,7 @@
     {
       "id": "F171-DIS-api-reset",
       "time": "2026-10-22T04:38:16.375Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/apiAndFileCollection/public",
+      "url": "/dis/taskManagement/apiAndFileCollection/public",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23465,7 +26363,7 @@
     {
       "id": "F172-DIS-api-add",
       "time": "2026-10-22T04:38:20.653Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit?optType=add",
+      "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit?optType=add",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23479,7 +26377,7 @@
     {
       "id": "F173-DIS-api-add-cancel",
       "time": "2026-10-22T04:38:25.598Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/apiAndFileCollection/public",
+      "url": "/dis/taskManagement/apiAndFileCollection/public",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23493,7 +26391,7 @@
     {
       "id": "F175-DIS-file-list",
       "time": "2026-10-22T04:38:32.768Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/list",
+      "url": "/dis/taskManagement/fileAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23507,7 +26405,7 @@
     {
       "id": "F176-DIS-file-query",
       "time": "2026-10-22T04:38:40.998Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/list",
+      "url": "/dis/taskManagement/fileAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23521,7 +26419,7 @@
     {
       "id": "F177-DIS-file-reset",
       "time": "2026-10-22T04:38:45.216Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/list",
+      "url": "/dis/taskManagement/fileAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23535,7 +26433,7 @@
     {
       "id": "F178-DIS-file-add",
       "time": "2026-10-22T04:38:49.504Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/edit?optType=add",
+      "url": "/dis/taskManagement/fileAcquisition/edit?optType=add",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23549,7 +26447,7 @@
     {
       "id": "F179-DIS-file-add-cancel",
       "time": "2026-10-22T04:38:54.096Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/list",
+      "url": "/dis/taskManagement/fileAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23563,7 +26461,7 @@
     {
       "id": "F181-DIS-realtime-list",
       "time": "2026-10-22T04:39:04.374Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/realTimeAcquisition/list",
+      "url": "/dis/taskManagement/realTimeAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23577,7 +26475,7 @@
     {
       "id": "F182-DIS-realtime-query",
       "time": "2026-10-22T04:39:12.603Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/realTimeAcquisition/list",
+      "url": "/dis/taskManagement/realTimeAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23591,7 +26489,7 @@
     {
       "id": "F183-DIS-realtime-reset",
       "time": "2026-10-22T04:39:16.845Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/realTimeAcquisition/list",
+      "url": "/dis/taskManagement/realTimeAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23605,7 +26503,7 @@
     {
       "id": "F184-DIS-realtime-add",
       "time": "2026-10-22T04:39:21.100Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/realTimeAcquisition/edit?optType=add",
+      "url": "/dis/taskManagement/realTimeAcquisition/edit?optType=add",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23619,7 +26517,7 @@
     {
       "id": "F185-DIS-realtime-add-cancel",
       "time": "2026-10-22T04:39:25.751Z",
-      "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/realTimeAcquisition/list",
+      "url": "/dis/taskManagement/realTimeAcquisition/list",
       "title": "数据集成采集",
       "modules": [
         "DIS"
@@ -23633,7 +26531,7 @@
     {
       "id": "F187-SMS-flow-list",
       "time": "2026-10-22T04:39:41.788Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/develop/taskDevelop",
+      "url": "/sms/develop/taskDevelop",
       "title": "任务编排与调度",
       "modules": [],
       "status": "部分有效：仅导航/未取得目标内容",
@@ -23645,7 +26543,7 @@
     {
       "id": "F189-SMS-schedule-list",
       "time": "2026-10-22T04:39:52.309Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+      "url": "/sms/schedule/manage/scheduleList",
       "title": "任务编排与调度",
       "modules": [],
       "status": "有效：只读补采",
@@ -23657,7 +26555,7 @@
     {
       "id": "F190-SMS-schedule-query",
       "time": "2026-10-22T04:40:00.543Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+      "url": "/sms/schedule/manage/scheduleList",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -23671,7 +26569,7 @@
     {
       "id": "F191-SMS-schedule-reset",
       "time": "2026-10-22T04:40:04.787Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/schedule/manage/scheduleList",
+      "url": "/sms/schedule/manage/scheduleList",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -23685,7 +26583,7 @@
     {
       "id": "F193-SMS-resource-list",
       "time": "2026-10-22T04:40:15.081Z",
-      "url": "http://www.audaqueproxy.com:10223/sms/resource/collectionList",
+      "url": "/sms/resource/collectionList",
       "title": "任务编排与调度",
       "modules": [
         "SMS"
@@ -23699,7 +26597,7 @@
     {
       "id": "F195-DSS-document-list",
       "time": "2026-10-22T04:40:56.471Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [],
       "status": "有效：只读补采",
@@ -23711,7 +26609,7 @@
     {
       "id": "F196-DSS-document-query",
       "time": "2026-10-22T04:41:04.701Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23725,7 +26623,7 @@
     {
       "id": "F197-DSS-document-reset",
       "time": "2026-10-22T04:41:08.917Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23739,7 +26637,7 @@
     {
       "id": "F198-DSS-document-edit",
       "time": "2026-10-22T04:41:21.308Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?id=25&optType=edit",
+      "url": "/dss/standard/document/docEdit?id=25&optType=edit",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23753,7 +26651,7 @@
     {
       "id": "F199-DSS-document-edit-cancel",
       "time": "2026-10-22T04:41:26.920Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23767,7 +26665,7 @@
     {
       "id": "F200-DSS-document-delete-guard",
       "time": "2026-10-22T04:41:29.644Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23781,7 +26679,7 @@
     {
       "id": "F201-DSS-document-delete",
       "time": "2026-10-22T04:41:33.167Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23795,7 +26693,7 @@
     {
       "id": "F202-DSS-document-delete-cancel",
       "time": "2026-10-22T04:41:37.321Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23809,7 +26707,7 @@
     {
       "id": "F203-DSS-term-list",
       "time": "2026-10-22T04:41:44.486Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [],
       "status": "有效：只读补采",
@@ -23821,7 +26719,7 @@
     {
       "id": "F204-DSS-term-query",
       "time": "2026-10-22T04:41:52.216Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23835,7 +26733,7 @@
     {
       "id": "F205-DSS-term-reset",
       "time": "2026-10-22T04:41:56.446Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23849,7 +26747,7 @@
     {
       "id": "F206-DSS-term-add",
       "time": "2026-10-22T04:42:00.776Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termEdit?optType=add",
+      "url": "/dss/standard/document/termEdit?optType=add",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23863,7 +26761,7 @@
     {
       "id": "F207-DSS-term-add-cancel",
       "time": "2026-10-22T04:42:05.953Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23877,7 +26775,7 @@
     {
       "id": "F208-DSS-term-edit",
       "time": "2026-10-22T04:42:10.292Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termEdit?id=23&optType=edit",
+      "url": "/dss/standard/document/termEdit?id=23&optType=edit",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23891,7 +26789,7 @@
     {
       "id": "F209-DSS-term-edit-cancel",
       "time": "2026-10-22T04:42:15.490Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23905,7 +26803,7 @@
     {
       "id": "F210-DSS-term-delete-guard",
       "time": "2026-10-22T04:42:17.154Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23919,7 +26817,7 @@
     {
       "id": "F211-DSS-term-delete",
       "time": "2026-10-22T04:42:20.697Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23933,7 +26831,7 @@
     {
       "id": "F212-DSS-term-delete-cancel",
       "time": "2026-10-22T04:42:24.911Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/termList",
+      "url": "/dss/standard/document/termList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23947,7 +26845,7 @@
     {
       "id": "F213-DSS-system-list",
       "time": "2026-10-22T04:42:35.169Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23961,7 +26859,7 @@
     {
       "id": "F214-DSS-system-query",
       "time": "2026-10-22T04:42:41.658Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23975,7 +26873,7 @@
     {
       "id": "F215-DSS-system-reset",
       "time": "2026-10-22T04:42:45.927Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -23989,7 +26887,7 @@
     {
       "id": "F216-DSS-system-add",
       "time": "2026-10-22T04:42:50.188Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetEdit?datasetId=3&optType=add",
+      "url": "/dss/standard/system/dataSetEdit?datasetId=3&optType=add",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24003,7 +26901,7 @@
     {
       "id": "F217-DSS-system-add-cancel",
       "time": "2026-10-22T04:42:56.005Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24017,7 +26915,7 @@
     {
       "id": "F218-DSS-system-edit",
       "time": "2026-10-22T04:43:00.740Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetEdit?datasetId=3&id=33&optType=edit",
+      "url": "/dss/standard/system/dataSetEdit?datasetId=3&id=33&optType=edit",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24031,7 +26929,7 @@
     {
       "id": "F219-DSS-system-edit-cancel",
       "time": "2026-10-22T04:43:06.580Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24045,7 +26943,7 @@
     {
       "id": "F220-DSS-system-delete-guard",
       "time": "2026-10-22T04:43:08.611Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24059,7 +26957,7 @@
     {
       "id": "F221-DSS-system-delete",
       "time": "2026-10-22T04:43:12.155Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24073,7 +26971,7 @@
     {
       "id": "F222-DSS-system-delete-cancel",
       "time": "2026-10-22T04:43:16.334Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetList",
+      "url": "/dss/standard/system/dataSetList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24087,7 +26985,7 @@
     {
       "id": "F223-GDRS-reportmanage-list",
       "time": "2026-10-22T04:43:32.505Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [],
       "status": "有效：只读补采",
@@ -24099,7 +26997,7 @@
     {
       "id": "F225-GDRS-report-list",
       "time": "2026-10-22T04:43:51.445Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [],
       "status": "有效：只读补采",
@@ -24111,7 +27009,7 @@
     {
       "id": "F226-GDRS-report-query",
       "time": "2026-10-22T04:44:06.618Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24125,7 +27023,7 @@
     {
       "id": "F227-GDRS-report-reset",
       "time": "2026-10-22T04:44:19.996Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24139,7 +27037,7 @@
     {
       "id": "F228-GDRS-report-add",
       "time": "2026-10-22T04:44:29.011Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManageEdit?optType=add",
+      "url": "/gdrs/gdrs/categoryManageEdit?optType=add",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24153,7 +27051,7 @@
     {
       "id": "F229-GDRS-report-add-cancel",
       "time": "2026-10-22T04:44:39.437Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24167,7 +27065,7 @@
     {
       "id": "F232-browser-recovery-login",
       "time": "2026-10-22T04:51:15.630Z",
-      "url": "http://www.audaqueproxy.com:10223/module-login/login",
+      "url": "/module-login/login",
       "title": "未知",
       "modules": [],
       "status": "有效：只读补采",
@@ -24179,7 +27077,7 @@
     {
       "id": "F240-GDRS-category-list",
       "time": "2026-10-22T05:12:49.017Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [],
       "status": "有效：只读补采",
@@ -24191,7 +27089,7 @@
     {
       "id": "F241-GDRS-category-query",
       "time": "2026-10-22T05:12:59.880Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24205,7 +27103,7 @@
     {
       "id": "F242-GDRS-category-reset",
       "time": "2026-10-22T05:13:09.380Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24219,7 +27117,7 @@
     {
       "id": "F243-GDRS-category-add",
       "time": "2026-10-22T05:13:13.559Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManageEdit?optType=add",
+      "url": "/gdrs/gdrs/categoryManageEdit?optType=add",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24233,7 +27131,7 @@
     {
       "id": "F244-GDRS-category-add-cancel",
       "time": "2026-10-22T05:13:23.033Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManage",
+      "url": "/gdrs/gdrs/categoryManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24247,7 +27145,7 @@
     {
       "id": "F246-GDRS-standardresource-list",
       "time": "2026-10-22T05:13:43.498Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/resourceTableManage",
+      "url": "/gdrs/gdrs/resourceTableManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24261,7 +27159,7 @@
     {
       "id": "F247-GDRS-standardresource-query",
       "time": "2026-10-22T05:13:54.290Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/resourceTableManage",
+      "url": "/gdrs/gdrs/resourceTableManage",
       "title": "数据直报",
       "modules": [],
       "status": "目标无效：路由与正文不一致",
@@ -24273,7 +27171,7 @@
     {
       "id": "F248-GDRS-standardresource-reset",
       "time": "2026-10-22T05:14:03.746Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/resourceTableManage",
+      "url": "/gdrs/gdrs/resourceTableManage",
       "title": "数据直报",
       "modules": [],
       "status": "目标无效：路由与正文不一致",
@@ -24285,7 +27183,7 @@
     {
       "id": "F249-GDRS-standardresource-add",
       "time": "2026-10-22T05:14:07.893Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/categoryManageEdit?optType=add",
+      "url": "/gdrs/gdrs/categoryManageEdit?optType=add",
       "title": "数据直报",
       "modules": [],
       "status": "目标无效：路由与正文不一致",
@@ -24297,7 +27195,7 @@
     {
       "id": "F250-GDRS-standardresource-add-cancel",
       "time": "2026-10-22T05:14:12.046Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/gdrs/resourceTableManage",
+      "url": "/gdrs/gdrs/resourceTableManage",
       "title": "数据直报",
       "modules": [],
       "status": "目标无效：路由与正文不一致",
@@ -24309,7 +27207,7 @@
     {
       "id": "F252-GDRS-filereport-list",
       "time": "2026-10-22T05:14:23.266Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/report/unstructReportManage",
+      "url": "/gdrs/report/unstructReportManage",
       "title": "数据直报",
       "modules": [
         "GDRS"
@@ -24323,7 +27221,7 @@
     {
       "id": "F254-GDRS-review-list",
       "time": "2026-10-22T05:14:31.542Z",
-      "url": "http://www.audaqueproxy.com:10223/gdrs/approve/structApproveManage",
+      "url": "/gdrs/approve/structApproveManage",
       "title": "数据直报",
       "modules": [],
       "status": "有效：只读补采",
@@ -24335,7 +27233,7 @@
     {
       "id": "R001-E019-demand-config",
       "time": "2026-10-22T03:16:19.031Z",
-      "url": "http://www.audaqueproxy.com:10223/dop/dbms/config/applyConfig/index",
+      "url": "/dop/dbms/config/applyConfig/index",
       "title": "数据需求管理",
       "modules": [
         "DBMS"
@@ -24349,7 +27247,7 @@
     {
       "id": "R002-E022-datasource-list",
       "time": "2026-10-22T03:16:28.619Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/driveList",
+      "url": "/datasource/dataSource/driveList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -24363,7 +27261,7 @@
     {
       "id": "R003-E023-datasources",
       "time": "2026-10-22T03:16:35.716Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceManageList",
+      "url": "/datasource/dataSource/dataSourceManageList",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -24377,7 +27275,7 @@
     {
       "id": "R004-E027-api-source",
       "time": "2026-10-22T03:16:42.949Z",
-      "url": "http://www.audaqueproxy.com:10223/datasource/api/list",
+      "url": "/datasource/api/list",
       "title": "数据源管理",
       "modules": [
         "DS"
@@ -24391,7 +27289,7 @@
     {
       "id": "R005-E032-modeling",
       "time": "2026-10-22T03:16:49.912Z",
-      "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+      "url": "/dms/modelManagement/list",
       "title": "规范化数据建模",
       "modules": [
         "DMS"
@@ -24405,7 +27303,7 @@
     {
       "id": "R006-E033-standards",
       "time": "2026-10-22T03:16:57.102Z",
-      "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docList",
+      "url": "/dss/standard/document/docList",
       "title": "数据标准管理",
       "modules": [
         "DSS"
@@ -24419,7 +27317,7 @@
     {
       "id": "R007-E037-unification-nav",
       "time": "2026-10-22T03:17:04.155Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm-dq/dataQuery/myQuery",
+      "url": "/mdm-dq/dataQuery/myQuery",
       "title": "数据查询系统",
       "modules": [
         "HOME",
@@ -24434,7 +27332,7 @@
     {
       "id": "R008-E041-service-portal",
       "time": "2026-10-22T03:17:10.861Z",
-      "url": "http://www.audaqueproxy.com:10223/gsb/catalog/list",
+      "url": "/gsb/catalog/list",
       "title": "数据服务支撑",
       "modules": [
         "GSB"
@@ -24448,7 +27346,7 @@
     {
       "id": "R009-E043-assets-nav",
       "time": "2026-10-22T03:17:28.577Z",
-      "url": "http://www.audaqueproxy.com:10223/gsp/entrance/list",
+      "url": "/gsp/entrance/list",
       "title": "数据服务门户",
       "modules": [
         "HOME",
@@ -24463,7 +27361,7 @@
     {
       "id": "R010-E044-metadata",
       "time": "2026-10-22T03:17:35.688Z",
-      "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+      "url": "/mdm/metadata/manage/collectList",
       "title": "元数据管理",
       "modules": [
         "MDM"
@@ -24477,7 +27375,7 @@
     {
       "id": "R011-E050-tables",
       "time": "2026-10-22T03:17:42.637Z",
-      "url": "http://www.audaqueproxy.com:10223/da-dtm/warehouseResources/warehouseResourcesList",
+      "url": "/da-dtm/warehouseResources/warehouseResourcesList",
       "title": "数据表管理",
       "modules": [
         "DTM"
@@ -24491,7 +27389,7 @@
     {
       "id": "R012-E052-evaluation-nav",
       "time": "2026-10-22T03:17:49.652Z",
-      "url": "http://www.audaqueproxy.com:10223/oss/deptCataCenter/list",
+      "url": "/oss/deptCataCenter/list",
       "title": "运营汇总系统",
       "modules": [
         "HOME",
@@ -24506,7 +27404,7 @@
     {
       "id": "R013-E057-ai-assistant",
       "time": "2026-10-22T03:17:56.896Z",
-      "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+      "url": "/ais/recallLibrary/recallLibraryManagementList",
       "title": "AI数据智能辅助",
       "modules": [
         "AIS"
@@ -24520,7 +27418,7 @@
     {
       "id": "R014-E059-backend-nav",
       "time": "2026-10-22T03:18:04.068Z",
-      "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+      "url": "/rtms/report/reportTemplate/list",
       "title": "报告模板",
       "modules": [
         "HOME",
@@ -24535,7 +27433,7 @@
     {
       "id": "R015-E065-workorders",
       "time": "2026-10-22T03:18:10.840Z",
-      "url": "http://www.audaqueproxy.com:10223/workorder/workbench/workflowReviewList",
+      "url": "/workorder/workbench/workflowReviewList",
       "title": "我的工单",
       "modules": [
         "WO"
@@ -30664,6 +33562,234 @@
           "businessWriteExecuted": false
         }
       }
+    }
+  ],
+  "aiCapabilities": [
+    {
+      "id": "AI-001",
+      "priority": "P1",
+      "modules": [
+        "DRMS",
+        "WO"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-001",
+        "AI-AC-002",
+        "AI-AC-003",
+        "AI-AC-004",
+        "AI-AC-005"
+      ]
+    },
+    {
+      "id": "AI-002",
+      "priority": "P1",
+      "modules": [
+        "MDM",
+        "DSS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-006",
+        "AI-AC-007",
+        "AI-AC-008",
+        "AI-AC-009",
+        "AI-AC-010"
+      ]
+    },
+    {
+      "id": "AI-003",
+      "priority": "P1",
+      "modules": [
+        "DS",
+        "DIS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-011",
+        "AI-AC-012",
+        "AI-AC-013",
+        "AI-AC-014",
+        "AI-AC-015"
+      ]
+    },
+    {
+      "id": "AI-004",
+      "priority": "P2",
+      "modules": [
+        "DQ",
+        "IDQS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-016",
+        "AI-AC-017",
+        "AI-AC-018",
+        "AI-AC-019",
+        "AI-AC-020"
+      ]
+    },
+    {
+      "id": "AI-005",
+      "priority": "P1",
+      "modules": [
+        "DQTS",
+        "DSTS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-021",
+        "AI-AC-022",
+        "AI-AC-023",
+        "AI-AC-024",
+        "AI-AC-025"
+      ]
+    },
+    {
+      "id": "AI-006",
+      "priority": "P2",
+      "modules": [
+        "DSETS",
+        "AIS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-026",
+        "AI-AC-027",
+        "AI-AC-028",
+        "AI-AC-029",
+        "AI-AC-030"
+      ]
+    },
+    {
+      "id": "AI-007",
+      "priority": "P1",
+      "modules": [
+        "DCS",
+        "GSP",
+        "DACS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-031",
+        "AI-AC-032",
+        "AI-AC-033",
+        "AI-AC-034",
+        "AI-AC-035"
+      ]
+    },
+    {
+      "id": "AI-008",
+      "priority": "P2",
+      "modules": [
+        "DAP",
+        "TMS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-036",
+        "AI-AC-037",
+        "AI-AC-038",
+        "AI-AC-039",
+        "AI-AC-040"
+      ]
+    },
+    {
+      "id": "AI-009",
+      "priority": "P1",
+      "modules": [
+        "EMS",
+        "RTMS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-041",
+        "AI-AC-042",
+        "AI-AC-043",
+        "AI-AC-044",
+        "AI-AC-045"
+      ]
+    },
+    {
+      "id": "AI-010",
+      "priority": "P2",
+      "modules": [
+        "SMS",
+        "OMMS"
+      ],
+      "status": "proposed-unexecuted",
+      "acceptance": [
+        "AI-AC-046",
+        "AI-AC-047",
+        "AI-AC-048",
+        "AI-AC-049",
+        "AI-AC-050"
+      ]
+    }
+  ],
+  "aiCommonAcceptance": [
+    "AI-AC-051",
+    "AI-AC-052",
+    "AI-AC-053",
+    "AI-AC-054",
+    "AI-AC-055",
+    "AI-AC-056",
+    "AI-AC-057",
+    "AI-AC-058"
+  ],
+  "businessSupplements": [
+    {
+      "id": "user-menu",
+      "module": "HOME",
+      "file": "02-工作台/用户菜单补充清单.md",
+      "status": "partial-menu-only",
+      "productionReady": false,
+      "requirements": [
+        "UAC-001",
+        "UAC-002",
+        "UAC-003",
+        "UAC-004",
+        "UAC-005"
+      ],
+      "acceptance": [
+        "UAC-AC-001",
+        "UAC-AC-002",
+        "UAC-AC-003",
+        "UAC-AC-004",
+        "UAC-AC-005",
+        "UAC-AC-006",
+        "UAC-AC-007",
+        "UAC-AC-008",
+        "UAC-AC-009",
+        "UAC-AC-010",
+        "UAC-AC-011",
+        "UAC-AC-012",
+        "UAC-AC-013",
+        "UAC-AC-014",
+        "UAC-AC-015",
+        "UAC-AC-016",
+        "UAC-AC-017",
+        "UAC-AC-018",
+        "UAC-AC-019",
+        "UAC-AC-020",
+        "UAC-AC-021",
+        "UAC-AC-022",
+        "UAC-AC-023",
+        "UAC-AC-024",
+        "UAC-AC-025"
+      ],
+      "evidence": [
+        "U001-user-menu"
+      ]
+    }
+  ],
+  "userSuppliedEvidence": [
+    {
+      "id": "U001-user-menu",
+      "image": "evidence/user-supplied/U001-user-menu.png",
+      "metadata": "evidence/user-supplied/U001-user-menu.json",
+      "sha256": "11de8bf2e17ac9ed49489cd5fddb9ab35929c86225b5c49b19c4924ce892c969",
+      "status": "valid-menu-only"
     }
   ]
 }

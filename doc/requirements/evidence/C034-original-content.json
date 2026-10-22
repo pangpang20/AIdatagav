@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:33:36.664Z",
-  "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+  "url": "/rtms/report/reportTemplate/list",
   "title": "报告模板",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n模板管理\n查询重置\n新增\n\t序号\t模板名称\t部门名称\t适用对象\t模板说明\t报告类型\t状态\t被引用数\t创建时间\n\t操作\n共 10 条\n1\n前往页",
   "controls": [

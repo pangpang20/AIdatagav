@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:38:32.768Z",
-  "url": "http://www.audaqueproxy.com:10223/dis/taskManagement/fileAcquisition/list",
+  "url": "/dis/taskManagement/fileAcquisition/list",
   "title": "数据集成采集",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析\n文件采集\n查询重置\n生成调度流程\n新增\n\t序号\t任务名称\t所属部门\t采集模式\t执行次数\t采集文件数\t创建时间\t任务状态\t操作\n暂无数据",
   "controls": [

@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:21:48.128Z",
-  "url": "http://www.audaqueproxy.com:10223/dms/modelManagement/list",
+  "url": "/dms/modelManagement/list",
   "title": "规范化数据建模",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n模型管理\n-\n查询重置展开\n新增\n导入\n模型对比\n\t序号\t模型名称\t模型属性\t模型类型\t实体/表\t创建时间\t创建人\t状态\t版本\t操作\n\t\n1\n\t\ntest\n\t\n普通模型\n\t\n概念/逻辑模型\n\t\n7\n\t\n2025-09-24 18:39:17\n\t\n陈云亮\n\t\n正常\n\t\nV1.0.0\n\t\n设计\n锁定\n复制\n更多\n共 1 条\n1\n前往页",
   "controls": [

@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:03:36.147Z",
-  "url": "http://www.audaqueproxy.com:10223/ems/programmeManage/list",
+  "url": "/ems/programmeManage/list",
   "title": "评价管理",
   "text": null,
   "controls": [

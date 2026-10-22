@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:17:04.155Z",
-  "url": "http://www.audaqueproxy.com:10223/mdm-dq/dataQuery/myQuery",
+  "url": "/mdm-dq/dataQuery/myQuery",
   "title": "数据查询系统",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据查询系统\n数据查询\n我的查询\n-\n查询重置展开\n批量删除\n创建查询\n\t序号\t执行时间\t执行时长(秒)\t执行状态\t发起IP\t发起人\t查询源\t查询SQL\t自定查询标签\t操作\n共 123 条\n1234567\n前往页",
   "controls": [

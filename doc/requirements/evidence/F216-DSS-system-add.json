@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:42:50.188Z",
-  "url": "http://www.audaqueproxy.com:10223/dss/standard/system/dataSetEdit?datasetId=3&optType=add",
+  "url": "/dss/standard/system/dataSetEdit?datasetId=3&optType=add",
   "title": "数据标准管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n标准查询\n新增标准表\n返回\n标准模型表名称\n标准模型表编码\n简称\n生效日期\n标准参考文档\n清除\n参考标准编号\n说明\n取消提交",
   "controls": [

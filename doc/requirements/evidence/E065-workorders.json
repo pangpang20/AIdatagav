@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:03:26.395Z",
-  "url": "http://www.audaqueproxy.com:10223/workorder/workbench/workflowReviewList",
+  "url": "/workorder/workbench/workflowReviewList",
   "title": "我的工单",
   "text": null,
   "controls": [

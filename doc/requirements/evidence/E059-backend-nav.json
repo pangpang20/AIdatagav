@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:02:14.480Z",
-  "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/list",
+  "url": "/rtms/report/reportTemplate/list",
   "title": "报告模板",
   "text": null,
   "controls": [

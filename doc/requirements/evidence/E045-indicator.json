@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:59:09.485Z",
-  "url": "http://www.audaqueproxy.com:10223/dap/manage/dataSource/dataSourceList",
+  "url": "/dap/manage/dataSource/dataSourceList",
   "title": "指标管理",
   "text": null,
   "controls": [

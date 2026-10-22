@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:28:49.388Z",
-  "url": "http://www.audaqueproxy.com:10223/dop/dbms/requirement/collection",
+  "url": "/dop/dbms/requirement/collection",
   "title": "数据需求管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n调研计划\n 调研实施\n调研报告\n 数据归集\n 参考文档\n 配置管理\n数据归集\n查询重置展开\n导出\n序号\t源数据单位\t源数据系统\t信息资源名称\t表中文名称\t表英文名称\t字段数量（个）\t接入方式\t接入状态\t数据量（条）\t责任人\t归集时间\t操作\n暂无数据",
   "controls": [

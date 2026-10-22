@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:13:37.472Z",
-  "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=myDataSource",
+  "url": "/datasource/dataSource/dataSourceEdit?id=&optType=add&name=&busType=myDataSource",
   "title": "数据源管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n新增数据源\n返回\n数据源名称\n0/100\n驱动\n所属部门\n\t\t\n是否数仓\n状态\n可见范围\n应用场景\n使用场景\n描述\n0/500\n ",
   "controls": [

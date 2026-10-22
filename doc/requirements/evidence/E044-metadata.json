@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:59:01.068Z",
-  "url": "http://www.audaqueproxy.com:10223/mdm/metadata/manage/collectList",
+  "url": "/mdm/metadata/manage/collectList",
   "title": "元数据管理",
   "text": null,
   "controls": [

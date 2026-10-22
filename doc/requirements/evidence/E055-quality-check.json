@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:01:35.988Z",
-  "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+  "url": "/dqts/columnAnalysis/list",
   "title": "数据质量检测",
   "text": null,
   "controls": [

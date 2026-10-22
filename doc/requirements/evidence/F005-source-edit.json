@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:07:02.300Z",
-  "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/dataSourceEdit?id=10063&optType=edit&name=%E8%BE%BE%E6%A2%A6B&busType=adminDataSource",
+  "url": "/datasource/dataSource/dataSourceEdit?id=10063&optType=edit&name=%E8%BE%BE%E6%A2%A6B&busType=adminDataSource",
   "title": "数据源管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n编辑数据源\n返回\n数据源名称\n3/100\n驱动\nDameng\n所属部门\n根部门\n\t\t\n是否数仓\n状态\n可见范围\n应用场景\n使用场景\n描述\n0/500\n驱动数据信息\n\n提示：多驱动配置项，支持部分系统（集成、共享、规范建模）获取多个驱动配置参数。其他系统只能获取第一个驱动配置参数。\n\nDameng\n驱动类型\n是否支持测试连接\n 支持\n 不支持\n模板类型\n 内置\n 自定义\n内置连接器\n上传驱动文件\nDm8JdbcDriver18-8.1.1.49.jar\n静态参数\nIP/主机\n端口号\n数据库\n用户名\n密码\nSchema\n取 消测试连接提 交",
   "controls": [

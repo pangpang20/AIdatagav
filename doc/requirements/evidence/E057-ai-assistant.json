@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:02:02.992Z",
-  "url": "http://www.audaqueproxy.com:10223/ais/recallLibrary/recallLibraryManagementList",
+  "url": "/ais/recallLibrary/recallLibraryManagementList",
   "title": "AI数据智能辅助",
   "text": null,
   "controls": [

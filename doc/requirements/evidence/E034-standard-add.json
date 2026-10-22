@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:56:55.704Z",
-  "url": "http://www.audaqueproxy.com:10223/dss/standard/document/docEdit?optType=add",
+  "url": "/dss/standard/document/docEdit?optType=add",
   "title": "数据标准管理",
   "text": null,
   "controls": [

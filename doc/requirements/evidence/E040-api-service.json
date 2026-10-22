@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:58:02.541Z",
-  "url": "http://www.audaqueproxy.com:10223/gsb/catalog/list",
+  "url": "/gsb/catalog/list",
   "title": "数据服务支撑",
   "text": null,
   "controls": [

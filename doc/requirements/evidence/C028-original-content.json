@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:32:37.851Z",
-  "url": "http://www.audaqueproxy.com:10223/da-dtm/warehouseResources/warehouseResourcesList",
+  "url": "/da-dtm/warehouseResources/warehouseResourcesList",
   "title": "数据表管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据表管理\n数据表管理\n数据库信息\n查询重置\n序号\t数据库名\t数据库IP\t数据库类型\t表数量\t所属部门\t创建时间\t权限状态\n1\n\t\n172.16.1.40\n\t\n***.40\n\t\nMysql\n\t\n1\n\t\n某委办局\n\t\n2025-05-14 01:48:25\n\t\n已有权限：0\n\n\n2\n\t\nMRS-Presto\n\t\n***.47\n\t\n华为MRS\n\t\n1\n\t\n某委办局\n\t\n2025-05-15 09:17:15\n\t\n已有权限：3\n共 2 条\n1\n前往页",
   "controls": [

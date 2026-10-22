@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T02:57:32.668Z",
-  "url": "http://www.audaqueproxy.com:10223/mdm-dq/dataQuery/myQuery",
+  "url": "/mdm-dq/dataQuery/myQuery",
   "title": "数据查询系统",
   "text": null,
   "controls": [

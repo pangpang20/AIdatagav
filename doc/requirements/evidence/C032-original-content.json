@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:33:20.490Z",
-  "url": "http://www.audaqueproxy.com:10223/dqts/columnAnalysis/list",
+  "url": "/dqts/columnAnalysis/list",
   "title": "数据质量检测",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n数据质量检测\n评价管理\n列分析\n查询重置展开\n序号\t任务名称\t数据源名称\t表名称\t分析类型\t任务状态\t创建人\t创建时间\t分析报告\t操作\n暂无数据",
   "controls": [

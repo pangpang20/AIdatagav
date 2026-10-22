@@ -1,0 +1,23 @@
+{
+  "id": "U001-user-menu",
+  "sourceType": "user-supplied-screenshot",
+  "capturedAt": null,
+  "reviewedAt": "2026-10-22T16:29:32+08:00",
+  "url": null,
+  "sha256": "11de8bf2e17ac9ed49489cd5fddb9ab35929c86225b5c49b19c4924ce892c969",
+  "visibleMenuItems": [
+    "基本信息",
+    "修改密码",
+    "设置主部门",
+    "后台管理",
+    "退出登录"
+  ],
+  "targetPagesObserved": false,
+  "businessWritesExecuted": false,
+  "limitations": [
+    "用户提供的裁剪图，拍摄时间未知，未记录地址栏或点击过程",
+    "只确认菜单文字和顺序，不证明目标页字段、权限、流程或操作结果",
+    "保留可见业务样本，限获授权项目人员查阅；不含密码表单"
+  ],
+  "document": "../../02-工作台/用户菜单补充清单.md"
+}

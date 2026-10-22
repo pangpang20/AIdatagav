@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:13:19.647Z",
-  "url": "http://www.audaqueproxy.com:10223/datasource/dataSource/myDataSourceManageList",
+  "url": "/datasource/dataSource/myDataSourceManageList",
   "title": "数据源管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n部门数据源\n查询重置\n新增\n序号\t数据源名称\t所属部门\t可见范围\t是否启用\t应用场景\t备注\t创建时间\n\t操作\n暂无数据",
   "controls": [

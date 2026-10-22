@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:35:01.959Z",
-  "url": "http://www.audaqueproxy.com:10223/dop/cms/comfactory/development/edit?optType=view&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&id=5&componentInfoExtId=7&componentNameId=5",
+  "url": "/dop/cms/comfactory/development/edit?optType=view&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&busTypeList=%5Bobject%20Object%5D&id=5&componentInfoExtId=7&componentNameId=5",
   "title": "构件管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n构件管理\n 构件超市\n 构件开发\n构件配置\n我的构件\n查看\n返回\n构件类型:\n正则规则\n数据库对象:\nHIVE\n*规则内容: （注:规则内容中的变量参数用{变量名称}代替,如:{vid}）\n构件名称\n构件分类\n业务分类\n引用标准\n需求描述\n规则说明\n参考代码\n开发者\n校验者",
   "controls": [

@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T03:32:00.378Z",
-  "url": "http://www.audaqueproxy.com:10223/dap/manage/dataSource/dataSourceList",
+  "url": "/dap/manage/dataSource/dataSourceList",
   "title": "指标管理",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n指标管理\n管理\n研发\n发布\n运维\n分析\n监控\n数据源管理\n查询重置\n序号\t数据源名称\t数据源状态\t创建时间\t操作\n暂无数据",
   "controls": [

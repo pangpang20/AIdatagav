@@ -1,6 +1,6 @@
 {
   "time": "2026-10-22T04:17:21.175Z",
-  "url": "http://www.audaqueproxy.com:10223/rtms/report/reportTemplate/detail?optType=add",
+  "url": "/rtms/report/reportTemplate/detail?optType=add",
   "title": "报告模板",
   "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n报告模板\n· 模板管理\n新增模板管理\n温馨提示：请不要在模板里面粘贴图片，否则可能会导致功能异常。\n返回\n模板名称\n适用对象\n报告类型\n模板文件\n 上传文档只能上传Word文档docx格式的文件，且大小不能超过10MB！\n模板说明\n取 消下一步",
   "controls": [
