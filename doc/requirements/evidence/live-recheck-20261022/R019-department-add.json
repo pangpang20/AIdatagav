@@ -1,0 +1,790 @@
+{
+  "time": "2026-10-22T09:53:34.200Z",
+  "url": "/module-common/manage/department/departmentList",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n部门管理\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n山东部门\n新增部门人员\n序号\t姓名\t账号\t手机号码\t邮箱\t职位\t加入时间\n\t操作\t\n1\n\t\n王学民\n\t\nxueming\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-06-13 10:08:43\n\t\n编辑\n删除\n数据权限\n更多\n\n\n2\n\t\n张风祥\n\t\nzhangfengxiang\n\t\n***********\n\t\n******@qq.com\n\t\n\t\n2025-07-03 11:29:35\n\t\n编辑\n删除\n数据权限\n更多\n\n\n3\n\t\nyyc\n\t\nyuyangchun\n\t\n***********\n\t\n**********@qq.com\n\t\n\t\n2025-07-03 17:03:17\n\t\n编辑\n删除\n数据权限\n更多\n\n\n4\n\t\nCUST021\n\t\npanqiang\n\t\n***********\n\t\n********@qq.com\n\t\n\t\n2025-07-17 09:17:46\n\t\n编辑\n删除\n数据权限\n更多\n\n\n5\n\t\n李庆洲\n\t\nliqingzhou\n\t\n***********\n\t\n***********@audaque.com\n\t\n\t\n2025-07-17 09:17:54\n\t\n编辑\n删除\n数据权限\n更多\n\n\n6\n\t\n倪宏伟\n\t\nnihongwei\n\t\n***********\n\t\n**********@audaque.com\n\t\n\t\n2025-07-17 09:17:49\n\t\n编辑\n删除\n数据权限\n更多\n\n\n7\n\t\n马睿\n\t\nmarui\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-08-08 09:31:03\n\t\n编辑\n删除\n数据权限\n更多\n\n\n8\n\t\nCUST014\n\t\nliuli\n\t\n***********\n\t\n****@00.com\n\t\n\t\n2025-08-15 16:36:15\n\t\n编辑\n删除\n数据权限\n更多\n\n\n9\n\t\n余伊晴\n\t\nyuyiqing\n\t\n***********\n\t\n*********@audaque.com\n\t\n\t\n2025-09-23 17:28:01\n\t\n编辑\n删除\n数据权限\n更多\n\n\n10\n\t\ntest123\n\t\nwukeyuan\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-09-29 16:20:50\n\t\n编辑\n删除\n数据权限\n更多\n\n\n11\n\t\n张志丹\n\t\nzhangzhidan\n\t\n***********\n\t\n***********@audaque.com\n\t\ntest\n\t\n2025-10-21 08:36:34\n\t\n编辑\n删除\n数据权限\n更多\n\n\n12\n\t\n朱帝远\n\t\nzhudiyuan\n\t\n***********\n\t\n*******@qq.com\n\t\n\t\n2026-03-12 16:31:36\n\t\n编辑\n删除\n数据权限\n更多\n\n\n13\n\t\nCUST169\n\t\nlijiqiang\n\t\n***********\n\t\n****@qq.com\n\t\n\t\n2026-04-21 15:41:02\n\t\n编辑\n删除\n数据权限\n更多\n\n\n14\n\t\n胡波\n\t\nhubo\n\t\n***********\n\t\n*****@audaque.com\n\t\n\t\n2026-06-13 10:13:25\n\t\n编辑\n删除\n数据权限\n更多\n\n\n15\n\t\n万志浩\n\t\nwanzhihao\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2026-07-17 14:06:11\n\t\n编辑\n删除\n数据权限\n更多\n\n\n16\n\t\n胡瑞\n\t\nhurui\n\t\n***********\n\t\n******@audaque.com\n\t\n\t\n2026-07-21 11:49:05\n\t\n编辑\n删除\n数据权限\n更多\n\n\n17\n\t\n陈瑶\n\t\nchenyao\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2026-09-02 14:27:59\n\t\n编辑\n删除\n数据权限\n更多\n共 17 条\n1\n前往页\n新增部门\n部门编码\n0/20\n部门名称\n0/100\n部门类型\n角色\n标签\n取 消 确 认",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "Close",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "部门编码",
+      "placeholder": "请输入部门编码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "20",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "部门名称",
+      "placeholder": "请输入部门名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "部门类型",
+      "placeholder": "请选择部门类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "角色",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "角色",
+      "placeholder": "请选择角色",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标签",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标签",
+      "placeholder": "请选择标签",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确 认",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R019-department-add",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "部门编码",
+      "requiredMarker": true,
+      "text": "部门编码\n0/20",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入部门编码",
+          "maxlength": "20",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "部门名称",
+      "requiredMarker": true,
+      "text": "部门名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入部门名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "部门类型",
+      "requiredMarker": true,
+      "text": "部门类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择部门类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "角色",
+      "requiredMarker": false,
+      "text": "角色",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择角色",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "标签",
+      "requiredMarker": false,
+      "text": "标签",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择标签",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "姓名",
+    "账号",
+    "手机号码",
+    "邮箱",
+    "职位",
+    "加入时间",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "设置管理员",
+      "cls": "main-shezhi1x iconfontmain  audaque-link-text audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "新增部门",
+      "cls": "iconfontmain  main-add-new audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "修改部门",
+      "cls": "iconfontmain  main-edit-new audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增部门人员",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "王学民",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "数据权限",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "张风祥",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "yyc",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "CUST021",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "李庆洲",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "倪宏伟",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "马睿",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "CUST014",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "余伊晴",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "test123",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "张志丹",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "朱帝远",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "CUST169",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "胡波",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "万志浩",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "胡瑞",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "陈瑶",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "操作日志",
+    "登录日志"
+  ]
+}

@@ -1,0 +1,1160 @@
+[
+  {
+    "code": "DIS",
+    "name": "数据集成采集",
+    "source": "E028-integration",
+    "entry": "L-DIS-000-entry",
+    "discoveredAt": "2026-10-22T10:13:11.175Z",
+    "links": [
+      {
+        "name": "首页",
+        "id": "L-DIS-001",
+        "status": "opened-review-content",
+        "path": "/dis/home",
+        "evidence": "L-DIS-001"
+      },
+      {
+        "name": "· 表离线同步",
+        "id": "L-DIS-002",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/dataAcquisition/list",
+        "evidence": "L-DIS-002"
+      },
+      {
+        "name": "· 库离线同步",
+        "id": "L-DIS-003",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/libraryMigration/list",
+        "evidence": "L-DIS-003"
+      },
+      {
+        "name": "· 接口及文件解析",
+        "id": "L-DIS-004",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/apiAndFileCollection/public",
+        "evidence": "L-DIS-004"
+      },
+      {
+        "name": "· 文件离线同步",
+        "id": "L-DIS-005",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/fileAcquisition/list",
+        "evidence": "L-DIS-005"
+      },
+      {
+        "name": "· 表实时同步",
+        "id": "L-DIS-006",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/realTimeAcquisition/list",
+        "evidence": "L-DIS-006"
+      },
+      {
+        "name": "· KAFKA同步",
+        "id": "L-DIS-007",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/kafkaAcquisition/list",
+        "evidence": "L-DIS-007"
+      },
+      {
+        "name": "任务监控",
+        "id": "L-DIS-008",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/taskMonitoring/list",
+        "evidence": "L-DIS-008"
+      },
+      {
+        "name": "异常告警",
+        "id": "L-DIS-009",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/abnormal/list",
+        "evidence": "L-DIS-009"
+      },
+      {
+        "name": "数据对账",
+        "id": "L-DIS-010",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/dataReconciliation/list",
+        "evidence": "L-DIS-010"
+      },
+      {
+        "name": "补数据",
+        "id": "L-DIS-011",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/repairdata/list",
+        "evidence": "L-DIS-011"
+      },
+      {
+        "name": "任务分析",
+        "id": "L-DIS-012",
+        "status": "opened-with-request-limits",
+        "path": "/dis/integratedAnalysis/taskAnalysis",
+        "evidence": "L-DIS-012"
+      },
+      {
+        "name": "数据分析",
+        "id": "L-DIS-013",
+        "status": "opened-with-request-limits",
+        "path": "/dis/integratedAnalysis/dataAnalysis",
+        "evidence": "L-DIS-013"
+      }
+    ]
+  },
+  {
+    "code": "SMS",
+    "name": "任务编排与调度",
+    "source": "E029-scheduling",
+    "entry": "L-SMS-000-entry",
+    "discoveredAt": "2026-10-22T10:15:16.255Z",
+    "links": [
+      {
+        "name": "概览",
+        "id": "L-SMS-001",
+        "status": "opened-review-content",
+        "path": "/sms/home",
+        "evidence": "L-SMS-001"
+      },
+      {
+        "name": "我的流程",
+        "id": "L-SMS-002",
+        "status": "opened-with-request-limits",
+        "path": "/sms/develop/taskDevelop",
+        "evidence": "L-SMS-002"
+      },
+      {
+        "name": "流程调度管理",
+        "id": "L-SMS-003",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/manage/scheduleList",
+        "evidence": "L-SMS-003"
+      },
+      {
+        "name": "· 周期任务作业监控",
+        "id": "L-SMS-004",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/monitor/monitorList",
+        "evidence": "L-SMS-004"
+      },
+      {
+        "name": "· 实时任务作业监控",
+        "id": "L-SMS-005",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/monitor/realtime",
+        "evidence": "L-SMS-005"
+      },
+      {
+        "name": "· 告警信息查询",
+        "id": "L-SMS-006",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/alarm/messageList",
+        "evidence": "L-SMS-006"
+      },
+      {
+        "name": "· 告警推送管理",
+        "id": "L-SMS-007",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/alarm/pushList",
+        "evidence": "L-SMS-007"
+      },
+      {
+        "name": "归集表查询",
+        "id": "L-SMS-008",
+        "status": "opened-review-content",
+        "path": "/sms/resource/collectionList",
+        "evidence": "L-SMS-008"
+      },
+      {
+        "name": "开发表管理",
+        "id": "L-SMS-009",
+        "status": "opened-review-content",
+        "path": "/sms/dtm/home",
+        "evidence": "L-SMS-009"
+      },
+      {
+        "name": "函数开发",
+        "id": "L-SMS-010",
+        "status": "opened-with-request-limits",
+        "path": "/sms/resource/functionList",
+        "evidence": "L-SMS-010"
+      },
+      {
+        "name": "脚本开发",
+        "id": "L-SMS-011",
+        "status": "opened-review-content",
+        "path": "/sms/resource/scriptList",
+        "evidence": "L-SMS-011"
+      },
+      {
+        "name": "· 标准层",
+        "id": "L-SMS-012",
+        "status": "opened-review-content",
+        "path": "/gldm/process/standard/list",
+        "evidence": "L-SMS-012"
+      },
+      {
+        "name": "· 原子层",
+        "id": "L-SMS-013",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/atomic/list",
+        "evidence": "L-SMS-013"
+      },
+      {
+        "name": "· 整合层",
+        "id": "L-SMS-014",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/integration/list",
+        "evidence": "L-SMS-014"
+      },
+      {
+        "name": "· 主题层",
+        "id": "L-SMS-015",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/theme/list",
+        "evidence": "L-SMS-015"
+      },
+      {
+        "name": "· 安全层",
+        "id": "L-SMS-016",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/application/list",
+        "evidence": "L-SMS-016"
+      },
+      {
+        "name": "· 标准代码集查询",
+        "id": "L-SMS-017",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/standardCodeSet/list",
+        "evidence": "L-SMS-017"
+      },
+      {
+        "name": "· 源系统代码集管理",
+        "id": "L-SMS-018",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/sourceSystemCodeSet/list",
+        "evidence": "L-SMS-018"
+      },
+      {
+        "name": "· 源与标准映射管理",
+        "id": "L-SMS-019",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/mappingManage/list",
+        "evidence": "L-SMS-019"
+      },
+      {
+        "name": "· 函数管理",
+        "id": "L-SMS-020",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/functionRule/list",
+        "evidence": "L-SMS-020"
+      },
+      {
+        "name": "· 算法包管理",
+        "id": "L-SMS-021",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/package/list",
+        "evidence": "L-SMS-021"
+      },
+      {
+        "name": "· IDE平台初始化",
+        "id": "L-SMS-022",
+        "status": "opened-with-request-limits",
+        "path": "/gldm/init/list",
+        "evidence": "L-SMS-022"
+      },
+      {
+        "name": "调度统计",
+        "id": "L-SMS-023",
+        "status": "opened-with-request-limits",
+        "path": "/sms/statistics/task",
+        "evidence": "L-SMS-023"
+      },
+      {
+        "name": "系统管理",
+        "id": "L-SMS-024",
+        "status": "opened-review-content",
+        "path": "/sms/system/systemNodeList",
+        "evidence": "L-SMS-024"
+      },
+      {
+        "name": "组件管理",
+        "id": "L-SMS-025",
+        "status": "opened-review-content",
+        "path": "/sms/system/compenontManage",
+        "evidence": "L-SMS-025"
+      },
+      {
+        "name": "初始化",
+        "id": "L-SMS-026",
+        "status": "opened-review-content",
+        "path": "/sms/initialize/componentList",
+        "evidence": "L-SMS-026"
+      }
+    ]
+  },
+  {
+    "code": "DMS",
+    "name": "规范化数据建模",
+    "source": "E032-modeling",
+    "entry": "L-DMS-000-entry",
+    "discoveredAt": "2026-10-22T10:19:01.108Z",
+    "links": [
+      {
+        "name": "· 模型设计",
+        "id": "L-DMS-001",
+        "status": "opened-review-content",
+        "path": "/dms/modelManagement/list",
+        "evidence": "L-DMS-001"
+      },
+      {
+        "name": "· 模型物化",
+        "id": "L-DMS-002",
+        "status": "opened-review-content",
+        "path": "/dms/materialization/list",
+        "evidence": "L-DMS-002"
+      },
+      {
+        "name": "· 模型分析",
+        "id": "L-DMS-003",
+        "status": "opened-review-content",
+        "path": "/dms/modelAnalysis/list",
+        "evidence": "L-DMS-003"
+      },
+      {
+        "name": "· 模型数据统计",
+        "id": "L-DMS-004",
+        "status": "opened-review-content",
+        "path": "/dms/statistics/list",
+        "evidence": "L-DMS-004"
+      },
+      {
+        "name": "· 开发环境配置",
+        "id": "L-DMS-005",
+        "status": "opened-review-content",
+        "path": "/dms/configure/devEnvironment/list",
+        "evidence": "L-DMS-005"
+      },
+      {
+        "name": "· 模型属性配置",
+        "id": "L-DMS-006",
+        "status": "opened-review-content",
+        "path": "/dms/configure/modelPro/list",
+        "evidence": "L-DMS-006"
+      }
+    ]
+  },
+  {
+    "code": "GDRS",
+    "name": "数据直报",
+    "source": "E035-reporting",
+    "entry": "L-GDRS-000-entry",
+    "discoveredAt": "2026-10-22T10:22:28.517Z",
+    "links": [
+      {
+        "name": "首页",
+        "id": "L-GDRS-001",
+        "status": "opened-review-content",
+        "path": "/gdrs/index/indexInfo",
+        "evidence": "L-GDRS-001",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "id": "L-GDRS-002",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 表单管理",
+        "id": "L-GDRS-003",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structFormManage",
+        "evidence": "L-GDRS-003",
+        "operations": []
+      },
+      {
+        "name": "· 模板管理",
+        "id": "L-GDRS-004",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structTemplateManage",
+        "evidence": "L-GDRS-004",
+        "operations": []
+      },
+      {
+        "name": "· 上报授权",
+        "id": "L-GDRS-005",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 查询授权",
+        "id": "L-GDRS-006",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 任务管理",
+        "id": "L-GDRS-007",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 选项配置",
+        "id": "L-GDRS-008",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/configManage",
+        "evidence": "L-GDRS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "L-GDRS-008-op1",
+            "path": "/gdrs/gdrs/configManageEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "类别管理",
+        "id": "L-GDRS-009",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/categoryManage",
+        "evidence": "L-GDRS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "L-GDRS-009-op1",
+            "path": "/gdrs/gdrs/configManageEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 数据上报",
+        "id": "L-GDRS-010",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据查看",
+        "id": "L-GDRS-011",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报任务",
+        "id": "L-GDRS-012",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报记录",
+        "id": "L-GDRS-013",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 服务查询",
+        "id": "L-GDRS-014",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 批量导入",
+        "id": "L-GDRS-015",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structBatchReportManage",
+        "evidence": "L-GDRS-015",
+        "operations": []
+      },
+      {
+        "name": "审核管理",
+        "id": "L-GDRS-016",
+        "status": "opened-review-content",
+        "path": "/gdrs/approve/structApproveManage",
+        "evidence": "L-GDRS-016",
+        "operations": []
+      },
+      {
+        "name": "任务上报统计",
+        "id": "L-GDRS-017",
+        "status": "opened-review-content",
+        "path": "/gdrs/statistics/reportTaskStatistics",
+        "evidence": "L-GDRS-017",
+        "operations": []
+      },
+      {
+        "name": "库表资源上报时效统计",
+        "id": "L-GDRS-018",
+        "status": "opened-review-content",
+        "path": "/gdrs/statistics/structReportStatistics",
+        "evidence": "L-GDRS-018",
+        "operations": []
+      },
+      {
+        "name": "文件资源上报时效统计",
+        "id": "L-GDRS-019",
+        "status": "opened-review-content",
+        "path": "/gdrs/statistics/unstructReportStatistics",
+        "evidence": "L-GDRS-019",
+        "operations": []
+      },
+      {
+        "name": "帮助",
+        "id": "L-GDRS-020",
+        "status": "opened-review-content",
+        "path": "/gdrs/help/helpCenter",
+        "evidence": "L-GDRS-020",
+        "operations": []
+      },
+      {
+        "name": "消息",
+        "id": "L-GDRS-021",
+        "status": "opened-review-content",
+        "path": "/gdrs/message/public",
+        "evidence": "L-GDRS-021",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GDRS",
+    "name": "数据直报",
+    "source": "E035-reporting",
+    "entry": "V-GDRS-000-entry",
+    "discoveredAt": "2026-10-22T10:40:55.959Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "V-GDRS-001",
+        "status": "opened-review-content",
+        "path": "/gdrs/index/indexInfo",
+        "evidence": "V-GDRS-001",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 资源管理",
+        "occurrence": 0,
+        "id": "V-GDRS-002",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/resourceTableManage",
+        "evidence": "V-GDRS-002",
+        "operations": []
+      },
+      {
+        "name": "· 表单管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 表单管理",
+        "occurrence": 0,
+        "id": "V-GDRS-003",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structFormManage",
+        "evidence": "V-GDRS-003",
+        "operations": []
+      },
+      {
+        "name": "· 模板管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 模板管理",
+        "occurrence": 0,
+        "id": "V-GDRS-004",
+        "status": "navigation-error",
+        "path": "/gdrs/gdrs/structTemplateManage",
+        "evidence": "V-GDRS-004",
+        "operations": [],
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报授权",
+        "hierarchy": "直报管理 → 库表资源管理 → · 上报授权",
+        "occurrence": 0,
+        "id": "V-GDRS-005",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 查询授权",
+        "hierarchy": "直报管理 → 库表资源管理 → · 查询授权",
+        "occurrence": 0,
+        "id": "V-GDRS-006",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 任务管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 任务管理",
+        "occurrence": 0,
+        "id": "V-GDRS-007",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 选项配置",
+        "hierarchy": "直报管理 → 库表资源管理 → · 选项配置",
+        "occurrence": 0,
+        "id": "V-GDRS-008",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "直报管理 → 文件资源管理 → · 资源管理",
+        "occurrence": 1,
+        "id": "V-GDRS-009",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报授权",
+        "hierarchy": "直报管理 → 文件资源管理 → · 上报授权",
+        "occurrence": 1,
+        "id": "V-GDRS-010",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 查询授权",
+        "hierarchy": "直报管理 → 文件资源管理 → · 查询授权",
+        "occurrence": 1,
+        "id": "V-GDRS-011",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 任务管理",
+        "hierarchy": "直报管理 → 文件资源管理 → · 任务管理",
+        "occurrence": 1,
+        "id": "V-GDRS-012",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "类别管理",
+        "hierarchy": "直报管理 → 类别管理",
+        "occurrence": 0,
+        "id": "V-GDRS-013",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 数据上报",
+        "occurrence": 0,
+        "id": "V-GDRS-014",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 数据查看",
+        "occurrence": 0,
+        "id": "V-GDRS-015",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 上报任务",
+        "occurrence": 0,
+        "id": "V-GDRS-016",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 上报记录",
+        "occurrence": 0,
+        "id": "V-GDRS-017",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 服务查询",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 服务查询",
+        "occurrence": 0,
+        "id": "V-GDRS-018",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 批量导入",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 批量导入",
+        "occurrence": 0,
+        "id": "V-GDRS-019",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 数据上报",
+        "occurrence": 1,
+        "id": "V-GDRS-020",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 上报任务",
+        "occurrence": 1,
+        "id": "V-GDRS-021",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 上报记录",
+        "occurrence": 1,
+        "id": "V-GDRS-022",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 文件上报 → · 数据上报",
+        "occurrence": 2,
+        "id": "V-GDRS-023",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 文件上报 → · 数据查看",
+        "occurrence": 1,
+        "id": "V-GDRS-024",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 文件上报 → · 上报任务",
+        "occurrence": 2,
+        "id": "V-GDRS-025",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 文件上报 → · 上报记录",
+        "occurrence": 2,
+        "id": "V-GDRS-026",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 服务查询",
+        "hierarchy": "数据上报 → 文件上报 → · 服务查询",
+        "occurrence": 1,
+        "id": "V-GDRS-027",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "审核管理",
+        "hierarchy": "审核管理",
+        "occurrence": 0,
+        "id": "V-GDRS-028",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "任务上报统计",
+        "hierarchy": "上报统计 → 任务上报统计",
+        "occurrence": 0,
+        "id": "V-GDRS-029",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "库表资源上报时效统计",
+        "hierarchy": "上报统计 → 库表资源上报时效统计",
+        "occurrence": 0,
+        "id": "V-GDRS-030",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "文件资源上报时效统计",
+        "hierarchy": "上报统计 → 文件资源上报时效统计",
+        "occurrence": 0,
+        "id": "V-GDRS-031",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "帮助",
+        "hierarchy": "帮助",
+        "occurrence": 0,
+        "id": "V-GDRS-032",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "消息",
+        "hierarchy": "消息",
+        "occurrence": 0,
+        "id": "V-GDRS-033",
+        "status": "navigation-error",
+        "reason": "Error"
+      }
+    ]
+  },
+  {
+    "code": "GDRS",
+    "name": "数据直报",
+    "source": "E035-reporting",
+    "entry": "W-GDRS-000-entry",
+    "discoveredAt": "2026-10-22T10:44:50.231Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "W-GDRS-001",
+        "status": "opened-review-content",
+        "path": "/gdrs/index/indexInfo",
+        "evidence": "W-GDRS-001",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 资源管理",
+        "occurrence": 0,
+        "id": "W-GDRS-002",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/resourceTableManage",
+        "evidence": "W-GDRS-002",
+        "operations": []
+      },
+      {
+        "name": "· 表单管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 表单管理",
+        "occurrence": 0,
+        "id": "W-GDRS-003",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structFormManage",
+        "evidence": "W-GDRS-003",
+        "operations": []
+      },
+      {
+        "name": "· 模板管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 模板管理",
+        "occurrence": 0,
+        "id": "W-GDRS-004",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structTemplateManage",
+        "evidence": "W-GDRS-004",
+        "operations": []
+      },
+      {
+        "name": "· 上报授权",
+        "hierarchy": "直报管理 → 库表资源管理 → · 上报授权",
+        "occurrence": 0,
+        "id": "W-GDRS-005",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/templateAccreditServerManage",
+        "evidence": "W-GDRS-005",
+        "operations": []
+      },
+      {
+        "name": "· 查询授权",
+        "hierarchy": "直报管理 → 库表资源管理 → · 查询授权",
+        "occurrence": 0,
+        "id": "W-GDRS-006",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/strctAccreditServerManage",
+        "evidence": "W-GDRS-006",
+        "operations": []
+      },
+      {
+        "name": "· 任务管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 任务管理",
+        "occurrence": 0,
+        "id": "W-GDRS-007",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "W-GDRS-007",
+        "operations": []
+      },
+      {
+        "name": "· 选项配置",
+        "hierarchy": "直报管理 → 库表资源管理 → · 选项配置",
+        "occurrence": 0,
+        "id": "W-GDRS-008",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/configManage",
+        "evidence": "W-GDRS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "W-GDRS-008-op1",
+            "path": "/gdrs/gdrs/configManageEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "直报管理 → 文件资源管理 → · 资源管理",
+        "occurrence": 1,
+        "id": "W-GDRS-009",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/unstructResourceManage",
+        "evidence": "W-GDRS-009",
+        "operations": []
+      },
+      {
+        "name": "· 上报授权",
+        "hierarchy": "直报管理 → 文件资源管理 → · 上报授权",
+        "occurrence": 1,
+        "id": "W-GDRS-010",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/untemplateAccreditServerManage",
+        "evidence": "W-GDRS-010",
+        "operations": []
+      },
+      {
+        "name": "· 查询授权",
+        "hierarchy": "直报管理 → 文件资源管理 → · 查询授权",
+        "occurrence": 1,
+        "id": "W-GDRS-011",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/unstrctAccreditServerManage",
+        "evidence": "W-GDRS-011",
+        "operations": []
+      },
+      {
+        "name": "· 任务管理",
+        "hierarchy": "直报管理 → 文件资源管理 → · 任务管理",
+        "occurrence": 1,
+        "id": "W-GDRS-012",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/unstructNotifyManage",
+        "evidence": "W-GDRS-012",
+        "operations": []
+      },
+      {
+        "name": "类别管理",
+        "hierarchy": "直报管理 → 类别管理",
+        "occurrence": 0,
+        "id": "W-GDRS-013",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/categoryManage",
+        "evidence": "W-GDRS-013",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "W-GDRS-013-op1",
+            "path": "/gdrs/gdrs/categoryManageEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 数据上报",
+        "occurrence": 0,
+        "id": "W-GDRS-014",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structReportManage",
+        "evidence": "W-GDRS-014",
+        "operations": []
+      },
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 数据查看",
+        "occurrence": 0,
+        "id": "W-GDRS-015",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structResourceDetail",
+        "evidence": "W-GDRS-015",
+        "operations": []
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 上报任务",
+        "occurrence": 0,
+        "id": "W-GDRS-016",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structReportTask",
+        "evidence": "W-GDRS-016",
+        "operations": []
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 上报记录",
+        "occurrence": 0,
+        "id": "W-GDRS-017",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structRecordManage",
+        "evidence": "W-GDRS-017",
+        "operations": []
+      },
+      {
+        "name": "· 服务查询",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 服务查询",
+        "occurrence": 0,
+        "id": "W-GDRS-018",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structAccreditDetail",
+        "evidence": "W-GDRS-018",
+        "operations": []
+      },
+      {
+        "name": "· 批量导入",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 批量导入",
+        "occurrence": 0,
+        "id": "W-GDRS-019",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structBatchReportManage",
+        "evidence": "W-GDRS-019",
+        "operations": []
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 数据上报",
+        "occurrence": 1,
+        "id": "W-GDRS-020",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/semiStructured/dataReporting",
+        "evidence": "W-GDRS-020",
+        "operations": []
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 上报任务",
+        "occurrence": 1,
+        "id": "W-GDRS-021",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/semiStructured/semiStructReportTask",
+        "evidence": "W-GDRS-021",
+        "operations": []
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 上报记录",
+        "occurrence": 1,
+        "id": "W-GDRS-022",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/semiStructured/reportRecord",
+        "evidence": "W-GDRS-022",
+        "operations": []
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 文件上报 → · 数据上报",
+        "occurrence": 2,
+        "id": "W-GDRS-023",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/unstructReportManage",
+        "evidence": "W-GDRS-023",
+        "operations": []
+      },
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 文件上报 → · 数据查看",
+        "occurrence": 1,
+        "id": "W-GDRS-024",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/ustructResourceDetail",
+        "evidence": "W-GDRS-024",
+        "operations": []
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 文件上报 → · 上报任务",
+        "occurrence": 2,
+        "id": "W-GDRS-025",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/unstructReportTask",
+        "evidence": "W-GDRS-025",
+        "operations": []
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 文件上报 → · 上报记录",
+        "occurrence": 2,
+        "id": "W-GDRS-026",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/unstructRecordManage",
+        "evidence": "W-GDRS-026",
+        "operations": []
+      },
+      {
+        "name": "· 服务查询",
+        "hierarchy": "数据上报 → 文件上报 → · 服务查询",
+        "occurrence": 1,
+        "id": "W-GDRS-027",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/unstructAccreditDetail",
+        "evidence": "W-GDRS-027",
+        "operations": []
+      },
+      {
+        "name": "审核管理",
+        "hierarchy": "审核管理",
+        "occurrence": 0,
+        "id": "W-GDRS-028",
+        "status": "opened-review-content",
+        "path": "/gdrs/approve/structApproveManage",
+        "evidence": "W-GDRS-028",
+        "operations": []
+      },
+      {
+        "name": "任务上报统计",
+        "hierarchy": "上报统计 → 任务上报统计",
+        "occurrence": 0,
+        "id": "W-GDRS-029",
+        "status": "opened-review-content",
+        "path": "/gdrs/statistics/reportTaskStatistics",
+        "evidence": "W-GDRS-029",
+        "operations": []
+      },
+      {
+        "name": "库表资源上报时效统计",
+        "hierarchy": "上报统计 → 库表资源上报时效统计",
+        "occurrence": 0,
+        "id": "W-GDRS-030",
+        "status": "opened-review-content",
+        "path": "/gdrs/statistics/structReportStatistics",
+        "evidence": "W-GDRS-030",
+        "operations": []
+      },
+      {
+        "name": "文件资源上报时效统计",
+        "hierarchy": "上报统计 → 文件资源上报时效统计",
+        "occurrence": 0,
+        "id": "W-GDRS-031",
+        "status": "opened-review-content",
+        "path": "/gdrs/statistics/unstructReportStatistics",
+        "evidence": "W-GDRS-031",
+        "operations": []
+      },
+      {
+        "name": "帮助",
+        "hierarchy": "帮助",
+        "occurrence": 0,
+        "id": "W-GDRS-032",
+        "status": "opened-review-content",
+        "path": "/gdrs/help/helpCenter",
+        "evidence": "W-GDRS-032",
+        "operations": []
+      },
+      {
+        "name": "消息",
+        "hierarchy": "消息",
+        "occurrence": 0,
+        "id": "W-GDRS-033",
+        "status": "opened-review-content",
+        "path": "/gdrs/message/public",
+        "evidence": "W-GDRS-033",
+        "operations": []
+      }
+    ]
+  }
+]

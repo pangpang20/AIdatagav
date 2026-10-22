@@ -1,0 +1,314 @@
+{
+  "time": "2026-10-22T10:10:37.611Z",
+  "url": "/module-common/news/newsManageEdit",
+  "title": "微服务平台",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n微服务平台\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n查看消息管理\n返回\n标题\n摘要\n消息类型\n通知对象\n紧急程度\n内容\n\n【8.1售前演示空间】的【数据测评任务_0128】距离工单要求完成时限已超时265天，请尽快完成工单事项处理\n\n原始内容\n发送情况详情\n系统邮件\n序号\t接收人\t是否已读\t已读时间\n1\n\t\njializhi\n\t\n未读\n\t\n-\n\n\n2\n\t\nCUST008\n\t\n未读\n\t\n-\n\n\n3\n\t\nmzj001\n\t\n未读\n\t\n-\n\n\n4\n\t\n张昆\n\t\n未读\n\t\n-\n\n\n5\n\t\n胡瑞\n\t\n未读\n\t\n-\n\n\n6\n\t\n邓小超\n\t\n未读\n\t\n-\n\n\n7\n\t\nCUST003\n\t\n未读\n\t\n-\n\n\n8\n\t\nyyc\n\t\n未读\n\t\n-\n\n\n9\n\t\nCUST013\n\t\n未读\n\t\n-\n\n\n10\n\t\n梁孔昌\n\t\n未读\n\t\n-\n\n\n11\n\t\n苏雨轩\n\t\n未读\n\t\n-\n\n\n12\n\t\n马睿\n\t\n未读\n\t\n-\n\n\n13\n\t\n张志丹\n\t\n未读\n\t\n-\n\n\n14\n\t\n王学民\n\t\n未读\n\t\n-\n\n\n15\n\t\ntest123\n\t\n未读\n\t\n-\n\n\n16\n\t\n万志浩\n\t\n未读\n\t\n-",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标题",
+      "placeholder": "",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "摘要",
+      "placeholder": "",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "消息类型",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "通知对象",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "紧急程度",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "系统",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "邮件",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R072-message-0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "标题",
+      "requiredMarker": false,
+      "text": "标题",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "摘要",
+      "requiredMarker": false,
+      "text": "摘要",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "消息类型",
+      "requiredMarker": false,
+      "text": "消息类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "通知对象",
+      "requiredMarker": false,
+      "text": "通知对象",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "紧急程度",
+      "requiredMarker": false,
+      "text": "紧急程度",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "内容",
+      "requiredMarker": false,
+      "text": "内容\n\n【8.1售前演示空间】的【数据测评任务_0128】距离工单要求完成时限已超时265天，请尽快完成工单事项处理",
+      "fields": []
+    },
+    {
+      "label": "原始内容",
+      "requiredMarker": false,
+      "text": "原始内容",
+      "fields": []
+    }
+  ],
+  "headers": [
+    "序号",
+    "接收人",
+    "是否已读",
+    "已读时间"
+  ],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "· 工单申请",
+    "· 我的工单",
+    "· 我的待办",
+    "· 我的已办",
+    "· 抄送我的",
+    "· 业务注册",
+    "· 流程模型",
+    "· 流程监控",
+    "· 表单设计",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n微服务平台\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n查看消息管理\n返回\n标题\n摘要\n消息类型\n通知对象\n紧急程度\n内容\n\n【8.1售前演示空间】的【数据测评任务_0128】距离工单要求完成时限已超时265天，请尽快完成工单事项处理\n\n原始内容\n发送情况详情\n系统邮件\n序号\t接收人\t是否已读\t已读时间\n1\n\t\njializhi\n\t\n未读\n\t\n-\n\n\n2\n\t\nCUST008\n\t\n未读\n\t\n-\n\n\n3\n\t\nmzj001\n\t\n未读\n\t\n-\n\n\n4\n\t\n张昆\n\t\n未读\n\t\n-\n\n\n5\n\t\n胡瑞\n\t\n未读\n\t\n-\n\n\n6\n\t\n邓小超\n\t\n未读\n\t\n-\n\n\n7\n\t\nCUST003\n\t\n未读\n\t\n-\n\n\n8\n\t\nyyc\n\t\n未读\n\t\n-\n\n\n9\n\t\nCUST013\n\t\n未读\n\t\n-\n\n\n10\n\t\n梁孔昌\n\t\n未读\n\t\n-\n\n\n11\n\t\n苏雨轩\n\t\n未读\n\t\n-\n\n\n12\n\t\n马睿\n\t\n未读\n\t\n-\n\n\n13\n\t\n张志丹\n\t\n未读\n\t\n-\n\n\n14\n\t\n王学民\n\t\n未读\n\t\n-\n\n\n15\n\t\ntest123\n\t\n未读\n\t\n-\n\n\n16\n\t\n万志浩\n\t\n未读\n\t\n-",
+  "operation": {
+    "menu": "消息管理",
+    "action": "查看详情",
+    "source": "R072-message-list",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

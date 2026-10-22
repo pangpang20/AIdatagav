@@ -1,0 +1,222 @@
+{
+  "time": "2026-10-22T10:24:08.894Z",
+  "url": "/gdrs/gdrs/configManageEdit",
+  "title": "数据直报",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据直报\n 首页\n直报管理\n库表资源管理\n· 资源管理\n· 表单管理\n· 模板管理\n· 上报授权\n· 查询授权\n· 任务管理\n· 选项配置\n文件资源管理\n· 资源管理\n· 上报授权\n· 查询授权\n· 任务管理\n类别管理\n数据上报\n标准化数据上报\n· 数据上报\n· 数据查看\n· 上报任务\n· 上报记录\n· 服务查询\n· 批量导入\n非标准化数据上报\n· 数据上报\n· 上报任务\n· 上报记录\n文件上报\n· 数据上报\n· 数据查看\n· 上报任务\n· 上报记录\n· 服务查询\n 审核管理\n上报统计\n任务上报统计\n库表资源上报时效统计\n文件资源上报时效统计\n 帮助\n 消息\n新增列表项\n返回\n选项分组名称\n选项分组值\n备注\n取消提交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "选项分组名称",
+      "placeholder": "请输入选项分组名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "选项分组值",
+      "placeholder": "请输入选项分组值",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "备注",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "L-GDRS-009-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "选项分组名称",
+      "requiredMarker": true,
+      "text": "选项分组名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入选项分组名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "选项分组值",
+      "requiredMarker": true,
+      "text": "选项分组值",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入选项分组值",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "备注",
+      "requiredMarker": false,
+      "text": "备注",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "255",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "· 资源管理",
+    "· 表单管理",
+    "· 模板管理",
+    "· 上报授权",
+    "· 查询授权",
+    "· 任务管理",
+    "· 选项配置",
+    "· 资源管理",
+    "· 上报授权",
+    "· 查询授权",
+    "· 任务管理",
+    "类别管理",
+    "· 数据上报",
+    "· 数据查看",
+    "· 上报任务",
+    "· 上报记录",
+    "· 服务查询",
+    "· 批量导入",
+    "· 数据上报",
+    "· 上报任务",
+    "· 上报记录",
+    "· 数据上报",
+    "· 数据查看",
+    "· 上报任务",
+    "· 上报记录",
+    "· 服务查询",
+    " 审核管理",
+    "任务上报统计",
+    "库表资源上报时效统计",
+    "文件资源上报时效统计",
+    " 帮助",
+    " 消息"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据直报\n 首页\n直报管理\n库表资源管理\n· 资源管理\n· 表单管理\n· 模板管理\n· 上报授权\n· 查询授权\n· 任务管理\n· 选项配置\n文件资源管理\n· 资源管理\n· 上报授权\n· 查询授权\n· 任务管理\n类别管理\n数据上报\n标准化数据上报\n· 数据上报\n· 数据查看\n· 上报任务\n· 上报记录\n· 服务查询\n· 批量导入\n非标准化数据上报\n· 数据上报\n· 上报任务\n· 上报记录\n文件上报\n· 数据上报\n· 数据查看\n· 上报任务\n· 上报记录\n· 服务查询\n 审核管理\n上报统计\n任务上报统计\n库表资源上报时效统计\n文件资源上报时效统计\n 帮助\n 消息\n新增列表项\n返回\n选项分组名称\n选项分组值\n备注\n取消提交"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "code": "DRMS",
+    "name": "业务需求管理系统",
+    "discoveredAt": "2026-10-22T11:36:41.111Z",
+    "links": [
+      {
+        "name": "我的需求",
+        "hierarchy": "需求管理 → 我的需求",
+        "status": "opened-review-content",
+        "path": "/drms/requirement/my",
+        "evidence": "P-DRMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "evidence": "T-DRMS-requirement-add-direct",
+            "path": "/drms/requirement/edit"
+          }
+        ]
+      }
+    ]
+  }
+]

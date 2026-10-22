@@ -1,0 +1,864 @@
+[
+  {
+    "code": "DCS",
+    "name": "目录管理系统",
+    "source": "E038-catalog",
+    "entry": "X-DCS-000-entry",
+    "discoveredAt": "2026-10-22T11:04:05.490Z",
+    "links": [
+      {
+        "name": "机构内部统计分析",
+        "hierarchy": "服务统计 → 机构内部统计分析",
+        "occurrence": 0,
+        "id": "X-DCS-001",
+        "status": "opened-review-content",
+        "path": "/dcs/analyze/internal",
+        "evidence": "X-DCS-001",
+        "operations": []
+      },
+      {
+        "name": "所有机构统计分析",
+        "hierarchy": "服务统计 → 所有机构统计分析",
+        "occurrence": 0,
+        "id": "X-DCS-002",
+        "status": "opened-review-content",
+        "path": "/dcs/analyze/agency",
+        "evidence": "X-DCS-002",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DSE",
+    "name": "数据共享交换",
+    "source": "E039-exchange",
+    "entry": "X-DSE-000-entry",
+    "discoveredAt": "2026-10-22T11:04:25.207Z",
+    "links": [
+      {
+        "name": "库表交换统计",
+        "hierarchy": "统计看板 → 库表交换统计",
+        "occurrence": 0,
+        "id": "X-DSE-001",
+        "status": "opened-review-content",
+        "path": "/dse/board/1",
+        "evidence": "X-DSE-001",
+        "operations": []
+      },
+      {
+        "name": "文件交换统计",
+        "hierarchy": "统计看板 → 文件交换统计",
+        "occurrence": 0,
+        "id": "X-DSE-002",
+        "status": "opened-review-content",
+        "path": "/dse/board/2",
+        "evidence": "X-DSE-002",
+        "operations": []
+      },
+      {
+        "name": "接口调用统计",
+        "hierarchy": "统计看板 → 接口调用统计",
+        "occurrence": 0,
+        "id": "X-DSE-003",
+        "status": "opened-review-content",
+        "path": "/dse/board/8",
+        "evidence": "X-DSE-003",
+        "operations": []
+      },
+      {
+        "name": "库表交换任务",
+        "hierarchy": "任务管理 → 库表交换任务",
+        "occurrence": 0,
+        "id": "X-DSE-004",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/1",
+        "evidence": "X-DSE-004",
+        "operations": []
+      },
+      {
+        "name": "文件交换任务",
+        "hierarchy": "任务管理 → 文件交换任务",
+        "occurrence": 0,
+        "id": "X-DSE-005",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/2",
+        "evidence": "X-DSE-005",
+        "operations": []
+      },
+      {
+        "name": "接口交换任务",
+        "hierarchy": "任务管理 → 接口交换任务",
+        "occurrence": 0,
+        "id": "X-DSE-006",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/8",
+        "evidence": "X-DSE-006",
+        "operations": []
+      },
+      {
+        "name": "库表交换日志",
+        "hierarchy": "任务监控 → 库表交换日志",
+        "occurrence": 0,
+        "id": "X-DSE-007",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/1",
+        "evidence": "X-DSE-007",
+        "operations": [
+          {
+            "name": "运行结果",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-DSE-007-op1",
+            "path": "/dse/log/list/1"
+          }
+        ]
+      },
+      {
+        "name": "文件交换日志",
+        "hierarchy": "任务监控 → 文件交换日志",
+        "occurrence": 0,
+        "id": "X-DSE-008",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/2",
+        "evidence": "X-DSE-008",
+        "operations": [
+          {
+            "name": "运行结果",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-DSE-008-op1",
+            "path": "/dse/log/list/2"
+          }
+        ]
+      },
+      {
+        "name": "接口交换日志",
+        "hierarchy": "任务监控 → 接口交换日志",
+        "occurrence": 0,
+        "id": "X-DSE-009",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/8",
+        "evidence": "X-DSE-009",
+        "operations": []
+      },
+      {
+        "name": "前置机监控",
+        "hierarchy": "前置机监控",
+        "occurrence": 0,
+        "id": "X-DSE-010",
+        "status": "opened-review-content",
+        "path": "/dse/prefix",
+        "evidence": "X-DSE-010",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSB",
+    "name": "数据服务支撑",
+    "source": "E040-api-service",
+    "entry": "X-GSB-000-entry",
+    "discoveredAt": "2026-10-22T11:05:24.499Z",
+    "links": [
+      {
+        "name": "服务目录",
+        "hierarchy": "服务目录 → 服务目录",
+        "occurrence": 0,
+        "id": "X-GSB-001",
+        "status": "opened-review-content",
+        "path": "/gsb/catalog/list",
+        "evidence": "X-GSB-001",
+        "operations": []
+      },
+      {
+        "name": "注册管理",
+        "hierarchy": "服务管理 → 注册管理",
+        "occurrence": 0,
+        "id": "X-GSB-002",
+        "status": "opened-review-content",
+        "path": "/gsb/manage/list",
+        "evidence": "X-GSB-002",
+        "operations": []
+      },
+      {
+        "name": "消费管理",
+        "hierarchy": "服务管理 → 消费管理",
+        "occurrence": 0,
+        "id": "X-GSB-003",
+        "status": "opened-review-content",
+        "path": "/gsb/manage/sale",
+        "evidence": "X-GSB-003",
+        "operations": []
+      },
+      {
+        "name": "注册审批",
+        "hierarchy": "服务审批 → 注册审批",
+        "occurrence": 0,
+        "id": "X-GSB-004",
+        "status": "opened-review-content",
+        "path": "/gsb/approval/list",
+        "evidence": "X-GSB-004",
+        "operations": []
+      },
+      {
+        "name": "消费IP管理",
+        "hierarchy": "服务控制 → 消费IP管理",
+        "occurrence": 0,
+        "id": "X-GSB-005",
+        "status": "opened-review-content",
+        "path": "/gsb/control/ip",
+        "evidence": "X-GSB-005",
+        "operations": []
+      },
+      {
+        "name": "服务统计",
+        "hierarchy": "服务控制 → 服务统计",
+        "occurrence": 0,
+        "id": "X-GSB-006",
+        "status": "opened-review-content",
+        "path": "/gsb/control/ip",
+        "evidence": "X-GSB-006",
+        "operations": []
+      },
+      {
+        "name": "数源配置",
+        "hierarchy": "配置 → 数源配置",
+        "occurrence": 0,
+        "id": "X-GSB-007",
+        "status": "opened-review-content",
+        "path": "/gsb/config/list",
+        "evidence": "X-GSB-007",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSPA",
+    "name": "数据服务门户后台管理",
+    "source": "E042-portal-admin",
+    "entry": "X-GSPA-000-entry",
+    "discoveredAt": "2026-10-22T11:06:25.526Z",
+    "links": [
+      {
+        "name": "快捷入口管理",
+        "hierarchy": "政务共享门户后台管理 → 快捷入口管理",
+        "occurrence": 0,
+        "id": "X-GSPA-001",
+        "status": "opened-review-content",
+        "path": "/gsp/entrance/list",
+        "evidence": "X-GSPA-001",
+        "operations": []
+      },
+      {
+        "name": "知识管理",
+        "hierarchy": "政务共享门户后台管理 → 知识管理",
+        "occurrence": 0,
+        "id": "X-GSPA-002",
+        "status": "opened-review-content",
+        "path": "/gsp/knowledge/list",
+        "evidence": "X-GSPA-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-GSPA-002-op1",
+            "path": "/gsp/knowledge/list"
+          }
+        ]
+      },
+      {
+        "name": "· 栏目管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 栏目管理",
+        "occurrence": 0,
+        "id": "X-GSPA-003",
+        "status": "opened-review-content",
+        "path": "/gsp/knowledge/list",
+        "evidence": "X-GSPA-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-GSPA-003-op1",
+            "path": "/gsp/knowledge/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "X-GSPA-003-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 布局管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+        "occurrence": 0,
+        "id": "X-GSPA-004",
+        "status": "opened-review-content",
+        "path": "/gsp/knowledge/list",
+        "evidence": "X-GSPA-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-GSPA-004-op1",
+            "path": "/gsp/knowledge/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "X-GSPA-004-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 版块管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 版块管理",
+        "occurrence": 0,
+        "id": "X-GSPA-005",
+        "status": "opened-review-content",
+        "path": "/gsp/content/forum/list",
+        "evidence": "X-GSPA-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-GSPA-005-op1",
+            "path": "/gsp/content/forum/list"
+          }
+        ]
+      },
+      {
+        "name": "· 内容管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 内容管理",
+        "occurrence": 0,
+        "id": "X-GSPA-006",
+        "status": "opened-review-content",
+        "path": "/gsp/content/forum/list",
+        "evidence": "X-GSPA-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-GSPA-006-op1",
+            "path": "/gsp/content/forum/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "X-GSPA-006-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "模板管理",
+        "hierarchy": "政务共享门户后台管理 → 模板管理",
+        "occurrence": 0,
+        "id": "X-GSPA-007",
+        "status": "navigation-error",
+        "reason": "Error"
+      }
+    ]
+  },
+  {
+    "code": "MDM",
+    "name": "元数据管理",
+    "source": "E044-metadata",
+    "entry": "X-MDM-000-entry",
+    "discoveredAt": "2026-10-22T11:08:02.759Z",
+    "links": [
+      {
+        "name": "采集管理",
+        "hierarchy": "元数据管理 → 采集管理",
+        "occurrence": 0,
+        "id": "X-MDM-001",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/collectList",
+        "evidence": "X-MDM-001",
+        "operations": [
+          {
+            "name": "版本管理",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-MDM-001-op1",
+            "path": "/mdm/metadata/manage/metaVersionComparison"
+          }
+        ]
+      },
+      {
+        "name": "变更管理",
+        "hierarchy": "元数据管理 → 变更管理",
+        "occurrence": 0,
+        "id": "X-MDM-002",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/applyAudit",
+        "evidence": "X-MDM-002",
+        "operations": [
+          {
+            "name": "版本管理",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-MDM-002-op1",
+            "path": "/mdm/metadata/manage/metaVersionComparison"
+          }
+        ]
+      },
+      {
+        "name": "版本管理",
+        "hierarchy": "元数据管理 → 版本管理",
+        "occurrence": 0,
+        "id": "X-MDM-003",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/metaVersionComparison",
+        "evidence": "X-MDM-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "X-MDM-003-op1",
+            "path": "/mdm/metadata/manage/metaVersionComparison",
+            "selectControls": 1,
+            "optionEvidence": [
+              "X-MDM-003-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "异常监控",
+        "hierarchy": "元数据管理 → 异常监控",
+        "occurrence": 0,
+        "id": "X-MDM-004",
+        "status": "pending"
+      },
+      {
+        "name": "调度策略管理",
+        "hierarchy": "元数据管理 → 调度策略管理",
+        "occurrence": 0,
+        "id": "X-MDM-005",
+        "status": "pending"
+      },
+      {
+        "name": "元数据信息",
+        "hierarchy": "元数据管理 → 元数据信息",
+        "occurrence": 0,
+        "id": "X-MDM-006",
+        "status": "pending"
+      },
+      {
+        "name": "数据地图",
+        "hierarchy": "元数据分析 → 数据地图",
+        "occurrence": 0,
+        "id": "X-MDM-007",
+        "status": "pending"
+      },
+      {
+        "name": "血缘分析",
+        "hierarchy": "元数据分析 → 血缘分析",
+        "occurrence": 0,
+        "id": "X-MDM-008",
+        "status": "pending"
+      },
+      {
+        "name": "影响分析",
+        "hierarchy": "元数据分析 → 影响分析",
+        "occurrence": 0,
+        "id": "X-MDM-009",
+        "status": "pending"
+      },
+      {
+        "name": "映射管理",
+        "hierarchy": "元数据分析 → 映射管理",
+        "occurrence": 0,
+        "id": "X-MDM-010",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "DSE",
+    "name": "数据共享交换",
+    "source": "E039-exchange",
+    "entry": "Z-DSE-000-entry",
+    "discoveredAt": "2026-10-22T11:13:24.170Z",
+    "links": [
+      {
+        "name": "库表交换统计",
+        "hierarchy": "统计看板 → 库表交换统计",
+        "occurrence": 0,
+        "id": "Z-DSE-001",
+        "status": "opened-review-content",
+        "path": "/dse/board/1",
+        "evidence": "Z-DSE-001",
+        "operations": []
+      },
+      {
+        "name": "文件交换统计",
+        "hierarchy": "统计看板 → 文件交换统计",
+        "occurrence": 0,
+        "id": "Z-DSE-002",
+        "status": "opened-review-content",
+        "path": "/dse/board/2",
+        "evidence": "Z-DSE-002",
+        "operations": []
+      },
+      {
+        "name": "接口调用统计",
+        "hierarchy": "统计看板 → 接口调用统计",
+        "occurrence": 0,
+        "id": "Z-DSE-003",
+        "status": "opened-review-content",
+        "path": "/dse/board/8",
+        "evidence": "Z-DSE-003",
+        "operations": []
+      },
+      {
+        "name": "库表交换任务",
+        "hierarchy": "任务管理 → 库表交换任务",
+        "occurrence": 0,
+        "id": "Z-DSE-004",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/1",
+        "evidence": "Z-DSE-004",
+        "operations": []
+      },
+      {
+        "name": "文件交换任务",
+        "hierarchy": "任务管理 → 文件交换任务",
+        "occurrence": 0,
+        "id": "Z-DSE-005",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/2",
+        "evidence": "Z-DSE-005",
+        "operations": []
+      },
+      {
+        "name": "接口交换任务",
+        "hierarchy": "任务管理 → 接口交换任务",
+        "occurrence": 0,
+        "id": "Z-DSE-006",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/8",
+        "evidence": "Z-DSE-006",
+        "operations": []
+      },
+      {
+        "name": "库表交换日志",
+        "hierarchy": "任务监控 → 库表交换日志",
+        "occurrence": 0,
+        "id": "Z-DSE-007",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/1",
+        "evidence": "Z-DSE-007",
+        "operations": []
+      },
+      {
+        "name": "文件交换日志",
+        "hierarchy": "任务监控 → 文件交换日志",
+        "occurrence": 0,
+        "id": "Z-DSE-008",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/2",
+        "evidence": "Z-DSE-008",
+        "operations": []
+      },
+      {
+        "name": "接口交换日志",
+        "hierarchy": "任务监控 → 接口交换日志",
+        "occurrence": 0,
+        "id": "Z-DSE-009",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/8",
+        "evidence": "Z-DSE-009",
+        "operations": []
+      },
+      {
+        "name": "前置机监控",
+        "hierarchy": "前置机监控",
+        "occurrence": 0,
+        "id": "Z-DSE-010",
+        "status": "opened-review-content",
+        "path": "/dse/prefix",
+        "evidence": "Z-DSE-010",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSB",
+    "name": "数据服务支撑",
+    "source": "E040-api-service",
+    "entry": "Z-GSB-000-entry",
+    "discoveredAt": "2026-10-22T11:14:53.522Z",
+    "links": [
+      {
+        "name": "服务目录",
+        "hierarchy": "服务目录 → 服务目录",
+        "occurrence": 0,
+        "id": "Z-GSB-001",
+        "status": "opened-review-content",
+        "path": "/gsb/catalog/list",
+        "evidence": "Z-GSB-001",
+        "operations": []
+      },
+      {
+        "name": "注册管理",
+        "hierarchy": "服务管理 → 注册管理",
+        "occurrence": 0,
+        "id": "Z-GSB-002",
+        "status": "opened-review-content",
+        "path": "/gsb/manage/list",
+        "evidence": "Z-GSB-002",
+        "operations": []
+      },
+      {
+        "name": "消费管理",
+        "hierarchy": "服务管理 → 消费管理",
+        "occurrence": 0,
+        "id": "Z-GSB-003",
+        "status": "opened-review-content",
+        "path": "/gsb/manage/sale",
+        "evidence": "Z-GSB-003",
+        "operations": []
+      },
+      {
+        "name": "注册审批",
+        "hierarchy": "服务审批 → 注册审批",
+        "occurrence": 0,
+        "id": "Z-GSB-004",
+        "status": "opened-review-content",
+        "path": "/gsb/approval/list",
+        "evidence": "Z-GSB-004",
+        "operations": []
+      },
+      {
+        "name": "消费IP管理",
+        "hierarchy": "服务控制 → 消费IP管理",
+        "occurrence": 0,
+        "id": "Z-GSB-005",
+        "status": "opened-review-content",
+        "path": "/gsb/control/ip",
+        "evidence": "Z-GSB-005",
+        "operations": []
+      },
+      {
+        "name": "服务统计",
+        "hierarchy": "服务控制 → 服务统计",
+        "occurrence": 0,
+        "id": "Z-GSB-006",
+        "status": "opened-review-content",
+        "path": "/gsb/control/visit",
+        "evidence": "Z-GSB-006",
+        "operations": []
+      },
+      {
+        "name": "数源配置",
+        "hierarchy": "配置 → 数源配置",
+        "occurrence": 0,
+        "id": "Z-GSB-007",
+        "status": "opened-review-content",
+        "path": "/gsb/config/list",
+        "evidence": "Z-GSB-007",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSPA",
+    "name": "数据服务门户后台管理",
+    "source": "E042-portal-admin",
+    "entry": "Z-GSPA-000-entry",
+    "discoveredAt": "2026-10-22T11:16:02.655Z",
+    "links": [
+      {
+        "name": "快捷入口管理",
+        "hierarchy": "政务共享门户后台管理 → 快捷入口管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-001",
+        "status": "opened-review-content",
+        "path": "/gsp/entrance/list",
+        "evidence": "Z-GSPA-001",
+        "operations": []
+      },
+      {
+        "name": "知识管理",
+        "hierarchy": "政务共享门户后台管理 → 知识管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-002",
+        "status": "opened-review-content",
+        "path": "/gsp/knowledge/list",
+        "evidence": "Z-GSPA-002",
+        "operations": []
+      },
+      {
+        "name": "· 栏目管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 栏目管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-003",
+        "status": "opened-review-content",
+        "path": "/gsp/content/column/list",
+        "evidence": "Z-GSPA-003",
+        "operations": []
+      },
+      {
+        "name": "· 布局管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-004",
+        "status": "opened-review-content",
+        "path": "/gsp/content/sheet/list",
+        "evidence": "Z-GSPA-004",
+        "operations": []
+      },
+      {
+        "name": "· 版块管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 版块管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-005",
+        "status": "opened-review-content",
+        "path": "/gsp/content/forum/list",
+        "evidence": "Z-GSPA-005",
+        "operations": []
+      },
+      {
+        "name": "· 内容管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 内容管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-006",
+        "status": "opened-review-content",
+        "path": "/gsp/content/content/list",
+        "evidence": "Z-GSPA-006",
+        "operations": []
+      },
+      {
+        "name": "模板管理",
+        "hierarchy": "政务共享门户后台管理 → 模板管理",
+        "occurrence": 0,
+        "id": "Z-GSPA-007",
+        "status": "opened-review-content",
+        "path": "/gsp/template/list",
+        "evidence": "Z-GSPA-007",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSP",
+    "name": "数据服务门户",
+    "source": "E095-portal-tab",
+    "entry": "Z-GSP-000-entry",
+    "discoveredAt": "2026-10-22T11:16:42.300Z",
+    "links": []
+  },
+  {
+    "code": "MDM",
+    "name": "元数据管理",
+    "source": "E044-metadata",
+    "entry": "Z-MDM-000-entry",
+    "discoveredAt": "2026-10-22T11:16:57.358Z",
+    "links": [
+      {
+        "name": "采集管理",
+        "hierarchy": "元数据管理 → 采集管理",
+        "occurrence": 0,
+        "id": "Z-MDM-001",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/collectList",
+        "evidence": "Z-MDM-001",
+        "operations": []
+      },
+      {
+        "name": "变更管理",
+        "hierarchy": "元数据管理 → 变更管理",
+        "occurrence": 0,
+        "id": "Z-MDM-002",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/applyAudit",
+        "evidence": "Z-MDM-002",
+        "operations": []
+      },
+      {
+        "name": "版本管理",
+        "hierarchy": "元数据管理 → 版本管理",
+        "occurrence": 0,
+        "id": "Z-MDM-003",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/metaVersionComparison",
+        "evidence": "Z-MDM-003",
+        "operations": []
+      },
+      {
+        "name": "异常监控",
+        "hierarchy": "元数据管理 → 异常监控",
+        "occurrence": 0,
+        "id": "Z-MDM-004",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/modifyManageList",
+        "evidence": "Z-MDM-004",
+        "operations": []
+      },
+      {
+        "name": "调度策略管理",
+        "hierarchy": "元数据管理 → 调度策略管理",
+        "occurrence": 0,
+        "id": "Z-MDM-005",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/strategyList",
+        "evidence": "Z-MDM-005",
+        "operations": []
+      },
+      {
+        "name": "元数据信息",
+        "hierarchy": "元数据管理 → 元数据信息",
+        "occurrence": 0,
+        "id": "Z-MDM-006",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/metaTableList",
+        "evidence": "Z-MDM-006",
+        "operations": []
+      },
+      {
+        "name": "数据地图",
+        "hierarchy": "元数据分析 → 数据地图",
+        "occurrence": 0,
+        "id": "Z-MDM-007",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/fullChainAnalysis",
+        "evidence": "Z-MDM-007",
+        "operations": []
+      },
+      {
+        "name": "血缘分析",
+        "hierarchy": "元数据分析 → 血缘分析",
+        "occurrence": 0,
+        "id": "Z-MDM-008",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/bloodAnalysis",
+        "evidence": "Z-MDM-008",
+        "operations": []
+      },
+      {
+        "name": "影响分析",
+        "hierarchy": "元数据分析 → 影响分析",
+        "occurrence": 0,
+        "id": "Z-MDM-009",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/effectAnalysis",
+        "evidence": "Z-MDM-009",
+        "operations": []
+      },
+      {
+        "name": "映射管理",
+        "hierarchy": "元数据分析 → 映射管理",
+        "occurrence": 0,
+        "id": "Z-MDM-010",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/bloodManageList",
+        "evidence": "Z-MDM-010",
+        "operations": []
+      }
+    ]
+  }
+]

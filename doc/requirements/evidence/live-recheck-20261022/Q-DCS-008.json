@@ -1,0 +1,309 @@
+{
+  "time": "2026-10-22T11:28:39.084Z",
+  "url": "/dcs/systemManagement/matterList",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n事项管理\n查询重置展开\n新增\n序号\t事项名称\t基本编码\t事项类型\t事项分类\t数源单位\t业务名称\t关联系统（个）\t关联资源（个）\t关联已编目目录（个）\t关联已发布目录（个）\t操作\n1\n\t\n贷款业务\n\t\n3993\n\t\n公共服务\n\t\n实时清单\n\t\n贷款管理部\n\t\n贷款业务\n\t\n1\n\t\n1\n\t\n0\n\t\n0\n\t\n编辑\n删除\n\n\n2\n\t\n归集业务\n\t\n1003\n\t\n公共服务\n\t\n实时清单\n\t\n归集管理部\n\t\n归集业务\n\t\n1\n\t\n1\n\t\n0\n\t\n0\n\t\n编辑\n删除\n\n\n3\n\t\n婚姻登记\n\t\nhunyindj\n\t\n公共服务\n\t\n实时清单\n\t\n区民政局\n\t\n婚姻登记\n\t\n1\n\t\n15\n\t\n14\n\t\n6\n\t\n\n\n4\n\t\n投资交易\n\t\n001\n\t\n其他行政权力\n\t\n基本目录\n\t\n投资交易部\n\t\n投资交易\n\t\n1\n\t\n11\n\t\n5\n\t\n1\n\t\n\n\n5\n\t\n农科院测试事项\n\t\nnkycs\n\t\n公共服务\n\t\n基本目录\n\t\n农科院\n\t\n农科院业务\n\t\n1\n\t\n2\n\t\n2\n\t\n0\n\t\n\n\n6\n\t\n人口信息登记\n\t\nrxxxdj\n\t\n公共服务\n\t\n基本目录\n\t\n某委办局\n\t\n人口信息\n\t\n1\n\t\n0\n\t\n0\n\t\n0\n\t\n编辑\n删除\n\n\n7\n\t\n测试事项\n\t\n000\n\t\n公共服务\n\t\n基本目录\n\t\n根部门\n\t\n测试业务\n\t\n1\n\t\n12\n\t\n8\n\t\n3\n\t\n\n\n8\n\t\n公积金\n\t\n100009\n\t\n公共服务\n\t\n基本目录\n\t\n市住建局\n\t\n公积金\n\t\n1\n\t\n5\n\t\n3\n\t\n1\n\t\n\n\n9\n\t\n交通管理事项\n\t\njtgl\n\t\n公共服务\n\t\n基本目录\n\t\n交通管理局\n\t\n交通管理业务\n\t\n1\n\t\n18\n\t\n10\n\t\n4\n\t\n\n\n10\n\t\n事项A\n\t\n1001\n\t\n其他行政权力\n\t\n基本目录\n\t\n数据集成\n\t\n业务A\n\t\n1\n\t\n2\n\t\n2\n\t\n1\n\t\n\n\n11\n\t\n证照办理\n\t\nSX0000001\n\t\n公共服务\n\t\n基本目录\n\t\n政数局\n\t\n政务服务\n\t\n1\n\t\n9\n\t\n8\n\t\n2\n\t\n\n\n12\n\t\n医疗事项\n\t\n100001\n\t\n公共服务\n\t\n基本目录\n\t\n某委办局\n\t\n医疗业务\n\t\n1\n\t\n36\n\t\n22\n\t\n9\n\t\n共 12 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入事项名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入基本编码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择事项类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Q-DCS-008",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "事项名称",
+    "基本编码",
+    "事项类型",
+    "事项分类",
+    "数源单位",
+    "业务名称",
+    "关联系统（个）",
+    "关联资源（个）",
+    "关联已编目目录（个）",
+    "关联已发布目录（个）",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "贷款业务",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "归集业务",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻登记",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "投资交易",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "农科院测试事项",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息登记",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "测试事项",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "公积金",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "交通管理事项",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "事项A",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "证照办理",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "医疗事项",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n事项管理\n查询重置展开\n新增\n序号\t事项名称\t基本编码\t事项类型\t事项分类\t数源单位\t业务名称\t关联系统（个）\t关联资源（个）\t关联已编目目录（个）\t关联已发布目录（个）\t操作\n1\n\t\n贷款业务\n\t\n3993\n\t\n公共服务\n\t\n实时清单\n\t\n贷款管理部\n\t\n贷款业务\n\t\n1\n\t\n1\n\t\n0\n\t\n0\n\t\n编辑\n删除\n\n\n2\n\t\n归集业务\n\t\n1003\n\t\n公共服务\n\t\n实时清单\n\t\n归集管理部\n\t\n归集业务\n\t\n1\n\t\n1\n\t\n0\n\t\n0\n\t\n编辑\n删除\n\n\n3\n\t\n婚姻登记\n\t\nhunyindj\n\t\n公共服务\n\t\n实时清单\n\t\n区民政局\n\t\n婚姻登记\n\t\n1\n\t\n15\n\t\n14\n\t\n6\n\t\n\n\n4\n\t\n投资交易\n\t\n001\n\t\n其他行政权力\n\t\n基本目录\n\t\n投资交易部\n\t\n投资交易\n\t\n1\n\t\n11\n\t\n5\n\t\n1\n\t\n\n\n5\n\t\n农科院测试事项\n\t\nnkycs\n\t\n公共服务\n\t\n基本目录\n\t\n农科院\n\t\n农科院业务\n\t\n1\n\t\n2\n\t\n2\n\t\n0\n\t\n\n\n6\n\t\n人口信息登记\n\t\nrxxxdj\n\t\n公共服务\n\t\n基本目录\n\t\n某委办局\n\t\n人口信息\n\t\n1\n\t\n0\n\t\n0\n\t\n0\n\t\n编辑\n删除\n\n\n7\n\t\n测试事项\n\t\n000\n\t\n公共服务\n\t\n基本目录\n\t\n根部门\n\t\n测试业务\n\t\n1\n\t\n12\n\t\n8\n\t\n3\n\t\n\n\n8\n\t\n公积金\n\t\n100009\n\t\n公共服务\n\t\n基本目录\n\t\n市住建局\n\t\n公积金\n\t\n1\n\t\n5\n\t\n3\n\t\n1\n\t\n\n\n9\n\t\n交通管理事项\n\t\njtgl\n\t\n公共服务\n\t\n基本目录\n\t\n交通管理局\n\t\n交通管理业务\n\t\n1\n\t\n18\n\t\n10\n\t\n4\n\t\n\n\n10\n\t\n事项A\n\t\n1001\n\t\n其他行政权力\n\t\n基本目录\n\t\n数据集成\n\t\n业务A\n\t\n1\n\t\n2\n\t\n2\n\t\n1\n\t\n\n\n11\n\t\n证照办理\n\t\nSX0000001\n\t\n公共服务\n\t\n基本目录\n\t\n政数局\n\t\n政务服务\n\t\n1\n\t\n9\n\t\n8\n\t\n2\n\t\n\n\n12\n\t\n医疗事项\n\t\n100001\n\t\n公共服务\n\t\n基本目录\n\t\n某委办局\n\t\n医疗业务\n\t\n1\n\t\n36\n\t\n22\n\t\n9\n\t\n共 12 条\n1\n前往页"
+}

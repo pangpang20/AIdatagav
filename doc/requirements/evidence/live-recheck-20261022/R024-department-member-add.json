@@ -1,0 +1,665 @@
+{
+  "time": "2026-10-22T09:55:44.328Z",
+  "url": "/module-common/manage/department/departmentList",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n部门管理\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n山东部门\n新增部门人员\n序号\t姓名\t账号\t手机号码\t邮箱\t职位\t加入时间\n\t操作\n1\n\t\n罗霞\n\t\nluoxia\n\t\n***********\n\t\n*******@audaque.com\n\t\n\t\n2025-05-14 00:01:06\n\t\n编辑\n删除\n数据权限\n更多\n\n\n2\n\t\nczj001\n\t\nczj001\n\t\n***********\n\t\n******@qq.com\n\t\n\t\n2025-06-27 15:26:39\n\t\n编辑\n删除\n数据权限\n更多\n\n\n3\n\t\nyyc\n\t\nyuyangchun\n\t\n***********\n\t\n**********@qq.com\n\t\n\t\n2025-07-03 11:04:44\n\t\n编辑\n删除\n数据权限\n更多\n\n\n4\n\t\n许松\n\t\nxusong\n\t\n***********\n\t\n*******@audaque.com\n\t\n\t\n2025-07-18 16:45:24\n\t\n编辑\n删除\n数据权限\n更多\n\n\n5\n\t\n陈云亮\n\t\nchenyunliang\n\t\n***********\n\t\n*************@audaque.com\n\t\n\t\n2025-07-28 10:34:57\n\t\n编辑\n删除\n数据权限\n更多\n\n\n6\n\t\n马睿\n\t\nmarui\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-08-08 09:31:30\n\t\n编辑\n删除\n数据权限\n更多\n\n\n7\n\t\nCUST019\n\t\nwanghuijun\n\t\n***********\n\t\n***********@audaque.com\n\t\n\t\n2025-08-11 09:10:48\n\t\n编辑\n删除\n数据权限\n更多\n\n\n8\n\t\n苏雨轩\n\t\nsuyuxuan\n\t\n***********\n\t\n*****@11.com\n\t\n\t\n2025-09-12 14:20:12\n\t\n编辑\n删除\n数据权限\n更多\n\n\n9\n\t\ntest123\n\t\nwukeyuan\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-09-29 16:21:06\n\t\n编辑\n删除\n数据权限\n更多\n\n\n10\n\t\nCUST002\n\t\nchenjian\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2026-04-23 11:50:32\n\t\n编辑\n删除\n数据权限\n更多\n共 10 条\n1\n前往页\n新增部门人员\n人员\n职位名称\n0/100\n是否是领导\n角色\n标签\n取 消 确 认",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "Close",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "人员",
+      "placeholder": "请输入关键词",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "职位名称",
+      "placeholder": "请输入职位名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "是否是领导",
+      "placeholder": "请选择是否是领导",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "角色",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "角色",
+      "placeholder": "请选择角色",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标签",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标签",
+      "placeholder": "请选择标签",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确 认",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R024-department-member-add",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "人员",
+      "requiredMarker": true,
+      "text": "人员",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入关键词",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "职位名称",
+      "requiredMarker": false,
+      "text": "职位名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入职位名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "是否是领导",
+      "requiredMarker": true,
+      "text": "是否是领导",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择是否是领导",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "角色",
+      "requiredMarker": false,
+      "text": "角色",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择角色",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "标签",
+      "requiredMarker": false,
+      "text": "标签",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择标签",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "姓名",
+    "账号",
+    "手机号码",
+    "邮箱",
+    "职位",
+    "加入时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "向上",
+      "cls": "main-Upxiangshang7 audaque-link-text iconfontmain audaque-link-text--active audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "向下",
+      "cls": "main-Downxiangxia7 audaque-link-text iconfontmain audaque-link-text--active audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "设置管理员",
+      "cls": "main-shezhi1x iconfontmain  audaque-link-text audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "新增部门",
+      "cls": "iconfontmain  main-add-new audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "修改部门",
+      "cls": "iconfontmain  main-edit-new audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "删除部门",
+      "cls": "iconfontmain  main-delete-new audaque-action-icon--title-tree"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增部门人员",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "罗霞",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "数据权限",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "czj001",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "yyc",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "许松",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "陈云亮",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "马睿",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "CUST019",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "苏雨轩",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "test123",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "CUST002",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n部门管理\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n山东部门\n新增部门人员\n序号\t姓名\t账号\t手机号码\t邮箱\t职位\t加入时间\n\t操作\n1\n\t\n罗霞\n\t\nluoxia\n\t\n***********\n\t\n*******@audaque.com\n\t\n\t\n2025-05-14 00:01:06\n\t\n编辑\n删除\n数据权限\n更多\n\n\n2\n\t\nczj001\n\t\nczj001\n\t\n***********\n\t\n******@qq.com\n\t\n\t\n2025-06-27 15:26:39\n\t\n编辑\n删除\n数据权限\n更多\n\n\n3\n\t\nyyc\n\t\nyuyangchun\n\t\n***********\n\t\n**********@qq.com\n\t\n\t\n2025-07-03 11:04:44\n\t\n编辑\n删除\n数据权限\n更多\n\n\n4\n\t\n许松\n\t\nxusong\n\t\n***********\n\t\n*******@audaque.com\n\t\n\t\n2025-07-18 16:45:24\n\t\n编辑\n删除\n数据权限\n更多\n\n\n5\n\t\n陈云亮\n\t\nchenyunliang\n\t\n***********\n\t\n*************@audaque.com\n\t\n\t\n2025-07-28 10:34:57\n\t\n编辑\n删除\n数据权限\n更多\n\n\n6\n\t\n马睿\n\t\nmarui\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-08-08 09:31:30\n\t\n编辑\n删除\n数据权限\n更多\n\n\n7\n\t\nCUST019\n\t\nwanghuijun\n\t\n***********\n\t\n***********@audaque.com\n\t\n\t\n2025-08-11 09:10:48\n\t\n编辑\n删除\n数据权限\n更多\n\n\n8\n\t\n苏雨轩\n\t\nsuyuxuan\n\t\n***********\n\t\n*****@11.com\n\t\n\t\n2025-09-12 14:20:12\n\t\n编辑\n删除\n数据权限\n更多\n\n\n9\n\t\ntest123\n\t\nwukeyuan\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2025-09-29 16:21:06\n\t\n编辑\n删除\n数据权限\n更多\n\n\n10\n\t\nCUST002\n\t\nchenjian\n\t\n***********\n\t\n***********@qq.com\n\t\n\t\n2026-04-23 11:50:32\n\t\n编辑\n删除\n数据权限\n更多\n共 10 条\n1\n前往页\n新增部门人员\n人员\n职位名称\n0/100\n是否是领导\n角色\n标签\n取 消 确 认"
+}

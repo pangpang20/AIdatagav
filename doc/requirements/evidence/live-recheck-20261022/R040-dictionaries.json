@@ -1,0 +1,354 @@
+{
+  "time": "2026-10-22T09:59:54.708Z",
+  "url": "/module-common/config/dictionary/list",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n字典管理\n驱动类型\n应用场景\n部门类型\n查询重置\n新增\n序号\t编码\t名称\t类型\t操作\t\n1\n\t\nDOBC01\n\t\nodbc\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n2\n\t\nmongodb\n\t\nmongodb\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n3\n\t\nDoris\n\t\nDoris\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n4\n\t\nOBS\n\t\n华为OBS\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n5\n\t\nYS10043\n\t\nYashanDB\n\t\n系统内置\n\t\n\n\n6\n\t\nDeF10042\n\t\nOracle大数据\n\t\n系统内置\n\t\n\n\n7\n\t\nDeF10041\n\t\n石原子大数据\n\t\n系统内置\n\t\n\n\n8\n\t\nDeF10040\n\t\nAPI\n\t\n系统内置\n\t\n\n\n9\n\t\nDeF10039\n\t\nKafka\n\t\n系统内置\n\t\n\n\n10\n\t\nDeF10038\n\t\nGaussDB-HWY\n\t\n系统内置\n\t\n\n\n11\n\t\nDeF10037\n\t\nPostgreSql(ssl)\n\t\n系统内置\n\t\n\n\n12\n\t\nDeF10036\n\t\nOracle(ssl)\n\t\n系统内置\n\t\n\n\n13\n\t\nDeF10035\n\t\n人大金仓KingbaseAnalyticsDB\n\t\n系统内置\n\t\n\n\n14\n\t\nDeF10034\n\t\n达梦大数据\n\t\n系统内置\n\t\n\n\n15\n\t\nDeF10033\n\t\n百度大数据平台\n\t\n系统内置\n\t\n\n\n16\n\t\nDeF10032\n\t\n京东大数据平台\n\t\n系统内置\n\t\n\n\n17\n\t\nDeF10031\n\t\n腾讯大数据平台\n\t\n系统内置\n\t\n\n\n18\n\t\nDeF10030\n\t\n腾讯TBASE\n\t\n系统内置\n\t\n\n\n19\n\t\nDeF10029\n\t\n阿里EMR\n\t\n系统内置\n\t\n\n\n20\n\t\nDeF10028\n\t\n华为MRS_Hudi\n\t\n系统内置\n\t\n共 42 条\n123\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入要搜索的内容",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入编码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "3",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R040-dictionaries",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "编码",
+    "名称",
+    "类型",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "odbc",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "mongodb",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Doris",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "华为OBS",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "YashanDB",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Oracle大数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "石原子大数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "API",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Kafka",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "GaussDB-HWY",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "PostgreSql(ssl)",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Oracle(ssl)",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "人大金仓KingbaseAnalyticsDB",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "达梦大数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "百度大数据平台",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "京东大数据平台",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "腾讯大数据平台",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "腾讯TBASE",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "阿里EMR",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "华为MRS_Hudi",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n字典管理\n驱动类型\n应用场景\n部门类型\n查询重置\n新增\n序号\t编码\t名称\t类型\t操作\t\n1\n\t\nDOBC01\n\t\nodbc\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n2\n\t\nmongodb\n\t\nmongodb\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n3\n\t\nDoris\n\t\nDoris\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n4\n\t\nOBS\n\t\n华为OBS\n\t\n租户自定义\n\t\n编辑\n删除\n\n\n5\n\t\nYS10043\n\t\nYashanDB\n\t\n系统内置\n\t\n\n\n6\n\t\nDeF10042\n\t\nOracle大数据\n\t\n系统内置\n\t\n\n\n7\n\t\nDeF10041\n\t\n石原子大数据\n\t\n系统内置\n\t\n\n\n8\n\t\nDeF10040\n\t\nAPI\n\t\n系统内置\n\t\n\n\n9\n\t\nDeF10039\n\t\nKafka\n\t\n系统内置\n\t\n\n\n10\n\t\nDeF10038\n\t\nGaussDB-HWY\n\t\n系统内置\n\t\n\n\n11\n\t\nDeF10037\n\t\nPostgreSql(ssl)\n\t\n系统内置\n\t\n\n\n12\n\t\nDeF10036\n\t\nOracle(ssl)\n\t\n系统内置\n\t\n\n\n13\n\t\nDeF10035\n\t\n人大金仓KingbaseAnalyticsDB\n\t\n系统内置\n\t\n\n\n14\n\t\nDeF10034\n\t\n达梦大数据\n\t\n系统内置\n\t\n\n\n15\n\t\nDeF10033\n\t\n百度大数据平台\n\t\n系统内置\n\t\n\n\n16\n\t\nDeF10032\n\t\n京东大数据平台\n\t\n系统内置\n\t\n\n\n17\n\t\nDeF10031\n\t\n腾讯大数据平台\n\t\n系统内置\n\t\n\n\n18\n\t\nDeF10030\n\t\n腾讯TBASE\n\t\n系统内置\n\t\n\n\n19\n\t\nDeF10029\n\t\n阿里EMR\n\t\n系统内置\n\t\n\n\n20\n\t\nDeF10028\n\t\n华为MRS_Hudi\n\t\n系统内置\n\t\n共 42 条\n123\n前往页"
+}

@@ -248,9 +248,70 @@ def business_errors(text,module,research,data):
                 errors.append(f'{code}: unsupported business constraint for {cells[0]}')
     return errors
 
+def live_recheck_errors(root,record):
+    """Check the independent live registry without rewriting historical evidence."""
+    errors=[]
+    path=root/record['manifest']
+    if not path.is_file():return ['live: manifest missing']
+    live=json.loads(path.read_text(encoding='utf-8'))
+    if live.get('businessWritesExecuted') is not False or live.get('readOnly') is not True:
+        errors.append('live: business write boundary missing')
+    ids=[s['id'] for s in live.get('samples',[])]
+    if len(ids)!=len(set(ids)):errors.append('live: duplicate sample id')
+    samples={}
+    for s in live.get('samples',[]):
+        meta=root/s['metadata'];png=root/s['image']
+        if not meta.is_file() or not png.is_file():
+            errors.append(f'{s["id"]}: live evidence pair missing');continue
+        d=json.loads(meta.read_text(encoding='utf-8'));samples[s['id']]=d
+        if d.get('id')!=s['id'] or d.get('time')!=s['time'] or d.get('url')!=s['url']:
+            errors.append(f'{s["id"]}: live registry mismatch')
+        if not s['url'].startswith('/') or s['url'].startswith('//'):
+            errors.append(f'{s["id"]}: live route must be relative to application')
+        if not s.get('targetValid') and not s.get('limitation'):
+            errors.append(f'{s["id"]}: invalid target reason missing')
+        if any('value' in c for c in d.get('controls',[])):
+            errors.append(f'{s["id"]}: live controls must not store input values')
+        if d.get('operation',{}).get('businessWriteExecuted'):
+            errors.append(f'{s["id"]}: live business write exceeds scope')
+        try:png_check(png)
+        except Exception as exc:errors.append(f'{s["id"]}: {exc}')
+    registered=set(ids)
+    actual={p.stem for p in path.parent.glob('*.png')}
+    if registered!=actual:errors.append('live: screenshot set differs from registry; regenerate index')
+    seen=set()
+    for module in record.get('documents',[]):
+        doc=root/module['file']
+        if not doc.is_file():errors.append('live: document missing');continue
+        text=doc.read_text(encoding='utf-8')
+        requirements=REQ.findall(text)
+        if requirements!=[r['id'] for r in module['requirements']]:
+            errors.append(f'{module["code"]}: live requirement registry mismatch')
+        for n in range(1,9):
+            if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{module["code"]}: section {n} missing')
+        for req in module['requirements']:
+            if req['id'] in seen:errors.append('live: duplicate requirement across documents')
+            seen.add(req['id'])
+            if not req.get('evidence') or not set(req['evidence'])<=registered:
+                errors.append(f'{req["id"]}: live evidence missing')
+            for sid in req.get('evidence',[]):
+                sample=next((s for s in live['samples'] if s['id']==sid),{})
+                if sample.get('targetValid') is False:errors.append(f'{req["id"]}: invalid target cited')
+                block=re.search(r'^### '+re.escape(req['id'])+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
+                if not block or sid+'.png' not in block.group(1):
+                    errors.append(f'{req["id"]}: evidence not linked in requirement')
+        for row in AC.findall(text):
+            if '【拟定，未执行】' not in row or '【已执行' in row:
+                errors.append(f'{module["code"]}: business acceptance execution overclaim')
+            refs=re.findall(r'(?<![A-Z-])[A-Z]+-\d{3}\b',row)
+            if len(refs)!=1 or refs[0] not in requirements:
+                errors.append(f'{module["code"]}: acceptance reference mismatch')
+    return errors
+
 def validate(root):
     errors=[];stats={}
     manifest=json.loads((root/'采样清单.json').read_text(encoding='utf-8'))
+    if manifest.get('liveRecheck'):errors+=live_recheck_errors(root,manifest['liveRecheck'])
     modules=manifest['modules'];samples=manifest['samples']
     codes=[m['code'] for m in modules];keys=[s['id'] for s in samples]
     if len(codes)!=35 or len(codes)!=len(set(codes)):errors.append('expected 35 unique modules')
@@ -355,6 +416,14 @@ def validate(root):
                   'supplement_requirements':sum(len(r.get('requirements',[])) for r in supplements),
                   'supplement_acceptance_cases':sum(len(r.get('acceptance',[])) for r in supplements),
                   'user_supplied_images':len(user_sources)})
+    if manifest.get('liveRecheck'):
+        live=json.loads((root/manifest['liveRecheck']['manifest']).read_text(encoding='utf-8'))
+        documents=manifest['liveRecheck'].get('documents',[])
+        stats.update({'live_samples':len(live.get('samples',[])),
+                      'live_invalid_targets':sum(s.get('targetValid') is False for s in live.get('samples',[])),
+                      'live_documents':len(documents),
+                      'live_requirements':sum(len(d['requirements']) for d in documents),
+                      'live_acceptance_cases':sum(len(AC.findall((root/d['file']).read_text(encoding='utf-8'))) for d in documents)})
     return errors,stats
 
 if __name__=='__main__':

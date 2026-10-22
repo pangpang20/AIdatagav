@@ -1,0 +1,585 @@
+[
+  {
+    "code": "BAS",
+    "name": "后台系统管理",
+    "links": [
+      {
+        "name": "用户管理",
+        "hierarchy": "后台系统管理 → 用户管理",
+        "evidence": "R011-admin-users-ready",
+        "path": "/module-common/manage/user/userList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R013-admin-user-add-options",
+            "path": "/module-common/manage/user/userEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R014-admin-user-edit",
+            "path": "/module-common/manage/user/userEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "设置账号有效期",
+            "evidence": "R015-user-validity",
+            "path": "/module-common/manage/user/userList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "更多",
+            "evidence": "R016-user-more",
+            "path": "/module-common/manage/user/userList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "设置用户角色",
+            "evidence": "R017-user-roles",
+            "path": "/module-common/manage/user/userEditRole",
+            "status": "opened-with-request-limits",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "部门管理",
+        "hierarchy": "后台系统管理 → 部门管理",
+        "evidence": "R018-departments",
+        "path": "/module-common/manage/department/departmentList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R020-department-types",
+            "path": "/module-common/manage/department/departmentList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "修改",
+            "evidence": "R023-department-edit-selected",
+            "path": "/module-common/manage/department/departmentList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "新增部门人员",
+            "evidence": "R024-department-member-add",
+            "path": "/module-common/manage/department/departmentList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "部门管理员",
+            "evidence": "R025-department-admins",
+            "path": "/module-common/manage/department/departmentList",
+            "status": "opened-with-request-limits",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "角色管理",
+        "hierarchy": "后台系统管理 → 角色管理",
+        "evidence": "R026-roles",
+        "path": "/module-common/manage/role/roleList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R027-role-add",
+            "path": "/module-common/manage/role/roleEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R028-role-edit",
+            "path": "/module-common/manage/role/roleEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "关联权限",
+            "evidence": "R029-role-permissions",
+            "path": "/module-common/manage/role/permissionMenu",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "租户管理",
+        "hierarchy": "后台系统管理 → 租户管理",
+        "evidence": "R030-tenants",
+        "path": "/module-common/manage/tenant/tenantList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R062-tenant-0",
+            "path": "/module-common/manage/tenant/tenantEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R062-tenant-1",
+            "path": "/module-common/manage/tenant/tenantEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "租户用户列表",
+            "evidence": "R062-tenant-2",
+            "path": "/module-common/manage/tenant/userList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "我的用户",
+        "hierarchy": "后台系统管理 → 我的用户",
+        "evidence": "R031-my-users",
+        "path": "/module-common/manage/myUser/userList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "我的部门",
+        "hierarchy": "后台系统管理 → 我的部门",
+        "evidence": "R032-my-departments",
+        "path": "/module-common/manage/myDepartment/departmentList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "标签管理",
+        "hierarchy": "后台系统管理 → 标签管理",
+        "evidence": "R033-admin-tags",
+        "path": "/module-common/manage/tag/tagList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "账号解禁",
+        "hierarchy": "后台系统管理 → 账号解禁",
+        "evidence": "R034-account-unlock",
+        "path": "/module-common/manage/security/unlimit",
+        "status": "opened-review-content",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "BCF",
+    "name": "后台配置管理",
+    "links": [
+      {
+        "name": "API数据源",
+        "hierarchy": "后台配置管理 → API数据源",
+        "evidence": "R035-api-sources",
+        "path": "/module-data-source/api/list",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "kafka数据源",
+        "hierarchy": "后台配置管理 → kafka数据源",
+        "evidence": "R036-kafka-sources",
+        "path": "/module-data-source/kafka/list",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "应用管理",
+        "hierarchy": "后台配置管理 → 应用管理",
+        "evidence": "R037-apps",
+        "path": "/module-common/config/app/list",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R064-app-0",
+            "path": "/module-common/config/app/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R064-app-1",
+            "path": "/module-common/config/app/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "系统管理",
+        "hierarchy": "后台配置管理 → 系统管理",
+        "evidence": "R038-systems",
+        "path": "/module-common/config/system/list",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R065-system-0",
+            "path": "/module-common/config/system/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R065-system-1",
+            "path": "/module-common/config/system/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "平台管理",
+        "hierarchy": "后台配置管理 → 平台管理",
+        "evidence": "R039-platforms",
+        "path": "/module-common/config/platform/list",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R066-platform-0",
+            "path": "/module-common/config/platform/edit",
+            "status": "opened-with-request-limits",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R066-platform-1",
+            "path": "/module-common/config/platform/edit",
+            "status": "opened-with-request-limits",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "字典管理",
+        "hierarchy": "后台配置管理 → 字典管理",
+        "evidence": "R040-dictionaries",
+        "path": "/module-common/config/dictionary/list",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R067-dictionary-0",
+            "path": "/module-common/config/dictionary/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R067-dictionary-1",
+            "path": "/module-common/config/dictionary/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "特殊日期",
+        "hierarchy": "后台配置管理 → 特殊日期",
+        "evidence": "R041-special-dates",
+        "path": "/module-common/config/calendarspecial/list",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R068-date-0",
+            "path": "/module-common/config/calendarspecial/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R068-date-1",
+            "path": "/module-common/config/calendarspecial/edit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "许可证管理",
+        "hierarchy": "后台配置管理 → 许可证管理",
+        "evidence": "R042-licenses",
+        "path": "/module-common/config/license/info",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "驱动管理",
+        "hierarchy": "配置管理 → 数据源管理 → 驱动管理",
+        "status": "pending",
+        "reason": "嵌套导航已发现，本轮独立目标截图待补，原数据源证据不替代此状态"
+      },
+      {
+        "name": "数据源管理",
+        "hierarchy": "配置管理 → 数据源管理 → 数据源管理",
+        "status": "pending",
+        "reason": "嵌套导航已发现，本轮独立目标截图待补，原数据源证据不替代此状态"
+      },
+      {
+        "name": "部门数据源",
+        "hierarchy": "配置管理 → 数据源管理 → 部门数据源",
+        "status": "pending",
+        "reason": "嵌套导航已发现，本轮独立目标截图待补，原数据源证据不替代此状态"
+      },
+      {
+        "name": "数据源列表",
+        "hierarchy": "配置管理 → 数据源管理 → 数据源列表",
+        "status": "pending",
+        "reason": "嵌套导航已发现，本轮独立目标截图待补，原数据源证据不替代此状态"
+      }
+    ]
+  },
+  {
+    "code": "BWM",
+    "name": "后台消息工作流与审计",
+    "links": [
+      {
+        "name": "告警列表",
+        "hierarchy": "后台消息工作流与审计 → 告警列表",
+        "evidence": "R043-alerts",
+        "path": "/module-common/monitor/alarmList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "消息类型",
+        "hierarchy": "后台消息工作流与审计 → 消息类型",
+        "evidence": "R044-message-types",
+        "path": "/module-common/news/newsTypeList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R069-msgtype-0",
+            "path": "/module-common/news/newsTypeEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "消息渠道",
+        "hierarchy": "后台消息工作流与审计 → 消息渠道",
+        "evidence": "R045-message-channels",
+        "path": "/module-common/news/channelList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "编辑",
+            "evidence": "R070-channel-1",
+            "path": "/module-common/news/channelEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "消息模板",
+        "hierarchy": "后台消息工作流与审计 → 消息模板",
+        "evidence": "R046-message-templates",
+        "path": "/module-common/news/templateList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R071-template-0",
+            "path": "/module-common/news/templateEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R071-template-1",
+            "path": "/module-common/news/templateEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "消息管理",
+        "hierarchy": "后台消息工作流与审计 → 消息管理",
+        "evidence": "R047-messages",
+        "path": "/module-common/news/newsManage",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "详情",
+            "evidence": "R072-message-0",
+            "path": "/module-common/news/newsManageEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "我的消息",
+        "hierarchy": "后台消息工作流与审计 → 我的消息",
+        "evidence": "R048-my-messages",
+        "path": "/module-common/news/myNewsList",
+        "status": "opened-with-request-limits",
+        "operations": []
+      },
+      {
+        "name": "公告管理",
+        "hierarchy": "后台消息工作流与审计 → 公告管理",
+        "evidence": "R049-announcements",
+        "path": "/module-common/news/announcementList",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R073-announcement-0",
+            "path": "/module-common/news/announcementEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "工单申请",
+        "hierarchy": "后台消息工作流与审计 → 工单申请",
+        "evidence": "R053-workflow-apply",
+        "path": "/module-flow/workbench/workorderApply",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "我的工单",
+        "hierarchy": "后台消息工作流与审计 → 我的工单",
+        "evidence": "R054-workflow-orders",
+        "path": "/module-flow/workbench/myWorkflowList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "我的待办",
+        "hierarchy": "后台消息工作流与审计 → 我的待办",
+        "evidence": "R055-workflow-todo",
+        "path": "/module-flow/workbench/workflowReviewList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "我的已办",
+        "hierarchy": "后台消息工作流与审计 → 我的已办",
+        "evidence": "R056-workflow-done",
+        "path": "/module-flow/workbench/workflowFinishedList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "抄送我的",
+        "hierarchy": "后台消息工作流与审计 → 抄送我的",
+        "evidence": "R057-workflow-cc",
+        "path": "/module-flow/workbench/copy2MeList",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "业务注册",
+        "hierarchy": "后台消息工作流与审计 → 业务注册",
+        "evidence": "R058-workflow-business",
+        "path": "/module-flow/workflow/businessRegistration",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R074-business-0",
+            "path": "/module-flow/workflow/businessRegistrationEdit",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R074-business-1",
+            "path": "/module-flow/workflow/businessRegistrationEdit",
+            "status": "opened-with-request-limits",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "流程模型",
+        "hierarchy": "后台消息工作流与审计 → 流程模型",
+        "evidence": "R059-flow-models",
+        "path": "/module-flow/workflow/processModel",
+        "status": "opened-review-content",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R075-model-0",
+            "path": "/module-flow/workflow/flowDesign",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "编辑",
+            "evidence": "R075-model-1",
+            "path": "/module-flow/workflow/flowDesign",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "流程监控",
+        "hierarchy": "后台消息工作流与审计 → 流程监控",
+        "evidence": "R060-flow-monitor",
+        "path": "/module-flow/workflow/processMonitoring",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "表单设计",
+        "hierarchy": "后台消息工作流与审计 → 表单设计",
+        "evidence": "R061-form-design",
+        "path": "/module-flow/formDesign/formList",
+        "status": "opened-with-request-limits",
+        "operations": [
+          {
+            "name": "新增",
+            "evidence": "R076-form-0",
+            "path": "/module-flow/formDesign/formList",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false
+          }
+        ]
+      },
+      {
+        "name": "操作日志",
+        "hierarchy": "后台消息工作流与审计 → 操作日志",
+        "evidence": "R050-operation-logs",
+        "path": "/module-common/log/operation/list",
+        "status": "opened-review-content",
+        "operations": []
+      },
+      {
+        "name": "登录日志",
+        "hierarchy": "后台消息工作流与审计 → 登录日志",
+        "evidence": "R051-login-logs",
+        "path": "/module-common/log/login/list",
+        "status": "opened-review-content",
+        "operations": []
+      }
+    ]
+  }
+]

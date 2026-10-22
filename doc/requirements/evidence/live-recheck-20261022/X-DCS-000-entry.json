@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-22T11:04:02.388Z",
+  "url": "/dcs/analyze/internal",
+  "title": "",
+  "text": "消息通知\n工作台\n数据运营平台\n数据运营平台\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n上报管理\n目录中心",
+  "controls": [],
+  "headings": [],
+  "frames": [],
+  "id": "X-DCS-000-entry",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析"
+  ],
+  "content": "消息通知\n工作台\n数据运营平台\n数据运营平台\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n上报管理\n目录中心"
+}

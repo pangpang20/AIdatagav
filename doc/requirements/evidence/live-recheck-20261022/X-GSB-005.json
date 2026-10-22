@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-22T11:06:03.360Z",
+  "url": "/gsb/control/ip",
+  "title": "",
+  "text": "消息通知\n工作台\n数据运营平台\n数据运营平台\n服务目录\n服务管理\n服务审批\n服务控制\n消费IP管理\n服务统计\n配置",
+  "controls": [],
+  "headings": [],
+  "frames": [],
+  "id": "X-GSB-005",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "消费IP管理",
+    "服务统计"
+  ],
+  "content": "消息通知\n工作台\n数据运营平台\n数据运营平台\n服务目录\n服务管理\n服务审批\n服务控制\n消费IP管理\n服务统计\n配置"
+}

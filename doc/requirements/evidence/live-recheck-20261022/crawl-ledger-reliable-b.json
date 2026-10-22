@@ -1,0 +1,156 @@
+[
+  {
+    "code": "DIS",
+    "name": "数据集成采集",
+    "source": "E028-integration",
+    "entry": "Y-DIS-000-entry",
+    "discoveredAt": "2026-10-22T11:20:23.620Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "Y-DIS-001",
+        "status": "opened-review-content",
+        "path": "/dis/home",
+        "evidence": "Y-DIS-001",
+        "operations": []
+      },
+      {
+        "name": "· 表离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 表离线同步",
+        "occurrence": 0,
+        "id": "Y-DIS-002",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/dataAcquisition/list",
+        "evidence": "Y-DIS-002",
+        "operations": []
+      },
+      {
+        "name": "· 库离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 库离线同步",
+        "occurrence": 0,
+        "id": "Y-DIS-003",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/dataAcquisition/list",
+        "evidence": "Y-DIS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Y-DIS-003-op1",
+            "path": "/dis/taskManagement/dataAcquisition/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "Y-DIS-003-op1-options0",
+              "Y-DIS-003-op1-options1",
+              "Y-DIS-003-op1-options2",
+              "Y-DIS-003-op1-options3"
+            ]
+          }
+        ],
+        "moreEvidence": "Y-DIS-003-more"
+      },
+      {
+        "name": "· 接口及文件解析",
+        "hierarchy": "任务 → 离线数据同步 → · 接口及文件解析",
+        "occurrence": 0,
+        "id": "Y-DIS-004",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/apiAndFileCollection/public",
+        "evidence": "Y-DIS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Y-DIS-004-op1",
+            "path": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "Y-DIS-004-op1-options0",
+              "Y-DIS-004-op1-options1",
+              "Y-DIS-004-op1-options2",
+              "Y-DIS-004-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 文件离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 文件离线同步",
+        "occurrence": 0,
+        "id": "Y-DIS-005",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/fileAcquisition/list",
+        "evidence": "Y-DIS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Y-DIS-005-op1",
+            "path": "/dis/taskManagement/fileAcquisition/edit"
+          }
+        ]
+      },
+      {
+        "name": "· 表实时同步",
+        "hierarchy": "任务 → 实时数据同步 → · 表实时同步",
+        "occurrence": 0,
+        "id": "Y-DIS-006",
+        "status": "pending"
+      },
+      {
+        "name": "· KAFKA同步",
+        "hierarchy": "任务 → 实时数据同步 → · KAFKA同步",
+        "occurrence": 0,
+        "id": "Y-DIS-007",
+        "status": "pending"
+      },
+      {
+        "name": "任务监控",
+        "hierarchy": "监控 → 任务监控",
+        "occurrence": 0,
+        "id": "Y-DIS-008",
+        "status": "pending"
+      },
+      {
+        "name": "异常告警",
+        "hierarchy": "监控 → 异常告警",
+        "occurrence": 0,
+        "id": "Y-DIS-009",
+        "status": "pending"
+      },
+      {
+        "name": "数据对账",
+        "hierarchy": "监控 → 数据对账",
+        "occurrence": 0,
+        "id": "Y-DIS-010",
+        "status": "pending"
+      },
+      {
+        "name": "补数据",
+        "hierarchy": "监控 → 补数据",
+        "occurrence": 0,
+        "id": "Y-DIS-011",
+        "status": "pending"
+      },
+      {
+        "name": "任务分析",
+        "hierarchy": "分析 → 任务分析",
+        "occurrence": 0,
+        "id": "Y-DIS-012",
+        "status": "pending"
+      },
+      {
+        "name": "数据分析",
+        "hierarchy": "分析 → 数据分析",
+        "occurrence": 0,
+        "id": "Y-DIS-013",
+        "status": "pending"
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "time": "2026-10-22T09:45:19.224Z",
+  "url": "/module-common/index",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n工作台\n工作台\n需求管理\n业务需求管理系统\n数据需求管理\n构件管理\n我的工单\n数据开发\n数据集成采集\n任务编排与调度\n规范化数据建模\n数据标准管理\n数据源管理\n数据直报\n数据查询系统\n数据一体化\n提供资源目录、服务支撑的政务一体化服务\n目录管理系统\n数据共享交换\n数据服务支撑\n数据服务门户\n数据服务门户后台管理\n数据资产\n元数据管理\n指标管理\n标签管理\n智能查询系统\n资产目录系统\n数据安全保护\n数据表管理\n运营汇总系统\n数据评价\n提供数据全方面的标准、安全、质量检测，综合输出数据评价报告\n数据标准检测\n数据安全检测\n数据质量检测\n评价管理\nAI数据智能辅助\n报告模板\n后台\n工作空间\n运维监控\n微服务平台",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R009-backend-navigation",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": []
+}

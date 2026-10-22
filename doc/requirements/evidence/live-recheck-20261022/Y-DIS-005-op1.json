@@ -1,0 +1,31 @@
+{
+  "time": "2026-10-22T11:22:24.672Z",
+  "url": "/dis/taskManagement/fileAcquisition/edit",
+  "title": "",
+  "text": "消息通知\n工作台\n数据运营平台\n数据运营平台\n首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析",
+  "controls": [],
+  "headings": [],
+  "frames": [],
+  "id": "Y-DIS-005-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "首页",
+    "· 表离线同步",
+    "· 库离线同步",
+    "· 接口及文件解析",
+    "· 文件离线同步"
+  ],
+  "content": "消息通知\n工作台\n数据运营平台\n数据运营平台\n首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n监控\n分析",
+  "operation": {
+    "menu": "任务 → 离线数据同步 → · 文件离线同步",
+    "action": "新增",
+    "source": "Y-DIS-005",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

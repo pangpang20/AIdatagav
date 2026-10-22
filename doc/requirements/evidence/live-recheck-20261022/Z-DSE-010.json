@@ -1,0 +1,73 @@
+{
+  "time": "2026-10-22T11:14:32.541Z",
+  "url": "/dse/prefix",
+  "title": "数据共享交换",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据共享交换\n统计看板\n任务管理\n任务监控\n 前置机监控\n库表\n文件\n数据更新时间：-\n序号\t数据源名称\t数据源IP\t已发布资源数\t数据总量\t连接状态",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Z-DSE-010",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "数据源名称",
+    "数据源IP",
+    "已发布资源数",
+    "数据总量",
+    "连接状态"
+  ],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 前置机监控"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据共享交换\n统计看板\n任务管理\n任务监控\n 前置机监控\n库表\n文件\n数据更新时间：-\n序号\t数据源名称\t数据源IP\t已发布资源数\t数据总量\t连接状态"
+}

@@ -1,0 +1,84 @@
+{
+  "time": "2026-10-22T11:06:21.804Z",
+  "url": "/gsb/config/list",
+  "title": "数据服务支撑",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务支撑\n服务目录\n服务管理\n服务审批\n服务控制\n配置\n数源配置\n数据源\n部门信息分类\n暂无数据\n挂载\n序号\t表名\t类型\t数据源\t备注\t操作",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "X-GSB-007",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "表名",
+    "类型",
+    "数据源",
+    "备注",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "挂载",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "数源配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务支撑\n服务目录\n服务管理\n服务审批\n服务控制\n配置\n数源配置\n数据源\n部门信息分类\n暂无数据\n挂载\n序号\t表名\t类型\t数据源\t备注\t操作"
+}

@@ -1,0 +1,793 @@
+{
+  "time": "2026-10-22T11:27:51.835Z",
+  "url": "/dcs/catalogue/list",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n目录管理列表\n查询重置展开\n在线编目\n提交审核\n\t序号\t目录名称\t数源单位\t资源类型\t供数方式\t资源挂载\t审核状态\t目录状态\t是否级联共享\t共享类型\t数据范围\t当前版本\t操作\t\n\t\n1\n\t\naaa-农科院-0001\n\t\n交通管理局\n\t\n服务API\n\t\n服务API\n\t\n是\n\t\n待提交审核\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\nv1\n\t\n取消关联\n编辑\n删除\n\n\n\t\n2\n\t\n数据原名_test_api\n\t\n交通管理局\n\t\nAPI\n\t\nAPI\n\t\n是\n\t\n已通过\n\t\n已上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,省本级,各地市\n\t\nv1\n\t\n下线\n\n\n\t\n3\n\t\n文件123\n\t\n某委办局\n\t\n文件\n\t\n文件\n\t\n是\n\t\n已通过\n\t\n已上线\n\t\n是\n\t\n有条件共享\n\t\n各地市,市本级,各县（区）,广东省\n\t\nv1\n\t\n下线\n\n\n\t\n4\n\t\n文件abc\n\t\n某委办局\n\t\n文件\n\t\n文件\n\t\n是\n\t\n已通过\n\t\n已上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市,市本级,广东省\n\t\nv1\n\t\n下线\n\n\n\t\n5\n\t\nqqq111\n\t\n交通管理局\n\t\n服务API\n\t\n服务API\n\t\n否\n\t\n待提交审核\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市\n\t\nv1\n\t\n关联资源\n编辑\n删除\n\n\n\t\n6\n\t\nrt\n\t\n数据集成\n\t\n库表\n\t\nAPI,服务API,库表\n\t\n否\n\t\n待提交审核\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n县（区）本级\n\t\nv1\n\t\n关联资源\n编辑\n删除\n\n\n\t\n7\n\t\na_rkcj_t1\n\t\n根部门\n\t\n库表\n\t\n服务API\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市,广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n8\n\t\nfuneng\n\t\n某委办局\n\t\n文件\n\t\n文件\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级\n\t\nv1\n\t\n取消关联\n\n\n\t\n9\n\t\naaa111222\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市\n\t\nv1\n\t\n取消关联\n\n\n\t\n10\n\t\n123aaa\n\t\n某委办局\n\t\n服务API\n\t\n服务API\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n各地市\n\t\nv1\n\t\n取消关联\n\n\n\t\n11\n\t\n数据原名-api订阅\n\t\n根部门\n\t\nAPI\n\t\nAPI\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n12\n\t\n数据原名-TL\n\t\n投资交易部\n\t\n库表\n\t\n服务API,库表\n\t\n否\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级\n\t\nv1\n\t\n关联资源\n\n\n\t\n13\n\t\n人口信息API2\n\t\n区民政局\n\t\nAPI\n\t\nAPI\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n县（区）本级\n\t\nv1\n\t\n取消关联\n\n\n\t\n14\n\t\ntest002\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,县（区）本级\n\t\nv1\n\t\n取消关联\n\n\n\t\n15\n\t\n公积金信息002\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n16\n\t\n公积金信息001\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n否\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,县（区）本级\n\t\nv1\n\t\n关联资源\n\n\n\t\n17\n\t\n人口信息test2293\n\t\n市住建局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,县（区）本级,各县（区）\n\t\nv1\n\t\n取消关联\n\n\n\t\n18\n\t\n民政婚姻信息\n\t\n区民政局\n\t\n库表\n\t\n服务API,库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,各县（区）\n\t\nv1\n\t\n取消关联\n\n\n\t\n19\n\t\n目录a_test01_his222222\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n20\n\t\n婚姻信息服务API\n\t\n区民政局\n\t\n服务API\n\t\n服务API\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,各县（区）\n\t\nv1\n\t\n取消关联\n共 88 条\n12345\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入目录名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择数源单位",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择资源类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "5",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Q-DCS-004",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "目录名称",
+    "数源单位",
+    "资源类型",
+    "供数方式",
+    "资源挂载",
+    "审核状态",
+    "目录状态",
+    "是否级联共享",
+    "共享类型",
+    "数据范围",
+    "当前版本",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "在线编目",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dese-miro-zaixianbianmu"
+    },
+    {
+      "text": "提交审核",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dese-miro-tijiaoshenhe"
+    },
+    {
+      "text": "aaa-农科院-0001",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "取消关联",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "数据原名_test_api",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "下线",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "文件123",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "文件abc",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "qqq111",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "关联资源",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "rt",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "a_rkcj_t1",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "funeng",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "aaa111222",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "123aaa",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "数据原名-api订阅",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "数据原名-TL",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息API2",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "test002",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "公积金信息002",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "公积金信息001",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息test2293",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "民政婚姻信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "目录a_test01_his222222",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻信息服务API",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n目录管理列表\n查询重置展开\n在线编目\n提交审核\n\t序号\t目录名称\t数源单位\t资源类型\t供数方式\t资源挂载\t审核状态\t目录状态\t是否级联共享\t共享类型\t数据范围\t当前版本\t操作\t\n\t\n1\n\t\naaa-农科院-0001\n\t\n交通管理局\n\t\n服务API\n\t\n服务API\n\t\n是\n\t\n待提交审核\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\nv1\n\t\n取消关联\n编辑\n删除\n\n\n\t\n2\n\t\n数据原名_test_api\n\t\n交通管理局\n\t\nAPI\n\t\nAPI\n\t\n是\n\t\n已通过\n\t\n已上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,省本级,各地市\n\t\nv1\n\t\n下线\n\n\n\t\n3\n\t\n文件123\n\t\n某委办局\n\t\n文件\n\t\n文件\n\t\n是\n\t\n已通过\n\t\n已上线\n\t\n是\n\t\n有条件共享\n\t\n各地市,市本级,各县（区）,广东省\n\t\nv1\n\t\n下线\n\n\n\t\n4\n\t\n文件abc\n\t\n某委办局\n\t\n文件\n\t\n文件\n\t\n是\n\t\n已通过\n\t\n已上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市,市本级,广东省\n\t\nv1\n\t\n下线\n\n\n\t\n5\n\t\nqqq111\n\t\n交通管理局\n\t\n服务API\n\t\n服务API\n\t\n否\n\t\n待提交审核\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市\n\t\nv1\n\t\n关联资源\n编辑\n删除\n\n\n\t\n6\n\t\nrt\n\t\n数据集成\n\t\n库表\n\t\nAPI,服务API,库表\n\t\n否\n\t\n待提交审核\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n县（区）本级\n\t\nv1\n\t\n关联资源\n编辑\n删除\n\n\n\t\n7\n\t\na_rkcj_t1\n\t\n根部门\n\t\n库表\n\t\n服务API\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市,广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n8\n\t\nfuneng\n\t\n某委办局\n\t\n文件\n\t\n文件\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级\n\t\nv1\n\t\n取消关联\n\n\n\t\n9\n\t\naaa111222\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,各地市\n\t\nv1\n\t\n取消关联\n\n\n\t\n10\n\t\n123aaa\n\t\n某委办局\n\t\n服务API\n\t\n服务API\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n各地市\n\t\nv1\n\t\n取消关联\n\n\n\t\n11\n\t\n数据原名-api订阅\n\t\n根部门\n\t\nAPI\n\t\nAPI\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级,广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n12\n\t\n数据原名-TL\n\t\n投资交易部\n\t\n库表\n\t\n服务API,库表\n\t\n否\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n省本级\n\t\nv1\n\t\n关联资源\n\n\n\t\n13\n\t\n人口信息API2\n\t\n区民政局\n\t\nAPI\n\t\nAPI\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n县（区）本级\n\t\nv1\n\t\n取消关联\n\n\n\t\n14\n\t\ntest002\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,县（区）本级\n\t\nv1\n\t\n取消关联\n\n\n\t\n15\n\t\n公积金信息002\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n16\n\t\n公积金信息001\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n否\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,县（区）本级\n\t\nv1\n\t\n关联资源\n\n\n\t\n17\n\t\n人口信息test2293\n\t\n市住建局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,县（区）本级,各县（区）\n\t\nv1\n\t\n取消关联\n\n\n\t\n18\n\t\n民政婚姻信息\n\t\n区民政局\n\t\n库表\n\t\n服务API,库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,各县（区）\n\t\nv1\n\t\n取消关联\n\n\n\t\n19\n\t\n目录a_test01_his222222\n\t\n交通管理局\n\t\n库表\n\t\n库表\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\nv1\n\t\n取消关联\n\n\n\t\n20\n\t\n婚姻信息服务API\n\t\n区民政局\n\t\n服务API\n\t\n服务API\n\t\n是\n\t\n审核中\n\t\n未上线\n\t\n是\n\t\n有条件共享\n\t\n广东省,各县（区）\n\t\nv1\n\t\n取消关联\n共 88 条\n12345\n前往页"
+}

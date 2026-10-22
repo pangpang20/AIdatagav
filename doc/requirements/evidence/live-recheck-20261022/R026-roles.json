@@ -1,0 +1,288 @@
+{
+  "time": "2026-10-22T09:56:17.828Z",
+  "url": "/module-common/manage/role/roleList",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n角色列表\n查询重置\n新增\n序号\t角色名称\t创建人\t创建时间\n\t操作\n1\n\t\n123\n\t\n超级管理员\n\t\n2026-05-08 14:44:55\n\t\n关联权限\n编辑\n删除\n\n\n2\n\t\n角色个性化B\n\t\n超级管理员\n\t\n2026-04-21 13:49:07\n\t\n关联权限\n编辑\n删除\n\n\n3\n\t\n角色个性化A\n\t\n超级管理员\n\t\n2026-04-21 13:46:43\n\t\n关联权限\n编辑\n删除\n\n\n4\n\t\n跨域金融专属角色\n\t\n超级管理员\n\t\n2026-04-16 00:38:50\n\t\n关联权限\n编辑\n删除\n\n\n5\n\t\n客户专属B\n\t\n超级管理员\n\t\n2026-04-02 01:25:29\n\t\n关联权限\n编辑\n删除\n\n\n6\n\t\n客户专属A\n\t\n超级管理员\n\t\n2026-04-02 01:25:16\n\t\n关联权限\n编辑\n删除\n\n\n7\n\t\n业余角色\n\t\n超级管理员\n\t\n2026-03-12 17:36:29\n\t\n关联权限\n编辑\n删除\n\n\n8\n\t\n天弘基金\n\t\n李庆洲\n\t\n2026-03-10 19:51:36\n\t\n关联权限\n编辑\n删除\n\n\n9\n\t\n标签指标共享交换\n\t\nyyc\n\t\n2025-09-02 13:02:17\n\t\n关联权限\n编辑\n删除\n\n\n10\n\t\n上海普陀\n\t\n马睿\n\t\n2025-07-14 14:35:28\n\t\n关联权限\n编辑\n删除\n\n\n11\n\t\n售前演示用角色\n\t\n王学民\n\t\n2025-05-27 18:34:45\n\t\n关联权限\n编辑\n删除\n\n\n12\n\t\n部分系统\n\t\nyyc\n\t\n2025-05-14 01:35:43\n\t\n关联权限\n编辑\n删除\n\n\n13\n\t\n全角色\n\t\n超级管理员\n\t\n2025-05-14 00:01:17\n\t\n关联权限\n编辑\n删除\n共 13 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入角色名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R026-roles",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "角色名称",
+    "创建人",
+    "创建时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "123",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "关联权限",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "角色个性化B",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "角色个性化A",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "跨域金融专属角色",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "客户专属B",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "客户专属A",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "业余角色",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "天弘基金",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "标签指标共享交换",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "上海普陀",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "售前演示用角色",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "部分系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "全角色",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n角色列表\n查询重置\n新增\n序号\t角色名称\t创建人\t创建时间\n\t操作\n1\n\t\n123\n\t\n超级管理员\n\t\n2026-05-08 14:44:55\n\t\n关联权限\n编辑\n删除\n\n\n2\n\t\n角色个性化B\n\t\n超级管理员\n\t\n2026-04-21 13:49:07\n\t\n关联权限\n编辑\n删除\n\n\n3\n\t\n角色个性化A\n\t\n超级管理员\n\t\n2026-04-21 13:46:43\n\t\n关联权限\n编辑\n删除\n\n\n4\n\t\n跨域金融专属角色\n\t\n超级管理员\n\t\n2026-04-16 00:38:50\n\t\n关联权限\n编辑\n删除\n\n\n5\n\t\n客户专属B\n\t\n超级管理员\n\t\n2026-04-02 01:25:29\n\t\n关联权限\n编辑\n删除\n\n\n6\n\t\n客户专属A\n\t\n超级管理员\n\t\n2026-04-02 01:25:16\n\t\n关联权限\n编辑\n删除\n\n\n7\n\t\n业余角色\n\t\n超级管理员\n\t\n2026-03-12 17:36:29\n\t\n关联权限\n编辑\n删除\n\n\n8\n\t\n天弘基金\n\t\n李庆洲\n\t\n2026-03-10 19:51:36\n\t\n关联权限\n编辑\n删除\n\n\n9\n\t\n标签指标共享交换\n\t\nyyc\n\t\n2025-09-02 13:02:17\n\t\n关联权限\n编辑\n删除\n\n\n10\n\t\n上海普陀\n\t\n马睿\n\t\n2025-07-14 14:35:28\n\t\n关联权限\n编辑\n删除\n\n\n11\n\t\n售前演示用角色\n\t\n王学民\n\t\n2025-05-27 18:34:45\n\t\n关联权限\n编辑\n删除\n\n\n12\n\t\n部分系统\n\t\nyyc\n\t\n2025-05-14 01:35:43\n\t\n关联权限\n编辑\n删除\n\n\n13\n\t\n全角色\n\t\n超级管理员\n\t\n2025-05-14 00:01:17\n\t\n关联权限\n编辑\n删除\n共 13 条\n1\n前往页"
+}

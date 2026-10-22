@@ -1,0 +1,149 @@
+{
+  "time": "2026-10-22T10:19:39.858Z",
+  "url": "/dms/configure/devEnvironment/list",
+  "title": "规范化数据建模",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n· 开发环境配置\n· 模型属性配置\n开发环境配置\n开发环境配置\n开发环境数据源\n开发环境数据库\n保存",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "开发环境数据源",
+      "placeholder": "请选择物化目标库",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "开发环境数据库",
+      "placeholder": "请选择开发环境数据库",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "保存",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "L-DMS-005",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "开发环境数据源",
+      "requiredMarker": true,
+      "text": "开发环境数据源",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择物化目标库",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "开发环境数据库",
+      "requiredMarker": true,
+      "text": "开发环境数据库",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择开发环境数据库",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "· 模型设计",
+    "· 模型物化",
+    "· 模型分析",
+    "· 模型数据统计",
+    "· 开发环境配置",
+    "· 模型属性配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n· 开发环境配置\n· 模型属性配置\n开发环境配置\n开发环境配置\n开发环境数据源\n开发环境数据库\n保存"
+}

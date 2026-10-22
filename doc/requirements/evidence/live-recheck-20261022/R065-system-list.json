@@ -1,0 +1,334 @@
+{
+  "time": "2026-10-22T10:05:50.429Z",
+  "url": "/module-common/config/system/list",
+  "title": "微服务平台",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n微服务平台\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n系统管理\n查询重置\n新增\n序号\t系统名称\t系统介绍\t系统key\t最后更新人\t最后更新时间\t操作\t\n1\n\t\n运营汇总系统\n\t\n运营汇总系统\n\t\noss\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n2\n\t\n数据查询系统\n\t\n\t\nmdm-dq\n\t\n超级管理员\n\t\n2026-09-02 14:07:43\n\t\n编辑\n删除\n\n\n3\n\t\n智能体应用\n\t\n\t\nais\n\t\n王学民\n\t\n2026-06-09 10:55:48\n\t\n编辑\n删除\n\n\n4\n\t\n基于隐私保护的跨域金融数据协同系统\n\t\n/module-common/transfer?key=rtms&path=/rtms/standard/document/docList\n\t\ndata-space\n\t\n超级管理员\n\t\n2026-03-11 14:42:58\n\t\n编辑\n删除\n\n\n5\n\t\n资产目录系统\n\t\n梳理、管控数据资产，助力数据定位、管控与价值挖掘\n\t\ndacs\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n6\n\t\n业务需求管理系统\n\t\n为流程步骤提供全周期的在线管控\n\t\ndrms\n\t\n王学民\n\t\n2025-08-22 09:26:10\n\t\n编辑\n删除\n\n\n7\n\t\n智能查询系统\n\t\nAI智能查询体\n\t\nidqs\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n8\n\t\n数据安全保护\n\t\n为数据安全提供保障，支持对数据加密、脱敏\n\t\ndsps\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n9\n\t\n标签管理\n\t\n以标签定义数据\n\t\ntms\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n10\n\t\n报告模板\n\t\n动态指标注册，自定义模版设计\n\t\nrtms\n\t\n超级管理员\n\t\n2026-03-11 14:42:48\n\t\n编辑\n删除\n\n\n11\n\t\n元数据管理\n\t\n掌握数据源头，感知数据血缘\n\t\nmdm\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n12\n\t\n数据服务门户\n\t\n一站式”申请、“一平台”调度\n\t\ngsp\n\t\n王学民\n\t\n2025-06-17 13:51:55\n\t\n编辑\n删除\n\n\n13\n\t\n目录管理系统\n\t\n盘点数据资源，建立数据资产目录体系\n\t\ndcs\n\t\n王学民\n\t\n2025-06-17 13:52:12\n\t\n编辑\n删除\n\n\n14\n\t\n数据服务门户后台管理\n\t\n服务门户自定义配置管理\n\t\ngsp\n\t\n王学民\n\t\n2025-06-17 13:52:20\n\t\n编辑\n删除\n\n\n15\n\t\n数据共享交换\n\t\n完成目录订阅后的多源数据间共享和交换\n\t\ndse\n\t\n王学民\n\t\n2025-07-16 09:35:22\n\t\n编辑\n删除\n\n\n16\n\t\n数据服务支撑\n\t\n为数据提供一站式API服务封装\n\t\ngsb\n\t\n王学民\n\t\n2025-06-17 13:52:52\n\t\n编辑\n删除\n\n\n17\n\t\nAI数据智能辅助\n\t\n提供算法与字段的知识库建设\n\t\nais\n\t\n超级管理员\n\t\n2026-03-11 14:42:48\n\t\n编辑\n删除\n\n\n18\n\t\n数据直报\n\t\n手工上报数据，全类型采集\n\t\ngdrs\n\t\n超级管理员\n\t\n2026-09-02 14:06:52\n\t\n编辑\n删除\n\n\n19\n\t\n运维监控\n\t\n\t\nomms\n\t\nyyc\n\t\n2026-07-15 09:20:59\n\t\n编辑\n删除\n\n\n20\n\t\n数据表管理\n\t\n提供全面的数据表业务信息查询\n\t\nda-dtm\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n共 36 条\n12\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入系统名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R065-system-list",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "系统名称",
+    "系统介绍",
+    "系统key",
+    "最后更新人",
+    "最后更新时间",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "运营汇总系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "数据查询系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "智能体应用",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "基于隐私保护的跨域金融数据协同系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "资产目录系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "业务需求管理系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "智能查询系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据安全保护",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "标签管理",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "报告模板",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "元数据管理",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据服务门户",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录管理系统",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据服务门户后台管理",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据共享交换",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据服务支撑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "AI数据智能辅助",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据直报",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "运维监控",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "数据表管理",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "· 工单申请",
+    "· 我的工单",
+    "· 我的待办",
+    "· 我的已办",
+    "· 抄送我的",
+    "· 业务注册",
+    "· 流程模型",
+    "· 流程监控",
+    "· 表单设计",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n微服务平台\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n系统管理\n查询重置\n新增\n序号\t系统名称\t系统介绍\t系统key\t最后更新人\t最后更新时间\t操作\t\n1\n\t\n运营汇总系统\n\t\n运营汇总系统\n\t\noss\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n2\n\t\n数据查询系统\n\t\n\t\nmdm-dq\n\t\n超级管理员\n\t\n2026-09-02 14:07:43\n\t\n编辑\n删除\n\n\n3\n\t\n智能体应用\n\t\n\t\nais\n\t\n王学民\n\t\n2026-06-09 10:55:48\n\t\n编辑\n删除\n\n\n4\n\t\n基于隐私保护的跨域金融数据协同系统\n\t\n/module-common/transfer?key=rtms&path=/rtms/standard/document/docList\n\t\ndata-space\n\t\n超级管理员\n\t\n2026-03-11 14:42:58\n\t\n编辑\n删除\n\n\n5\n\t\n资产目录系统\n\t\n梳理、管控数据资产，助力数据定位、管控与价值挖掘\n\t\ndacs\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n6\n\t\n业务需求管理系统\n\t\n为流程步骤提供全周期的在线管控\n\t\ndrms\n\t\n王学民\n\t\n2025-08-22 09:26:10\n\t\n编辑\n删除\n\n\n7\n\t\n智能查询系统\n\t\nAI智能查询体\n\t\nidqs\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n8\n\t\n数据安全保护\n\t\n为数据安全提供保障，支持对数据加密、脱敏\n\t\ndsps\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n9\n\t\n标签管理\n\t\n以标签定义数据\n\t\ntms\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n10\n\t\n报告模板\n\t\n动态指标注册，自定义模版设计\n\t\nrtms\n\t\n超级管理员\n\t\n2026-03-11 14:42:48\n\t\n编辑\n删除\n\n\n11\n\t\n元数据管理\n\t\n掌握数据源头，感知数据血缘\n\t\nmdm\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n\n\n12\n\t\n数据服务门户\n\t\n一站式”申请、“一平台”调度\n\t\ngsp\n\t\n王学民\n\t\n2025-06-17 13:51:55\n\t\n编辑\n删除\n\n\n13\n\t\n目录管理系统\n\t\n盘点数据资源，建立数据资产目录体系\n\t\ndcs\n\t\n王学民\n\t\n2025-06-17 13:52:12\n\t\n编辑\n删除\n\n\n14\n\t\n数据服务门户后台管理\n\t\n服务门户自定义配置管理\n\t\ngsp\n\t\n王学民\n\t\n2025-06-17 13:52:20\n\t\n编辑\n删除\n\n\n15\n\t\n数据共享交换\n\t\n完成目录订阅后的多源数据间共享和交换\n\t\ndse\n\t\n王学民\n\t\n2025-07-16 09:35:22\n\t\n编辑\n删除\n\n\n16\n\t\n数据服务支撑\n\t\n为数据提供一站式API服务封装\n\t\ngsb\n\t\n王学民\n\t\n2025-06-17 13:52:52\n\t\n编辑\n删除\n\n\n17\n\t\nAI数据智能辅助\n\t\n提供算法与字段的知识库建设\n\t\nais\n\t\n超级管理员\n\t\n2026-03-11 14:42:48\n\t\n编辑\n删除\n\n\n18\n\t\n数据直报\n\t\n手工上报数据，全类型采集\n\t\ngdrs\n\t\n超级管理员\n\t\n2026-09-02 14:06:52\n\t\n编辑\n删除\n\n\n19\n\t\n运维监控\n\t\n\t\nomms\n\t\nyyc\n\t\n2026-07-15 09:20:59\n\t\n编辑\n删除\n\n\n20\n\t\n数据表管理\n\t\n提供全面的数据表业务信息查询\n\t\nda-dtm\n\t\n超级管理员\n\t\n2026-09-22 19:00:14\n\t\n编辑\n删除\n共 36 条\n12\n前往页"
+}

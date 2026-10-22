@@ -1,0 +1,88 @@
+{
+  "time": "2026-10-22T11:15:39.977Z",
+  "url": "/dop/dbms/requirement/report/chart",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n数据调研报表\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n 数据归集\n 参考文档\n 配置管理\n数据调研报表\n数据归集报表\n0 (个)\n委办局数\n0 (个)\n系统数\n0 (张)\n信息资源数\n0 (条)\n信息项数量\n0 (个)\n数据需求数\n0 (个)\n业务需求数\n0 (个)\n接口数\n调研完成率（委办局个数）\n详情 >\n数据接入方式占比（资源条数）\n详情 >\n数据更新频率占比（资源条数）\n详情 >\n数据资源数量（条）\n详情 >",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Z-DBMS-008",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [
+    {
+      "text": "详情 >",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 调研概览",
+    "委办局信息",
+    "调研团队信息",
+    "参考文档",
+    "调研里程碑",
+    "调研计划列表",
+    " 调研实施",
+    "数据调研报表",
+    "信息系统清单",
+    "数据目录清单",
+    "数据字典清单",
+    "接口资源清单",
+    "数据需求清单",
+    "业务需求清单",
+    " 数据归集",
+    " 参考文档",
+    " 配置管理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n数据调研报表\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n 数据归集\n 参考文档\n 配置管理\n数据调研报表\n数据归集报表\n0 (个)\n委办局数\n0 (个)\n系统数\n0 (张)\n信息资源数\n0 (条)\n信息项数量\n0 (个)\n数据需求数\n0 (个)\n业务需求数\n0 (个)\n接口数\n调研完成率（委办局个数）\n详情 >\n数据接入方式占比（资源条数）\n详情 >\n数据更新频率占比（资源条数）\n详情 >\n数据资源数量（条）\n详情 >"
+}

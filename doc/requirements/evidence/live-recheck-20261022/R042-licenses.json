@@ -1,0 +1,259 @@
+{
+  "time": "2026-10-22T10:00:08.031Z",
+  "url": "/module-common/config/license/info",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n许可证管理\n概要\n更换许可证\n授权对象\n租户数量\n空间数量\n用户数量\n更新时间\n详情\n机器码\t产品代码\t产品(服务名称)\t截止日期\t状态\n900db115db7f3e27fd17e5bb89f4d077cc05b14e54de364b7aa914183a2307c6\n\t\nDAP\n\t\n指标系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDCS\n\t\n数据目录系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDIS\n\t\n数据集成系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDTM\n\t\n数据表管理系统\n\t\n2028-09-03\n\t\n已授权\n\n\nGLDM\n\t\nGLDM开发IDE\n\t\n2028-09-03\n\t\n已授权\n\n\nSMSC\n\t\n任务编排调度系统\n\t\n2028-09-03\n\t\n已授权\n\n\nSMSD\n\t\n任务编排调度系统\n\t\n2028-09-03\n\t\n已授权\n\n\nSMSG\n\t\n任务编排调度系统\n\t\n2028-09-03\n\t\n已授权\n\n\n149b7fe95a38a49b5b7925cb94bcf88165f44e98995758387716989252da8841\n\t\nDCS\n\t\n数据目录系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDMS\n\t\n规范化建模管理\n\t\n2028-09-03\n\t\n已授权\n\n\nDQTS\n\t\n数据质量检测系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDSPS\n\t\n数据安全保护系统\n\t\n2028-09-03\n\t\n已授权\n\n\nEMS\n\t\n评价管理系统\n\t\n2028-09-03\n\t\n已授权\n\n\nGSB\n\t\n数据服务支撑系统\n\t\n2028-09-03\n\t\n已授权\n\n\nRTMS\n\t\n报告模版系统\n\t\n2028-09-03\n\t\n已授权\n\n\nc2715c750e522a3892c3ec9e35aa5ab6c015f7081844447e9c110bd5121da72f\n\t\nDOP\n\t\n数据运营平台\n\t\n2028-09-03\n\t\n已授权\n\n\nMSP\n\t\n微服务平台\n\t\n2028-09-03\n\t\n已授权\n\n\n66c96ba1f1ebbf43fa9ec16a77d68fc8f326881571ae1a2295ceaa4412b33d00\n\t\nDSETS\n\t\n数据安全检测系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDSTS\n\t\n标准检测系统\n\t\n2028-09-03\n\t\n已授权\n\n\n78f67e33100d0d7da5a0eac335bcedd1d7b0175c8464ab7300bdcc0a301cc23c\n\t\nMDM\n\t\n元数据管理系统\n\t\n2028-09-03\n\t\n已授权\n\n\nTMS\n\t\n数据标签系统\n\t\n2028-09-03\n\t\n已授权",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "授权对象",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "租户数量",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "空间数量",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "用户数量",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "更新时间",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R042-licenses",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "授权对象",
+      "requiredMarker": false,
+      "text": "授权对象",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "租户数量",
+      "requiredMarker": false,
+      "text": "租户数量",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "空间数量",
+      "requiredMarker": false,
+      "text": "空间数量",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "用户数量",
+      "requiredMarker": false,
+      "text": "用户数量",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "更新时间",
+      "requiredMarker": false,
+      "text": "更新时间",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "机器码",
+    "产品代码",
+    "产品(服务名称)",
+    "截止日期",
+    "状态"
+  ],
+  "actions": [
+    {
+      "text": "更换许可证",
+      "title": "",
+      "cls": "audaque-action-icon--opreate"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n工作流管理\n表单管理\n日志管理\n操作日志\n登录日志\n许可证管理\n概要\n更换许可证\n授权对象\n租户数量\n空间数量\n用户数量\n更新时间\n详情\n机器码\t产品代码\t产品(服务名称)\t截止日期\t状态\n900db115db7f3e27fd17e5bb89f4d077cc05b14e54de364b7aa914183a2307c6\n\t\nDAP\n\t\n指标系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDCS\n\t\n数据目录系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDIS\n\t\n数据集成系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDTM\n\t\n数据表管理系统\n\t\n2028-09-03\n\t\n已授权\n\n\nGLDM\n\t\nGLDM开发IDE\n\t\n2028-09-03\n\t\n已授权\n\n\nSMSC\n\t\n任务编排调度系统\n\t\n2028-09-03\n\t\n已授权\n\n\nSMSD\n\t\n任务编排调度系统\n\t\n2028-09-03\n\t\n已授权\n\n\nSMSG\n\t\n任务编排调度系统\n\t\n2028-09-03\n\t\n已授权\n\n\n149b7fe95a38a49b5b7925cb94bcf88165f44e98995758387716989252da8841\n\t\nDCS\n\t\n数据目录系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDMS\n\t\n规范化建模管理\n\t\n2028-09-03\n\t\n已授权\n\n\nDQTS\n\t\n数据质量检测系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDSPS\n\t\n数据安全保护系统\n\t\n2028-09-03\n\t\n已授权\n\n\nEMS\n\t\n评价管理系统\n\t\n2028-09-03\n\t\n已授权\n\n\nGSB\n\t\n数据服务支撑系统\n\t\n2028-09-03\n\t\n已授权\n\n\nRTMS\n\t\n报告模版系统\n\t\n2028-09-03\n\t\n已授权\n\n\nc2715c750e522a3892c3ec9e35aa5ab6c015f7081844447e9c110bd5121da72f\n\t\nDOP\n\t\n数据运营平台\n\t\n2028-09-03\n\t\n已授权\n\n\nMSP\n\t\n微服务平台\n\t\n2028-09-03\n\t\n已授权\n\n\n66c96ba1f1ebbf43fa9ec16a77d68fc8f326881571ae1a2295ceaa4412b33d00\n\t\nDSETS\n\t\n数据安全检测系统\n\t\n2028-09-03\n\t\n已授权\n\n\nDSTS\n\t\n标准检测系统\n\t\n2028-09-03\n\t\n已授权\n\n\n78f67e33100d0d7da5a0eac335bcedd1d7b0175c8464ab7300bdcc0a301cc23c\n\t\nMDM\n\t\n元数据管理系统\n\t\n2028-09-03\n\t\n已授权\n\n\nTMS\n\t\n数据标签系统\n\t\n2028-09-03\n\t\n已授权"
+}

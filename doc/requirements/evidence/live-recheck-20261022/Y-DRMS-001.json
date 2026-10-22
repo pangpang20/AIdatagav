@@ -1,0 +1,73 @@
+{
+  "time": "2026-10-22T11:21:13.267Z",
+  "url": "/drms/kanban",
+  "title": "业务需求管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n业务需求管理系统\n需求看板\n需求看板\n项目管理\n我的项目\n需求管理\n我的需求\n任务中心\n我发起的任务\n待处理任务\n已处理任务\n需求咨询\n咨询列表\n咨询处理\n需求看板\n本月\n本年\n全部\n看板概览\n0\n项目数（个）\n0\n需求数（个）\n0\n任务数（个）\n需求完成进度\n需求进度排名\n暂无数据\n遗留任务状态\n需求规模排名\n暂无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Y-DRMS-001",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "需求看板",
+    "我的项目",
+    "我的需求",
+    "我发起的任务",
+    "待处理任务",
+    "已处理任务",
+    "咨询列表",
+    "咨询处理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n业务需求管理系统\n需求看板\n需求看板\n项目管理\n我的项目\n需求管理\n我的需求\n任务中心\n我发起的任务\n待处理任务\n已处理任务\n需求咨询\n咨询列表\n咨询处理\n需求看板\n本月\n本年\n全部\n看板概览\n0\n项目数（个）\n0\n需求数（个）\n0\n任务数（个）\n需求完成进度\n需求进度排名\n暂无数据\n遗留任务状态\n需求规模排名\n暂无数据"
+}

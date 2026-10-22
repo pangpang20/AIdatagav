@@ -33791,5 +33791,3103 @@
       "sha256": "11de8bf2e17ac9ed49489cd5fddb9ab35929c86225b5c49b19c4924ce892c969",
       "status": "valid-menu-only"
     }
+  ],
+  "liveRecheck": {
+    "manifest": "evidence/live-recheck-20261022/manifest.json",
+    "documents": [
+      {
+        "code": "BAS",
+        "file": "36-后台系统管理/需求说明.md",
+        "requirements": [
+          {
+            "id": "BAS-001",
+            "evidence": [
+              "R011-admin-users-ready"
+            ]
+          },
+          {
+            "id": "BAS-002",
+            "evidence": [
+              "R013-admin-user-add-options"
+            ]
+          },
+          {
+            "id": "BAS-003",
+            "evidence": [
+              "R014-admin-user-edit"
+            ]
+          },
+          {
+            "id": "BAS-004",
+            "evidence": [
+              "R015-user-validity"
+            ]
+          },
+          {
+            "id": "BAS-005",
+            "evidence": [
+              "R016-user-more",
+              "R017-user-roles"
+            ]
+          },
+          {
+            "id": "BAS-006",
+            "evidence": [
+              "R018-departments",
+              "R020-department-types",
+              "R023-department-edit-selected"
+            ]
+          },
+          {
+            "id": "BAS-007",
+            "evidence": [
+              "R024-department-member-add"
+            ]
+          },
+          {
+            "id": "BAS-008",
+            "evidence": [
+              "R026-roles",
+              "R027-role-add",
+              "R028-role-edit",
+              "R029-role-permissions"
+            ]
+          },
+          {
+            "id": "BAS-009",
+            "evidence": [
+              "R030-tenants",
+              "R062-tenant-0",
+              "R062-tenant-1",
+              "R062-tenant-2"
+            ]
+          },
+          {
+            "id": "BAS-010",
+            "evidence": [
+              "R031-my-users",
+              "R032-my-departments"
+            ]
+          },
+          {
+            "id": "BAS-011",
+            "evidence": [
+              "R033-admin-tags"
+            ]
+          },
+          {
+            "id": "BAS-012",
+            "evidence": [
+              "R034-account-unlock"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "BCF",
+        "file": "37-后台配置管理/需求说明.md",
+        "requirements": [
+          {
+            "id": "BCF-001",
+            "evidence": [
+              "R064-app-0"
+            ]
+          },
+          {
+            "id": "BCF-002",
+            "evidence": [
+              "R064-app-1"
+            ]
+          },
+          {
+            "id": "BCF-003",
+            "evidence": [
+              "R065-system-0",
+              "R065-system-1"
+            ]
+          },
+          {
+            "id": "BCF-004",
+            "evidence": [
+              "R066-platform-0",
+              "R066-platform-1"
+            ]
+          },
+          {
+            "id": "BCF-005",
+            "evidence": [
+              "R067-dictionary-0",
+              "R067-dictionary-1"
+            ]
+          },
+          {
+            "id": "BCF-006",
+            "evidence": [
+              "R068-date-0",
+              "R068-date-1"
+            ]
+          },
+          {
+            "id": "BCF-007",
+            "evidence": [
+              "R042-licenses"
+            ]
+          },
+          {
+            "id": "BCF-008",
+            "evidence": [
+              "R035-api-sources",
+              "R036-kafka-sources"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "BWM",
+        "file": "38-后台消息工作流与审计/需求说明.md",
+        "requirements": [
+          {
+            "id": "BWM-001",
+            "evidence": [
+              "R043-alerts"
+            ]
+          },
+          {
+            "id": "BWM-002",
+            "evidence": [
+              "R069-msgtype-0",
+              "R070-channel-1"
+            ]
+          },
+          {
+            "id": "BWM-003",
+            "evidence": [
+              "R071-template-0",
+              "R071-template-1"
+            ]
+          },
+          {
+            "id": "BWM-004",
+            "evidence": [
+              "R047-messages",
+              "R072-message-0"
+            ]
+          },
+          {
+            "id": "BWM-005",
+            "evidence": [
+              "R048-my-messages"
+            ]
+          },
+          {
+            "id": "BWM-006",
+            "evidence": [
+              "R073-announcement-0"
+            ]
+          },
+          {
+            "id": "BWM-007",
+            "evidence": [
+              "R053-workflow-apply",
+              "R054-workflow-orders",
+              "R055-workflow-todo",
+              "R056-workflow-done",
+              "R057-workflow-cc"
+            ]
+          },
+          {
+            "id": "BWM-008",
+            "evidence": [
+              "R074-business-0",
+              "R074-business-1"
+            ]
+          },
+          {
+            "id": "BWM-009",
+            "evidence": [
+              "R075-model-0",
+              "R075-model-1"
+            ]
+          },
+          {
+            "id": "BWM-010",
+            "evidence": [
+              "R060-flow-monitor"
+            ]
+          },
+          {
+            "id": "BWM-011",
+            "evidence": [
+              "R076-form-0"
+            ]
+          },
+          {
+            "id": "BWM-012",
+            "evidence": [
+              "R050-operation-logs",
+              "R051-login-logs"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DRMS",
+        "file": "03-业务需求管理系统/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DRMS-500",
+            "key": "需求看板 → 需求看板::页面",
+            "evidence": [
+              "P-DRMS-001"
+            ]
+          },
+          {
+            "id": "DRMS-501",
+            "key": "项目管理 → 我的项目::页面",
+            "evidence": [
+              "P-DRMS-002"
+            ]
+          },
+          {
+            "id": "DRMS-502",
+            "key": "项目管理 → 我的项目::新增",
+            "evidence": [
+              "P-DRMS-002-op1"
+            ]
+          },
+          {
+            "id": "DRMS-503",
+            "key": "项目管理 → 我的项目::编辑",
+            "evidence": [
+              "P-DRMS-002-op2"
+            ]
+          },
+          {
+            "id": "DRMS-504",
+            "key": "需求管理 → 我的需求::页面",
+            "evidence": [
+              "P-DRMS-003"
+            ]
+          },
+          {
+            "id": "DRMS-512",
+            "key": "需求管理 → 我的需求::新增",
+            "evidence": [
+              "T-DRMS-requirement-add-direct"
+            ]
+          },
+          {
+            "id": "DRMS-505",
+            "key": "任务中心 → 我发起的任务::页面",
+            "evidence": [
+              "P-DRMS-004"
+            ]
+          },
+          {
+            "id": "DRMS-506",
+            "key": "任务中心 → 待处理任务::页面",
+            "evidence": [
+              "P-DRMS-005"
+            ]
+          },
+          {
+            "id": "DRMS-507",
+            "key": "任务中心 → 已处理任务::页面",
+            "evidence": [
+              "P-DRMS-006"
+            ]
+          },
+          {
+            "id": "DRMS-508",
+            "key": "需求咨询 → 咨询列表::页面",
+            "evidence": [
+              "P-DRMS-007"
+            ]
+          },
+          {
+            "id": "DRMS-509",
+            "key": "需求咨询 → 咨询列表::新增",
+            "evidence": [
+              "P-DRMS-007-op1"
+            ]
+          },
+          {
+            "id": "DRMS-510",
+            "key": "需求咨询 → 咨询处理::页面",
+            "evidence": [
+              "P-DRMS-008"
+            ]
+          },
+          {
+            "id": "DRMS-511",
+            "key": "需求咨询 → 咨询处理::新增",
+            "evidence": [
+              "P-DRMS-008-op1"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DBMS",
+        "file": "04-数据需求管理/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DBMS-500",
+            "key": "调研概览::页面",
+            "evidence": [
+              "P-DBMS-001"
+            ]
+          },
+          {
+            "id": "DBMS-501",
+            "key": "调研准备 → 委办局信息::页面",
+            "evidence": [
+              "P-DBMS-002"
+            ]
+          },
+          {
+            "id": "DBMS-502",
+            "key": "调研准备 → 委办局信息::新增",
+            "evidence": [
+              "P-DBMS-002-op1"
+            ]
+          },
+          {
+            "id": "DBMS-503",
+            "key": "调研准备 → 调研团队信息::页面",
+            "evidence": [
+              "P-DBMS-003"
+            ]
+          },
+          {
+            "id": "DBMS-504",
+            "key": "调研准备 → 调研团队信息::新增",
+            "evidence": [
+              "P-DBMS-003-op1"
+            ]
+          },
+          {
+            "id": "DBMS-505",
+            "key": "调研准备 → 参考文档::页面",
+            "evidence": [
+              "P-DBMS-004"
+            ]
+          },
+          {
+            "id": "DBMS-506",
+            "key": "调研准备 → 参考文档::新建",
+            "evidence": [
+              "P-DBMS-004-op1"
+            ]
+          },
+          {
+            "id": "DBMS-507",
+            "key": "调研计划 → 调研里程碑::页面",
+            "evidence": [
+              "P-DBMS-005"
+            ]
+          },
+          {
+            "id": "DBMS-508",
+            "key": "调研计划 → 调研计划列表::页面",
+            "evidence": [
+              "P-DBMS-006"
+            ]
+          },
+          {
+            "id": "DBMS-520",
+            "key": "调研计划 → 调研计划列表::新增",
+            "evidence": [
+              "P-DBMS-006-op1"
+            ]
+          },
+          {
+            "id": "DBMS-509",
+            "key": "调研实施::页面",
+            "evidence": [
+              "Z-DBMS-007"
+            ]
+          },
+          {
+            "id": "DBMS-510",
+            "key": "调研报告 → 数据调研报表::页面",
+            "evidence": [
+              "Z-DBMS-008"
+            ]
+          },
+          {
+            "id": "DBMS-511",
+            "key": "调研报告 → 信息系统清单::页面",
+            "evidence": [
+              "Z-DBMS-009"
+            ]
+          },
+          {
+            "id": "DBMS-512",
+            "key": "调研报告 → 数据目录清单::页面",
+            "evidence": [
+              "Z-DBMS-010"
+            ]
+          },
+          {
+            "id": "DBMS-513",
+            "key": "调研报告 → 数据字典清单::页面",
+            "evidence": [
+              "Z-DBMS-011"
+            ]
+          },
+          {
+            "id": "DBMS-514",
+            "key": "调研报告 → 接口资源清单::页面",
+            "evidence": [
+              "Z-DBMS-012"
+            ]
+          },
+          {
+            "id": "DBMS-515",
+            "key": "调研报告 → 数据需求清单::页面",
+            "evidence": [
+              "Z-DBMS-013"
+            ]
+          },
+          {
+            "id": "DBMS-516",
+            "key": "调研报告 → 业务需求清单::页面",
+            "evidence": [
+              "Z-DBMS-014"
+            ]
+          },
+          {
+            "id": "DBMS-517",
+            "key": "数据归集::页面",
+            "evidence": [
+              "Z-DBMS-015"
+            ]
+          },
+          {
+            "id": "DBMS-518",
+            "key": "参考文档::页面",
+            "evidence": [
+              "Z-DBMS-016"
+            ]
+          },
+          {
+            "id": "DBMS-519",
+            "key": "配置管理::页面",
+            "evidence": [
+              "Z-DBMS-017"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "CMS",
+        "file": "05-构件管理/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "CMS-500",
+            "key": "构件超市::页面",
+            "evidence": [
+              "Z-CMS-001"
+            ]
+          },
+          {
+            "id": "CMS-501",
+            "key": "构件开发::页面",
+            "evidence": [
+              "Z-CMS-002"
+            ]
+          },
+          {
+            "id": "CMS-502",
+            "key": "构件配置 → 构件名称::页面",
+            "evidence": [
+              "Z-CMS-003"
+            ]
+          },
+          {
+            "id": "CMS-503",
+            "key": "构件配置 → 构件分类::页面",
+            "evidence": [
+              "Z-CMS-004"
+            ]
+          },
+          {
+            "id": "CMS-504",
+            "key": "我的构件 → 我的构件::页面",
+            "evidence": [
+              "Z-CMS-005"
+            ]
+          },
+          {
+            "id": "CMS-505",
+            "key": "我的构件 → 导出记录::页面",
+            "evidence": [
+              "Z-CMS-006"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "WO",
+        "file": "06-我的工单/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "WO-500",
+            "key": "工单管理 → 我的待办::页面",
+            "evidence": [
+              "Z-WO-001"
+            ]
+          },
+          {
+            "id": "WO-501",
+            "key": "工单管理 → 我的已办::页面",
+            "evidence": [
+              "Z-WO-002"
+            ]
+          },
+          {
+            "id": "WO-502",
+            "key": "工单管理 → 我的工单::页面",
+            "evidence": [
+              "Z-WO-003"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DS",
+        "file": "07-数据源管理/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DS-500",
+            "key": "数据源管理 → 数据源管理 → · 驱动管理::页面",
+            "evidence": [
+              "Z-DS-001"
+            ]
+          },
+          {
+            "id": "DS-501",
+            "key": "数据源管理 → 数据源管理 → · 数据源管理::页面",
+            "evidence": [
+              "Z-DS-002"
+            ]
+          },
+          {
+            "id": "DS-502",
+            "key": "数据源管理 → 数据源管理 → · 部门数据源::页面",
+            "evidence": [
+              "Z-DS-003"
+            ]
+          },
+          {
+            "id": "DS-503",
+            "key": "数据源管理 → 数据源管理 → · 数据源列表::页面",
+            "evidence": [
+              "Z-DS-004"
+            ]
+          },
+          {
+            "id": "DS-504",
+            "key": "数据源管理 → API数据源::页面",
+            "evidence": [
+              "Z-DS-005"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DIS",
+        "file": "08-数据集成采集/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DIS-500",
+            "key": "首页::页面",
+            "evidence": [
+              "Y-DIS-001"
+            ]
+          },
+          {
+            "id": "DIS-501",
+            "key": "· 表离线同步::页面",
+            "evidence": [
+              "L-DIS-002"
+            ]
+          },
+          {
+            "id": "DIS-502",
+            "key": "· 库离线同步::页面",
+            "evidence": [
+              "L-DIS-003"
+            ]
+          },
+          {
+            "id": "DIS-503",
+            "key": "· 接口及文件解析::页面",
+            "evidence": [
+              "L-DIS-004"
+            ]
+          },
+          {
+            "id": "DIS-504",
+            "key": "· 文件离线同步::页面",
+            "evidence": [
+              "L-DIS-005"
+            ]
+          },
+          {
+            "id": "DIS-505",
+            "key": "· 表实时同步::页面",
+            "evidence": [
+              "L-DIS-006"
+            ]
+          },
+          {
+            "id": "DIS-506",
+            "key": "· KAFKA同步::页面",
+            "evidence": [
+              "L-DIS-007"
+            ]
+          },
+          {
+            "id": "DIS-507",
+            "key": "任务监控::页面",
+            "evidence": [
+              "L-DIS-008"
+            ]
+          },
+          {
+            "id": "DIS-508",
+            "key": "异常告警::页面",
+            "evidence": [
+              "L-DIS-009"
+            ]
+          },
+          {
+            "id": "DIS-509",
+            "key": "数据对账::页面",
+            "evidence": [
+              "L-DIS-010"
+            ]
+          },
+          {
+            "id": "DIS-510",
+            "key": "补数据::页面",
+            "evidence": [
+              "L-DIS-011"
+            ]
+          },
+          {
+            "id": "DIS-511",
+            "key": "任务分析::页面",
+            "evidence": [
+              "L-DIS-012"
+            ]
+          },
+          {
+            "id": "DIS-512",
+            "key": "数据分析::页面",
+            "evidence": [
+              "L-DIS-013"
+            ]
+          },
+          {
+            "id": "DIS-513",
+            "key": "任务 → 离线数据同步 → · 表离线同步::页面",
+            "evidence": [
+              "Y-DIS-002"
+            ]
+          },
+          {
+            "id": "DIS-514",
+            "key": "任务 → 离线数据同步 → · 库离线同步::页面",
+            "evidence": [
+              "Z-DIS-003"
+            ]
+          },
+          {
+            "id": "DIS-515",
+            "key": "任务 → 离线数据同步 → · 接口及文件解析::页面",
+            "evidence": [
+              "Y-DIS-004"
+            ]
+          },
+          {
+            "id": "DIS-516",
+            "key": "任务 → 离线数据同步 → · 接口及文件解析::新增",
+            "evidence": [
+              "Y-DIS-004-op1"
+            ]
+          },
+          {
+            "id": "DIS-517",
+            "key": "任务 → 离线数据同步 → · 文件离线同步::页面",
+            "evidence": [
+              "Y-DIS-005"
+            ]
+          },
+          {
+            "id": "DIS-518",
+            "key": "任务 → 离线数据同步 → · 文件离线同步::新增",
+            "evidence": [
+              "Y-DIS-005-op1"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "SMS",
+        "file": "09-任务编排与调度/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "SMS-500",
+            "key": "概览::页面",
+            "evidence": [
+              "L-SMS-001"
+            ]
+          },
+          {
+            "id": "SMS-501",
+            "key": "我的流程::页面",
+            "evidence": [
+              "L-SMS-002"
+            ]
+          },
+          {
+            "id": "SMS-502",
+            "key": "流程调度管理::页面",
+            "evidence": [
+              "L-SMS-003"
+            ]
+          },
+          {
+            "id": "SMS-503",
+            "key": "· 周期任务作业监控::页面",
+            "evidence": [
+              "L-SMS-004"
+            ]
+          },
+          {
+            "id": "SMS-504",
+            "key": "· 实时任务作业监控::页面",
+            "evidence": [
+              "L-SMS-005"
+            ]
+          },
+          {
+            "id": "SMS-505",
+            "key": "· 告警信息查询::页面",
+            "evidence": [
+              "L-SMS-006"
+            ]
+          },
+          {
+            "id": "SMS-506",
+            "key": "· 告警推送管理::页面",
+            "evidence": [
+              "L-SMS-007"
+            ]
+          },
+          {
+            "id": "SMS-507",
+            "key": "归集表查询::页面",
+            "evidence": [
+              "L-SMS-008"
+            ]
+          },
+          {
+            "id": "SMS-508",
+            "key": "开发表管理::页面",
+            "evidence": [
+              "L-SMS-009"
+            ]
+          },
+          {
+            "id": "SMS-509",
+            "key": "函数开发::页面",
+            "evidence": [
+              "L-SMS-010"
+            ]
+          },
+          {
+            "id": "SMS-510",
+            "key": "脚本开发::页面",
+            "evidence": [
+              "L-SMS-011"
+            ]
+          },
+          {
+            "id": "SMS-511",
+            "key": "· 标准层::页面",
+            "evidence": [
+              "L-SMS-012"
+            ]
+          },
+          {
+            "id": "SMS-512",
+            "key": "· 原子层::页面",
+            "evidence": [
+              "L-SMS-013"
+            ]
+          },
+          {
+            "id": "SMS-513",
+            "key": "· 整合层::页面",
+            "evidence": [
+              "L-SMS-014"
+            ]
+          },
+          {
+            "id": "SMS-514",
+            "key": "· 主题层::页面",
+            "evidence": [
+              "L-SMS-015"
+            ]
+          },
+          {
+            "id": "SMS-515",
+            "key": "· 安全层::页面",
+            "evidence": [
+              "L-SMS-016"
+            ]
+          },
+          {
+            "id": "SMS-516",
+            "key": "· 标准代码集查询::页面",
+            "evidence": [
+              "L-SMS-017"
+            ]
+          },
+          {
+            "id": "SMS-517",
+            "key": "· 源系统代码集管理::页面",
+            "evidence": [
+              "L-SMS-018"
+            ]
+          },
+          {
+            "id": "SMS-518",
+            "key": "· 源与标准映射管理::页面",
+            "evidence": [
+              "L-SMS-019"
+            ]
+          },
+          {
+            "id": "SMS-519",
+            "key": "· 函数管理::页面",
+            "evidence": [
+              "L-SMS-020"
+            ]
+          },
+          {
+            "id": "SMS-520",
+            "key": "· 算法包管理::页面",
+            "evidence": [
+              "L-SMS-021"
+            ]
+          },
+          {
+            "id": "SMS-521",
+            "key": "· IDE平台初始化::页面",
+            "evidence": [
+              "L-SMS-022"
+            ]
+          },
+          {
+            "id": "SMS-522",
+            "key": "调度统计::页面",
+            "evidence": [
+              "L-SMS-023"
+            ]
+          },
+          {
+            "id": "SMS-523",
+            "key": "系统管理::页面",
+            "evidence": [
+              "L-SMS-024"
+            ]
+          },
+          {
+            "id": "SMS-524",
+            "key": "组件管理::页面",
+            "evidence": [
+              "L-SMS-025"
+            ]
+          },
+          {
+            "id": "SMS-525",
+            "key": "初始化::页面",
+            "evidence": [
+              "L-SMS-026"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DMS",
+        "file": "10-规范化数据建模/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DMS-500",
+            "key": "· 模型设计::页面",
+            "evidence": [
+              "L-DMS-001"
+            ]
+          },
+          {
+            "id": "DMS-501",
+            "key": "· 模型物化::页面",
+            "evidence": [
+              "L-DMS-002"
+            ]
+          },
+          {
+            "id": "DMS-502",
+            "key": "· 模型分析::页面",
+            "evidence": [
+              "L-DMS-003"
+            ]
+          },
+          {
+            "id": "DMS-503",
+            "key": "· 模型数据统计::页面",
+            "evidence": [
+              "L-DMS-004"
+            ]
+          },
+          {
+            "id": "DMS-504",
+            "key": "· 开发环境配置::页面",
+            "evidence": [
+              "L-DMS-005"
+            ]
+          },
+          {
+            "id": "DMS-505",
+            "key": "· 模型属性配置::页面",
+            "evidence": [
+              "L-DMS-006"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "GDRS",
+        "file": "12-数据直报/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "GDRS-500",
+            "key": "首页::页面",
+            "evidence": [
+              "W-GDRS-001"
+            ]
+          },
+          {
+            "id": "GDRS-501",
+            "key": "· 表单管理::页面",
+            "evidence": [
+              "L-GDRS-003"
+            ]
+          },
+          {
+            "id": "GDRS-502",
+            "key": "· 模板管理::页面",
+            "evidence": [
+              "L-GDRS-004"
+            ]
+          },
+          {
+            "id": "GDRS-503",
+            "key": "· 选项配置::页面",
+            "evidence": [
+              "L-GDRS-008"
+            ]
+          },
+          {
+            "id": "GDRS-504",
+            "key": "· 选项配置::新增",
+            "evidence": [
+              "L-GDRS-008-op1"
+            ]
+          },
+          {
+            "id": "GDRS-505",
+            "key": "审核管理::页面",
+            "evidence": [
+              "W-GDRS-028"
+            ]
+          },
+          {
+            "id": "GDRS-506",
+            "key": "直报管理 → 库表资源管理 → · 资源管理::页面",
+            "evidence": [
+              "W-GDRS-002"
+            ]
+          },
+          {
+            "id": "GDRS-507",
+            "key": "直报管理 → 库表资源管理 → · 表单管理::页面",
+            "evidence": [
+              "W-GDRS-003"
+            ]
+          },
+          {
+            "id": "GDRS-508",
+            "key": "直报管理 → 库表资源管理 → · 模板管理::页面",
+            "evidence": [
+              "W-GDRS-004"
+            ]
+          },
+          {
+            "id": "GDRS-509",
+            "key": "直报管理 → 库表资源管理 → · 上报授权::页面",
+            "evidence": [
+              "W-GDRS-005"
+            ]
+          },
+          {
+            "id": "GDRS-510",
+            "key": "直报管理 → 库表资源管理 → · 查询授权::页面",
+            "evidence": [
+              "W-GDRS-006"
+            ]
+          },
+          {
+            "id": "GDRS-511",
+            "key": "直报管理 → 库表资源管理 → · 任务管理::页面",
+            "evidence": [
+              "W-GDRS-007"
+            ]
+          },
+          {
+            "id": "GDRS-512",
+            "key": "直报管理 → 库表资源管理 → · 选项配置::页面",
+            "evidence": [
+              "W-GDRS-008"
+            ]
+          },
+          {
+            "id": "GDRS-513",
+            "key": "直报管理 → 库表资源管理 → · 选项配置::新增",
+            "evidence": [
+              "W-GDRS-008-op1"
+            ]
+          },
+          {
+            "id": "GDRS-514",
+            "key": "直报管理 → 文件资源管理 → · 资源管理::页面",
+            "evidence": [
+              "W-GDRS-009"
+            ]
+          },
+          {
+            "id": "GDRS-515",
+            "key": "直报管理 → 文件资源管理 → · 上报授权::页面",
+            "evidence": [
+              "W-GDRS-010"
+            ]
+          },
+          {
+            "id": "GDRS-516",
+            "key": "直报管理 → 文件资源管理 → · 查询授权::页面",
+            "evidence": [
+              "W-GDRS-011"
+            ]
+          },
+          {
+            "id": "GDRS-517",
+            "key": "直报管理 → 文件资源管理 → · 任务管理::页面",
+            "evidence": [
+              "W-GDRS-012"
+            ]
+          },
+          {
+            "id": "GDRS-518",
+            "key": "直报管理 → 类别管理::页面",
+            "evidence": [
+              "W-GDRS-013"
+            ]
+          },
+          {
+            "id": "GDRS-519",
+            "key": "直报管理 → 类别管理::新增",
+            "evidence": [
+              "W-GDRS-013-op1"
+            ]
+          },
+          {
+            "id": "GDRS-520",
+            "key": "数据上报 → 标准化数据上报 → · 数据上报::页面",
+            "evidence": [
+              "W-GDRS-014"
+            ]
+          },
+          {
+            "id": "GDRS-521",
+            "key": "数据上报 → 标准化数据上报 → · 数据查看::页面",
+            "evidence": [
+              "W-GDRS-015"
+            ]
+          },
+          {
+            "id": "GDRS-522",
+            "key": "数据上报 → 标准化数据上报 → · 上报任务::页面",
+            "evidence": [
+              "W-GDRS-016"
+            ]
+          },
+          {
+            "id": "GDRS-523",
+            "key": "数据上报 → 标准化数据上报 → · 上报记录::页面",
+            "evidence": [
+              "W-GDRS-017"
+            ]
+          },
+          {
+            "id": "GDRS-524",
+            "key": "数据上报 → 标准化数据上报 → · 服务查询::页面",
+            "evidence": [
+              "W-GDRS-018"
+            ]
+          },
+          {
+            "id": "GDRS-525",
+            "key": "数据上报 → 标准化数据上报 → · 批量导入::页面",
+            "evidence": [
+              "W-GDRS-019"
+            ]
+          },
+          {
+            "id": "GDRS-526",
+            "key": "数据上报 → 非标准化数据上报 → · 数据上报::页面",
+            "evidence": [
+              "W-GDRS-020"
+            ]
+          },
+          {
+            "id": "GDRS-527",
+            "key": "数据上报 → 非标准化数据上报 → · 上报任务::页面",
+            "evidence": [
+              "W-GDRS-021"
+            ]
+          },
+          {
+            "id": "GDRS-528",
+            "key": "数据上报 → 非标准化数据上报 → · 上报记录::页面",
+            "evidence": [
+              "W-GDRS-022"
+            ]
+          },
+          {
+            "id": "GDRS-529",
+            "key": "数据上报 → 文件上报 → · 数据上报::页面",
+            "evidence": [
+              "W-GDRS-023"
+            ]
+          },
+          {
+            "id": "GDRS-530",
+            "key": "数据上报 → 文件上报 → · 上报任务::页面",
+            "evidence": [
+              "W-GDRS-025"
+            ]
+          },
+          {
+            "id": "GDRS-531",
+            "key": "数据上报 → 文件上报 → · 上报记录::页面",
+            "evidence": [
+              "W-GDRS-026"
+            ]
+          },
+          {
+            "id": "GDRS-532",
+            "key": "数据上报 → 文件上报 → · 服务查询::页面",
+            "evidence": [
+              "W-GDRS-027"
+            ]
+          },
+          {
+            "id": "GDRS-533",
+            "key": "上报统计 → 任务上报统计::页面",
+            "evidence": [
+              "W-GDRS-029"
+            ]
+          },
+          {
+            "id": "GDRS-534",
+            "key": "上报统计 → 库表资源上报时效统计::页面",
+            "evidence": [
+              "W-GDRS-030"
+            ]
+          },
+          {
+            "id": "GDRS-535",
+            "key": "上报统计 → 文件资源上报时效统计::页面",
+            "evidence": [
+              "W-GDRS-031"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DCS",
+        "file": "14-目录管理系统/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DCS-500",
+            "key": "服务统计 → 机构内部统计分析::页面",
+            "evidence": [
+              "Q-DCS-001"
+            ]
+          },
+          {
+            "id": "DCS-501",
+            "key": "服务统计 → 所有机构统计分析::页面",
+            "evidence": [
+              "Q-DCS-002"
+            ]
+          },
+          {
+            "id": "DCS-502",
+            "key": "资源编目 → 目录管理 → · 资源管理::页面",
+            "evidence": [
+              "Q-DCS-003"
+            ]
+          },
+          {
+            "id": "DCS-503",
+            "key": "资源编目 → 目录管理 → · 目录管理::页面",
+            "evidence": [
+              "Q-DCS-004"
+            ]
+          },
+          {
+            "id": "DCS-504",
+            "key": "资源编目 → 流程审批 → · 我发起的流程::页面",
+            "evidence": [
+              "Q-DCS-005"
+            ]
+          },
+          {
+            "id": "DCS-505",
+            "key": "资源编目 → 流程审批 → · 我处理的流程::页面",
+            "evidence": [
+              "Q-DCS-006"
+            ]
+          },
+          {
+            "id": "DCS-506",
+            "key": "资源编目 → 系统管理 → · 业务管理::页面",
+            "evidence": [
+              "Q-DCS-007"
+            ]
+          },
+          {
+            "id": "DCS-507",
+            "key": "资源编目 → 系统管理 → · 业务管理::新增",
+            "evidence": [
+              "Q-DCS-007-op1"
+            ]
+          },
+          {
+            "id": "DCS-508",
+            "key": "资源编目 → 系统管理 → · 事项管理::页面",
+            "evidence": [
+              "Q-DCS-008"
+            ]
+          },
+          {
+            "id": "DCS-509",
+            "key": "资源编目 → 系统管理 → · 事项管理::新增",
+            "evidence": [
+              "Q-DCS-008-op1"
+            ]
+          },
+          {
+            "id": "DCS-510",
+            "key": "资源编目 → 系统管理 → · 应用系统管理::页面",
+            "evidence": [
+              "Q-DCS-009"
+            ]
+          },
+          {
+            "id": "DCS-511",
+            "key": "资源编目 → 系统管理 → · 应用系统管理::新增",
+            "evidence": [
+              "Q-DCS-009-op1"
+            ]
+          },
+          {
+            "id": "DCS-512",
+            "key": "上报管理 → 目录上报审核::页面",
+            "evidence": [
+              "Q-DCS-010"
+            ]
+          },
+          {
+            "id": "DCS-513",
+            "key": "上报管理 → 机构接入管理::页面",
+            "evidence": [
+              "Q-DCS-011"
+            ]
+          },
+          {
+            "id": "DCS-514",
+            "key": "上报管理 → 机构接入管理::新增",
+            "evidence": [
+              "Q-DCS-011-op1"
+            ]
+          },
+          {
+            "id": "DCS-515",
+            "key": "上报管理 → 目录分类管理::页面",
+            "evidence": [
+              "Q-DCS-012"
+            ]
+          },
+          {
+            "id": "DCS-516",
+            "key": "上报管理 → 目录分类管理::新增",
+            "evidence": [
+              "Q-DCS-012-op1"
+            ]
+          },
+          {
+            "id": "DCS-517",
+            "key": "目录中心 → 目录中心 → · 级联目录中心::页面",
+            "evidence": [
+              "Q-DCS-013"
+            ]
+          },
+          {
+            "id": "DCS-518",
+            "key": "目录中心 → 目录中心 → · 部门目录中心::页面",
+            "evidence": [
+              "Q-DCS-014"
+            ]
+          },
+          {
+            "id": "DCS-519",
+            "key": "目录中心 → 清单管理 → · 责任清单::页面",
+            "evidence": [
+              "Q-DCS-015"
+            ]
+          },
+          {
+            "id": "DCS-520",
+            "key": "目录中心 → 清单管理 → · 负面清单::页面",
+            "evidence": [
+              "Q-DCS-016"
+            ]
+          },
+          {
+            "id": "DCS-521",
+            "key": "目录中心 → 我的目录 → · 我订阅的目录::页面",
+            "evidence": [
+              "Q-DCS-017"
+            ]
+          },
+          {
+            "id": "DCS-522",
+            "key": "目录中心 → 我的目录 → · 我收藏的目录::页面",
+            "evidence": [
+              "Q-DCS-018"
+            ]
+          },
+          {
+            "id": "DCS-523",
+            "key": "目录中心 → 流程审批 → · 我发起的流程::页面",
+            "evidence": [
+              "Q-DCS-019"
+            ]
+          },
+          {
+            "id": "DCS-524",
+            "key": "目录中心 → 流程审批 → · 我处理的流程::页面",
+            "evidence": [
+              "Q-DCS-020"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "DSE",
+        "file": "15-数据共享交换/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "DSE-500",
+            "key": "统计看板 → 库表交换统计::页面",
+            "evidence": [
+              "Y-DSE-001"
+            ]
+          },
+          {
+            "id": "DSE-501",
+            "key": "统计看板 → 文件交换统计::页面",
+            "evidence": [
+              "Y-DSE-002"
+            ]
+          },
+          {
+            "id": "DSE-502",
+            "key": "统计看板 → 接口调用统计::页面",
+            "evidence": [
+              "Y-DSE-003"
+            ]
+          },
+          {
+            "id": "DSE-503",
+            "key": "任务管理 → 库表交换任务::页面",
+            "evidence": [
+              "Z-DSE-004"
+            ]
+          },
+          {
+            "id": "DSE-504",
+            "key": "任务管理 → 文件交换任务::页面",
+            "evidence": [
+              "Z-DSE-005"
+            ]
+          },
+          {
+            "id": "DSE-505",
+            "key": "任务管理 → 接口交换任务::页面",
+            "evidence": [
+              "Z-DSE-006"
+            ]
+          },
+          {
+            "id": "DSE-506",
+            "key": "任务监控 → 库表交换日志::页面",
+            "evidence": [
+              "Z-DSE-007"
+            ]
+          },
+          {
+            "id": "DSE-507",
+            "key": "任务监控 → 文件交换日志::页面",
+            "evidence": [
+              "Z-DSE-008"
+            ]
+          },
+          {
+            "id": "DSE-508",
+            "key": "任务监控 → 接口交换日志::页面",
+            "evidence": [
+              "Z-DSE-009"
+            ]
+          },
+          {
+            "id": "DSE-509",
+            "key": "前置机监控::页面",
+            "evidence": [
+              "Z-DSE-010"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "GSB",
+        "file": "16-数据服务支撑/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "GSB-500",
+            "key": "服务目录 → 服务目录::页面",
+            "evidence": [
+              "Z-GSB-001"
+            ]
+          },
+          {
+            "id": "GSB-501",
+            "key": "服务管理 → 注册管理::页面",
+            "evidence": [
+              "Z-GSB-002"
+            ]
+          },
+          {
+            "id": "GSB-502",
+            "key": "服务管理 → 消费管理::页面",
+            "evidence": [
+              "Z-GSB-003"
+            ]
+          },
+          {
+            "id": "GSB-503",
+            "key": "服务审批 → 注册审批::页面",
+            "evidence": [
+              "Z-GSB-004"
+            ]
+          },
+          {
+            "id": "GSB-504",
+            "key": "服务控制 → 消费IP管理::页面",
+            "evidence": [
+              "Z-GSB-005"
+            ]
+          },
+          {
+            "id": "GSB-505",
+            "key": "服务控制 → 服务统计::页面",
+            "evidence": [
+              "Z-GSB-006"
+            ]
+          },
+          {
+            "id": "GSB-506",
+            "key": "配置 → 数源配置::页面",
+            "evidence": [
+              "Z-GSB-007"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "GSPA",
+        "file": "18-数据服务门户后台管理/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "GSPA-500",
+            "key": "政务共享门户后台管理 → 快捷入口管理::页面",
+            "evidence": [
+              "Z-GSPA-001"
+            ]
+          },
+          {
+            "id": "GSPA-501",
+            "key": "政务共享门户后台管理 → 知识管理::页面",
+            "evidence": [
+              "Z-GSPA-002"
+            ]
+          },
+          {
+            "id": "GSPA-502",
+            "key": "政务共享门户后台管理 → 版块管理 → · 栏目管理::页面",
+            "evidence": [
+              "Z-GSPA-003"
+            ]
+          },
+          {
+            "id": "GSPA-503",
+            "key": "政务共享门户后台管理 → 版块管理 → · 布局管理::页面",
+            "evidence": [
+              "Z-GSPA-004"
+            ]
+          },
+          {
+            "id": "GSPA-504",
+            "key": "政务共享门户后台管理 → 版块管理 → · 版块管理::页面",
+            "evidence": [
+              "Z-GSPA-005"
+            ]
+          },
+          {
+            "id": "GSPA-505",
+            "key": "政务共享门户后台管理 → 版块管理 → · 内容管理::页面",
+            "evidence": [
+              "Z-GSPA-006"
+            ]
+          },
+          {
+            "id": "GSPA-506",
+            "key": "政务共享门户后台管理 → 模板管理::页面",
+            "evidence": [
+              "Z-GSPA-007"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MDM",
+        "file": "19-元数据管理/子页面与操作细化.md",
+        "requirements": [
+          {
+            "id": "MDM-500",
+            "key": "元数据管理 → 采集管理::页面",
+            "evidence": [
+              "Z-MDM-001"
+            ]
+          },
+          {
+            "id": "MDM-501",
+            "key": "元数据管理 → 变更管理::页面",
+            "evidence": [
+              "Z-MDM-002"
+            ]
+          },
+          {
+            "id": "MDM-502",
+            "key": "元数据管理 → 版本管理::页面",
+            "evidence": [
+              "Z-MDM-003"
+            ]
+          },
+          {
+            "id": "MDM-503",
+            "key": "元数据管理 → 版本管理::新增",
+            "evidence": [
+              "X-MDM-003-op1"
+            ]
+          },
+          {
+            "id": "MDM-504",
+            "key": "元数据管理 → 异常监控::页面",
+            "evidence": [
+              "Z-MDM-004"
+            ]
+          },
+          {
+            "id": "MDM-505",
+            "key": "元数据管理 → 调度策略管理::页面",
+            "evidence": [
+              "Z-MDM-005"
+            ]
+          },
+          {
+            "id": "MDM-506",
+            "key": "元数据管理 → 元数据信息::页面",
+            "evidence": [
+              "Z-MDM-006"
+            ]
+          },
+          {
+            "id": "MDM-507",
+            "key": "元数据分析 → 映射管理::页面",
+            "evidence": [
+              "Z-MDM-010"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "deepDive": [
+    {
+      "code": "DRMS",
+      "file": "03-业务需求管理系统/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DRMS-500",
+          "key": "需求看板 → 需求看板::页面",
+          "evidence": [
+            "P-DRMS-001"
+          ]
+        },
+        {
+          "id": "DRMS-501",
+          "key": "项目管理 → 我的项目::页面",
+          "evidence": [
+            "P-DRMS-002"
+          ]
+        },
+        {
+          "id": "DRMS-502",
+          "key": "项目管理 → 我的项目::新增",
+          "evidence": [
+            "P-DRMS-002-op1"
+          ]
+        },
+        {
+          "id": "DRMS-503",
+          "key": "项目管理 → 我的项目::编辑",
+          "evidence": [
+            "P-DRMS-002-op2"
+          ]
+        },
+        {
+          "id": "DRMS-504",
+          "key": "需求管理 → 我的需求::页面",
+          "evidence": [
+            "P-DRMS-003"
+          ]
+        },
+        {
+          "id": "DRMS-512",
+          "key": "需求管理 → 我的需求::新增",
+          "evidence": [
+            "T-DRMS-requirement-add-direct"
+          ]
+        },
+        {
+          "id": "DRMS-505",
+          "key": "任务中心 → 我发起的任务::页面",
+          "evidence": [
+            "P-DRMS-004"
+          ]
+        },
+        {
+          "id": "DRMS-506",
+          "key": "任务中心 → 待处理任务::页面",
+          "evidence": [
+            "P-DRMS-005"
+          ]
+        },
+        {
+          "id": "DRMS-507",
+          "key": "任务中心 → 已处理任务::页面",
+          "evidence": [
+            "P-DRMS-006"
+          ]
+        },
+        {
+          "id": "DRMS-508",
+          "key": "需求咨询 → 咨询列表::页面",
+          "evidence": [
+            "P-DRMS-007"
+          ]
+        },
+        {
+          "id": "DRMS-509",
+          "key": "需求咨询 → 咨询列表::新增",
+          "evidence": [
+            "P-DRMS-007-op1"
+          ]
+        },
+        {
+          "id": "DRMS-510",
+          "key": "需求咨询 → 咨询处理::页面",
+          "evidence": [
+            "P-DRMS-008"
+          ]
+        },
+        {
+          "id": "DRMS-511",
+          "key": "需求咨询 → 咨询处理::新增",
+          "evidence": [
+            "P-DRMS-008-op1"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DBMS",
+      "file": "04-数据需求管理/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DBMS-500",
+          "key": "调研概览::页面",
+          "evidence": [
+            "P-DBMS-001"
+          ]
+        },
+        {
+          "id": "DBMS-501",
+          "key": "调研准备 → 委办局信息::页面",
+          "evidence": [
+            "P-DBMS-002"
+          ]
+        },
+        {
+          "id": "DBMS-502",
+          "key": "调研准备 → 委办局信息::新增",
+          "evidence": [
+            "P-DBMS-002-op1"
+          ]
+        },
+        {
+          "id": "DBMS-503",
+          "key": "调研准备 → 调研团队信息::页面",
+          "evidence": [
+            "P-DBMS-003"
+          ]
+        },
+        {
+          "id": "DBMS-504",
+          "key": "调研准备 → 调研团队信息::新增",
+          "evidence": [
+            "P-DBMS-003-op1"
+          ]
+        },
+        {
+          "id": "DBMS-505",
+          "key": "调研准备 → 参考文档::页面",
+          "evidence": [
+            "P-DBMS-004"
+          ]
+        },
+        {
+          "id": "DBMS-506",
+          "key": "调研准备 → 参考文档::新建",
+          "evidence": [
+            "P-DBMS-004-op1"
+          ]
+        },
+        {
+          "id": "DBMS-507",
+          "key": "调研计划 → 调研里程碑::页面",
+          "evidence": [
+            "P-DBMS-005"
+          ]
+        },
+        {
+          "id": "DBMS-508",
+          "key": "调研计划 → 调研计划列表::页面",
+          "evidence": [
+            "P-DBMS-006"
+          ]
+        },
+        {
+          "id": "DBMS-520",
+          "key": "调研计划 → 调研计划列表::新增",
+          "evidence": [
+            "P-DBMS-006-op1"
+          ]
+        },
+        {
+          "id": "DBMS-509",
+          "key": "调研实施::页面",
+          "evidence": [
+            "Z-DBMS-007"
+          ]
+        },
+        {
+          "id": "DBMS-510",
+          "key": "调研报告 → 数据调研报表::页面",
+          "evidence": [
+            "Z-DBMS-008"
+          ]
+        },
+        {
+          "id": "DBMS-511",
+          "key": "调研报告 → 信息系统清单::页面",
+          "evidence": [
+            "Z-DBMS-009"
+          ]
+        },
+        {
+          "id": "DBMS-512",
+          "key": "调研报告 → 数据目录清单::页面",
+          "evidence": [
+            "Z-DBMS-010"
+          ]
+        },
+        {
+          "id": "DBMS-513",
+          "key": "调研报告 → 数据字典清单::页面",
+          "evidence": [
+            "Z-DBMS-011"
+          ]
+        },
+        {
+          "id": "DBMS-514",
+          "key": "调研报告 → 接口资源清单::页面",
+          "evidence": [
+            "Z-DBMS-012"
+          ]
+        },
+        {
+          "id": "DBMS-515",
+          "key": "调研报告 → 数据需求清单::页面",
+          "evidence": [
+            "Z-DBMS-013"
+          ]
+        },
+        {
+          "id": "DBMS-516",
+          "key": "调研报告 → 业务需求清单::页面",
+          "evidence": [
+            "Z-DBMS-014"
+          ]
+        },
+        {
+          "id": "DBMS-517",
+          "key": "数据归集::页面",
+          "evidence": [
+            "Z-DBMS-015"
+          ]
+        },
+        {
+          "id": "DBMS-518",
+          "key": "参考文档::页面",
+          "evidence": [
+            "Z-DBMS-016"
+          ]
+        },
+        {
+          "id": "DBMS-519",
+          "key": "配置管理::页面",
+          "evidence": [
+            "Z-DBMS-017"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CMS",
+      "file": "05-构件管理/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "CMS-500",
+          "key": "构件超市::页面",
+          "evidence": [
+            "Z-CMS-001"
+          ]
+        },
+        {
+          "id": "CMS-501",
+          "key": "构件开发::页面",
+          "evidence": [
+            "Z-CMS-002"
+          ]
+        },
+        {
+          "id": "CMS-502",
+          "key": "构件配置 → 构件名称::页面",
+          "evidence": [
+            "Z-CMS-003"
+          ]
+        },
+        {
+          "id": "CMS-503",
+          "key": "构件配置 → 构件分类::页面",
+          "evidence": [
+            "Z-CMS-004"
+          ]
+        },
+        {
+          "id": "CMS-504",
+          "key": "我的构件 → 我的构件::页面",
+          "evidence": [
+            "Z-CMS-005"
+          ]
+        },
+        {
+          "id": "CMS-505",
+          "key": "我的构件 → 导出记录::页面",
+          "evidence": [
+            "Z-CMS-006"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WO",
+      "file": "06-我的工单/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "WO-500",
+          "key": "工单管理 → 我的待办::页面",
+          "evidence": [
+            "Z-WO-001"
+          ]
+        },
+        {
+          "id": "WO-501",
+          "key": "工单管理 → 我的已办::页面",
+          "evidence": [
+            "Z-WO-002"
+          ]
+        },
+        {
+          "id": "WO-502",
+          "key": "工单管理 → 我的工单::页面",
+          "evidence": [
+            "Z-WO-003"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DS",
+      "file": "07-数据源管理/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DS-500",
+          "key": "数据源管理 → 数据源管理 → · 驱动管理::页面",
+          "evidence": [
+            "Z-DS-001"
+          ]
+        },
+        {
+          "id": "DS-501",
+          "key": "数据源管理 → 数据源管理 → · 数据源管理::页面",
+          "evidence": [
+            "Z-DS-002"
+          ]
+        },
+        {
+          "id": "DS-502",
+          "key": "数据源管理 → 数据源管理 → · 部门数据源::页面",
+          "evidence": [
+            "Z-DS-003"
+          ]
+        },
+        {
+          "id": "DS-503",
+          "key": "数据源管理 → 数据源管理 → · 数据源列表::页面",
+          "evidence": [
+            "Z-DS-004"
+          ]
+        },
+        {
+          "id": "DS-504",
+          "key": "数据源管理 → API数据源::页面",
+          "evidence": [
+            "Z-DS-005"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DIS",
+      "file": "08-数据集成采集/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DIS-500",
+          "key": "首页::页面",
+          "evidence": [
+            "Y-DIS-001"
+          ]
+        },
+        {
+          "id": "DIS-501",
+          "key": "· 表离线同步::页面",
+          "evidence": [
+            "L-DIS-002"
+          ]
+        },
+        {
+          "id": "DIS-502",
+          "key": "· 库离线同步::页面",
+          "evidence": [
+            "L-DIS-003"
+          ]
+        },
+        {
+          "id": "DIS-503",
+          "key": "· 接口及文件解析::页面",
+          "evidence": [
+            "L-DIS-004"
+          ]
+        },
+        {
+          "id": "DIS-504",
+          "key": "· 文件离线同步::页面",
+          "evidence": [
+            "L-DIS-005"
+          ]
+        },
+        {
+          "id": "DIS-505",
+          "key": "· 表实时同步::页面",
+          "evidence": [
+            "L-DIS-006"
+          ]
+        },
+        {
+          "id": "DIS-506",
+          "key": "· KAFKA同步::页面",
+          "evidence": [
+            "L-DIS-007"
+          ]
+        },
+        {
+          "id": "DIS-507",
+          "key": "任务监控::页面",
+          "evidence": [
+            "L-DIS-008"
+          ]
+        },
+        {
+          "id": "DIS-508",
+          "key": "异常告警::页面",
+          "evidence": [
+            "L-DIS-009"
+          ]
+        },
+        {
+          "id": "DIS-509",
+          "key": "数据对账::页面",
+          "evidence": [
+            "L-DIS-010"
+          ]
+        },
+        {
+          "id": "DIS-510",
+          "key": "补数据::页面",
+          "evidence": [
+            "L-DIS-011"
+          ]
+        },
+        {
+          "id": "DIS-511",
+          "key": "任务分析::页面",
+          "evidence": [
+            "L-DIS-012"
+          ]
+        },
+        {
+          "id": "DIS-512",
+          "key": "数据分析::页面",
+          "evidence": [
+            "L-DIS-013"
+          ]
+        },
+        {
+          "id": "DIS-513",
+          "key": "任务 → 离线数据同步 → · 表离线同步::页面",
+          "evidence": [
+            "Y-DIS-002"
+          ]
+        },
+        {
+          "id": "DIS-514",
+          "key": "任务 → 离线数据同步 → · 库离线同步::页面",
+          "evidence": [
+            "Z-DIS-003"
+          ]
+        },
+        {
+          "id": "DIS-515",
+          "key": "任务 → 离线数据同步 → · 接口及文件解析::页面",
+          "evidence": [
+            "Y-DIS-004"
+          ]
+        },
+        {
+          "id": "DIS-516",
+          "key": "任务 → 离线数据同步 → · 接口及文件解析::新增",
+          "evidence": [
+            "Y-DIS-004-op1"
+          ]
+        },
+        {
+          "id": "DIS-517",
+          "key": "任务 → 离线数据同步 → · 文件离线同步::页面",
+          "evidence": [
+            "Y-DIS-005"
+          ]
+        },
+        {
+          "id": "DIS-518",
+          "key": "任务 → 离线数据同步 → · 文件离线同步::新增",
+          "evidence": [
+            "Y-DIS-005-op1"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SMS",
+      "file": "09-任务编排与调度/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "SMS-500",
+          "key": "概览::页面",
+          "evidence": [
+            "L-SMS-001"
+          ]
+        },
+        {
+          "id": "SMS-501",
+          "key": "我的流程::页面",
+          "evidence": [
+            "L-SMS-002"
+          ]
+        },
+        {
+          "id": "SMS-502",
+          "key": "流程调度管理::页面",
+          "evidence": [
+            "L-SMS-003"
+          ]
+        },
+        {
+          "id": "SMS-503",
+          "key": "· 周期任务作业监控::页面",
+          "evidence": [
+            "L-SMS-004"
+          ]
+        },
+        {
+          "id": "SMS-504",
+          "key": "· 实时任务作业监控::页面",
+          "evidence": [
+            "L-SMS-005"
+          ]
+        },
+        {
+          "id": "SMS-505",
+          "key": "· 告警信息查询::页面",
+          "evidence": [
+            "L-SMS-006"
+          ]
+        },
+        {
+          "id": "SMS-506",
+          "key": "· 告警推送管理::页面",
+          "evidence": [
+            "L-SMS-007"
+          ]
+        },
+        {
+          "id": "SMS-507",
+          "key": "归集表查询::页面",
+          "evidence": [
+            "L-SMS-008"
+          ]
+        },
+        {
+          "id": "SMS-508",
+          "key": "开发表管理::页面",
+          "evidence": [
+            "L-SMS-009"
+          ]
+        },
+        {
+          "id": "SMS-509",
+          "key": "函数开发::页面",
+          "evidence": [
+            "L-SMS-010"
+          ]
+        },
+        {
+          "id": "SMS-510",
+          "key": "脚本开发::页面",
+          "evidence": [
+            "L-SMS-011"
+          ]
+        },
+        {
+          "id": "SMS-511",
+          "key": "· 标准层::页面",
+          "evidence": [
+            "L-SMS-012"
+          ]
+        },
+        {
+          "id": "SMS-512",
+          "key": "· 原子层::页面",
+          "evidence": [
+            "L-SMS-013"
+          ]
+        },
+        {
+          "id": "SMS-513",
+          "key": "· 整合层::页面",
+          "evidence": [
+            "L-SMS-014"
+          ]
+        },
+        {
+          "id": "SMS-514",
+          "key": "· 主题层::页面",
+          "evidence": [
+            "L-SMS-015"
+          ]
+        },
+        {
+          "id": "SMS-515",
+          "key": "· 安全层::页面",
+          "evidence": [
+            "L-SMS-016"
+          ]
+        },
+        {
+          "id": "SMS-516",
+          "key": "· 标准代码集查询::页面",
+          "evidence": [
+            "L-SMS-017"
+          ]
+        },
+        {
+          "id": "SMS-517",
+          "key": "· 源系统代码集管理::页面",
+          "evidence": [
+            "L-SMS-018"
+          ]
+        },
+        {
+          "id": "SMS-518",
+          "key": "· 源与标准映射管理::页面",
+          "evidence": [
+            "L-SMS-019"
+          ]
+        },
+        {
+          "id": "SMS-519",
+          "key": "· 函数管理::页面",
+          "evidence": [
+            "L-SMS-020"
+          ]
+        },
+        {
+          "id": "SMS-520",
+          "key": "· 算法包管理::页面",
+          "evidence": [
+            "L-SMS-021"
+          ]
+        },
+        {
+          "id": "SMS-521",
+          "key": "· IDE平台初始化::页面",
+          "evidence": [
+            "L-SMS-022"
+          ]
+        },
+        {
+          "id": "SMS-522",
+          "key": "调度统计::页面",
+          "evidence": [
+            "L-SMS-023"
+          ]
+        },
+        {
+          "id": "SMS-523",
+          "key": "系统管理::页面",
+          "evidence": [
+            "L-SMS-024"
+          ]
+        },
+        {
+          "id": "SMS-524",
+          "key": "组件管理::页面",
+          "evidence": [
+            "L-SMS-025"
+          ]
+        },
+        {
+          "id": "SMS-525",
+          "key": "初始化::页面",
+          "evidence": [
+            "L-SMS-026"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DMS",
+      "file": "10-规范化数据建模/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DMS-500",
+          "key": "· 模型设计::页面",
+          "evidence": [
+            "L-DMS-001"
+          ]
+        },
+        {
+          "id": "DMS-501",
+          "key": "· 模型物化::页面",
+          "evidence": [
+            "L-DMS-002"
+          ]
+        },
+        {
+          "id": "DMS-502",
+          "key": "· 模型分析::页面",
+          "evidence": [
+            "L-DMS-003"
+          ]
+        },
+        {
+          "id": "DMS-503",
+          "key": "· 模型数据统计::页面",
+          "evidence": [
+            "L-DMS-004"
+          ]
+        },
+        {
+          "id": "DMS-504",
+          "key": "· 开发环境配置::页面",
+          "evidence": [
+            "L-DMS-005"
+          ]
+        },
+        {
+          "id": "DMS-505",
+          "key": "· 模型属性配置::页面",
+          "evidence": [
+            "L-DMS-006"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GDRS",
+      "file": "12-数据直报/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "GDRS-500",
+          "key": "首页::页面",
+          "evidence": [
+            "W-GDRS-001"
+          ]
+        },
+        {
+          "id": "GDRS-501",
+          "key": "· 表单管理::页面",
+          "evidence": [
+            "L-GDRS-003"
+          ]
+        },
+        {
+          "id": "GDRS-502",
+          "key": "· 模板管理::页面",
+          "evidence": [
+            "L-GDRS-004"
+          ]
+        },
+        {
+          "id": "GDRS-503",
+          "key": "· 选项配置::页面",
+          "evidence": [
+            "L-GDRS-008"
+          ]
+        },
+        {
+          "id": "GDRS-504",
+          "key": "· 选项配置::新增",
+          "evidence": [
+            "L-GDRS-008-op1"
+          ]
+        },
+        {
+          "id": "GDRS-505",
+          "key": "审核管理::页面",
+          "evidence": [
+            "W-GDRS-028"
+          ]
+        },
+        {
+          "id": "GDRS-506",
+          "key": "直报管理 → 库表资源管理 → · 资源管理::页面",
+          "evidence": [
+            "W-GDRS-002"
+          ]
+        },
+        {
+          "id": "GDRS-507",
+          "key": "直报管理 → 库表资源管理 → · 表单管理::页面",
+          "evidence": [
+            "W-GDRS-003"
+          ]
+        },
+        {
+          "id": "GDRS-508",
+          "key": "直报管理 → 库表资源管理 → · 模板管理::页面",
+          "evidence": [
+            "W-GDRS-004"
+          ]
+        },
+        {
+          "id": "GDRS-509",
+          "key": "直报管理 → 库表资源管理 → · 上报授权::页面",
+          "evidence": [
+            "W-GDRS-005"
+          ]
+        },
+        {
+          "id": "GDRS-510",
+          "key": "直报管理 → 库表资源管理 → · 查询授权::页面",
+          "evidence": [
+            "W-GDRS-006"
+          ]
+        },
+        {
+          "id": "GDRS-511",
+          "key": "直报管理 → 库表资源管理 → · 任务管理::页面",
+          "evidence": [
+            "W-GDRS-007"
+          ]
+        },
+        {
+          "id": "GDRS-512",
+          "key": "直报管理 → 库表资源管理 → · 选项配置::页面",
+          "evidence": [
+            "W-GDRS-008"
+          ]
+        },
+        {
+          "id": "GDRS-513",
+          "key": "直报管理 → 库表资源管理 → · 选项配置::新增",
+          "evidence": [
+            "W-GDRS-008-op1"
+          ]
+        },
+        {
+          "id": "GDRS-514",
+          "key": "直报管理 → 文件资源管理 → · 资源管理::页面",
+          "evidence": [
+            "W-GDRS-009"
+          ]
+        },
+        {
+          "id": "GDRS-515",
+          "key": "直报管理 → 文件资源管理 → · 上报授权::页面",
+          "evidence": [
+            "W-GDRS-010"
+          ]
+        },
+        {
+          "id": "GDRS-516",
+          "key": "直报管理 → 文件资源管理 → · 查询授权::页面",
+          "evidence": [
+            "W-GDRS-011"
+          ]
+        },
+        {
+          "id": "GDRS-517",
+          "key": "直报管理 → 文件资源管理 → · 任务管理::页面",
+          "evidence": [
+            "W-GDRS-012"
+          ]
+        },
+        {
+          "id": "GDRS-518",
+          "key": "直报管理 → 类别管理::页面",
+          "evidence": [
+            "W-GDRS-013"
+          ]
+        },
+        {
+          "id": "GDRS-519",
+          "key": "直报管理 → 类别管理::新增",
+          "evidence": [
+            "W-GDRS-013-op1"
+          ]
+        },
+        {
+          "id": "GDRS-520",
+          "key": "数据上报 → 标准化数据上报 → · 数据上报::页面",
+          "evidence": [
+            "W-GDRS-014"
+          ]
+        },
+        {
+          "id": "GDRS-521",
+          "key": "数据上报 → 标准化数据上报 → · 数据查看::页面",
+          "evidence": [
+            "W-GDRS-015"
+          ]
+        },
+        {
+          "id": "GDRS-522",
+          "key": "数据上报 → 标准化数据上报 → · 上报任务::页面",
+          "evidence": [
+            "W-GDRS-016"
+          ]
+        },
+        {
+          "id": "GDRS-523",
+          "key": "数据上报 → 标准化数据上报 → · 上报记录::页面",
+          "evidence": [
+            "W-GDRS-017"
+          ]
+        },
+        {
+          "id": "GDRS-524",
+          "key": "数据上报 → 标准化数据上报 → · 服务查询::页面",
+          "evidence": [
+            "W-GDRS-018"
+          ]
+        },
+        {
+          "id": "GDRS-525",
+          "key": "数据上报 → 标准化数据上报 → · 批量导入::页面",
+          "evidence": [
+            "W-GDRS-019"
+          ]
+        },
+        {
+          "id": "GDRS-526",
+          "key": "数据上报 → 非标准化数据上报 → · 数据上报::页面",
+          "evidence": [
+            "W-GDRS-020"
+          ]
+        },
+        {
+          "id": "GDRS-527",
+          "key": "数据上报 → 非标准化数据上报 → · 上报任务::页面",
+          "evidence": [
+            "W-GDRS-021"
+          ]
+        },
+        {
+          "id": "GDRS-528",
+          "key": "数据上报 → 非标准化数据上报 → · 上报记录::页面",
+          "evidence": [
+            "W-GDRS-022"
+          ]
+        },
+        {
+          "id": "GDRS-529",
+          "key": "数据上报 → 文件上报 → · 数据上报::页面",
+          "evidence": [
+            "W-GDRS-023"
+          ]
+        },
+        {
+          "id": "GDRS-530",
+          "key": "数据上报 → 文件上报 → · 上报任务::页面",
+          "evidence": [
+            "W-GDRS-025"
+          ]
+        },
+        {
+          "id": "GDRS-531",
+          "key": "数据上报 → 文件上报 → · 上报记录::页面",
+          "evidence": [
+            "W-GDRS-026"
+          ]
+        },
+        {
+          "id": "GDRS-532",
+          "key": "数据上报 → 文件上报 → · 服务查询::页面",
+          "evidence": [
+            "W-GDRS-027"
+          ]
+        },
+        {
+          "id": "GDRS-533",
+          "key": "上报统计 → 任务上报统计::页面",
+          "evidence": [
+            "W-GDRS-029"
+          ]
+        },
+        {
+          "id": "GDRS-534",
+          "key": "上报统计 → 库表资源上报时效统计::页面",
+          "evidence": [
+            "W-GDRS-030"
+          ]
+        },
+        {
+          "id": "GDRS-535",
+          "key": "上报统计 → 文件资源上报时效统计::页面",
+          "evidence": [
+            "W-GDRS-031"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DCS",
+      "file": "14-目录管理系统/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DCS-500",
+          "key": "服务统计 → 机构内部统计分析::页面",
+          "evidence": [
+            "Q-DCS-001"
+          ]
+        },
+        {
+          "id": "DCS-501",
+          "key": "服务统计 → 所有机构统计分析::页面",
+          "evidence": [
+            "Q-DCS-002"
+          ]
+        },
+        {
+          "id": "DCS-502",
+          "key": "资源编目 → 目录管理 → · 资源管理::页面",
+          "evidence": [
+            "Q-DCS-003"
+          ]
+        },
+        {
+          "id": "DCS-503",
+          "key": "资源编目 → 目录管理 → · 目录管理::页面",
+          "evidence": [
+            "Q-DCS-004"
+          ]
+        },
+        {
+          "id": "DCS-504",
+          "key": "资源编目 → 流程审批 → · 我发起的流程::页面",
+          "evidence": [
+            "Q-DCS-005"
+          ]
+        },
+        {
+          "id": "DCS-505",
+          "key": "资源编目 → 流程审批 → · 我处理的流程::页面",
+          "evidence": [
+            "Q-DCS-006"
+          ]
+        },
+        {
+          "id": "DCS-506",
+          "key": "资源编目 → 系统管理 → · 业务管理::页面",
+          "evidence": [
+            "Q-DCS-007"
+          ]
+        },
+        {
+          "id": "DCS-507",
+          "key": "资源编目 → 系统管理 → · 业务管理::新增",
+          "evidence": [
+            "Q-DCS-007-op1"
+          ]
+        },
+        {
+          "id": "DCS-508",
+          "key": "资源编目 → 系统管理 → · 事项管理::页面",
+          "evidence": [
+            "Q-DCS-008"
+          ]
+        },
+        {
+          "id": "DCS-509",
+          "key": "资源编目 → 系统管理 → · 事项管理::新增",
+          "evidence": [
+            "Q-DCS-008-op1"
+          ]
+        },
+        {
+          "id": "DCS-510",
+          "key": "资源编目 → 系统管理 → · 应用系统管理::页面",
+          "evidence": [
+            "Q-DCS-009"
+          ]
+        },
+        {
+          "id": "DCS-511",
+          "key": "资源编目 → 系统管理 → · 应用系统管理::新增",
+          "evidence": [
+            "Q-DCS-009-op1"
+          ]
+        },
+        {
+          "id": "DCS-512",
+          "key": "上报管理 → 目录上报审核::页面",
+          "evidence": [
+            "Q-DCS-010"
+          ]
+        },
+        {
+          "id": "DCS-513",
+          "key": "上报管理 → 机构接入管理::页面",
+          "evidence": [
+            "Q-DCS-011"
+          ]
+        },
+        {
+          "id": "DCS-514",
+          "key": "上报管理 → 机构接入管理::新增",
+          "evidence": [
+            "Q-DCS-011-op1"
+          ]
+        },
+        {
+          "id": "DCS-515",
+          "key": "上报管理 → 目录分类管理::页面",
+          "evidence": [
+            "Q-DCS-012"
+          ]
+        },
+        {
+          "id": "DCS-516",
+          "key": "上报管理 → 目录分类管理::新增",
+          "evidence": [
+            "Q-DCS-012-op1"
+          ]
+        },
+        {
+          "id": "DCS-517",
+          "key": "目录中心 → 目录中心 → · 级联目录中心::页面",
+          "evidence": [
+            "Q-DCS-013"
+          ]
+        },
+        {
+          "id": "DCS-518",
+          "key": "目录中心 → 目录中心 → · 部门目录中心::页面",
+          "evidence": [
+            "Q-DCS-014"
+          ]
+        },
+        {
+          "id": "DCS-519",
+          "key": "目录中心 → 清单管理 → · 责任清单::页面",
+          "evidence": [
+            "Q-DCS-015"
+          ]
+        },
+        {
+          "id": "DCS-520",
+          "key": "目录中心 → 清单管理 → · 负面清单::页面",
+          "evidence": [
+            "Q-DCS-016"
+          ]
+        },
+        {
+          "id": "DCS-521",
+          "key": "目录中心 → 我的目录 → · 我订阅的目录::页面",
+          "evidence": [
+            "Q-DCS-017"
+          ]
+        },
+        {
+          "id": "DCS-522",
+          "key": "目录中心 → 我的目录 → · 我收藏的目录::页面",
+          "evidence": [
+            "Q-DCS-018"
+          ]
+        },
+        {
+          "id": "DCS-523",
+          "key": "目录中心 → 流程审批 → · 我发起的流程::页面",
+          "evidence": [
+            "Q-DCS-019"
+          ]
+        },
+        {
+          "id": "DCS-524",
+          "key": "目录中心 → 流程审批 → · 我处理的流程::页面",
+          "evidence": [
+            "Q-DCS-020"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DSE",
+      "file": "15-数据共享交换/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "DSE-500",
+          "key": "统计看板 → 库表交换统计::页面",
+          "evidence": [
+            "Y-DSE-001"
+          ]
+        },
+        {
+          "id": "DSE-501",
+          "key": "统计看板 → 文件交换统计::页面",
+          "evidence": [
+            "Y-DSE-002"
+          ]
+        },
+        {
+          "id": "DSE-502",
+          "key": "统计看板 → 接口调用统计::页面",
+          "evidence": [
+            "Y-DSE-003"
+          ]
+        },
+        {
+          "id": "DSE-503",
+          "key": "任务管理 → 库表交换任务::页面",
+          "evidence": [
+            "Z-DSE-004"
+          ]
+        },
+        {
+          "id": "DSE-504",
+          "key": "任务管理 → 文件交换任务::页面",
+          "evidence": [
+            "Z-DSE-005"
+          ]
+        },
+        {
+          "id": "DSE-505",
+          "key": "任务管理 → 接口交换任务::页面",
+          "evidence": [
+            "Z-DSE-006"
+          ]
+        },
+        {
+          "id": "DSE-506",
+          "key": "任务监控 → 库表交换日志::页面",
+          "evidence": [
+            "Z-DSE-007"
+          ]
+        },
+        {
+          "id": "DSE-507",
+          "key": "任务监控 → 文件交换日志::页面",
+          "evidence": [
+            "Z-DSE-008"
+          ]
+        },
+        {
+          "id": "DSE-508",
+          "key": "任务监控 → 接口交换日志::页面",
+          "evidence": [
+            "Z-DSE-009"
+          ]
+        },
+        {
+          "id": "DSE-509",
+          "key": "前置机监控::页面",
+          "evidence": [
+            "Z-DSE-010"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GSB",
+      "file": "16-数据服务支撑/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "GSB-500",
+          "key": "服务目录 → 服务目录::页面",
+          "evidence": [
+            "Z-GSB-001"
+          ]
+        },
+        {
+          "id": "GSB-501",
+          "key": "服务管理 → 注册管理::页面",
+          "evidence": [
+            "Z-GSB-002"
+          ]
+        },
+        {
+          "id": "GSB-502",
+          "key": "服务管理 → 消费管理::页面",
+          "evidence": [
+            "Z-GSB-003"
+          ]
+        },
+        {
+          "id": "GSB-503",
+          "key": "服务审批 → 注册审批::页面",
+          "evidence": [
+            "Z-GSB-004"
+          ]
+        },
+        {
+          "id": "GSB-504",
+          "key": "服务控制 → 消费IP管理::页面",
+          "evidence": [
+            "Z-GSB-005"
+          ]
+        },
+        {
+          "id": "GSB-505",
+          "key": "服务控制 → 服务统计::页面",
+          "evidence": [
+            "Z-GSB-006"
+          ]
+        },
+        {
+          "id": "GSB-506",
+          "key": "配置 → 数源配置::页面",
+          "evidence": [
+            "Z-GSB-007"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GSPA",
+      "file": "18-数据服务门户后台管理/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "GSPA-500",
+          "key": "政务共享门户后台管理 → 快捷入口管理::页面",
+          "evidence": [
+            "Z-GSPA-001"
+          ]
+        },
+        {
+          "id": "GSPA-501",
+          "key": "政务共享门户后台管理 → 知识管理::页面",
+          "evidence": [
+            "Z-GSPA-002"
+          ]
+        },
+        {
+          "id": "GSPA-502",
+          "key": "政务共享门户后台管理 → 版块管理 → · 栏目管理::页面",
+          "evidence": [
+            "Z-GSPA-003"
+          ]
+        },
+        {
+          "id": "GSPA-503",
+          "key": "政务共享门户后台管理 → 版块管理 → · 布局管理::页面",
+          "evidence": [
+            "Z-GSPA-004"
+          ]
+        },
+        {
+          "id": "GSPA-504",
+          "key": "政务共享门户后台管理 → 版块管理 → · 版块管理::页面",
+          "evidence": [
+            "Z-GSPA-005"
+          ]
+        },
+        {
+          "id": "GSPA-505",
+          "key": "政务共享门户后台管理 → 版块管理 → · 内容管理::页面",
+          "evidence": [
+            "Z-GSPA-006"
+          ]
+        },
+        {
+          "id": "GSPA-506",
+          "key": "政务共享门户后台管理 → 模板管理::页面",
+          "evidence": [
+            "Z-GSPA-007"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MDM",
+      "file": "19-元数据管理/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "MDM-500",
+          "key": "元数据管理 → 采集管理::页面",
+          "evidence": [
+            "Z-MDM-001"
+          ]
+        },
+        {
+          "id": "MDM-501",
+          "key": "元数据管理 → 变更管理::页面",
+          "evidence": [
+            "Z-MDM-002"
+          ]
+        },
+        {
+          "id": "MDM-502",
+          "key": "元数据管理 → 版本管理::页面",
+          "evidence": [
+            "Z-MDM-003"
+          ]
+        },
+        {
+          "id": "MDM-503",
+          "key": "元数据管理 → 版本管理::新增",
+          "evidence": [
+            "X-MDM-003-op1"
+          ]
+        },
+        {
+          "id": "MDM-504",
+          "key": "元数据管理 → 异常监控::页面",
+          "evidence": [
+            "Z-MDM-004"
+          ]
+        },
+        {
+          "id": "MDM-505",
+          "key": "元数据管理 → 调度策略管理::页面",
+          "evidence": [
+            "Z-MDM-005"
+          ]
+        },
+        {
+          "id": "MDM-506",
+          "key": "元数据管理 → 元数据信息::页面",
+          "evidence": [
+            "Z-MDM-006"
+          ]
+        },
+        {
+          "id": "MDM-507",
+          "key": "元数据分析 → 映射管理::页面",
+          "evidence": [
+            "Z-MDM-010"
+          ]
+        }
+      ]
+    }
   ]
 }

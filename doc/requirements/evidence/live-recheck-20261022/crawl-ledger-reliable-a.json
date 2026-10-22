@@ -1,0 +1,157 @@
+[
+  {
+    "code": "DSE",
+    "name": "数据共享交换",
+    "source": "E039-exchange",
+    "entry": "Y-DSE-000-entry",
+    "discoveredAt": "2026-10-22T11:20:57.719Z",
+    "links": [
+      {
+        "name": "库表交换统计",
+        "hierarchy": "统计看板 → 库表交换统计",
+        "occurrence": 0,
+        "id": "Y-DSE-001",
+        "status": "opened-review-content",
+        "path": "/dse/board/1",
+        "evidence": "Y-DSE-001",
+        "operations": []
+      },
+      {
+        "name": "文件交换统计",
+        "hierarchy": "统计看板 → 文件交换统计",
+        "occurrence": 0,
+        "id": "Y-DSE-002",
+        "status": "opened-review-content",
+        "path": "/dse/board/2",
+        "evidence": "Y-DSE-002",
+        "operations": []
+      },
+      {
+        "name": "接口调用统计",
+        "hierarchy": "统计看板 → 接口调用统计",
+        "occurrence": 0,
+        "id": "Y-DSE-003",
+        "status": "opened-review-content",
+        "path": "/dse/board/8",
+        "evidence": "Y-DSE-003",
+        "operations": []
+      },
+      {
+        "name": "库表交换任务",
+        "hierarchy": "任务管理 → 库表交换任务",
+        "occurrence": 0,
+        "id": "Y-DSE-004",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/1",
+        "evidence": "Y-DSE-004",
+        "operations": []
+      },
+      {
+        "name": "文件交换任务",
+        "hierarchy": "任务管理 → 文件交换任务",
+        "occurrence": 0,
+        "id": "Y-DSE-005",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "接口交换任务",
+        "hierarchy": "任务管理 → 接口交换任务",
+        "occurrence": 0,
+        "id": "Y-DSE-006",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "库表交换日志",
+        "hierarchy": "任务监控 → 库表交换日志",
+        "occurrence": 0,
+        "id": "Y-DSE-007",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "文件交换日志",
+        "hierarchy": "任务监控 → 文件交换日志",
+        "occurrence": 0,
+        "id": "Y-DSE-008",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "接口交换日志",
+        "hierarchy": "任务监控 → 接口交换日志",
+        "occurrence": 0,
+        "id": "Y-DSE-009",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "前置机监控",
+        "hierarchy": "前置机监控",
+        "occurrence": 0,
+        "id": "Y-DSE-010",
+        "status": "navigation-error",
+        "reason": "Error"
+      }
+    ]
+  },
+  {
+    "code": "GSB",
+    "name": "数据服务支撑",
+    "source": "E040-api-service",
+    "entry": "Y-GSB-000-entry",
+    "discoveredAt": "2026-10-22T11:22:24.555Z",
+    "links": [
+      {
+        "name": "服务目录",
+        "hierarchy": "服务目录 → 服务目录",
+        "occurrence": 0,
+        "id": "Y-GSB-001",
+        "status": "pending"
+      },
+      {
+        "name": "注册管理",
+        "hierarchy": "服务管理 → 注册管理",
+        "occurrence": 0,
+        "id": "Y-GSB-002",
+        "status": "pending"
+      },
+      {
+        "name": "消费管理",
+        "hierarchy": "服务管理 → 消费管理",
+        "occurrence": 0,
+        "id": "Y-GSB-003",
+        "status": "pending"
+      },
+      {
+        "name": "注册审批",
+        "hierarchy": "服务审批 → 注册审批",
+        "occurrence": 0,
+        "id": "Y-GSB-004",
+        "status": "pending"
+      },
+      {
+        "name": "消费IP管理",
+        "hierarchy": "服务控制 → 消费IP管理",
+        "occurrence": 0,
+        "id": "Y-GSB-005",
+        "status": "pending"
+      },
+      {
+        "name": "服务统计",
+        "hierarchy": "服务控制 → 服务统计",
+        "occurrence": 0,
+        "id": "Y-GSB-006",
+        "status": "pending"
+      },
+      {
+        "name": "数源配置",
+        "hierarchy": "配置 → 数源配置",
+        "occurrence": 0,
+        "id": "Y-GSB-007",
+        "status": "pending"
+      }
+    ]
+  }
+]

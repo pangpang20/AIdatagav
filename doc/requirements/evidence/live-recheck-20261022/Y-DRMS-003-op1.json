@@ -1,0 +1,25 @@
+{
+  "time": "2026-10-22T11:22:25.134Z",
+  "url": "/drms/requirement/edit",
+  "title": "",
+  "text": "消息通知\n工作台\n数据运营平台\n数据运营平台",
+  "controls": [],
+  "headings": [],
+  "frames": [],
+  "id": "Y-DRMS-003-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [],
+  "content": "消息通知\n工作台\n数据运营平台\n数据运营平台",
+  "operation": {
+    "menu": "需求管理 → 我的需求",
+    "action": "新增",
+    "source": "Y-DRMS-003",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

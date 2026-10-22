@@ -1,0 +1,368 @@
+{
+  "time": "2026-10-22T11:31:58.839Z",
+  "url": "/dop/dbms/requirement/prepare/office/editSubject",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n数据调研报表\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n 数据归集\n 参考文档\n 配置管理\n新增调研委办局\n返回\n调研委办局\n委办局领导\n联系人\n联系人职务\n联系人电话\n科室\n委办局地址\n描述\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "调研委办局",
+      "placeholder": "请输入调研委办局",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "委办局领导",
+      "placeholder": "请输入委办局领导",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "联系人",
+      "placeholder": "请输入联系人",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "联系人职务",
+      "placeholder": "请输入联系人职务",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "联系人电话",
+      "placeholder": "请输入联系人电话",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "科室",
+      "placeholder": "请输入科室",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "委办局地址",
+      "placeholder": "请输入委办局地址",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "描述",
+      "placeholder": "请输入描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "P-DBMS-002-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "调研委办局",
+      "requiredMarker": true,
+      "text": "调研委办局",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入调研委办局",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "委办局领导",
+      "requiredMarker": true,
+      "text": "委办局领导",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入委办局领导",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "联系人",
+      "requiredMarker": true,
+      "text": "联系人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入联系人",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "联系人职务",
+      "requiredMarker": true,
+      "text": "联系人职务",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入联系人职务",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "联系人电话",
+      "requiredMarker": true,
+      "text": "联系人电话",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入联系人电话",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "科室",
+      "requiredMarker": false,
+      "text": "科室",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入科室",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "委办局地址",
+      "requiredMarker": false,
+      "text": "委办局地址",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入委办局地址",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "描述",
+      "requiredMarker": false,
+      "text": "描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入描述",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 调研概览",
+    "委办局信息",
+    "调研团队信息",
+    "参考文档",
+    "调研里程碑",
+    "调研计划列表",
+    " 调研实施",
+    "数据调研报表",
+    "信息系统清单",
+    "数据目录清单",
+    "数据字典清单",
+    "接口资源清单",
+    "数据需求清单",
+    "业务需求清单",
+    " 数据归集",
+    " 参考文档",
+    " 配置管理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n数据调研报表\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n 数据归集\n 参考文档\n 配置管理\n新增调研委办局\n返回\n调研委办局\n委办局领导\n联系人\n联系人职务\n联系人电话\n科室\n委办局地址\n描述\n取 消提 交",
+  "operation": {
+    "menu": "调研准备 → 委办局信息",
+    "action": "新增",
+    "source": "P-DBMS-002",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "time": "2026-10-22T11:17:33.079Z",
+  "url": "/datasource/dataSource/dataSourceManageList",
+  "title": "数据源管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n数据源管理\n查询重置\n新增\n序号\t数据源名称\t所属部门\t可见范围\t是否启用\t应用场景\t备注\t创建时间\n\t操作\t\n1\n\t\napi_test_2\n\t\n交通管理局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-09-14 09:50:17\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n2\n\t\n达梦B\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-09-02 15:56:20\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n3\n\t\n达梦A\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-09-02 15:47:55\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n4\n\t\n测试mysql001\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-04-30 14:52:56\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n5\n\t\n人口信息API\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-04-13 11:58:34\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n6\n\t\nMongoDB-test\n\t\n某委办局\n\t\n公开\n\t\n否\n\t\n\t\n\t\n2025-12-09 16:24:25\n\t\n测试连接\n启用\n编辑\n删除\n\n\n7\n\t\nPostgreSQL PostGIS-TEST\n\t\n某委办局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-09 16:10:43\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n8\n\t\nCassandra-test\n\t\n某委办局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-09 16:10:00\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n9\n\t\nMicrosoft SQL Server-test\n\t\n某委办局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-09 16:08:52\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n10\n\t\nmongodb\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-05 15:35:02\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n11\n\t\nmysql106\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-08-19 15:27:47\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n12\n\t\n海量数据库131\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-08-19 14:48:32\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n13\n\t\npython-test\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-08-02 09:58:23\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n14\n\t\nmydscdb\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-28 10:42:21\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n15\n\t\nmysrcdb\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-28 10:40:57\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n16\n\t\nZFX演示数据源_目标库\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-03 14:16:30\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n17\n\t\nZFX演示数据源_源库\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-03 11:43:08\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n18\n\t\n文件存储2\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-05-27 18:31:59\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n19\n\t\n文件SFTP1\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-05-27 18:05:47\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n20\n\t\nhive_sql计算引擎\n\t\n数据资源部\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-05-23 17:57:42\n\t\n测试连接\n禁用\n编辑\n删除\n共 30 条\n12\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入数据源名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择是否启用",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Z-DS-002",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "数据源名称",
+    "所属部门",
+    "可见范围",
+    "是否启用",
+    "应用场景",
+    "备注",
+    "创建时间",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add"
+    },
+    {
+      "text": "api_test_2",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "测试连接",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "禁用",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "达梦B",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "达梦A",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "测试mysql001",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息API",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "MongoDB-test",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "启用",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "PostgreSQL PostGIS-TEST",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Cassandra-test",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Microsoft SQL Server-test",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "mongodb",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "mysql106",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "海量数据库131",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "python-test",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "mydscdb",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "mysrcdb",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ZFX演示数据源_目标库",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ZFX演示数据源_源库",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "文件存储2",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "文件SFTP1",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "hive_sql计算引擎",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n数据源管理\n查询重置\n新增\n序号\t数据源名称\t所属部门\t可见范围\t是否启用\t应用场景\t备注\t创建时间\n\t操作\t\n1\n\t\napi_test_2\n\t\n交通管理局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-09-14 09:50:17\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n2\n\t\n达梦B\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-09-02 15:56:20\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n3\n\t\n达梦A\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-09-02 15:47:55\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n4\n\t\n测试mysql001\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-04-30 14:52:56\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n5\n\t\n人口信息API\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2026-04-13 11:58:34\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n6\n\t\nMongoDB-test\n\t\n某委办局\n\t\n公开\n\t\n否\n\t\n\t\n\t\n2025-12-09 16:24:25\n\t\n测试连接\n启用\n编辑\n删除\n\n\n7\n\t\nPostgreSQL PostGIS-TEST\n\t\n某委办局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-09 16:10:43\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n8\n\t\nCassandra-test\n\t\n某委办局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-09 16:10:00\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n9\n\t\nMicrosoft SQL Server-test\n\t\n某委办局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-09 16:08:52\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n10\n\t\nmongodb\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-12-05 15:35:02\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n11\n\t\nmysql106\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-08-19 15:27:47\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n12\n\t\n海量数据库131\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-08-19 14:48:32\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n13\n\t\npython-test\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-08-02 09:58:23\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n14\n\t\nmydscdb\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-28 10:42:21\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n15\n\t\nmysrcdb\n\t\n区民政局\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-28 10:40:57\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n16\n\t\nZFX演示数据源_目标库\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-03 14:16:30\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n17\n\t\nZFX演示数据源_源库\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-07-03 11:43:08\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n18\n\t\n文件存储2\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-05-27 18:31:59\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n19\n\t\n文件SFTP1\n\t\n根部门\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-05-27 18:05:47\n\t\n测试连接\n禁用\n编辑\n删除\n\n\n20\n\t\nhive_sql计算引擎\n\t\n数据资源部\n\t\n公开\n\t\n是\n\t\n\t\n\t\n2025-05-23 17:57:42\n\t\n测试连接\n禁用\n编辑\n删除\n共 30 条\n12\n前往页"
+}

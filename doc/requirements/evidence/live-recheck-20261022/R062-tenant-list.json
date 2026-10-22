@@ -1,0 +1,271 @@
+{
+  "time": "2026-10-22T10:04:05.813Z",
+  "url": "/module-common/manage/tenant/tenantList",
+  "title": "后台管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n租户列表\n查询重置\n新增\n序号\t租户名称\t管理员\t创建时间\n\t操作\n1\n\t\ntest123\n\t\ntest123\n\t\n2026-10-09 16:03:12\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n2\n\t\n测试租户\n\t\nCUST167\n\t\n2026-09-03 11:30:12\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n3\n\t\n民政局\n\t\n小燕\n\t\n2026-07-02 17:14:42\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n4\n\t\n天弘基金\n\t\n李庆洲\n\t\n2026-03-10 19:50:30\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n5\n\t\n演示01\n\t\n李庆洲\n\t\n2025-11-03 16:57:01\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n6\n\t\nXX01\n\t\n李庆洲\n\t\n2025-08-11 18:53:58\n\t\n授权\n租户用户列表\n编辑\n删除\n共 6 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入租户名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R062-tenant-list",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "租户名称",
+    "管理员",
+    "创建时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "test123",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "授权",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "租户用户列表",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    },
+    {
+      "text": "测试租户",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "民政局",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "天弘基金",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "演示01",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "XX01",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "· 工单申请",
+    "· 我的工单",
+    "· 我的待办",
+    "· 我的已办",
+    "· 抄送我的",
+    "· 业务注册",
+    "· 流程模型",
+    "· 流程监控",
+    "· 表单设计",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n后台管理\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n租户列表\n查询重置\n新增\n序号\t租户名称\t管理员\t创建时间\n\t操作\n1\n\t\ntest123\n\t\ntest123\n\t\n2026-10-09 16:03:12\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n2\n\t\n测试租户\n\t\nCUST167\n\t\n2026-09-03 11:30:12\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n3\n\t\n民政局\n\t\n小燕\n\t\n2026-07-02 17:14:42\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n4\n\t\n天弘基金\n\t\n李庆洲\n\t\n2026-03-10 19:50:30\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n5\n\t\n演示01\n\t\n李庆洲\n\t\n2025-11-03 16:57:01\n\t\n授权\n租户用户列表\n编辑\n删除\n\n\n6\n\t\nXX01\n\t\n李庆洲\n\t\n2025-08-11 18:53:58\n\t\n授权\n租户用户列表\n编辑\n删除\n共 6 条\n1\n前往页"
+}

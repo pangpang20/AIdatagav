@@ -1,0 +1,26 @@
+{
+  "time": "2026-10-22T11:33:17.419Z",
+  "url": "/gsp/entrance/list",
+  "title": "",
+  "text": "消息通知\n工作台\n数据运营平台\n数据运营平台",
+  "controls": [],
+  "headings": [],
+  "frames": [],
+  "id": "Q-GSPA-000-entry",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "功能名称",
+    "图标",
+    "状态",
+    "编辑时间",
+    "操作"
+  ],
+  "actions": [],
+  "options": [],
+  "navigation": [],
+  "captureTimingLimit": "Body changed during screenshot; verify image and metadata independently.",
+  "content": "消息通知\n工作台\n数据运营平台\n数据运营平台"
+}

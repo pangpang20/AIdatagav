@@ -1,0 +1,412 @@
+{
+  "time": "2026-10-22T10:11:36.700Z",
+  "url": "/module-flow/workflow/processModel",
+  "title": "微服务平台",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n微服务平台\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n流程模型\n查询重置\n新增\n序号\t模型名称\t业务名称\t业务编号\t当前启用版本\t创建时间\t更新时间\t状态\t备注\t操作\t\n1\n\t\n编目订阅审批\n\t\nT_编目订阅流程\n\t\ntest01\n\t\n-\n\t\n2026-09-14 11:23:33\n\t\n2026-09-14 11:23:33\n\t\n禁用\n\t\n\t\n编辑\n版本部署\n版本管理\n更多\n\n\n2\n\t\n工单生成\n\t\nyangetst\n\t\ntest003033\n\t\n-\n\t\n2026-08-21 15:21:12\n\t\n2026-08-21 15:21:31\n\t\n禁用\n\t\n\t\n编辑\n版本部署\n版本管理\n更多\n\n\n3\n\t\n资源目录下线new\n\t\n资源目录下线（新）\n\t\ncata_offline\n\t\nv.1\n\t\n2026-04-30 14:41:31\n\t\n2026-08-25 14:09:33\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n4\n\t\n目录中枢审核new\n\t\n目录中枢审核（新）\n\t\ncatahub_cata\n\t\nv.1\n\t\n2026-04-29 19:18:44\n\t\n2026-09-24 11:12:33\n\t\n禁用\n\t\n\t\n编辑\n版本部署\n版本管理\n更多\n\n\n5\n\t\n资源目录编目new\n\t\n资源目录编目（新）\n\t\nres_cata\n\t\nv.2\n\t\n2026-04-29 19:11:32\n\t\n2026-08-25 14:10:37\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n6\n\t\n用户提交反馈意见\n\t\n用户提交反馈业务\n\t\n002\n\t\nv.1\n\t\n2026-04-07 04:50:11\n\t\n2026-08-25 14:10:10\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n7\n\t\n目录变更审核\n\t\n目录变更\n\t\ncata_change\n\t\nv.1\n\t\n2025-09-30 09:55:02\n\t\n2026-09-11 10:42:05\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n8\n\t\n目录变更中枢审核\n\t\n目录变更中枢审核\n\t\ncatahub_cata_change\n\t\nv.1\n\t\n2025-09-30 09:54:17\n\t\n2026-08-25 14:09:11\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n9\n\t\n内部目录下线中枢审核\n\t\n中枢内部下线\n\t\ncatahub_catalogue_offline\n\t\nv.1\n\t\n2025-08-11 09:53:49\n\t\n2026-08-25 14:08:54\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n10\n\t\n目录下线审批2\n\t\n内部数据下线\n\t\ncatalogue_offline\n\t\nv.1\n\t\n2025-08-11 09:48:53\n\t\n2026-08-25 14:08:34\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n11\n\t\n目录下线中枢审核\n\t\n目录下线中枢审批\n\t\ncatahub_cata_offline\n\t\nv.1\n\t\n2025-08-08 15:01:56\n\t\n2026-08-25 14:08:15\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n12\n\t\n目录下线审批\n\t\n目录下线审批\n\t\nshare_cata_offline\n\t\nv.1\n\t\n2025-08-08 15:01:02\n\t\n2026-08-25 14:07:58\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n13\n\t\nDRMS任务流程\n\t\n任务流程\n\t\ndrms_task\n\t\nv.1\n\t\n2025-07-14 17:21:51\n\t\n2026-08-25 14:07:30\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n14\n\t\nDRMS咨询流程\n\t\n咨询流程\n\t\ndrms_advisors\n\t\nv.1\n\t\n2025-07-14 17:21:34\n\t\n2026-08-25 14:06:36\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n15\n\t\n服务注册申请\n\t\n服务注册申请\n\t\ngsb_service_register_workflow\n\t\nv.1\n\t\n2025-06-27 14:23:44\n\t\n2026-08-25 14:06:17\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n16\n\t\n目录订阅审核\n\t\n目录订阅审核\n\t\ndcs_mgt_subscribe\n\t\nv.2\n\t\n2025-06-27 10:50:43\n\t\n2026-08-25 14:05:50\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n17\n\t\n中枢订阅审核\n\t\n中枢订阅审核\n\t\ndcs_hub_subscribe\n\t\nv.1\n\t\n2025-06-27 10:26:20\n\t\n2026-08-25 14:05:31\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n18\n\t\n目录订阅申请\n\t\n目录订阅申请\n\t\ndcs_mall_subscribe\n\t\nv.2\n\t\n2025-06-27 10:23:07\n\t\n2026-08-25 14:05:09\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n19\n\t\n服务注册审批\n\t\n服务支撑业务审批\n\t\ngsb_service_register_workflo\n\t\nv.1\n\t\n2025-05-21 18:15:01\n\t\n2026-08-25 14:04:28\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n20\n\t\n中枢目录审批\n\t\n目录中枢审核\n\t\ncatahub_catalogue\n\t\nv.1\n\t\n2025-05-21 18:10:50\n\t\n2026-08-25 14:04:03\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n共 25 条\n12\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入流程名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择业务编号",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "更多",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "R075-model-list",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "模型名称",
+    "业务名称",
+    "业务编号",
+    "当前启用版本",
+    "创建时间",
+    "更新时间",
+    "状态",
+    "备注",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "编目订阅审批",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "版本部署",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "版本管理",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "工单生成",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "资源目录下线new",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "复制模型",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "禁用",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "目录中枢审核new",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "资源目录编目new",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "用户提交反馈意见",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录变更审核",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录变更中枢审核",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "内部目录下线中枢审核",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录下线审批2",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录下线中枢审核",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录下线审批",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DRMS任务流程",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DRMS咨询流程",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "服务注册申请",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录订阅审核",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "中枢订阅审核",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "目录订阅申请",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "服务注册审批",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "中枢目录审批",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 首页",
+    "用户管理",
+    "部门管理",
+    "角色管理",
+    "租户管理",
+    "我的用户",
+    "我的部门",
+    "标签管理",
+    "账号解禁",
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源",
+    "应用管理",
+    "系统管理",
+    "平台管理",
+    "字典管理",
+    "特殊日期列表",
+    "许可证管理",
+    "告警列表",
+    "消息类型",
+    "消息渠道",
+    "模板管理",
+    "消息管理",
+    "我的消息",
+    "公告管理",
+    "· 工单申请",
+    "· 我的工单",
+    "· 我的待办",
+    "· 我的已办",
+    "· 抄送我的",
+    "· 业务注册",
+    "· 流程模型",
+    "· 流程监控",
+    "· 表单设计",
+    "操作日志",
+    "登录日志"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n微服务平台\n 首页\n系统管理\n用户管理\n部门管理\n角色管理\n租户管理\n我的用户\n我的部门\n标签管理\n账号解禁\n配置管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n应用管理\n系统管理\n平台管理\n字典管理\n特殊日期列表\n许可证管理\n监控管理\n告警列表\n消息管理\n消息类型\n消息渠道\n模板管理\n消息管理\n我的消息\n公告管理\n工作流\n工作台\n· 工单申请\n· 我的工单\n· 我的待办\n· 我的已办\n· 抄送我的\n工作流管理\n· 业务注册\n· 流程模型\n· 流程监控\n表单管理\n· 表单设计\n日志管理\n操作日志\n登录日志\n流程模型\n查询重置\n新增\n序号\t模型名称\t业务名称\t业务编号\t当前启用版本\t创建时间\t更新时间\t状态\t备注\t操作\t\n1\n\t\n编目订阅审批\n\t\nT_编目订阅流程\n\t\ntest01\n\t\n-\n\t\n2026-09-14 11:23:33\n\t\n2026-09-14 11:23:33\n\t\n禁用\n\t\n\t\n编辑\n版本部署\n版本管理\n更多\n\n\n2\n\t\n工单生成\n\t\nyangetst\n\t\ntest003033\n\t\n-\n\t\n2026-08-21 15:21:12\n\t\n2026-08-21 15:21:31\n\t\n禁用\n\t\n\t\n编辑\n版本部署\n版本管理\n更多\n\n\n3\n\t\n资源目录下线new\n\t\n资源目录下线（新）\n\t\ncata_offline\n\t\nv.1\n\t\n2026-04-30 14:41:31\n\t\n2026-08-25 14:09:33\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n4\n\t\n目录中枢审核new\n\t\n目录中枢审核（新）\n\t\ncatahub_cata\n\t\nv.1\n\t\n2026-04-29 19:18:44\n\t\n2026-09-24 11:12:33\n\t\n禁用\n\t\n\t\n编辑\n版本部署\n版本管理\n更多\n\n\n5\n\t\n资源目录编目new\n\t\n资源目录编目（新）\n\t\nres_cata\n\t\nv.2\n\t\n2026-04-29 19:11:32\n\t\n2026-08-25 14:10:37\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n6\n\t\n用户提交反馈意见\n\t\n用户提交反馈业务\n\t\n002\n\t\nv.1\n\t\n2026-04-07 04:50:11\n\t\n2026-08-25 14:10:10\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n7\n\t\n目录变更审核\n\t\n目录变更\n\t\ncata_change\n\t\nv.1\n\t\n2025-09-30 09:55:02\n\t\n2026-09-11 10:42:05\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n8\n\t\n目录变更中枢审核\n\t\n目录变更中枢审核\n\t\ncatahub_cata_change\n\t\nv.1\n\t\n2025-09-30 09:54:17\n\t\n2026-08-25 14:09:11\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n9\n\t\n内部目录下线中枢审核\n\t\n中枢内部下线\n\t\ncatahub_catalogue_offline\n\t\nv.1\n\t\n2025-08-11 09:53:49\n\t\n2026-08-25 14:08:54\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n10\n\t\n目录下线审批2\n\t\n内部数据下线\n\t\ncatalogue_offline\n\t\nv.1\n\t\n2025-08-11 09:48:53\n\t\n2026-08-25 14:08:34\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n11\n\t\n目录下线中枢审核\n\t\n目录下线中枢审批\n\t\ncatahub_cata_offline\n\t\nv.1\n\t\n2025-08-08 15:01:56\n\t\n2026-08-25 14:08:15\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n12\n\t\n目录下线审批\n\t\n目录下线审批\n\t\nshare_cata_offline\n\t\nv.1\n\t\n2025-08-08 15:01:02\n\t\n2026-08-25 14:07:58\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n13\n\t\nDRMS任务流程\n\t\n任务流程\n\t\ndrms_task\n\t\nv.1\n\t\n2025-07-14 17:21:51\n\t\n2026-08-25 14:07:30\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n14\n\t\nDRMS咨询流程\n\t\n咨询流程\n\t\ndrms_advisors\n\t\nv.1\n\t\n2025-07-14 17:21:34\n\t\n2026-08-25 14:06:36\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n15\n\t\n服务注册申请\n\t\n服务注册申请\n\t\ngsb_service_register_workflow\n\t\nv.1\n\t\n2025-06-27 14:23:44\n\t\n2026-08-25 14:06:17\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n16\n\t\n目录订阅审核\n\t\n目录订阅审核\n\t\ndcs_mgt_subscribe\n\t\nv.2\n\t\n2025-06-27 10:50:43\n\t\n2026-08-25 14:05:50\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n17\n\t\n中枢订阅审核\n\t\n中枢订阅审核\n\t\ndcs_hub_subscribe\n\t\nv.1\n\t\n2025-06-27 10:26:20\n\t\n2026-08-25 14:05:31\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n18\n\t\n目录订阅申请\n\t\n目录订阅申请\n\t\ndcs_mall_subscribe\n\t\nv.2\n\t\n2025-06-27 10:23:07\n\t\n2026-08-25 14:05:09\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n19\n\t\n服务注册审批\n\t\n服务支撑业务审批\n\t\ngsb_service_register_workflo\n\t\nv.1\n\t\n2025-05-21 18:15:01\n\t\n2026-08-25 14:04:28\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n\n\n20\n\t\n中枢目录审批\n\t\n目录中枢审核\n\t\ncatahub_catalogue\n\t\nv.1\n\t\n2025-05-21 18:10:50\n\t\n2026-08-25 14:04:03\n\t\n启用\n\t\n\t\n版本部署\n版本管理\n复制模型\n禁用\n共 25 条\n12\n前往页"
+}

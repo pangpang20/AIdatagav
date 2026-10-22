@@ -1,0 +1,302 @@
+{
+  "time": "2026-10-22T11:17:15.474Z",
+  "url": "/datasource/dataSource/driveList",
+  "title": "数据源管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n驱动管理\n查询重置\n序号\t驱动名称\t驱动分类\t是否支持测试连接\t模板类型\t是否初始化数据\t创建时间\n\t操作\t\n1\n\t\nYaShanDB\n\t\nYashanDB\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-10 18:04:11\n\t\n\n\n2\n\t\nApi\n\t\nAPI\n\t\n否\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n3\n\t\nMrs-kafka\n\t\nKafka\n\t\n否\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n4\n\t\nETL_flinkjar\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n5\n\t\nETL_flinksql\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n6\n\t\nETL_Sparkjar\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n7\n\t\nETL_Sparksql\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n8\n\t\nSFTP(shell)\n\t\nSFTP\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:07:18\n\t\n\n\n9\n\t\nSFTP(Python)\n\t\nSFTP\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:07:18\n\t\n\n\n10\n\t\nETL_Oracle大数据\n\t\nOracle大数据\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:38:51\n\t\n\n\n11\n\t\nETL_石原子大数据\n\t\n石原子大数据\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:37:43\n\t\n\n\n12\n\t\nGaussDB-HWY\n\t\nGaussDB-HWY\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:32:59\n\t\n\n\n13\n\t\nPostgreSqlSSL\n\t\nPostgreSql(ssl)\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:30:51\n\t\n\n\n14\n\t\nOracle_ssl\n\t\nOracle(ssl)\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 11:51:50\n\t\n\n\n15\n\t\nETL_人大金仓KingbaseAnalyticsDB\n\t\n人大金仓KingbaseAnalyticsDB\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 11:48:36\n\t\n\n\n16\n\t\nETL_达梦大数据\n\t\n达梦大数据\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:48:58\n\t\n\n\n17\n\t\nETL_百度大数据平台\n\t\n百度大数据平台\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:53:23\n\t\n\n\n18\n\t\nETL_京东大数据平台\n\t\n京东大数据平台\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:55:56\n\t\n\n\n19\n\t\nETL_腾讯大数据平台\n\t\n腾讯大数据平台\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:57:18\n\t\n\n\n20\n\t\nETL_腾讯TBASE\n\t\n腾讯TBASE\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 11:00:33\n\t\n共 45 条\n123\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入驱动名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择是否初始化数据",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "3",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Z-DS-000-entry",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "驱动名称",
+    "驱动分类",
+    "是否支持测试连接",
+    "模板类型",
+    "是否初始化数据",
+    "创建时间",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "YaShanDB",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Api",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Mrs-kafka",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_flinkjar",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_flinksql",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_Sparkjar",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_Sparksql",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "SFTP(shell)",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "SFTP(Python)",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_Oracle大数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_石原子大数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "GaussDB-HWY",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "PostgreSqlSSL",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "Oracle_ssl",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_人大金仓KingbaseAnalyticsDB",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_达梦大数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_百度大数据平台",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_京东大数据平台",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_腾讯大数据平台",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "ETL_腾讯TBASE",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n驱动管理\n查询重置\n序号\t驱动名称\t驱动分类\t是否支持测试连接\t模板类型\t是否初始化数据\t创建时间\n\t操作\t\n1\n\t\nYaShanDB\n\t\nYashanDB\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-10 18:04:11\n\t\n\n\n2\n\t\nApi\n\t\nAPI\n\t\n否\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n3\n\t\nMrs-kafka\n\t\nKafka\n\t\n否\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n4\n\t\nETL_flinkjar\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n5\n\t\nETL_flinksql\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n6\n\t\nETL_Sparkjar\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n7\n\t\nETL_Sparksql\n\t\n华为MRS\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:52:13\n\t\n\n\n8\n\t\nSFTP(shell)\n\t\nSFTP\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:07:18\n\t\n\n\n9\n\t\nSFTP(Python)\n\t\nSFTP\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:07:18\n\t\n\n\n10\n\t\nETL_Oracle大数据\n\t\nOracle大数据\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:38:51\n\t\n\n\n11\n\t\nETL_石原子大数据\n\t\n石原子大数据\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:37:43\n\t\n\n\n12\n\t\nGaussDB-HWY\n\t\nGaussDB-HWY\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:32:59\n\t\n\n\n13\n\t\nPostgreSqlSSL\n\t\nPostgreSql(ssl)\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 14:30:51\n\t\n\n\n14\n\t\nOracle_ssl\n\t\nOracle(ssl)\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-13 11:51:50\n\t\n\n\n15\n\t\nETL_人大金仓KingbaseAnalyticsDB\n\t\n人大金仓KingbaseAnalyticsDB\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 11:48:36\n\t\n\n\n16\n\t\nETL_达梦大数据\n\t\n达梦大数据\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:48:58\n\t\n\n\n17\n\t\nETL_百度大数据平台\n\t\n百度大数据平台\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:53:23\n\t\n\n\n18\n\t\nETL_京东大数据平台\n\t\n京东大数据平台\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:55:56\n\t\n\n\n19\n\t\nETL_腾讯大数据平台\n\t\n腾讯大数据平台\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 10:57:18\n\t\n\n\n20\n\t\nETL_腾讯TBASE\n\t\n腾讯TBASE\n\t\n是\n\t\n内置\n\t\n是\n\t\n2023-10-11 11:00:33\n\t\n共 45 条\n123\n前往页"
+}

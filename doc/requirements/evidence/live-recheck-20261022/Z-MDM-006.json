@@ -1,0 +1,853 @@
+{
+  "time": "2026-10-22T11:17:39.419Z",
+  "url": "/mdm/metadata/manage/metaTableList",
+  "title": "元数据管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n元数据信息\n按库分类\n达梦B\n表(104)\n视图(7)\n存储过程(21)\n函数(38)\n达梦A\nPostgreSQL PostGIS-TEST\nmysql106\nZFX演示数据源_目标库\nZFX演示数据源_源库\nhive_sql计算引擎\nMRS-Presto\n172.16.1.40\n按部门分类\n查询重置\n批量编辑\n导出\n\t序号\t表名称\t表名备注\t主键\t字段数量\t数据量\t更新周期\t操作\t\n\t\n1\n\t\nMETA_VERSION\n\t\n版本变更记录\n\t\nID\n\t\n21\n\t\n413\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n2\n\t\nMETA_CHANGE_JOB\n\t\n采集任务表\n\t\nID\n\t\n19\n\t\n8\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n3\n\t\nMETA_MAPPING_COLUMN_HISTORY\n\t\n列级链路历史\n\t\nID\n\t\n23\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n4\n\t\nDMS_TABLE\n\t\n表信息\n\t\n\t\n30\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n5\n\t\nDMS_DSS_CLASSIFICATION\n\t\n标准目录分类\n\t\nID\n\t\n19\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n6\n\t\nQRTZ_PAUSED_TRIGGER_GRPS\n\t\n\t\nSCHED_NAME,TRIGGER_GROUP\n\t\n2\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n7\n\t\nQRTZ_TRIGGERS\n\t\n\t\nSCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP\n\t\n16\n\t\n8\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n8\n\t\nMETA_VIEW\n\t\n视图表\n\t\nID\n\t\n19\n\t\n10\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n9\n\t\nDMS_COMPARE_RPT\n\t\n对比报告表\n\t\n\t\n22\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n10\n\t\nDMS_MD_MTRL_DETAIL\n\t\n模型物化历史明细表\n\t\nID\n\t\n47\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n11\n\t\nMETA_INDEX_HISTORY\n\t\n索引历史表\n\t\nID\n\t\n24\n\t\n494\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n12\n\t\nQRTZ_FIRED_TRIGGERS\n\t\n\t\nSCHED_NAME,ENTRY_ID\n\t\n13\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n13\n\t\nMETA_APPLY_TABLE\n\t\n元数据变更记录\n\t\nID\n\t\n14\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n14\n\t\nMETA_PROCEDURE\n\t\n存储过程表\n\t\nID\n\t\n20\n\t\n75\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n15\n\t\nDMS_STD_DATA_EL_CODE\n\t\n标准数据元编码表\n\t\nID\n\t\n22\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n16\n\t\nDMS_COMPARE_CONSTRAINT\n\t\n关系对比表\n\t\n\t\n45\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n17\n\t\nMETA_TRIGGER\n\t\n触发器\n\t\nID\n\t\n22\n\t\n1\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n18\n\t\nQRTZ_CALENDARS\n\t\n\t\nSCHED_NAME,CALENDAR_NAME\n\t\n3\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n19\n\t\nDMS_STD_REF_TREND\n\t\n标准引用趋势表\n\t\nID\n\t\n18\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n20\n\t\nDMS_DSS_INDICATOR_ITEM\n\t\n指标项-来源标准系统\n\t\nID\n\t\n37\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n共 104 条\n123456\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "搜索...",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "表名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "是否编辑",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "6",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Z-MDM-006",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "表名称",
+    "表名备注",
+    "主键",
+    "字段数量",
+    "数据量",
+    "更新周期",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "批量编辑",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate mdm-bianjihuoxiugai"
+    },
+    {
+      "text": "导出",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate mdm-daochu"
+    },
+    {
+      "text": "META_VERSION",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "21",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "业务信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "数据字典",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "变更信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "META_CHANGE_JOB",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "19",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "META_MAPPING_COLUMN_HISTORY",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "23",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_TABLE",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "30",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_DSS_CLASSIFICATION",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "QRTZ_PAUSED_TRIGGER_GRPS",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "2",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "QRTZ_TRIGGERS",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "16",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "META_VIEW",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_COMPARE_RPT",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "22",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_MD_MTRL_DETAIL",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "47",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "META_INDEX_HISTORY",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "24",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "QRTZ_FIRED_TRIGGERS",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "13",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "META_APPLY_TABLE",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "14",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "META_PROCEDURE",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "20",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_STD_DATA_EL_CODE",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_COMPARE_CONSTRAINT",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "45",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "META_TRIGGER",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "QRTZ_CALENDARS",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "3",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_STD_REF_TREND",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "18",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "DMS_DSS_INDICATOR_ITEM",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "37",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "采集管理",
+    "变更管理",
+    "版本管理",
+    "异常监控",
+    "调度策略管理",
+    "元数据信息",
+    "数据地图",
+    "血缘分析",
+    "影响分析",
+    "映射管理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n元数据信息\n按库分类\n达梦B\n表(104)\n视图(7)\n存储过程(21)\n函数(38)\n达梦A\nPostgreSQL PostGIS-TEST\nmysql106\nZFX演示数据源_目标库\nZFX演示数据源_源库\nhive_sql计算引擎\nMRS-Presto\n172.16.1.40\n按部门分类\n查询重置\n批量编辑\n导出\n\t序号\t表名称\t表名备注\t主键\t字段数量\t数据量\t更新周期\t操作\t\n\t\n1\n\t\nMETA_VERSION\n\t\n版本变更记录\n\t\nID\n\t\n21\n\t\n413\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n2\n\t\nMETA_CHANGE_JOB\n\t\n采集任务表\n\t\nID\n\t\n19\n\t\n8\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n3\n\t\nMETA_MAPPING_COLUMN_HISTORY\n\t\n列级链路历史\n\t\nID\n\t\n23\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n4\n\t\nDMS_TABLE\n\t\n表信息\n\t\n\t\n30\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n5\n\t\nDMS_DSS_CLASSIFICATION\n\t\n标准目录分类\n\t\nID\n\t\n19\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n6\n\t\nQRTZ_PAUSED_TRIGGER_GRPS\n\t\n\t\nSCHED_NAME,TRIGGER_GROUP\n\t\n2\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n7\n\t\nQRTZ_TRIGGERS\n\t\n\t\nSCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP\n\t\n16\n\t\n8\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n8\n\t\nMETA_VIEW\n\t\n视图表\n\t\nID\n\t\n19\n\t\n10\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n9\n\t\nDMS_COMPARE_RPT\n\t\n对比报告表\n\t\n\t\n22\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n10\n\t\nDMS_MD_MTRL_DETAIL\n\t\n模型物化历史明细表\n\t\nID\n\t\n47\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n11\n\t\nMETA_INDEX_HISTORY\n\t\n索引历史表\n\t\nID\n\t\n24\n\t\n494\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n12\n\t\nQRTZ_FIRED_TRIGGERS\n\t\n\t\nSCHED_NAME,ENTRY_ID\n\t\n13\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n13\n\t\nMETA_APPLY_TABLE\n\t\n元数据变更记录\n\t\nID\n\t\n14\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n14\n\t\nMETA_PROCEDURE\n\t\n存储过程表\n\t\nID\n\t\n20\n\t\n75\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n15\n\t\nDMS_STD_DATA_EL_CODE\n\t\n标准数据元编码表\n\t\nID\n\t\n22\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n16\n\t\nDMS_COMPARE_CONSTRAINT\n\t\n关系对比表\n\t\n\t\n45\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n17\n\t\nMETA_TRIGGER\n\t\n触发器\n\t\nID\n\t\n22\n\t\n1\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n18\n\t\nQRTZ_CALENDARS\n\t\n\t\nSCHED_NAME,CALENDAR_NAME\n\t\n3\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n19\n\t\nDMS_STD_REF_TREND\n\t\n标准引用趋势表\n\t\nID\n\t\n18\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n\n\n\t\n20\n\t\nDMS_DSS_INDICATOR_ITEM\n\t\n指标项-来源标准系统\n\t\nID\n\t\n37\n\t\n0\n\t\n-\n\t\n业务信息\n数据字典\n变更信息\n共 104 条\n123456\n前往页"
+}

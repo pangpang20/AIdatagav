@@ -1,0 +1,339 @@
+[
+  {
+    "code": "DCS",
+    "name": "目录管理系统",
+    "source": "E038-catalog",
+    "entry": "Q-DCS-000-entry",
+    "discoveredAt": "2026-10-22T11:27:23.976Z",
+    "links": [
+      {
+        "name": "机构内部统计分析",
+        "hierarchy": "服务统计 → 机构内部统计分析",
+        "occurrence": 0,
+        "id": "Q-DCS-001",
+        "status": "opened-review-content",
+        "path": "/dcs/analyze/internal",
+        "evidence": "Q-DCS-001",
+        "operations": []
+      },
+      {
+        "name": "所有机构统计分析",
+        "hierarchy": "服务统计 → 所有机构统计分析",
+        "occurrence": 0,
+        "id": "Q-DCS-002",
+        "status": "opened-review-content",
+        "path": "/dcs/analyze/agency",
+        "evidence": "Q-DCS-002",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "资源编目 → 目录管理 → · 资源管理",
+        "occurrence": 0,
+        "id": "Q-DCS-003",
+        "status": "opened-review-content",
+        "path": "/dcs/resources/list",
+        "evidence": "Q-DCS-003",
+        "operations": []
+      },
+      {
+        "name": "· 目录管理",
+        "hierarchy": "资源编目 → 目录管理 → · 目录管理",
+        "occurrence": 0,
+        "id": "Q-DCS-004",
+        "status": "opened-review-content",
+        "path": "/dcs/catalogue/list",
+        "evidence": "Q-DCS-004",
+        "operations": []
+      },
+      {
+        "name": "· 我发起的流程",
+        "hierarchy": "资源编目 → 流程审批 → · 我发起的流程",
+        "occurrence": 0,
+        "id": "Q-DCS-005",
+        "status": "opened-review-content",
+        "path": "/dcs/catalogue/initiate",
+        "evidence": "Q-DCS-005",
+        "operations": []
+      },
+      {
+        "name": "· 我处理的流程",
+        "hierarchy": "资源编目 → 流程审批 → · 我处理的流程",
+        "occurrence": 0,
+        "id": "Q-DCS-006",
+        "status": "opened-review-content",
+        "path": "/dcs/catalogue/handle",
+        "evidence": "Q-DCS-006",
+        "operations": []
+      },
+      {
+        "name": "· 业务管理",
+        "hierarchy": "资源编目 → 系统管理 → · 业务管理",
+        "occurrence": 0,
+        "id": "Q-DCS-007",
+        "status": "opened-review-content",
+        "path": "/dcs/systemManagement/businessList",
+        "evidence": "Q-DCS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Q-DCS-007-op1",
+            "path": "/dcs/systemManagement/businessEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "Q-DCS-007-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 事项管理",
+        "hierarchy": "资源编目 → 系统管理 → · 事项管理",
+        "occurrence": 0,
+        "id": "Q-DCS-008",
+        "status": "opened-review-content",
+        "path": "/dcs/systemManagement/matterList",
+        "evidence": "Q-DCS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Q-DCS-008-op1",
+            "path": "/dcs/systemManagement/matterEdit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "Q-DCS-008-op1-options0",
+              "Q-DCS-008-op1-options1",
+              "Q-DCS-008-op1-options2",
+              "Q-DCS-008-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 应用系统管理",
+        "hierarchy": "资源编目 → 系统管理 → · 应用系统管理",
+        "occurrence": 0,
+        "id": "Q-DCS-009",
+        "status": "opened-review-content",
+        "path": "/dcs/applicationManagement/applicationManagement",
+        "evidence": "Q-DCS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Q-DCS-009-op1",
+            "path": "/dcs/applicationManagement/applicationEdit",
+            "selectControls": 6,
+            "optionEvidence": [
+              "Q-DCS-009-op1-options0",
+              "Q-DCS-009-op1-options1",
+              "Q-DCS-009-op1-options2"
+            ],
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "目录上报审核",
+        "hierarchy": "上报管理 → 目录上报审核",
+        "occurrence": 0,
+        "id": "Q-DCS-010",
+        "status": "opened-review-content",
+        "path": "/dcs/dirApproval/list",
+        "evidence": "Q-DCS-010",
+        "operations": []
+      },
+      {
+        "name": "机构接入管理",
+        "hierarchy": "上报管理 → 机构接入管理",
+        "occurrence": 0,
+        "id": "Q-DCS-011",
+        "status": "opened-review-content",
+        "path": "/dcs/access/limitList",
+        "evidence": "Q-DCS-011",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Q-DCS-011-op1",
+            "path": "/dcs/access/limitEdit",
+            "selectControls": 5,
+            "optionEvidence": [
+              "Q-DCS-011-op1-options0",
+              "Q-DCS-011-op1-options1",
+              "Q-DCS-011-op1-options2",
+              "Q-DCS-011-op1-options3",
+              "Q-DCS-011-op1-options4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "目录分类管理",
+        "hierarchy": "上报管理 → 目录分类管理",
+        "occurrence": 0,
+        "id": "Q-DCS-012",
+        "status": "opened-review-content",
+        "path": "/dcs/category/manageList",
+        "evidence": "Q-DCS-012",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "Q-DCS-012-op1",
+            "path": "/dcs/category/manageList",
+            "selectControls": 1,
+            "optionEvidence": [
+              "Q-DCS-012-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 级联目录中心",
+        "hierarchy": "目录中心 → 目录中心 → · 级联目录中心",
+        "occurrence": 0,
+        "id": "Q-DCS-013",
+        "status": "opened-review-content",
+        "path": "/dcs/cataCenter/list",
+        "evidence": "Q-DCS-013",
+        "operations": []
+      },
+      {
+        "name": "· 部门目录中心",
+        "hierarchy": "目录中心 → 目录中心 → · 部门目录中心",
+        "occurrence": 0,
+        "id": "Q-DCS-014",
+        "status": "opened-review-content",
+        "path": "/dcs/deptCataCenter/list",
+        "evidence": "Q-DCS-014",
+        "operations": []
+      },
+      {
+        "name": "· 责任清单",
+        "hierarchy": "目录中心 → 清单管理 → · 责任清单",
+        "occurrence": 0,
+        "id": "Q-DCS-015",
+        "status": "opened-review-content",
+        "path": "/dcs/inventory/duty",
+        "evidence": "Q-DCS-015",
+        "operations": []
+      },
+      {
+        "name": "· 负面清单",
+        "hierarchy": "目录中心 → 清单管理 → · 负面清单",
+        "occurrence": 0,
+        "id": "Q-DCS-016",
+        "status": "opened-review-content",
+        "path": "/dcs/inventory/negative",
+        "evidence": "Q-DCS-016",
+        "operations": []
+      },
+      {
+        "name": "· 我订阅的目录",
+        "hierarchy": "目录中心 → 我的目录 → · 我订阅的目录",
+        "occurrence": 0,
+        "id": "Q-DCS-017",
+        "status": "opened-review-content",
+        "path": "/dcs/myCatalogue/applyList",
+        "evidence": "Q-DCS-017",
+        "operations": []
+      },
+      {
+        "name": "· 我收藏的目录",
+        "hierarchy": "目录中心 → 我的目录 → · 我收藏的目录",
+        "occurrence": 0,
+        "id": "Q-DCS-018",
+        "status": "opened-review-content",
+        "path": "/dcs/myCatalogue/favorite",
+        "evidence": "Q-DCS-018",
+        "operations": []
+      },
+      {
+        "name": "· 我发起的流程",
+        "hierarchy": "目录中心 → 流程审批 → · 我发起的流程",
+        "occurrence": 1,
+        "id": "Q-DCS-019",
+        "status": "opened-review-content",
+        "path": "/dcs/processApprove/initiateList",
+        "evidence": "Q-DCS-019",
+        "operations": []
+      },
+      {
+        "name": "· 我处理的流程",
+        "hierarchy": "目录中心 → 流程审批 → · 我处理的流程",
+        "occurrence": 1,
+        "id": "Q-DCS-020",
+        "status": "opened-review-content",
+        "path": "/dcs/processApprove/handleList",
+        "evidence": "Q-DCS-020",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSPA",
+    "name": "数据服务门户后台管理",
+    "source": "E042-portal-admin",
+    "entry": "Q-GSPA-000-entry",
+    "discoveredAt": "2026-10-22T11:33:31.521Z",
+    "links": [
+      {
+        "name": "快捷入口管理",
+        "hierarchy": "政务共享门户后台管理 → 快捷入口管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-001",
+        "status": "pending"
+      },
+      {
+        "name": "知识管理",
+        "hierarchy": "政务共享门户后台管理 → 知识管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-002",
+        "status": "pending"
+      },
+      {
+        "name": "· 栏目管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 栏目管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-003",
+        "status": "pending"
+      },
+      {
+        "name": "· 布局管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-004",
+        "status": "pending"
+      },
+      {
+        "name": "· 版块管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 版块管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-005",
+        "status": "pending"
+      },
+      {
+        "name": "· 内容管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 内容管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-006",
+        "status": "pending"
+      },
+      {
+        "name": "模板管理",
+        "hierarchy": "政务共享门户后台管理 → 模板管理",
+        "occurrence": 0,
+        "id": "Q-GSPA-007",
+        "status": "pending"
+      }
+    ]
+  }
+]

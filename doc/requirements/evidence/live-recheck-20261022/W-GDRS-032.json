@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-22T11:13:51.902Z",
+  "url": "/gdrs/help/helpCenter",
+  "title": "",
+  "text": "消息通知\n工作台\n数据运营平台\n数据运营平台\n首页\n直报管理\n数据上报\n审核管理\n上报统计\n帮助\n消息",
+  "controls": [],
+  "headings": [],
+  "frames": [],
+  "id": "W-GDRS-032",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "首页",
+    "审核管理",
+    "帮助",
+    "消息"
+  ],
+  "content": "消息通知\n工作台\n数据运营平台\n数据运营平台\n首页\n直报管理\n数据上报\n审核管理\n上报统计\n帮助\n消息"
+}

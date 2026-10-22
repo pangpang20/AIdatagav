@@ -1,0 +1,4030 @@
+{
+  "source": "visible-controlled-chrome",
+  "readOnly": true,
+  "businessWritesExecuted": false,
+  "samples": [
+    {
+      "id": "L-DIS-000-entry",
+      "time": "2026-10-22T10:13:04.784Z",
+      "url": "/dis/home",
+      "image": "evidence/live-recheck-20261022/L-DIS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-000-entry.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-DIS-001",
+      "time": "2026-10-22T10:13:15.790Z",
+      "url": "/dis/home",
+      "image": "evidence/live-recheck-20261022/L-DIS-001.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-002",
+      "time": "2026-10-22T10:13:23.733Z",
+      "url": "/dis/taskManagement/dataAcquisition/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-002.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-003",
+      "time": "2026-10-22T10:13:32.158Z",
+      "url": "/dis/taskManagement/libraryMigration/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-003.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-004",
+      "time": "2026-10-22T10:13:39.986Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/public",
+      "image": "evidence/live-recheck-20261022/L-DIS-004.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-005",
+      "time": "2026-10-22T10:13:48.555Z",
+      "url": "/dis/taskManagement/fileAcquisition/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-005.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-006",
+      "time": "2026-10-22T10:13:56.850Z",
+      "url": "/dis/taskManagement/realTimeAcquisition/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-006.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-007",
+      "time": "2026-10-22T10:14:05.416Z",
+      "url": "/dis/taskManagement/kafkaAcquisition/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-007.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-008",
+      "time": "2026-10-22T10:14:13.831Z",
+      "url": "/dis/taskMonitoring/taskMonitoring/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-008.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-009",
+      "time": "2026-10-22T10:14:21.596Z",
+      "url": "/dis/taskMonitoring/abnormal/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-009.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-009.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-010",
+      "time": "2026-10-22T10:14:28.924Z",
+      "url": "/dis/taskMonitoring/dataReconciliation/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-010.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-011",
+      "time": "2026-10-22T10:14:37.239Z",
+      "url": "/dis/taskMonitoring/repairdata/list",
+      "image": "evidence/live-recheck-20261022/L-DIS-011.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-011.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DIS-012",
+      "time": "2026-10-22T10:14:45.442Z",
+      "url": "/dis/integratedAnalysis/taskAnalysis",
+      "image": "evidence/live-recheck-20261022/L-DIS-012.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-012.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-DIS-013",
+      "time": "2026-10-22T10:14:53.379Z",
+      "url": "/dis/integratedAnalysis/dataAnalysis",
+      "image": "evidence/live-recheck-20261022/L-DIS-013.png",
+      "metadata": "evidence/live-recheck-20261022/L-DIS-013.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-DMS-000-entry",
+      "time": "2026-10-22T10:18:55.206Z",
+      "url": "/dms/modelManagement/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DMS-001",
+      "time": "2026-10-22T10:19:06.772Z",
+      "url": "/dms/modelManagement/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DMS-002",
+      "time": "2026-10-22T10:19:15.383Z",
+      "url": "/dms/materialization/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DMS-003",
+      "time": "2026-10-22T10:19:23.362Z",
+      "url": "/dms/modelAnalysis/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DMS-004",
+      "time": "2026-10-22T10:19:31.648Z",
+      "url": "/dms/statistics/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DMS-005",
+      "time": "2026-10-22T10:19:39.858Z",
+      "url": "/dms/configure/devEnvironment/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-DMS-006",
+      "time": "2026-10-22T10:19:47.997Z",
+      "url": "/dms/configure/modelPro/list",
+      "image": "evidence/live-recheck-20261022/L-DMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/L-DMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-000-entry",
+      "time": "2026-10-22T10:22:23.370Z",
+      "url": "/gdrs/index/indexInfo",
+      "image": "evidence/live-recheck-20261022/L-GDRS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-001",
+      "time": "2026-10-22T10:22:34.054Z",
+      "url": "/gdrs/index/indexInfo",
+      "image": "evidence/live-recheck-20261022/L-GDRS-001.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-003",
+      "time": "2026-10-22T10:22:49.797Z",
+      "url": "/gdrs/gdrs/structFormManage",
+      "image": "evidence/live-recheck-20261022/L-GDRS-003.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-004",
+      "time": "2026-10-22T10:23:05.517Z",
+      "url": "/gdrs/gdrs/structTemplateManage",
+      "image": "evidence/live-recheck-20261022/L-GDRS-004.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-008-op1",
+      "time": "2026-10-22T10:23:31.934Z",
+      "url": "/gdrs/gdrs/configManageEdit",
+      "image": "evidence/live-recheck-20261022/L-GDRS-008-op1.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-008-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-008",
+      "time": "2026-10-22T10:23:21.285Z",
+      "url": "/gdrs/gdrs/configManage",
+      "image": "evidence/live-recheck-20261022/L-GDRS-008.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-GDRS-009-op1",
+      "time": "2026-10-22T10:24:08.894Z",
+      "url": "/gdrs/gdrs/configManageEdit",
+      "image": "evidence/live-recheck-20261022/L-GDRS-009-op1.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-009-op1.json",
+      "targetValid": false,
+      "limitation": "目标类别页未加载，点击的仍为选项配置表单，不证明类别新增。"
+    },
+    {
+      "id": "L-GDRS-009",
+      "time": "2026-10-22T10:23:58.199Z",
+      "url": "/gdrs/gdrs/categoryManage",
+      "image": "evidence/live-recheck-20261022/L-GDRS-009.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-009.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-015",
+      "time": "2026-10-22T10:24:25.162Z",
+      "url": "/gdrs/report/structBatchReportManage",
+      "image": "evidence/live-recheck-20261022/L-GDRS-015.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-015.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-016",
+      "time": "2026-10-22T10:24:35.851Z",
+      "url": "/gdrs/approve/structApproveManage",
+      "image": "evidence/live-recheck-20261022/L-GDRS-016.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-016.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-017",
+      "time": "2026-10-22T10:24:46.540Z",
+      "url": "/gdrs/statistics/reportTaskStatistics",
+      "image": "evidence/live-recheck-20261022/L-GDRS-017.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-017.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-018",
+      "time": "2026-10-22T10:24:57.253Z",
+      "url": "/gdrs/statistics/structReportStatistics",
+      "image": "evidence/live-recheck-20261022/L-GDRS-018.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-018.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-019",
+      "time": "2026-10-22T10:25:07.947Z",
+      "url": "/gdrs/statistics/unstructReportStatistics",
+      "image": "evidence/live-recheck-20261022/L-GDRS-019.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-019.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-020",
+      "time": "2026-10-22T10:25:20.957Z",
+      "url": "/gdrs/help/helpCenter",
+      "image": "evidence/live-recheck-20261022/L-GDRS-020.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-020.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-GDRS-021",
+      "time": "2026-10-22T10:25:33.308Z",
+      "url": "/gdrs/message/public",
+      "image": "evidence/live-recheck-20261022/L-GDRS-021.png",
+      "metadata": "evidence/live-recheck-20261022/L-GDRS-021.json",
+      "targetValid": false,
+      "limitation": "路由已变化但正文仍为选项配置新增，不能证明目标页面。"
+    },
+    {
+      "id": "L-SMS-000-entry",
+      "time": "2026-10-22T10:15:10.016Z",
+      "url": "/sms/home",
+      "image": "evidence/live-recheck-20261022/L-SMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-000-entry.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-SMS-001",
+      "time": "2026-10-22T10:15:19.032Z",
+      "url": "/sms/home",
+      "image": "evidence/live-recheck-20261022/L-SMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-002",
+      "time": "2026-10-22T10:15:27.091Z",
+      "url": "/sms/develop/taskDevelop",
+      "image": "evidence/live-recheck-20261022/L-SMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-002.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-SMS-003",
+      "time": "2026-10-22T10:15:34.716Z",
+      "url": "/sms/schedule/manage/scheduleList",
+      "image": "evidence/live-recheck-20261022/L-SMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-004",
+      "time": "2026-10-22T10:15:42.551Z",
+      "url": "/sms/schedule/monitor/monitorList",
+      "image": "evidence/live-recheck-20261022/L-SMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-005",
+      "time": "2026-10-22T10:15:50.159Z",
+      "url": "/sms/schedule/monitor/realtime",
+      "image": "evidence/live-recheck-20261022/L-SMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-006",
+      "time": "2026-10-22T10:15:58.655Z",
+      "url": "/sms/schedule/alarm/messageList",
+      "image": "evidence/live-recheck-20261022/L-SMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-007",
+      "time": "2026-10-22T10:16:07.147Z",
+      "url": "/sms/schedule/alarm/pushList",
+      "image": "evidence/live-recheck-20261022/L-SMS-007.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-008",
+      "time": "2026-10-22T10:16:15.754Z",
+      "url": "/sms/resource/collectionList",
+      "image": "evidence/live-recheck-20261022/L-SMS-008.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-009",
+      "time": "2026-10-22T10:16:23.361Z",
+      "url": "/sms/dtm/home",
+      "image": "evidence/live-recheck-20261022/L-SMS-009.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-009.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-010",
+      "time": "2026-10-22T10:16:31.545Z",
+      "url": "/sms/resource/functionList",
+      "image": "evidence/live-recheck-20261022/L-SMS-010.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-010.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-SMS-011",
+      "time": "2026-10-22T10:16:39.576Z",
+      "url": "/sms/resource/scriptList",
+      "image": "evidence/live-recheck-20261022/L-SMS-011.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-011.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-012",
+      "time": "2026-10-22T10:16:48.159Z",
+      "url": "/gldm/process/standard/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-012.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-012.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-013",
+      "time": "2026-10-22T10:16:56.182Z",
+      "url": "/gldm/develop/atomic/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-013.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-013.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-014",
+      "time": "2026-10-22T10:17:04.735Z",
+      "url": "/gldm/develop/integration/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-014.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-014.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-015",
+      "time": "2026-10-22T10:17:12.864Z",
+      "url": "/gldm/develop/theme/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-015.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-015.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-016",
+      "time": "2026-10-22T10:17:20.757Z",
+      "url": "/gldm/develop/application/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-016.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-016.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-017",
+      "time": "2026-10-22T10:17:28.650Z",
+      "url": "/gldm/rule/standardCodeSet/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-017.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-017.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-018",
+      "time": "2026-10-22T10:17:36.642Z",
+      "url": "/gldm/rule/sourceSystemCodeSet/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-018.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-018.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-019",
+      "time": "2026-10-22T10:17:45.053Z",
+      "url": "/gldm/rule/mappingManage/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-019.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-019.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-020",
+      "time": "2026-10-22T10:17:52.816Z",
+      "url": "/gldm/rule/functionRule/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-020.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-020.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-021",
+      "time": "2026-10-22T10:18:00.894Z",
+      "url": "/gldm/rule/package/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-021.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-021.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-022",
+      "time": "2026-10-22T10:18:09.054Z",
+      "url": "/gldm/init/list",
+      "image": "evidence/live-recheck-20261022/L-SMS-022.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-022.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-SMS-023",
+      "time": "2026-10-22T10:18:16.305Z",
+      "url": "/sms/statistics/task",
+      "image": "evidence/live-recheck-20261022/L-SMS-023.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-023.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "L-SMS-024",
+      "time": "2026-10-22T10:18:24.468Z",
+      "url": "/sms/system/systemNodeList",
+      "image": "evidence/live-recheck-20261022/L-SMS-024.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-024.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-025",
+      "time": "2026-10-22T10:18:32.860Z",
+      "url": "/sms/system/compenontManage",
+      "image": "evidence/live-recheck-20261022/L-SMS-025.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-025.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "L-SMS-026",
+      "time": "2026-10-22T10:18:41.388Z",
+      "url": "/sms/initialize/componentList",
+      "image": "evidence/live-recheck-20261022/L-SMS-026.png",
+      "metadata": "evidence/live-recheck-20261022/L-SMS-026.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-000-entry",
+      "time": "2026-10-22T11:31:30.036Z",
+      "url": "/dop/dbms/requirement/overview/chart",
+      "image": "evidence/live-recheck-20261022/P-DBMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-000-entry.json",
+      "targetValid": false,
+      "limitation": "页面正文为空，未取得目标内容。"
+    },
+    {
+      "id": "P-DBMS-001",
+      "time": "2026-10-22T11:31:49.201Z",
+      "url": "/dop/dbms/requirement/overview/chart",
+      "image": "evidence/live-recheck-20261022/P-DBMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-002-op1",
+      "time": "2026-10-22T11:31:58.839Z",
+      "url": "/dop/dbms/requirement/prepare/office/editSubject",
+      "image": "evidence/live-recheck-20261022/P-DBMS-002-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-002-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-002",
+      "time": "2026-10-22T11:31:56.543Z",
+      "url": "/dop/dbms/requirement/prepare/office",
+      "image": "evidence/live-recheck-20261022/P-DBMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-003-op1-options0",
+      "time": "2026-10-22T11:32:14.322Z",
+      "url": "/dop/dbms/requirement/prepare/team/edit",
+      "image": "evidence/live-recheck-20261022/P-DBMS-003-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-003-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-003-op1",
+      "time": "2026-10-22T11:32:13.863Z",
+      "url": "/dop/dbms/requirement/prepare/team/edit",
+      "image": "evidence/live-recheck-20261022/P-DBMS-003-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-003-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-003",
+      "time": "2026-10-22T11:32:09.952Z",
+      "url": "/dop/dbms/requirement/prepare/team",
+      "image": "evidence/live-recheck-20261022/P-DBMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-004-op1",
+      "time": "2026-10-22T11:32:59.080Z",
+      "url": "/dop/dbms/requirement/prepare/referenceFile",
+      "image": "evidence/live-recheck-20261022/P-DBMS-004-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-004-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-004",
+      "time": "2026-10-22T11:32:55.288Z",
+      "url": "/dop/dbms/requirement/prepare/referenceFile",
+      "image": "evidence/live-recheck-20261022/P-DBMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-005",
+      "time": "2026-10-22T11:33:17.882Z",
+      "url": "/dop/dbms/requirement/plan/milepost",
+      "image": "evidence/live-recheck-20261022/P-DBMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-006-op1-options0",
+      "time": "2026-10-22T11:33:30.728Z",
+      "url": "/dop/dbms/requirement/plan/list/edit",
+      "image": "evidence/live-recheck-20261022/P-DBMS-006-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-006-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-006-op1-options1",
+      "time": "2026-10-22T11:33:31.233Z",
+      "url": "/dop/dbms/requirement/plan/list/edit",
+      "image": "evidence/live-recheck-20261022/P-DBMS-006-op1-options1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-006-op1-options1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-006-op1-options2",
+      "time": "2026-10-22T11:33:31.716Z",
+      "url": "/dop/dbms/requirement/plan/list/edit",
+      "image": "evidence/live-recheck-20261022/P-DBMS-006-op1-options2.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-006-op1-options2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-006-op1",
+      "time": "2026-10-22T11:33:30.252Z",
+      "url": "/dop/dbms/requirement/plan/list/edit",
+      "image": "evidence/live-recheck-20261022/P-DBMS-006-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-006-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DBMS-006",
+      "time": "2026-10-22T11:33:27.844Z",
+      "url": "/dop/dbms/requirement/plan/list",
+      "image": "evidence/live-recheck-20261022/P-DBMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/P-DBMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-000-entry",
+      "time": "2026-10-22T11:29:04.677Z",
+      "url": "/drms/kanban",
+      "image": "evidence/live-recheck-20261022/P-DRMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-001",
+      "time": "2026-10-22T11:29:29.098Z",
+      "url": "/drms/kanban",
+      "image": "evidence/live-recheck-20261022/P-DRMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-002-op1-options0",
+      "time": "2026-10-22T11:29:34.246Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-002-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-002-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-002-op1",
+      "time": "2026-10-22T11:29:33.750Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-002-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-002-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-002-op2",
+      "time": "2026-10-22T11:29:45.697Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-002-op2.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-002-op2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-002",
+      "time": "2026-10-22T11:29:31.495Z",
+      "url": "/drms/project/my",
+      "image": "evidence/live-recheck-20261022/P-DRMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-003-op1-options0",
+      "time": "2026-10-22T11:30:17.904Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-003-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-003-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-003-op1",
+      "time": "2026-10-22T11:30:17.452Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-003-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-003-op1.json",
+      "targetValid": false,
+      "limitation": "需求新增的截图、正文实际为新增项目，不能证明新增需求目标。"
+    },
+    {
+      "id": "P-DRMS-003",
+      "time": "2026-10-22T11:30:14.088Z",
+      "url": "/drms/requirement/my",
+      "image": "evidence/live-recheck-20261022/P-DRMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-004",
+      "time": "2026-10-22T11:30:38.112Z",
+      "url": "/drms/task/my",
+      "image": "evidence/live-recheck-20261022/P-DRMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-005",
+      "time": "2026-10-22T11:30:42.171Z",
+      "url": "/drms/task/pending",
+      "image": "evidence/live-recheck-20261022/P-DRMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-006",
+      "time": "2026-10-22T11:30:44.502Z",
+      "url": "/drms/task/processed",
+      "image": "evidence/live-recheck-20261022/P-DRMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-007-op1-options0",
+      "time": "2026-10-22T11:30:49.762Z",
+      "url": "/drms/advisory/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-007-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-007-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-007-op1",
+      "time": "2026-10-22T11:30:49.287Z",
+      "url": "/drms/advisory/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-007-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-007-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-007",
+      "time": "2026-10-22T11:30:46.845Z",
+      "url": "/drms/advisory/list",
+      "image": "evidence/live-recheck-20261022/P-DRMS-007.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-008-op1-options0",
+      "time": "2026-10-22T11:31:14.203Z",
+      "url": "/drms/advisory/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-008-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-008-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-008-op1",
+      "time": "2026-10-22T11:31:13.744Z",
+      "url": "/drms/advisory/edit",
+      "image": "evidence/live-recheck-20261022/P-DRMS-008-op1.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-008-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "P-DRMS-008",
+      "time": "2026-10-22T11:31:09.311Z",
+      "url": "/drms/advisory/handle",
+      "image": "evidence/live-recheck-20261022/P-DRMS-008.png",
+      "metadata": "evidence/live-recheck-20261022/P-DRMS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-000-entry",
+      "time": "2026-10-22T11:27:16.716Z",
+      "url": "/dcs/analyze/internal",
+      "image": "evidence/live-recheck-20261022/Q-DCS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-001",
+      "time": "2026-10-22T11:27:41.127Z",
+      "url": "/dcs/analyze/internal",
+      "image": "evidence/live-recheck-20261022/Q-DCS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-002",
+      "time": "2026-10-22T11:27:46.992Z",
+      "url": "/dcs/analyze/agency",
+      "image": "evidence/live-recheck-20261022/Q-DCS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-003",
+      "time": "2026-10-22T11:27:49.418Z",
+      "url": "/dcs/resources/list",
+      "image": "evidence/live-recheck-20261022/Q-DCS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-004",
+      "time": "2026-10-22T11:27:51.835Z",
+      "url": "/dcs/catalogue/list",
+      "image": "evidence/live-recheck-20261022/Q-DCS-004.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-005",
+      "time": "2026-10-22T11:27:54.205Z",
+      "url": "/dcs/catalogue/initiate",
+      "image": "evidence/live-recheck-20261022/Q-DCS-005.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-006",
+      "time": "2026-10-22T11:27:56.567Z",
+      "url": "/dcs/catalogue/handle",
+      "image": "evidence/live-recheck-20261022/Q-DCS-006.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-007-op1-options0",
+      "time": "2026-10-22T11:28:01.655Z",
+      "url": "/dcs/systemManagement/businessEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-007-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-007-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-007-op1",
+      "time": "2026-10-22T11:28:01.178Z",
+      "url": "/dcs/systemManagement/businessEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-007-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-007-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-007",
+      "time": "2026-10-22T11:27:58.912Z",
+      "url": "/dcs/systemManagement/businessList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-007.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-008-op1-options0",
+      "time": "2026-10-22T11:28:43.725Z",
+      "url": "/dcs/systemManagement/matterEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-008-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-008-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-008-op1-options1",
+      "time": "2026-10-22T11:28:44.936Z",
+      "url": "/dcs/systemManagement/matterEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-008-op1-options1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-008-op1-options1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-008-op1-options2",
+      "time": "2026-10-22T11:28:50.100Z",
+      "url": "/dcs/systemManagement/matterEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-008-op1-options2.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-008-op1-options2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-008-op1-options3",
+      "time": "2026-10-22T11:28:55.239Z",
+      "url": "/dcs/systemManagement/matterEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-008-op1-options3.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-008-op1-options3.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-008-op1",
+      "time": "2026-10-22T11:28:42.271Z",
+      "url": "/dcs/systemManagement/matterEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-008-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-008-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-008",
+      "time": "2026-10-22T11:28:39.084Z",
+      "url": "/dcs/systemManagement/matterList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-008.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-009-op1-options0",
+      "time": "2026-10-22T11:29:39.515Z",
+      "url": "/dcs/applicationManagement/applicationEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-009-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-009-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-009-op1-options1",
+      "time": "2026-10-22T11:29:40.077Z",
+      "url": "/dcs/applicationManagement/applicationEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-009-op1-options1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-009-op1-options1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-009-op1-options2",
+      "time": "2026-10-22T11:29:41.098Z",
+      "url": "/dcs/applicationManagement/applicationEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-009-op1-options2.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-009-op1-options2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-009-op1",
+      "time": "2026-10-22T11:29:39.047Z",
+      "url": "/dcs/applicationManagement/applicationEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-009-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-009-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-009",
+      "time": "2026-10-22T11:29:35.962Z",
+      "url": "/dcs/applicationManagement/applicationManagement",
+      "image": "evidence/live-recheck-20261022/Q-DCS-009.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-009.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-010",
+      "time": "2026-10-22T11:30:51.146Z",
+      "url": "/dcs/dirApproval/list",
+      "image": "evidence/live-recheck-20261022/Q-DCS-010.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011-op1-options0",
+      "time": "2026-10-22T11:30:57.849Z",
+      "url": "/dcs/access/limitEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011-op1-options1",
+      "time": "2026-10-22T11:30:58.379Z",
+      "url": "/dcs/access/limitEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011-op1-options1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011-op1-options1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011-op1-options2",
+      "time": "2026-10-22T11:31:03.531Z",
+      "url": "/dcs/access/limitEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011-op1-options2.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011-op1-options2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011-op1-options3",
+      "time": "2026-10-22T11:31:08.686Z",
+      "url": "/dcs/access/limitEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011-op1-options3.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011-op1-options3.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011-op1-options4",
+      "time": "2026-10-22T11:31:11.971Z",
+      "url": "/dcs/access/limitEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011-op1-options4.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011-op1-options4.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011-op1",
+      "time": "2026-10-22T11:30:56.865Z",
+      "url": "/dcs/access/limitEdit",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-011",
+      "time": "2026-10-22T11:30:53.837Z",
+      "url": "/dcs/access/limitList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-011.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-011.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-012-op1-options0",
+      "time": "2026-10-22T11:31:58.013Z",
+      "url": "/dcs/category/manageList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-012-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-012-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-012-op1",
+      "time": "2026-10-22T11:31:56.645Z",
+      "url": "/dcs/category/manageList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-012-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-012-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-012",
+      "time": "2026-10-22T11:31:53.671Z",
+      "url": "/dcs/category/manageList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-012.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-012.json",
+      "targetValid": true,
+      "limitation": " 截图期间正文发生变化，应分别核对图像与元素时间。"
+    },
+    {
+      "id": "Q-DCS-013",
+      "time": "2026-10-22T11:32:37.469Z",
+      "url": "/dcs/cataCenter/list",
+      "image": "evidence/live-recheck-20261022/Q-DCS-013.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-013.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-014",
+      "time": "2026-10-22T11:32:40.778Z",
+      "url": "/dcs/deptCataCenter/list",
+      "image": "evidence/live-recheck-20261022/Q-DCS-014.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-014.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-015",
+      "time": "2026-10-22T11:32:44.106Z",
+      "url": "/dcs/inventory/duty",
+      "image": "evidence/live-recheck-20261022/Q-DCS-015.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-015.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-016",
+      "time": "2026-10-22T11:32:46.860Z",
+      "url": "/dcs/inventory/negative",
+      "image": "evidence/live-recheck-20261022/Q-DCS-016.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-016.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-017",
+      "time": "2026-10-22T11:32:50.353Z",
+      "url": "/dcs/myCatalogue/applyList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-017.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-017.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-018",
+      "time": "2026-10-22T11:32:53.830Z",
+      "url": "/dcs/myCatalogue/favorite",
+      "image": "evidence/live-recheck-20261022/Q-DCS-018.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-018.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-019",
+      "time": "2026-10-22T11:33:05.025Z",
+      "url": "/dcs/processApprove/initiateList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-019.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-019.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-DCS-020",
+      "time": "2026-10-22T11:33:08.774Z",
+      "url": "/dcs/processApprove/handleList",
+      "image": "evidence/live-recheck-20261022/Q-DCS-020.png",
+      "metadata": "evidence/live-recheck-20261022/Q-DCS-020.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Q-GSPA-000-entry",
+      "time": "2026-10-22T11:33:17.419Z",
+      "url": "/gsp/entrance/list",
+      "image": "evidence/live-recheck-20261022/Q-GSPA-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Q-GSPA-000-entry.json",
+      "targetValid": true,
+      "limitation": " 截图期间正文发生变化，应分别核对图像与元素时间。"
+    },
+    {
+      "id": "R001-workbench",
+      "time": "2026-10-22T09:34:23.272Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R001-workbench.png",
+      "metadata": "evidence/live-recheck-20261022/R001-workbench.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R002-user-menu",
+      "time": "2026-10-22T09:34:43.733Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R002-user-menu.png",
+      "metadata": "evidence/live-recheck-20261022/R002-user-menu.json",
+      "targetValid": false,
+      "limitation": "采样早于菜单展开，正文仍为工作台，不证明菜单。"
+    },
+    {
+      "id": "R003-user-menu-open",
+      "time": "2026-10-22T09:35:25.565Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R003-user-menu-open.png",
+      "metadata": "evidence/live-recheck-20261022/R003-user-menu-open.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R004-basic-info",
+      "time": "2026-10-22T09:37:27.074Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R004-basic-info.png",
+      "metadata": "evidence/live-recheck-20261022/R004-basic-info.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R005-password-dialog",
+      "time": "2026-10-22T09:38:51.171Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R005-password-dialog.png",
+      "metadata": "evidence/live-recheck-20261022/R005-password-dialog.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R006-main-department",
+      "time": "2026-10-22T09:39:46.043Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R006-main-department.png",
+      "metadata": "evidence/live-recheck-20261022/R006-main-department.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R007-main-department-options",
+      "time": "2026-10-22T09:40:06.031Z",
+      "url": "/dop/stage",
+      "image": "evidence/live-recheck-20261022/R007-main-department-options.png",
+      "metadata": "evidence/live-recheck-20261022/R007-main-department-options.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R008-backend-home",
+      "time": "2026-10-22T09:42:41.095Z",
+      "url": "/module-common/index",
+      "image": "evidence/live-recheck-20261022/R008-backend-home.png",
+      "metadata": "evidence/live-recheck-20261022/R008-backend-home.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R009-backend-navigation",
+      "time": "2026-10-22T09:45:19.224Z",
+      "url": "/module-common/index",
+      "image": "evidence/live-recheck-20261022/R009-backend-navigation.png",
+      "metadata": "evidence/live-recheck-20261022/R009-backend-navigation.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R010-admin-users",
+      "time": "2026-10-22T09:45:19.404Z",
+      "url": "/module-common/manage/user/userList",
+      "image": "evidence/live-recheck-20261022/R010-admin-users.png",
+      "metadata": "evidence/live-recheck-20261022/R010-admin-users.json",
+      "targetValid": false,
+      "limitation": "路由先变化，正文仍为首页，不证明用户列表。"
+    },
+    {
+      "id": "R011-admin-users-ready",
+      "time": "2026-10-22T09:47:29.463Z",
+      "url": "/module-common/manage/user/userList",
+      "image": "evidence/live-recheck-20261022/R011-admin-users-ready.png",
+      "metadata": "evidence/live-recheck-20261022/R011-admin-users-ready.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R012-admin-user-add",
+      "time": "2026-10-22T09:50:40.800Z",
+      "url": "/module-common/manage/user/userEdit",
+      "image": "evidence/live-recheck-20261022/R012-admin-user-add.png",
+      "metadata": "evidence/live-recheck-20261022/R012-admin-user-add.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R013-admin-user-add-options",
+      "time": "2026-10-22T09:51:18.960Z",
+      "url": "/module-common/manage/user/userEdit",
+      "image": "evidence/live-recheck-20261022/R013-admin-user-add-options.png",
+      "metadata": "evidence/live-recheck-20261022/R013-admin-user-add-options.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R014-admin-user-edit",
+      "time": "2026-10-22T09:51:34.827Z",
+      "url": "/module-common/manage/user/userEdit",
+      "image": "evidence/live-recheck-20261022/R014-admin-user-edit.png",
+      "metadata": "evidence/live-recheck-20261022/R014-admin-user-edit.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R015-user-validity",
+      "time": "2026-10-22T09:52:01.114Z",
+      "url": "/module-common/manage/user/userList",
+      "image": "evidence/live-recheck-20261022/R015-user-validity.png",
+      "metadata": "evidence/live-recheck-20261022/R015-user-validity.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R016-user-more",
+      "time": "2026-10-22T09:52:03.343Z",
+      "url": "/module-common/manage/user/userList",
+      "image": "evidence/live-recheck-20261022/R016-user-more.png",
+      "metadata": "evidence/live-recheck-20261022/R016-user-more.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R017-user-roles",
+      "time": "2026-10-22T09:52:33.773Z",
+      "url": "/module-common/manage/user/userEditRole",
+      "image": "evidence/live-recheck-20261022/R017-user-roles.png",
+      "metadata": "evidence/live-recheck-20261022/R017-user-roles.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R018-departments",
+      "time": "2026-10-22T09:53:06.313Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R018-departments.png",
+      "metadata": "evidence/live-recheck-20261022/R018-departments.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R019-department-add",
+      "time": "2026-10-22T09:53:34.200Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R019-department-add.png",
+      "metadata": "evidence/live-recheck-20261022/R019-department-add.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R020-department-types",
+      "time": "2026-10-22T09:54:43.570Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R020-department-types.png",
+      "metadata": "evidence/live-recheck-20261022/R020-department-types.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R021-department-edit",
+      "time": "2026-10-22T09:54:51.829Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R021-department-edit.png",
+      "metadata": "evidence/live-recheck-20261022/R021-department-edit.json",
+      "targetValid": false,
+      "limitation": "未选择部门时点击修改，未打开编辑表单。"
+    },
+    {
+      "id": "R023-department-edit-selected",
+      "time": "2026-10-22T09:55:15.827Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R023-department-edit-selected.png",
+      "metadata": "evidence/live-recheck-20261022/R023-department-edit-selected.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R024-department-member-add",
+      "time": "2026-10-22T09:55:44.328Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R024-department-member-add.png",
+      "metadata": "evidence/live-recheck-20261022/R024-department-member-add.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R025-department-admins",
+      "time": "2026-10-22T09:55:52.549Z",
+      "url": "/module-common/manage/department/departmentList",
+      "image": "evidence/live-recheck-20261022/R025-department-admins.png",
+      "metadata": "evidence/live-recheck-20261022/R025-department-admins.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R026-roles",
+      "time": "2026-10-22T09:56:17.828Z",
+      "url": "/module-common/manage/role/roleList",
+      "image": "evidence/live-recheck-20261022/R026-roles.png",
+      "metadata": "evidence/live-recheck-20261022/R026-roles.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R027-role-add",
+      "time": "2026-10-22T09:56:24.498Z",
+      "url": "/module-common/manage/role/roleEdit",
+      "image": "evidence/live-recheck-20261022/R027-role-add.png",
+      "metadata": "evidence/live-recheck-20261022/R027-role-add.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R028-role-edit",
+      "time": "2026-10-22T09:56:32.685Z",
+      "url": "/module-common/manage/role/roleEdit",
+      "image": "evidence/live-recheck-20261022/R028-role-edit.png",
+      "metadata": "evidence/live-recheck-20261022/R028-role-edit.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R029-role-permissions",
+      "time": "2026-10-22T09:57:00.460Z",
+      "url": "/module-common/manage/role/permissionMenu",
+      "image": "evidence/live-recheck-20261022/R029-role-permissions.png",
+      "metadata": "evidence/live-recheck-20261022/R029-role-permissions.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R030-tenants",
+      "time": "2026-10-22T09:57:08.688Z",
+      "url": "/module-common/manage/tenant/tenantList",
+      "image": "evidence/live-recheck-20261022/R030-tenants.png",
+      "metadata": "evidence/live-recheck-20261022/R030-tenants.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R031-my-users",
+      "time": "2026-10-22T09:57:15.356Z",
+      "url": "/module-common/manage/myUser/userList",
+      "image": "evidence/live-recheck-20261022/R031-my-users.png",
+      "metadata": "evidence/live-recheck-20261022/R031-my-users.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R032-my-departments",
+      "time": "2026-10-22T09:57:22.052Z",
+      "url": "/module-common/manage/myDepartment/departmentList",
+      "image": "evidence/live-recheck-20261022/R032-my-departments.png",
+      "metadata": "evidence/live-recheck-20261022/R032-my-departments.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R033-admin-tags",
+      "time": "2026-10-22T09:57:28.685Z",
+      "url": "/module-common/manage/tag/tagList",
+      "image": "evidence/live-recheck-20261022/R033-admin-tags.png",
+      "metadata": "evidence/live-recheck-20261022/R033-admin-tags.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R034-account-unlock",
+      "time": "2026-10-22T09:57:35.299Z",
+      "url": "/module-common/manage/security/unlimit",
+      "image": "evidence/live-recheck-20261022/R034-account-unlock.png",
+      "metadata": "evidence/live-recheck-20261022/R034-account-unlock.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R035-api-sources",
+      "time": "2026-10-22T09:58:10.538Z",
+      "url": "/module-data-source/api/list",
+      "image": "evidence/live-recheck-20261022/R035-api-sources.png",
+      "metadata": "evidence/live-recheck-20261022/R035-api-sources.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R036-kafka-sources",
+      "time": "2026-10-22T09:58:17.173Z",
+      "url": "/module-data-source/kafka/list",
+      "image": "evidence/live-recheck-20261022/R036-kafka-sources.png",
+      "metadata": "evidence/live-recheck-20261022/R036-kafka-sources.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R037-apps",
+      "time": "2026-10-22T09:58:23.777Z",
+      "url": "/module-common/config/app/list",
+      "image": "evidence/live-recheck-20261022/R037-apps.png",
+      "metadata": "evidence/live-recheck-20261022/R037-apps.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R038-systems",
+      "time": "2026-10-22T09:58:30.403Z",
+      "url": "/module-common/config/system/list",
+      "image": "evidence/live-recheck-20261022/R038-systems.png",
+      "metadata": "evidence/live-recheck-20261022/R038-systems.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R039-platforms",
+      "time": "2026-10-22T09:58:37.065Z",
+      "url": "/module-common/config/platform/list",
+      "image": "evidence/live-recheck-20261022/R039-platforms.png",
+      "metadata": "evidence/live-recheck-20261022/R039-platforms.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R040-dictionaries",
+      "time": "2026-10-22T09:59:54.708Z",
+      "url": "/module-common/config/dictionary/list",
+      "image": "evidence/live-recheck-20261022/R040-dictionaries.png",
+      "metadata": "evidence/live-recheck-20261022/R040-dictionaries.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R041-special-dates",
+      "time": "2026-10-22T10:00:01.373Z",
+      "url": "/module-common/config/calendarspecial/list",
+      "image": "evidence/live-recheck-20261022/R041-special-dates.png",
+      "metadata": "evidence/live-recheck-20261022/R041-special-dates.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R042-licenses",
+      "time": "2026-10-22T10:00:08.031Z",
+      "url": "/module-common/config/license/info",
+      "image": "evidence/live-recheck-20261022/R042-licenses.png",
+      "metadata": "evidence/live-recheck-20261022/R042-licenses.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R043-alerts",
+      "time": "2026-10-22T10:00:14.656Z",
+      "url": "/module-common/monitor/alarmList",
+      "image": "evidence/live-recheck-20261022/R043-alerts.png",
+      "metadata": "evidence/live-recheck-20261022/R043-alerts.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R044-message-types",
+      "time": "2026-10-22T10:00:21.264Z",
+      "url": "/module-common/news/newsTypeList",
+      "image": "evidence/live-recheck-20261022/R044-message-types.png",
+      "metadata": "evidence/live-recheck-20261022/R044-message-types.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R045-message-channels",
+      "time": "2026-10-22T10:00:27.902Z",
+      "url": "/module-common/news/channelList",
+      "image": "evidence/live-recheck-20261022/R045-message-channels.png",
+      "metadata": "evidence/live-recheck-20261022/R045-message-channels.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R046-message-templates",
+      "time": "2026-10-22T10:00:49.210Z",
+      "url": "/module-common/news/templateList",
+      "image": "evidence/live-recheck-20261022/R046-message-templates.png",
+      "metadata": "evidence/live-recheck-20261022/R046-message-templates.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R047-messages",
+      "time": "2026-10-22T10:00:55.858Z",
+      "url": "/module-common/news/newsManage",
+      "image": "evidence/live-recheck-20261022/R047-messages.png",
+      "metadata": "evidence/live-recheck-20261022/R047-messages.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R048-my-messages",
+      "time": "2026-10-22T10:01:02.529Z",
+      "url": "/module-common/news/myNewsList",
+      "image": "evidence/live-recheck-20261022/R048-my-messages.png",
+      "metadata": "evidence/live-recheck-20261022/R048-my-messages.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R049-announcements",
+      "time": "2026-10-22T10:01:09.172Z",
+      "url": "/module-common/news/announcementList",
+      "image": "evidence/live-recheck-20261022/R049-announcements.png",
+      "metadata": "evidence/live-recheck-20261022/R049-announcements.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R050-operation-logs",
+      "time": "2026-10-22T10:01:16.686Z",
+      "url": "/module-common/log/operation/list",
+      "image": "evidence/live-recheck-20261022/R050-operation-logs.png",
+      "metadata": "evidence/live-recheck-20261022/R050-operation-logs.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R051-login-logs",
+      "time": "2026-10-22T10:01:23.341Z",
+      "url": "/module-common/log/login/list",
+      "image": "evidence/live-recheck-20261022/R051-login-logs.png",
+      "metadata": "evidence/live-recheck-20261022/R051-login-logs.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R052-backend-expanded-all",
+      "time": "2026-10-22T10:01:47.456Z",
+      "url": "/module-common/log/login/list",
+      "image": "evidence/live-recheck-20261022/R052-backend-expanded-all.png",
+      "metadata": "evidence/live-recheck-20261022/R052-backend-expanded-all.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R053-workflow-apply",
+      "time": "2026-10-22T10:02:41.326Z",
+      "url": "/module-flow/workbench/workorderApply",
+      "image": "evidence/live-recheck-20261022/R053-workflow-apply.png",
+      "metadata": "evidence/live-recheck-20261022/R053-workflow-apply.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R054-workflow-orders",
+      "time": "2026-10-22T10:02:47.932Z",
+      "url": "/module-flow/workbench/myWorkflowList",
+      "image": "evidence/live-recheck-20261022/R054-workflow-orders.png",
+      "metadata": "evidence/live-recheck-20261022/R054-workflow-orders.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R055-workflow-todo",
+      "time": "2026-10-22T10:02:54.559Z",
+      "url": "/module-flow/workbench/workflowReviewList",
+      "image": "evidence/live-recheck-20261022/R055-workflow-todo.png",
+      "metadata": "evidence/live-recheck-20261022/R055-workflow-todo.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R056-workflow-done",
+      "time": "2026-10-22T10:03:01.175Z",
+      "url": "/module-flow/workbench/workflowFinishedList",
+      "image": "evidence/live-recheck-20261022/R056-workflow-done.png",
+      "metadata": "evidence/live-recheck-20261022/R056-workflow-done.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R057-workflow-cc",
+      "time": "2026-10-22T10:03:07.804Z",
+      "url": "/module-flow/workbench/copy2MeList",
+      "image": "evidence/live-recheck-20261022/R057-workflow-cc.png",
+      "metadata": "evidence/live-recheck-20261022/R057-workflow-cc.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R058-workflow-business",
+      "time": "2026-10-22T10:03:14.425Z",
+      "url": "/module-flow/workflow/businessRegistration",
+      "image": "evidence/live-recheck-20261022/R058-workflow-business.png",
+      "metadata": "evidence/live-recheck-20261022/R058-workflow-business.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R059-flow-models",
+      "time": "2026-10-22T10:03:45.846Z",
+      "url": "/module-flow/workflow/processModel",
+      "image": "evidence/live-recheck-20261022/R059-flow-models.png",
+      "metadata": "evidence/live-recheck-20261022/R059-flow-models.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R060-flow-monitor",
+      "time": "2026-10-22T10:03:52.485Z",
+      "url": "/module-flow/workflow/processMonitoring",
+      "image": "evidence/live-recheck-20261022/R060-flow-monitor.png",
+      "metadata": "evidence/live-recheck-20261022/R060-flow-monitor.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R061-form-design",
+      "time": "2026-10-22T10:03:59.145Z",
+      "url": "/module-flow/formDesign/formList",
+      "image": "evidence/live-recheck-20261022/R061-form-design.png",
+      "metadata": "evidence/live-recheck-20261022/R061-form-design.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R062-tenant-0",
+      "time": "2026-10-22T10:04:12.451Z",
+      "url": "/module-common/manage/tenant/tenantEdit",
+      "image": "evidence/live-recheck-20261022/R062-tenant-0.png",
+      "metadata": "evidence/live-recheck-20261022/R062-tenant-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R062-tenant-1",
+      "time": "2026-10-22T10:04:20.683Z",
+      "url": "/module-common/manage/tenant/tenantEdit",
+      "image": "evidence/live-recheck-20261022/R062-tenant-1.png",
+      "metadata": "evidence/live-recheck-20261022/R062-tenant-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R062-tenant-2",
+      "time": "2026-10-22T10:04:28.883Z",
+      "url": "/module-common/manage/tenant/userList",
+      "image": "evidence/live-recheck-20261022/R062-tenant-2.png",
+      "metadata": "evidence/live-recheck-20261022/R062-tenant-2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R062-tenant-list",
+      "time": "2026-10-22T10:04:05.813Z",
+      "url": "/module-common/manage/tenant/tenantList",
+      "image": "evidence/live-recheck-20261022/R062-tenant-list.png",
+      "metadata": "evidence/live-recheck-20261022/R062-tenant-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R063-tag-0",
+      "time": "2026-10-22T10:04:53.353Z",
+      "url": "/module-common/manage/tag/tagList",
+      "image": "evidence/live-recheck-20261022/R063-tag-0.png",
+      "metadata": "evidence/live-recheck-20261022/R063-tag-0.json",
+      "targetValid": false,
+      "limitation": "点击后没有取得新增表单，不证明新增目标已打开。"
+    },
+    {
+      "id": "R063-tag-list",
+      "time": "2026-10-22T10:04:46.684Z",
+      "url": "/module-common/manage/tag/tagList",
+      "image": "evidence/live-recheck-20261022/R063-tag-list.png",
+      "metadata": "evidence/live-recheck-20261022/R063-tag-list.json",
+      "targetValid": false,
+      "limitation": "导航后正文尚未加载完整，以R033为列表证据。 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R064-app-0",
+      "time": "2026-10-22T10:05:33.929Z",
+      "url": "/module-common/config/app/edit",
+      "image": "evidence/live-recheck-20261022/R064-app-0.png",
+      "metadata": "evidence/live-recheck-20261022/R064-app-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R064-app-1",
+      "time": "2026-10-22T10:05:42.148Z",
+      "url": "/module-common/config/app/edit",
+      "image": "evidence/live-recheck-20261022/R064-app-1.png",
+      "metadata": "evidence/live-recheck-20261022/R064-app-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R064-app-list",
+      "time": "2026-10-22T10:05:27.279Z",
+      "url": "/module-common/config/app/list",
+      "image": "evidence/live-recheck-20261022/R064-app-list.png",
+      "metadata": "evidence/live-recheck-20261022/R064-app-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R065-system-0",
+      "time": "2026-10-22T10:05:57.117Z",
+      "url": "/module-common/config/system/edit",
+      "image": "evidence/live-recheck-20261022/R065-system-0.png",
+      "metadata": "evidence/live-recheck-20261022/R065-system-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R065-system-1",
+      "time": "2026-10-22T10:06:05.359Z",
+      "url": "/module-common/config/system/edit",
+      "image": "evidence/live-recheck-20261022/R065-system-1.png",
+      "metadata": "evidence/live-recheck-20261022/R065-system-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R065-system-list",
+      "time": "2026-10-22T10:05:50.429Z",
+      "url": "/module-common/config/system/list",
+      "image": "evidence/live-recheck-20261022/R065-system-list.png",
+      "metadata": "evidence/live-recheck-20261022/R065-system-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R066-platform-0",
+      "time": "2026-10-22T10:06:20.199Z",
+      "url": "/module-common/config/platform/edit",
+      "image": "evidence/live-recheck-20261022/R066-platform-0.png",
+      "metadata": "evidence/live-recheck-20261022/R066-platform-0.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R066-platform-1",
+      "time": "2026-10-22T10:06:28.416Z",
+      "url": "/module-common/config/platform/edit",
+      "image": "evidence/live-recheck-20261022/R066-platform-1.png",
+      "metadata": "evidence/live-recheck-20261022/R066-platform-1.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R066-platform-list",
+      "time": "2026-10-22T10:06:13.564Z",
+      "url": "/module-common/config/platform/list",
+      "image": "evidence/live-recheck-20261022/R066-platform-list.png",
+      "metadata": "evidence/live-recheck-20261022/R066-platform-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R067-dictionary-0",
+      "time": "2026-10-22T10:07:11.512Z",
+      "url": "/module-common/config/dictionary/edit",
+      "image": "evidence/live-recheck-20261022/R067-dictionary-0.png",
+      "metadata": "evidence/live-recheck-20261022/R067-dictionary-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R067-dictionary-1",
+      "time": "2026-10-22T10:07:19.728Z",
+      "url": "/module-common/config/dictionary/edit",
+      "image": "evidence/live-recheck-20261022/R067-dictionary-1.png",
+      "metadata": "evidence/live-recheck-20261022/R067-dictionary-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R067-dictionary-list",
+      "time": "2026-10-22T10:07:04.863Z",
+      "url": "/module-common/config/dictionary/list",
+      "image": "evidence/live-recheck-20261022/R067-dictionary-list.png",
+      "metadata": "evidence/live-recheck-20261022/R067-dictionary-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R068-date-0",
+      "time": "2026-10-22T10:07:34.575Z",
+      "url": "/module-common/config/calendarspecial/edit",
+      "image": "evidence/live-recheck-20261022/R068-date-0.png",
+      "metadata": "evidence/live-recheck-20261022/R068-date-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R068-date-1",
+      "time": "2026-10-22T10:07:42.709Z",
+      "url": "/module-common/config/calendarspecial/edit",
+      "image": "evidence/live-recheck-20261022/R068-date-1.png",
+      "metadata": "evidence/live-recheck-20261022/R068-date-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R068-date-list",
+      "time": "2026-10-22T10:07:27.922Z",
+      "url": "/module-common/config/calendarspecial/list",
+      "image": "evidence/live-recheck-20261022/R068-date-list.png",
+      "metadata": "evidence/live-recheck-20261022/R068-date-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R069-msgtype-0",
+      "time": "2026-10-22T10:07:57.554Z",
+      "url": "/module-common/news/newsTypeEdit",
+      "image": "evidence/live-recheck-20261022/R069-msgtype-0.png",
+      "metadata": "evidence/live-recheck-20261022/R069-msgtype-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R069-msgtype-list",
+      "time": "2026-10-22T10:07:50.896Z",
+      "url": "/module-common/news/newsTypeList",
+      "image": "evidence/live-recheck-20261022/R069-msgtype-list.png",
+      "metadata": "evidence/live-recheck-20261022/R069-msgtype-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R070-channel-1",
+      "time": "2026-10-22T10:08:12.427Z",
+      "url": "/module-common/news/channelEdit",
+      "image": "evidence/live-recheck-20261022/R070-channel-1.png",
+      "metadata": "evidence/live-recheck-20261022/R070-channel-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R070-channel-list",
+      "time": "2026-10-22T10:08:05.774Z",
+      "url": "/module-common/news/channelList",
+      "image": "evidence/live-recheck-20261022/R070-channel-list.png",
+      "metadata": "evidence/live-recheck-20261022/R070-channel-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R071-template-0",
+      "time": "2026-10-22T10:10:14.452Z",
+      "url": "/module-common/news/templateEdit",
+      "image": "evidence/live-recheck-20261022/R071-template-0.png",
+      "metadata": "evidence/live-recheck-20261022/R071-template-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R071-template-1",
+      "time": "2026-10-22T10:10:22.675Z",
+      "url": "/module-common/news/templateEdit",
+      "image": "evidence/live-recheck-20261022/R071-template-1.png",
+      "metadata": "evidence/live-recheck-20261022/R071-template-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R071-template-list",
+      "time": "2026-10-22T10:10:07.807Z",
+      "url": "/module-common/news/templateList",
+      "image": "evidence/live-recheck-20261022/R071-template-list.png",
+      "metadata": "evidence/live-recheck-20261022/R071-template-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R072-message-0",
+      "time": "2026-10-22T10:10:37.611Z",
+      "url": "/module-common/news/newsManageEdit",
+      "image": "evidence/live-recheck-20261022/R072-message-0.png",
+      "metadata": "evidence/live-recheck-20261022/R072-message-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R072-message-list",
+      "time": "2026-10-22T10:10:30.929Z",
+      "url": "/module-common/news/newsManage",
+      "image": "evidence/live-recheck-20261022/R072-message-list.png",
+      "metadata": "evidence/live-recheck-20261022/R072-message-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R073-announcement-0",
+      "time": "2026-10-22T10:11:05.050Z",
+      "url": "/module-common/news/announcementEdit",
+      "image": "evidence/live-recheck-20261022/R073-announcement-0.png",
+      "metadata": "evidence/live-recheck-20261022/R073-announcement-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R073-announcement-list",
+      "time": "2026-10-22T10:10:58.410Z",
+      "url": "/module-common/news/announcementList",
+      "image": "evidence/live-recheck-20261022/R073-announcement-list.png",
+      "metadata": "evidence/live-recheck-20261022/R073-announcement-list.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R074-business-0",
+      "time": "2026-10-22T10:11:20.303Z",
+      "url": "/module-flow/workflow/businessRegistrationEdit",
+      "image": "evidence/live-recheck-20261022/R074-business-0.png",
+      "metadata": "evidence/live-recheck-20261022/R074-business-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R074-business-1",
+      "time": "2026-10-22T10:11:28.499Z",
+      "url": "/module-flow/workflow/businessRegistrationEdit",
+      "image": "evidence/live-recheck-20261022/R074-business-1.png",
+      "metadata": "evidence/live-recheck-20261022/R074-business-1.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "R074-business-list",
+      "time": "2026-10-22T10:11:13.636Z",
+      "url": "/module-flow/workflow/businessRegistration",
+      "image": "evidence/live-recheck-20261022/R074-business-list.png",
+      "metadata": "evidence/live-recheck-20261022/R074-business-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R075-model-0",
+      "time": "2026-10-22T10:11:43.364Z",
+      "url": "/module-flow/workflow/flowDesign",
+      "image": "evidence/live-recheck-20261022/R075-model-0.png",
+      "metadata": "evidence/live-recheck-20261022/R075-model-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R075-model-1",
+      "time": "2026-10-22T10:11:46.644Z",
+      "url": "/module-flow/workflow/flowDesign",
+      "image": "evidence/live-recheck-20261022/R075-model-1.png",
+      "metadata": "evidence/live-recheck-20261022/R075-model-1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R075-model-list",
+      "time": "2026-10-22T10:11:36.700Z",
+      "url": "/module-flow/workflow/processModel",
+      "image": "evidence/live-recheck-20261022/R075-model-list.png",
+      "metadata": "evidence/live-recheck-20261022/R075-model-list.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R076-form-0",
+      "time": "2026-10-22T10:11:56.507Z",
+      "url": "/module-flow/formDesign/formList",
+      "image": "evidence/live-recheck-20261022/R076-form-0.png",
+      "metadata": "evidence/live-recheck-20261022/R076-form-0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "R076-form-list",
+      "time": "2026-10-22T10:11:49.845Z",
+      "url": "/module-flow/formDesign/formList",
+      "image": "evidence/live-recheck-20261022/R076-form-list.png",
+      "metadata": "evidence/live-recheck-20261022/R076-form-list.json",
+      "targetValid": true,
+      "limitation": " 部分请求被只读保护阻断；空候选或错误不能直接归为应用缺陷。"
+    },
+    {
+      "id": "T-DRMS-requirement-add-direct",
+      "time": "2026-10-22T11:35:47.413Z",
+      "url": "/drms/requirement/edit",
+      "image": "evidence/live-recheck-20261022/T-DRMS-requirement-add-direct.png",
+      "metadata": "evidence/live-recheck-20261022/T-DRMS-requirement-add-direct.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "V-GDRS-000-entry",
+      "time": "2026-10-22T10:40:24.566Z",
+      "url": "/gdrs/index/indexInfo",
+      "image": "evidence/live-recheck-20261022/V-GDRS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/V-GDRS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "V-GDRS-001",
+      "time": "2026-10-22T10:41:08.156Z",
+      "url": "/gdrs/index/indexInfo",
+      "image": "evidence/live-recheck-20261022/V-GDRS-001.png",
+      "metadata": "evidence/live-recheck-20261022/V-GDRS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "V-GDRS-002",
+      "time": "2026-10-22T10:41:59.497Z",
+      "url": "/gdrs/gdrs/resourceTableManage",
+      "image": "evidence/live-recheck-20261022/V-GDRS-002.png",
+      "metadata": "evidence/live-recheck-20261022/V-GDRS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "V-GDRS-003",
+      "time": "2026-10-22T10:42:50.087Z",
+      "url": "/gdrs/gdrs/structFormManage",
+      "image": "evidence/live-recheck-20261022/V-GDRS-003.png",
+      "metadata": "evidence/live-recheck-20261022/V-GDRS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "V-GDRS-004",
+      "time": "2026-10-22T10:43:41.306Z",
+      "url": "/gdrs/gdrs/structTemplateManage",
+      "image": "evidence/live-recheck-20261022/V-GDRS-004.png",
+      "metadata": "evidence/live-recheck-20261022/V-GDRS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-000-entry",
+      "time": "2026-10-22T10:44:18.966Z",
+      "url": "/gdrs/index/indexInfo",
+      "image": "evidence/live-recheck-20261022/W-GDRS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-001",
+      "time": "2026-10-22T10:45:02.478Z",
+      "url": "/gdrs/index/indexInfo",
+      "image": "evidence/live-recheck-20261022/W-GDRS-001.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-002",
+      "time": "2026-10-22T10:45:53.972Z",
+      "url": "/gdrs/gdrs/resourceTableManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-002.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-003",
+      "time": "2026-10-22T10:46:44.746Z",
+      "url": "/gdrs/gdrs/structFormManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-003.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-004",
+      "time": "2026-10-22T10:47:35.366Z",
+      "url": "/gdrs/gdrs/structTemplateManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-004.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-005",
+      "time": "2026-10-22T10:48:20.645Z",
+      "url": "/gdrs/gdrs/templateAccreditServerManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-005.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-006",
+      "time": "2026-10-22T10:49:05.732Z",
+      "url": "/gdrs/gdrs/strctAccreditServerManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-006.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-007",
+      "time": "2026-10-22T10:49:55.976Z",
+      "url": "/gdrs/gdrs/structNotifyManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-007.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-008-op1",
+      "time": "2026-10-22T10:51:22.396Z",
+      "url": "/gdrs/gdrs/configManageEdit",
+      "image": "evidence/live-recheck-20261022/W-GDRS-008-op1.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-008-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-008",
+      "time": "2026-10-22T10:50:46.029Z",
+      "url": "/gdrs/gdrs/configManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-008.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-009",
+      "time": "2026-10-22T10:52:29.029Z",
+      "url": "/gdrs/gdrs/unstructResourceManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-009.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-009.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-010",
+      "time": "2026-10-22T10:53:15.308Z",
+      "url": "/gdrs/gdrs/untemplateAccreditServerManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-010.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-011",
+      "time": "2026-10-22T10:54:00.415Z",
+      "url": "/gdrs/gdrs/unstrctAccreditServerManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-011.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-011.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-012",
+      "time": "2026-10-22T10:54:51.762Z",
+      "url": "/gdrs/gdrs/unstructNotifyManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-012.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-012.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-013-op1",
+      "time": "2026-10-22T10:56:20.184Z",
+      "url": "/gdrs/gdrs/categoryManageEdit",
+      "image": "evidence/live-recheck-20261022/W-GDRS-013-op1.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-013-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-013",
+      "time": "2026-10-22T10:55:42.885Z",
+      "url": "/gdrs/gdrs/categoryManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-013.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-013.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-014",
+      "time": "2026-10-22T10:57:27.478Z",
+      "url": "/gdrs/report/structReportManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-014.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-014.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-015",
+      "time": "2026-10-22T10:58:18.041Z",
+      "url": "/gdrs/report/structResourceDetail",
+      "image": "evidence/live-recheck-20261022/W-GDRS-015.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-015.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-016",
+      "time": "2026-10-22T10:59:03.417Z",
+      "url": "/gdrs/report/structReportTask",
+      "image": "evidence/live-recheck-20261022/W-GDRS-016.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-016.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-017",
+      "time": "2026-10-22T10:59:54.225Z",
+      "url": "/gdrs/report/structRecordManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-017.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-017.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-018",
+      "time": "2026-10-22T11:00:39.561Z",
+      "url": "/gdrs/report/structAccreditDetail",
+      "image": "evidence/live-recheck-20261022/W-GDRS-018.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-018.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-019",
+      "time": "2026-10-22T11:01:30.144Z",
+      "url": "/gdrs/report/structBatchReportManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-019.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-019.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-020",
+      "time": "2026-10-22T11:02:21.072Z",
+      "url": "/gdrs/report/semiStructured/dataReporting",
+      "image": "evidence/live-recheck-20261022/W-GDRS-020.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-020.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-021",
+      "time": "2026-10-22T11:03:11.930Z",
+      "url": "/gdrs/report/semiStructured/semiStructReportTask",
+      "image": "evidence/live-recheck-20261022/W-GDRS-021.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-021.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-022",
+      "time": "2026-10-22T11:04:02.849Z",
+      "url": "/gdrs/report/semiStructured/reportRecord",
+      "image": "evidence/live-recheck-20261022/W-GDRS-022.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-022.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-023",
+      "time": "2026-10-22T11:05:00.938Z",
+      "url": "/gdrs/report/unstructReportManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-023.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-023.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-024",
+      "time": "2026-10-22T11:05:52.498Z",
+      "url": "/gdrs/report/ustructResourceDetail",
+      "image": "evidence/live-recheck-20261022/W-GDRS-024.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-024.json",
+      "targetValid": false,
+      "limitation": "该次数据查看页面正文为空，不能证明目标内容。"
+    },
+    {
+      "id": "W-GDRS-025",
+      "time": "2026-10-22T11:06:47.661Z",
+      "url": "/gdrs/report/unstructReportTask",
+      "image": "evidence/live-recheck-20261022/W-GDRS-025.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-025.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-026",
+      "time": "2026-10-22T11:07:45.441Z",
+      "url": "/gdrs/report/unstructRecordManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-026.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-026.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-027",
+      "time": "2026-10-22T11:08:44.503Z",
+      "url": "/gdrs/report/unstructAccreditDetail",
+      "image": "evidence/live-recheck-20261022/W-GDRS-027.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-027.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-028",
+      "time": "2026-10-22T11:09:47.799Z",
+      "url": "/gdrs/approve/structApproveManage",
+      "image": "evidence/live-recheck-20261022/W-GDRS-028.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-028.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-029",
+      "time": "2026-10-22T11:10:59.383Z",
+      "url": "/gdrs/statistics/reportTaskStatistics",
+      "image": "evidence/live-recheck-20261022/W-GDRS-029.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-029.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-030",
+      "time": "2026-10-22T11:12:07.445Z",
+      "url": "/gdrs/statistics/structReportStatistics",
+      "image": "evidence/live-recheck-20261022/W-GDRS-030.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-030.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-031",
+      "time": "2026-10-22T11:13:06.660Z",
+      "url": "/gdrs/statistics/unstructReportStatistics",
+      "image": "evidence/live-recheck-20261022/W-GDRS-031.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-031.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "W-GDRS-032",
+      "time": "2026-10-22T11:13:51.902Z",
+      "url": "/gdrs/help/helpCenter",
+      "image": "evidence/live-recheck-20261022/W-GDRS-032.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-032.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "W-GDRS-033",
+      "time": "2026-10-22T11:15:09.910Z",
+      "url": "/gdrs/message/public",
+      "image": "evidence/live-recheck-20261022/W-GDRS-033.png",
+      "metadata": "evidence/live-recheck-20261022/W-GDRS-033.json",
+      "targetValid": false,
+      "limitation": "页面正文为空，未取得目标内容。"
+    },
+    {
+      "id": "X-DCS-000-entry",
+      "time": "2026-10-22T11:04:02.388Z",
+      "url": "/dcs/analyze/internal",
+      "image": "evidence/live-recheck-20261022/X-DCS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/X-DCS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DCS-001",
+      "time": "2026-10-22T11:04:11.681Z",
+      "url": "/dcs/analyze/internal",
+      "image": "evidence/live-recheck-20261022/X-DCS-001.png",
+      "metadata": "evidence/live-recheck-20261022/X-DCS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DCS-002",
+      "time": "2026-10-22T11:04:16.482Z",
+      "url": "/dcs/analyze/agency",
+      "image": "evidence/live-recheck-20261022/X-DCS-002.png",
+      "metadata": "evidence/live-recheck-20261022/X-DCS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-000-entry",
+      "time": "2026-10-22T11:04:23.730Z",
+      "url": "/dse/board/1",
+      "image": "evidence/live-recheck-20261022/X-DSE-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-001",
+      "time": "2026-10-22T11:04:28.118Z",
+      "url": "/dse/board/1",
+      "image": "evidence/live-recheck-20261022/X-DSE-001.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-002",
+      "time": "2026-10-22T11:04:32.702Z",
+      "url": "/dse/board/2",
+      "image": "evidence/live-recheck-20261022/X-DSE-002.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-003",
+      "time": "2026-10-22T11:04:37.332Z",
+      "url": "/dse/board/8",
+      "image": "evidence/live-recheck-20261022/X-DSE-003.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-004",
+      "time": "2026-10-22T11:04:40.326Z",
+      "url": "/dse/task/list/1",
+      "image": "evidence/live-recheck-20261022/X-DSE-004.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-005",
+      "time": "2026-10-22T11:04:43.290Z",
+      "url": "/dse/task/list/2",
+      "image": "evidence/live-recheck-20261022/X-DSE-005.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-006",
+      "time": "2026-10-22T11:04:46.039Z",
+      "url": "/dse/task/list/8",
+      "image": "evidence/live-recheck-20261022/X-DSE-006.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-007-op1",
+      "time": "2026-10-22T11:04:51.354Z",
+      "url": "/dse/log/list/1",
+      "image": "evidence/live-recheck-20261022/X-DSE-007-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-007-op1.json",
+      "targetValid": false,
+      "limitation": "点击后没有取得新的详情内容，仍为原空列表。"
+    },
+    {
+      "id": "X-DSE-007",
+      "time": "2026-10-22T11:04:49.333Z",
+      "url": "/dse/log/list/1",
+      "image": "evidence/live-recheck-20261022/X-DSE-007.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-008-op1",
+      "time": "2026-10-22T11:05:03.273Z",
+      "url": "/dse/log/list/2",
+      "image": "evidence/live-recheck-20261022/X-DSE-008-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-008-op1.json",
+      "targetValid": false,
+      "limitation": "点击后没有取得新的详情内容，仍为原空列表。"
+    },
+    {
+      "id": "X-DSE-008",
+      "time": "2026-10-22T11:04:59.378Z",
+      "url": "/dse/log/list/2",
+      "image": "evidence/live-recheck-20261022/X-DSE-008.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-DSE-009",
+      "time": "2026-10-22T11:05:11.459Z",
+      "url": "/dse/log/list/8",
+      "image": "evidence/live-recheck-20261022/X-DSE-009.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-009.json",
+      "targetValid": false,
+      "limitation": "正文仅加载外壳和导航，未取得该目标的业务内容。"
+    },
+    {
+      "id": "X-DSE-010",
+      "time": "2026-10-22T11:05:19.260Z",
+      "url": "/dse/prefix",
+      "image": "evidence/live-recheck-20261022/X-DSE-010.png",
+      "metadata": "evidence/live-recheck-20261022/X-DSE-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSB-000-entry",
+      "time": "2026-10-22T11:05:24.329Z",
+      "url": "/gsb/catalog/list",
+      "image": "evidence/live-recheck-20261022/X-GSB-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSB-001",
+      "time": "2026-10-22T11:05:27.000Z",
+      "url": "/gsb/catalog/list",
+      "image": "evidence/live-recheck-20261022/X-GSB-001.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSB-002",
+      "time": "2026-10-22T11:05:42.502Z",
+      "url": "/gsb/manage/list",
+      "image": "evidence/live-recheck-20261022/X-GSB-002.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-002.json",
+      "targetValid": false,
+      "limitation": "正文仅加载外壳和导航，未取得该目标的业务内容。"
+    },
+    {
+      "id": "X-GSB-003",
+      "time": "2026-10-22T11:05:46.541Z",
+      "url": "/gsb/manage/sale",
+      "image": "evidence/live-recheck-20261022/X-GSB-003.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSB-004",
+      "time": "2026-10-22T11:05:49.239Z",
+      "url": "/gsb/approval/list",
+      "image": "evidence/live-recheck-20261022/X-GSB-004.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSB-005",
+      "time": "2026-10-22T11:06:03.360Z",
+      "url": "/gsb/control/ip",
+      "image": "evidence/live-recheck-20261022/X-GSB-005.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-005.json",
+      "targetValid": false,
+      "limitation": "正文仅加载外壳和导航，未取得该目标的业务内容。"
+    },
+    {
+      "id": "X-GSB-006",
+      "time": "2026-10-22T11:06:07.301Z",
+      "url": "/gsb/control/ip",
+      "image": "evidence/live-recheck-20261022/X-GSB-006.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSB-007",
+      "time": "2026-10-22T11:06:21.804Z",
+      "url": "/gsb/config/list",
+      "image": "evidence/live-recheck-20261022/X-GSB-007.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSB-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSPA-000-entry",
+      "time": "2026-10-22T11:06:25.406Z",
+      "url": "/gsp/entrance/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSPA-001",
+      "time": "2026-10-22T11:06:28.027Z",
+      "url": "/gsp/entrance/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-001.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSPA-002-op1",
+      "time": "2026-10-22T11:06:33.240Z",
+      "url": "/gsp/knowledge/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-002-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-002-op1.json",
+      "targetValid": false,
+      "limitation": "点击后仍为知识列表，未取得独立维护页。"
+    },
+    {
+      "id": "X-GSPA-002",
+      "time": "2026-10-22T11:06:30.667Z",
+      "url": "/gsp/knowledge/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-002.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSPA-003-op1-options0",
+      "time": "2026-10-22T11:06:50.681Z",
+      "url": "/gsp/knowledge/edit",
+      "image": "evidence/live-recheck-20261022/X-GSPA-003-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-003-op1-options0.json",
+      "targetValid": false,
+      "limitation": "栏目/布局菜单点击未完成，正文仍为知识列表；表单属于知识管理，不能证明该菜单目标。"
+    },
+    {
+      "id": "X-GSPA-003-op1",
+      "time": "2026-10-22T11:06:50.228Z",
+      "url": "/gsp/knowledge/edit",
+      "image": "evidence/live-recheck-20261022/X-GSPA-003-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-003-op1.json",
+      "targetValid": false,
+      "limitation": "栏目/布局菜单点击未完成，正文仍为知识列表；表单属于知识管理，不能证明该菜单目标。"
+    },
+    {
+      "id": "X-GSPA-003",
+      "time": "2026-10-22T11:06:47.573Z",
+      "url": "/gsp/knowledge/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-003.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-003.json",
+      "targetValid": false,
+      "limitation": "栏目/布局菜单点击未完成，正文仍为知识列表；表单属于知识管理，不能证明该菜单目标。"
+    },
+    {
+      "id": "X-GSPA-004-op1-options0",
+      "time": "2026-10-22T11:07:08.342Z",
+      "url": "/gsp/knowledge/edit",
+      "image": "evidence/live-recheck-20261022/X-GSPA-004-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-004-op1-options0.json",
+      "targetValid": false,
+      "limitation": "栏目/布局菜单点击未完成，正文仍为知识列表；表单属于知识管理，不能证明该菜单目标。"
+    },
+    {
+      "id": "X-GSPA-004-op1",
+      "time": "2026-10-22T11:07:07.877Z",
+      "url": "/gsp/knowledge/edit",
+      "image": "evidence/live-recheck-20261022/X-GSPA-004-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-004-op1.json",
+      "targetValid": false,
+      "limitation": "栏目/布局菜单点击未完成，正文仍为知识列表；表单属于知识管理，不能证明该菜单目标。"
+    },
+    {
+      "id": "X-GSPA-004",
+      "time": "2026-10-22T11:07:05.278Z",
+      "url": "/gsp/knowledge/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-004.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-004.json",
+      "targetValid": false,
+      "limitation": "栏目/布局菜单点击未完成，正文仍为知识列表；表单属于知识管理，不能证明该菜单目标。"
+    },
+    {
+      "id": "X-GSPA-005-op1",
+      "time": "2026-10-22T11:07:28.104Z",
+      "url": "/gsp/content/forum/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-005-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-005-op1.json",
+      "targetValid": false,
+      "limitation": "点击后仍为版块列表，未取得独立维护页。"
+    },
+    {
+      "id": "X-GSPA-005",
+      "time": "2026-10-22T11:07:25.526Z",
+      "url": "/gsp/content/forum/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-005.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-GSPA-006-op1-options0",
+      "time": "2026-10-22T11:07:48.098Z",
+      "url": "/gsp/content/forum/edit",
+      "image": "evidence/live-recheck-20261022/X-GSPA-006-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-006-op1-options0.json",
+      "targetValid": false,
+      "limitation": "内容菜单点击未完成，实际采得版块列表/新增，不能证明内容管理。"
+    },
+    {
+      "id": "X-GSPA-006-op1",
+      "time": "2026-10-22T11:07:47.650Z",
+      "url": "/gsp/content/forum/edit",
+      "image": "evidence/live-recheck-20261022/X-GSPA-006-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-006-op1.json",
+      "targetValid": false,
+      "limitation": "内容菜单点击未完成，实际采得版块列表/新增，不能证明内容管理。"
+    },
+    {
+      "id": "X-GSPA-006",
+      "time": "2026-10-22T11:07:45.077Z",
+      "url": "/gsp/content/forum/list",
+      "image": "evidence/live-recheck-20261022/X-GSPA-006.png",
+      "metadata": "evidence/live-recheck-20261022/X-GSPA-006.json",
+      "targetValid": false,
+      "limitation": "内容菜单点击未完成，实际采得版块列表/新增，不能证明内容管理。"
+    },
+    {
+      "id": "X-MDM-000-entry",
+      "time": "2026-10-22T11:08:02.639Z",
+      "url": "/mdm/metadata/manage/collectList",
+      "image": "evidence/live-recheck-20261022/X-MDM-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-MDM-001-op1",
+      "time": "2026-10-22T11:08:07.869Z",
+      "url": "/mdm/metadata/manage/metaVersionComparison",
+      "image": "evidence/live-recheck-20261022/X-MDM-001-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-001-op1.json",
+      "targetValid": false,
+      "limitation": "路由为版本管理，正文仍为采集列表；未取得采集操作目标。"
+    },
+    {
+      "id": "X-MDM-001",
+      "time": "2026-10-22T11:08:05.264Z",
+      "url": "/mdm/metadata/manage/collectList",
+      "image": "evidence/live-recheck-20261022/X-MDM-001.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-MDM-002-op1",
+      "time": "2026-10-22T11:08:27.857Z",
+      "url": "/mdm/metadata/manage/metaVersionComparison",
+      "image": "evidence/live-recheck-20261022/X-MDM-002-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-002-op1.json",
+      "targetValid": false,
+      "limitation": "变更菜单的维护目标未取得，实际打开版本管理，不证明变更新增。"
+    },
+    {
+      "id": "X-MDM-002",
+      "time": "2026-10-22T11:08:24.401Z",
+      "url": "/mdm/metadata/manage/applyAudit",
+      "image": "evidence/live-recheck-20261022/X-MDM-002.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-MDM-003-op1-options0",
+      "time": "2026-10-22T11:08:48.830Z",
+      "url": "/mdm/metadata/manage/metaVersionComparison",
+      "image": "evidence/live-recheck-20261022/X-MDM-003-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-003-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-MDM-003-op1",
+      "time": "2026-10-22T11:08:48.367Z",
+      "url": "/mdm/metadata/manage/metaVersionComparison",
+      "image": "evidence/live-recheck-20261022/X-MDM-003-op1.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-003-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "X-MDM-003",
+      "time": "2026-10-22T11:08:45.724Z",
+      "url": "/mdm/metadata/manage/metaVersionComparison",
+      "image": "evidence/live-recheck-20261022/X-MDM-003.png",
+      "metadata": "evidence/live-recheck-20261022/X-MDM-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-000-entry",
+      "time": "2026-10-22T11:20:21.007Z",
+      "url": "/dis/home",
+      "image": "evidence/live-recheck-20261022/Y-DIS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-001",
+      "time": "2026-10-22T11:20:32.612Z",
+      "url": "/dis/home",
+      "image": "evidence/live-recheck-20261022/Y-DIS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-002",
+      "time": "2026-10-22T11:20:41.581Z",
+      "url": "/dis/taskManagement/dataAcquisition/list",
+      "image": "evidence/live-recheck-20261022/Y-DIS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-003-more",
+      "time": "2026-10-22T11:21:19.007Z",
+      "url": "/dis/taskManagement/dataAcquisition/list",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003-more.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003-more.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-003-op1-options0",
+      "time": "2026-10-22T11:20:58.601Z",
+      "url": "/dis/taskManagement/dataAcquisition/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-003-op1-options1",
+      "time": "2026-10-22T11:20:59.175Z",
+      "url": "/dis/taskManagement/dataAcquisition/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003-op1-options1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003-op1-options1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-003-op1-options2",
+      "time": "2026-10-22T11:20:59.685Z",
+      "url": "/dis/taskManagement/dataAcquisition/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003-op1-options2.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003-op1-options2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-003-op1-options3",
+      "time": "2026-10-22T11:21:00.185Z",
+      "url": "/dis/taskManagement/dataAcquisition/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003-op1-options3.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003-op1-options3.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-003-op1",
+      "time": "2026-10-22T11:20:58.144Z",
+      "url": "/dis/taskManagement/dataAcquisition/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003-op1.json",
+      "targetValid": false,
+      "limitation": "来自错配的库离线菜单，实际为表同步新增；保留原表单但不用于库离线需求。"
+    },
+    {
+      "id": "Y-DIS-003",
+      "time": "2026-10-22T11:20:52.703Z",
+      "url": "/dis/taskManagement/dataAcquisition/list",
+      "image": "evidence/live-recheck-20261022/Y-DIS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-003.json",
+      "targetValid": false,
+      "limitation": "菜单为库离线同步，实际路径和正文为表同步；不能证明库离线页面。"
+    },
+    {
+      "id": "Y-DIS-004-op1-options0",
+      "time": "2026-10-22T11:21:48.617Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-004-op1-options0.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-004-op1-options0.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-004-op1-options1",
+      "time": "2026-10-22T11:21:49.206Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-004-op1-options1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-004-op1-options1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-004-op1-options2",
+      "time": "2026-10-22T11:21:49.723Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-004-op1-options2.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-004-op1-options2.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-004-op1-options3",
+      "time": "2026-10-22T11:21:50.227Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-004-op1-options3.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-004-op1-options3.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-004-op1",
+      "time": "2026-10-22T11:21:48.113Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-004-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-004-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-004",
+      "time": "2026-10-22T11:21:30.523Z",
+      "url": "/dis/taskManagement/apiAndFileCollection/public",
+      "image": "evidence/live-recheck-20261022/Y-DIS-004.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-005-op1",
+      "time": "2026-10-22T11:22:24.672Z",
+      "url": "/dis/taskManagement/fileAcquisition/edit",
+      "image": "evidence/live-recheck-20261022/Y-DIS-005-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-005-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DIS-005",
+      "time": "2026-10-22T11:22:13.322Z",
+      "url": "/dis/taskManagement/fileAcquisition/list",
+      "image": "evidence/live-recheck-20261022/Y-DIS-005.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DIS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DRMS-000-entry",
+      "time": "2026-10-22T11:20:52.380Z",
+      "url": "/drms/kanban",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DRMS-001",
+      "time": "2026-10-22T11:21:13.267Z",
+      "url": "/drms/kanban",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DRMS-002-op1",
+      "time": "2026-10-22T11:21:35.415Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-002-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-002-op1.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DRMS-002",
+      "time": "2026-10-22T11:21:23.178Z",
+      "url": "/drms/project/my",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DRMS-003-op1",
+      "time": "2026-10-22T11:22:25.134Z",
+      "url": "/drms/requirement/edit",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-003-op1.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-003-op1.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "Y-DRMS-003",
+      "time": "2026-10-22T11:22:12.958Z",
+      "url": "/drms/requirement/my",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DRMS-project-add",
+      "time": "2026-10-22T11:19:36.274Z",
+      "url": "/drms/project/edit",
+      "image": "evidence/live-recheck-20261022/Y-DRMS-project-add.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DRMS-project-add.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DSE-000-entry",
+      "time": "2026-10-22T11:20:50.623Z",
+      "url": "/dse/board/1",
+      "image": "evidence/live-recheck-20261022/Y-DSE-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DSE-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DSE-001",
+      "time": "2026-10-22T11:21:12.771Z",
+      "url": "/dse/board/1",
+      "image": "evidence/live-recheck-20261022/Y-DSE-001.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DSE-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DSE-002",
+      "time": "2026-10-22T11:21:27.562Z",
+      "url": "/dse/board/2",
+      "image": "evidence/live-recheck-20261022/Y-DSE-002.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DSE-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DSE-003",
+      "time": "2026-10-22T11:21:49.110Z",
+      "url": "/dse/board/8",
+      "image": "evidence/live-recheck-20261022/Y-DSE-003.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DSE-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Y-DSE-004",
+      "time": "2026-10-22T11:22:03.736Z",
+      "url": "/dse/task/list/1",
+      "image": "evidence/live-recheck-20261022/Y-DSE-004.png",
+      "metadata": "evidence/live-recheck-20261022/Y-DSE-004.json",
+      "targetValid": false,
+      "limitation": "页面正文为空，未取得目标内容。"
+    },
+    {
+      "id": "Y-GSB-000-entry",
+      "time": "2026-10-22T11:22:21.120Z",
+      "url": "/gsb/catalog/list",
+      "image": "evidence/live-recheck-20261022/Y-GSB-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Y-GSB-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-000-entry",
+      "time": "2026-10-22T11:16:26.183Z",
+      "url": "/dop/cms/comfactory/supermarket/index",
+      "image": "evidence/live-recheck-20261022/Z-CMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-001",
+      "time": "2026-10-22T11:16:39.315Z",
+      "url": "/dop/cms/comfactory/supermarket/index",
+      "image": "evidence/live-recheck-20261022/Z-CMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-002",
+      "time": "2026-10-22T11:16:44.394Z",
+      "url": "/dop/cms/comfactory/development/index",
+      "image": "evidence/live-recheck-20261022/Z-CMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-003",
+      "time": "2026-10-22T11:16:46.113Z",
+      "url": "/dop/cms/comfactory/manage/componentName/index",
+      "image": "evidence/live-recheck-20261022/Z-CMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-004",
+      "time": "2026-10-22T11:16:47.248Z",
+      "url": "/dop/cms/comfactory/manage/classify/index",
+      "image": "evidence/live-recheck-20261022/Z-CMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-005",
+      "time": "2026-10-22T11:16:48.429Z",
+      "url": "/dop/cms/comfactory/mine/index",
+      "image": "evidence/live-recheck-20261022/Z-CMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-CMS-006",
+      "time": "2026-10-22T11:16:49.563Z",
+      "url": "/dop/cms/comfactory/mine/record",
+      "image": "evidence/live-recheck-20261022/Z-CMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-CMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-000-entry",
+      "time": "2026-10-22T11:14:17.900Z",
+      "url": "/dop/dbms/requirement/overview/chart",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-001",
+      "time": "2026-10-22T11:14:38.443Z",
+      "url": "/dop/dbms/requirement/overview/chart",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-002",
+      "time": "2026-10-22T11:14:39.865Z",
+      "url": "/dop/dbms/requirement/prepare/office",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-003",
+      "time": "2026-10-22T11:15:00.427Z",
+      "url": "/dop/dbms/requirement/prepare/team",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-004",
+      "time": "2026-10-22T11:15:04.077Z",
+      "url": "/dop/dbms/requirement/prepare/referenceFile",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-005",
+      "time": "2026-10-22T11:15:18.655Z",
+      "url": "/dop/dbms/requirement/plan/milepost",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-006",
+      "time": "2026-10-22T11:15:32.292Z",
+      "url": "/dop/dbms/requirement/plan/list",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-007",
+      "time": "2026-10-22T11:15:33.477Z",
+      "url": "/dop/dbms/requirement/implementation/track",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-007.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-008",
+      "time": "2026-10-22T11:15:39.977Z",
+      "url": "/dop/dbms/requirement/report/chart",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-008.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-009",
+      "time": "2026-10-22T11:15:53.657Z",
+      "url": "/dop/dbms/requirement/report/informationSystem",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-009.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-009.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-010",
+      "time": "2026-10-22T11:15:54.922Z",
+      "url": "/dop/dbms/requirement/report/dataResource",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-010.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-011",
+      "time": "2026-10-22T11:15:56.161Z",
+      "url": "/dop/dbms/requirement/report/dataDictionary",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-011.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-011.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-012",
+      "time": "2026-10-22T11:15:57.386Z",
+      "url": "/dop/dbms/requirement/report/interface",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-012.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-012.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-013",
+      "time": "2026-10-22T11:15:58.698Z",
+      "url": "/dop/dbms/requirement/report/dataRequirements",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-013.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-013.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-014",
+      "time": "2026-10-22T11:15:59.933Z",
+      "url": "/dop/dbms/requirement/report/businessRequirements",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-014.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-014.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-015",
+      "time": "2026-10-22T11:16:01.139Z",
+      "url": "/dop/dbms/requirement/collection",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-015.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-015.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-016",
+      "time": "2026-10-22T11:16:02.372Z",
+      "url": "/dop/dbms/requirement/document",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-016.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-016.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DBMS-017",
+      "time": "2026-10-22T11:16:22.338Z",
+      "url": "/dop/dbms/config/applyConfig/index",
+      "image": "evidence/live-recheck-20261022/Z-DBMS-017.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DBMS-017.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DCS-discovery",
+      "time": "2026-10-22T11:10:57.619Z",
+      "url": "/dcs/analyze/internal",
+      "image": "evidence/live-recheck-20261022/Z-DCS-discovery.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DCS-discovery.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DIS-000-entry",
+      "time": "2026-10-22T11:18:00.801Z",
+      "url": "/dis/home",
+      "image": "evidence/live-recheck-20261022/Z-DIS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DIS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DIS-001",
+      "time": "2026-10-22T11:18:12.422Z",
+      "url": "/dis/home",
+      "image": "evidence/live-recheck-20261022/Z-DIS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DIS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DIS-002-more",
+      "time": "2026-10-22T11:18:14.559Z",
+      "url": "/dis/taskManagement/dataAcquisition/list",
+      "image": "evidence/live-recheck-20261022/Z-DIS-002-more.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DIS-002-more.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DIS-002",
+      "time": "2026-10-22T11:18:13.983Z",
+      "url": "/dis/taskManagement/dataAcquisition/list",
+      "image": "evidence/live-recheck-20261022/Z-DIS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DIS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DIS-003",
+      "time": "2026-10-22T11:18:16.160Z",
+      "url": "/dis/taskManagement/libraryMigration/list",
+      "image": "evidence/live-recheck-20261022/Z-DIS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DIS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-000-entry",
+      "time": "2026-10-22T11:12:50.625Z",
+      "url": "/drms/kanban",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-000-entry.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "Z-DRMS-001",
+      "time": "2026-10-22T11:13:07.898Z",
+      "url": "/drms/kanban",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-002",
+      "time": "2026-10-22T11:13:21.574Z",
+      "url": "/drms/project/my",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-003",
+      "time": "2026-10-22T11:13:22.836Z",
+      "url": "/drms/requirement/my",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-004",
+      "time": "2026-10-22T11:13:23.998Z",
+      "url": "/drms/task/my",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-005",
+      "time": "2026-10-22T11:13:25.311Z",
+      "url": "/drms/task/pending",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-006",
+      "time": "2026-10-22T11:13:26.536Z",
+      "url": "/drms/task/processed",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-007",
+      "time": "2026-10-22T11:13:48.111Z",
+      "url": "/drms/advisory/list",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-007.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DRMS-008",
+      "time": "2026-10-22T11:14:09.148Z",
+      "url": "/drms/advisory/handle",
+      "image": "evidence/live-recheck-20261022/Z-DRMS-008.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DRMS-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-000-entry",
+      "time": "2026-10-22T11:17:15.474Z",
+      "url": "/datasource/dataSource/driveList",
+      "image": "evidence/live-recheck-20261022/Z-DS-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-001",
+      "time": "2026-10-22T11:17:28.557Z",
+      "url": "/datasource/dataSource/driveList",
+      "image": "evidence/live-recheck-20261022/Z-DS-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-002",
+      "time": "2026-10-22T11:17:33.079Z",
+      "url": "/datasource/dataSource/dataSourceManageList",
+      "image": "evidence/live-recheck-20261022/Z-DS-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-003",
+      "time": "2026-10-22T11:17:35.200Z",
+      "url": "/datasource/dataSource/myDataSourceManageList",
+      "image": "evidence/live-recheck-20261022/Z-DS-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-004",
+      "time": "2026-10-22T11:17:37.310Z",
+      "url": "/datasource/dataSource/iCanUsedDataSourceList",
+      "image": "evidence/live-recheck-20261022/Z-DS-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-005",
+      "time": "2026-10-22T11:17:43.777Z",
+      "url": "/datasource/api/list",
+      "image": "evidence/live-recheck-20261022/Z-DS-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DS-006",
+      "time": "2026-10-22T11:17:50.477Z",
+      "url": "/datasource/kafka/list",
+      "image": "evidence/live-recheck-20261022/Z-DS-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DS-006.json",
+      "targetValid": false,
+      "limitation": "kafka菜单路径下正文与表头仍为API数据源，不证明kafka数据源目标。"
+    },
+    {
+      "id": "Z-DSE-000-entry",
+      "time": "2026-10-22T11:13:14.335Z",
+      "url": "/dse/board/1",
+      "image": "evidence/live-recheck-20261022/Z-DSE-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-000-entry.json",
+      "targetValid": false,
+      "limitation": "页面正文为空，未取得目标内容。"
+    },
+    {
+      "id": "Z-DSE-001",
+      "time": "2026-10-22T11:13:39.216Z",
+      "url": "/dse/board/1",
+      "image": "evidence/live-recheck-20261022/Z-DSE-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-002",
+      "time": "2026-10-22T11:13:45.854Z",
+      "url": "/dse/board/2",
+      "image": "evidence/live-recheck-20261022/Z-DSE-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-003",
+      "time": "2026-10-22T11:13:51.935Z",
+      "url": "/dse/board/8",
+      "image": "evidence/live-recheck-20261022/Z-DSE-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-004",
+      "time": "2026-10-22T11:14:05.827Z",
+      "url": "/dse/task/list/1",
+      "image": "evidence/live-recheck-20261022/Z-DSE-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-005",
+      "time": "2026-10-22T11:14:07.703Z",
+      "url": "/dse/task/list/2",
+      "image": "evidence/live-recheck-20261022/Z-DSE-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-006",
+      "time": "2026-10-22T11:14:09.974Z",
+      "url": "/dse/task/list/8",
+      "image": "evidence/live-recheck-20261022/Z-DSE-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-007",
+      "time": "2026-10-22T11:14:13.548Z",
+      "url": "/dse/log/list/1",
+      "image": "evidence/live-recheck-20261022/Z-DSE-007.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-008",
+      "time": "2026-10-22T11:14:14.843Z",
+      "url": "/dse/log/list/2",
+      "image": "evidence/live-recheck-20261022/Z-DSE-008.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-008.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-009",
+      "time": "2026-10-22T11:14:17.071Z",
+      "url": "/dse/log/list/8",
+      "image": "evidence/live-recheck-20261022/Z-DSE-009.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-009.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-DSE-010",
+      "time": "2026-10-22T11:14:32.541Z",
+      "url": "/dse/prefix",
+      "image": "evidence/live-recheck-20261022/Z-DSE-010.png",
+      "metadata": "evidence/live-recheck-20261022/Z-DSE-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-000-entry",
+      "time": "2026-10-22T11:14:51.615Z",
+      "url": "/gsb/catalog/list",
+      "image": "evidence/live-recheck-20261022/Z-GSB-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-001",
+      "time": "2026-10-22T11:15:03.833Z",
+      "url": "/gsb/catalog/list",
+      "image": "evidence/live-recheck-20261022/Z-GSB-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-002",
+      "time": "2026-10-22T11:15:13.428Z",
+      "url": "/gsb/manage/list",
+      "image": "evidence/live-recheck-20261022/Z-GSB-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-003",
+      "time": "2026-10-22T11:15:16.878Z",
+      "url": "/gsb/manage/sale",
+      "image": "evidence/live-recheck-20261022/Z-GSB-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-004",
+      "time": "2026-10-22T11:15:19.096Z",
+      "url": "/gsb/approval/list",
+      "image": "evidence/live-recheck-20261022/Z-GSB-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-005",
+      "time": "2026-10-22T11:15:34.746Z",
+      "url": "/gsb/control/ip",
+      "image": "evidence/live-recheck-20261022/Z-GSB-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-006",
+      "time": "2026-10-22T11:15:52.962Z",
+      "url": "/gsb/control/visit",
+      "image": "evidence/live-recheck-20261022/Z-GSB-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSB-007",
+      "time": "2026-10-22T11:15:54.927Z",
+      "url": "/gsb/config/list",
+      "image": "evidence/live-recheck-20261022/Z-GSB-007.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSB-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSP-000-entry",
+      "time": "2026-10-22T11:16:35.234Z",
+      "url": "/gsp-portal/home",
+      "image": "evidence/live-recheck-20261022/Z-GSP-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSP-000-entry.json",
+      "targetValid": false,
+      "limitation": "页面正文为空，未取得目标内容。"
+    },
+    {
+      "id": "Z-GSPA-000-entry",
+      "time": "2026-10-22T11:16:00.088Z",
+      "url": "/gsp/entrance/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-001",
+      "time": "2026-10-22T11:16:13.489Z",
+      "url": "/gsp/entrance/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-002",
+      "time": "2026-10-22T11:16:15.988Z",
+      "url": "/gsp/knowledge/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-003",
+      "time": "2026-10-22T11:16:18.887Z",
+      "url": "/gsp/content/column/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-004",
+      "time": "2026-10-22T11:16:21.112Z",
+      "url": "/gsp/content/sheet/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-005",
+      "time": "2026-10-22T11:16:23.302Z",
+      "url": "/gsp/content/forum/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-006",
+      "time": "2026-10-22T11:16:24.593Z",
+      "url": "/gsp/content/content/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-GSPA-007",
+      "time": "2026-10-22T11:16:26.615Z",
+      "url": "/gsp/template/list",
+      "image": "evidence/live-recheck-20261022/Z-GSPA-007.png",
+      "metadata": "evidence/live-recheck-20261022/Z-GSPA-007.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-000-entry",
+      "time": "2026-10-22T11:16:55.485Z",
+      "url": "/mdm/metadata/manage/collectList",
+      "image": "evidence/live-recheck-20261022/Z-MDM-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-000-entry.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-001",
+      "time": "2026-10-22T11:17:10.145Z",
+      "url": "/mdm/metadata/manage/collectList",
+      "image": "evidence/live-recheck-20261022/Z-MDM-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-002",
+      "time": "2026-10-22T11:17:11.705Z",
+      "url": "/mdm/metadata/manage/applyAudit",
+      "image": "evidence/live-recheck-20261022/Z-MDM-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-003",
+      "time": "2026-10-22T11:17:14.452Z",
+      "url": "/mdm/metadata/manage/metaVersionComparison",
+      "image": "evidence/live-recheck-20261022/Z-MDM-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-003.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-004",
+      "time": "2026-10-22T11:17:18.816Z",
+      "url": "/mdm/metadata/manage/modifyManageList",
+      "image": "evidence/live-recheck-20261022/Z-MDM-004.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-004.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-005",
+      "time": "2026-10-22T11:17:34.810Z",
+      "url": "/mdm/metadata/manage/strategyList",
+      "image": "evidence/live-recheck-20261022/Z-MDM-005.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-005.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-006",
+      "time": "2026-10-22T11:17:39.419Z",
+      "url": "/mdm/metadata/manage/metaTableList",
+      "image": "evidence/live-recheck-20261022/Z-MDM-006.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-006.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-MDM-007",
+      "time": "2026-10-22T11:17:59.079Z",
+      "url": "/mdm/metadata/analyse/fullChainAnalysis",
+      "image": "evidence/live-recheck-20261022/Z-MDM-007.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-007.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "Z-MDM-008",
+      "time": "2026-10-22T11:18:04.031Z",
+      "url": "/mdm/metadata/analyse/bloodAnalysis",
+      "image": "evidence/live-recheck-20261022/Z-MDM-008.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-008.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "Z-MDM-009",
+      "time": "2026-10-22T11:18:08.943Z",
+      "url": "/mdm/metadata/analyse/effectAnalysis",
+      "image": "evidence/live-recheck-20261022/Z-MDM-009.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-009.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "Z-MDM-010",
+      "time": "2026-10-22T11:18:12.208Z",
+      "url": "/mdm/metadata/analyse/bloodManageList",
+      "image": "evidence/live-recheck-20261022/Z-MDM-010.png",
+      "metadata": "evidence/live-recheck-20261022/Z-MDM-010.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-WO-000-entry",
+      "time": "2026-10-22T11:16:52.734Z",
+      "url": "/workorder/workbench/workflowReviewList",
+      "image": "evidence/live-recheck-20261022/Z-WO-000-entry.png",
+      "metadata": "evidence/live-recheck-20261022/Z-WO-000-entry.json",
+      "targetValid": false,
+      "limitation": "仅有外壳或导航文字，尚无可用于定义业务功能的目标内容。"
+    },
+    {
+      "id": "Z-WO-001",
+      "time": "2026-10-22T11:17:05.797Z",
+      "url": "/workorder/workbench/workflowReviewList",
+      "image": "evidence/live-recheck-20261022/Z-WO-001.png",
+      "metadata": "evidence/live-recheck-20261022/Z-WO-001.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-WO-002",
+      "time": "2026-10-22T11:17:10.840Z",
+      "url": "/workorder/workbench/workflowFinishedList",
+      "image": "evidence/live-recheck-20261022/Z-WO-002.png",
+      "metadata": "evidence/live-recheck-20261022/Z-WO-002.json",
+      "targetValid": true,
+      "limitation": ""
+    },
+    {
+      "id": "Z-WO-003",
+      "time": "2026-10-22T11:17:12.062Z",
+      "url": "/workorder/workbench/myWorkflowList",
+      "image": "evidence/live-recheck-20261022/Z-WO-003.png",
+      "metadata": "evidence/live-recheck-20261022/Z-WO-003.json",
+      "targetValid": true,
+      "limitation": ""
+    }
+  ]
+}

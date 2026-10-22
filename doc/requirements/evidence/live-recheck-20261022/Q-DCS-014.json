@@ -1,0 +1,339 @@
+{
+  "time": "2026-10-22T11:32:40.778Z",
+  "url": "/dcs/deptCataCenter/list",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n部门目录中心\n查询重置展开\n序号\t目录名称\t数源单位\t资源类型\t安全级别\t更新周期\t是否级联共享\t共享类型\t数据范围\t供数方式\t操作\t\n1\n\t\n数据原名_test_api\n\t\n交通管理局\n\t\nAPI\n\t\n-\n\t\n其他\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市\n\t\nAPI\n\t\n收藏\n\n\n2\n\t\n文件123\n\t\n某委办局\n\t\n文件\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n各地市 | 市本级 | 各县（区） | 广东省\n\t\n文件\n\t\n收藏\n\n\n3\n\t\n文件abc\n\t\n某委办局\n\t\n文件\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n省本级 | 各地市 | 市本级 | 广东省\n\t\n文件\n\t\n收藏\n\n\n4\n\t\n婚姻信息10\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n5\n\t\n婚姻信息08\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n6\n\t\n婚姻信息07\n\t\n区民政局\n\t\n库表\n\t\n三级\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n7\n\t\n人员信息婚姻04\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n8\n\t\n人员信息婚姻03\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n9\n\t\n人口信息API\n\t\n区民政局\n\t\nAPI\n\t\n二级\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n10\n\t\n婚姻人员信息\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n11\n\t\nsrc_cyl\n\t\n投资交易部\n\t\n库表\n\t\n五级\n\t\n其他\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n12\n\t\nxxmr内部资源目录\n\t\n某委办局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n13\n\t\na_rkcj\n\t\n根部门\n\t\n库表\n\t\n四级\n\t\n其他\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n14\n\t\na_tes_ytestk2_rkxx_t1\n\t\n根部门\n\t\n库表\n\t\n四级\n\t\n其他\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n15\n\t\n公积金人口信息\n\t\n市住建局\n\t\n库表\n\t\n五级\n\t\n每日\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市 | 市本级\n\t\n服务API | 库表\n\t\n收藏\n\n\n16\n\t\n人口流动信息目录\n\t\n交通管理局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\n服务API | 库表\n\t\n收藏\n\n\n17\n\t\n人口信息数据目录\n\t\n交通管理局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市 | 市本级 | 各县（区） | 县（区）本级 | 各乡镇\n\t\n服务API | 库表\n\t\n收藏\n\n\n18\n\t\n交通管理信息目录\n\t\n交通管理局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市 | 市本级 | 各县（区） | 县（区）本级 | 各乡镇\n\t\n库表\n\t\n收藏\n\n\n19\n\t\n资源A\n\t\n数据集成\n\t\n库表\n\t\n三级\n\t\n每半月\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n20\n\t\nasfd\n\t\n委办局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n共 27 条\n12\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入目录名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择数源单位",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择资源类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "Q-DCS-014",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "目录名称",
+    "数源单位",
+    "资源类型",
+    "安全级别",
+    "更新周期",
+    "是否级联共享",
+    "共享类型",
+    "数据范围",
+    "供数方式",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "数据原名_test_api",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "收藏",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "文件123",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "文件abc",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻信息10",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻信息08",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻信息07",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人员信息婚姻04",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人员信息婚姻03",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息API",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻人员信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "src_cyl",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "xxmr内部资源目录",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "a_rkcj",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "a_tes_ytestk2_rkxx_t1",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "公积金人口信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口流动信息目录",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息数据目录",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "交通管理信息目录",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "资源A",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "asfd",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n部门目录中心\n查询重置展开\n序号\t目录名称\t数源单位\t资源类型\t安全级别\t更新周期\t是否级联共享\t共享类型\t数据范围\t供数方式\t操作\t\n1\n\t\n数据原名_test_api\n\t\n交通管理局\n\t\nAPI\n\t\n-\n\t\n其他\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市\n\t\nAPI\n\t\n收藏\n\n\n2\n\t\n文件123\n\t\n某委办局\n\t\n文件\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n各地市 | 市本级 | 各县（区） | 广东省\n\t\n文件\n\t\n收藏\n\n\n3\n\t\n文件abc\n\t\n某委办局\n\t\n文件\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n省本级 | 各地市 | 市本级 | 广东省\n\t\n文件\n\t\n收藏\n\n\n4\n\t\n婚姻信息10\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n5\n\t\n婚姻信息08\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n6\n\t\n婚姻信息07\n\t\n区民政局\n\t\n库表\n\t\n三级\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n7\n\t\n人员信息婚姻04\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n8\n\t\n人员信息婚姻03\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n9\n\t\n人口信息API\n\t\n区民政局\n\t\nAPI\n\t\n二级\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n10\n\t\n婚姻人员信息\n\t\n区民政局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n11\n\t\nsrc_cyl\n\t\n投资交易部\n\t\n库表\n\t\n五级\n\t\n其他\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n12\n\t\nxxmr内部资源目录\n\t\n某委办局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n13\n\t\na_rkcj\n\t\n根部门\n\t\n库表\n\t\n四级\n\t\n其他\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n14\n\t\na_tes_ytestk2_rkxx_t1\n\t\n根部门\n\t\n库表\n\t\n四级\n\t\n其他\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n15\n\t\n公积金人口信息\n\t\n市住建局\n\t\n库表\n\t\n五级\n\t\n每日\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市 | 市本级\n\t\n服务API | 库表\n\t\n收藏\n\n\n16\n\t\n人口流动信息目录\n\t\n交通管理局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n广东省\n\t\n服务API | 库表\n\t\n收藏\n\n\n17\n\t\n人口信息数据目录\n\t\n交通管理局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市 | 市本级 | 各县（区） | 县（区）本级 | 各乡镇\n\t\n服务API | 库表\n\t\n收藏\n\n\n18\n\t\n交通管理信息目录\n\t\n交通管理局\n\t\n库表\n\t\n-\n\t\n每半月\n\t\n是\n\t\n有条件共享\n\t\n广东省 | 省本级 | 各地市 | 市本级 | 各县（区） | 县（区）本级 | 各乡镇\n\t\n库表\n\t\n收藏\n\n\n19\n\t\n资源A\n\t\n数据集成\n\t\n库表\n\t\n三级\n\t\n每半月\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n\n\n20\n\t\nasfd\n\t\n委办局\n\t\n库表\n\t\n-\n\t\n每日\n\t\n否\n\t\n-\n\t\n-\n\t\n-\n\t\n收藏\n共 27 条\n12\n前往页"
+}

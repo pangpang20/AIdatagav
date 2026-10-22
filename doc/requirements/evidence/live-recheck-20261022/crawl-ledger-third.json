@@ -1,0 +1,557 @@
+[
+  {
+    "code": "DRMS",
+    "name": "业务需求管理系统",
+    "source": "E063-business-requirements",
+    "entry": "Z-DRMS-000-entry",
+    "discoveredAt": "2026-10-22T11:12:57.676Z",
+    "links": [
+      {
+        "name": "需求看板",
+        "hierarchy": "需求看板 → 需求看板",
+        "occurrence": 0,
+        "id": "Z-DRMS-001",
+        "status": "opened-review-content",
+        "path": "/drms/kanban",
+        "evidence": "Z-DRMS-001",
+        "operations": []
+      },
+      {
+        "name": "我的项目",
+        "hierarchy": "项目管理 → 我的项目",
+        "occurrence": 0,
+        "id": "Z-DRMS-002",
+        "status": "opened-review-content",
+        "path": "/drms/project/my",
+        "evidence": "Z-DRMS-002",
+        "operations": []
+      },
+      {
+        "name": "我的需求",
+        "hierarchy": "需求管理 → 我的需求",
+        "occurrence": 0,
+        "id": "Z-DRMS-003",
+        "status": "opened-review-content",
+        "path": "/drms/requirement/my",
+        "evidence": "Z-DRMS-003",
+        "operations": []
+      },
+      {
+        "name": "我发起的任务",
+        "hierarchy": "任务中心 → 我发起的任务",
+        "occurrence": 0,
+        "id": "Z-DRMS-004",
+        "status": "opened-review-content",
+        "path": "/drms/task/my",
+        "evidence": "Z-DRMS-004",
+        "operations": []
+      },
+      {
+        "name": "待处理任务",
+        "hierarchy": "任务中心 → 待处理任务",
+        "occurrence": 0,
+        "id": "Z-DRMS-005",
+        "status": "opened-review-content",
+        "path": "/drms/task/pending",
+        "evidence": "Z-DRMS-005",
+        "operations": []
+      },
+      {
+        "name": "已处理任务",
+        "hierarchy": "任务中心 → 已处理任务",
+        "occurrence": 0,
+        "id": "Z-DRMS-006",
+        "status": "opened-review-content",
+        "path": "/drms/task/processed",
+        "evidence": "Z-DRMS-006",
+        "operations": []
+      },
+      {
+        "name": "咨询列表",
+        "hierarchy": "需求咨询 → 咨询列表",
+        "occurrence": 0,
+        "id": "Z-DRMS-007",
+        "status": "opened-review-content",
+        "path": "/drms/advisory/list",
+        "evidence": "Z-DRMS-007",
+        "operations": []
+      },
+      {
+        "name": "咨询处理",
+        "hierarchy": "需求咨询 → 咨询处理",
+        "occurrence": 0,
+        "id": "Z-DRMS-008",
+        "status": "opened-review-content",
+        "path": "/drms/advisory/handle",
+        "evidence": "Z-DRMS-008",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DBMS",
+    "name": "数据需求管理",
+    "source": "E006-demand",
+    "entry": "Z-DBMS-000-entry",
+    "discoveredAt": "2026-10-22T11:14:24.979Z",
+    "links": [
+      {
+        "name": "调研概览",
+        "hierarchy": "调研概览",
+        "occurrence": 0,
+        "id": "Z-DBMS-001",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/overview/chart",
+        "evidence": "Z-DBMS-001",
+        "operations": []
+      },
+      {
+        "name": "委办局信息",
+        "hierarchy": "调研准备 → 委办局信息",
+        "occurrence": 0,
+        "id": "Z-DBMS-002",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/office",
+        "evidence": "Z-DBMS-002",
+        "operations": []
+      },
+      {
+        "name": "调研团队信息",
+        "hierarchy": "调研准备 → 调研团队信息",
+        "occurrence": 0,
+        "id": "Z-DBMS-003",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/team",
+        "evidence": "Z-DBMS-003",
+        "operations": []
+      },
+      {
+        "name": "参考文档",
+        "hierarchy": "调研准备 → 参考文档",
+        "occurrence": 0,
+        "id": "Z-DBMS-004",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/referenceFile",
+        "evidence": "Z-DBMS-004",
+        "operations": []
+      },
+      {
+        "name": "调研里程碑",
+        "hierarchy": "调研计划 → 调研里程碑",
+        "occurrence": 0,
+        "id": "Z-DBMS-005",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/plan/milepost",
+        "evidence": "Z-DBMS-005",
+        "operations": []
+      },
+      {
+        "name": "调研计划列表",
+        "hierarchy": "调研计划 → 调研计划列表",
+        "occurrence": 0,
+        "id": "Z-DBMS-006",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/plan/list",
+        "evidence": "Z-DBMS-006",
+        "operations": []
+      },
+      {
+        "name": "调研实施",
+        "hierarchy": "调研实施",
+        "occurrence": 0,
+        "id": "Z-DBMS-007",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/implementation/track",
+        "evidence": "Z-DBMS-007",
+        "operations": []
+      },
+      {
+        "name": "数据调研报表",
+        "hierarchy": "调研报告 → 数据调研报表",
+        "occurrence": 0,
+        "id": "Z-DBMS-008",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/chart",
+        "evidence": "Z-DBMS-008",
+        "operations": []
+      },
+      {
+        "name": "信息系统清单",
+        "hierarchy": "调研报告 → 信息系统清单",
+        "occurrence": 0,
+        "id": "Z-DBMS-009",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/informationSystem",
+        "evidence": "Z-DBMS-009",
+        "operations": []
+      },
+      {
+        "name": "数据目录清单",
+        "hierarchy": "调研报告 → 数据目录清单",
+        "occurrence": 0,
+        "id": "Z-DBMS-010",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/dataResource",
+        "evidence": "Z-DBMS-010",
+        "operations": []
+      },
+      {
+        "name": "数据字典清单",
+        "hierarchy": "调研报告 → 数据字典清单",
+        "occurrence": 0,
+        "id": "Z-DBMS-011",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/dataDictionary",
+        "evidence": "Z-DBMS-011",
+        "operations": []
+      },
+      {
+        "name": "接口资源清单",
+        "hierarchy": "调研报告 → 接口资源清单",
+        "occurrence": 0,
+        "id": "Z-DBMS-012",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/interface",
+        "evidence": "Z-DBMS-012",
+        "operations": []
+      },
+      {
+        "name": "数据需求清单",
+        "hierarchy": "调研报告 → 数据需求清单",
+        "occurrence": 0,
+        "id": "Z-DBMS-013",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/dataRequirements",
+        "evidence": "Z-DBMS-013",
+        "operations": []
+      },
+      {
+        "name": "业务需求清单",
+        "hierarchy": "调研报告 → 业务需求清单",
+        "occurrence": 0,
+        "id": "Z-DBMS-014",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/businessRequirements",
+        "evidence": "Z-DBMS-014",
+        "operations": []
+      },
+      {
+        "name": "数据归集",
+        "hierarchy": "数据归集",
+        "occurrence": 0,
+        "id": "Z-DBMS-015",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/collection",
+        "evidence": "Z-DBMS-015",
+        "operations": []
+      },
+      {
+        "name": "参考文档",
+        "hierarchy": "参考文档",
+        "occurrence": 1,
+        "id": "Z-DBMS-016",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/document",
+        "evidence": "Z-DBMS-016",
+        "operations": []
+      },
+      {
+        "name": "配置管理",
+        "hierarchy": "配置管理",
+        "occurrence": 0,
+        "id": "Z-DBMS-017",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/config/applyConfig/index",
+        "evidence": "Z-DBMS-017",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "CMS",
+    "name": "构件管理",
+    "source": "E064-components",
+    "entry": "Z-CMS-000-entry",
+    "discoveredAt": "2026-10-22T11:16:28.818Z",
+    "links": [
+      {
+        "name": "构件超市",
+        "hierarchy": "构件超市",
+        "occurrence": 0,
+        "id": "Z-CMS-001",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/supermarket/index",
+        "evidence": "Z-CMS-001",
+        "operations": []
+      },
+      {
+        "name": "构件开发",
+        "hierarchy": "构件开发",
+        "occurrence": 0,
+        "id": "Z-CMS-002",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/development/index",
+        "evidence": "Z-CMS-002",
+        "operations": []
+      },
+      {
+        "name": "构件名称",
+        "hierarchy": "构件配置 → 构件名称",
+        "occurrence": 0,
+        "id": "Z-CMS-003",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/manage/componentName/index",
+        "evidence": "Z-CMS-003",
+        "operations": []
+      },
+      {
+        "name": "构件分类",
+        "hierarchy": "构件配置 → 构件分类",
+        "occurrence": 0,
+        "id": "Z-CMS-004",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/manage/classify/index",
+        "evidence": "Z-CMS-004",
+        "operations": []
+      },
+      {
+        "name": "我的构件",
+        "hierarchy": "我的构件 → 我的构件",
+        "occurrence": 0,
+        "id": "Z-CMS-005",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/mine/index",
+        "evidence": "Z-CMS-005",
+        "operations": []
+      },
+      {
+        "name": "导出记录",
+        "hierarchy": "我的构件 → 导出记录",
+        "occurrence": 0,
+        "id": "Z-CMS-006",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/mine/record",
+        "evidence": "Z-CMS-006",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "WO",
+    "name": "我的工单",
+    "source": "E065-workorders",
+    "entry": "Z-WO-000-entry",
+    "discoveredAt": "2026-10-22T11:16:55.292Z",
+    "links": [
+      {
+        "name": "我的待办",
+        "hierarchy": "工单管理 → 我的待办",
+        "occurrence": 0,
+        "id": "Z-WO-001",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/workflowReviewList",
+        "evidence": "Z-WO-001",
+        "operations": []
+      },
+      {
+        "name": "我的已办",
+        "hierarchy": "工单管理 → 我的已办",
+        "occurrence": 0,
+        "id": "Z-WO-002",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/workflowFinishedList",
+        "evidence": "Z-WO-002",
+        "operations": []
+      },
+      {
+        "name": "我的工单",
+        "hierarchy": "工单管理 → 我的工单",
+        "occurrence": 0,
+        "id": "Z-WO-003",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/myWorkflowList",
+        "evidence": "Z-WO-003",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DS",
+    "name": "数据源管理",
+    "source": "E022-datasource-list",
+    "entry": "Z-DS-000-entry",
+    "discoveredAt": "2026-10-22T11:17:18.057Z",
+    "links": [
+      {
+        "name": "· 驱动管理",
+        "hierarchy": "数据源管理 → 数据源管理 → · 驱动管理",
+        "occurrence": 0,
+        "id": "Z-DS-001",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/driveList",
+        "evidence": "Z-DS-001",
+        "operations": []
+      },
+      {
+        "name": "· 数据源管理",
+        "hierarchy": "数据源管理 → 数据源管理 → · 数据源管理",
+        "occurrence": 0,
+        "id": "Z-DS-002",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/dataSourceManageList",
+        "evidence": "Z-DS-002",
+        "operations": []
+      },
+      {
+        "name": "· 部门数据源",
+        "hierarchy": "数据源管理 → 数据源管理 → · 部门数据源",
+        "occurrence": 0,
+        "id": "Z-DS-003",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/myDataSourceManageList",
+        "evidence": "Z-DS-003",
+        "operations": []
+      },
+      {
+        "name": "· 数据源列表",
+        "hierarchy": "数据源管理 → 数据源管理 → · 数据源列表",
+        "occurrence": 0,
+        "id": "Z-DS-004",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/iCanUsedDataSourceList",
+        "evidence": "Z-DS-004",
+        "operations": []
+      },
+      {
+        "name": "API数据源",
+        "hierarchy": "数据源管理 → API数据源",
+        "occurrence": 0,
+        "id": "Z-DS-005",
+        "status": "opened-review-content",
+        "path": "/datasource/api/list",
+        "evidence": "Z-DS-005",
+        "operations": []
+      },
+      {
+        "name": "kafka数据源",
+        "hierarchy": "数据源管理 → kafka数据源",
+        "occurrence": 0,
+        "id": "Z-DS-006",
+        "status": "opened-review-content",
+        "path": "/datasource/kafka/list",
+        "evidence": "Z-DS-006",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DIS",
+    "name": "数据集成采集",
+    "source": "E028-integration",
+    "entry": "Z-DIS-000-entry",
+    "discoveredAt": "2026-10-22T11:18:03.426Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "Z-DIS-001",
+        "status": "opened-review-content",
+        "path": "/dis/home",
+        "evidence": "Z-DIS-001",
+        "operations": []
+      },
+      {
+        "name": "· 表离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 表离线同步",
+        "occurrence": 0,
+        "id": "Z-DIS-002",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/dataAcquisition/list",
+        "evidence": "Z-DIS-002",
+        "operations": [],
+        "moreEvidence": "Z-DIS-002-more"
+      },
+      {
+        "name": "· 库离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 库离线同步",
+        "occurrence": 0,
+        "id": "Z-DIS-003",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/libraryMigration/list",
+        "evidence": "Z-DIS-003",
+        "operations": []
+      },
+      {
+        "name": "· 接口及文件解析",
+        "hierarchy": "任务 → 离线数据同步 → · 接口及文件解析",
+        "occurrence": 0,
+        "id": "Z-DIS-004",
+        "status": "pending"
+      },
+      {
+        "name": "· 文件离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 文件离线同步",
+        "occurrence": 0,
+        "id": "Z-DIS-005",
+        "status": "pending"
+      },
+      {
+        "name": "· 表实时同步",
+        "hierarchy": "任务 → 实时数据同步 → · 表实时同步",
+        "occurrence": 0,
+        "id": "Z-DIS-006",
+        "status": "pending"
+      },
+      {
+        "name": "· KAFKA同步",
+        "hierarchy": "任务 → 实时数据同步 → · KAFKA同步",
+        "occurrence": 0,
+        "id": "Z-DIS-007",
+        "status": "pending"
+      },
+      {
+        "name": "任务监控",
+        "hierarchy": "监控 → 任务监控",
+        "occurrence": 0,
+        "id": "Z-DIS-008",
+        "status": "pending"
+      },
+      {
+        "name": "异常告警",
+        "hierarchy": "监控 → 异常告警",
+        "occurrence": 0,
+        "id": "Z-DIS-009",
+        "status": "pending"
+      },
+      {
+        "name": "数据对账",
+        "hierarchy": "监控 → 数据对账",
+        "occurrence": 0,
+        "id": "Z-DIS-010",
+        "status": "pending"
+      },
+      {
+        "name": "补数据",
+        "hierarchy": "监控 → 补数据",
+        "occurrence": 0,
+        "id": "Z-DIS-011",
+        "status": "pending"
+      },
+      {
+        "name": "任务分析",
+        "hierarchy": "分析 → 任务分析",
+        "occurrence": 0,
+        "id": "Z-DIS-012",
+        "status": "pending"
+      },
+      {
+        "name": "数据分析",
+        "hierarchy": "分析 → 数据分析",
+        "occurrence": 0,
+        "id": "Z-DIS-013",
+        "status": "pending"
+      }
+    ]
+  }
+]

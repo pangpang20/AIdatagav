@@ -1,0 +1,338 @@
+[
+  {
+    "code": "DRMS",
+    "name": "业务需求管理系统",
+    "source": "E063-business-requirements",
+    "entry": "P-DRMS-000-entry",
+    "discoveredAt": "2026-10-22T11:29:11.953Z",
+    "links": [
+      {
+        "name": "需求看板",
+        "hierarchy": "需求看板 → 需求看板",
+        "occurrence": 0,
+        "id": "P-DRMS-001",
+        "status": "opened-review-content",
+        "path": "/drms/kanban",
+        "evidence": "P-DRMS-001",
+        "operations": []
+      },
+      {
+        "name": "我的项目",
+        "hierarchy": "项目管理 → 我的项目",
+        "occurrence": 0,
+        "id": "P-DRMS-002",
+        "status": "opened-review-content",
+        "path": "/drms/project/my",
+        "evidence": "P-DRMS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DRMS-002-op1",
+            "path": "/drms/project/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "P-DRMS-002-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DRMS-002-op2",
+            "path": "/drms/project/edit",
+            "selectControls": 1
+          }
+        ]
+      },
+      {
+        "name": "我的需求",
+        "hierarchy": "需求管理 → 我的需求",
+        "occurrence": 0,
+        "id": "P-DRMS-003",
+        "status": "opened-review-content",
+        "path": "/drms/requirement/my",
+        "evidence": "P-DRMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DRMS-003-op1",
+            "path": "/drms/project/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "P-DRMS-003-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "我发起的任务",
+        "hierarchy": "任务中心 → 我发起的任务",
+        "occurrence": 0,
+        "id": "P-DRMS-004",
+        "status": "opened-review-content",
+        "path": "/drms/task/my",
+        "evidence": "P-DRMS-004",
+        "operations": []
+      },
+      {
+        "name": "待处理任务",
+        "hierarchy": "任务中心 → 待处理任务",
+        "occurrence": 0,
+        "id": "P-DRMS-005",
+        "status": "opened-review-content",
+        "path": "/drms/task/pending",
+        "evidence": "P-DRMS-005",
+        "operations": []
+      },
+      {
+        "name": "已处理任务",
+        "hierarchy": "任务中心 → 已处理任务",
+        "occurrence": 0,
+        "id": "P-DRMS-006",
+        "status": "opened-review-content",
+        "path": "/drms/task/processed",
+        "evidence": "P-DRMS-006",
+        "operations": []
+      },
+      {
+        "name": "咨询列表",
+        "hierarchy": "需求咨询 → 咨询列表",
+        "occurrence": 0,
+        "id": "P-DRMS-007",
+        "status": "opened-review-content",
+        "path": "/drms/advisory/list",
+        "evidence": "P-DRMS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DRMS-007-op1",
+            "path": "/drms/advisory/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "P-DRMS-007-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "咨询处理",
+        "hierarchy": "需求咨询 → 咨询处理",
+        "occurrence": 0,
+        "id": "P-DRMS-008",
+        "status": "opened-review-content",
+        "path": "/drms/advisory/handle",
+        "evidence": "P-DRMS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DRMS-008-op1",
+            "path": "/drms/advisory/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "P-DRMS-008-op1-options0"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DBMS",
+    "name": "数据需求管理",
+    "source": "E006-demand",
+    "entry": "P-DBMS-000-entry",
+    "discoveredAt": "2026-10-22T11:31:38.509Z",
+    "links": [
+      {
+        "name": "调研概览",
+        "hierarchy": "调研概览",
+        "occurrence": 0,
+        "id": "P-DBMS-001",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/overview/chart",
+        "evidence": "P-DBMS-001",
+        "operations": []
+      },
+      {
+        "name": "委办局信息",
+        "hierarchy": "调研准备 → 委办局信息",
+        "occurrence": 0,
+        "id": "P-DBMS-002",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/office",
+        "evidence": "P-DBMS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DBMS-002-op1",
+            "path": "/dop/dbms/requirement/prepare/office/editSubject",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "调研团队信息",
+        "hierarchy": "调研准备 → 调研团队信息",
+        "occurrence": 0,
+        "id": "P-DBMS-003",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/team",
+        "evidence": "P-DBMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DBMS-003-op1",
+            "path": "/dop/dbms/requirement/prepare/team/edit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "P-DBMS-003-op1-options0"
+            ],
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "参考文档",
+        "hierarchy": "调研准备 → 参考文档",
+        "occurrence": 0,
+        "id": "P-DBMS-004",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/referenceFile",
+        "evidence": "P-DBMS-004",
+        "operations": [
+          {
+            "name": "新建",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DBMS-004-op1",
+            "path": "/dop/dbms/requirement/prepare/referenceFile"
+          }
+        ]
+      },
+      {
+        "name": "调研里程碑",
+        "hierarchy": "调研计划 → 调研里程碑",
+        "occurrence": 0,
+        "id": "P-DBMS-005",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/plan/milepost",
+        "evidence": "P-DBMS-005",
+        "operations": []
+      },
+      {
+        "name": "调研计划列表",
+        "hierarchy": "调研计划 → 调研计划列表",
+        "occurrence": 0,
+        "id": "P-DBMS-006",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/plan/list",
+        "evidence": "P-DBMS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "P-DBMS-006-op1",
+            "path": "/dop/dbms/requirement/plan/list/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "P-DBMS-006-op1-options0",
+              "P-DBMS-006-op1-options1",
+              "P-DBMS-006-op1-options2"
+            ],
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "调研实施",
+        "hierarchy": "调研实施",
+        "occurrence": 0,
+        "id": "P-DBMS-007",
+        "status": "pending"
+      },
+      {
+        "name": "数据调研报表",
+        "hierarchy": "调研报告 → 数据调研报表",
+        "occurrence": 0,
+        "id": "P-DBMS-008",
+        "status": "pending"
+      },
+      {
+        "name": "信息系统清单",
+        "hierarchy": "调研报告 → 信息系统清单",
+        "occurrence": 0,
+        "id": "P-DBMS-009",
+        "status": "pending"
+      },
+      {
+        "name": "数据目录清单",
+        "hierarchy": "调研报告 → 数据目录清单",
+        "occurrence": 0,
+        "id": "P-DBMS-010",
+        "status": "pending"
+      },
+      {
+        "name": "数据字典清单",
+        "hierarchy": "调研报告 → 数据字典清单",
+        "occurrence": 0,
+        "id": "P-DBMS-011",
+        "status": "pending"
+      },
+      {
+        "name": "接口资源清单",
+        "hierarchy": "调研报告 → 接口资源清单",
+        "occurrence": 0,
+        "id": "P-DBMS-012",
+        "status": "pending"
+      },
+      {
+        "name": "数据需求清单",
+        "hierarchy": "调研报告 → 数据需求清单",
+        "occurrence": 0,
+        "id": "P-DBMS-013",
+        "status": "pending"
+      },
+      {
+        "name": "业务需求清单",
+        "hierarchy": "调研报告 → 业务需求清单",
+        "occurrence": 0,
+        "id": "P-DBMS-014",
+        "status": "pending"
+      },
+      {
+        "name": "数据归集",
+        "hierarchy": "数据归集",
+        "occurrence": 0,
+        "id": "P-DBMS-015",
+        "status": "pending"
+      },
+      {
+        "name": "参考文档",
+        "hierarchy": "参考文档",
+        "occurrence": 1,
+        "id": "P-DBMS-016",
+        "status": "pending"
+      },
+      {
+        "name": "配置管理",
+        "hierarchy": "配置管理",
+        "occurrence": 0,
+        "id": "P-DBMS-017",
+        "status": "pending"
+      }
+    ]
+  }
+]
