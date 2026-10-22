@@ -115,6 +115,70 @@ def field_constraint_errors(text,data,module):
                 errors.append(f'{module}: unsupported maxlength for {label}')
     return errors
 
+def archive_errors(path,module):
+    if not path.is_file():
+        return [f'{module["code"]}: research archive missing']
+    if hashlib.sha256(path.read_bytes()).hexdigest()!=module.get('researchSha256'):
+        return [f'{module["code"]}: research archive hash mismatch']
+    return []
+
+def business_errors(text,module,research,data):
+    """Validate readable drafts separately from historical observation records."""
+    errors=[];code=module['code'];registry=module.get('businessRequirements',[])
+    ids=[x['id'] for x in registry]
+    for n in range(1,9):
+        if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{code}: business section {n} missing')
+    if REQ.findall(text)!=ids:errors.append(f'{code}: business requirement registry mismatch')
+    cases=AC.findall(text)
+    if [r.split('|')[1].strip() for r in cases]!=module.get('businessAcceptance',[]):
+        errors.append(f'{code}: business acceptance registry mismatch')
+    for row in cases:
+        if '【拟定，未执行】' not in row or '【已执行' in row:
+            errors.append(f'{code}: business acceptance must remain unexecuted')
+        refs=re.findall(r'(?<![A-Z-])[A-Z]+-\d{3}\b',row)
+        if not refs or any(ref not in ids for ref in refs):
+            errors.append(f'{code}: invalid business acceptance reference')
+    source_section=text.split('## 8.',1)[-1]
+    for req in registry:
+        rid=req['id']
+        match=re.search(r'^### '+re.escape(rid)+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
+        if not match:continue
+        block=match.group(1)
+        if not re.search(r'\*\*业务目的\*\*[：:]\S',block):
+            errors.append(f'{rid}: business purpose missing')
+        steps=re.findall(r'^\d+\.([^\n]*)',block,re.M)
+        if not steps or any(not step.strip() for step in steps):
+            errors.append(f'{rid}: missing or empty step')
+        if '**操作与规则**' not in block or '结果与异常处理【拟定需求】' not in block:
+            errors.append(f'{rid}: business behavior structure incomplete')
+        row=next((line for line in source_section.splitlines() if line.startswith('| '+rid+' |')),'')
+        if not req.get('evidence'):errors.append(f'{rid}: missing business source')
+        for key in req.get('evidence',[]):
+            if key not in data or f'{key}.png' not in row:
+                errors.append(f'{rid}: missing business source {key}')
+            elif data[key].get('quality',{}).get('targetValid') is False:
+                errors.append(f'{rid}: invalid business source {key}')
+    historical=set(re.findall(r'^### ([A-Z]+-\d{3}) .+ — (?:查询与列表|详情|新增|编辑|删除确认)$',research,re.M))
+    pending_section=text.split('## 7.',1)[-1].split('## 8.',1)[0]
+    pending=set(re.findall(r'^\| ([A-Z]+-\d{3}) \|',pending_section,re.M))
+    if historical!=((set(ids)&historical)|pending) or (set(ids)&pending):
+        errors.append(f'{code}: business operation coverage mismatch')
+    by_id={req['id']:req for req in registry}
+    for row in text.splitlines():
+        if not row.startswith('|') or '当前输入' not in row:continue
+        cells=[c.strip() for c in row.strip().strip('|').split('|')]
+        if len(cells)!=5:continue
+        req=by_id.get(cells[-1],{})
+        controls=[c for key in req.get('evidence',[]) for c in
+                  (data.get(key,{}).get('controls',[])+data.get(key,{}).get('elements',{}).get('fields',[]))]
+        for limit,value in re.findall(r'当前输入(上限|下限)(\d+)字符',row):
+            key='maxlength' if limit=='上限' else 'minlength'
+            normalize=lambda s:re.sub(r'^(请输入|请选择)','',s or '').strip('：: ')
+            if not any(str(c.get(key))==value and normalize(cells[0]) in
+                       [normalize(c.get('label')),normalize(c.get('placeholder'))] for c in controls):
+                errors.append(f'{code}: unsupported business constraint for {cells[0]}')
+    return errors
+
 def validate(root):
     errors=[];stats={}
     manifest=json.loads((root/'采样清单.json').read_text(encoding='utf-8'))
@@ -138,10 +202,16 @@ def validate(root):
         if a['time']!=next(s['time'] for s in samples if s['id']==k):errors.append(f'{k}: manifest time mismatch')
         try:png_check(png_files[k])
         except Exception as exc:errors.append(f'{k}: {exc}')
-    all_ids=[]
+    all_ids=[];business_ids=[]
     for m in modules:
-        path=root/m['directory']/'需求说明.md'
+        folder=root/m['directory']
+        path=folder/m.get('researchFile','需求说明.md')
         text=path.read_text(encoding='utf-8')
+        if m.get('researchFile'):
+            errors+=archive_errors(path,m)
+            business=(folder/'需求说明.md').read_text(encoding='utf-8')
+            errors+=business_errors(business,m,text,data)
+            business_ids+=REQ.findall(business)+[r.split('|')[1].strip() for r in AC.findall(business)]
         for n in range(1,9):
             if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{m["code"]}: missing section {n}')
         actual_req=REQ.findall(text);expected_req=[a['id'] for a in m['requirements']]
@@ -150,7 +220,9 @@ def validate(root):
         if actual_ac!=[a['id'] for a in m['acceptance']]:errors.append(f'{m["code"]}: acceptance registry mismatch')
         all_ids+=actual_req+actual_ac
         for req in m['requirements']:
-            block=re.search(r'^### '+re.escape(req['id'])+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S).group(1)
+            match=re.search(r'^### '+re.escape(req['id'])+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
+            if not match:continue
+            block=match.group(1)
             if req['kind']=='【拟定需求】':
                 if '【拟定，未执行】' not in block:errors.append(f'{req["id"]}: proposal execution status absent')
             else:
@@ -162,6 +234,7 @@ def validate(root):
             if not case['executed'] and '【拟定，未执行】' not in row:errors.append(f'{case["id"]}: planned case mislabeled')
         errors+=field_constraint_errors(text,data,m['code'])
     if len(all_ids)!=len(set(all_ids)):errors.append('IDs overlap across modules')
+    if len(business_ids)!=len(set(business_ids)):errors.append('business IDs overlap across modules')
     for path in root.rglob('*'):
         if not path.is_file() or path.suffix not in ['.md','.json','.py']:continue
         text=path.read_text(encoding='utf-8')
@@ -171,11 +244,12 @@ def validate(root):
     for short in ['E001','E003','E025','E026','E041','E056','E078','E090','E103']:
         status=next(s['status'] for s in samples if s['id'].startswith(short+'-'))
         if status=='有效：页面采样':errors.append(f'{short}: known limitation not classified')
-    mdm=(root/'19-元数据管理'/'需求说明.md').read_text(encoding='utf-8')
+    mdm_mod=next(m for m in modules if m['code']=='MDM')
+    mdm=(root/mdm_mod['directory']/mdm_mod.get('researchFile','需求说明.md')).read_text(encoding='utf-8')
     if 'E103' not in mdm or '返回异常' not in mdm or '不判通过' not in mdm:errors.append('metadata cancellation conflict not disclosed')
     idqs=next(m for m in modules if m['code']=='IDQS')
     if any(k.startswith('E048') for k in idqs['evidence']):errors.append('asset evidence incorrectly assigned to intelligent query')
-    stats={'modules':len(modules),'crud_objects':len(manifest.get('crudObjects',[])),'samples':len(samples),'requirements':sum(len(m['requirements']) for m in modules),'acceptance_cases':sum(len(m['acceptance']) for m in modules),'pngs_decoded':len(png_files),'errors':len(errors)}
+    stats={'modules':len(modules),'crud_objects':len(manifest.get('crudObjects',[])),'samples':len(samples),'requirements':sum(len(m['requirements']) for m in modules),'acceptance_cases':sum(len(m['acceptance']) for m in modules),'business_requirements':sum(len(m.get('businessRequirements',[])) for m in modules),'business_acceptance_cases':sum(len(m.get('businessAcceptance',[])) for m in modules),'research_archives':sum(bool(m.get('researchFile')) for m in modules),'pngs_decoded':len(png_files),'errors':len(errors)}
     return errors,stats
 
 if __name__=='__main__':

@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import json
 import tempfile
 import unittest
@@ -107,5 +108,61 @@ class RequirementsValidationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'需求.md').write_text('## 4. 字段、枚举和约束\n',encoding='utf8')
             self.assertEqual([],v.markdown_errors('[字段](./需求.md#4-字段枚举和约束)',root/'index.md',root))
+
+class BusinessRequirementsValidationTests(unittest.TestCase):
+    def setUp(self):
+        self.module={'code':'DS','businessRequirements':[{'id':'DS-107','evidence':['E1']}],
+                     'businessAcceptance':['DS-AC-001']}
+        self.data={'E1':{'elements':{'fields':[{'label':'名称','maxlength':100}]}}}
+        self.research='### DS-107 来源 — 新增\n### DS-108 来源 — 编辑\n'
+        self.text=(
+            '## 1. 目标\n## 2. 范围\n## 3. 功能需求\n'
+            '### DS-107 新增来源\n\n**业务目的**：登记来源。\n\n**操作与规则**：\n\n'
+            '1. 用户填写来源名称。\n\n**结果与异常处理【拟定需求】**：提交后提示结果。\n'
+            '## 4. 字段\n| 名称 | 输入 | 待确认 | 当前输入上限100字符 | DS-107 |\n'
+            '## 5. 流程\n## 6. 验收\n'
+            '| DS-AC-001 | 新增 | 提交 | DS-107 | 【拟定，未执行】 |\n'
+            '## 7. 待确认\n| DS-108 | 修改来源 | 可修改范围待确认 |\n'
+            '## 8. 依据\n| DS-107 | [E1](../evidence/E1.png) | 附录 |\n')
+
+    def check(self,text=None):
+        return v.business_errors(text or self.text,self.module,self.research,self.data)
+
+    def test_business_draft_can_reference_preserved_research(self):
+        self.assertEqual([],self.check())
+
+    def test_business_rule_without_purpose_is_rejected(self):
+        self.assertTrue(any('business purpose' in x for x in self.check(self.text.replace('**业务目的**：登记来源。',''))))
+
+    def test_empty_business_step_is_rejected(self):
+        self.assertTrue(any('empty step' in x for x in self.check(self.text.replace('1. 用户填写来源名称。','1. '))))
+
+    def test_business_acceptance_cannot_claim_execution(self):
+        self.assertTrue(any('unexecuted' in x for x in self.check(self.text.replace('【拟定，未执行】','【已执行】'))))
+
+    def test_unobserved_operation_cannot_disappear(self):
+        self.assertTrue(any('operation coverage' in x for x in self.check(self.text.replace('| DS-108 | 修改来源 | 可修改范围待确认 |',''))))
+
+    def test_business_fields_reject_invented_limit(self):
+        self.assertTrue(any('unsupported business constraint' in x for x in self.check(self.text.replace('上限100字符','上限200字符'))))
+
+    def test_business_source_cannot_use_invalid_target(self):
+        self.data['E1']['quality']={'targetValid':False}
+        self.assertTrue(any('invalid business source' in x for x in self.check()))
+
+    def test_business_acceptance_requires_existing_requirement(self):
+        self.assertTrue(any('acceptance reference' in x for x in self.check(self.text.replace('| 提交 | DS-107 |','| 提交 | DS-999 |'))))
+
+    def test_missing_business_source_is_rejected(self):
+        self.assertTrue(any('missing business source' in x for x in self.check(self.text.replace('[E1](../evidence/E1.png)','无来源'))))
+
+    def test_research_archive_rejects_modified_content(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'调研记录.md'
+            raw='原始调研证据。\n'.encode('utf8');path.write_bytes(raw)
+            module={'researchSha256':hashlib.sha256(raw).hexdigest(),'code':'DS'}
+            self.assertEqual([],v.archive_errors(path,module))
+            path.write_text('变化后的记录。\n',encoding='utf8')
+            self.assertTrue(any('archive hash' in x for x in v.archive_errors(path,module)))
 
 if __name__=='__main__':unittest.main()
