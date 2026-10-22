@@ -1,0 +1,163 @@
+{
+  "time": "2026-10-22T11:56:10.838Z",
+  "url": "/dcs/category/manageList",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n部门信息资源类\n基础信息资源类\n主题信息资源类\n查询重置\n新增\n目录分类设置\n目录分类名称\t节点编码\t分类编码\t创建时间\t操作\t\n委办局\n\t\n10001\n\t\n31000100000000000000000000\n\t\n2025-05-21 17:52:53\n\t\n新增\n编辑\n删除\n\n\n政数局\n\t\n10002\n\t\n1000200000000000000000000\n\t\n2025-06-25 15:32:16\n\t\n新增\n编辑\n删除\n\n\n交通管理局\n\t\n10003\n\t\n1000300000000000000000000\n\t\n2025-08-08 10:44:15\n\t\n新增\n编辑\n删除\n\n\n深圳市住建局\n\t\n10008\n\t\n1000800000000000000000000\n\t\n2025-08-14 10:45:45\n\t\n新增\n编辑\n删除\n\n\n数转部\n\t\n10004\n\t\n1000400000000000000000000\n\t\n2025-11-03 18:33:46\n\t\n新增\n编辑\n删除\n\n\n某委办局\n\t\n0100\n\t\n0100000000000000000000000\n\t\n2026-01-27 15:58:43\n\t\n新增\n编辑\n删除\n\n\n天弘基金\n\t\n0000001\n\t\n30000001000000000000000000\n\t\n2026-03-10 20:20:59\n\t\n新增\n编辑\n删除\n\n\n卫健委\n\t\n0010007\n\t\n30010007000000000000000000\n\t\n2026-04-14 15:41:06\n\t\n新增\n编辑\n删除\n\n\n民政局\n\t\n0000008\n\t\n30000008000000000000000000\n\t\n2026-04-14 20:44:31\n\t\n新增\n编辑\n删除\n\n\n龙华区\n\t\n0000100\n\t\n30000100000000000000000000\n\t\n2026-04-15 10:04:52\n\t\n新增\n编辑\n删除\n\n\n测试测试\n\t\n0009840\n\t\n30009840000000000000000000\n\t\n2026-04-17 17:46:45\n\t\n新增\n编辑\n删除\n\n\n测试测试测试测试\n\t\n123123\n\t\n30009840123123000000000000\n\t\n2026-04-17 17:47:37\n\t\n新增\n编辑\n删除\n\n\n公积金\n\t\n0003434\n\t\n30003434000000000000000000\n\t\n2026-05-15 16:39:17\n\t\n新增\n编辑\n删除\n\n\n归集部\n\t\n034343\n\t\n30003434034343000000000000\n\t\n2026-05-15 16:39:26\n\t\n新增\n编辑\n删除\n\n\n贷款部\n\t\n003633\n\t\n30003434003633000000000000\n\t\n2026-05-15 16:39:37\n\t\n新增\n编辑\n删除\n\n\n一到七\n\t\n1234567\n\t\n31234567000000000000000000\n\t\n2026-08-26 13:37:40\n\t\n新增\n编辑\n删除",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入目录分类名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "J-DCS-012",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "目录分类名称",
+    "节点编码",
+    "分类编码",
+    "创建时间",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "目录分类设置",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dese-miro-mulufenleishezhi1"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n部门信息资源类\n基础信息资源类\n主题信息资源类\n查询重置\n新增\n目录分类设置\n目录分类名称\t节点编码\t分类编码\t创建时间\t操作\t\n委办局\n\t\n10001\n\t\n31000100000000000000000000\n\t\n2025-05-21 17:52:53\n\t\n新增\n编辑\n删除\n\n\n政数局\n\t\n10002\n\t\n1000200000000000000000000\n\t\n2025-06-25 15:32:16\n\t\n新增\n编辑\n删除\n\n\n交通管理局\n\t\n10003\n\t\n1000300000000000000000000\n\t\n2025-08-08 10:44:15\n\t\n新增\n编辑\n删除\n\n\n深圳市住建局\n\t\n10008\n\t\n1000800000000000000000000\n\t\n2025-08-14 10:45:45\n\t\n新增\n编辑\n删除\n\n\n数转部\n\t\n10004\n\t\n1000400000000000000000000\n\t\n2025-11-03 18:33:46\n\t\n新增\n编辑\n删除\n\n\n某委办局\n\t\n0100\n\t\n0100000000000000000000000\n\t\n2026-01-27 15:58:43\n\t\n新增\n编辑\n删除\n\n\n天弘基金\n\t\n0000001\n\t\n30000001000000000000000000\n\t\n2026-03-10 20:20:59\n\t\n新增\n编辑\n删除\n\n\n卫健委\n\t\n0010007\n\t\n30010007000000000000000000\n\t\n2026-04-14 15:41:06\n\t\n新增\n编辑\n删除\n\n\n民政局\n\t\n0000008\n\t\n30000008000000000000000000\n\t\n2026-04-14 20:44:31\n\t\n新增\n编辑\n删除\n\n\n龙华区\n\t\n0000100\n\t\n30000100000000000000000000\n\t\n2026-04-15 10:04:52\n\t\n新增\n编辑\n删除\n\n\n测试测试\n\t\n0009840\n\t\n30009840000000000000000000\n\t\n2026-04-17 17:46:45\n\t\n新增\n编辑\n删除\n\n\n测试测试测试测试\n\t\n123123\n\t\n30009840123123000000000000\n\t\n2026-04-17 17:47:37\n\t\n新增\n编辑\n删除\n\n\n公积金\n\t\n0003434\n\t\n30003434000000000000000000\n\t\n2026-05-15 16:39:17\n\t\n新增\n编辑\n删除\n\n\n归集部\n\t\n034343\n\t\n30003434034343000000000000\n\t\n2026-05-15 16:39:26\n\t\n新增\n编辑\n删除\n\n\n贷款部\n\t\n003633\n\t\n30003434003633000000000000\n\t\n2026-05-15 16:39:37\n\t\n新增\n编辑\n删除\n\n\n一到七\n\t\n1234567\n\t\n31234567000000000000000000\n\t\n2026-08-26 13:37:40\n\t\n新增\n编辑\n删除"
+}

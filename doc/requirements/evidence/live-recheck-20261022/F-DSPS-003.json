@@ -1,0 +1,334 @@
+{
+  "time": "2026-10-22T12:09:54.578Z",
+  "url": "/dsps/algorithm/list",
+  "title": "数据安全保护",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据加密\n数据水印管理\n制作水印\n镶嵌水印\n水印追溯\n数据算法\n保存\n算法分类\n替换脱敏\n加密脱敏\n国密SM4算法\n遮蔽脱敏\n算法信息\n算法名称\n算法类型\n算法描述\n参数配制\n国密SM4算法\n随机生成\n算法测试\n输出样本数据\n0/200\n输出脱敏数据\n测 试重 置",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "搜索...",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "算法名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "算法类型",
+      "placeholder": "",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "算法描述",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "国密SM4算法",
+      "placeholder": "请输入自定义密钥",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "随机生成",
+      "label": "国密SM4算法",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "输出样本数据",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "输出脱敏数据",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "测 试",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重 置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSPS-003",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "算法名称",
+      "requiredMarker": true,
+      "text": "算法名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "算法类型",
+      "requiredMarker": true,
+      "text": "算法类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "算法描述",
+      "requiredMarker": false,
+      "text": "算法描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "国密SM4算法",
+      "requiredMarker": false,
+      "text": "国密SM4算法\n随机生成",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入自定义密钥",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "输出样本数据",
+      "requiredMarker": false,
+      "text": "输出样本数据\n0/200",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "输出脱敏数据",
+      "requiredMarker": false,
+      "text": "输出脱敏数据",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [
+    {
+      "text": "保存",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--title main-add-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "数据脱敏",
+    "数据字典",
+    "数据算法",
+    "数据加密",
+    "制作水印",
+    "镶嵌水印",
+    "水印追溯"
+  ],
+  "pageTitles": [
+    " 数据算法 "
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据加密\n数据水印管理\n制作水印\n镶嵌水印\n水印追溯\n数据算法\n保存\n算法分类\n替换脱敏\n加密脱敏\n国密SM4算法\n遮蔽脱敏\n算法信息\n算法名称\n算法类型\n算法描述\n参数配制\n国密SM4算法\n随机生成\n算法测试\n输出样本数据\n0/200\n输出脱敏数据\n测 试重 置"
+}

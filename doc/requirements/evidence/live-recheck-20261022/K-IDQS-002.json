@@ -1,0 +1,95 @@
+{
+  "time": "2026-10-22T12:15:23.267Z",
+  "url": "/idqs/queryScope/list",
+  "title": "智能查询系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n智能查询系统\n即席查询\n即席查询\n设置查询范围\n已有查询配置\n智能查询\n智能查询\n推荐的查询问题\n即席查询\n即席查询，由用户在查询时根据自身需要，可视化的配置查询条件并返回结果。具有灵活、按需操作的特性。\n设置查询范围\n选择查询范围\n设置查询条件和显示列\n搜索并展示数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择查询范围",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-IDQS-002",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "即席查询",
+    "设置查询范围",
+    "已有查询配置",
+    "智能查询",
+    "推荐的查询问题"
+  ],
+  "pageTitles": [
+    " 即席查询 "
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n智能查询系统\n即席查询\n即席查询\n设置查询范围\n已有查询配置\n智能查询\n智能查询\n推荐的查询问题\n即席查询\n即席查询，由用户在查询时根据自身需要，可视化的配置查询条件并返回结果。具有灵活、按需操作的特性。\n设置查询范围\n选择查询范围\n设置查询条件和显示列\n搜索并展示数据"
+}

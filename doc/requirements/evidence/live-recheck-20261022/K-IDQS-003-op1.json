@@ -1,0 +1,376 @@
+{
+  "time": "2026-10-22T12:15:31.086Z",
+  "url": "/idqs/inquire",
+  "title": "智能查询系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n智能查询系统\n即席查询\n即席查询\n设置查询范围\n已有查询配置\n智能查询\n智能查询\n推荐的查询问题\n即席查询\n查询\n重置\n保存当前配置\n选择已有查询配置\n全部表\n abc\n 测试资源001/dr_wbj_cszy001\n 非模板上报/dr_wbj_fmbsb\n user_trave0414\n配置表关系 设置查询条件设置显示列\n新增\n序号\t表名称\t表备注\t字段\t关联表\t关联字段\t关联方式\t操作\n1\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n删除",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择查询范围",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入表名或字段名搜索",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "配置表关系 ",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "设置查询条件",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "设置显示列",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择表名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入表备注",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择字段",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择表名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择字段",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选关联方式",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-IDQS-003-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "表名称",
+    "表备注",
+    "字段",
+    "关联表",
+    "关联字段",
+    "关联方式",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "查询",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--title idqs-chaxun"
+    },
+    {
+      "text": "重置",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--title idqs-zhongzhi"
+    },
+    {
+      "text": "保存当前配置",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--title idqs-baocun"
+    },
+    {
+      "text": "选择已有查询配置",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--title idqs-xuanze"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "即席查询",
+    "设置查询范围",
+    "已有查询配置",
+    "智能查询",
+    "推荐的查询问题"
+  ],
+  "pageTitles": [
+    " 即席查询 "
+  ],
+  "tabs": [
+    " 配置表关系 温馨提示若左侧勾选了两张及以上数量的表，需配置表关系。系统默认表关系行记录中最开始的表为主表，所有的行记录都要与主表有直接或间接关联。若两行记录对应的表相同，字段不同，则对应的关联方式需保持一致。新增、编辑行记录的表名称字段时，下拉选择的选项对应左侧已勾选的表。可选字段对应已选择表下面所有的字段。从“配置表关系”的第二行记录开始，左侧的表名称必须是其上方行记录中已出现的表名称。",
+    "设置查询条件",
+    "设置显示列"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n智能查询系统\n即席查询\n即席查询\n设置查询范围\n已有查询配置\n智能查询\n智能查询\n推荐的查询问题\n即席查询\n查询\n重置\n保存当前配置\n选择已有查询配置\n全部表\n abc\n 测试资源001/dr_wbj_cszy001\n 非模板上报/dr_wbj_fmbsb\n user_trave0414\n配置表关系 设置查询条件设置显示列\n新增\n序号\t表名称\t表备注\t字段\t关联表\t关联字段\t关联方式\t操作\n1\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n删除",
+  "operation": {
+    "menu": "即席查询 → 已有查询配置",
+    "action": "查看",
+    "source": "K-IDQS-003",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

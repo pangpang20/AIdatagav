@@ -1,0 +1,264 @@
+{
+  "time": "2026-10-22T13:10:57.838Z",
+  "url": "/gsp-portal/dataSet",
+  "title": "",
+  "text": "数据服务门户\n首页\n业务图谱\n数据资源\n数据清单\n资料下载\n购数车\n欢迎，陈云亮 \n首页\n购数车\n返回\n 全选\n目录名称\n供方机构\n资源类型\n操作\n暂无数据\n填写申请单\n申请单位\n申请人\n申请标题\n0/50\n申请说明\n0/200\n申请依据\n0/500\n上传附件\n点击上传\n只能上传.xls,.xlsx,.doc,.docx,.pdf文件\n\n继续订阅\n\n| 共订阅 0 个目录资源\n\n取消\n订阅",
+  "controls": [
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮 ",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "申请单位",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "申请人",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "申请标题",
+      "placeholder": "请输入申请标题",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "申请说明",
+      "placeholder": "请输入申请说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "申请依据",
+      "placeholder": "请输入申请依据",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "点击上传",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "订阅",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "AA-GSP-cart",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "申请单位",
+      "requiredMarker": true,
+      "text": "申请单位",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "申请人",
+      "requiredMarker": true,
+      "text": "申请人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "申请标题",
+      "requiredMarker": true,
+      "text": "申请标题\n0/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入申请标题",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "申请说明",
+      "requiredMarker": true,
+      "text": "申请说明\n0/200",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入申请说明",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "申请依据",
+      "requiredMarker": true,
+      "text": "申请依据\n0/500",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入申请依据",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "首页",
+    "业务图谱",
+    "数据资源",
+    "数据清单",
+    "资料下载"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "数据服务门户\n首页\n业务图谱\n数据资源\n数据清单\n资料下载\n购数车\n欢迎，陈云亮 \n首页\n购数车\n返回\n 全选\n目录名称\n供方机构\n资源类型\n操作\n暂无数据\n填写申请单\n申请单位\n申请人\n申请标题\n0/50\n申请说明\n0/200\n申请依据\n0/500\n上传附件\n点击上传\n只能上传.xls,.xlsx,.doc,.docx,.pdf文件\n\n继续订阅\n\n| 共订阅 0 个目录资源\n\n取消\n订阅"
+}

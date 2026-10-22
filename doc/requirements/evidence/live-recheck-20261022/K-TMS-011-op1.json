@@ -1,0 +1,247 @@
+{
+  "time": "2026-10-22T12:13:57.052Z",
+  "url": "/tms/assets/assetsEdit",
+  "title": "标签管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n新增资产标签\n返回\n编码\n名称\n0/50\n规则\n描述\n取消提交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "编码",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "规则",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "描述",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-TMS-011-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "编码",
+      "requiredMarker": true,
+      "text": "编码",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "名称",
+      "requiredMarker": true,
+      "text": "名称\n0/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "规则",
+      "requiredMarker": true,
+      "text": "规则",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "255",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "描述",
+      "requiredMarker": false,
+      "text": "描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "255",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 数据标签总览",
+    " 工作组",
+    "标签模型",
+    "实体属性",
+    "数据标签",
+    "用户分群",
+    "用户画像",
+    "属性分析",
+    "手工标签",
+    "任务调度配置",
+    "资产标签",
+    "文件标签",
+    "文件检索",
+    "变更管理",
+    "我的申请",
+    "我的审批",
+    "我的反馈",
+    "API服务列表"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n新增资产标签\n返回\n编码\n名称\n0/50\n规则\n描述\n取消提交",
+  "operation": {
+    "menu": "数据资产标签 → 资产标签",
+    "action": "新增",
+    "source": "K-TMS-011",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

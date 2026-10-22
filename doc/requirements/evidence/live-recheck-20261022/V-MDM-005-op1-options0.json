@@ -1,0 +1,735 @@
+{
+  "time": "2026-10-22T12:50:58.699Z",
+  "url": "/mdm/metadata/manage/strategyEdit",
+  "title": "元数据管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n新增调度策略\n返回\n策略名称\n0/40\n策略类型\n分钟\n小时\n天\n月\n年\n开始时间\n-\n间隔频率\n是否有效\n 有效\n 无效\n策略说明\n0/200\n取 消提 交\n15 分钟\n16 分钟\n17 分钟\n18 分钟\n19 分钟\n20 分钟\n21 分钟\n22 分钟\n23 分钟\n24 分钟\n25 分钟\n26 分钟\n27 分钟\n28 分钟\n29 分钟\n30 分钟\n31 分钟\n32 分钟\n33 分钟\n34 分钟\n35 分钟\n36 分钟\n37 分钟\n38 分钟\n39 分钟\n40 分钟\n41 分钟\n42 分钟\n43 分钟\n44 分钟\n45 分钟\n46 分钟\n47 分钟\n48 分钟\n49 分钟\n50 分钟\n51 分钟\n52 分钟\n53 分钟\n54 分钟\n55 分钟\n56 分钟\n57 分钟\n58 分钟\n59 分钟",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "策略名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "40",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "策略类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "策略类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "策略类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "策略类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "策略类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "选择日期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "选择时间",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "间隔频率",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "是否有效",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "是否有效",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "策略说明",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-MDM-005-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "策略名称",
+      "requiredMarker": true,
+      "text": "策略名称\n0/40",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "40",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "策略类型",
+      "requiredMarker": true,
+      "text": "策略类型\n分钟\n小时\n天\n月\n年",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "开始时间",
+      "requiredMarker": false,
+      "text": "开始时间\n-",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "选择日期",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "选择时间",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "",
+      "requiredMarker": true,
+      "text": "",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "选择日期",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "",
+      "requiredMarker": true,
+      "text": "",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "选择时间",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "间隔频率",
+      "requiredMarker": true,
+      "text": "间隔频率",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "是否有效",
+      "requiredMarker": true,
+      "text": "是否有效\n 有效\n 无效",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "策略说明",
+      "requiredMarker": false,
+      "text": "策略说明\n0/200",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "分钟",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "小时",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "天",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "月",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "年",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 有效",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 无效",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "15 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "16 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "17 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "18 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "19 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "20 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "21 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "22 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "23 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "24 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "25 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "26 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "27 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "28 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "29 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "30 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "31 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "32 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "33 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "34 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "35 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "36 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "37 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "38 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "39 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "40 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "41 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "42 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "43 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "44 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "45 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "46 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "47 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "48 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "49 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "50 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "51 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "52 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "53 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "54 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "55 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "56 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "57 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "58 分钟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "59 分钟",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "采集管理",
+    "变更管理",
+    "版本管理",
+    "异常监控",
+    "调度策略管理",
+    "元数据信息",
+    "数据地图",
+    "血缘分析",
+    "影响分析",
+    "映射管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n新增调度策略\n返回\n策略名称\n0/40\n策略类型\n分钟\n小时\n天\n月\n年\n开始时间\n-\n间隔频率\n是否有效\n 有效\n 无效\n策略说明\n0/200\n取 消提 交\n15 分钟\n16 分钟\n17 分钟\n18 分钟\n19 分钟\n20 分钟\n21 分钟\n22 分钟\n23 分钟\n24 分钟\n25 分钟\n26 分钟\n27 分钟\n28 分钟\n29 分钟\n30 分钟\n31 分钟\n32 分钟\n33 分钟\n34 分钟\n35 分钟\n36 分钟\n37 分钟\n38 分钟\n39 分钟\n40 分钟\n41 分钟\n42 分钟\n43 分钟\n44 分钟\n45 分钟\n46 分钟\n47 分钟\n48 分钟\n49 分钟\n50 分钟\n51 分钟\n52 分钟\n53 分钟\n54 分钟\n55 分钟\n56 分钟\n57 分钟\n58 分钟\n59 分钟",
+  "interaction": {
+    "type": "expand-select",
+    "label": "间隔频率"
+  }
+}

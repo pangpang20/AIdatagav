@@ -1,0 +1,230 @@
+{
+  "time": "2026-10-22T12:12:46.943Z",
+  "url": "/dsts/standard/test/detail",
+  "title": "数据标准检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准检测\n标准检测\n检测方案\n标准检测\n检测报告\n数据评价\n评价任务\n新增标准检测\n返回\n任务名称\n检测方案\n报告模板\n任务说明\n取 消下一步\n\n无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务名称",
+      "placeholder": "请输入任务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "检测方案",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "报告模板",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "任务说明",
+      "placeholder": "请输入任务说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "250",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "下一步",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSTS-002-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "任务名称",
+      "requiredMarker": true,
+      "text": "任务名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入任务名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "检测方案",
+      "requiredMarker": true,
+      "text": "检测方案",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "报告模板",
+      "requiredMarker": true,
+      "text": "报告模板",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务说明",
+      "requiredMarker": false,
+      "text": "任务说明",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入任务说明",
+          "maxlength": "250",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "检测方案",
+    "标准检测",
+    "检测报告",
+    "评价任务"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准检测\n标准检测\n检测方案\n标准检测\n检测报告\n数据评价\n评价任务\n新增标准检测\n返回\n任务名称\n检测方案\n报告模板\n任务说明\n取 消下一步\n\n无数据",
+  "interaction": {
+    "type": "expand-select",
+    "label": "检测方案"
+  }
+}

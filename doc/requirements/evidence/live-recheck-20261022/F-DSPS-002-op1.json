@@ -1,0 +1,223 @@
+{
+  "time": "2026-10-22T12:08:53.548Z",
+  "url": "/dsps/dictionary/edit",
+  "title": "数据安全保护",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据加密\n数据水印管理\n制作水印\n镶嵌水印\n水印追溯\n新增数据字典\n返回\n字典名称\n0/100\n字典规则\n0/100\n字典信息\n新增\n序号\t字典\t名称\t说明\t操作\n暂无数据\n备注\n0/1000\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "字典名称",
+      "placeholder": "请输入字典名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "字典规则",
+      "placeholder": "请输入字典规则",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "备注",
+      "placeholder": "请输入备注",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "1000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSPS-002-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "字典名称",
+      "requiredMarker": true,
+      "text": "字典名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入字典名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "字典规则",
+      "requiredMarker": false,
+      "text": "字典规则\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入字典规则",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "字典信息",
+      "requiredMarker": true,
+      "text": "字典信息\n新增\n序号\t字典\t名称\t说明\t操作\n暂无数据",
+      "fields": []
+    },
+    {
+      "label": "备注",
+      "requiredMarker": false,
+      "text": "备注\n0/1000",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入备注",
+          "maxlength": "1000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "字典",
+    "名称",
+    "说明",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "数据脱敏",
+    "数据字典",
+    "数据算法",
+    "数据加密",
+    "制作水印",
+    "镶嵌水印",
+    "水印追溯"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据加密\n数据水印管理\n制作水印\n镶嵌水印\n水印追溯\n新增数据字典\n返回\n字典名称\n0/100\n字典规则\n0/100\n字典信息\n新增\n序号\t字典\t名称\t说明\t操作\n暂无数据\n备注\n0/1000\n取 消提 交",
+  "operation": {
+    "menu": "数据脱敏管理 → 数据字典",
+    "action": "新增",
+    "source": "F-DSPS-002",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

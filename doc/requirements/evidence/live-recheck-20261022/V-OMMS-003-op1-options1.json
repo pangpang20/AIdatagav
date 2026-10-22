@@ -1,0 +1,360 @@
+{
+  "time": "2026-10-22T12:46:13.680Z",
+  "url": "/omms/monitor/target/applicationServerManagementEdit",
+  "title": "运维监控",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增应用服务器\n返回\n应用服务器类型\n对象名称\n0/15\n主机/IP地址\n端口\n监听端口\n日志目录\n安装路径\n备注\n取 消提 交\n\n无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "应用服务器类型",
+      "placeholder": "请选择应用服务器类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "对象名称",
+      "placeholder": "请输入对象名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "15",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "主机/IP地址",
+      "placeholder": "请选择主机/IP地址",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "端口",
+      "placeholder": "请输入端口",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "监听端口",
+      "placeholder": "请输入监听端口",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "日志目录",
+      "placeholder": "请输入日志目录",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "安装路径",
+      "placeholder": "请输入安装路径",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "备注",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-OMMS-003-op1-options1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "应用服务器类型",
+      "requiredMarker": true,
+      "text": "应用服务器类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择应用服务器类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "对象名称",
+      "requiredMarker": true,
+      "text": "对象名称\n0/15",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入对象名称",
+          "maxlength": "15",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "主机/IP地址",
+      "requiredMarker": true,
+      "text": "主机/IP地址",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择主机/IP地址",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "端口",
+      "requiredMarker": true,
+      "text": "端口",
+      "fields": [
+        {
+          "type": "number",
+          "placeholder": "请输入端口",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "监听端口",
+      "requiredMarker": true,
+      "text": "监听端口",
+      "fields": [
+        {
+          "type": "number",
+          "placeholder": "请输入监听端口",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "日志目录",
+      "requiredMarker": true,
+      "text": "日志目录",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入日志目录",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "安装路径",
+      "requiredMarker": true,
+      "text": "安装路径",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入安装路径",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "备注",
+      "requiredMarker": false,
+      "text": "备注",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "255",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 总览",
+    "· 服务器管理",
+    "· 应用服务器管理",
+    "· 数据库管理",
+    "· 服务器监控",
+    "· 应用服务器监控",
+    "· 数据库监控",
+    "告警规则",
+    "通知设置",
+    "告警"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增应用服务器\n返回\n应用服务器类型\n对象名称\n0/15\n主机/IP地址\n端口\n监听端口\n日志目录\n安装路径\n备注\n取 消提 交\n\n无数据",
+  "interaction": {
+    "type": "expand-select",
+    "label": "主机/IP地址"
+  }
+}

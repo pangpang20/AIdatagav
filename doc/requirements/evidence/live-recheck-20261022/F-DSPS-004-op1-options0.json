@@ -1,0 +1,321 @@
+{
+  "time": "2026-10-22T12:10:00.846Z",
+  "url": "/dsps/encrypt/edit",
+  "title": "数据安全保护",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据加密\n数据水印管理\n制作水印\n镶嵌水印\n水印追溯\n新增加密任务\n返回\n任务名称\n0/100\n库名\nmysql106\n海量数据库131\nmydscdb\nmysrcdb\nMRS-Presto\n表名\n唯一列\n加密字段名\n加密算法\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务名称",
+      "placeholder": "请输入任务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "库名",
+      "placeholder": "请选择库名",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名",
+      "placeholder": "请选择表名",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "唯一列",
+      "placeholder": "请选择唯一列",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "加密字段名",
+      "placeholder": "请选择加密字段名",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "加密算法",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSPS-004-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "任务名称",
+      "requiredMarker": true,
+      "text": "任务名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入任务名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "库名",
+      "requiredMarker": true,
+      "text": "库名\nmysql106\n海量数据库131\nmydscdb\nmysrcdb\nMRS-Presto",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择库名",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名",
+      "requiredMarker": true,
+      "text": "表名",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择表名",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "唯一列",
+      "requiredMarker": true,
+      "text": "唯一列",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择唯一列",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "加密字段名",
+      "requiredMarker": true,
+      "text": "加密字段名",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择加密字段名",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "加密算法",
+      "requiredMarker": false,
+      "text": "加密算法",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "mysql106",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "海量数据库131",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "mydscdb",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "mysrcdb",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "MRS-Presto",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "数据脱敏",
+    "数据字典",
+    "数据算法",
+    "数据加密",
+    "制作水印",
+    "镶嵌水印",
+    "水印追溯"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全保护\n数据脱敏管理\n数据脱敏\n数据字典\n数据算法\n数据加密管理\n数据加密\n数据水印管理\n制作水印\n镶嵌水印\n水印追溯\n新增加密任务\n返回\n任务名称\n0/100\n库名\nmysql106\n海量数据库131\nmydscdb\nmysrcdb\nMRS-Presto\n表名\n唯一列\n加密字段名\n加密算法\n取 消提 交",
+  "interaction": {
+    "type": "expand-select",
+    "label": "库名"
+  }
+}

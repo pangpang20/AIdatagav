@@ -1,0 +1,113 @@
+{
+  "time": "2026-10-22T12:13:21.812Z",
+  "url": "/tms/system/handTag",
+  "title": "标签管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n手工标签\n冲突标签\n手工标签\n手工标签",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "输入关键字进行过滤",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-TMS-009",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [
+    {
+      "text": "",
+      "title": "新增分类",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-add-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 数据标签总览",
+    " 工作组",
+    "标签模型",
+    "实体属性",
+    "数据标签",
+    "用户分群",
+    "用户画像",
+    "属性分析",
+    "手工标签",
+    "任务调度配置",
+    "资产标签",
+    "文件标签",
+    "文件检索",
+    "变更管理",
+    "我的申请",
+    "我的审批",
+    "我的反馈",
+    "API服务列表"
+  ],
+  "pageTitles": [
+    " 手工标签 "
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n手工标签\n冲突标签\n手工标签\n手工标签"
+}

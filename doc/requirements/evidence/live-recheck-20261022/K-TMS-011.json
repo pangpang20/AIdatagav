@@ -1,0 +1,277 @@
+{
+  "time": "2026-10-22T12:13:52.986Z",
+  "url": "/tms/assets/assetsList",
+  "title": "标签管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n资产标签\n标签分类\n地理标签类(内置标签)\n行政区划级别\n行政区划标签\n标准标签类(内置标签)\n质量标签类(内置标签)\n数据安全标签类(内置标签)\n通用标签类(内置标签)\n查询重置展开\n新增\n序号\t名称\t编码\t描述\t创建时间\t标记资源数\t状态\t操作\n1\n\t\n县级\n\t\n5a48abeb-233c-4a6e-8d10-0178e16bcbf8\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n\n\n2\n\t\n区级\n\t\naded04a0-f0ad-408d-bdc6-6539e684c8ca\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n\n\n3\n\t\n市级\n\t\n999a24a3-c181-4005-8b2e-e5ee74ed7f4b\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n\n\n4\n\t\n省级\n\t\nb37af526-f9fc-4c1a-8c85-f985923d3862\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n共 4 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "输入关键字进行过滤",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入编码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-TMS-011",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "名称",
+    "编码",
+    "描述",
+    "创建时间",
+    "标记资源数",
+    "状态",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "删除分类",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-delete-new"
+    },
+    {
+      "text": "",
+      "title": "编辑分类",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-edit-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "县级",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "0",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "区级",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "市级",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "省级",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 数据标签总览",
+    " 工作组",
+    "标签模型",
+    "实体属性",
+    "数据标签",
+    "用户分群",
+    "用户画像",
+    "属性分析",
+    "手工标签",
+    "任务调度配置",
+    "资产标签",
+    "文件标签",
+    "文件检索",
+    "变更管理",
+    "我的申请",
+    "我的审批",
+    "我的反馈",
+    "API服务列表"
+  ],
+  "pageTitles": [
+    " 资产标签 "
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n资产标签\n标签分类\n地理标签类(内置标签)\n行政区划级别\n行政区划标签\n标准标签类(内置标签)\n质量标签类(内置标签)\n数据安全标签类(内置标签)\n通用标签类(内置标签)\n查询重置展开\n新增\n序号\t名称\t编码\t描述\t创建时间\t标记资源数\t状态\t操作\n1\n\t\n县级\n\t\n5a48abeb-233c-4a6e-8d10-0178e16bcbf8\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n\n\n2\n\t\n区级\n\t\naded04a0-f0ad-408d-bdc6-6539e684c8ca\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n\n\n3\n\t\n市级\n\t\n999a24a3-c181-4005-8b2e-e5ee74ed7f4b\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n\n\n4\n\t\n省级\n\t\nb37af526-f9fc-4c1a-8c85-f985923d3862\n\t\n\t\n2028-01-01 00:00:00\n\t\n0\n\t\n已发布\n\t\n共 4 条\n1\n前往页"
+}

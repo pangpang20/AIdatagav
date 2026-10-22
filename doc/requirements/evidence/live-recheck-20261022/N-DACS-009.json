@@ -1,0 +1,320 @@
+{
+  "time": "2026-10-22T11:51:31.590Z",
+  "url": "/dacs/assetsLeger/tagManagement",
+  "title": "资产目录系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n资产目录系统\n概览\n整体概览\n数据资源\n数据资源目录\n数据资产\n数据资产目录\n审批中心\n我的待办\n我的已办\n全部审批记录\n资产台账\n资产画像\n资产血缘\n标签管理\n标签管理\n标签分类\n全部\n分类A (50)\n分类B (50)\n分类C (50)\n分类D (50)\n查询\n重置\n新增\n导入\n序号\n\t\n标签代码\n\t\n标签名称\n\t\n描述\n\t\n创建时间\n\t\n创建人\n\t\n标记资源数\n\t\n标记资产数\n\t\n操作\n1\n\t\nL2024040001\n\t\n敏感数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n188\n\t\n188\n\t\n-\n\n\n2\n\t\nL2024040002\n\t\n强制标准\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n4\n\t\n4\n\t\n-\n\n\n3\n\t\nL2024040002\n\t\n一数一源\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n3\n\t\n3\n\t\n-\n\n\n4\n\t\nL2024040002\n\t\n脱敏数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n2\n\t\n2\n\t\n-\n\n\n5\n\t\nL2024040002\n\t\n加密数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n1\n\t\n1\n\t\n-\n\n\n6\n\t\nL2024040002\n\t\n非敏感数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n0\n\t\n0\n\t\n删除\n\n\n7\n\t\nL2024040002\n\t\n非强制标准\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n3\n\t\n3\n\t\n-\n\n\n8\n\t\nL2024040002\n\t\n非一数一源\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n2\n\t\n2\n\t\n-\n\n\n9\n\t\nL2024040002\n\t\n非脱敏数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n1\n\t\n1\n\t\n-\n\n\n10\n\t\nL2024040002\n\t\n非加密数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n0\n\t\n0\n\t\n删除\n共 10 条\n20条/页\n1\n前往\n页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入标签代码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入标签名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "上一页",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "下一页",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "页",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "N-DACS-009",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "标签代码",
+    "标签名称",
+    "描述",
+    "创建时间",
+    "创建人",
+    "标记资源数",
+    "标记资产数",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "新增",
+      "cls": "iconfontmain adq-action-icon--title-tree main-add-new"
+    },
+    {
+      "text": "",
+      "title": "删除",
+      "cls": "iconfontmain adq-action-icon--title-tree main-delete-new"
+    },
+    {
+      "text": "",
+      "title": "修改",
+      "cls": "iconfontmain adq-action-icon--title-tree main-edit-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain adq-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "导入",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-import-new"
+    },
+    {
+      "text": "敏感数据",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "188",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "强制标准",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "4",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "一数一源",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "3",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "脱敏数据",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "2",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "加密数据",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "1",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "非敏感数据",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "0",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "adq-link-text-content adq-link-text--danger"
+    },
+    {
+      "text": "非强制标准",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "非一数一源",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "非脱敏数据",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "非加密数据",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "整体概览",
+    "数据资源目录",
+    "数据资产目录",
+    "我的待办",
+    "我的已办",
+    "全部审批记录",
+    "资产画像",
+    "资产血缘",
+    "标签管理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n资产目录系统\n概览\n整体概览\n数据资源\n数据资源目录\n数据资产\n数据资产目录\n审批中心\n我的待办\n我的已办\n全部审批记录\n资产台账\n资产画像\n资产血缘\n标签管理\n标签管理\n标签分类\n全部\n分类A (50)\n分类B (50)\n分类C (50)\n分类D (50)\n查询\n重置\n新增\n导入\n序号\n\t\n标签代码\n\t\n标签名称\n\t\n描述\n\t\n创建时间\n\t\n创建人\n\t\n标记资源数\n\t\n标记资产数\n\t\n操作\n1\n\t\nL2024040001\n\t\n敏感数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n188\n\t\n188\n\t\n-\n\n\n2\n\t\nL2024040002\n\t\n强制标准\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n4\n\t\n4\n\t\n-\n\n\n3\n\t\nL2024040002\n\t\n一数一源\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n3\n\t\n3\n\t\n-\n\n\n4\n\t\nL2024040002\n\t\n脱敏数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n2\n\t\n2\n\t\n-\n\n\n5\n\t\nL2024040002\n\t\n加密数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n1\n\t\n1\n\t\n-\n\n\n6\n\t\nL2024040002\n\t\n非敏感数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n0\n\t\n0\n\t\n删除\n\n\n7\n\t\nL2024040002\n\t\n非强制标准\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n3\n\t\n3\n\t\n-\n\n\n8\n\t\nL2024040002\n\t\n非一数一源\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n2\n\t\n2\n\t\n-\n\n\n9\n\t\nL2024040002\n\t\n非脱敏数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n1\n\t\n1\n\t\n-\n\n\n10\n\t\nL2024040002\n\t\n非加密数据\n\t\n\t\n2024-2-15 15:08:18\n\t\n张三丰\n\t\n0\n\t\n0\n\t\n删除\n共 10 条\n20条/页\n1\n前往\n页"
+}

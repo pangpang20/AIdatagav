@@ -1,0 +1,207 @@
+{
+  "time": "2026-10-22T12:38:28.610Z",
+  "url": "/ems/indicator/subjectiveEdit",
+  "title": "评价管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n添加主观指标\n返回\n指标名称\n0/50\n权重类型\n指标描述\n0/500\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "指标名称",
+      "placeholder": "请输入指标名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "权重类型",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "指标描述",
+      "placeholder": "请输入指标描述内容",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-EMS-002-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "指标名称",
+      "requiredMarker": true,
+      "text": "指标名称\n0/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入指标名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "权重类型",
+      "requiredMarker": true,
+      "text": "权重类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "指标描述",
+      "requiredMarker": false,
+      "text": "指标描述\n0/500",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入指标描述内容",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 方案管理",
+    "主观指标",
+    "客观指标",
+    "任务管理",
+    "执行管理",
+    "填报审核",
+    "申诉审核",
+    " 评价报告",
+    " 我的评价"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n添加主观指标\n返回\n指标名称\n0/50\n权重类型\n指标描述\n0/500\n取 消提 交",
+  "operation": {
+    "menu": "指标管理 → 主观指标",
+    "action": "新增",
+    "source": "V-EMS-002",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "time": "2026-10-22T12:45:44.746Z",
+  "url": "/omms/monitor/target/serverManagementEdit",
+  "title": "运维监控",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增服务器管理\n返回\n服务器类型\n对象名称\n0/15\n主机/IP地址\n监听方式\n用户名\n0/25\n密码\n端口\n备注\n取消测试凭证提交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "服务器类型",
+      "placeholder": "请选择服务器类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "对象名称",
+      "placeholder": "请输入对象名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "15",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "主机/IP地址",
+      "placeholder": "请输入主机/IP地址",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "监听方式",
+      "placeholder": "请选择监听方式",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "用户名",
+      "placeholder": "请输入用户名",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "25",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "password",
+      "text": "",
+      "label": "密码",
+      "placeholder": "请输入密码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "端口",
+      "placeholder": "请输入端口",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "备注",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "测试凭证",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-OMMS-002-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "服务器类型",
+      "requiredMarker": true,
+      "text": "服务器类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择服务器类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "对象名称",
+      "requiredMarker": true,
+      "text": "对象名称\n0/15",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入对象名称",
+          "maxlength": "15",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "主机/IP地址",
+      "requiredMarker": true,
+      "text": "主机/IP地址",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入主机/IP地址",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "监听方式",
+      "requiredMarker": true,
+      "text": "监听方式",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择监听方式",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "用户名",
+      "requiredMarker": true,
+      "text": "用户名\n0/25",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入用户名",
+          "maxlength": "25",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "密码",
+      "requiredMarker": true,
+      "text": "密码",
+      "fields": [
+        {
+          "type": "password",
+          "placeholder": "请输入密码",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "端口",
+      "requiredMarker": true,
+      "text": "端口",
+      "fields": [
+        {
+          "type": "number",
+          "placeholder": "请输入端口",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "备注",
+      "requiredMarker": false,
+      "text": "备注",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "255",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    " 总览",
+    "· 服务器管理",
+    "· 应用服务器管理",
+    "· 数据库管理",
+    "· 服务器监控",
+    "· 应用服务器监控",
+    "· 数据库监控",
+    "告警规则",
+    "通知设置",
+    "告警"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增服务器管理\n返回\n服务器类型\n对象名称\n0/15\n主机/IP地址\n监听方式\n用户名\n0/25\n密码\n端口\n备注\n取消测试凭证提交",
+  "operation": {
+    "menu": "监控管理 → 对象管理 → · 服务器管理",
+    "action": "新增",
+    "source": "V-OMMS-002",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "time": "2026-10-22T12:00:35.640Z",
+  "url": "/dap/manage/dataField/dataFieldEdit",
+  "title": "指标管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n指标管理\n管理\n数据源\n· 数据源管理\n数据域\n· 数据域管理\n配置\n· 逻辑表物化管理\n统计周期\n· 统计周期管理\n研发\n规范定义\n· 维度管理\n· 业务过程\n· 原子指标\n· 衍生指标\n· 业务限定词\n· 派生指标\n· 自定义指标\n逻辑表\n· 维度逻辑表\n· 事实逻辑表\n· 汇总逻辑表\n· 结果表\n发布\n发布\n· 发布管理\n运维\n调度\n· 调度管理\n分析\n数据分析\n· 数据分析\n· 分析门户\n监控\n监控管理\n· 监控规则管理\n· 告警管理\n新增数据域管理\n返回\n数据域名称\n数据域描述\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据域名称",
+      "placeholder": "请输入数据域名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "数据域描述",
+      "placeholder": "请输入指标描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-DAP-002-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "数据域名称",
+      "requiredMarker": true,
+      "text": "数据域名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入数据域名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数据域描述",
+      "requiredMarker": false,
+      "text": "数据域描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入指标描述",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "· 数据源管理",
+    "· 数据域管理",
+    "· 逻辑表物化管理",
+    "· 统计周期管理",
+    "· 维度管理",
+    "· 业务过程",
+    "· 原子指标",
+    "· 衍生指标",
+    "· 业务限定词",
+    "· 派生指标",
+    "· 自定义指标",
+    "· 维度逻辑表",
+    "· 事实逻辑表",
+    "· 汇总逻辑表",
+    "· 结果表",
+    "· 发布管理",
+    "· 调度管理",
+    "· 数据分析",
+    "· 分析门户",
+    "· 监控规则管理",
+    "· 告警管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n指标管理\n管理\n数据源\n· 数据源管理\n数据域\n· 数据域管理\n配置\n· 逻辑表物化管理\n统计周期\n· 统计周期管理\n研发\n规范定义\n· 维度管理\n· 业务过程\n· 原子指标\n· 衍生指标\n· 业务限定词\n· 派生指标\n· 自定义指标\n逻辑表\n· 维度逻辑表\n· 事实逻辑表\n· 汇总逻辑表\n· 结果表\n发布\n发布\n· 发布管理\n运维\n调度\n· 调度管理\n分析\n数据分析\n· 数据分析\n· 分析门户\n监控\n监控管理\n· 监控规则管理\n· 告警管理\n新增数据域管理\n返回\n数据域名称\n数据域描述\n取 消提 交",
+  "operation": {
+    "menu": "管理 → 数据域 → · 数据域管理",
+    "action": "新增",
+    "source": "K-DAP-002",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

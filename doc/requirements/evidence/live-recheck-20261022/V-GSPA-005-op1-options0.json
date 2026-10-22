@@ -1,0 +1,334 @@
+{
+  "time": "2026-10-22T13:04:21.635Z",
+  "url": "/gsp/content/forum/edit",
+  "title": "数据服务门户",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务门户\n政务共享门户后台管理\n快捷入口管理\n知识管理\n版块管理\n· 栏目管理\n· 布局管理\n· 版块管理\n· 内容管理\n模板管理\n版块新增 - 内部布局\n返回\n名称\n顺序号\n版块类型\n 内部布局\n 外部链接\n布局\n描述\n取 消提 交\n测试",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "名称",
+      "placeholder": "请输入名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "6",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "",
+      "label": "顺序号",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "",
+      "label": "顺序号",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "顺序号",
+      "placeholder": "请输入顺序号",
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "100",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "版块类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "版块类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "布局",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "描述",
+      "placeholder": "请输入描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "150",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-GSPA-005-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "名称",
+      "requiredMarker": true,
+      "text": "名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入名称",
+          "maxlength": "6",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "顺序号",
+      "requiredMarker": true,
+      "text": "顺序号",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入顺序号",
+          "maxlength": null,
+          "min": "1",
+          "max": "100",
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "版块类型",
+      "requiredMarker": true,
+      "text": "版块类型\n 内部布局\n 外部链接",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "布局",
+      "requiredMarker": false,
+      "text": "布局",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "描述",
+      "requiredMarker": false,
+      "text": "描述",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入描述",
+          "maxlength": "150",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": " 内部布局",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": " 外部链接",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "测试",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "快捷入口管理",
+    "知识管理",
+    "· 栏目管理",
+    "· 布局管理",
+    "· 版块管理",
+    "· 内容管理",
+    "模板管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务门户\n政务共享门户后台管理\n快捷入口管理\n知识管理\n版块管理\n· 栏目管理\n· 布局管理\n· 版块管理\n· 内容管理\n模板管理\n版块新增 - 内部布局\n返回\n名称\n顺序号\n版块类型\n 内部布局\n 外部链接\n布局\n描述\n取 消提 交\n测试",
+  "interaction": {
+    "type": "expand-select",
+    "label": "布局"
+  }
+}

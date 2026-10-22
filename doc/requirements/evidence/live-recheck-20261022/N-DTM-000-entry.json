@@ -1,0 +1,147 @@
+{
+  "time": "2026-10-22T11:52:44.434Z",
+  "url": "/da-dtm/warehouseResources/warehouseResourcesList",
+  "title": "",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n数据运营平台\n数据表管理\n库表资源\n授权管理\n审批中心\n我的资源\n我的申请\n数据库信息\n查询重置",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择数据库名",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "N-DTM-000-entry",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [
+    {
+      "text": "172.16.1.40",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "1",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    },
+    {
+      "text": "MRS-Presto",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-lin-text__single audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "库表资源",
+    "授权管理",
+    "审批中心",
+    "我的资源",
+    "我的申请"
+  ],
+  "captureTimingLimit": "Body changed during screenshot; verify image and metadata independently.",
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n数据运营平台\n数据表管理\n库表资源\n授权管理\n审批中心\n我的资源\n我的申请\n数据库信息\n查询重置"
+}

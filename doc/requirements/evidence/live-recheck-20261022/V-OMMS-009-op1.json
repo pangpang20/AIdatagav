@@ -1,0 +1,337 @@
+{
+  "time": "2026-10-22T12:48:07.597Z",
+  "url": "/omms/caveat/caveatMonitor/noticeConfigEdit",
+  "title": "运维监控",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增告警通知\n返回\n通知接收人\n邮箱\n通知方式\n 邮箱通知\n进行通知的告警级别\n告警\n一般\n严重\n致命\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "通知接收人",
+      "placeholder": "请输入通知接收人",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "邮箱",
+      "placeholder": "请输入邮箱",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "通知方式",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "进行通知的告警级别",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "进行通知的告警级别",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "进行通知的告警级别",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "进行通知的告警级别",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-OMMS-009-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "通知接收人",
+      "requiredMarker": true,
+      "text": "通知接收人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入通知接收人",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "邮箱",
+      "requiredMarker": true,
+      "text": "邮箱",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入邮箱",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "通知方式",
+      "requiredMarker": true,
+      "text": "通知方式\n 邮箱通知",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "进行通知的告警级别",
+      "requiredMarker": true,
+      "text": "进行通知的告警级别\n告警\n一般\n严重\n致命",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": " 邮箱通知",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "告警",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "一般",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "严重",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "致命",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 总览",
+    "· 服务器管理",
+    "· 应用服务器管理",
+    "· 数据库管理",
+    "· 服务器监控",
+    "· 应用服务器监控",
+    "· 数据库监控",
+    "告警规则",
+    "通知设置",
+    "告警"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增告警通知\n返回\n通知接收人\n邮箱\n通知方式\n 邮箱通知\n进行通知的告警级别\n告警\n一般\n严重\n致命\n取 消提 交",
+  "operation": {
+    "menu": "告警管理 → 通知设置",
+    "action": "新增",
+    "source": "V-OMMS-009",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,699 @@
+{
+  "time": "2026-10-22T11:54:25.517Z",
+  "url": "/ems/indicator/list/2",
+  "title": "评价管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n客观指标\n根分组\n标准检测\n质量检测\n安全检测\n查询重置\n批量启用\n批量停用\n创建复合指标\n新增\n\t序号\t指标编号\t指标名称\t权重类型\t所属部门\t所属分组\t客观指标类别\t指标说明\t状态\t操作\t\n\t\n1\n\t\nKPIO000034\n\t\n识别准确率\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n2\n\t\nKPIO000033\n\t\n分级数据覆盖率\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n3\n\t\nKPIO000032\n\t\n识别的数据总数量\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n4\n\t\nKPIO000031\n\t\n识别的字段总数量\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n5\n\t\nKPIO000030\n\t\n识别的表总数量\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n6\n\t\nKPIO000029\n\t\n指标总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n7\n\t\nKPIO000028\n\t\n检测字段总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n8\n\t\nKPIO000027\n\t\n检测的错误率\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n9\n\t\nKPIO000026\n\t\n检测的正确率\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n10\n\t\nKPIO000025\n\t\n表总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n11\n\t\nKPIO000024\n\t\n库总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n12\n\t\nKPIO000023\n\t\n规则总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n13\n\t\nKPIO000022\n\t\n质量评估得分\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n14\n\t\nKPIO000021\n\t\n问题数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n15\n\t\nKPIO000020\n\t\n数据总量\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n16\n\t\nKPIO000016\n\t\n检测数据量\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n17\n\t\nKPIO000015\n\t\n检测字段数量\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n18\n\t\nKPIO000014\n\t\n检测表数量\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n19\n\t\nKPIO000011\n\t\n非标准字段数\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n20\n\t\nKPIO000010\n\t\n标准字段数\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n共 28 条\n12\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "搜索...",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "I",
+      "type": null,
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入指标名称或编号",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "O-EMS-003",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "指标编号",
+    "指标名称",
+    "权重类型",
+    "所属部门",
+    "所属分组",
+    "客观指标类别",
+    "指标说明",
+    "状态",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfont audaque-action-icon--title-tree ems-shuxingtushouqi"
+    },
+    {
+      "text": "",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--title ems-more el-dropdown-selfdefine"
+    },
+    {
+      "text": "批量启用",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate ems-qiyong1"
+    },
+    {
+      "text": "批量停用",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate ems-quxiaoqiyong"
+    },
+    {
+      "text": "创建复合指标",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate ems-chuangjianfuhezhibiao"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "停用",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "查看",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 方案管理",
+    "主观指标",
+    "客观指标",
+    "任务管理",
+    "执行管理",
+    "填报审核",
+    "申诉审核",
+    " 评价报告",
+    " 我的评价"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n客观指标\n根分组\n标准检测\n质量检测\n安全检测\n查询重置\n批量启用\n批量停用\n创建复合指标\n新增\n\t序号\t指标编号\t指标名称\t权重类型\t所属部门\t所属分组\t客观指标类别\t指标说明\t状态\t操作\t\n\t\n1\n\t\nKPIO000034\n\t\n识别准确率\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n2\n\t\nKPIO000033\n\t\n分级数据覆盖率\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n3\n\t\nKPIO000032\n\t\n识别的数据总数量\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n4\n\t\nKPIO000031\n\t\n识别的字段总数量\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n5\n\t\nKPIO000030\n\t\n识别的表总数量\n\t\nRANGE\n\t\n\t\n安全检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n6\n\t\nKPIO000029\n\t\n指标总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n7\n\t\nKPIO000028\n\t\n检测字段总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n8\n\t\nKPIO000027\n\t\n检测的错误率\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n9\n\t\nKPIO000026\n\t\n检测的正确率\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n10\n\t\nKPIO000025\n\t\n表总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n11\n\t\nKPIO000024\n\t\n库总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n12\n\t\nKPIO000023\n\t\n规则总数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n13\n\t\nKPIO000022\n\t\n质量评估得分\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n14\n\t\nKPIO000021\n\t\n问题数\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n15\n\t\nKPIO000020\n\t\n数据总量\n\t\nRANGE\n\t\n\t\n质量检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n16\n\t\nKPIO000016\n\t\n检测数据量\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n17\n\t\nKPIO000015\n\t\n检测字段数量\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n18\n\t\nKPIO000014\n\t\n检测表数量\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n19\n\t\nKPIO000011\n\t\n非标准字段数\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n\n\n\t\n20\n\t\nKPIO000010\n\t\n标准字段数\n\t\nRANGE\n\t\n\t\n标准检测\n\t\n三测应用\n\t\n\t\n启用中\n\t\n停用\n查看\n共 28 条\n12\n前往页"
+}

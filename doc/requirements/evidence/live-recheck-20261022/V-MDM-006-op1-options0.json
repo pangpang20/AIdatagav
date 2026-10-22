@@ -1,0 +1,406 @@
+{
+  "time": "2026-10-22T12:51:51.001Z",
+  "url": "/mdm/metadata/manage/metaTableEdit",
+  "title": "元数据管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n编辑元数据信息\n返回\n表名\n表名备注\n0/50\n更新周期\n数据责任人\n所属部门\n表创建人\n所属系统\n备注\n0/250\n取 消提 交\n实时\n每天\n每周\n每月\n每季度\n每年\n一次性\n不定期\n其他",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名备注",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "更新周期",
+      "placeholder": "请选择更新周期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据责任人",
+      "placeholder": "请选择数据责任人",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属部门",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表创建人",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属系统",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "备注",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "250",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-MDM-006-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "表名",
+      "requiredMarker": false,
+      "text": "表名",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "表名备注",
+      "requiredMarker": false,
+      "text": "表名备注\n0/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "更新周期",
+      "requiredMarker": false,
+      "text": "更新周期",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择更新周期",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数据责任人",
+      "requiredMarker": false,
+      "text": "数据责任人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择数据责任人",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "所属部门",
+      "requiredMarker": false,
+      "text": "所属部门",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "表创建人",
+      "requiredMarker": false,
+      "text": "表创建人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "所属系统",
+      "requiredMarker": false,
+      "text": "所属系统",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "备注",
+      "requiredMarker": false,
+      "text": "备注\n0/250",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "250",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "实时",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "每天",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "每周",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "每月",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "每季度",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "每年",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "一次性",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "不定期",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "其他",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "采集管理",
+    "变更管理",
+    "版本管理",
+    "异常监控",
+    "调度策略管理",
+    "元数据信息",
+    "数据地图",
+    "血缘分析",
+    "影响分析",
+    "映射管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n编辑元数据信息\n返回\n表名\n表名备注\n0/50\n更新周期\n数据责任人\n所属部门\n表创建人\n所属系统\n备注\n0/250\n取 消提 交\n实时\n每天\n每周\n每月\n每季度\n每年\n一次性\n不定期\n其他",
+  "interaction": {
+    "type": "expand-select",
+    "label": "更新周期"
+  }
+}

@@ -1,0 +1,368 @@
+[
+  {
+    "code": "DSPS",
+    "name": "数据安全保护",
+    "source": "E049-security",
+    "entry": "F-DSPS-000-entry",
+    "discoveredAt": "2026-10-22T12:08:31.143Z",
+    "links": [
+      {
+        "name": "数据脱敏",
+        "hierarchy": "数据脱敏管理 → 数据脱敏",
+        "occurrence": 0,
+        "id": "F-DSPS-001",
+        "status": "opened-review-content",
+        "path": "/dsps/mask/list",
+        "evidence": "F-DSPS-001",
+        "operations": []
+      },
+      {
+        "name": "数据字典",
+        "hierarchy": "数据脱敏管理 → 数据字典",
+        "occurrence": 0,
+        "id": "F-DSPS-002",
+        "status": "opened-review-content",
+        "path": "/dsps/dictionary/list",
+        "evidence": "F-DSPS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSPS-002-op1",
+            "path": "/dsps/dictionary/edit",
+            "selectControls": 0
+          },
+          {
+            "name": "数据字典",
+            "status": "target-not-observed",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSPS-002-op2",
+            "path": "/dsps/dictionary/list"
+          }
+        ]
+      },
+      {
+        "name": "数据算法",
+        "hierarchy": "数据脱敏管理 → 数据算法",
+        "occurrence": 0,
+        "id": "F-DSPS-003",
+        "status": "opened-review-content",
+        "path": "/dsps/algorithm/list",
+        "evidence": "F-DSPS-003",
+        "operations": []
+      },
+      {
+        "name": "数据加密",
+        "hierarchy": "数据加密管理 → 数据加密",
+        "occurrence": 0,
+        "id": "F-DSPS-004",
+        "status": "opened-review-content",
+        "path": "/dsps/encrypt/list",
+        "evidence": "F-DSPS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSPS-004-op1",
+            "path": "/dsps/encrypt/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "F-DSPS-004-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "制作水印",
+        "hierarchy": "数据水印管理 → 制作水印",
+        "occurrence": 0,
+        "id": "F-DSPS-005",
+        "status": "opened-review-content",
+        "path": "/dsps/makeWatermark/list",
+        "evidence": "F-DSPS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSPS-005-op1",
+            "path": "/dsps/makeWatermark/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "镶嵌水印",
+        "hierarchy": "数据水印管理 → 镶嵌水印",
+        "occurrence": 0,
+        "id": "F-DSPS-006",
+        "status": "opened-review-content",
+        "path": "/dsps/mosaicWatermark/list",
+        "evidence": "F-DSPS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSPS-006-op1",
+            "path": "/dsps/mosaicWatermark/edit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "F-DSPS-006-op1-options0",
+              "F-DSPS-006-op1-options2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "水印追溯",
+        "hierarchy": "数据水印管理 → 水印追溯",
+        "occurrence": 0,
+        "id": "F-DSPS-007",
+        "status": "opened-review-content",
+        "path": "/dsps/watermarkTraceability/list",
+        "evidence": "F-DSPS-007",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DSTS",
+    "name": "数据标准检测",
+    "source": "E053-standard-check",
+    "entry": "F-DSTS-000-entry",
+    "discoveredAt": "2026-10-22T12:12:17.853Z",
+    "links": [
+      {
+        "name": "检测方案",
+        "hierarchy": "标准检测 → 检测方案",
+        "occurrence": 0,
+        "id": "F-DSTS-001",
+        "status": "opened-review-content",
+        "path": "/dsts/standard/plan/list",
+        "evidence": "F-DSTS-001",
+        "operations": []
+      },
+      {
+        "name": "标准检测",
+        "hierarchy": "标准检测 → 标准检测",
+        "occurrence": 0,
+        "id": "F-DSTS-002",
+        "status": "opened-review-content",
+        "path": "/dsts/standard/test/listPage",
+        "evidence": "F-DSTS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSTS-002-op1",
+            "path": "/dsts/standard/test/detail",
+            "selectControls": 2,
+            "optionEvidence": [
+              "F-DSTS-002-op1-options0",
+              "F-DSTS-002-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "检测报告",
+        "hierarchy": "标准检测 → 检测报告",
+        "occurrence": 0,
+        "id": "F-DSTS-003",
+        "status": "opened-review-content",
+        "path": "/dsts/standard/report/list",
+        "evidence": "F-DSTS-003",
+        "operations": []
+      },
+      {
+        "name": "评价任务",
+        "hierarchy": "数据评价 → 评价任务",
+        "occurrence": 0,
+        "id": "F-DSTS-004",
+        "status": "opened-review-content",
+        "path": "/dsts/evaluate/taskPage",
+        "evidence": "F-DSTS-004",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DSETS",
+    "name": "数据安全检测",
+    "source": "E054-security-check",
+    "entry": "F-DSETS-000-entry",
+    "discoveredAt": "2026-10-22T12:13:56.742Z",
+    "links": [
+      {
+        "name": "库表待办列表",
+        "hierarchy": "库表待办列表",
+        "occurrence": 0,
+        "id": "F-DSETS-001",
+        "status": "opened-review-content",
+        "path": "/dsets/tableAwaitList/list",
+        "evidence": "F-DSETS-001",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSETS-001-op1",
+            "path": "/dsets/tableAwaitList/list",
+            "selectControls": 1,
+            "optionEvidence": [
+              "F-DSETS-001-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "数据分类",
+        "hierarchy": "数据分类分级 → 数据分类",
+        "occurrence": 0,
+        "id": "F-DSETS-002",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/dataClassificationInformation",
+        "evidence": "F-DSETS-002",
+        "operations": []
+      },
+      {
+        "name": "数据分级",
+        "hierarchy": "数据分类分级 → 数据分级",
+        "occurrence": 0,
+        "id": "F-DSETS-003",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/dataGrading/list",
+        "evidence": "F-DSETS-003",
+        "operations": []
+      },
+      {
+        "name": "索引表管理",
+        "hierarchy": "数据分类分级 → 索引表管理",
+        "occurrence": 0,
+        "id": "F-DSETS-004",
+        "status": "opened-review-content",
+        "path": "/dsets/indexTableManage/list",
+        "evidence": "F-DSETS-004",
+        "operations": []
+      },
+      {
+        "name": "数据分级模板",
+        "hierarchy": "数据分类分级 → 数据分级模板",
+        "occurrence": 0,
+        "id": "F-DSETS-005",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/dataGradingTemplate/list",
+        "evidence": "F-DSETS-005",
+        "operations": []
+      },
+      {
+        "name": "识别规则",
+        "hierarchy": "数据分类分级 → 识别规则",
+        "occurrence": 0,
+        "id": "F-DSETS-006",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/identificationRules/list",
+        "evidence": "F-DSETS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSETS-006-op1",
+            "path": "/dsets/dataClassification/identificationRules/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "分级审批",
+        "hierarchy": "数据分类分级 → 分级审批",
+        "occurrence": 0,
+        "id": "F-DSETS-007",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/identificationRules/list",
+        "evidence": "F-DSETS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "navigation-error",
+            "businessWriteExecuted": false,
+            "reason": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "检测方案",
+        "hierarchy": "数据安全检测 → 检测方案",
+        "occurrence": 0,
+        "id": "F-DSETS-008",
+        "status": "opened-review-content",
+        "path": "/dsets/dataSecurityDetection/list",
+        "evidence": "F-DSETS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSETS-008-op1",
+            "path": "/dsets/dataSecurityDetection/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "安全检测",
+        "hierarchy": "数据安全检测 → 安全检测",
+        "occurrence": 0,
+        "id": "F-DSETS-009",
+        "status": "opened-review-content",
+        "path": "/dsets/securityDetection/list",
+        "evidence": "F-DSETS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "F-DSETS-009-op1",
+            "path": "/dsets/securityDetection/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "安全目录",
+        "hierarchy": "数据安全检测 → 安全目录",
+        "occurrence": 0,
+        "id": "F-DSETS-010",
+        "status": "opened-review-content",
+        "path": "/dsets/dataSecurityDir/list",
+        "evidence": "F-DSETS-010",
+        "operations": []
+      },
+      {
+        "name": "评价任务",
+        "hierarchy": "数据安全检测 → 评价任务",
+        "occurrence": 0,
+        "id": "F-DSETS-011",
+        "status": "opened-review-content",
+        "path": "/dsets/evaluation/list",
+        "evidence": "F-DSETS-011",
+        "operations": []
+      },
+      {
+        "name": "任务调度配置",
+        "hierarchy": "数据安全检测 → 任务调度配置",
+        "occurrence": 0,
+        "id": "F-DSETS-012",
+        "status": "opened-review-content",
+        "path": "/dsets/dataSecurityStrategy/strategyList",
+        "evidence": "F-DSETS-012",
+        "operations": []
+      }
+    ]
+  }
+]

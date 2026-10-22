@@ -1,0 +1,215 @@
+{
+  "time": "2026-10-22T11:49:31.469Z",
+  "url": "/dcs/systemManagement/businessEdit",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n业务管理/编辑\n返回\n内部部门\n业务名称\n4/100\n业务说明\n4/300\n取 消提 交\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n归集管理部\n贷款管理部\n山东部门",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "内部部门",
+      "placeholder": "请选择内部部门",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "业务名称",
+      "placeholder": "请输入业务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "业务说明",
+      "placeholder": "请输入业务说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "300",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "J-DCS-007-op2-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "内部部门",
+      "requiredMarker": true,
+      "text": "内部部门",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择内部部门",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "业务名称",
+      "requiredMarker": true,
+      "text": "业务名称\n4/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入业务名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "业务说明",
+      "requiredMarker": true,
+      "text": "业务说明\n4/300",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入业务说明",
+          "maxlength": "300",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n归集管理部\n贷款管理部\n山东部门",
+      "selected": true,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n业务管理/编辑\n返回\n内部部门\n业务名称\n4/100\n业务说明\n4/300\n取 消提 交\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n归集管理部\n贷款管理部\n山东部门"
+}

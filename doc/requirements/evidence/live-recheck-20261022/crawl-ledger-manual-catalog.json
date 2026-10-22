@@ -1,0 +1,26 @@
+[
+  {
+    "code": "DCS",
+    "name": "目录管理系统",
+    "entry": "U-DCS-resource-current",
+    "discoveredAt": "2026-10-22T12:18:39.232Z",
+    "links": [
+      {
+        "name": "· 资源管理",
+        "hierarchy": "资源编目 → 目录管理 → · 资源管理",
+        "status": "opened-review-content",
+        "path": "/dcs/resources/list",
+        "evidence": "U-DCS-resource-current",
+        "businessWriteExecuted": false
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "资源编目 → 目录管理 → · 资源管理",
+        "status": "opened-review-content",
+        "path": "/dcs/resources/list",
+        "evidence": "U-DCS-resource-menu",
+        "businessWriteExecuted": false
+      }
+    ]
+  }
+]

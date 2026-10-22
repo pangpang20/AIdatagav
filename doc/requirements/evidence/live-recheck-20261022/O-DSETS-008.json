@@ -1,0 +1,220 @@
+{
+  "time": "2026-10-22T11:53:47.258Z",
+  "url": "/dsets/dataSecurityDetection/list",
+  "title": "数据安全检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全检测\n 库表待办列表\n数据分类分级\n数据分类\n数据分级\n索引表管理\n数据分级模板\n识别规则\n分级审批\n数据安全检测\n检测方案\n安全检测\n安全目录\n评价任务\n任务调度配置\n检测方案\n-\n查询重置\n新增\n启用\n停用\n\t序号\t方案名称\t适用对象\t方案说明\t状态\t识别规则数\t关联任务数\t创建时间\t操作\n暂无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入方案名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": null,
+      "text": "",
+      "label": "",
+      "placeholder": "开始日期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": null,
+      "text": "",
+      "label": "",
+      "placeholder": "结束日期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "O-DSETS-008",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "方案名称",
+    "适用对象",
+    "方案说明",
+    "状态",
+    "识别规则数",
+    "关联任务数",
+    "创建时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "启用",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-qiyong2"
+    },
+    {
+      "text": "停用",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-jinyong1"
+    },
+    {
+      "text": "",
+      "title": "待办列表",
+      "cls": "audaque-link-text-content iconfont dsets-xuanfutubiao audaque-link-text--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": true
+    }
+  ],
+  "navigation": [
+    " 库表待办列表",
+    "数据分类",
+    "数据分级",
+    "索引表管理",
+    "数据分级模板",
+    "识别规则",
+    "分级审批",
+    "检测方案",
+    "安全检测",
+    "安全目录",
+    "评价任务",
+    "任务调度配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全检测\n 库表待办列表\n数据分类分级\n数据分类\n数据分级\n索引表管理\n数据分级模板\n识别规则\n分级审批\n数据安全检测\n检测方案\n安全检测\n安全目录\n评价任务\n任务调度配置\n检测方案\n-\n查询重置\n新增\n启用\n停用\n\t序号\t方案名称\t适用对象\t方案说明\t状态\t识别规则数\t关联任务数\t创建时间\t操作\n暂无数据"
+}

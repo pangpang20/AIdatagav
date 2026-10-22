@@ -1,0 +1,251 @@
+{
+  "time": "2026-10-22T12:15:06.062Z",
+  "url": "/dsets/dataClassification/identificationRules/edit",
+  "title": "数据安全检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全检测\n 库表待办列表\n数据分类分级\n数据分类\n数据分级\n索引表管理\n数据分级模板\n识别规则\n分级审批\n数据安全检测\n检测方案\n安全检测\n安全目录\n评价任务\n任务调度配置\n新增识别规则\n返回\n规则名称\n0/100\n规则类型\n 正则规则\n 文本规则\n规则表达式\n0/8000\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "规则名称",
+      "placeholder": "请输入规则名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "规则类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "规则类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "规则表达式",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "8000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSETS-006-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "规则名称",
+      "requiredMarker": true,
+      "text": "规则名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入规则名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "规则类型",
+      "requiredMarker": true,
+      "text": "规则类型\n 正则规则\n 文本规则",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "规则表达式",
+      "requiredMarker": true,
+      "text": "规则表达式\n0/8000",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "8000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [
+    {
+      "text": "",
+      "title": "待办列表",
+      "cls": "audaque-link-text-content iconfont dsets-xuanfutubiao audaque-link-text--active"
+    }
+  ],
+  "options": [
+    {
+      "text": " 正则规则",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": " 文本规则",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 库表待办列表",
+    "数据分类",
+    "数据分级",
+    "索引表管理",
+    "数据分级模板",
+    "识别规则",
+    "分级审批",
+    "检测方案",
+    "安全检测",
+    "安全目录",
+    "评价任务",
+    "任务调度配置"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全检测\n 库表待办列表\n数据分类分级\n数据分类\n数据分级\n索引表管理\n数据分级模板\n识别规则\n分级审批\n数据安全检测\n检测方案\n安全检测\n安全目录\n评价任务\n任务调度配置\n新增识别规则\n返回\n规则名称\n0/100\n规则类型\n 正则规则\n 文本规则\n规则表达式\n0/8000\n取 消提 交",
+  "operation": {
+    "menu": "数据分类分级 → 识别规则",
+    "action": "新增",
+    "source": "F-DSETS-006",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "code": "DQTS",
+    "name": "数据质量检测",
+    "discoveredAt": "2026-10-22T12:35:15.140Z",
+    "links": [
+      {
+        "name": "智能分期",
+        "hierarchy": "智能识别管理 → 智能分期",
+        "occurrence": 0,
+        "id": "V-DQTS-002",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-002",
+        "path": "/dqts/intelligentStaging/list",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DQTS-002-op1",
+            "path": "/dqts/intelligentStaging/edit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "V-DQTS-002-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "规则识别",
+        "hierarchy": "智能识别管理 → 规则识别",
+        "occurrence": 0,
+        "id": "V-DQTS-003",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-003",
+        "path": "/dqts/ruleParse/list",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DQTS-003-op1",
+            "path": "/dqts/ruleParse/edit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "V-DQTS-003-op1-options0",
+              "V-DQTS-003-op1-options2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "质量规则推荐",
+        "hierarchy": "智能识别管理 → 质量规则推荐",
+        "occurrence": 0,
+        "id": "V-DQTS-004",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-004",
+        "path": "/dqts/recommend/list",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DQTS-004-op1",
+            "path": "/dqts/recommend/edit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "V-DQTS-004-op1-options0",
+              "V-DQTS-004-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "检测方案",
+        "hierarchy": "数据质量检测 → 检测方案",
+        "occurrence": 0,
+        "id": "V-DQTS-005",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-005",
+        "path": "/dqts/plan/list",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DQTS-005-op1",
+            "path": "/dqts/plan/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "质量规则",
+        "hierarchy": "数据质量检测 → 质量规则",
+        "occurrence": 0,
+        "id": "V-DQTS-006",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-006",
+        "path": "/dqts/rules/list",
+        "operations": []
+      },
+      {
+        "name": "质量检测",
+        "hierarchy": "数据质量检测 → 质量检测",
+        "occurrence": 0,
+        "id": "V-DQTS-007",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-007",
+        "path": "/dqts/detection/list",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DQTS-007-op1",
+            "path": "/dqts/detection/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-DQTS-007-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "检测报告",
+        "hierarchy": "数据质量检测 → 检测报告",
+        "occurrence": 0,
+        "id": "V-DQTS-008",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-008",
+        "path": "/dqts/reports/list",
+        "operations": []
+      },
+      {
+        "name": "任务调度配置",
+        "hierarchy": "数据质量检测 → 任务调度配置",
+        "occurrence": 0,
+        "id": "V-DQTS-009",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-009",
+        "path": "/dqts/schedule/list",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DQTS-009-op1",
+            "path": "/dqts/schedule/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-DQTS-009-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "评价任务",
+        "hierarchy": "评价管理 → 评价任务",
+        "occurrence": 0,
+        "id": "V-DQTS-010",
+        "status": "opened-review-content",
+        "evidence": "V-DQTS-010",
+        "path": "/dqts/evaluation/list",
+        "operations": []
+      }
+    ]
+  }
+]

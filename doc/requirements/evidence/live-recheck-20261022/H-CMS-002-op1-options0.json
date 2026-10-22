@@ -1,0 +1,484 @@
+{
+  "time": "2026-10-22T11:46:53.274Z",
+  "url": "/dop/cms/comfactory/development/edit",
+  "title": "构件管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n构件管理\n 构件超市\n 构件开发\n构件配置\n构件名称\n构件分类\n我的构件\n我的构件\n导出记录\n新增\n返回\n构件类型:\nSQL规则\n正则规则\n值域规则\n算法包\n数据库对象:\nOracle\nHIVE\nDAMENG\nDWS\nMRS-hive\nGP\n*规则内容: （注:规则内容中的变量参数用{变量名称}代替,如:{vid}）\n请输入规则内容\n1\n​\n构件名称\n构件分类\n业务分类\n引用标准\n需求描述\n规则说明\n参考代码\n开发者\n校验者\n取消保存确认\n质量检测\n标准检测\n安全检测\n清洗加工",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "构件名称",
+      "placeholder": "请输入内容",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "构件分类",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "业务分类",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "引用标准",
+      "placeholder": "请输入引用标准",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "需求描述",
+      "placeholder": "请输入需求描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "规则说明",
+      "placeholder": "请输入规则说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "参考代码",
+      "placeholder": "请输入参考代码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "开发者",
+      "placeholder": "请输入开发者",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "校验者",
+      "placeholder": "请输入校验者",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "保存",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确认",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-CMS-002-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "构件类型:",
+      "requiredMarker": true,
+      "text": "构件类型:\nSQL规则\n正则规则\n值域规则\n算法包",
+      "fields": []
+    },
+    {
+      "label": "数据库对象:",
+      "requiredMarker": true,
+      "text": "数据库对象:\nOracle\nHIVE\nDAMENG\nDWS\nMRS-hive\nGP",
+      "fields": []
+    },
+    {
+      "label": "",
+      "requiredMarker": true,
+      "text": "请输入规则内容\n1\n​",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "构件名称",
+      "requiredMarker": true,
+      "text": "构件名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入内容",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "构件分类",
+      "requiredMarker": true,
+      "text": "构件分类",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "业务分类",
+      "requiredMarker": true,
+      "text": "业务分类",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "引用标准",
+      "requiredMarker": false,
+      "text": "引用标准",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入引用标准",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "需求描述",
+      "requiredMarker": false,
+      "text": "需求描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入需求描述",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "规则说明",
+      "requiredMarker": false,
+      "text": "规则说明",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入规则说明",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "参考代码",
+      "requiredMarker": false,
+      "text": "参考代码",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入参考代码",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "开发者",
+      "requiredMarker": false,
+      "text": "开发者",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入开发者",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "校验者",
+      "requiredMarker": false,
+      "text": "校验者",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入校验者",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "质量检测",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "标准检测",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "安全检测",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "清洗加工",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 构件超市",
+    " 构件开发",
+    "构件名称",
+    "构件分类",
+    "我的构件",
+    "导出记录"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n构件管理\n 构件超市\n 构件开发\n构件配置\n构件名称\n构件分类\n我的构件\n我的构件\n导出记录\n新增\n返回\n构件类型:\nSQL规则\n正则规则\n值域规则\n算法包\n数据库对象:\nOracle\nHIVE\nDAMENG\nDWS\nMRS-hive\nGP\n*规则内容: （注:规则内容中的变量参数用{变量名称}代替,如:{vid}）\n请输入规则内容\n1\n​\n构件名称\n构件分类\n业务分类\n引用标准\n需求描述\n规则说明\n参考代码\n开发者\n校验者\n取消保存确认\n质量检测\n标准检测\n安全检测\n清洗加工"
+}

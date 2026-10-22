@@ -1,0 +1,283 @@
+{
+  "time": "2026-10-22T12:57:54.571Z",
+  "url": "/dss/standard/audit/indexItemList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准申请\n标准审批\n查询重置\n序号\t标准字段名称\t标准字段编码\t申请类型\t申请人\t申请时间\t原因说明\t任务状态\t\n1\n\t\n性别\n\t\nF0055\n\t\n变更\n\t\nmzj001\n\t\n2026-09-04 15:22:15\n\t\n变更标准字段：性别\n\t\n待审批\n\n\n2\n\t\ntest111\n\t\ntest111\n\t\n新增\n\t\nyyc\n\t\n2026-07-30 14:15:48\n\t\n新增标准字段：test111\n\t\n待审批\n\n\n3\n\t\n性别\n\t\nF0055\n\t\n变更\n\t\n张志丹\n\t\n2026-07-22 18:05:22\n\t\n变更标准字段：性别\n\t\n审批通过\n\n\n4\n\t\nusername\n\t\nusername\n\t\n变更\n\t\n万志浩\n\t\n2026-07-08 17:22:25\n\t\n变更标准字段：username\n\t\n待审批\n\n\n5\n\t\ntest111\n\t\ntest111\n\t\n新增\n\t\nyyc\n\t\n2026-05-25 11:24:26\n\t\n新增标准字段：test111\n\t\n待审批\n\n\n6\n\t\nNAME\n\t\nCSNAME\n\t\n变更\n\t\nyyc\n\t\n2026-05-25 11:23:50\n\t\n变更标准字段：NAME\n\t\n待审批\n\n\n7\n\t\nusername\n\t\nusername\n\t\n新增\n\t\nyyc\n\t\n2026-05-15 11:38:10\n\t\n新增标准字段：username\n\t\n审批通过\n\n\n8\n\t\nNAME\n\t\nCSNAME\n\t\n新增\n\t\n张风祥\n\t\n2025-08-28 10:05:34\n\t\n新增标准字段：NAME\n\t\n审批通过\n\n\n9\n\t\n出生地省市县\n\t\nDA010009\n\t\n变更\n\t\nCUST013\n\t\n2025-08-26 17:50:03\n\t\n变更标准字段：出生地省市县\n\t\n审批通过\n\n\n10\n\t\n性别\n\t\nF0055\n\t\n新增\n\t\nCUST013\n\t\n2025-08-26 17:45:17\n\t\n新增标准字段：性别\n\t\n审批通过\n\n\n11\n\t\n政治面貌\n\t\nDA010010\n\t\n变更\n\t\n梁孔昌\n\t\n2025-08-11 11:41:34\n\t\n变更标准字段：政治面貌\n\t\n审批通过\n\n\n12\n\t\n政治面貌\n\t\nDA010010\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:41:09\n\t\n新增标准字段：政治面貌\n\t\n审批通过\n\n\n13\n\t\n出生地省市县\n\t\nDA010009\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:39:19\n\t\n新增标准字段：出生地省市县\n\t\n审批通过\n\n\n14\n\t\n出生地国家 和地区\n\t\nDA010008\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:38:30\n\t\n新增标准字段：出生地国家 和地区\n\t\n审批通过\n\n\n15\n\t\n国籍\n\t\nDA010007\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:37:33\n\t\n新增标准字段：国籍\n\t\n审批通过\n\n\n16\n\t\n民族\n\t\nDA010006\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:36:32\n\t\n新增标准字段：民族\n\t\n审批通过\n\n\n17\n\t\n出生日期\n\t\nDA010005\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:35:38\n\t\n新增标准字段：出生日期\n\t\n审批通过\n\n\n18\n\t\n性别\n\t\nDA010004\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:34:42\n\t\n新增标准字段：性别\n\t\n审批通过\n\n\n19\n\t\n曾用名\n\t\nDA010003\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:33:58\n\t\n新增标准字段：曾用名\n\t\n审批通过\n\n\n20\n\t\n姓名\n\t\nDA010002\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:32:29\n\t\n新增标准字段：姓名\n\t\n审批通过\n共 26 条\n12\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入标准模型表名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择申请类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择任务状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-DSS-008",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "标准字段名称",
+    "标准字段编码",
+    "申请类型",
+    "申请人",
+    "申请时间",
+    "原因说明",
+    "任务状态",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "性别",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "test111",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "username",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "NAME",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "出生地省市县",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "政治面貌",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "出生地国家 和地区",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "国籍",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "民族",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "出生日期",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "曾用名",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "姓名",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "· 标准文档管理",
+    "· 标准术语管理",
+    "· 标准模型表管理",
+    "· 标准字段管理",
+    "· 标准代码管理",
+    "· 标准文档审批",
+    "· 标准模型表审批",
+    "· 标准字段审批",
+    "· 标准代码审批",
+    "· 标准查询"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准申请\n标准审批\n查询重置\n序号\t标准字段名称\t标准字段编码\t申请类型\t申请人\t申请时间\t原因说明\t任务状态\t\n1\n\t\n性别\n\t\nF0055\n\t\n变更\n\t\nmzj001\n\t\n2026-09-04 15:22:15\n\t\n变更标准字段：性别\n\t\n待审批\n\n\n2\n\t\ntest111\n\t\ntest111\n\t\n新增\n\t\nyyc\n\t\n2026-07-30 14:15:48\n\t\n新增标准字段：test111\n\t\n待审批\n\n\n3\n\t\n性别\n\t\nF0055\n\t\n变更\n\t\n张志丹\n\t\n2026-07-22 18:05:22\n\t\n变更标准字段：性别\n\t\n审批通过\n\n\n4\n\t\nusername\n\t\nusername\n\t\n变更\n\t\n万志浩\n\t\n2026-07-08 17:22:25\n\t\n变更标准字段：username\n\t\n待审批\n\n\n5\n\t\ntest111\n\t\ntest111\n\t\n新增\n\t\nyyc\n\t\n2026-05-25 11:24:26\n\t\n新增标准字段：test111\n\t\n待审批\n\n\n6\n\t\nNAME\n\t\nCSNAME\n\t\n变更\n\t\nyyc\n\t\n2026-05-25 11:23:50\n\t\n变更标准字段：NAME\n\t\n待审批\n\n\n7\n\t\nusername\n\t\nusername\n\t\n新增\n\t\nyyc\n\t\n2026-05-15 11:38:10\n\t\n新增标准字段：username\n\t\n审批通过\n\n\n8\n\t\nNAME\n\t\nCSNAME\n\t\n新增\n\t\n张风祥\n\t\n2025-08-28 10:05:34\n\t\n新增标准字段：NAME\n\t\n审批通过\n\n\n9\n\t\n出生地省市县\n\t\nDA010009\n\t\n变更\n\t\nCUST013\n\t\n2025-08-26 17:50:03\n\t\n变更标准字段：出生地省市县\n\t\n审批通过\n\n\n10\n\t\n性别\n\t\nF0055\n\t\n新增\n\t\nCUST013\n\t\n2025-08-26 17:45:17\n\t\n新增标准字段：性别\n\t\n审批通过\n\n\n11\n\t\n政治面貌\n\t\nDA010010\n\t\n变更\n\t\n梁孔昌\n\t\n2025-08-11 11:41:34\n\t\n变更标准字段：政治面貌\n\t\n审批通过\n\n\n12\n\t\n政治面貌\n\t\nDA010010\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:41:09\n\t\n新增标准字段：政治面貌\n\t\n审批通过\n\n\n13\n\t\n出生地省市县\n\t\nDA010009\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:39:19\n\t\n新增标准字段：出生地省市县\n\t\n审批通过\n\n\n14\n\t\n出生地国家 和地区\n\t\nDA010008\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:38:30\n\t\n新增标准字段：出生地国家 和地区\n\t\n审批通过\n\n\n15\n\t\n国籍\n\t\nDA010007\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:37:33\n\t\n新增标准字段：国籍\n\t\n审批通过\n\n\n16\n\t\n民族\n\t\nDA010006\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:36:32\n\t\n新增标准字段：民族\n\t\n审批通过\n\n\n17\n\t\n出生日期\n\t\nDA010005\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:35:38\n\t\n新增标准字段：出生日期\n\t\n审批通过\n\n\n18\n\t\n性别\n\t\nDA010004\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:34:42\n\t\n新增标准字段：性别\n\t\n审批通过\n\n\n19\n\t\n曾用名\n\t\nDA010003\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:33:58\n\t\n新增标准字段：曾用名\n\t\n审批通过\n\n\n20\n\t\n姓名\n\t\nDA010002\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:32:29\n\t\n新增标准字段：姓名\n\t\n审批通过\n共 26 条\n12\n前往页"
+}

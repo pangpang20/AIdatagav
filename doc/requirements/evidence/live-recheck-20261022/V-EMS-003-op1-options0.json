@@ -1,0 +1,153 @@
+{
+  "time": "2026-10-22T12:38:54.619Z",
+  "url": "/ems/indicator/objectiveEdit",
+  "title": "评价管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n添加客观指标\n返回\n客观指标类别\n取 消提 交\n待开发\n解析应用",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "客观指标类别",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-EMS-003-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "客观指标类别",
+      "requiredMarker": true,
+      "text": "客观指标类别",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "待开发",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "解析应用",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 方案管理",
+    "主观指标",
+    "客观指标",
+    "任务管理",
+    "执行管理",
+    "填报审核",
+    "申诉审核",
+    " 评价报告",
+    " 我的评价"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n添加客观指标\n返回\n客观指标类别\n取 消提 交\n待开发\n解析应用",
+  "interaction": {
+    "type": "expand-select",
+    "label": "客观指标类别"
+  }
+}

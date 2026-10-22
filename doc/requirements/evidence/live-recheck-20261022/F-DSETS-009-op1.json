@@ -1,0 +1,185 @@
+{
+  "time": "2026-10-22T12:17:02.642Z",
+  "url": "/dsets/securityDetection/edit",
+  "title": "数据安全检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全检测\n 库表待办列表\n数据分类分级\n数据分类\n数据分级\n索引表管理\n数据分级模板\n识别规则\n分级审批\n数据安全检测\n检测方案\n安全检测\n安全目录\n评价任务\n任务调度配置\n新增安全检测\n返回\n1\n填写任务信息\n2\n选择数据源\n3\n选择检测方案\n4\n选择执行调度\n任务名称\n0/100\n任务说明\n0/1000\n取 消下一步",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务名称",
+      "placeholder": "请输入任务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "任务说明",
+      "placeholder": "请输入任务说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "1000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "下一步",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSETS-009-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "任务名称",
+      "requiredMarker": true,
+      "text": "任务名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入任务名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务说明",
+      "requiredMarker": false,
+      "text": "任务说明\n0/1000",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入任务说明",
+          "maxlength": "1000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [
+    {
+      "text": "",
+      "title": "待办列表",
+      "cls": "audaque-link-text-content iconfont dsets-xuanfutubiao audaque-link-text--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 库表待办列表",
+    "数据分类",
+    "数据分级",
+    "索引表管理",
+    "数据分级模板",
+    "识别规则",
+    "分级审批",
+    "检测方案",
+    "安全检测",
+    "安全目录",
+    "评价任务",
+    "任务调度配置"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据安全检测\n 库表待办列表\n数据分类分级\n数据分类\n数据分级\n索引表管理\n数据分级模板\n识别规则\n分级审批\n数据安全检测\n检测方案\n安全检测\n安全目录\n评价任务\n任务调度配置\n新增安全检测\n返回\n1\n填写任务信息\n2\n选择数据源\n3\n选择检测方案\n4\n选择执行调度\n任务名称\n0/100\n任务说明\n0/1000\n取 消下一步",
+  "operation": {
+    "menu": "数据安全检测 → 安全检测",
+    "action": "新增",
+    "source": "F-DSETS-009",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

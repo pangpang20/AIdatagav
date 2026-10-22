@@ -1,0 +1,392 @@
+{
+  "time": "2026-10-22T12:49:43.382Z",
+  "url": "/mdm/metadata/manage/collectEdit",
+  "title": "元数据管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n编辑自动采集\n返回\n任务名称\n数据源名称\n执行周期\n 分\n 时\n 日\n 月\n 年\n关联策略\n任务说明\n1/255\n取 消提 交\n\n请求异常",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据源名称",
+      "placeholder": "请选择(每个数据源只能选择一次)",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联策略",
+      "placeholder": "请选择关联策略",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "任务说明",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-MDM-001-op2",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "任务名称",
+      "requiredMarker": true,
+      "text": "任务名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "数据源名称",
+      "requiredMarker": true,
+      "text": "数据源名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择(每个数据源只能选择一次)",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "执行周期",
+      "requiredMarker": true,
+      "text": "执行周期\n 分\n 时\n 日\n 月\n 年",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "关联策略",
+      "requiredMarker": true,
+      "text": "关联策略",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择关联策略",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务说明",
+      "requiredMarker": false,
+      "text": "任务说明\n1/255",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "255",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": " 分",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 时",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 日",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": " 月",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 年",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "采集管理",
+    "变更管理",
+    "版本管理",
+    "异常监控",
+    "调度策略管理",
+    "元数据信息",
+    "数据地图",
+    "血缘分析",
+    "影响分析",
+    "映射管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n元数据管理\n元数据管理\n采集管理\n变更管理\n版本管理\n异常监控\n调度策略管理\n元数据信息\n元数据分析\n数据地图\n血缘分析\n影响分析\n映射管理\n编辑自动采集\n返回\n任务名称\n数据源名称\n执行周期\n 分\n 时\n 日\n 月\n 年\n关联策略\n任务说明\n1/255\n取 消提 交\n\n请求异常",
+  "operation": {
+    "menu": "元数据管理 → 采集管理",
+    "action": "编辑",
+    "source": "V-MDM-001",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

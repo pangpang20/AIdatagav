@@ -1,0 +1,284 @@
+{
+  "time": "2026-10-22T12:11:07.604Z",
+  "url": "/gldm/rule/functionRule/edit",
+  "title": "任务编排与调度",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n调度统计\n配置管理\n系统管理\n组件管理\n初始化\n新增函数\n返回\n函数名称\n函数英文名称\n函数表达式\n函数描述\n函数SQL\n取消确定\n\n请先初始化\n\n请先初始化\n\n请先初始化",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "函数名称",
+      "placeholder": "请输入函数名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "函数英文名称",
+      "placeholder": "请输入函数英文名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "30",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "函数表达式",
+      "placeholder": "函数英文名(${参数}) eg:funEnglishName(${VID})",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "2000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "函数描述",
+      "placeholder": "请输入函数描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "2000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "函数SQL",
+      "placeholder": "请输入函数SQL",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "2000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确定",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-SMS-020-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "函数名称",
+      "requiredMarker": true,
+      "text": "函数名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入函数名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "函数英文名称",
+      "requiredMarker": true,
+      "text": "函数英文名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入函数英文名称",
+          "maxlength": "30",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "函数表达式",
+      "requiredMarker": true,
+      "text": "函数表达式",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "函数英文名(${参数}) eg:funEnglishName(${VID})",
+          "maxlength": "2000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "函数描述",
+      "requiredMarker": true,
+      "text": "函数描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入函数描述",
+          "maxlength": "2000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "函数SQL",
+      "requiredMarker": true,
+      "text": "函数SQL",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入函数SQL",
+          "maxlength": "2000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "概览",
+    "我的流程",
+    "流程调度管理",
+    "· 周期任务作业监控",
+    "· 实时任务作业监控",
+    "· 告警信息查询",
+    "· 告警推送管理",
+    "归集表查询",
+    "开发表管理",
+    "函数开发",
+    "脚本开发",
+    "· 标准层",
+    "· 原子层",
+    "· 整合层",
+    "· 主题层",
+    "· 安全层",
+    "· 标准代码集查询",
+    "· 源系统代码集管理",
+    "· 源与标准映射管理",
+    "· 函数管理",
+    "· 算法包管理",
+    "· IDE平台初始化",
+    "调度统计",
+    "系统管理",
+    "组件管理",
+    "初始化"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n调度统计\n配置管理\n系统管理\n组件管理\n初始化\n新增函数\n返回\n函数名称\n函数英文名称\n函数表达式\n函数描述\n函数SQL\n取消确定\n\n请先初始化\n\n请先初始化\n\n请先初始化",
+  "operation": {
+    "menu": "GLDM开发IDE → 规则配置 → · 函数管理",
+    "action": "新增",
+    "source": "H-SMS-020",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

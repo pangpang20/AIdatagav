@@ -1,0 +1,71 @@
+{
+  "time": "2026-10-22T12:14:47.150Z",
+  "url": "/dms/statistics/list",
+  "title": "规范化数据建模",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n· 开发环境配置\n· 模型属性配置\n模型数据统计\n标准使用统计\n模型数据统计\n概念/逻辑模型\n2\n概念/逻辑模型\n7\n概念/逻辑模型表\n12\n概念/逻辑模型字段数\n物理模型\n0\n物理模型\n0\n物理模型表\n0\n物理模型字段\n模型统计\n模型属性统计\n主题域统计\n物化统计",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-DMS-004",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "· 模型设计",
+    "· 模型物化",
+    "· 模型分析",
+    "· 模型数据统计",
+    "· 开发环境配置",
+    "· 模型属性配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n· 开发环境配置\n· 模型属性配置\n模型数据统计\n标准使用统计\n模型数据统计\n概念/逻辑模型\n2\n概念/逻辑模型\n7\n概念/逻辑模型表\n12\n概念/逻辑模型字段数\n物理模型\n0\n物理模型\n0\n物理模型表\n0\n物理模型字段\n模型统计\n模型属性统计\n主题域统计\n物化统计"
+}

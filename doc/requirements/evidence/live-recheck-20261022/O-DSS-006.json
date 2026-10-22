@@ -1,0 +1,281 @@
+{
+  "time": "2026-10-22T11:51:35.470Z",
+  "url": "/dss/standard/audit/docList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准申请\n标准审批\n查询重置\n序号\t标准名称\t标准编号\t申请类型\t申请人\t申请时间\t原因说明\t任务状态\t\n1\n\t\n人口数据\n\t\n人口数据\n\t\n变更\n\t\nmzj001\n\t\n2026-09-04 15:21:46\n\t\n变更标准文档:人口数据\n\t\n待审批\n\n\n2\n\t\n标准测试\n\t\n12349234\n\t\n新增\n\t\n万志浩\n\t\n2026-08-13 11:16:06\n\t\n新增标准文档:标准测试\n\t\n待审批\n\n\n3\n\t\n人口综合库数据规范\n\t\nDB33/T 2234-2019\n\t\n变更\n\t\n张志丹\n\t\n2026-05-22 11:35:04\n\t\n变更标准文档:人口综合库数据规范\n\t\n审批通过\n\n\n4\n\t\n人口数据\n\t\n人口数据\n\t\n新增\n\t\nCUST009\n\t\n2025-11-19 03:32:47\n\t\n新增标准文档:人口数据\n\t\n审批通过\n\n\n5\n\t\n编码及数据要求\n\t\ncjt214-2007\n\t\n新增\n\t\nCUST013\n\t\n2025-08-26 19:08:31\n\t\n新增标准文档:编码及数据要求\n\t\n审批通过\n\n\n6\n\t\n全国组织、干部、人事管理信息\n\t\nGBT 14946-2019\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:17:15\n\t\n新增标准文档:全国组织、干部、人事管理信息\n\t\n审批通过\n\n\n7\n\t\n人口信息管理代码（第7部分）常驻人口信息级别代码\n\t\nGA 324.7-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:10:28\n\t\n新增标准文档:人口信息管理代码（第7部分）常驻人口信息级别代码\n\t\n审批通过\n\n\n8\n\t\n人口信息管理代码（第6部分）血型代码\n\t\nGA 324.6-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:09:52\n\t\n新增标准文档:人口信息管理代码（第6部分）血型代码\n\t\n审批通过\n\n\n9\n\t\n人口信息管理代码（第5部分）申领居民身份证原因代码\n\t\nGA 324.5-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:08:46\n\t\n新增标准文档:人口信息管理代码（第5部分）申领居民身份证原因代码\n\t\n审批通过\n\n\n10\n\t\n人口信息管理代码（第4部分）缴销居民身份证情况代码\n\t\nGA 324.4-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:08:11\n\t\n新增标准文档:人口信息管理代码（第4部分）缴销居民身份证情况代码\n\t\n审批通过\n\n\n11\n\t\n人口信息管理代码（第3部分）户口迁移变动分类代码\n\t\nGA 324.3-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:07:26\n\t\n新增标准文档:人口信息管理代码（第3部分）户口迁移变动分类代码\n\t\n审批通过\n\n\n12\n\t\n人口信息管理代码（第2部分）户口迁移变动分类代码\n\t\nGA 324.2-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:06:19\n\t\n新增标准文档:人口信息管理代码（第2部分）户口迁移变动分类代码\n\t\n审批通过\n\n\n13\n\t\n人口信息管理代码（第1部分）户口类别代码\n\t\nGA 324.1-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:05:24\n\t\n新增标准文档:人口信息管理代码（第1部分）户口类别代码\n\t\n审批通过\n\n\n14\n\t\n人口信息管理代码（第1部分）户口类别代码\n\t\nGA 324.1-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 10:55:32\n\t\n新增标准文档:人口信息管理代码（第1部分）户口类别代码\n\t\n审批不通过\n\n\n15\n\t\n人口综合库数据规范\n\t\nDB33/T 2234-2019\n\t\n新增\n\t\n梁孔昌\n\t\n2025-05-15 13:37:54\n\t\n新增标准文档:人口综合库数据规范\n\t\n审批通过\n共 15 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入标准名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择申请类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择任务状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "O-DSS-006",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "标准名称",
+    "标准编号",
+    "申请类型",
+    "申请人",
+    "申请时间",
+    "原因说明",
+    "任务状态",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "人口数据",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "标准测试",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口综合库数据规范",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "编码及数据要求",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "全国组织、干部、人事管理信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第7部分）常驻人口信息级别代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第6部分）血型代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第5部分）申领居民身份证原因代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第4部分）缴销居民身份证情况代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第3部分）户口迁移变动分类代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第2部分）户口迁移变动分类代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口信息管理代码（第1部分）户口类别代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "· 标准文档管理",
+    "· 标准术语管理",
+    "· 标准模型表管理",
+    "· 标准字段管理",
+    "· 标准代码管理",
+    "· 标准文档审批",
+    "· 标准模型表审批",
+    "· 标准字段审批",
+    "· 标准代码审批",
+    "· 标准查询"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准申请\n标准审批\n查询重置\n序号\t标准名称\t标准编号\t申请类型\t申请人\t申请时间\t原因说明\t任务状态\t\n1\n\t\n人口数据\n\t\n人口数据\n\t\n变更\n\t\nmzj001\n\t\n2026-09-04 15:21:46\n\t\n变更标准文档:人口数据\n\t\n待审批\n\n\n2\n\t\n标准测试\n\t\n12349234\n\t\n新增\n\t\n万志浩\n\t\n2026-08-13 11:16:06\n\t\n新增标准文档:标准测试\n\t\n待审批\n\n\n3\n\t\n人口综合库数据规范\n\t\nDB33/T 2234-2019\n\t\n变更\n\t\n张志丹\n\t\n2026-05-22 11:35:04\n\t\n变更标准文档:人口综合库数据规范\n\t\n审批通过\n\n\n4\n\t\n人口数据\n\t\n人口数据\n\t\n新增\n\t\nCUST009\n\t\n2025-11-19 03:32:47\n\t\n新增标准文档:人口数据\n\t\n审批通过\n\n\n5\n\t\n编码及数据要求\n\t\ncjt214-2007\n\t\n新增\n\t\nCUST013\n\t\n2025-08-26 19:08:31\n\t\n新增标准文档:编码及数据要求\n\t\n审批通过\n\n\n6\n\t\n全国组织、干部、人事管理信息\n\t\nGBT 14946-2019\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:17:15\n\t\n新增标准文档:全国组织、干部、人事管理信息\n\t\n审批通过\n\n\n7\n\t\n人口信息管理代码（第7部分）常驻人口信息级别代码\n\t\nGA 324.7-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:10:28\n\t\n新增标准文档:人口信息管理代码（第7部分）常驻人口信息级别代码\n\t\n审批通过\n\n\n8\n\t\n人口信息管理代码（第6部分）血型代码\n\t\nGA 324.6-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:09:52\n\t\n新增标准文档:人口信息管理代码（第6部分）血型代码\n\t\n审批通过\n\n\n9\n\t\n人口信息管理代码（第5部分）申领居民身份证原因代码\n\t\nGA 324.5-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:08:46\n\t\n新增标准文档:人口信息管理代码（第5部分）申领居民身份证原因代码\n\t\n审批通过\n\n\n10\n\t\n人口信息管理代码（第4部分）缴销居民身份证情况代码\n\t\nGA 324.4-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:08:11\n\t\n新增标准文档:人口信息管理代码（第4部分）缴销居民身份证情况代码\n\t\n审批通过\n\n\n11\n\t\n人口信息管理代码（第3部分）户口迁移变动分类代码\n\t\nGA 324.3-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:07:26\n\t\n新增标准文档:人口信息管理代码（第3部分）户口迁移变动分类代码\n\t\n审批通过\n\n\n12\n\t\n人口信息管理代码（第2部分）户口迁移变动分类代码\n\t\nGA 324.2-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:06:19\n\t\n新增标准文档:人口信息管理代码（第2部分）户口迁移变动分类代码\n\t\n审批通过\n\n\n13\n\t\n人口信息管理代码（第1部分）户口类别代码\n\t\nGA 324.1-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 11:05:24\n\t\n新增标准文档:人口信息管理代码（第1部分）户口类别代码\n\t\n审批通过\n\n\n14\n\t\n人口信息管理代码（第1部分）户口类别代码\n\t\nGA 324.1-2001\n\t\n新增\n\t\n梁孔昌\n\t\n2025-08-11 10:55:32\n\t\n新增标准文档:人口信息管理代码（第1部分）户口类别代码\n\t\n审批不通过\n\n\n15\n\t\n人口综合库数据规范\n\t\nDB33/T 2234-2019\n\t\n新增\n\t\n梁孔昌\n\t\n2025-05-15 13:37:54\n\t\n新增标准文档:人口综合库数据规范\n\t\n审批通过\n共 15 条\n1\n前往页"
+}

@@ -1,0 +1,775 @@
+{
+  "time": "2026-10-22T12:39:40.377Z",
+  "url": "/ems/task/evaluationEdit",
+  "title": "评价管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n添加任务\n返回\n任务名称\n0/50\n任务类型\n任务有效期\n-\n关联方案\n执行周期\n执行时间\n通报设置\n任务描述\n0/500\n* 配置评价对象 （0） \n全选\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n山东部门\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务名称",
+      "placeholder": "请输入任务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务类型",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": null,
+      "text": "",
+      "label": "任务有效期",
+      "placeholder": "开始日期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": null,
+      "text": "",
+      "label": "任务有效期",
+      "placeholder": "结束日期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联方案",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "执行时间",
+      "placeholder": "选择日期",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "通报设置",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "任务描述",
+      "placeholder": "请输入任务描述内容",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": "搜索...",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "* 配置评价对象 （0） ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-EMS-004-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "任务名称",
+      "requiredMarker": true,
+      "text": "任务名称\n0/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入任务名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务类型",
+      "requiredMarker": true,
+      "text": "任务类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务有效期",
+      "requiredMarker": true,
+      "text": "任务有效期\n-",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "开始日期",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "结束日期",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "关联方案",
+      "requiredMarker": true,
+      "text": "关联方案",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "执行周期",
+      "requiredMarker": true,
+      "text": "执行周期",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "执行时间",
+      "requiredMarker": true,
+      "text": "执行时间",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "选择日期",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "通报设置",
+      "requiredMarker": true,
+      "text": "通报设置",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务描述",
+      "requiredMarker": false,
+      "text": "任务描述\n0/500",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入任务描述内容",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "* 配置评价对象 （0） ",
+      "requiredMarker": false,
+      "text": "* 配置评价对象 （0） \n全选\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n山东部门",
+      "fields": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "搜索...",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "全选",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 方案管理",
+    "主观指标",
+    "客观指标",
+    "任务管理",
+    "执行管理",
+    "填报审核",
+    "申诉审核",
+    " 评价报告",
+    " 我的评价"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n评价管理\n 方案管理\n指标管理\n主观指标\n客观指标\n评价任务\n任务管理\n执行管理\n填报审核\n申诉审核\n 评价报告\n 我的评价\n添加任务\n返回\n任务名称\n0/50\n任务类型\n任务有效期\n-\n关联方案\n执行周期\n执行时间\n通报设置\n任务描述\n0/500\n* 配置评价对象 （0） \n全选\n根部门\n国航集团\n数据集成\n某委办局\n政数局\n卡塔尔\n市住建局\n农科院\n天弘基金\n龙华区\n公积金\n山东部门\n取 消提 交",
+  "operation": {
+    "menu": "评价任务 → 任务管理",
+    "action": "新增",
+    "source": "V-EMS-004",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

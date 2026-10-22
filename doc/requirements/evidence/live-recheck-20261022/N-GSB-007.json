@@ -1,0 +1,156 @@
+{
+  "time": "2026-10-22T11:41:43.009Z",
+  "url": "/gsb/config/list",
+  "title": "数据服务支撑",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务支撑\n服务目录\n服务目录\n服务管理\n注册管理\n消费管理\n服务审批\n注册审批\n服务控制\n消费IP管理\n服务统计\n配置\n数源配置\n数据源\n部门信息分类\n根部门\n国航集团\n数转部\n人力资源部\n财务部\n天弘基金\n航空安全管理部\n资产管理部\n数据集成\n数据采集1\n数据采集11\n数据采集111\n数据采集1111\n某委办局\n政数局\n数据资源部\n卡塔尔\n交警部门\n交通管理局\n市住建局\n农科院\n天弘基金\n投资交易部\n龙华区\n区政数局\n区民政局\n公积金\n归集管理部\n贷款管理部\n山东部门\n挂载\n序号\t表名\t类型\t数据源\t备注\t操作\t\n1\n\t\ntest_zhang1124\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n2\n\t\na_rkcj_t1\n\t\n库表\n\t\nGP人口库数据源\n\t\na_rkcj\n\t\n删除\n\n\n3\n\t\nal\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n4\n\t\ntrg_cyl\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n5\n\t\ntrg_cyl_new\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n6\n\t\nsrc_cyl\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n7\n\t\ntrg_cyl01_new\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n8\n\t\nsrc_cyl01\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n9\n\t\npassenger\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n10\n\t\ntravel\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n11\n\t\nflight\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n12\n\t\nuser_info_trae\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n13\n\t\nabc333\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n14\n\t\nairport\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n15\n\t\naaaaa\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n16\n\t\nuser_ts\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n17\n\t\nuser_info\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n18\n\t\nuser_trave\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n19\n\t\nsjfncgzccj1\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n20\n\t\ntbl_staff_info\n\t\n库表\n\t\n测试-数据源\n\t\n人员信息表\n\t\n删除\n共 20 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "N-GSB-007",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "表名",
+    "类型",
+    "数据源",
+    "备注",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "挂载",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--danger"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "服务目录",
+    "注册管理",
+    "消费管理",
+    "注册审批",
+    "消费IP管理",
+    "服务统计",
+    "数源配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务支撑\n服务目录\n服务目录\n服务管理\n注册管理\n消费管理\n服务审批\n注册审批\n服务控制\n消费IP管理\n服务统计\n配置\n数源配置\n数据源\n部门信息分类\n根部门\n国航集团\n数转部\n人力资源部\n财务部\n天弘基金\n航空安全管理部\n资产管理部\n数据集成\n数据采集1\n数据采集11\n数据采集111\n数据采集1111\n某委办局\n政数局\n数据资源部\n卡塔尔\n交警部门\n交通管理局\n市住建局\n农科院\n天弘基金\n投资交易部\n龙华区\n区政数局\n区民政局\n公积金\n归集管理部\n贷款管理部\n山东部门\n挂载\n序号\t表名\t类型\t数据源\t备注\t操作\t\n1\n\t\ntest_zhang1124\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n2\n\t\na_rkcj_t1\n\t\n库表\n\t\nGP人口库数据源\n\t\na_rkcj\n\t\n删除\n\n\n3\n\t\nal\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n4\n\t\ntrg_cyl\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n5\n\t\ntrg_cyl_new\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n6\n\t\nsrc_cyl\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n7\n\t\ntrg_cyl01_new\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n8\n\t\nsrc_cyl01\n\t\n库表\n\t\nmysql106\n\t\n\t\n删除\n\n\n9\n\t\npassenger\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n10\n\t\ntravel\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n11\n\t\nflight\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n12\n\t\nuser_info_trae\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n13\n\t\nabc333\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n14\n\t\nairport\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n15\n\t\naaaaa\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n16\n\t\nuser_ts\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n17\n\t\nuser_info\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n18\n\t\nuser_trave\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n19\n\t\nsjfncgzccj1\n\t\n库表\n\t\n测试-数据源\n\t\n\t\n删除\n\n\n20\n\t\ntbl_staff_info\n\t\n库表\n\t\n测试-数据源\n\t\n人员信息表\n\t\n删除\n共 20 条\n1\n前往页"
+}

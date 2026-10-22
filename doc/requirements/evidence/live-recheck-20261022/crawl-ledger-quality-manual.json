@@ -1,0 +1,43 @@
+[
+  {
+    "code": "DQTS",
+    "name": "数据质量检测",
+    "entry": "U-DQTS-current",
+    "discoveredAt": "2026-10-22T12:28:20.934Z",
+    "links": [
+      {
+        "name": "列分析",
+        "hierarchy": "智能识别管理 → 列分析",
+        "status": "target-not-observed",
+        "path": "/dqts/columnAnalysis/list",
+        "evidence": "U-DQTS-current",
+        "businessWriteExecuted": false
+      }
+    ]
+  },
+  {
+    "code": "DQTS",
+    "name": "数据质量检测",
+    "entry": "V-DQTS-001-ready",
+    "discoveredAt": "2026-10-22T12:32:38.075Z",
+    "links": [
+      {
+        "name": "列分析",
+        "hierarchy": "智能识别管理 → 列分析",
+        "status": "opened-review-content",
+        "path": "/dqts/columnAnalysis/list",
+        "evidence": "V-DQTS-001-ready",
+        "businessWriteExecuted": false,
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "path": "/dqts/columnAnalysis/edit",
+            "evidence": "V-DQTS-001-add",
+            "businessWriteExecuted": false
+          }
+        ]
+      }
+    ]
+  }
+]

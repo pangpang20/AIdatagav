@@ -1,0 +1,555 @@
+{
+  "time": "2026-10-22T12:35:20.034Z",
+  "url": "/dqts/intelligentStaging/edit",
+  "title": "数据质量检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n检测方案\n质量规则\n质量检测\n检测报告\n任务调度配置\n评价管理\n评价任务\n新增智能分期\n返回\n数据源名称\n表名称\n分期字段\n分期类型\n 天\n 周\n 月\n 季度\n 年度\n执行周期\n分\n时\n日\n月\n年\n取 消提 交\n达梦B\n达梦A\nPostgreSQL PostGIS-TEST\nmysql106\nZFX演示数据源_目标库\nZFX演示数据源_源库\nhive_sql计算引擎\nMRS-Presto\n172.16.1.40",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据源名称",
+      "placeholder": "请选择数据源名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名称",
+      "placeholder": "请选择表名称",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "分期字段",
+      "placeholder": "请选择分期字段",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "分期类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "分期类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "分期类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "分期类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "分期类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "执行周期",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-DQTS-002-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "数据源名称",
+      "requiredMarker": true,
+      "text": "数据源名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择数据源名称",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名称",
+      "requiredMarker": true,
+      "text": "表名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择表名称",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "分期字段",
+      "requiredMarker": true,
+      "text": "分期字段",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择分期字段",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "分期类型",
+      "requiredMarker": true,
+      "text": "分期类型\n 天\n 周\n 月\n 季度\n 年度",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "执行周期",
+      "requiredMarker": true,
+      "text": "执行周期\n分\n时\n日\n月\n年",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": " 天",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 周",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 月",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 季度",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": " 年度",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "分",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "时",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "日",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "月",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "年",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "达梦B",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "达梦A",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "PostgreSQL PostGIS-TEST",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "mysql106",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "ZFX演示数据源_目标库",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "ZFX演示数据源_源库",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "hive_sql计算引擎",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "MRS-Presto",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "172.16.1.40",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "列分析",
+    "智能分期",
+    "规则识别",
+    "质量规则推荐",
+    "检测方案",
+    "质量规则",
+    "质量检测",
+    "检测报告",
+    "任务调度配置",
+    "评价任务"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n检测方案\n质量规则\n质量检测\n检测报告\n任务调度配置\n评价管理\n评价任务\n新增智能分期\n返回\n数据源名称\n表名称\n分期字段\n分期类型\n 天\n 周\n 月\n 季度\n 年度\n执行周期\n分\n时\n日\n月\n年\n取 消提 交\n达梦B\n达梦A\nPostgreSQL PostGIS-TEST\nmysql106\nZFX演示数据源_目标库\nZFX演示数据源_源库\nhive_sql计算引擎\nMRS-Presto\n172.16.1.40",
+  "interaction": {
+    "type": "expand-select",
+    "label": "数据源名称"
+  }
+}

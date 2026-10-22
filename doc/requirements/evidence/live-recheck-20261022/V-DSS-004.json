@@ -1,0 +1,735 @@
+{
+  "time": "2026-10-22T12:56:11.951Z",
+  "url": "/dss/standard/system/indexItemList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准字段管理\n目录分类\n全部\n标准分类\n测试分类\n无标待立标\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t标准字段编码\t标准字段名称\t定义\t代码\t版本\t状态\t审批状态\t使用频次\t更新时间\t操作\t\n\t\n1\n\t\nF0055\n\t\n性别\n\t\n0/1\n\t\nxb002\n\t\nV2.0\n\t\n已失效\n\t\n待审批\n\t\n0\n\t\n2026-07-22 18:05:22\n\t\n\n\n\t\n2\n\t\nusername\n\t\nusername\n\t\nusername\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n待审批\n\t\n0\n\t\n2026-05-15 11:38:10\n\t\n\n\n\t\n3\n\t\nCSNAME\n\t\nNAME\n\t\n123\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n待审批\n\t\n1\n\t\n2025-08-28 10:05:34\n\t\n\n\n\t\n4\n\t\nDA010009\n\t\n出生地省市县\n\t\n自然人出生所在省市县\n\t\n-\n\t\nV2.0\n\t\n已失效\n\t\n审批通过\n\t\n3\n\t\n2025-08-26 17:50:03\n\t\n编辑删除\n\n\n\t\n5\n\t\nFR000002\n\t\n统一社会信用代码\n\t\n与法定证照汇总的统一社会信用代码一致\n\t\n-\n\t\nV2.0\n\t\n已生效\n\t\n审批通过\n\t\n0\n\t\n2025-08-11 13:58:51\n\t\n编辑删除\n\n\n\t\n6\n\t\nDA010010\n\t\n政治面貌\n\t\n政治面貌是一个人的政治身份最直接的反 映，是指一个人所属的政党、政治团体\n\t\n-\n\t\nV2.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:41:34\n\t\n编辑删除\n\n\n\t\n7\n\t\nDA010008\n\t\n出生地国家 和地区\n\t\n自然人出生所在国家或地区\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:38:30\n\t\n编辑删除\n\n\n\t\n8\n\t\nDA010007\n\t\n国籍\n\t\n公民所属的、并经认定具有特别地理和政 治意义的国家\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:37:33\n\t\n编辑删除\n\n\n\t\n9\n\t\nDA010006\n\t\n民族\n\t\n个人所属的、经国家认可在户籍管理部门 登记注册的民族名称\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:36:32\n\t\n编辑删除\n\n\n\t\n10\n\t\nDA010005\n\t\n出生日期\n\t\n出生证签署的，并在户籍部门正式登记注 册、人事档案中记载的日期\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:35:38\n\t\n编辑删除\n\n\n\t\n11\n\t\nDA010004\n\t\n性别\n\t\n自然人的男女性别标识\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n3\n\t\n2025-08-11 11:34:42\n\t\n编辑删除\n\n\n\t\n12\n\t\nDA010003\n\t\n曾用名\n\t\n公民过去在户籍管理部门正式登记注册、 人事档案中正式记载并正式使用过的姓氏\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n2\n\t\n2025-08-11 11:33:58\n\t\n编辑删除\n\n\n\t\n13\n\t\nDA010002\n\t\n姓名\n\t\n在户籍管理部门正式登记注册、人事档案 中正式记载的姓氏名称\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:32:29\n\t\n编辑删除\n\n\n\t\n14\n\t\nDA010001\n\t\n公民身份号码\n\t\n身份证件上记载的、可唯一标识个人身份 的号码\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n2\n\t\n2025-08-11 11:31:12\n\t\n编辑删除\n\n\n\t\n15\n\t\nFR000002\n\t\n统一社会信用代码\n\t\n与法定证照汇总的统一社会信用代码一致\n\t\n-\n\t\nV2.0\n\t\n已生效\n\t\n审批通过\n\t\n0\n\t\n2025-08-06 11:42:49\n\t\n编辑删除\n\n\n\t\n16\n\t\nFR000001\n\t\n法人名称\n\t\n法人名称\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-07-09 16:13:48\n\t\n编辑删除\n\n\n\t\n17\n\t\nxb002\n\t\n性别\n\t\n人员性别\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n3\n\t\n2025-05-15 13:45:13\n\t\n编辑删除\n\n\n\t\n18\n\t\nxm001\n\t\n姓名\n\t\n人员姓名\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n4\n\t\n2025-05-15 13:42:40\n\t\n编辑删除\n共 18 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "输入关键字进行过滤",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入标准字段名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-DSS-004",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "标准字段编码",
+    "标准字段名称",
+    "定义",
+    "代码",
+    "版本",
+    "状态",
+    "审批状态",
+    "使用频次",
+    "更新时间",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "新增",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-add-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "批量删除",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-delete-new"
+    },
+    {
+      "text": "导出",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-daochu"
+    },
+    {
+      "text": "导入",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-daoru"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "性别",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "xb002",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "V2.0",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "username",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "V1.0",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "NAME",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "出生地省市县",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--danger"
+    },
+    {
+      "text": "统一社会信用代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "政治面貌",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "出生地国家 和地区",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "国籍",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "民族",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "出生日期",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "曾用名",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "姓名",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "公民身份号码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "法人名称",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "· 标准文档管理",
+    "· 标准术语管理",
+    "· 标准模型表管理",
+    "· 标准字段管理",
+    "· 标准代码管理",
+    "· 标准文档审批",
+    "· 标准模型表审批",
+    "· 标准字段审批",
+    "· 标准代码审批",
+    "· 标准查询"
+  ],
+  "pageTitles": [
+    " 标准字段管理 "
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准字段管理\n目录分类\n全部\n标准分类\n测试分类\n无标待立标\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t标准字段编码\t标准字段名称\t定义\t代码\t版本\t状态\t审批状态\t使用频次\t更新时间\t操作\t\n\t\n1\n\t\nF0055\n\t\n性别\n\t\n0/1\n\t\nxb002\n\t\nV2.0\n\t\n已失效\n\t\n待审批\n\t\n0\n\t\n2026-07-22 18:05:22\n\t\n\n\n\t\n2\n\t\nusername\n\t\nusername\n\t\nusername\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n待审批\n\t\n0\n\t\n2026-05-15 11:38:10\n\t\n\n\n\t\n3\n\t\nCSNAME\n\t\nNAME\n\t\n123\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n待审批\n\t\n1\n\t\n2025-08-28 10:05:34\n\t\n\n\n\t\n4\n\t\nDA010009\n\t\n出生地省市县\n\t\n自然人出生所在省市县\n\t\n-\n\t\nV2.0\n\t\n已失效\n\t\n审批通过\n\t\n3\n\t\n2025-08-26 17:50:03\n\t\n编辑删除\n\n\n\t\n5\n\t\nFR000002\n\t\n统一社会信用代码\n\t\n与法定证照汇总的统一社会信用代码一致\n\t\n-\n\t\nV2.0\n\t\n已生效\n\t\n审批通过\n\t\n0\n\t\n2025-08-11 13:58:51\n\t\n编辑删除\n\n\n\t\n6\n\t\nDA010010\n\t\n政治面貌\n\t\n政治面貌是一个人的政治身份最直接的反 映，是指一个人所属的政党、政治团体\n\t\n-\n\t\nV2.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:41:34\n\t\n编辑删除\n\n\n\t\n7\n\t\nDA010008\n\t\n出生地国家 和地区\n\t\n自然人出生所在国家或地区\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:38:30\n\t\n编辑删除\n\n\n\t\n8\n\t\nDA010007\n\t\n国籍\n\t\n公民所属的、并经认定具有特别地理和政 治意义的国家\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:37:33\n\t\n编辑删除\n\n\n\t\n9\n\t\nDA010006\n\t\n民族\n\t\n个人所属的、经国家认可在户籍管理部门 登记注册的民族名称\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:36:32\n\t\n编辑删除\n\n\n\t\n10\n\t\nDA010005\n\t\n出生日期\n\t\n出生证签署的，并在户籍部门正式登记注 册、人事档案中记载的日期\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-08-11 11:35:38\n\t\n编辑删除\n\n\n\t\n11\n\t\nDA010004\n\t\n性别\n\t\n自然人的男女性别标识\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n3\n\t\n2025-08-11 11:34:42\n\t\n编辑删除\n\n\n\t\n12\n\t\nDA010003\n\t\n曾用名\n\t\n公民过去在户籍管理部门正式登记注册、 人事档案中正式记载并正式使用过的姓氏\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n2\n\t\n2025-08-11 11:33:58\n\t\n编辑删除\n\n\n\t\n13\n\t\nDA010002\n\t\n姓名\n\t\n在户籍管理部门正式登记注册、人事档案 中正式记载的姓氏名称\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:32:29\n\t\n编辑删除\n\n\n\t\n14\n\t\nDA010001\n\t\n公民身份号码\n\t\n身份证件上记载的、可唯一标识个人身份 的号码\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n2\n\t\n2025-08-11 11:31:12\n\t\n编辑删除\n\n\n\t\n15\n\t\nFR000002\n\t\n统一社会信用代码\n\t\n与法定证照汇总的统一社会信用代码一致\n\t\n-\n\t\nV2.0\n\t\n已生效\n\t\n审批通过\n\t\n0\n\t\n2025-08-06 11:42:49\n\t\n编辑删除\n\n\n\t\n16\n\t\nFR000001\n\t\n法人名称\n\t\n法人名称\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n1\n\t\n2025-07-09 16:13:48\n\t\n编辑删除\n\n\n\t\n17\n\t\nxb002\n\t\n性别\n\t\n人员性别\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n3\n\t\n2025-05-15 13:45:13\n\t\n编辑删除\n\n\n\t\n18\n\t\nxm001\n\t\n姓名\n\t\n人员姓名\n\t\n-\n\t\nV1.0\n\t\n已生效\n\t\n审批通过\n\t\n4\n\t\n2025-05-15 13:42:40\n\t\n编辑删除\n共 18 条\n1\n前往页"
+}

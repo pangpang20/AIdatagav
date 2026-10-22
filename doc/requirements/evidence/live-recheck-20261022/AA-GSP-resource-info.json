@@ -1,0 +1,92 @@
+{
+  "time": "2026-10-22T13:10:55.507Z",
+  "url": "/gsp-portal/resource/detail",
+  "title": "",
+  "text": "数据服务门户\n首页\n业务图谱\n数据资源\n数据清单\n资料下载\n购数车\n欢迎，陈云亮 \n\n公积金人口信息\n\n资源目录是指用于组织和管理各种资源的一种结构化信息系统。它是一个集中存储和描述各种资源的数据库，可以包括物理设备、软件应用、文档、服务等各种类型的资源。资源目录提供了一个统一的查找和访问接口，帮助用户快速定位和获取所需的资源。\n\n数据资源\n资源详情\n返回\n资源更新时间： 2025-08-14 13:49:30\n数据提供单位： 市住建局\t\n资源格式：\n库表\n资源更新频率： 每日\t共享范围： 市级,省级,国家级\n是否开放： 是\t共享类型： 有条件共享\t安全级别： 五级\n加入购数车\n快速订阅\n目录基本信息资源信息\n基本信息\n序号\t资源名称\t资源类型\t数据源\t数据源类型\n1\n\t\na001\n\t\n库表\n\t\n-\n\t\n-\n信息项信息\n序号\t信息项名称\t字段英文名\t数据类型\t字段长度\t字段精度\t是否主键\t共享类型\t共享范围\t是否开放\t安全级别\n1\n\t\n\t\nhj\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n五级\n\n\n2\n\t\n\t\nnxbs\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n五级\n\n\n3\n\t\n\t\nqymc\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n4\n\t\n\t\ntyshxydm\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n5\n\t\n\t\nsys_reload_dt\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n6\n\t\n数据采集日期\n\t\ndis_dc_date\n\t\nvarchar\n\t\n50\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n7\n\t\n\t\nname\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n三级\n\n\n8\n\t\n\t\ndses_uuid\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n9\n\t\n\t\nid\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n10\n\t\n\t\nupdatetime\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n11\n\t\n\t\netl_dt\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n12\n\t\n\t\nis_reload\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n13\n\t\n\t\nczs\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n14\n\t\n\t\nzdmj\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n15\n\t\n\t\njzmj\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-",
+  "controls": [
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮 ",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "目录基本信息",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "资源信息",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "AA-GSP-resource-info",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "序号",
+    "资源名称",
+    "资源类型",
+    "数据源",
+    "数据源类型",
+    "序号",
+    "信息项名称",
+    "字段英文名",
+    "数据类型",
+    "字段长度",
+    "字段精度",
+    "是否主键",
+    "共享类型",
+    "共享范围",
+    "是否开放",
+    "安全级别"
+  ],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "首页",
+    "业务图谱",
+    "数据资源",
+    "数据清单",
+    "资料下载"
+  ],
+  "pageTitles": [],
+  "tabs": [
+    "目录基本信息",
+    "资源信息"
+  ],
+  "content": "数据服务门户\n首页\n业务图谱\n数据资源\n数据清单\n资料下载\n购数车\n欢迎，陈云亮 \n\n公积金人口信息\n\n资源目录是指用于组织和管理各种资源的一种结构化信息系统。它是一个集中存储和描述各种资源的数据库，可以包括物理设备、软件应用、文档、服务等各种类型的资源。资源目录提供了一个统一的查找和访问接口，帮助用户快速定位和获取所需的资源。\n\n数据资源\n资源详情\n返回\n资源更新时间： 2025-08-14 13:49:30\n数据提供单位： 市住建局\t\n资源格式：\n库表\n资源更新频率： 每日\t共享范围： 市级,省级,国家级\n是否开放： 是\t共享类型： 有条件共享\t安全级别： 五级\n加入购数车\n快速订阅\n目录基本信息资源信息\n基本信息\n序号\t资源名称\t资源类型\t数据源\t数据源类型\n1\n\t\na001\n\t\n库表\n\t\n-\n\t\n-\n信息项信息\n序号\t信息项名称\t字段英文名\t数据类型\t字段长度\t字段精度\t是否主键\t共享类型\t共享范围\t是否开放\t安全级别\n1\n\t\n\t\nhj\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n五级\n\n\n2\n\t\n\t\nnxbs\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n五级\n\n\n3\n\t\n\t\nqymc\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n4\n\t\n\t\ntyshxydm\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n5\n\t\n\t\nsys_reload_dt\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n6\n\t\n数据采集日期\n\t\ndis_dc_date\n\t\nvarchar\n\t\n50\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n7\n\t\n\t\nname\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n三级\n\n\n8\n\t\n\t\ndses_uuid\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n9\n\t\n\t\nid\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n10\n\t\n\t\nupdatetime\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n11\n\t\n\t\netl_dt\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n12\n\t\n\t\nis_reload\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n13\n\t\n\t\nczs\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n14\n\t\n\t\nzdmj\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-\n\n\n15\n\t\n\t\njzmj\n\t\nvarchar\n\t\n255\n\t\n0\n\t\n否\n\t\n有条件共享\n\t\n市级,省级,国家级\n\t\n是\n\t\n-"
+}

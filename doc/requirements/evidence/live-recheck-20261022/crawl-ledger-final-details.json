@@ -1,0 +1,132 @@
+[
+  {
+    "code": "GSP",
+    "name": "数据服务门户",
+    "discoveredAt": "2026-10-22T13:10:31.292Z",
+    "links": [
+      {
+        "name": "数据资源",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/resource",
+        "evidence": "V-GSP-003",
+        "operations": [
+          {
+            "name": "资源详情",
+            "status": "opened-review-content",
+            "path": "/gsp-portal/resource/detail",
+            "evidence": "AA-GSP-resource-detail"
+          },
+          {
+            "name": "资源信息",
+            "status": "opened-review-content",
+            "evidence": "AA-GSP-resource-info",
+            "path": "/gsp-portal/resource/detail"
+          }
+        ]
+      },
+      {
+        "name": "购数车",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/dataSet",
+        "evidence": "AA-GSP-cart"
+      }
+    ]
+  },
+  {
+    "code": "BCF",
+    "name": "后台配置管理",
+    "discoveredAt": "2026-10-22T13:12:40.049Z",
+    "links": [
+      {
+        "name": "驱动管理",
+        "hierarchy": "配置管理 → 数据源管理 → 驱动管理",
+        "status": "opened-review-content",
+        "path": "/module-data-source/dataSource/driveList",
+        "evidence": "AA-BCF-source-1"
+      },
+      {
+        "name": "数据源管理",
+        "hierarchy": "配置管理 → 数据源管理 → 数据源管理",
+        "status": "opened-review-content",
+        "path": "/module-data-source/dataSource/dataSourceManageList",
+        "evidence": "AA-BCF-source-2"
+      },
+      {
+        "name": "部门数据源",
+        "hierarchy": "配置管理 → 数据源管理 → 部门数据源",
+        "status": "opened-review-content",
+        "path": "/module-data-source/dataSource/myDataSourceManageList",
+        "evidence": "AA-BCF-source-3"
+      },
+      {
+        "name": "数据源列表",
+        "hierarchy": "配置管理 → 数据源管理 → 数据源列表",
+        "status": "opened-review-content",
+        "path": "/module-data-source/dataSource/iCanUsedDataSourceList",
+        "evidence": "AA-BCF-source-4"
+      }
+    ]
+  },
+  {
+    "code": "GDRS",
+    "name": "数据直报",
+    "discoveredAt": "2026-10-22T13:13:53.316Z",
+    "links": [
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 文件上报 → · 数据查看",
+        "occurrence": 1,
+        "id": "AA-GDRS-file-view",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/ustructResourceDetail",
+        "evidence": "AA-GDRS-file-view"
+      },
+      {
+        "name": "帮助",
+        "hierarchy": "帮助",
+        "occurrence": 0,
+        "id": "AA-GDRS-help",
+        "status": "opened-review-content",
+        "path": "/gdrs/help/helpCenter",
+        "evidence": "AA-GDRS-help"
+      },
+      {
+        "name": "消息",
+        "hierarchy": "消息",
+        "occurrence": 0,
+        "id": "AA-GDRS-message",
+        "status": "opened-review-content",
+        "path": "/gdrs/message/public",
+        "evidence": "AA-GDRS-message"
+      }
+    ]
+  },
+  {
+    "code": "AIS",
+    "name": "AI数据智能辅助",
+    "discoveredAt": "2026-10-22T13:20:28.995Z",
+    "links": [
+      {
+        "name": "NL2SQL模型管理",
+        "hierarchy": "模型管理 → NL2SQL模型管理",
+        "status": "opened-review-content",
+        "path": "/ais/modelManagement/nl2SqlModelList",
+        "evidence": "AB-AIS-model-directory-selected",
+        "operations": [
+          {
+            "name": "分类新增",
+            "path": "/ais/modelManagement/nl2SqlModelList",
+            "evidence": "AC-AIS-category-add",
+            "status": "opened-review-content"
+          },
+          {
+            "name": "分类修改",
+            "path": "/ais/modelManagement/nl2SqlModelList",
+            "evidence": "AC-AIS-category-edit",
+            "status": "opened-review-content"
+          }
+        ]
+      }
+    ]
+  }
+]

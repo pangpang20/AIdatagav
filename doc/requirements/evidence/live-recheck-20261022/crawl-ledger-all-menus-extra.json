@@ -1,0 +1,677 @@
+[
+  {
+    "code": "OSS",
+    "name": "运营汇总系统",
+    "source": "E051-operations-summary",
+    "entry": "O-OSS-000-entry",
+    "discoveredAt": "2026-10-22T11:50:17.733Z",
+    "links": [
+      {
+        "name": "部门目录中心",
+        "hierarchy": "运营统计汇总 → 部门目录中心",
+        "occurrence": 0,
+        "id": "O-OSS-001",
+        "status": "opened-review-content",
+        "path": "/oss/deptCataCenter/list",
+        "evidence": "O-OSS-001"
+      },
+      {
+        "name": "我订阅的目录",
+        "hierarchy": "运营统计汇总 → 我订阅的目录",
+        "occurrence": 0,
+        "id": "O-OSS-002",
+        "status": "opened-review-content",
+        "path": "/oss/myCatalogue/applyList",
+        "evidence": "O-OSS-002"
+      },
+      {
+        "name": "数据开发情况",
+        "hierarchy": "运营统计汇总 → 数据开发情况",
+        "occurrence": 0,
+        "id": "O-OSS-003",
+        "status": "opened-review-content",
+        "path": "/oss/standard/list",
+        "evidence": "O-OSS-003"
+      },
+      {
+        "name": "监控大屏",
+        "hierarchy": "监控大屏",
+        "occurrence": 0,
+        "id": "O-OSS-004",
+        "status": "opened-review-content",
+        "path": "/oss/monitoringScreen/screenData",
+        "evidence": "O-OSS-004"
+      }
+    ]
+  },
+  {
+    "code": "DSS",
+    "name": "数据标准管理",
+    "source": "E033-standards",
+    "entry": "O-DSS-000-entry",
+    "discoveredAt": "2026-10-22T11:51:01.139Z",
+    "links": [
+      {
+        "name": "· 标准文档管理",
+        "hierarchy": "标准 → 标准体系文档管理 → · 标准文档管理",
+        "occurrence": 0,
+        "id": "O-DSS-001",
+        "status": "opened-review-content",
+        "path": "/dss/standard/document/docList",
+        "evidence": "O-DSS-001"
+      },
+      {
+        "name": "· 标准术语管理",
+        "hierarchy": "标准 → 标准体系文档管理 → · 标准术语管理",
+        "occurrence": 0,
+        "id": "O-DSS-002",
+        "status": "opened-review-content",
+        "path": "/dss/standard/document/termList",
+        "evidence": "O-DSS-002"
+      },
+      {
+        "name": "· 标准模型表管理",
+        "hierarchy": "标准 → 标准体系管理 → · 标准模型表管理",
+        "occurrence": 0,
+        "id": "O-DSS-003",
+        "status": "opened-review-content",
+        "path": "/dss/standard/system/dataSetList",
+        "evidence": "O-DSS-003"
+      },
+      {
+        "name": "· 标准字段管理",
+        "hierarchy": "标准 → 标准体系管理 → · 标准字段管理",
+        "occurrence": 0,
+        "id": "O-DSS-004",
+        "status": "opened-review-content",
+        "path": "/dss/standard/system/indexItemList",
+        "evidence": "O-DSS-004"
+      },
+      {
+        "name": "· 标准代码管理",
+        "hierarchy": "标准 → 标准体系管理 → · 标准代码管理",
+        "occurrence": 0,
+        "id": "O-DSS-005",
+        "status": "opened-review-content",
+        "path": "/dss/standard/system/indexCodeList",
+        "evidence": "O-DSS-005"
+      },
+      {
+        "name": "· 标准文档审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准文档审批",
+        "occurrence": 0,
+        "id": "O-DSS-006",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/docList",
+        "evidence": "O-DSS-006"
+      },
+      {
+        "name": "· 标准模型表审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准模型表审批",
+        "occurrence": 0,
+        "id": "O-DSS-007",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/dataSetList",
+        "evidence": "O-DSS-007"
+      },
+      {
+        "name": "· 标准字段审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准字段审批",
+        "occurrence": 0,
+        "id": "O-DSS-008",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/indexItemList",
+        "evidence": "O-DSS-008"
+      },
+      {
+        "name": "· 标准代码审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准代码审批",
+        "occurrence": 0,
+        "id": "O-DSS-009",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/indexCodeList",
+        "evidence": "O-DSS-009"
+      },
+      {
+        "name": "· 标准查询",
+        "hierarchy": "标准 → 标准查询 → · 标准查询",
+        "occurrence": 0,
+        "id": "O-DSS-010",
+        "status": "opened-review-content",
+        "path": "/dss/standard/search/searchList",
+        "evidence": "O-DSS-010"
+      }
+    ]
+  },
+  {
+    "code": "DSTS",
+    "name": "数据标准检测",
+    "source": "E053-standard-check",
+    "entry": "O-DSTS-000-entry",
+    "discoveredAt": "2026-10-22T11:52:16.749Z",
+    "links": [
+      {
+        "name": "检测方案",
+        "hierarchy": "标准检测 → 检测方案",
+        "occurrence": 0,
+        "id": "O-DSTS-001",
+        "status": "opened-review-content",
+        "path": "/dsts/standard/plan/list",
+        "evidence": "O-DSTS-001"
+      },
+      {
+        "name": "标准检测",
+        "hierarchy": "标准检测 → 标准检测",
+        "occurrence": 0,
+        "id": "O-DSTS-002",
+        "status": "opened-review-content",
+        "path": "/dsts/standard/test/listPage",
+        "evidence": "O-DSTS-002"
+      },
+      {
+        "name": "检测报告",
+        "hierarchy": "标准检测 → 检测报告",
+        "occurrence": 0,
+        "id": "O-DSTS-003",
+        "status": "opened-review-content",
+        "path": "/dsts/standard/report/list",
+        "evidence": "O-DSTS-003"
+      },
+      {
+        "name": "评价任务",
+        "hierarchy": "数据评价 → 评价任务",
+        "occurrence": 0,
+        "id": "O-DSTS-004",
+        "status": "opened-review-content",
+        "path": "/dsts/evaluate/taskPage",
+        "evidence": "O-DSTS-004"
+      }
+    ]
+  },
+  {
+    "code": "DSETS",
+    "name": "数据安全检测",
+    "source": "E054-security-check",
+    "entry": "O-DSETS-000-entry",
+    "discoveredAt": "2026-10-22T11:53:03.176Z",
+    "links": [
+      {
+        "name": "库表待办列表",
+        "hierarchy": "库表待办列表",
+        "occurrence": 0,
+        "id": "O-DSETS-001",
+        "status": "opened-review-content",
+        "path": "/dsets/tableAwaitList/list",
+        "evidence": "O-DSETS-001"
+      },
+      {
+        "name": "数据分类",
+        "hierarchy": "数据分类分级 → 数据分类",
+        "occurrence": 0,
+        "id": "O-DSETS-002",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/dataClassificationInformation",
+        "evidence": "O-DSETS-002"
+      },
+      {
+        "name": "数据分级",
+        "hierarchy": "数据分类分级 → 数据分级",
+        "occurrence": 0,
+        "id": "O-DSETS-003",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/dataGrading/list",
+        "evidence": "O-DSETS-003"
+      },
+      {
+        "name": "索引表管理",
+        "hierarchy": "数据分类分级 → 索引表管理",
+        "occurrence": 0,
+        "id": "O-DSETS-004",
+        "status": "opened-review-content",
+        "path": "/dsets/indexTableManage/list",
+        "evidence": "O-DSETS-004"
+      },
+      {
+        "name": "数据分级模板",
+        "hierarchy": "数据分类分级 → 数据分级模板",
+        "occurrence": 0,
+        "id": "O-DSETS-005",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/dataGradingTemplate/list",
+        "evidence": "O-DSETS-005"
+      },
+      {
+        "name": "识别规则",
+        "hierarchy": "数据分类分级 → 识别规则",
+        "occurrence": 0,
+        "id": "O-DSETS-006",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/identificationRules/list",
+        "evidence": "O-DSETS-006"
+      },
+      {
+        "name": "分级审批",
+        "hierarchy": "数据分类分级 → 分级审批",
+        "occurrence": 0,
+        "id": "O-DSETS-007",
+        "status": "opened-review-content",
+        "path": "/dsets/dataClassification/approvalGrading",
+        "evidence": "O-DSETS-007"
+      },
+      {
+        "name": "检测方案",
+        "hierarchy": "数据安全检测 → 检测方案",
+        "occurrence": 0,
+        "id": "O-DSETS-008",
+        "status": "opened-review-content",
+        "path": "/dsets/dataSecurityDetection/list",
+        "evidence": "O-DSETS-008"
+      },
+      {
+        "name": "安全检测",
+        "hierarchy": "数据安全检测 → 安全检测",
+        "occurrence": 0,
+        "id": "O-DSETS-009",
+        "status": "opened-review-content",
+        "path": "/dsets/securityDetection/list",
+        "evidence": "O-DSETS-009"
+      },
+      {
+        "name": "安全目录",
+        "hierarchy": "数据安全检测 → 安全目录",
+        "occurrence": 0,
+        "id": "O-DSETS-010",
+        "status": "opened-review-content",
+        "path": "/dsets/dataSecurityDir/list",
+        "evidence": "O-DSETS-010"
+      },
+      {
+        "name": "评价任务",
+        "hierarchy": "数据安全检测 → 评价任务",
+        "occurrence": 0,
+        "id": "O-DSETS-011",
+        "status": "opened-review-content",
+        "path": "/dsets/evaluation/list",
+        "evidence": "O-DSETS-011"
+      },
+      {
+        "name": "任务调度配置",
+        "hierarchy": "数据安全检测 → 任务调度配置",
+        "occurrence": 0,
+        "id": "O-DSETS-012",
+        "status": "opened-review-content",
+        "path": "/dsets/dataSecurityStrategy/strategyList",
+        "evidence": "O-DSETS-012"
+      }
+    ]
+  },
+  {
+    "code": "EMS",
+    "name": "评价管理",
+    "source": "E066-evaluation-correct",
+    "entry": "O-EMS-000-entry",
+    "discoveredAt": "2026-10-22T11:54:14.555Z",
+    "links": [
+      {
+        "name": "方案管理",
+        "hierarchy": "方案管理",
+        "occurrence": 0,
+        "id": "O-EMS-001",
+        "status": "opened-review-content",
+        "path": "/ems/programmeManage/list",
+        "evidence": "O-EMS-001"
+      },
+      {
+        "name": "主观指标",
+        "hierarchy": "指标管理 → 主观指标",
+        "occurrence": 0,
+        "id": "O-EMS-002",
+        "status": "opened-review-content",
+        "path": "/ems/indicator/list/1",
+        "evidence": "O-EMS-002"
+      },
+      {
+        "name": "客观指标",
+        "hierarchy": "指标管理 → 客观指标",
+        "occurrence": 0,
+        "id": "O-EMS-003",
+        "status": "opened-review-content",
+        "path": "/ems/indicator/list/2",
+        "evidence": "O-EMS-003"
+      },
+      {
+        "name": "任务管理",
+        "hierarchy": "评价任务 → 任务管理",
+        "occurrence": 0,
+        "id": "O-EMS-004",
+        "status": "opened-review-content",
+        "path": "/ems/task/evaluationList",
+        "evidence": "O-EMS-004"
+      },
+      {
+        "name": "执行管理",
+        "hierarchy": "评价任务 → 执行管理",
+        "occurrence": 0,
+        "id": "O-EMS-005",
+        "status": "opened-review-content",
+        "path": "/ems/task/performanceList",
+        "evidence": "O-EMS-005"
+      },
+      {
+        "name": "填报审核",
+        "hierarchy": "评价任务 → 填报审核",
+        "occurrence": 0,
+        "id": "O-EMS-006",
+        "status": "opened-review-content",
+        "path": "/ems/audit/fillIn",
+        "evidence": "O-EMS-006"
+      },
+      {
+        "name": "申诉审核",
+        "hierarchy": "评价任务 → 申诉审核",
+        "occurrence": 0,
+        "id": "O-EMS-007",
+        "status": "opened-review-content",
+        "path": "/ems/audit/complain",
+        "evidence": "O-EMS-007"
+      },
+      {
+        "name": "评价报告",
+        "hierarchy": "评价报告",
+        "occurrence": 0,
+        "id": "O-EMS-008",
+        "status": "opened-review-content",
+        "path": "/ems/report/assessment/list",
+        "evidence": "O-EMS-008"
+      },
+      {
+        "name": "我的评价",
+        "hierarchy": "我的评价",
+        "occurrence": 0,
+        "id": "O-EMS-009",
+        "status": "opened-review-content",
+        "path": "/ems/myAssessmentReport/list",
+        "evidence": "O-EMS-009"
+      }
+    ]
+  },
+  {
+    "code": "AIS",
+    "name": "AI数据智能辅助",
+    "source": "E057-ai-assistant",
+    "entry": "O-AIS-000-entry",
+    "discoveredAt": "2026-10-22T11:55:12.745Z",
+    "links": [
+      {
+        "name": "识别召回库",
+        "hierarchy": "库管理 → 识别召回库",
+        "occurrence": 0,
+        "id": "O-AIS-001",
+        "status": "opened-review-content",
+        "path": "/ais/recallLibrary/recallLibraryManagementList",
+        "evidence": "O-AIS-001"
+      },
+      {
+        "name": "NL2SQL库",
+        "hierarchy": "库管理 → NL2SQL库",
+        "occurrence": 0,
+        "id": "O-AIS-002",
+        "status": "opened-review-content",
+        "path": "/ais/nl2Sql/libraryManagementList",
+        "evidence": "O-AIS-002"
+      },
+      {
+        "name": "数据源",
+        "hierarchy": "在线验证 → 数据源",
+        "occurrence": 0,
+        "id": "O-AIS-003",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/dataSourceList",
+        "evidence": "O-AIS-003"
+      },
+      {
+        "name": "字段识别验证任务",
+        "hierarchy": "在线验证 → 字段识别验证任务",
+        "occurrence": 0,
+        "id": "O-AIS-004",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/verifyTaskList",
+        "evidence": "O-AIS-004"
+      },
+      {
+        "name": "表识别验证任务",
+        "hierarchy": "在线验证 → 表识别验证任务",
+        "occurrence": 0,
+        "id": "O-AIS-005",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/tableVerifyTaskList",
+        "evidence": "O-AIS-005"
+      },
+      {
+        "name": "NL2SQL验证任务",
+        "hierarchy": "在线验证 → NL2SQL验证任务",
+        "occurrence": 0,
+        "id": "O-AIS-006",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/nl2SqlList",
+        "evidence": "O-AIS-006"
+      },
+      {
+        "name": "NL2SQL模型管理",
+        "hierarchy": "模型管理 → NL2SQL模型管理",
+        "occurrence": 0,
+        "id": "O-AIS-007",
+        "status": "opened-review-content",
+        "path": "/ais/modelManagement/nl2SqlModelList",
+        "evidence": "O-AIS-007"
+      },
+      {
+        "name": "分级目录",
+        "hierarchy": "分级目录",
+        "occurrence": 0,
+        "id": "O-AIS-008",
+        "status": "opened-review-content",
+        "path": "/ais/grade/gradeList",
+        "evidence": "O-AIS-008"
+      },
+      {
+        "name": "接口授权",
+        "hierarchy": "接口授权",
+        "occurrence": 0,
+        "id": "O-AIS-009",
+        "status": "opened-review-content",
+        "path": "/ais/interface/interfaceAuthorizationList",
+        "evidence": "O-AIS-009"
+      }
+    ]
+  },
+  {
+    "code": "OMMS",
+    "name": "运维监控",
+    "source": "E061-monitoring",
+    "entry": "O-OMMS-000-entry",
+    "discoveredAt": "2026-10-22T11:56:12.117Z",
+    "links": [
+      {
+        "name": "总览",
+        "hierarchy": "总览",
+        "occurrence": 0,
+        "id": "O-OMMS-001",
+        "status": "opened-review-content",
+        "path": "/omms/overview",
+        "evidence": "O-OMMS-001"
+      },
+      {
+        "name": "· 服务器管理",
+        "hierarchy": "监控管理 → 对象管理 → · 服务器管理",
+        "occurrence": 0,
+        "id": "O-OMMS-002",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/target/serverManagement",
+        "evidence": "O-OMMS-002"
+      },
+      {
+        "name": "· 应用服务器管理",
+        "hierarchy": "监控管理 → 对象管理 → · 应用服务器管理",
+        "occurrence": 0,
+        "id": "O-OMMS-003",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/target/applicationServerManagement",
+        "evidence": "O-OMMS-003"
+      },
+      {
+        "name": "· 数据库管理",
+        "hierarchy": "监控管理 → 对象管理 → · 数据库管理",
+        "occurrence": 0,
+        "id": "O-OMMS-004",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/target/databaseManagement",
+        "evidence": "O-OMMS-004"
+      },
+      {
+        "name": "· 服务器监控",
+        "hierarchy": "监控管理 → 监控管理 → · 服务器监控",
+        "occurrence": 0,
+        "id": "O-OMMS-005",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/objectMonitor/serverMonitor",
+        "evidence": "O-OMMS-005"
+      },
+      {
+        "name": "· 应用服务器监控",
+        "hierarchy": "监控管理 → 监控管理 → · 应用服务器监控",
+        "occurrence": 0,
+        "id": "O-OMMS-006",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/objectMonitor/applicationServerMonitor",
+        "evidence": "O-OMMS-006"
+      },
+      {
+        "name": "· 数据库监控",
+        "hierarchy": "监控管理 → 监控管理 → · 数据库监控",
+        "occurrence": 0,
+        "id": "O-OMMS-007",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/objectMonitor/databaseMonitor",
+        "evidence": "O-OMMS-007"
+      },
+      {
+        "name": "告警规则",
+        "hierarchy": "告警管理 → 告警规则",
+        "occurrence": 0,
+        "id": "O-OMMS-008",
+        "status": "opened-review-content",
+        "path": "/omms/caveat/caveatMonitor/alertRule",
+        "evidence": "O-OMMS-008"
+      },
+      {
+        "name": "通知设置",
+        "hierarchy": "告警管理 → 通知设置",
+        "occurrence": 0,
+        "id": "O-OMMS-009",
+        "status": "opened-review-content",
+        "path": "/omms/caveat/caveatMonitor/noticeConfig",
+        "evidence": "O-OMMS-009"
+      },
+      {
+        "name": "告警",
+        "hierarchy": "告警管理 → 告警",
+        "occurrence": 0,
+        "id": "O-OMMS-010",
+        "status": "opened-review-content",
+        "path": "/omms/caveat/caveatMonitor/caveatConfig",
+        "evidence": "O-OMMS-010"
+      }
+    ]
+  },
+  {
+    "code": "DQ",
+    "name": "数据查询系统",
+    "source": "E036-query",
+    "entry": "O-DQ-000-entry",
+    "discoveredAt": "2026-10-22T11:57:43.535Z",
+    "links": [
+      {
+        "name": "我的查询",
+        "hierarchy": "数据查询 → 我的查询",
+        "occurrence": 0,
+        "id": "O-DQ-001",
+        "status": "opened-review-content",
+        "path": "/mdm-dq/dataQuery/myQuery",
+        "evidence": "O-DQ-001"
+      },
+      {
+        "name": "SQL查询",
+        "hierarchy": "数据查询 → SQL查询",
+        "occurrence": 0,
+        "id": "O-DQ-002",
+        "status": "opened-review-content",
+        "path": "/mdm-dq/dataQuery/sqlQuery",
+        "evidence": "O-DQ-002"
+      },
+      {
+        "name": "日志记录",
+        "hierarchy": "数据查询 → 日志记录",
+        "occurrence": 0,
+        "id": "O-DQ-003",
+        "status": "opened-review-content",
+        "path": "/mdm-dq/dataQuery/logList",
+        "evidence": "O-DQ-003"
+      }
+    ]
+  },
+  {
+    "code": "GSP",
+    "name": "数据服务门户",
+    "source": "E095-portal-tab",
+    "entry": "O-GSP-000-entry",
+    "discoveredAt": "2026-10-22T11:58:21.643Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "O-GSP-001",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/home",
+        "evidence": "O-GSP-001"
+      },
+      {
+        "name": "业务图谱",
+        "hierarchy": "业务图谱",
+        "occurrence": 0,
+        "id": "O-GSP-002",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/atlas",
+        "evidence": "O-GSP-002"
+      },
+      {
+        "name": "数据资源",
+        "hierarchy": "数据资源",
+        "occurrence": 0,
+        "id": "O-GSP-003",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/resource",
+        "evidence": "O-GSP-003"
+      },
+      {
+        "name": "数据清单",
+        "hierarchy": "数据清单",
+        "occurrence": 0,
+        "id": "O-GSP-004",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/samcheong",
+        "evidence": "O-GSP-004"
+      },
+      {
+        "name": "资料下载",
+        "hierarchy": "资料下载",
+        "occurrence": 0,
+        "id": "O-GSP-005",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/down",
+        "evidence": "O-GSP-005"
+      }
+    ]
+  }
+]

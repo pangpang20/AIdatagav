@@ -1,0 +1,584 @@
+{
+  "time": "2026-10-22T13:00:29.751Z",
+  "url": "/dacs/dataAsset/assetCatalog",
+  "title": "资产目录系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n资产目录系统\n概览\n整体概览\n数据资源\n数据资源目录\n数据资产\n数据资产目录\n审批中心\n我的待办\n我的已办\n全部审批记录\n资产台账\n资产画像\n资产血缘\n标签管理\n数据资产目录\n资产类目\n全部\n集团总部 (50)\n事业部一 (50)\n事业部二 (50)\n事业部三 (50)\n请选资源类型\n查询\n重置\n展开\n新增\n导入\n导出\n提交审核\n设置标签\n\t\n序号\n\t\n资产代码\n\t\n资产名称\n\t\n资源类型\n\t\n关联资源\n\t\n更新时间\n\t\n资产部门\n\t\n资产状态\n\t\n凭证状态\n\t\n数据检测报告\n\t\n操作\n\t\n1\n\t\nDA20240300001\n\t\n生产订单加工记录\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n草稿\n\t\n有\n\t\n有\n\t\n编辑凭证管理报告管理标签管理\n\n\n\t\n2\n\t\nDA20240300002\n\t\n商用车江山系列成本估算表\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n无\n\t\n无\n\t\n凭证管理报告管理标签管理\n\n\n\t\n3\n\t\nDA20240300001\n\t\n618抢购方案明细\n\t\n文件\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n已发布\n\t\n有\n\t\n有\n\t\n变更凭证管理报告管理标签管理\n\n\n\t\n4\n\t\nDA20240300004\n\t\n两广地区客户拜访记录\n\t\n文件\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n已下架\n\t\n无\n\t\n无\n\t\n变更凭证管理报告管理标签管理\n\n\n\t\n5\n\t\nDA20240300005\n\t\n公司组织架构明细表\n\t\n接口\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n有\n\t\n有\n\t\n凭证管理报告管理标签管理\n\n\n\t\n6\n\t\nDA20240300006\n\t\n23年物业缴费明细\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n草稿\n\t\n无\n\t\n无\n\t\n编辑凭证管理报告管理标签管理\n\n\n\t\n7\n\t\nDA20240300007\n\t\n23年办公用品采购明细\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n草稿\n\t\n有\n\t\n有\n\t\n编辑凭证管理报告管理标签管理\n\n\n\t\n8\n\t\nDA20240300008\n\t\n23年总装车间质检记录\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n无\n\t\n无\n\t\n凭证管理报告管理标签管理\n\n\n\t\n9\n\t\nDA20240300009\n\t\n江山系列汽车底盘预研\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n已发布\n\t\n有\n\t\n有\n\t\n变更凭证管理报告管理标签管理\n\n\n\t\n10\n\t\nDA20240300010\n\t\n23年汽车金融落地实践\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n无\n\t\n无\n\t\n凭证管理报告管理标签管理\n共 10 条\n20条/页\n1\n前往\n页\n添加资产类目\n上级类目名称\n全部\n类目名称\n取消\n确认",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入数据资产名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "上一页",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "下一页",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "页",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "关闭此对话框",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入类目名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确认",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [
+    "添加资产类目"
+  ],
+  "frames": [],
+  "id": "V-DACS-003-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "资产代码",
+    "资产名称",
+    "资源类型",
+    "关联资源",
+    "更新时间",
+    "资产部门",
+    "资产状态",
+    "凭证状态",
+    "数据检测报告",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "新增",
+      "cls": "iconfontmain adq-action-icon--title-tree main-add-new"
+    },
+    {
+      "text": "",
+      "title": "删除",
+      "cls": "iconfontmain adq-action-icon--title-tree main-delete-new"
+    },
+    {
+      "text": "",
+      "title": "修改",
+      "cls": "iconfontmain adq-action-icon--title-tree main-edit-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain adq-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "导入",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-import-new"
+    },
+    {
+      "text": "导出",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-export-new"
+    },
+    {
+      "text": "提交审核",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-ecis-yinzhang"
+    },
+    {
+      "text": "设置标签",
+      "title": "",
+      "cls": "iconfontmain adq-action-icon--opreate main-setting-new"
+    },
+    {
+      "text": "生产订单加工记录",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "有",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "adq-link-text-content adq-link-text--active"
+    },
+    {
+      "text": "凭证管理",
+      "title": "",
+      "cls": "adq-link-text-content adq-link-text--active"
+    },
+    {
+      "text": "报告管理",
+      "title": "",
+      "cls": "adq-link-text-content adq-link-text--active"
+    },
+    {
+      "text": "标签管理",
+      "title": "",
+      "cls": "adq-link-text-content adq-link-text--active"
+    },
+    {
+      "text": "商用车江山系列成本估算表",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "618抢购方案明细",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "变更",
+      "title": "",
+      "cls": "adq-link-text-content adq-link-text--active"
+    },
+    {
+      "text": "两广地区客户拜访记录",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "公司组织架构明细表",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "23年物业缴费明细",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "23年办公用品采购明细",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "23年总装车间质检记录",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "江山系列汽车底盘预研",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    },
+    {
+      "text": "23年汽车金融落地实践",
+      "title": "",
+      "cls": "adq-link-text-content audaque-lin-text__single adq-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "整体概览",
+    "数据资源目录",
+    "数据资产目录",
+    "我的待办",
+    "我的已办",
+    "全部审批记录",
+    "资产画像",
+    "资产血缘",
+    "标签管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n资产目录系统\n概览\n整体概览\n数据资源\n数据资源目录\n数据资产\n数据资产目录\n审批中心\n我的待办\n我的已办\n全部审批记录\n资产台账\n资产画像\n资产血缘\n标签管理\n数据资产目录\n资产类目\n全部\n集团总部 (50)\n事业部一 (50)\n事业部二 (50)\n事业部三 (50)\n请选资源类型\n查询\n重置\n展开\n新增\n导入\n导出\n提交审核\n设置标签\n\t\n序号\n\t\n资产代码\n\t\n资产名称\n\t\n资源类型\n\t\n关联资源\n\t\n更新时间\n\t\n资产部门\n\t\n资产状态\n\t\n凭证状态\n\t\n数据检测报告\n\t\n操作\n\t\n1\n\t\nDA20240300001\n\t\n生产订单加工记录\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n草稿\n\t\n有\n\t\n有\n\t\n编辑凭证管理报告管理标签管理\n\n\n\t\n2\n\t\nDA20240300002\n\t\n商用车江山系列成本估算表\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n无\n\t\n无\n\t\n凭证管理报告管理标签管理\n\n\n\t\n3\n\t\nDA20240300001\n\t\n618抢购方案明细\n\t\n文件\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n已发布\n\t\n有\n\t\n有\n\t\n变更凭证管理报告管理标签管理\n\n\n\t\n4\n\t\nDA20240300004\n\t\n两广地区客户拜访记录\n\t\n文件\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n已下架\n\t\n无\n\t\n无\n\t\n变更凭证管理报告管理标签管理\n\n\n\t\n5\n\t\nDA20240300005\n\t\n公司组织架构明细表\n\t\n接口\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n有\n\t\n有\n\t\n凭证管理报告管理标签管理\n\n\n\t\n6\n\t\nDA20240300006\n\t\n23年物业缴费明细\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n草稿\n\t\n无\n\t\n无\n\t\n编辑凭证管理报告管理标签管理\n\n\n\t\n7\n\t\nDA20240300007\n\t\n23年办公用品采购明细\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n草稿\n\t\n有\n\t\n有\n\t\n编辑凭证管理报告管理标签管理\n\n\n\t\n8\n\t\nDA20240300008\n\t\n23年总装车间质检记录\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n无\n\t\n无\n\t\n凭证管理报告管理标签管理\n\n\n\t\n9\n\t\nDA20240300009\n\t\n江山系列汽车底盘预研\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n已发布\n\t\n有\n\t\n有\n\t\n变更凭证管理报告管理标签管理\n\n\n\t\n10\n\t\nDA20240300010\n\t\n23年汽车金融落地实践\n\t\n库表\n\t\n是\n\t\n2024-2-15\n\t\n生产管理部\n\t\n审批中\n\t\n无\n\t\n无\n\t\n凭证管理报告管理标签管理\n共 10 条\n20条/页\n1\n前往\n页\n添加资产类目\n上级类目名称\n全部\n类目名称\n取消\n确认",
+  "operation": {
+    "menu": "数据资产 → 数据资产目录",
+    "action": "新增",
+    "source": "V-DACS-003",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,1413 @@
+[
+  {
+    "code": "EMS",
+    "name": "评价管理",
+    "source": "E066-evaluation-correct",
+    "entry": "V-EMS-000-entry",
+    "discoveredAt": "2026-10-22T12:38:10.285Z",
+    "links": [
+      {
+        "name": "方案管理",
+        "hierarchy": "方案管理",
+        "occurrence": 0,
+        "id": "V-EMS-001",
+        "status": "opened-review-content",
+        "path": "/ems/programmeManage/list",
+        "evidence": "V-EMS-001",
+        "operations": []
+      },
+      {
+        "name": "主观指标",
+        "hierarchy": "指标管理 → 主观指标",
+        "occurrence": 0,
+        "id": "V-EMS-002",
+        "status": "opened-review-content",
+        "path": "/ems/indicator/list/1",
+        "evidence": "V-EMS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-EMS-002-op1",
+            "path": "/ems/indicator/subjectiveEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-EMS-002-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "客观指标",
+        "hierarchy": "指标管理 → 客观指标",
+        "occurrence": 0,
+        "id": "V-EMS-003",
+        "status": "opened-review-content",
+        "path": "/ems/indicator/list/2",
+        "evidence": "V-EMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-EMS-003-op1",
+            "path": "/ems/indicator/objectiveEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-EMS-003-op1-options0"
+            ]
+          },
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-EMS-003-op2",
+            "path": "/ems/indicator/objectiveEdit",
+            "selectControls": 2
+          }
+        ]
+      },
+      {
+        "name": "任务管理",
+        "hierarchy": "评价任务 → 任务管理",
+        "occurrence": 0,
+        "id": "V-EMS-004",
+        "status": "opened-review-content",
+        "path": "/ems/task/evaluationList",
+        "evidence": "V-EMS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-EMS-004-op1",
+            "path": "/ems/task/evaluationEdit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "V-EMS-004-op1-options0",
+              "V-EMS-004-op1-options1",
+              "V-EMS-004-op1-options2",
+              "V-EMS-004-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "执行管理",
+        "hierarchy": "评价任务 → 执行管理",
+        "occurrence": 0,
+        "id": "V-EMS-005",
+        "status": "opened-review-content",
+        "path": "/ems/task/performanceList",
+        "evidence": "V-EMS-005",
+        "operations": []
+      },
+      {
+        "name": "填报审核",
+        "hierarchy": "评价任务 → 填报审核",
+        "occurrence": 0,
+        "id": "V-EMS-006",
+        "status": "opened-review-content",
+        "path": "/ems/audit/fillIn",
+        "evidence": "V-EMS-006",
+        "operations": []
+      },
+      {
+        "name": "申诉审核",
+        "hierarchy": "评价任务 → 申诉审核",
+        "occurrence": 0,
+        "id": "V-EMS-007",
+        "status": "opened-review-content",
+        "path": "/ems/audit/complain",
+        "evidence": "V-EMS-007",
+        "operations": []
+      },
+      {
+        "name": "评价报告",
+        "hierarchy": "评价报告",
+        "occurrence": 0,
+        "id": "V-EMS-008",
+        "status": "opened-review-content",
+        "path": "/ems/report/assessment/list",
+        "evidence": "V-EMS-008",
+        "operations": []
+      },
+      {
+        "name": "我的评价",
+        "hierarchy": "我的评价",
+        "occurrence": 0,
+        "id": "V-EMS-009",
+        "status": "opened-review-content",
+        "path": "/ems/myAssessmentReport/list",
+        "evidence": "V-EMS-009",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "AIS",
+    "name": "AI数据智能辅助",
+    "source": "E057-ai-assistant",
+    "entry": "V-AIS-000-entry",
+    "discoveredAt": "2026-10-22T12:40:28.013Z",
+    "links": [
+      {
+        "name": "识别召回库",
+        "hierarchy": "库管理 → 识别召回库",
+        "occurrence": 0,
+        "id": "V-AIS-001",
+        "status": "opened-review-content",
+        "path": "/ais/recallLibrary/recallLibraryManagementList",
+        "evidence": "V-AIS-001",
+        "operations": []
+      },
+      {
+        "name": "NL2SQL库",
+        "hierarchy": "库管理 → NL2SQL库",
+        "occurrence": 0,
+        "id": "V-AIS-002",
+        "status": "opened-review-content",
+        "path": "/ais/nl2Sql/libraryManagementList",
+        "evidence": "V-AIS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-002-op1",
+            "path": "/ais/nl2Sql/libraryManagementList",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-AIS-002-op1-options0",
+              "V-AIS-002-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "数据源",
+        "hierarchy": "在线验证 → 数据源",
+        "occurrence": 0,
+        "id": "V-AIS-003",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/dataSourceList",
+        "evidence": "V-AIS-003",
+        "operations": []
+      },
+      {
+        "name": "字段识别验证任务",
+        "hierarchy": "在线验证 → 字段识别验证任务",
+        "occurrence": 0,
+        "id": "V-AIS-004",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/verifyTaskList",
+        "evidence": "V-AIS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-004-op1",
+            "path": "/ais/onlineVerification/verifyTaskList",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-AIS-004-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "表识别验证任务",
+        "hierarchy": "在线验证 → 表识别验证任务",
+        "occurrence": 0,
+        "id": "V-AIS-005",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/tableVerifyTaskList",
+        "evidence": "V-AIS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-005-op1",
+            "path": "/ais/onlineVerification/tableVerifyTaskList",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-AIS-005-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NL2SQL验证任务",
+        "hierarchy": "在线验证 → NL2SQL验证任务",
+        "occurrence": 0,
+        "id": "V-AIS-006",
+        "status": "opened-review-content",
+        "path": "/ais/onlineVerification/nl2SqlList",
+        "evidence": "V-AIS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-006-op1",
+            "path": "/ais/onlineVerification/nl2SqlList",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-AIS-006-op1-options0",
+              "V-AIS-006-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NL2SQL模型管理",
+        "hierarchy": "模型管理 → NL2SQL模型管理",
+        "occurrence": 0,
+        "id": "V-AIS-007",
+        "status": "opened-review-content",
+        "path": "/ais/modelManagement/nl2SqlModelList",
+        "evidence": "V-AIS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-007-op1",
+            "path": "/ais/modelManagement/nl2SqlModelList"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-007-op2",
+            "path": "/ais/modelManagement/nl2SqlModelList"
+          }
+        ]
+      },
+      {
+        "name": "分级目录",
+        "hierarchy": "分级目录",
+        "occurrence": 0,
+        "id": "V-AIS-008",
+        "status": "opened-review-content",
+        "path": "/ais/grade/gradeList",
+        "evidence": "V-AIS-008",
+        "operations": []
+      },
+      {
+        "name": "接口授权",
+        "hierarchy": "接口授权",
+        "occurrence": 0,
+        "id": "V-AIS-009",
+        "status": "opened-review-content",
+        "path": "/ais/interface/interfaceAuthorizationList",
+        "evidence": "V-AIS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-AIS-009-op1",
+            "path": "/ais/interface/interfaceAuthorizationEdit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "V-AIS-009-op1-options0",
+              "V-AIS-009-op1-options1",
+              "V-AIS-009-op1-options2"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "RTMS",
+    "name": "报告模板",
+    "source": "E058-report-template",
+    "entry": "V-RTMS-000-entry",
+    "discoveredAt": "2026-10-22T12:43:51.985Z",
+    "links": [
+      {
+        "name": "· 模板管理",
+        "hierarchy": "报告模板管理 → 报告模板 → · 模板管理",
+        "occurrence": 0,
+        "id": "V-RTMS-001",
+        "status": "opened-review-content",
+        "path": "/rtms/report/reportTemplate/list",
+        "evidence": "V-RTMS-001",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-RTMS-001-op1",
+            "path": "/rtms/report/reportTemplate/detail",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-RTMS-001-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-RTMS-001-op2",
+            "path": "/rtms/report/reportTemplate/detail",
+            "selectControls": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "SPACE",
+    "name": "工作空间",
+    "source": "E060-workspaces",
+    "entry": "V-SPACE-000-entry",
+    "discoveredAt": "2026-10-22T12:45:05.347Z",
+    "links": [
+      {
+        "name": "工作空间管理",
+        "hierarchy": "工作空间管理",
+        "occurrence": 0,
+        "id": "V-SPACE-001",
+        "status": "opened-review-content",
+        "path": "/dop/projectSpace/index",
+        "evidence": "V-SPACE-001",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "OMMS",
+    "name": "运维监控",
+    "source": "E061-monitoring",
+    "entry": "V-OMMS-000-entry",
+    "discoveredAt": "2026-10-22T12:45:32.704Z",
+    "links": [
+      {
+        "name": "总览",
+        "hierarchy": "总览",
+        "occurrence": 0,
+        "id": "V-OMMS-001",
+        "status": "opened-review-content",
+        "path": "/omms/overview",
+        "evidence": "V-OMMS-001",
+        "operations": []
+      },
+      {
+        "name": "· 服务器管理",
+        "hierarchy": "监控管理 → 对象管理 → · 服务器管理",
+        "occurrence": 0,
+        "id": "V-OMMS-002",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/target/serverManagement",
+        "evidence": "V-OMMS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-OMMS-002-op1",
+            "path": "/omms/monitor/target/serverManagementEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-OMMS-002-op1-options0",
+              "V-OMMS-002-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 应用服务器管理",
+        "hierarchy": "监控管理 → 对象管理 → · 应用服务器管理",
+        "occurrence": 0,
+        "id": "V-OMMS-003",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/target/applicationServerManagement",
+        "evidence": "V-OMMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-OMMS-003-op1",
+            "path": "/omms/monitor/target/applicationServerManagementEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-OMMS-003-op1-options0",
+              "V-OMMS-003-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 数据库管理",
+        "hierarchy": "监控管理 → 对象管理 → · 数据库管理",
+        "occurrence": 0,
+        "id": "V-OMMS-004",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/target/databaseManagement",
+        "evidence": "V-OMMS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-OMMS-004-op1",
+            "path": "/omms/monitor/target/databaseManagementEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-OMMS-004-op1-options0",
+              "V-OMMS-004-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 服务器监控",
+        "hierarchy": "监控管理 → 监控管理 → · 服务器监控",
+        "occurrence": 0,
+        "id": "V-OMMS-005",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/objectMonitor/serverMonitor",
+        "evidence": "V-OMMS-005",
+        "operations": []
+      },
+      {
+        "name": "· 应用服务器监控",
+        "hierarchy": "监控管理 → 监控管理 → · 应用服务器监控",
+        "occurrence": 0,
+        "id": "V-OMMS-006",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/objectMonitor/applicationServerMonitor",
+        "evidence": "V-OMMS-006",
+        "operations": []
+      },
+      {
+        "name": "· 数据库监控",
+        "hierarchy": "监控管理 → 监控管理 → · 数据库监控",
+        "occurrence": 0,
+        "id": "V-OMMS-007",
+        "status": "opened-review-content",
+        "path": "/omms/monitor/objectMonitor/databaseMonitor",
+        "evidence": "V-OMMS-007",
+        "operations": []
+      },
+      {
+        "name": "告警规则",
+        "hierarchy": "告警管理 → 告警规则",
+        "occurrence": 0,
+        "id": "V-OMMS-008",
+        "status": "opened-review-content",
+        "path": "/omms/caveat/caveatMonitor/alertRule",
+        "evidence": "V-OMMS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-OMMS-008-op1",
+            "path": "/omms/caveat/caveatMonitor/alertRuleEdit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "V-OMMS-008-op1-options0",
+              "V-OMMS-008-op1-options1",
+              "V-OMMS-008-op1-options2"
+            ]
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-OMMS-008-op2",
+            "path": "/omms/caveat/caveatMonitor/alertRuleEdit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "V-OMMS-008-op2-options0",
+              "V-OMMS-008-op2-options1",
+              "V-OMMS-008-op2-options2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "通知设置",
+        "hierarchy": "告警管理 → 通知设置",
+        "occurrence": 0,
+        "id": "V-OMMS-009",
+        "status": "opened-review-content",
+        "path": "/omms/caveat/caveatMonitor/noticeConfig",
+        "evidence": "V-OMMS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-OMMS-009-op1",
+            "path": "/omms/caveat/caveatMonitor/noticeConfigEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "告警",
+        "hierarchy": "告警管理 → 告警",
+        "occurrence": 0,
+        "id": "V-OMMS-010",
+        "status": "opened-review-content",
+        "path": "/omms/caveat/caveatMonitor/caveatConfig",
+        "evidence": "V-OMMS-010",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "MDM",
+    "name": "元数据管理",
+    "source": "E044-metadata",
+    "entry": "V-MDM-000-entry",
+    "discoveredAt": "2026-10-22T12:48:46.681Z",
+    "links": [
+      {
+        "name": "采集管理",
+        "hierarchy": "元数据管理 → 采集管理",
+        "occurrence": 0,
+        "id": "V-MDM-001",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/collectList",
+        "evidence": "V-MDM-001",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "navigation-error",
+            "businessWriteExecuted": false,
+            "reason": "TimeoutError"
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-001-op2",
+            "path": "/mdm/metadata/manage/collectEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-MDM-001-op2-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "变更管理",
+        "hierarchy": "元数据管理 → 变更管理",
+        "occurrence": 0,
+        "id": "V-MDM-002",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/applyAudit",
+        "evidence": "V-MDM-002",
+        "operations": []
+      },
+      {
+        "name": "版本管理",
+        "hierarchy": "元数据管理 → 版本管理",
+        "occurrence": 0,
+        "id": "V-MDM-003",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/metaVersionComparison",
+        "evidence": "V-MDM-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-003-op1",
+            "path": "/mdm/metadata/manage/metaVersionComparison",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-MDM-003-op1-options0"
+            ]
+          },
+          {
+            "name": "版本管理",
+            "status": "target-not-observed",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-003-op2",
+            "path": "/mdm/metadata/manage/metaVersionComparison"
+          }
+        ]
+      },
+      {
+        "name": "异常监控",
+        "hierarchy": "元数据管理 → 异常监控",
+        "occurrence": 0,
+        "id": "V-MDM-004",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/modifyManageList",
+        "evidence": "V-MDM-004",
+        "operations": []
+      },
+      {
+        "name": "调度策略管理",
+        "hierarchy": "元数据管理 → 调度策略管理",
+        "occurrence": 0,
+        "id": "V-MDM-005",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/strategyList",
+        "evidence": "V-MDM-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-005-op1",
+            "path": "/mdm/metadata/manage/strategyEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-MDM-005-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-005-op2",
+            "path": "/mdm/metadata/manage/strategyEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-MDM-005-op2-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "元数据信息",
+        "hierarchy": "元数据管理 → 元数据信息",
+        "occurrence": 0,
+        "id": "V-MDM-006",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/manage/metaTableList",
+        "evidence": "V-MDM-006",
+        "operations": [
+          {
+            "name": "业务信息",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-006-op1",
+            "path": "/mdm/metadata/manage/metaTableEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-MDM-006-op1-options0",
+              "V-MDM-006-op1-options1"
+            ]
+          },
+          {
+            "name": "数据字典",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-006-op2",
+            "path": "/mdm/metadata/manage/metaTableList"
+          },
+          {
+            "name": "变更信息",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-MDM-006-op3",
+            "path": "/mdm/metadata/manage/metaTableList"
+          }
+        ]
+      },
+      {
+        "name": "数据地图",
+        "hierarchy": "元数据分析 → 数据地图",
+        "occurrence": 0,
+        "id": "V-MDM-007",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/fullChainAnalysis",
+        "evidence": "V-MDM-007",
+        "operations": []
+      },
+      {
+        "name": "血缘分析",
+        "hierarchy": "元数据分析 → 血缘分析",
+        "occurrence": 0,
+        "id": "V-MDM-008",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/bloodAnalysis",
+        "evidence": "V-MDM-008",
+        "operations": []
+      },
+      {
+        "name": "影响分析",
+        "hierarchy": "元数据分析 → 影响分析",
+        "occurrence": 0,
+        "id": "V-MDM-009",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/effectAnalysis",
+        "evidence": "V-MDM-009",
+        "operations": []
+      },
+      {
+        "name": "映射管理",
+        "hierarchy": "元数据分析 → 映射管理",
+        "occurrence": 0,
+        "id": "V-MDM-010",
+        "status": "opened-review-content",
+        "path": "/mdm/metadata/analyse/bloodManageList",
+        "evidence": "V-MDM-010",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DTM",
+    "name": "数据表管理",
+    "source": "E050-tables",
+    "entry": "V-DTM-000-entry",
+    "discoveredAt": "2026-10-22T12:53:23.216Z",
+    "links": [
+      {
+        "name": "库表资源",
+        "hierarchy": "数据表管理 → 库表资源",
+        "occurrence": 0,
+        "id": "V-DTM-001",
+        "status": "opened-review-content",
+        "path": "/da-dtm/warehouseResources/warehouseResourcesList",
+        "evidence": "V-DTM-001",
+        "operations": []
+      },
+      {
+        "name": "授权管理",
+        "hierarchy": "数据表管理 → 授权管理",
+        "occurrence": 0,
+        "id": "V-DTM-002",
+        "status": "opened-review-content",
+        "path": "/da-dtm/authorizationManage",
+        "evidence": "V-DTM-002",
+        "operations": []
+      },
+      {
+        "name": "审批中心",
+        "hierarchy": "数据表管理 → 审批中心",
+        "occurrence": 0,
+        "id": "V-DTM-003",
+        "status": "opened-review-content",
+        "path": "/da-dtm/approvalCentre",
+        "evidence": "V-DTM-003",
+        "operations": []
+      },
+      {
+        "name": "我的资源",
+        "hierarchy": "数据表管理 → 我的资源",
+        "occurrence": 0,
+        "id": "V-DTM-004",
+        "status": "opened-review-content",
+        "path": "/da-dtm/myResources/myResourcesList",
+        "evidence": "V-DTM-004",
+        "operations": []
+      },
+      {
+        "name": "我的申请",
+        "hierarchy": "数据表管理 → 我的申请",
+        "occurrence": 0,
+        "id": "V-DTM-005",
+        "status": "opened-review-content",
+        "path": "/da-dtm/myApplication",
+        "evidence": "V-DTM-005",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DSS",
+    "name": "数据标准管理",
+    "source": "E033-standards",
+    "entry": "V-DSS-000-entry",
+    "discoveredAt": "2026-10-22T12:54:00.831Z",
+    "links": [
+      {
+        "name": "· 标准文档管理",
+        "hierarchy": "标准 → 标准体系文档管理 → · 标准文档管理",
+        "occurrence": 0,
+        "id": "V-DSS-001",
+        "status": "opened-review-content",
+        "path": "/dss/standard/document/docList",
+        "evidence": "V-DSS-001",
+        "operations": []
+      },
+      {
+        "name": "· 标准术语管理",
+        "hierarchy": "标准 → 标准体系文档管理 → · 标准术语管理",
+        "occurrence": 0,
+        "id": "V-DSS-002",
+        "status": "opened-review-content",
+        "path": "/dss/standard/document/termList",
+        "evidence": "V-DSS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-002-op1",
+            "path": "/dss/standard/document/termEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-DSS-002-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-002-op2",
+            "path": "/dss/standard/document/termEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-DSS-002-op2-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 标准模型表管理",
+        "hierarchy": "标准 → 标准体系管理 → · 标准模型表管理",
+        "occurrence": 0,
+        "id": "V-DSS-003",
+        "status": "opened-review-content",
+        "path": "/dss/standard/system/dataSetList",
+        "evidence": "V-DSS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-003-op1",
+            "path": "/dss/standard/system/dataSetList",
+            "selectControls": 0
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-003-op2",
+            "path": "/dss/standard/system/dataSetEdit",
+            "selectControls": 0
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-003-op3",
+            "path": "/dss/standard/system/dataSetList",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 标准字段管理",
+        "hierarchy": "标准 → 标准体系管理 → · 标准字段管理",
+        "occurrence": 0,
+        "id": "V-DSS-004",
+        "status": "opened-review-content",
+        "path": "/dss/standard/system/indexItemList",
+        "evidence": "V-DSS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-004-op1",
+            "path": "/dss/standard/system/indexItemList",
+            "selectControls": 0
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-004-op2",
+            "path": "/dss/standard/system/indexItemEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "V-DSS-004-op2-options0",
+              "V-DSS-004-op2-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 标准代码管理",
+        "hierarchy": "标准 → 标准体系管理 → · 标准代码管理",
+        "occurrence": 0,
+        "id": "V-DSS-005",
+        "status": "opened-review-content",
+        "path": "/dss/standard/system/indexCodeList",
+        "evidence": "V-DSS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-005-op1",
+            "path": "/dss/standard/system/indexCodeList",
+            "selectControls": 0
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DSS-005-op2",
+            "path": "/dss/standard/system/indexCodeEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-DSS-005-op2-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 标准文档审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准文档审批",
+        "occurrence": 0,
+        "id": "V-DSS-006",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/docList",
+        "evidence": "V-DSS-006",
+        "operations": []
+      },
+      {
+        "name": "· 标准模型表审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准模型表审批",
+        "occurrence": 0,
+        "id": "V-DSS-007",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/dataSetList",
+        "evidence": "V-DSS-007",
+        "operations": []
+      },
+      {
+        "name": "· 标准字段审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准字段审批",
+        "occurrence": 0,
+        "id": "V-DSS-008",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/indexItemList",
+        "evidence": "V-DSS-008",
+        "operations": []
+      },
+      {
+        "name": "· 标准代码审批",
+        "hierarchy": "标准 → 标准审批管理 → · 标准代码审批",
+        "occurrence": 0,
+        "id": "V-DSS-009",
+        "status": "opened-review-content",
+        "path": "/dss/standard/audit/indexCodeList",
+        "evidence": "V-DSS-009",
+        "operations": []
+      },
+      {
+        "name": "· 标准查询",
+        "hierarchy": "标准 → 标准查询 → · 标准查询",
+        "occurrence": 0,
+        "id": "V-DSS-010",
+        "status": "opened-review-content",
+        "path": "/dss/standard/search/searchList",
+        "evidence": "V-DSS-010",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "OSS",
+    "name": "运营汇总系统",
+    "source": "E051-operations-summary",
+    "entry": "V-OSS-000-entry",
+    "discoveredAt": "2026-10-22T12:58:12.078Z",
+    "links": [
+      {
+        "name": "部门目录中心",
+        "hierarchy": "运营统计汇总 → 部门目录中心",
+        "occurrence": 0,
+        "id": "V-OSS-001",
+        "status": "opened-review-content",
+        "path": "/oss/deptCataCenter/list",
+        "evidence": "V-OSS-001",
+        "operations": []
+      },
+      {
+        "name": "我订阅的目录",
+        "hierarchy": "运营统计汇总 → 我订阅的目录",
+        "occurrence": 0,
+        "id": "V-OSS-002",
+        "status": "opened-review-content",
+        "path": "/oss/myCatalogue/applyList",
+        "evidence": "V-OSS-002",
+        "operations": []
+      },
+      {
+        "name": "数据开发情况",
+        "hierarchy": "运营统计汇总 → 数据开发情况",
+        "occurrence": 0,
+        "id": "V-OSS-003",
+        "status": "opened-review-content",
+        "path": "/oss/standard/list",
+        "evidence": "V-OSS-003",
+        "operations": []
+      },
+      {
+        "name": "监控大屏",
+        "hierarchy": "监控大屏",
+        "occurrence": 0,
+        "id": "V-OSS-004",
+        "status": "opened-review-content",
+        "path": "/oss/monitoringScreen/screenData",
+        "evidence": "V-OSS-004",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "GSP",
+    "name": "数据服务门户",
+    "source": "E095-portal-tab",
+    "entry": "V-GSP-000-entry",
+    "discoveredAt": "2026-10-22T12:58:56.426Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "V-GSP-001",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/home",
+        "evidence": "V-GSP-001",
+        "operations": []
+      },
+      {
+        "name": "业务图谱",
+        "hierarchy": "业务图谱",
+        "occurrence": 0,
+        "id": "V-GSP-002",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/atlas",
+        "evidence": "V-GSP-002",
+        "operations": []
+      },
+      {
+        "name": "数据资源",
+        "hierarchy": "数据资源",
+        "occurrence": 0,
+        "id": "V-GSP-003",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/resource",
+        "evidence": "V-GSP-003",
+        "operations": []
+      },
+      {
+        "name": "数据清单",
+        "hierarchy": "数据清单",
+        "occurrence": 0,
+        "id": "V-GSP-004",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/samcheong",
+        "evidence": "V-GSP-004",
+        "operations": []
+      },
+      {
+        "name": "资料下载",
+        "hierarchy": "资料下载",
+        "occurrence": 0,
+        "id": "V-GSP-005",
+        "status": "opened-review-content",
+        "path": "/gsp-portal/down",
+        "evidence": "V-GSP-005",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DACS",
+    "name": "资产目录系统",
+    "source": "E048-asset-catalog",
+    "entry": "V-DACS-000-entry",
+    "discoveredAt": "2026-10-22T13:00:05.229Z",
+    "links": [
+      {
+        "name": "整体概览",
+        "hierarchy": "概览 → 整体概览",
+        "occurrence": 0,
+        "id": "V-DACS-001",
+        "status": "opened-review-content",
+        "path": "/dacs/overview/overview",
+        "evidence": "V-DACS-001",
+        "operations": []
+      },
+      {
+        "name": "数据资源目录",
+        "hierarchy": "数据资源 → 数据资源目录",
+        "occurrence": 0,
+        "id": "V-DACS-002",
+        "status": "opened-review-content",
+        "path": "/dacs/dataResource/resourceCatalog",
+        "evidence": "V-DACS-002",
+        "operations": []
+      },
+      {
+        "name": "数据资产目录",
+        "hierarchy": "数据资产 → 数据资产目录",
+        "occurrence": 0,
+        "id": "V-DACS-003",
+        "status": "opened-review-content",
+        "path": "/dacs/dataAsset/assetCatalog",
+        "evidence": "V-DACS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DACS-003-op1",
+            "path": "/dacs/dataAsset/assetCatalog"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DACS-003-op2",
+            "path": "/dacs/dataAsset/assetCatalog"
+          }
+        ]
+      },
+      {
+        "name": "我的待办",
+        "hierarchy": "审批中心 → 我的待办",
+        "occurrence": 0,
+        "id": "V-DACS-004",
+        "status": "opened-review-content",
+        "path": "/dacs/approve/backlog",
+        "evidence": "V-DACS-004",
+        "operations": []
+      },
+      {
+        "name": "我的已办",
+        "hierarchy": "审批中心 → 我的已办",
+        "occurrence": 0,
+        "id": "V-DACS-005",
+        "status": "opened-review-content",
+        "path": "/dacs/approve/replied",
+        "evidence": "V-DACS-005",
+        "operations": []
+      },
+      {
+        "name": "全部审批记录",
+        "hierarchy": "审批中心 → 全部审批记录",
+        "occurrence": 0,
+        "id": "V-DACS-006",
+        "status": "opened-review-content",
+        "path": "/dacs/approve/recordList",
+        "evidence": "V-DACS-006",
+        "operations": []
+      },
+      {
+        "name": "资产画像",
+        "hierarchy": "资产台账 → 资产画像",
+        "occurrence": 0,
+        "id": "V-DACS-007",
+        "status": "opened-review-content",
+        "path": "/dacs/assetsLeger/assetPortrait",
+        "evidence": "V-DACS-007",
+        "operations": []
+      },
+      {
+        "name": "资产血缘",
+        "hierarchy": "资产台账 → 资产血缘",
+        "occurrence": 0,
+        "id": "V-DACS-008",
+        "status": "opened-review-content",
+        "path": "/dacs/assetsLeger/assetConsanguinity",
+        "evidence": "V-DACS-008",
+        "operations": []
+      },
+      {
+        "name": "标签管理",
+        "hierarchy": "资产台账 → 标签管理",
+        "occurrence": 0,
+        "id": "V-DACS-009",
+        "status": "opened-review-content",
+        "path": "/dacs/assetsLeger/tagManagement",
+        "evidence": "V-DACS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DACS-009-op1",
+            "path": "/dacs/assetsLeger/tagManagement"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-DACS-009-op2",
+            "path": "/dacs/assetsLeger/tagManagement"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "GSPA",
+    "name": "数据服务门户后台管理",
+    "source": "E042-portal-admin",
+    "entry": "V-GSPA-000-entry",
+    "discoveredAt": "2026-10-22T13:02:23.495Z",
+    "links": [
+      {
+        "name": "快捷入口管理",
+        "hierarchy": "政务共享门户后台管理 → 快捷入口管理",
+        "occurrence": 0,
+        "id": "V-GSPA-001",
+        "status": "opened-review-content",
+        "path": "/gsp/entrance/list",
+        "evidence": "V-GSPA-001",
+        "operations": []
+      },
+      {
+        "name": "知识管理",
+        "hierarchy": "政务共享门户后台管理 → 知识管理",
+        "occurrence": 0,
+        "id": "V-GSPA-002",
+        "status": "opened-review-content",
+        "path": "/gsp/knowledge/list",
+        "evidence": "V-GSPA-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-002-op1",
+            "path": "/gsp/knowledge/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-GSPA-002-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-002-op2",
+            "path": "/gsp/knowledge/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-GSPA-002-op2-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 栏目管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 栏目管理",
+        "occurrence": 0,
+        "id": "V-GSPA-003",
+        "status": "opened-review-content",
+        "path": "/gsp/content/column/list",
+        "evidence": "V-GSPA-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-003-op1",
+            "path": "/gsp/content/column/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-GSPA-003-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 布局管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+        "occurrence": 0,
+        "id": "V-GSPA-004",
+        "status": "opened-review-content",
+        "path": "/gsp/content/sheet/list",
+        "evidence": "V-GSPA-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-004-op1",
+            "path": "/gsp/content/sheet/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 版块管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 版块管理",
+        "occurrence": 0,
+        "id": "V-GSPA-005",
+        "status": "opened-review-content",
+        "path": "/gsp/content/forum/list",
+        "evidence": "V-GSPA-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-005-op1",
+            "path": "/gsp/content/forum/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-GSPA-005-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-005-op2",
+            "path": "/gsp/content/forum/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 内容管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 内容管理",
+        "occurrence": 0,
+        "id": "V-GSPA-006",
+        "status": "opened-review-content",
+        "path": "/gsp/content/content/list",
+        "evidence": "V-GSPA-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "V-GSPA-006-op1",
+            "path": "/gsp/content/content/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "V-GSPA-006-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "模板管理",
+        "hierarchy": "政务共享门户后台管理 → 模板管理",
+        "occurrence": 0,
+        "id": "V-GSPA-007",
+        "status": "opened-review-content",
+        "path": "/gsp/template/list",
+        "evidence": "V-GSPA-007",
+        "operations": []
+      }
+    ]
+  }
+]

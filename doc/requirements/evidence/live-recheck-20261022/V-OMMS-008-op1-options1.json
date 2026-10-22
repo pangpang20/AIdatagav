@@ -1,0 +1,474 @@
+{
+  "time": "2026-10-22T12:47:17.763Z",
+  "url": "/omms/caveat/caveatMonitor/alertRuleEdit",
+  "title": "运维监控",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增告警规则\n返回\n规则组名\n规则类型\n告警名称\n告警级别\n表达式\n等式符号\n阈值设置\n持续时间\n警报注释\n告警摘要\n描述\n取 消提 交\n告警\n一般\n严重\n致命",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "规则组名",
+      "placeholder": "请输入规则组名",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "规则类型",
+      "placeholder": "请选择规则类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "告警名称",
+      "placeholder": "请输入告警名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "告警级别",
+      "placeholder": "请选择告警级别",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表达式",
+      "placeholder": "请输入表达式",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "等式符号",
+      "placeholder": "请选择等式符号",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "阈值设置",
+      "placeholder": "请输入阈值设置",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "持续时间",
+      "placeholder": "请输入持续时间 单位：s、m、h",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "警报注释",
+      "placeholder": "请输入警报注释",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "告警摘要",
+      "placeholder": "请输入告警摘要",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "描述",
+      "placeholder": "请输入描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-OMMS-008-op1-options1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "规则组名",
+      "requiredMarker": true,
+      "text": "规则组名",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入规则组名",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "规则类型",
+      "requiredMarker": true,
+      "text": "规则类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择规则类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "告警名称",
+      "requiredMarker": true,
+      "text": "告警名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入告警名称",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "告警级别",
+      "requiredMarker": true,
+      "text": "告警级别",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择告警级别",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表达式",
+      "requiredMarker": true,
+      "text": "表达式",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入表达式",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "等式符号",
+      "requiredMarker": true,
+      "text": "等式符号",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择等式符号",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "阈值设置",
+      "requiredMarker": true,
+      "text": "阈值设置",
+      "fields": [
+        {
+          "type": "number",
+          "placeholder": "请输入阈值设置",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "持续时间",
+      "requiredMarker": true,
+      "text": "持续时间",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入持续时间 单位：s、m、h",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "警报注释",
+      "requiredMarker": true,
+      "text": "警报注释",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入警报注释",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "告警摘要",
+      "requiredMarker": true,
+      "text": "告警摘要",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入告警摘要",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "描述",
+      "requiredMarker": false,
+      "text": "描述",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入描述",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "告警",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "一般",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "严重",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "致命",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 总览",
+    "· 服务器管理",
+    "· 应用服务器管理",
+    "· 数据库管理",
+    "· 服务器监控",
+    "· 应用服务器监控",
+    "· 数据库监控",
+    "告警规则",
+    "通知设置",
+    "告警"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n运维监控\n 总览\n监控管理\n对象管理\n· 服务器管理\n· 应用服务器管理\n· 数据库管理\n监控管理\n· 服务器监控\n· 应用服务器监控\n· 数据库监控\n告警管理\n告警规则\n通知设置\n告警\n新增告警规则\n返回\n规则组名\n规则类型\n告警名称\n告警级别\n表达式\n等式符号\n阈值设置\n持续时间\n警报注释\n告警摘要\n描述\n取 消提 交\n告警\n一般\n严重\n致命",
+  "interaction": {
+    "type": "expand-select",
+    "label": "告警级别"
+  }
+}

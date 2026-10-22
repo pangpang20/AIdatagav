@@ -1,0 +1,365 @@
+{
+  "time": "2026-10-22T11:57:55.419Z",
+  "url": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+  "title": "数据集成采集",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n· 表实时同步\n· KAFKA同步\n监控\n任务监控\n异常告警\n数据对账\n补数据\n分析\n任务分析\n数据分析\nAPI采集任务新增\n返回\n任务基本信息\n任务名称\n告警用户\n告警渠道\n邮件\n任务描述\n输入配置\n数据源类型\n来源表标识\n选择来源表\n序号\tAPI名称\t采集字段\t操作\n暂无数据\n输出配置\n目的源类型\n所属部门\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "任务名称",
+      "placeholder": "请输入任务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "告警用户",
+      "placeholder": "请选择告警用户",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "告警渠道",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "任务描述",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据源类型",
+      "placeholder": "请选择数据源类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "选择来源表",
+      "label": "来源表标识",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "目的源类型",
+      "placeholder": "请选择目的源类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属部门",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-DIS-004-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "任务名称",
+      "requiredMarker": true,
+      "text": "任务名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入任务名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "告警用户",
+      "requiredMarker": false,
+      "text": "告警用户",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择告警用户",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "告警渠道",
+      "requiredMarker": false,
+      "text": "告警渠道\n邮件",
+      "fields": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "任务描述",
+      "requiredMarker": false,
+      "text": "任务描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数据源类型",
+      "requiredMarker": true,
+      "text": "数据源类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择数据源类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "来源表标识",
+      "requiredMarker": false,
+      "text": "来源表标识\n选择来源表",
+      "fields": []
+    },
+    {
+      "label": "目的源类型",
+      "requiredMarker": true,
+      "text": "目的源类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择目的源类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "所属部门",
+      "requiredMarker": true,
+      "text": "所属部门",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "API名称",
+    "采集字段",
+    "操作"
+  ],
+  "actions": [],
+  "options": [
+    {
+      "text": "邮件",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 首页",
+    "· 表离线同步",
+    "· 库离线同步",
+    "· 接口及文件解析",
+    "· 文件离线同步",
+    "· 表实时同步",
+    "· KAFKA同步",
+    "任务监控",
+    "异常告警",
+    "数据对账",
+    "补数据",
+    "任务分析",
+    "数据分析"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据集成采集\n 首页\n任务\n离线数据同步\n· 表离线同步\n· 库离线同步\n· 接口及文件解析\n· 文件离线同步\n实时数据同步\n· 表实时同步\n· KAFKA同步\n监控\n任务监控\n异常告警\n数据对账\n补数据\n分析\n任务分析\n数据分析\nAPI采集任务新增\n返回\n任务基本信息\n任务名称\n告警用户\n告警渠道\n邮件\n任务描述\n输入配置\n数据源类型\n来源表标识\n选择来源表\n序号\tAPI名称\t采集字段\t操作\n暂无数据\n输出配置\n目的源类型\n所属部门\n取 消提 交",
+  "operation": {
+    "menu": "任务 → 离线数据同步 → · 接口及文件解析",
+    "action": "新增",
+    "source": "H-DIS-004",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

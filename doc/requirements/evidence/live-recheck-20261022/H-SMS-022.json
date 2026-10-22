@@ -1,0 +1,221 @@
+{
+  "time": "2026-10-22T12:12:50.611Z",
+  "url": "/gldm/init/list",
+  "title": "任务编排与调度",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n调度统计\n配置管理\n系统管理\n组件管理\n初始化\nIDE平台初始化\nIDE开发平台使用前，需要对各层的自动代码生成能力进行脚本初始，完成初始化后系统才能正常使用。\n1\n步骤1\n2\n步骤2\n标准表存储位置\n自动存储在归集表所属位置\n指定数据库\n下一步",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "标准表存储位置",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "标准表存储位置",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标准表存储位置",
+      "placeholder": "请选择数据源",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标准表存储位置",
+      "placeholder": "请选择Schema",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "下一步",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-SMS-022",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "标准表存储位置",
+      "requiredMarker": true,
+      "text": "标准表存储位置\n自动存储在归集表所属位置\n指定数据库",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择数据源",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择Schema",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "自动存储在归集表所属位置",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "指定数据库",
+      "selected": true,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "概览",
+    "我的流程",
+    "流程调度管理",
+    "· 周期任务作业监控",
+    "· 实时任务作业监控",
+    "· 告警信息查询",
+    "· 告警推送管理",
+    "归集表查询",
+    "开发表管理",
+    "函数开发",
+    "脚本开发",
+    "· 标准层",
+    "· 原子层",
+    "· 整合层",
+    "· 主题层",
+    "· 安全层",
+    "· 标准代码集查询",
+    "· 源系统代码集管理",
+    "· 源与标准映射管理",
+    "· 函数管理",
+    "· 算法包管理",
+    "· IDE平台初始化",
+    "调度统计",
+    "系统管理",
+    "组件管理",
+    "初始化"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n调度统计\n配置管理\n系统管理\n组件管理\n初始化\nIDE平台初始化\nIDE开发平台使用前，需要对各层的自动代码生成能力进行脚本初始，完成初始化后系统才能正常使用。\n1\n步骤1\n2\n步骤2\n标准表存储位置\n自动存储在归集表所属位置\n指定数据库\n下一步"
+}

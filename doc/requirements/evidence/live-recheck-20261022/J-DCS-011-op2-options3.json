@@ -1,0 +1,540 @@
+{
+  "time": "2026-10-22T11:55:22.443Z",
+  "url": "/dcs/access/limitEdit",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n编辑机构接入管理\n返回\n接入模式\n租户\n独立部署\n关联机构\n机构名称\n统一社会信用代码\n所属区域\n机构地址\n联系人\n联系电话\n授权部门目录分类\n授权基础目录分类\n请选择目录\n\t\n授权主题目录分类\n证券研究\t\t\t\n取 消提 交\n\n无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "接入模式",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "接入模式",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联机构",
+      "placeholder": "请选择关联机构",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "机构名称",
+      "placeholder": "请输入机构名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "统一社会信用代码",
+      "placeholder": "请输入统一社会信用代码",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": "18",
+      "maxlength": "18",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属区域",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属区域",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属区域",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "机构地址",
+      "placeholder": "请输入机构地址",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "60",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "联系人",
+      "placeholder": "请输入联系人",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "联系电话",
+      "placeholder": "请输入联系电话",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "授权部门目录分类",
+      "placeholder": "请选择授权部门目录分类",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "授权基础目录分类",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "授权主题目录分类",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "J-DCS-011-op2-options3",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "接入模式",
+      "requiredMarker": true,
+      "text": "接入模式\n租户\n独立部署",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "关联机构",
+      "requiredMarker": true,
+      "text": "关联机构",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择关联机构",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "机构名称",
+      "requiredMarker": true,
+      "text": "机构名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入机构名称",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "统一社会信用代码",
+      "requiredMarker": false,
+      "text": "统一社会信用代码",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入统一社会信用代码",
+          "maxlength": "18",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "所属区域",
+      "requiredMarker": false,
+      "text": "所属区域",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "机构地址",
+      "requiredMarker": false,
+      "text": "机构地址",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入机构地址",
+          "maxlength": "60",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "联系人",
+      "requiredMarker": false,
+      "text": "联系人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入联系人",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "联系电话",
+      "requiredMarker": false,
+      "text": "联系电话",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入联系电话",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "授权部门目录分类",
+      "requiredMarker": true,
+      "text": "授权部门目录分类",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择授权部门目录分类",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "授权基础目录分类",
+      "requiredMarker": false,
+      "text": "授权基础目录分类\n请选择目录\n\t",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "授权主题目录分类",
+      "requiredMarker": false,
+      "text": "授权主题目录分类\n证券研究\t\t\t",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "租户",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "独立部署",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n编辑机构接入管理\n返回\n接入模式\n租户\n独立部署\n关联机构\n机构名称\n统一社会信用代码\n所属区域\n机构地址\n联系人\n联系电话\n授权部门目录分类\n授权基础目录分类\n请选择目录\n\t\n授权主题目录分类\n证券研究\t\t\t\n取 消提 交\n\n无数据"
+}

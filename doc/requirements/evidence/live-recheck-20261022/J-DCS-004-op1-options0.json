@@ -1,0 +1,1322 @@
+{
+  "time": "2026-10-22T11:47:40.055Z",
+  "url": "/dcs/resources/edit",
+  "title": "目录管理系统",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n编目\n返回\n1\n编辑目录基本信息\n2\n编辑信息项信息\n基本信息\n数据原名\n12/50\n数据别名\n12/30\n数源单位\n源库名称\n12/30\n* 更新类型\n信息资源类型\n数据类型\n更新周期\n安全级别\n关联系统\n关联事项\n数据审核\n6/100\n数据简介\n6/300\n 是否开启级联共享 \n主题目录分类\n资源目录分类\n目录编码\n共享开放属性\n共享类型\n无条件共享\n有条件共享\n不予共享\n共享说明\n6/200\n 数据范围 \n广东省\n省本级\n各地市\n市本级\n各县（区）\n县（区）本级\n各乡镇\n开放类型\n向社会开放\n不向社会开放\n有条件向社会开放\n无条件向社会开放\n理由依据\n7/300\n 供数方式 \n服务API\nAPI\n文件\n库表\n取消下一步\n增量更新\n全量更新",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据原名",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据别名",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "30",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数源单位",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "源库名称",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "30",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "信息资源类型",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据类型",
+      "placeholder": "请选择数据类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "更新周期",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "安全级别",
+      "placeholder": "无需填写，自动读取字段的最高安全等级",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联系统",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联事项",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据审核",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "数据简介",
+      "placeholder": "对信息资源内容（或关键字段）的概要描述，如：此信息资源内容包括公民的身份证号、身份证号匹配度代码、姓名、姓名匹配度代码、出生地、国家地区码、出生地_省市县地区码、出生日期、民族代码、死亡标识、性别代码等信息，可以用于信息比对、信息查询和信息获取",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "300",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 是否开启级联共享 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "主题目录分类",
+      "placeholder": "请选择主题目录分类",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "资源目录分类",
+      "placeholder": "请选择资源目录分类",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "目录编码",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "共享类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "共享类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "共享类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "共享说明",
+      "placeholder": "有条件共享类型需要标明使用要求（包括作为行政依据、工作参考、用于数据校核、业务协同等...）还应注明共享条件和数据范围",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 数据范围 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "开放类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "开放类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "开放类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "开放类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "理由依据",
+      "placeholder": "请填写理由依据",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "300",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 供数方式 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 供数方式 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 供数方式 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": " 供数方式 ",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "下一步",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "J-DCS-004-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "数据原名",
+      "requiredMarker": true,
+      "text": "数据原名\n12/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数据别名",
+      "requiredMarker": true,
+      "text": "数据别名\n12/30",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": "30",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数源单位",
+      "requiredMarker": true,
+      "text": "数源单位",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "源库名称",
+      "requiredMarker": true,
+      "text": "源库名称\n12/30",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": "30",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "* 更新类型",
+      "requiredMarker": false,
+      "text": "* 更新类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "",
+      "requiredMarker": true,
+      "text": "",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "",
+      "requiredMarker": true,
+      "text": "",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "信息资源类型",
+      "requiredMarker": true,
+      "text": "信息资源类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "数据类型",
+      "requiredMarker": false,
+      "text": "数据类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择数据类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "更新周期",
+      "requiredMarker": true,
+      "text": "更新周期",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "安全级别",
+      "requiredMarker": false,
+      "text": "安全级别",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "无需填写，自动读取字段的最高安全等级",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "关联系统",
+      "requiredMarker": true,
+      "text": "关联系统",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "关联事项",
+      "requiredMarker": false,
+      "text": "关联事项",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "数据审核",
+      "requiredMarker": true,
+      "text": "数据审核\n6/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数据简介",
+      "requiredMarker": true,
+      "text": "数据简介\n6/300",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "对信息资源内容（或关键字段）的概要描述，如：此信息资源内容包括公民的身份证号、身份证号匹配度代码、姓名、姓名匹配度代码、出生地、国家地区码、出生地_省市县地区码、出生日期、民族代码、死亡标识、性别代码等信息，可以用于信息比对、信息查询和信息获取",
+          "maxlength": "300",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": " 是否开启级联共享 ",
+      "requiredMarker": true,
+      "text": " 是否开启级联共享 ",
+      "fields": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "主题目录分类",
+      "requiredMarker": false,
+      "text": "主题目录分类",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择主题目录分类",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "资源目录分类",
+      "requiredMarker": true,
+      "text": "资源目录分类",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择资源目录分类",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "目录编码",
+      "requiredMarker": true,
+      "text": "目录编码",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "共享类型",
+      "requiredMarker": true,
+      "text": "共享类型\n无条件共享\n有条件共享\n不予共享",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "共享说明",
+      "requiredMarker": true,
+      "text": "共享说明\n6/200",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "有条件共享类型需要标明使用要求（包括作为行政依据、工作参考、用于数据校核、业务协同等...）还应注明共享条件和数据范围",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": " 数据范围 ",
+      "requiredMarker": true,
+      "text": " 数据范围 \n广东省\n省本级\n各地市\n市本级\n各县（区）\n县（区）本级\n各乡镇",
+      "fields": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "开放类型",
+      "requiredMarker": true,
+      "text": "开放类型\n向社会开放\n不向社会开放\n有条件向社会开放\n无条件向社会开放",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "理由依据",
+      "requiredMarker": true,
+      "text": "理由依据\n7/300",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请填写理由依据",
+          "maxlength": "300",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": " 供数方式 ",
+      "requiredMarker": true,
+      "text": " 供数方式 \n服务API\nAPI\n文件\n库表",
+      "fields": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "无条件共享",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "有条件共享",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "不予共享",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "广东省",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "省本级",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "各地市",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "市本级",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "各县（区）",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "县（区）本级",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "各乡镇",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "向社会开放",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "不向社会开放",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "有条件向社会开放",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "无条件向社会开放",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "服务API",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "API",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "文件",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "库表",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "增量更新",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "全量更新",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "机构内部统计分析",
+    "所有机构统计分析",
+    "· 资源管理",
+    "· 目录管理",
+    "· 我发起的流程",
+    "· 我处理的流程",
+    "· 业务管理",
+    "· 事项管理",
+    "· 应用系统管理",
+    "目录上报审核",
+    "机构接入管理",
+    "目录分类管理",
+    "· 级联目录中心",
+    "· 部门目录中心",
+    "· 责任清单",
+    "· 负面清单",
+    "· 我订阅的目录",
+    "· 我收藏的目录",
+    "· 我发起的流程",
+    "· 我处理的流程"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n目录管理系统\n服务统计\n机构内部统计分析\n所有机构统计分析\n资源编目\n目录管理\n· 资源管理\n· 目录管理\n流程审批\n· 我发起的流程\n· 我处理的流程\n系统管理\n· 业务管理\n· 事项管理\n· 应用系统管理\n上报管理\n目录上报审核\n机构接入管理\n目录分类管理\n目录中心\n目录中心\n· 级联目录中心\n· 部门目录中心\n清单管理\n· 责任清单\n· 负面清单\n我的目录\n· 我订阅的目录\n· 我收藏的目录\n流程审批\n· 我发起的流程\n· 我处理的流程\n编目\n返回\n1\n编辑目录基本信息\n2\n编辑信息项信息\n基本信息\n数据原名\n12/50\n数据别名\n12/30\n数源单位\n源库名称\n12/30\n* 更新类型\n信息资源类型\n数据类型\n更新周期\n安全级别\n关联系统\n关联事项\n数据审核\n6/100\n数据简介\n6/300\n 是否开启级联共享 \n主题目录分类\n资源目录分类\n目录编码\n共享开放属性\n共享类型\n无条件共享\n有条件共享\n不予共享\n共享说明\n6/200\n 数据范围 \n广东省\n省本级\n各地市\n市本级\n各县（区）\n县（区）本级\n各乡镇\n开放类型\n向社会开放\n不向社会开放\n有条件向社会开放\n无条件向社会开放\n理由依据\n7/300\n 供数方式 \n服务API\nAPI\n文件\n库表\n取消下一步\n增量更新\n全量更新"
+}

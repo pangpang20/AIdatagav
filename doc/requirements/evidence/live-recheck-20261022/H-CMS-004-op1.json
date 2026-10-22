@@ -1,0 +1,329 @@
+{
+  "time": "2026-10-22T11:48:52.681Z",
+  "url": "/dop/cms/comfactory/manage/classify/index",
+  "title": "构件管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n构件管理\n 构件超市\n 构件开发\n构件配置\n构件名称\n构件分类\n我的构件\n我的构件\n导出记录\n构件分类\n查询重置\n新增\n序号\t分类名称\t分类描述\t创建人\t创建时间\t操作\n1\n\t\n人口类\n\t\n人口类信息汇聚\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n2\n\t\n法人类\n\t\n法人类规则信息\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n3\n\t\n房屋类\n\t\n空间地理类规则\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n4\n\t\n信用类\n\t\n社会信用类规则\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n5\n\t\n通用类\n\t\n通用类规则\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n共 5 条\n1\n前往页\n新增业务类型\n分类名称\n0/50\n分类描述\n取 消 确 认",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入业务分类名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入创建人",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "Close",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "分类名称",
+      "placeholder": "请输入分类名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "分类描述",
+      "placeholder": "请输入分类描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "500",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确 认",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-CMS-004-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "分类名称",
+      "requiredMarker": true,
+      "text": "分类名称\n0/50",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入分类名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "分类描述",
+      "requiredMarker": false,
+      "text": "分类描述",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入分类描述",
+          "maxlength": "500",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "分类名称",
+    "分类描述",
+    "创建人",
+    "创建时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "查看",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 构件超市",
+    " 构件开发",
+    "构件名称",
+    "构件分类",
+    "我的构件",
+    "导出记录"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n构件管理\n 构件超市\n 构件开发\n构件配置\n构件名称\n构件分类\n我的构件\n我的构件\n导出记录\n构件分类\n查询重置\n新增\n序号\t分类名称\t分类描述\t创建人\t创建时间\t操作\n1\n\t\n人口类\n\t\n人口类信息汇聚\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n2\n\t\n法人类\n\t\n法人类规则信息\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n3\n\t\n房屋类\n\t\n空间地理类规则\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n4\n\t\n信用类\n\t\n社会信用类规则\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n\n\n5\n\t\n通用类\n\t\n通用类规则\n\t\nAdministrator\n\t\n2023-01-06 17:07:51\n\t\n编辑\n查看\n共 5 条\n1\n前往页\n新增业务类型\n分类名称\n0/50\n分类描述\n取 消 确 认",
+  "operation": {
+    "menu": "构件配置 → 构件分类",
+    "action": "新增",
+    "source": "H-CMS-004",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

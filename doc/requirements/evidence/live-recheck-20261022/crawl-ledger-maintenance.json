@@ -1,0 +1,1568 @@
+[
+  {
+    "code": "DBMS",
+    "name": "数据需求管理",
+    "source": "E006-demand",
+    "entry": "H-DBMS-000-entry",
+    "discoveredAt": "2026-10-22T11:40:29.393Z",
+    "links": [
+      {
+        "name": "调研概览",
+        "hierarchy": "调研概览",
+        "occurrence": 0,
+        "id": "H-DBMS-001",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/overview/chart",
+        "evidence": "H-DBMS-001",
+        "operations": []
+      },
+      {
+        "name": "委办局信息",
+        "hierarchy": "调研准备 → 委办局信息",
+        "occurrence": 0,
+        "id": "H-DBMS-002",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/office",
+        "evidence": "H-DBMS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DBMS-002-op1",
+            "path": "/dop/dbms/requirement/prepare/office/editSubject",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "调研团队信息",
+        "hierarchy": "调研准备 → 调研团队信息",
+        "occurrence": 0,
+        "id": "H-DBMS-003",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/team",
+        "evidence": "H-DBMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DBMS-003-op1",
+            "path": "/dop/dbms/requirement/prepare/team/edit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "H-DBMS-003-op1-options0"
+            ],
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "参考文档",
+        "hierarchy": "调研准备 → 参考文档",
+        "occurrence": 0,
+        "id": "H-DBMS-004",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/prepare/referenceFile",
+        "evidence": "H-DBMS-004",
+        "operations": [
+          {
+            "name": "新建",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DBMS-004-op1",
+            "path": "/dop/dbms/requirement/prepare/referenceFile"
+          }
+        ]
+      },
+      {
+        "name": "调研里程碑",
+        "hierarchy": "调研计划 → 调研里程碑",
+        "occurrence": 0,
+        "id": "H-DBMS-005",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/plan/milepost",
+        "evidence": "H-DBMS-005",
+        "operations": []
+      },
+      {
+        "name": "调研计划列表",
+        "hierarchy": "调研计划 → 调研计划列表",
+        "occurrence": 0,
+        "id": "H-DBMS-006",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/plan/list",
+        "evidence": "H-DBMS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DBMS-006-op1",
+            "path": "/dop/dbms/requirement/plan/list/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "H-DBMS-006-op1-options0",
+              "H-DBMS-006-op1-options1",
+              "H-DBMS-006-op1-options2"
+            ],
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "调研实施",
+        "hierarchy": "调研实施",
+        "occurrence": 0,
+        "id": "H-DBMS-007",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/implementation/track",
+        "evidence": "H-DBMS-007",
+        "operations": []
+      },
+      {
+        "name": "数据调研报表",
+        "hierarchy": "调研报告 → 数据调研报表",
+        "occurrence": 0,
+        "id": "H-DBMS-008",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/chart",
+        "evidence": "H-DBMS-008",
+        "operations": []
+      },
+      {
+        "name": "信息系统清单",
+        "hierarchy": "调研报告 → 信息系统清单",
+        "occurrence": 0,
+        "id": "H-DBMS-009",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/informationSystem",
+        "evidence": "H-DBMS-009",
+        "operations": []
+      },
+      {
+        "name": "数据目录清单",
+        "hierarchy": "调研报告 → 数据目录清单",
+        "occurrence": 0,
+        "id": "H-DBMS-010",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/dataResource",
+        "evidence": "H-DBMS-010",
+        "operations": []
+      },
+      {
+        "name": "数据字典清单",
+        "hierarchy": "调研报告 → 数据字典清单",
+        "occurrence": 0,
+        "id": "H-DBMS-011",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/dataDictionary",
+        "evidence": "H-DBMS-011",
+        "operations": []
+      },
+      {
+        "name": "接口资源清单",
+        "hierarchy": "调研报告 → 接口资源清单",
+        "occurrence": 0,
+        "id": "H-DBMS-012",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/interface",
+        "evidence": "H-DBMS-012",
+        "operations": []
+      },
+      {
+        "name": "数据需求清单",
+        "hierarchy": "调研报告 → 数据需求清单",
+        "occurrence": 0,
+        "id": "H-DBMS-013",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/dataRequirements",
+        "evidence": "H-DBMS-013",
+        "operations": []
+      },
+      {
+        "name": "业务需求清单",
+        "hierarchy": "调研报告 → 业务需求清单",
+        "occurrence": 0,
+        "id": "H-DBMS-014",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/report/businessRequirements",
+        "evidence": "H-DBMS-014",
+        "operations": []
+      },
+      {
+        "name": "数据归集",
+        "hierarchy": "数据归集",
+        "occurrence": 0,
+        "id": "H-DBMS-015",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/collection",
+        "evidence": "H-DBMS-015",
+        "operations": []
+      },
+      {
+        "name": "参考文档",
+        "hierarchy": "参考文档",
+        "occurrence": 1,
+        "id": "H-DBMS-016",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/requirement/document",
+        "evidence": "H-DBMS-016",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DBMS-016-op1",
+            "path": "/dop/dbms/requirement/document",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "配置管理",
+        "hierarchy": "配置管理",
+        "occurrence": 0,
+        "id": "H-DBMS-017",
+        "status": "opened-review-content",
+        "path": "/dop/dbms/config/applyConfig/index",
+        "evidence": "H-DBMS-017",
+        "operations": [
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DBMS-017-op1",
+            "path": "/dop/dbms/config/applyConfig/edit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "CMS",
+    "name": "构件管理",
+    "source": "E064-components",
+    "entry": "H-CMS-000-entry",
+    "discoveredAt": "2026-10-22T11:46:25.140Z",
+    "links": [
+      {
+        "name": "构件超市",
+        "hierarchy": "构件超市",
+        "occurrence": 0,
+        "id": "H-CMS-001",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/supermarket/index",
+        "evidence": "H-CMS-001",
+        "operations": []
+      },
+      {
+        "name": "构件开发",
+        "hierarchy": "构件开发",
+        "occurrence": 0,
+        "id": "H-CMS-002",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/development/index",
+        "evidence": "H-CMS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-CMS-002-op1",
+            "path": "/dop/cms/comfactory/development/edit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "H-CMS-002-op1-options0",
+              "H-CMS-002-op1-options1"
+            ]
+          },
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-CMS-002-op2",
+            "path": "/dop/cms/comfactory/development/edit",
+            "selectControls": 2
+          }
+        ]
+      },
+      {
+        "name": "构件名称",
+        "hierarchy": "构件配置 → 构件名称",
+        "occurrence": 0,
+        "id": "H-CMS-003",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/manage/componentName/index",
+        "evidence": "H-CMS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-CMS-003-op1",
+            "path": "/dop/cms/comfactory/manage/componentName/index",
+            "selectControls": 1,
+            "optionEvidence": [
+              "H-CMS-003-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-CMS-003-op2",
+            "path": "/dop/cms/comfactory/manage/componentName/index",
+            "selectControls": 1,
+            "optionEvidence": [
+              "H-CMS-003-op2-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "构件分类",
+        "hierarchy": "构件配置 → 构件分类",
+        "occurrence": 0,
+        "id": "H-CMS-004",
+        "status": "opened-review-content",
+        "path": "/dop/cms/comfactory/manage/classify/index",
+        "evidence": "H-CMS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-CMS-004-op1",
+            "path": "/dop/cms/comfactory/manage/classify/index",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "我的构件",
+        "hierarchy": "我的构件 → 我的构件",
+        "occurrence": 0,
+        "id": "H-CMS-005",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "导出记录",
+        "hierarchy": "我的构件 → 导出记录",
+        "occurrence": 0,
+        "id": "H-CMS-006",
+        "status": "navigation-error",
+        "reason": "Error"
+      }
+    ]
+  },
+  {
+    "code": "WO",
+    "name": "我的工单",
+    "source": "E065-workorders",
+    "entry": "H-WO-000-entry",
+    "discoveredAt": "2026-10-22T11:49:22.976Z",
+    "links": [
+      {
+        "name": "我的待办",
+        "hierarchy": "工单管理 → 我的待办",
+        "occurrence": 0,
+        "id": "H-WO-001",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/workflowReviewList",
+        "evidence": "H-WO-001",
+        "operations": []
+      },
+      {
+        "name": "我的已办",
+        "hierarchy": "工单管理 → 我的已办",
+        "occurrence": 0,
+        "id": "H-WO-002",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/workflowFinishedList",
+        "evidence": "H-WO-002",
+        "operations": []
+      },
+      {
+        "name": "我的工单",
+        "hierarchy": "工单管理 → 我的工单",
+        "occurrence": 0,
+        "id": "H-WO-003",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/myWorkflowList",
+        "evidence": "H-WO-003",
+        "operations": [
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-WO-003-op1",
+            "path": "/workorder/workbench/myWorkflowAndCopy2MeEdit",
+            "selectControls": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DS",
+    "name": "数据源管理",
+    "source": "E022-datasource-list",
+    "entry": "H-DS-000-entry",
+    "discoveredAt": "2026-10-22T11:50:40.491Z",
+    "links": [
+      {
+        "name": "· 驱动管理",
+        "hierarchy": "数据源管理 → 数据源管理 → · 驱动管理",
+        "occurrence": 0,
+        "id": "H-DS-001",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/driveList",
+        "evidence": "H-DS-001",
+        "operations": []
+      },
+      {
+        "name": "· 数据源管理",
+        "hierarchy": "数据源管理 → 数据源管理 → · 数据源管理",
+        "occurrence": 0,
+        "id": "H-DS-002",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/dataSourceManageList",
+        "evidence": "H-DS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-002-op1",
+            "path": "/datasource/dataSource/dataSourceEdit",
+            "selectControls": 6,
+            "optionLimit": "TimeoutError"
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-002-op2",
+            "path": "/datasource/dataSource/dataSourceEdit",
+            "selectControls": 7,
+            "optionEvidence": [
+              "H-DS-002-op2-options1",
+              "H-DS-002-op2-options2",
+              "H-DS-002-op2-options3",
+              "H-DS-002-op2-options4",
+              "H-DS-002-op2-options5"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 部门数据源",
+        "hierarchy": "数据源管理 → 数据源管理 → · 部门数据源",
+        "occurrence": 0,
+        "id": "H-DS-003",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/myDataSourceManageList",
+        "evidence": "H-DS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-003-op1",
+            "path": "/datasource/dataSource/dataSourceEdit",
+            "selectControls": 6,
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "· 数据源列表",
+        "hierarchy": "数据源管理 → 数据源管理 → · 数据源列表",
+        "occurrence": 0,
+        "id": "H-DS-004",
+        "status": "opened-review-content",
+        "path": "/datasource/dataSource/iCanUsedDataSourceList",
+        "evidence": "H-DS-004",
+        "operations": []
+      },
+      {
+        "name": "API数据源",
+        "hierarchy": "数据源管理 → API数据源",
+        "occurrence": 0,
+        "id": "H-DS-005",
+        "status": "opened-review-content",
+        "path": "/datasource/api/list",
+        "evidence": "H-DS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-005-op1",
+            "path": "/datasource/api/edit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "H-DS-005-op1-options0",
+              "H-DS-005-op1-options1"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-005-op2",
+            "path": "/datasource/api/edit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "H-DS-005-op2-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "kafka数据源",
+        "hierarchy": "数据源管理 → kafka数据源",
+        "occurrence": 0,
+        "id": "H-DS-006",
+        "status": "opened-review-content",
+        "path": "/datasource/kafka/list",
+        "evidence": "H-DS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-006-op1",
+            "path": "/datasource/kafka/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "H-DS-006-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DS-006-op2",
+            "path": "/datasource/kafka/edit",
+            "selectControls": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DIS",
+    "name": "数据集成采集",
+    "source": "E028-integration",
+    "entry": "H-DIS-000-entry",
+    "discoveredAt": "2026-10-22T11:56:09.834Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "H-DIS-001",
+        "status": "opened-review-content",
+        "path": "/dis/home",
+        "evidence": "H-DIS-001",
+        "operations": []
+      },
+      {
+        "name": "· 表离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 表离线同步",
+        "occurrence": 0,
+        "id": "H-DIS-002",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/dataAcquisition/list",
+        "evidence": "H-DIS-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-002-op1",
+            "path": "/dis/taskManagement/dataAcquisition/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "H-DIS-002-op1-options0",
+              "H-DIS-002-op1-options1",
+              "H-DIS-002-op1-options2",
+              "H-DIS-002-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 库离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 库离线同步",
+        "occurrence": 0,
+        "id": "H-DIS-003",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/libraryMigration/list",
+        "evidence": "H-DIS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-003-op1",
+            "path": "/dis/taskManagement/libraryMigration/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "H-DIS-003-op1-options0",
+              "H-DIS-003-op1-options1",
+              "H-DIS-003-op1-options2",
+              "H-DIS-003-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 接口及文件解析",
+        "hierarchy": "任务 → 离线数据同步 → · 接口及文件解析",
+        "occurrence": 0,
+        "id": "H-DIS-004",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/apiAndFileCollection/public",
+        "evidence": "H-DIS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-004-op1",
+            "path": "/dis/taskManagement/apiAndFileCollection/components/apiCollection/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "H-DIS-004-op1-options0",
+              "H-DIS-004-op1-options1",
+              "H-DIS-004-op1-options2",
+              "H-DIS-004-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 文件离线同步",
+        "hierarchy": "任务 → 离线数据同步 → · 文件离线同步",
+        "occurrence": 0,
+        "id": "H-DIS-005",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/fileAcquisition/list",
+        "evidence": "H-DIS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-005-op1",
+            "path": "/dis/taskManagement/fileAcquisition/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "H-DIS-005-op1-options0",
+              "H-DIS-005-op1-options1",
+              "H-DIS-005-op1-options2",
+              "H-DIS-005-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 表实时同步",
+        "hierarchy": "任务 → 实时数据同步 → · 表实时同步",
+        "occurrence": 0,
+        "id": "H-DIS-006",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/realTimeAcquisition/list",
+        "evidence": "H-DIS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-006-op1",
+            "path": "/dis/taskManagement/realTimeAcquisition/edit",
+            "selectControls": 6,
+            "optionEvidence": [
+              "H-DIS-006-op1-options0",
+              "H-DIS-006-op1-options1",
+              "H-DIS-006-op1-options2",
+              "H-DIS-006-op1-options3",
+              "H-DIS-006-op1-options4",
+              "H-DIS-006-op1-options5"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· KAFKA同步",
+        "hierarchy": "任务 → 实时数据同步 → · KAFKA同步",
+        "occurrence": 0,
+        "id": "H-DIS-007",
+        "status": "opened-review-content",
+        "path": "/dis/taskManagement/kafkaAcquisition/list",
+        "evidence": "H-DIS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-007-op1",
+            "path": "/dis/taskManagement/kafkaAcquisition/edit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "H-DIS-007-op1-options0",
+              "H-DIS-007-op1-options1",
+              "H-DIS-007-op1-options2",
+              "H-DIS-007-op1-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "任务监控",
+        "hierarchy": "监控 → 任务监控",
+        "occurrence": 0,
+        "id": "H-DIS-008",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/taskMonitoring/list",
+        "evidence": "H-DIS-008",
+        "operations": [
+          {
+            "name": "详情",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DIS-008-op1",
+            "path": "/dis/taskMonitoring/taskMonitoring/list"
+          }
+        ]
+      },
+      {
+        "name": "异常告警",
+        "hierarchy": "监控 → 异常告警",
+        "occurrence": 0,
+        "id": "H-DIS-009",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/abnormal/list",
+        "evidence": "H-DIS-009",
+        "operations": []
+      },
+      {
+        "name": "数据对账",
+        "hierarchy": "监控 → 数据对账",
+        "occurrence": 0,
+        "id": "H-DIS-010",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/dataReconciliation/list",
+        "evidence": "H-DIS-010",
+        "operations": []
+      },
+      {
+        "name": "补数据",
+        "hierarchy": "监控 → 补数据",
+        "occurrence": 0,
+        "id": "H-DIS-011",
+        "status": "opened-review-content",
+        "path": "/dis/taskMonitoring/repairdata/list",
+        "evidence": "H-DIS-011",
+        "operations": []
+      },
+      {
+        "name": "任务分析",
+        "hierarchy": "分析 → 任务分析",
+        "occurrence": 0,
+        "id": "H-DIS-012",
+        "status": "opened-review-content",
+        "path": "/dis/integratedAnalysis/taskAnalysis",
+        "evidence": "H-DIS-012",
+        "operations": []
+      },
+      {
+        "name": "数据分析",
+        "hierarchy": "分析 → 数据分析",
+        "occurrence": 0,
+        "id": "H-DIS-013",
+        "status": "opened-review-content",
+        "path": "/dis/integratedAnalysis/dataAnalysis",
+        "evidence": "H-DIS-013",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "SMS",
+    "name": "任务编排与调度",
+    "source": "E029-scheduling",
+    "entry": "H-SMS-000-entry",
+    "discoveredAt": "2026-10-22T12:02:01.025Z",
+    "links": [
+      {
+        "name": "概览",
+        "hierarchy": "概览",
+        "occurrence": 0,
+        "id": "H-SMS-001",
+        "status": "opened-review-content",
+        "path": "/sms/home",
+        "evidence": "H-SMS-001",
+        "operations": []
+      },
+      {
+        "name": "我的流程",
+        "hierarchy": "流程开发 → 我的流程",
+        "occurrence": 0,
+        "id": "H-SMS-002",
+        "status": "opened-review-content",
+        "path": "/sms/develop/taskDevelop",
+        "evidence": "H-SMS-002",
+        "operations": []
+      },
+      {
+        "name": "流程调度管理",
+        "hierarchy": "流程调度 → 流程调度管理",
+        "occurrence": 0,
+        "id": "H-SMS-003",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/manage/scheduleList",
+        "evidence": "H-SMS-003",
+        "operations": []
+      },
+      {
+        "name": "· 周期任务作业监控",
+        "hierarchy": "流程调度 → 流程监控 → · 周期任务作业监控",
+        "occurrence": 0,
+        "id": "H-SMS-004",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/monitor/monitorList",
+        "evidence": "H-SMS-004",
+        "operations": []
+      },
+      {
+        "name": "· 实时任务作业监控",
+        "hierarchy": "流程调度 → 流程监控 → · 实时任务作业监控",
+        "occurrence": 0,
+        "id": "H-SMS-005",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/monitor/realtime",
+        "evidence": "H-SMS-005",
+        "operations": []
+      },
+      {
+        "name": "· 告警信息查询",
+        "hierarchy": "流程调度 → 告警管理 → · 告警信息查询",
+        "occurrence": 0,
+        "id": "H-SMS-006",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/alarm/messageList",
+        "evidence": "H-SMS-006",
+        "operations": []
+      },
+      {
+        "name": "· 告警推送管理",
+        "hierarchy": "流程调度 → 告警管理 → · 告警推送管理",
+        "occurrence": 0,
+        "id": "H-SMS-007",
+        "status": "opened-review-content",
+        "path": "/sms/schedule/alarm/pushList",
+        "evidence": "H-SMS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-007-op1",
+            "path": "/sms/schedule/alarm/pushEdit",
+            "selectControls": 3,
+            "optionEvidence": [
+              "H-SMS-007-op1-options0",
+              "H-SMS-007-op1-options1",
+              "H-SMS-007-op1-options2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "归集表查询",
+        "hierarchy": "资源管理 → 归集表查询",
+        "occurrence": 0,
+        "id": "H-SMS-008",
+        "status": "opened-review-content",
+        "path": "/sms/resource/collectionList",
+        "evidence": "H-SMS-008",
+        "operations": []
+      },
+      {
+        "name": "开发表管理",
+        "hierarchy": "资源管理 → 开发表管理",
+        "occurrence": 0,
+        "id": "H-SMS-009",
+        "status": "opened-review-content",
+        "path": "/sms/dtm/home",
+        "evidence": "H-SMS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-009-op1",
+            "path": "/sms/dtm/home",
+            "selectControls": 1
+          }
+        ]
+      },
+      {
+        "name": "函数开发",
+        "hierarchy": "资源管理 → 函数开发",
+        "occurrence": 0,
+        "id": "H-SMS-010",
+        "status": "opened-review-content",
+        "path": "/sms/resource/functionList",
+        "evidence": "H-SMS-010",
+        "operations": []
+      },
+      {
+        "name": "脚本开发",
+        "hierarchy": "资源管理 → 脚本开发",
+        "occurrence": 0,
+        "id": "H-SMS-011",
+        "status": "opened-review-content",
+        "path": "/sms/resource/scriptList",
+        "evidence": "H-SMS-011",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-011-op1",
+            "path": "/sms/resource/scriptList"
+          }
+        ]
+      },
+      {
+        "name": "· 标准层",
+        "hierarchy": "GLDM开发IDE → 标化加工IDE → · 标准层",
+        "occurrence": 0,
+        "id": "H-SMS-012",
+        "status": "opened-review-content",
+        "path": "/gldm/process/standard/list",
+        "evidence": "H-SMS-012",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-012-op1",
+            "path": "/gldm/process/standard/list"
+          }
+        ]
+      },
+      {
+        "name": "· 原子层",
+        "hierarchy": "GLDM开发IDE → 分层开发IDE → · 原子层",
+        "occurrence": 0,
+        "id": "H-SMS-013",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/atomic/list",
+        "evidence": "H-SMS-013",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-013-op1",
+            "path": "/gldm/develop/atomic/list"
+          }
+        ]
+      },
+      {
+        "name": "· 整合层",
+        "hierarchy": "GLDM开发IDE → 分层开发IDE → · 整合层",
+        "occurrence": 0,
+        "id": "H-SMS-014",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/integration/list",
+        "evidence": "H-SMS-014",
+        "operations": []
+      },
+      {
+        "name": "· 主题层",
+        "hierarchy": "GLDM开发IDE → 分层开发IDE → · 主题层",
+        "occurrence": 0,
+        "id": "H-SMS-015",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/theme/list",
+        "evidence": "H-SMS-015",
+        "operations": []
+      },
+      {
+        "name": "· 安全层",
+        "hierarchy": "GLDM开发IDE → 分层开发IDE → · 安全层",
+        "occurrence": 0,
+        "id": "H-SMS-016",
+        "status": "opened-review-content",
+        "path": "/gldm/develop/application/list",
+        "evidence": "H-SMS-016",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-016-op1",
+            "path": "/gldm/develop/application/list"
+          }
+        ]
+      },
+      {
+        "name": "· 标准代码集查询",
+        "hierarchy": "GLDM开发IDE → 规则配置 → · 标准代码集查询",
+        "occurrence": 0,
+        "id": "H-SMS-017",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/standardCodeSet/list",
+        "evidence": "H-SMS-017",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-017-op1",
+            "path": "/gldm/rule/addEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 源系统代码集管理",
+        "hierarchy": "GLDM开发IDE → 规则配置 → · 源系统代码集管理",
+        "occurrence": 0,
+        "id": "H-SMS-018",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/sourceSystemCodeSet/list",
+        "evidence": "H-SMS-018",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-018-op1",
+            "path": "/gldm/rule/addEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 源与标准映射管理",
+        "hierarchy": "GLDM开发IDE → 规则配置 → · 源与标准映射管理",
+        "occurrence": 0,
+        "id": "H-SMS-019",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/mappingManage/list",
+        "evidence": "H-SMS-019",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-019-op1",
+            "path": "/gldm/rule/mappingManage/list"
+          }
+        ]
+      },
+      {
+        "name": "· 函数管理",
+        "hierarchy": "GLDM开发IDE → 规则配置 → · 函数管理",
+        "occurrence": 0,
+        "id": "H-SMS-020",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/functionRule/list",
+        "evidence": "H-SMS-020",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-020-op1",
+            "path": "/gldm/rule/functionRule/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 算法包管理",
+        "hierarchy": "GLDM开发IDE → 规则配置 → · 算法包管理",
+        "occurrence": 0,
+        "id": "H-SMS-021",
+        "status": "opened-review-content",
+        "path": "/gldm/rule/package/list",
+        "evidence": "H-SMS-021",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-021-op1",
+            "path": "/gldm/rule/package/edit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· IDE平台初始化",
+        "hierarchy": "GLDM开发IDE → IDE平台配置 → · IDE平台初始化",
+        "occurrence": 0,
+        "id": "H-SMS-022",
+        "status": "opened-review-content",
+        "path": "/gldm/init/list",
+        "evidence": "H-SMS-022",
+        "operations": []
+      },
+      {
+        "name": "调度统计",
+        "hierarchy": "调度统计",
+        "occurrence": 0,
+        "id": "H-SMS-023",
+        "status": "opened-review-content",
+        "path": "/sms/statistics/task",
+        "evidence": "H-SMS-023",
+        "operations": []
+      },
+      {
+        "name": "系统管理",
+        "hierarchy": "配置管理 → 系统管理",
+        "occurrence": 0,
+        "id": "H-SMS-024",
+        "status": "opened-review-content",
+        "path": "/sms/system/systemNodeList",
+        "evidence": "H-SMS-024",
+        "operations": []
+      },
+      {
+        "name": "组件管理",
+        "hierarchy": "配置管理 → 组件管理",
+        "occurrence": 0,
+        "id": "H-SMS-025",
+        "status": "opened-review-content",
+        "path": "/sms/system/compenontManage",
+        "evidence": "H-SMS-025",
+        "operations": [
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-SMS-025-op1",
+            "path": "/sms/system/compenontManage",
+            "selectControls": 2,
+            "optionEvidence": [
+              "H-SMS-025-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "初始化",
+        "hierarchy": "配置管理 → 初始化",
+        "occurrence": 0,
+        "id": "H-SMS-026",
+        "status": "opened-review-content",
+        "path": "/sms/initialize/componentList",
+        "evidence": "H-SMS-026",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DMS",
+    "name": "规范化数据建模",
+    "source": "E032-modeling",
+    "entry": "H-DMS-000-entry",
+    "discoveredAt": "2026-10-22T12:14:09.646Z",
+    "links": [
+      {
+        "name": "· 模型设计",
+        "hierarchy": "模型管理 → 模型管理 → · 模型设计",
+        "occurrence": 0,
+        "id": "H-DMS-001",
+        "status": "opened-review-content",
+        "path": "/dms/modelManagement/list",
+        "evidence": "H-DMS-001",
+        "operations": []
+      },
+      {
+        "name": "· 模型物化",
+        "hierarchy": "模型管理 → 模型管理 → · 模型物化",
+        "occurrence": 0,
+        "id": "H-DMS-002",
+        "status": "opened-review-content",
+        "path": "/dms/materialization/list",
+        "evidence": "H-DMS-002",
+        "operations": []
+      },
+      {
+        "name": "· 模型分析",
+        "hierarchy": "模型管理 → 模型管理 → · 模型分析",
+        "occurrence": 0,
+        "id": "H-DMS-003",
+        "status": "opened-review-content",
+        "path": "/dms/modelAnalysis/list",
+        "evidence": "H-DMS-003",
+        "operations": []
+      },
+      {
+        "name": "· 模型数据统计",
+        "hierarchy": "模型管理 → 模型管理 → · 模型数据统计",
+        "occurrence": 0,
+        "id": "H-DMS-004",
+        "status": "opened-review-content",
+        "path": "/dms/statistics/list",
+        "evidence": "H-DMS-004",
+        "operations": []
+      },
+      {
+        "name": "· 开发环境配置",
+        "hierarchy": "模型管理 → 系统配置 → · 开发环境配置",
+        "occurrence": 0,
+        "id": "H-DMS-005",
+        "status": "opened-review-content",
+        "path": "/dms/configure/devEnvironment/list",
+        "evidence": "H-DMS-005",
+        "operations": []
+      },
+      {
+        "name": "· 模型属性配置",
+        "hierarchy": "模型管理 → 系统配置 → · 模型属性配置",
+        "occurrence": 0,
+        "id": "H-DMS-006",
+        "status": "opened-review-content",
+        "path": "/dms/configure/modelPro/list",
+        "evidence": "H-DMS-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "H-DMS-006-op1",
+            "path": "/dms/configure/modelPro/list",
+            "selectControls": 3,
+            "optionEvidence": [
+              "H-DMS-006-op1-options0",
+              "H-DMS-006-op1-options1",
+              "H-DMS-006-op1-options2"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "GDRS",
+    "name": "数据直报",
+    "source": "E035-reporting",
+    "entry": "H-GDRS-000-entry",
+    "discoveredAt": "2026-10-22T12:16:00.467Z",
+    "links": [
+      {
+        "name": "首页",
+        "hierarchy": "首页",
+        "occurrence": 0,
+        "id": "H-GDRS-001",
+        "status": "opened-review-content",
+        "path": "/gdrs/index/indexInfo",
+        "evidence": "H-GDRS-001",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 资源管理",
+        "occurrence": 0,
+        "id": "H-GDRS-002",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/resourceTableManage",
+        "evidence": "H-GDRS-002",
+        "operations": []
+      },
+      {
+        "name": "· 表单管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 表单管理",
+        "occurrence": 0,
+        "id": "H-GDRS-003",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structFormManage",
+        "evidence": "H-GDRS-003",
+        "operations": []
+      },
+      {
+        "name": "· 模板管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 模板管理",
+        "occurrence": 0,
+        "id": "H-GDRS-004",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structTemplateManage",
+        "evidence": "H-GDRS-004",
+        "operations": []
+      },
+      {
+        "name": "· 上报授权",
+        "hierarchy": "直报管理 → 库表资源管理 → · 上报授权",
+        "occurrence": 0,
+        "id": "H-GDRS-005",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/templateAccreditServerManage",
+        "evidence": "H-GDRS-005",
+        "operations": []
+      },
+      {
+        "name": "· 查询授权",
+        "hierarchy": "直报管理 → 库表资源管理 → · 查询授权",
+        "occurrence": 0,
+        "id": "H-GDRS-006",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/strctAccreditServerManage",
+        "evidence": "H-GDRS-006",
+        "operations": []
+      },
+      {
+        "name": "· 任务管理",
+        "hierarchy": "直报管理 → 库表资源管理 → · 任务管理",
+        "occurrence": 0,
+        "id": "H-GDRS-007",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-007",
+        "operations": []
+      },
+      {
+        "name": "· 选项配置",
+        "hierarchy": "直报管理 → 库表资源管理 → · 选项配置",
+        "occurrence": 0,
+        "id": "H-GDRS-008",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/configManage",
+        "evidence": "H-GDRS-008",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "直报管理 → 文件资源管理 → · 资源管理",
+        "occurrence": 1,
+        "id": "H-GDRS-009",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/unstructResourceManage",
+        "evidence": "H-GDRS-009",
+        "operations": []
+      },
+      {
+        "name": "· 上报授权",
+        "hierarchy": "直报管理 → 文件资源管理 → · 上报授权",
+        "occurrence": 1,
+        "id": "H-GDRS-010",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/untemplateAccreditServerManage",
+        "evidence": "H-GDRS-010",
+        "operations": []
+      },
+      {
+        "name": "· 查询授权",
+        "hierarchy": "直报管理 → 文件资源管理 → · 查询授权",
+        "occurrence": 1,
+        "id": "H-GDRS-011",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/unstrctAccreditServerManage",
+        "evidence": "H-GDRS-011",
+        "operations": []
+      },
+      {
+        "name": "· 任务管理",
+        "hierarchy": "直报管理 → 文件资源管理 → · 任务管理",
+        "occurrence": 1,
+        "id": "H-GDRS-012",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/unstructNotifyManage",
+        "evidence": "H-GDRS-012",
+        "operations": []
+      },
+      {
+        "name": "类别管理",
+        "hierarchy": "直报管理 → 类别管理",
+        "occurrence": 0,
+        "id": "H-GDRS-013",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/categoryManage",
+        "evidence": "H-GDRS-013",
+        "operations": []
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 数据上报",
+        "occurrence": 0,
+        "id": "H-GDRS-014",
+        "status": "opened-review-content",
+        "path": "/gdrs/report/structReportManage",
+        "evidence": "H-GDRS-014",
+        "operations": []
+      },
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 数据查看",
+        "occurrence": 0,
+        "id": "H-GDRS-015",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-015",
+        "operations": []
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 上报任务",
+        "occurrence": 0,
+        "id": "H-GDRS-016",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-016",
+        "operations": []
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 上报记录",
+        "occurrence": 0,
+        "id": "H-GDRS-017",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-017",
+        "operations": []
+      },
+      {
+        "name": "· 服务查询",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 服务查询",
+        "occurrence": 0,
+        "id": "H-GDRS-018",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-018",
+        "operations": []
+      },
+      {
+        "name": "· 批量导入",
+        "hierarchy": "数据上报 → 标准化数据上报 → · 批量导入",
+        "occurrence": 0,
+        "id": "H-GDRS-019",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-019",
+        "operations": []
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 数据上报",
+        "occurrence": 1,
+        "id": "H-GDRS-020",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-020",
+        "operations": []
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 上报任务",
+        "occurrence": 1,
+        "id": "H-GDRS-021",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-021",
+        "operations": []
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 非标准化数据上报 → · 上报记录",
+        "occurrence": 1,
+        "id": "H-GDRS-022",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-022",
+        "operations": []
+      },
+      {
+        "name": "· 数据上报",
+        "hierarchy": "数据上报 → 文件上报 → · 数据上报",
+        "occurrence": 2,
+        "id": "H-GDRS-023",
+        "status": "opened-review-content",
+        "path": "/gdrs/gdrs/structNotifyManage",
+        "evidence": "H-GDRS-023",
+        "operations": []
+      },
+      {
+        "name": "· 数据查看",
+        "hierarchy": "数据上报 → 文件上报 → · 数据查看",
+        "occurrence": 1,
+        "id": "H-GDRS-024",
+        "status": "pending"
+      },
+      {
+        "name": "· 上报任务",
+        "hierarchy": "数据上报 → 文件上报 → · 上报任务",
+        "occurrence": 2,
+        "id": "H-GDRS-025",
+        "status": "pending"
+      },
+      {
+        "name": "· 上报记录",
+        "hierarchy": "数据上报 → 文件上报 → · 上报记录",
+        "occurrence": 2,
+        "id": "H-GDRS-026",
+        "status": "pending"
+      },
+      {
+        "name": "· 服务查询",
+        "hierarchy": "数据上报 → 文件上报 → · 服务查询",
+        "occurrence": 1,
+        "id": "H-GDRS-027",
+        "status": "pending"
+      },
+      {
+        "name": "审核管理",
+        "hierarchy": "审核管理",
+        "occurrence": 0,
+        "id": "H-GDRS-028",
+        "status": "pending"
+      },
+      {
+        "name": "任务上报统计",
+        "hierarchy": "上报统计 → 任务上报统计",
+        "occurrence": 0,
+        "id": "H-GDRS-029",
+        "status": "pending"
+      },
+      {
+        "name": "库表资源上报时效统计",
+        "hierarchy": "上报统计 → 库表资源上报时效统计",
+        "occurrence": 0,
+        "id": "H-GDRS-030",
+        "status": "pending"
+      },
+      {
+        "name": "文件资源上报时效统计",
+        "hierarchy": "上报统计 → 文件资源上报时效统计",
+        "occurrence": 0,
+        "id": "H-GDRS-031",
+        "status": "pending"
+      },
+      {
+        "name": "帮助",
+        "hierarchy": "帮助",
+        "occurrence": 0,
+        "id": "H-GDRS-032",
+        "status": "pending"
+      },
+      {
+        "name": "消息",
+        "hierarchy": "消息",
+        "occurrence": 0,
+        "id": "H-GDRS-033",
+        "status": "pending"
+      }
+    ]
+  }
+]

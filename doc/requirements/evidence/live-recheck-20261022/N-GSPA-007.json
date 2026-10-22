@@ -1,0 +1,189 @@
+{
+  "time": "2026-10-22T11:40:44.760Z",
+  "url": "/gsp/template/list",
+  "title": "数据服务门户",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务门户\n政务共享门户后台管理\n快捷入口管理\n知识管理\n版块管理\n· 栏目管理\n· 布局管理\n· 版块管理\n· 内容管理\n模板管理\n列表\n列表模板\n模板选择\n保存\n预览图\n文章页模板\n模板选择\n保存\n预览图",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "模板选择",
+      "placeholder": "请选择模板",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "保存",
+      "label": "模板选择",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "模板选择",
+      "placeholder": "请选择模板",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "保存",
+      "label": "模板选择",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "N-GSPA-007",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "列表模板",
+      "requiredMarker": false,
+      "text": "列表模板",
+      "fields": []
+    },
+    {
+      "label": "模板选择",
+      "requiredMarker": false,
+      "text": "模板选择\n保存",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择模板",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "预览图",
+      "requiredMarker": false,
+      "text": "预览图",
+      "fields": []
+    },
+    {
+      "label": "文章页模板",
+      "requiredMarker": false,
+      "text": "文章页模板",
+      "fields": []
+    },
+    {
+      "label": "模板选择",
+      "requiredMarker": false,
+      "text": "模板选择\n保存",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择模板",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "预览图",
+      "requiredMarker": false,
+      "text": "预览图",
+      "fields": []
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "快捷入口管理",
+    "知识管理",
+    "· 栏目管理",
+    "· 布局管理",
+    "· 版块管理",
+    "· 内容管理",
+    "模板管理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务门户\n政务共享门户后台管理\n快捷入口管理\n知识管理\n版块管理\n· 栏目管理\n· 布局管理\n· 版块管理\n· 内容管理\n模板管理\n列表\n列表模板\n模板选择\n保存\n预览图\n文章页模板\n模板选择\n保存\n预览图"
+}

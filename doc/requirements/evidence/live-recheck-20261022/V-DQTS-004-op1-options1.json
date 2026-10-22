@@ -1,0 +1,306 @@
+{
+  "time": "2026-10-22T12:36:01.917Z",
+  "url": "/dqts/recommend/edit",
+  "title": "数据质量检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n检测方案\n质量规则\n质量检测\n检测报告\n任务调度配置\n评价管理\n评价任务\n新增识别任务\n返回\n识别任务名称\n0/100\n 召回库 \n库名称\n表名称\n取 消提 交\n\n远程调用发生异常 {0}\n\n达梦B\n达梦A\nPostgreSQL PostGIS-TEST\nmysql106\nZFX演示数据源_目标库\nZFX演示数据源_源库\nhive_sql计算引擎\nMRS-Presto\n172.16.1.40",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "识别任务名称",
+      "placeholder": "请输入任务名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": " 召回库 ",
+      "placeholder": "请选择召回库",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "库名称",
+      "placeholder": "请选择库名",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名称",
+      "placeholder": "请选择表名称",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-DQTS-004-op1-options1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "识别任务名称",
+      "requiredMarker": true,
+      "text": "识别任务名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入任务名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": " 召回库 ",
+      "requiredMarker": true,
+      "text": " 召回库 ",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择召回库",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "库名称",
+      "requiredMarker": true,
+      "text": "库名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择库名",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名称",
+      "requiredMarker": true,
+      "text": "表名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择表名称",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "达梦B",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "达梦A",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "PostgreSQL PostGIS-TEST",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "mysql106",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "ZFX演示数据源_目标库",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "ZFX演示数据源_源库",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "hive_sql计算引擎",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "MRS-Presto",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "172.16.1.40",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "列分析",
+    "智能分期",
+    "规则识别",
+    "质量规则推荐",
+    "检测方案",
+    "质量规则",
+    "质量检测",
+    "检测报告",
+    "任务调度配置",
+    "评价任务"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n检测方案\n质量规则\n质量检测\n检测报告\n任务调度配置\n评价管理\n评价任务\n新增识别任务\n返回\n识别任务名称\n0/100\n 召回库 \n库名称\n表名称\n取 消提 交\n\n远程调用发生异常 {0}\n\n达梦B\n达梦A\nPostgreSQL PostGIS-TEST\nmysql106\nZFX演示数据源_目标库\nZFX演示数据源_源库\nhive_sql计算引擎\nMRS-Presto\n172.16.1.40",
+  "interaction": {
+    "type": "expand-select",
+    "label": "库名称"
+  }
+}

@@ -1,0 +1,970 @@
+[
+  {
+    "code": "GSPA",
+    "name": "数据服务门户后台管理",
+    "source": "E042-portal-admin",
+    "entry": "J-GSPA-000-entry",
+    "discoveredAt": "2026-10-22T11:43:02.754Z",
+    "links": [
+      {
+        "name": "快捷入口管理",
+        "hierarchy": "政务共享门户后台管理 → 快捷入口管理",
+        "occurrence": 0,
+        "id": "J-GSPA-001",
+        "status": "opened-review-content",
+        "path": "/gsp/entrance/list",
+        "evidence": "J-GSPA-001",
+        "operations": []
+      },
+      {
+        "name": "知识管理",
+        "hierarchy": "政务共享门户后台管理 → 知识管理",
+        "occurrence": 0,
+        "id": "J-GSPA-002",
+        "status": "opened-review-content",
+        "path": "/gsp/knowledge/list",
+        "evidence": "J-GSPA-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-GSPA-002-op1",
+            "path": "/gsp/knowledge/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-GSPA-002-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 栏目管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 栏目管理",
+        "occurrence": 0,
+        "id": "J-GSPA-003",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 布局管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+        "occurrence": 0,
+        "id": "J-GSPA-004",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 版块管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 版块管理",
+        "occurrence": 0,
+        "id": "J-GSPA-005",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 内容管理",
+        "hierarchy": "政务共享门户后台管理 → 版块管理 → · 内容管理",
+        "occurrence": 0,
+        "id": "J-GSPA-006",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "模板管理",
+        "hierarchy": "政务共享门户后台管理 → 模板管理",
+        "occurrence": 0,
+        "id": "J-GSPA-007",
+        "status": "navigation-error",
+        "reason": "Error"
+      }
+    ]
+  },
+  {
+    "code": "GSB",
+    "name": "数据服务支撑",
+    "source": "E040-api-service",
+    "entry": "J-GSB-000-entry",
+    "discoveredAt": "2026-10-22T11:43:49.558Z",
+    "links": [
+      {
+        "name": "服务目录",
+        "hierarchy": "服务目录 → 服务目录",
+        "occurrence": 0,
+        "id": "J-GSB-001",
+        "status": "opened-review-content",
+        "path": "/gsb/catalog/list",
+        "evidence": "J-GSB-001",
+        "operations": []
+      },
+      {
+        "name": "注册管理",
+        "hierarchy": "服务管理 → 注册管理",
+        "occurrence": 0,
+        "id": "J-GSB-002",
+        "status": "opened-review-content",
+        "path": "/gsb/manage/list",
+        "evidence": "J-GSB-002",
+        "operations": [
+          {
+            "name": "库表注册",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-GSB-002-op1",
+            "path": "/gsb/manage/table",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-GSB-002-op1-options0"
+            ]
+          },
+          {
+            "name": "第三方接口注册",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-GSB-002-op2",
+            "path": "/gsb/manage/api",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "消费管理",
+        "hierarchy": "服务管理 → 消费管理",
+        "occurrence": 0,
+        "id": "J-GSB-003",
+        "status": "opened-review-content",
+        "path": "/gsb/manage/sale",
+        "evidence": "J-GSB-003",
+        "operations": []
+      },
+      {
+        "name": "注册审批",
+        "hierarchy": "服务审批 → 注册审批",
+        "occurrence": 0,
+        "id": "J-GSB-004",
+        "status": "opened-review-content",
+        "path": "/gsb/approval/list",
+        "evidence": "J-GSB-004",
+        "operations": []
+      },
+      {
+        "name": "消费IP管理",
+        "hierarchy": "服务控制 → 消费IP管理",
+        "occurrence": 0,
+        "id": "J-GSB-005",
+        "status": "opened-review-content",
+        "path": "/gsb/control/ip",
+        "evidence": "J-GSB-005",
+        "operations": []
+      },
+      {
+        "name": "服务统计",
+        "hierarchy": "服务控制 → 服务统计",
+        "occurrence": 0,
+        "id": "J-GSB-006",
+        "status": "opened-review-content",
+        "path": "/gsb/control/visit",
+        "evidence": "J-GSB-006",
+        "operations": [
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-GSB-006-op1",
+            "path": "/gsb/control/visit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-GSB-006-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "数源配置",
+        "hierarchy": "配置 → 数源配置",
+        "occurrence": 0,
+        "id": "J-GSB-007",
+        "status": "opened-review-content",
+        "path": "/gsb/config/list",
+        "evidence": "J-GSB-007",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DCS",
+    "name": "目录管理系统",
+    "source": "E038-catalog",
+    "entry": "J-DCS-000-entry",
+    "discoveredAt": "2026-10-22T11:45:52.124Z",
+    "links": [
+      {
+        "name": "机构内部统计分析",
+        "hierarchy": "服务统计 → 机构内部统计分析",
+        "occurrence": 0,
+        "id": "J-DCS-001",
+        "status": "opened-review-content",
+        "path": "/dcs/analyze/internal",
+        "evidence": "J-DCS-001",
+        "operations": []
+      },
+      {
+        "name": "所有机构统计分析",
+        "hierarchy": "服务统计 → 所有机构统计分析",
+        "occurrence": 0,
+        "id": "J-DCS-002",
+        "status": "opened-review-content",
+        "path": "/dcs/analyze/agency",
+        "evidence": "J-DCS-002",
+        "operations": []
+      },
+      {
+        "name": "· 资源管理",
+        "hierarchy": "资源编目 → 目录管理 → · 资源管理",
+        "occurrence": 0,
+        "id": "J-DCS-003",
+        "status": "opened-review-content",
+        "path": "/dcs/resources/list",
+        "evidence": "J-DCS-003",
+        "operations": [
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-003-op1",
+            "path": "/dcs/resources/list"
+          },
+          {
+            "name": "资源导入",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-003-op2",
+            "path": "/dcs/resources/list",
+            "selectControls": 2,
+            "optionEvidence": [
+              "J-DCS-003-op2-options0",
+              "J-DCS-003-op2-options1"
+            ]
+          },
+          {
+            "name": "编目",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-003-op3",
+            "path": "/dcs/resources/edit",
+            "selectControls": 9,
+            "optionEvidence": [
+              "J-DCS-003-op3-options0",
+              "J-DCS-003-op3-options1",
+              "J-DCS-003-op3-options3",
+              "J-DCS-003-op3-options4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 目录管理",
+        "hierarchy": "资源编目 → 目录管理 → · 目录管理",
+        "occurrence": 0,
+        "id": "J-DCS-004",
+        "status": "opened-review-content",
+        "path": "/dcs/catalogue/list",
+        "evidence": "J-DCS-004",
+        "operations": [
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-004-op1",
+            "path": "/dcs/resources/edit",
+            "selectControls": 9,
+            "optionEvidence": [
+              "J-DCS-004-op1-options0",
+              "J-DCS-004-op1-options1",
+              "J-DCS-004-op1-options3",
+              "J-DCS-004-op1-options4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 我发起的流程",
+        "hierarchy": "资源编目 → 流程审批 → · 我发起的流程",
+        "occurrence": 0,
+        "id": "J-DCS-005",
+        "status": "opened-review-content",
+        "path": "/dcs/catalogue/initiate",
+        "evidence": "J-DCS-005",
+        "operations": [
+          {
+            "name": "详情",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-005-op1",
+            "path": "/dcs/catalogue/audit",
+            "selectControls": 9
+          }
+        ]
+      },
+      {
+        "name": "· 我处理的流程",
+        "hierarchy": "资源编目 → 流程审批 → · 我处理的流程",
+        "occurrence": 0,
+        "id": "J-DCS-006",
+        "status": "opened-review-content",
+        "path": "/dcs/catalogue/handle",
+        "evidence": "J-DCS-006",
+        "operations": []
+      },
+      {
+        "name": "· 业务管理",
+        "hierarchy": "资源编目 → 系统管理 → · 业务管理",
+        "occurrence": 0,
+        "id": "J-DCS-007",
+        "status": "opened-review-content",
+        "path": "/dcs/systemManagement/businessList",
+        "evidence": "J-DCS-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-007-op1",
+            "path": "/dcs/systemManagement/businessEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-DCS-007-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-007-op2",
+            "path": "/dcs/systemManagement/businessEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-DCS-007-op2-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 事项管理",
+        "hierarchy": "资源编目 → 系统管理 → · 事项管理",
+        "occurrence": 0,
+        "id": "J-DCS-008",
+        "status": "opened-review-content",
+        "path": "/dcs/systemManagement/matterList",
+        "evidence": "J-DCS-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-008-op1",
+            "path": "/dcs/systemManagement/matterEdit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "J-DCS-008-op1-options0",
+              "J-DCS-008-op1-options1",
+              "J-DCS-008-op1-options2",
+              "J-DCS-008-op1-options3"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-008-op2",
+            "path": "/dcs/systemManagement/matterEdit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "J-DCS-008-op2-options0",
+              "J-DCS-008-op2-options1",
+              "J-DCS-008-op2-options2",
+              "J-DCS-008-op2-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 应用系统管理",
+        "hierarchy": "资源编目 → 系统管理 → · 应用系统管理",
+        "occurrence": 0,
+        "id": "J-DCS-009",
+        "status": "opened-review-content",
+        "path": "/dcs/applicationManagement/applicationManagement",
+        "evidence": "J-DCS-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-009-op1",
+            "path": "/dcs/systemManagement/matterEdit",
+            "selectControls": 4,
+            "optionEvidence": [
+              "J-DCS-009-op1-options0",
+              "J-DCS-009-op1-options1",
+              "J-DCS-009-op1-options2",
+              "J-DCS-009-op1-options3"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-009-op2",
+            "path": "/dcs/applicationManagement/applicationEdit",
+            "selectControls": 6,
+            "optionEvidence": [
+              "J-DCS-009-op2-options0",
+              "J-DCS-009-op2-options1",
+              "J-DCS-009-op2-options2"
+            ],
+            "optionLimit": "TimeoutError"
+          }
+        ]
+      },
+      {
+        "name": "目录上报审核",
+        "hierarchy": "上报管理 → 目录上报审核",
+        "occurrence": 0,
+        "id": "J-DCS-010",
+        "status": "opened-review-content",
+        "path": "/dcs/dirApproval/list",
+        "evidence": "J-DCS-010",
+        "operations": []
+      },
+      {
+        "name": "机构接入管理",
+        "hierarchy": "上报管理 → 机构接入管理",
+        "occurrence": 0,
+        "id": "J-DCS-011",
+        "status": "opened-review-content",
+        "path": "/dcs/access/limitList",
+        "evidence": "J-DCS-011",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-011-op1",
+            "path": "/dcs/access/limitEdit",
+            "selectControls": 5,
+            "optionEvidence": [
+              "J-DCS-011-op1-options0",
+              "J-DCS-011-op1-options1",
+              "J-DCS-011-op1-options2",
+              "J-DCS-011-op1-options3",
+              "J-DCS-011-op1-options4"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-011-op2",
+            "path": "/dcs/access/limitEdit",
+            "selectControls": 5,
+            "optionEvidence": [
+              "J-DCS-011-op2-options1",
+              "J-DCS-011-op2-options2",
+              "J-DCS-011-op2-options3"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "目录分类管理",
+        "hierarchy": "上报管理 → 目录分类管理",
+        "occurrence": 0,
+        "id": "J-DCS-012",
+        "status": "opened-review-content",
+        "path": "/dcs/category/manageList",
+        "evidence": "J-DCS-012",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-012-op1",
+            "path": "/dcs/category/manageList",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-DCS-012-op1-options0"
+            ]
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DCS-012-op2",
+            "path": "/dcs/category/manageList",
+            "selectControls": 1
+          }
+        ]
+      },
+      {
+        "name": "· 级联目录中心",
+        "hierarchy": "目录中心 → 目录中心 → · 级联目录中心",
+        "occurrence": 0,
+        "id": "J-DCS-013",
+        "status": "opened-review-content",
+        "path": "/dcs/cataCenter/list",
+        "evidence": "J-DCS-013",
+        "operations": []
+      },
+      {
+        "name": "· 部门目录中心",
+        "hierarchy": "目录中心 → 目录中心 → · 部门目录中心",
+        "occurrence": 0,
+        "id": "J-DCS-014",
+        "status": "opened-review-content",
+        "path": "/dcs/deptCataCenter/list",
+        "evidence": "J-DCS-014",
+        "operations": []
+      },
+      {
+        "name": "· 责任清单",
+        "hierarchy": "目录中心 → 清单管理 → · 责任清单",
+        "occurrence": 0,
+        "id": "J-DCS-015",
+        "status": "opened-review-content",
+        "path": "/dcs/inventory/duty",
+        "evidence": "J-DCS-015",
+        "operations": []
+      },
+      {
+        "name": "· 负面清单",
+        "hierarchy": "目录中心 → 清单管理 → · 负面清单",
+        "occurrence": 0,
+        "id": "J-DCS-016",
+        "status": "opened-review-content",
+        "path": "/dcs/inventory/negative",
+        "evidence": "J-DCS-016",
+        "operations": []
+      },
+      {
+        "name": "· 我订阅的目录",
+        "hierarchy": "目录中心 → 我的目录 → · 我订阅的目录",
+        "occurrence": 0,
+        "id": "J-DCS-017",
+        "status": "opened-review-content",
+        "path": "/dcs/myCatalogue/applyList",
+        "evidence": "J-DCS-017",
+        "operations": []
+      },
+      {
+        "name": "· 我收藏的目录",
+        "hierarchy": "目录中心 → 我的目录 → · 我收藏的目录",
+        "occurrence": 0,
+        "id": "J-DCS-018",
+        "status": "opened-review-content",
+        "path": "/dcs/myCatalogue/favorite",
+        "evidence": "J-DCS-018",
+        "operations": []
+      },
+      {
+        "name": "· 我发起的流程",
+        "hierarchy": "目录中心 → 流程审批 → · 我发起的流程",
+        "occurrence": 1,
+        "id": "J-DCS-019",
+        "status": "opened-review-content",
+        "path": "/dcs/processApprove/initiateList",
+        "evidence": "J-DCS-019",
+        "operations": []
+      },
+      {
+        "name": "· 我处理的流程",
+        "hierarchy": "目录中心 → 流程审批 → · 我处理的流程",
+        "occurrence": 1,
+        "id": "J-DCS-020",
+        "status": "opened-review-content",
+        "path": "/dcs/processApprove/handleList",
+        "evidence": "J-DCS-020",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DSE",
+    "name": "数据共享交换",
+    "source": "E039-exchange",
+    "entry": "J-DSE-000-entry",
+    "discoveredAt": "2026-10-22T11:58:49.656Z",
+    "links": [
+      {
+        "name": "库表交换统计",
+        "hierarchy": "统计看板 → 库表交换统计",
+        "occurrence": 0,
+        "id": "J-DSE-001",
+        "status": "opened-review-content",
+        "path": "/dse/board/1",
+        "evidence": "J-DSE-001",
+        "operations": []
+      },
+      {
+        "name": "文件交换统计",
+        "hierarchy": "统计看板 → 文件交换统计",
+        "occurrence": 0,
+        "id": "J-DSE-002",
+        "status": "opened-review-content",
+        "path": "/dse/board/2",
+        "evidence": "J-DSE-002",
+        "operations": []
+      },
+      {
+        "name": "接口调用统计",
+        "hierarchy": "统计看板 → 接口调用统计",
+        "occurrence": 0,
+        "id": "J-DSE-003",
+        "status": "opened-review-content",
+        "path": "/dse/board/8",
+        "evidence": "J-DSE-003",
+        "operations": []
+      },
+      {
+        "name": "库表交换任务",
+        "hierarchy": "任务管理 → 库表交换任务",
+        "occurrence": 0,
+        "id": "J-DSE-004",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/1",
+        "evidence": "J-DSE-004",
+        "operations": []
+      },
+      {
+        "name": "文件交换任务",
+        "hierarchy": "任务管理 → 文件交换任务",
+        "occurrence": 0,
+        "id": "J-DSE-005",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/2",
+        "evidence": "J-DSE-005",
+        "operations": []
+      },
+      {
+        "name": "接口交换任务",
+        "hierarchy": "任务管理 → 接口交换任务",
+        "occurrence": 0,
+        "id": "J-DSE-006",
+        "status": "opened-review-content",
+        "path": "/dse/task/list/8",
+        "evidence": "J-DSE-006",
+        "operations": []
+      },
+      {
+        "name": "库表交换日志",
+        "hierarchy": "任务监控 → 库表交换日志",
+        "occurrence": 0,
+        "id": "J-DSE-007",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/1",
+        "evidence": "J-DSE-007",
+        "operations": []
+      },
+      {
+        "name": "文件交换日志",
+        "hierarchy": "任务监控 → 文件交换日志",
+        "occurrence": 0,
+        "id": "J-DSE-008",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/2",
+        "evidence": "J-DSE-008",
+        "operations": []
+      },
+      {
+        "name": "接口交换日志",
+        "hierarchy": "任务监控 → 接口交换日志",
+        "occurrence": 0,
+        "id": "J-DSE-009",
+        "status": "opened-review-content",
+        "path": "/dse/log/list/8",
+        "evidence": "J-DSE-009",
+        "operations": []
+      },
+      {
+        "name": "前置机监控",
+        "hierarchy": "前置机监控",
+        "occurrence": 0,
+        "id": "J-DSE-010",
+        "status": "opened-review-content",
+        "path": "/dse/prefix",
+        "evidence": "J-DSE-010",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "DAP",
+    "name": "指标管理",
+    "source": "E045-indicator",
+    "entry": "J-DAP-000-entry",
+    "discoveredAt": "2026-10-22T12:00:40.213Z",
+    "links": [
+      {
+        "name": "· 数据源管理",
+        "hierarchy": "管理 → 数据源 → · 数据源管理",
+        "occurrence": 0,
+        "id": "J-DAP-001",
+        "status": "opened-review-content",
+        "path": "/dap/manage/dataSource/dataSourceList",
+        "evidence": "J-DAP-001",
+        "operations": []
+      },
+      {
+        "name": "· 数据域管理",
+        "hierarchy": "管理 → 数据域 → · 数据域管理",
+        "occurrence": 0,
+        "id": "J-DAP-002",
+        "status": "opened-review-content",
+        "path": "/dap/manage/dataField/dataFieldList",
+        "evidence": "J-DAP-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-002-op1",
+            "path": "/dap/manage/dataField/dataFieldEdit",
+            "selectControls": 0
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-002-op2",
+            "path": "/dap/manage/dataField/dataFieldEdit",
+            "selectControls": 0
+          },
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-002-op3",
+            "path": "/dap/manage/dataField/dataFieldEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 逻辑表物化管理",
+        "hierarchy": "管理 → 配置 → · 逻辑表物化管理",
+        "occurrence": 0,
+        "id": "J-DAP-003",
+        "status": "opened-review-content",
+        "path": "/dap/manage/deploy/logicalTableList",
+        "evidence": "J-DAP-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-003-op1",
+            "path": "/dap/manage/deploy/logicalTableEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "J-DAP-003-op1-options0",
+              "J-DAP-003-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 统计周期管理",
+        "hierarchy": "管理 → 统计周期 → · 统计周期管理",
+        "occurrence": 0,
+        "id": "J-DAP-004",
+        "status": "opened-review-content",
+        "path": "/dap/manage/statPeriod/statPeriodList",
+        "evidence": "J-DAP-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-004-op1",
+            "path": "/dap/manage/statPeriod/statPeriodEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "J-DAP-004-op1-options0",
+              "J-DAP-004-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 维度管理",
+        "hierarchy": "研发 → 规范定义 → · 维度管理",
+        "occurrence": 0,
+        "id": "J-DAP-005",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/dimensionList",
+        "evidence": "J-DAP-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-005-op1",
+            "path": "/dap/research/standard/dimensionList"
+          }
+        ]
+      },
+      {
+        "name": "· 业务过程",
+        "hierarchy": "研发 → 规范定义 → · 业务过程",
+        "occurrence": 0,
+        "id": "J-DAP-006",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/businessDefList",
+        "evidence": "J-DAP-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-006-op1",
+            "path": "/dap/research/standard/businessDefEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "J-DAP-006-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 原子指标",
+        "hierarchy": "研发 → 规范定义 → · 原子指标",
+        "occurrence": 0,
+        "id": "J-DAP-007",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/atomList",
+        "evidence": "J-DAP-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "J-DAP-007-op1",
+            "path": "/dap/research/standard/atomList"
+          }
+        ]
+      },
+      {
+        "name": "· 衍生指标",
+        "hierarchy": "研发 → 规范定义 → · 衍生指标",
+        "occurrence": 0,
+        "id": "J-DAP-008",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 业务限定词",
+        "hierarchy": "研发 → 规范定义 → · 业务限定词",
+        "occurrence": 0,
+        "id": "J-DAP-009",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 派生指标",
+        "hierarchy": "研发 → 规范定义 → · 派生指标",
+        "occurrence": 0,
+        "id": "J-DAP-010",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 自定义指标",
+        "hierarchy": "研发 → 规范定义 → · 自定义指标",
+        "occurrence": 0,
+        "id": "J-DAP-011",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 维度逻辑表",
+        "hierarchy": "研发 → 逻辑表 → · 维度逻辑表",
+        "occurrence": 0,
+        "id": "J-DAP-012",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 事实逻辑表",
+        "hierarchy": "研发 → 逻辑表 → · 事实逻辑表",
+        "occurrence": 0,
+        "id": "J-DAP-013",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 汇总逻辑表",
+        "hierarchy": "研发 → 逻辑表 → · 汇总逻辑表",
+        "occurrence": 0,
+        "id": "J-DAP-014",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 结果表",
+        "hierarchy": "研发 → 逻辑表 → · 结果表",
+        "occurrence": 0,
+        "id": "J-DAP-015",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 发布管理",
+        "hierarchy": "发布 → 发布 → · 发布管理",
+        "occurrence": 0,
+        "id": "J-DAP-016",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 调度管理",
+        "hierarchy": "运维 → 调度 → · 调度管理",
+        "occurrence": 0,
+        "id": "J-DAP-017",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 数据分析",
+        "hierarchy": "分析 → 数据分析 → · 数据分析",
+        "occurrence": 0,
+        "id": "J-DAP-018",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 分析门户",
+        "hierarchy": "分析 → 数据分析 → · 分析门户",
+        "occurrence": 0,
+        "id": "J-DAP-019",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 监控规则管理",
+        "hierarchy": "监控 → 监控管理 → · 监控规则管理",
+        "occurrence": 0,
+        "id": "J-DAP-020",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "· 告警管理",
+        "hierarchy": "监控 → 监控管理 → · 告警管理",
+        "occurrence": 0,
+        "id": "J-DAP-021",
+        "status": "navigation-error",
+        "reason": "Error"
+      }
+    ]
+  }
+]

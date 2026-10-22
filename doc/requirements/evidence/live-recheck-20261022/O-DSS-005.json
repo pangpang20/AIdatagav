@@ -1,0 +1,574 @@
+{
+  "time": "2026-10-22T11:51:32.914Z",
+  "url": "/dss/standard/system/indexCodeList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准代码管理\n目录分类\n全部\n标准分类\n测试分类\n无标待立标\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t代码编码\t代码名称\t标准分级\t代码项数量\t审批状态\t使用频次\t说明\t创建时间\t操作\n\t\n1\n\t\nxb002\n\t\n性别002\n\t\n国家标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-11-20 02:41:44\n\t\n编辑删除\n\n\n\t\n2\n\t\n001\n\t\n性别001\n\t\n国家标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-11-20 02:40:13\n\t\n编辑删除\n\n\n\t\n3\n\t\nxingbie001\n\t\n性别代码\n\t\n国际标准\n\t\n4\n\t\n审批通过\n\t\n\t\n\t\n2025-11-14 19:18:19\n\t\n编辑删除\n\n\n\t\n4\n\t\nPDC0000018\n\t\n家庭关系代码\n\t\n地方标准\n\t\n7\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:48:16\n\t\n编辑删除\n\n\n\t\n5\n\t\nPDC0002496\n\t\n常住类型代码\n\t\n地方标准\n\t\n2\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:46:38\n\t\n编辑删除\n\n\n\t\n6\n\t\nPDC0000401\n\t\n人的性别代码\n\t\n地方标准\n\t\n4\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:45:30\n\t\n编辑删除\n\n\n\t\n7\n\t\nPDC0000397\n\t\n婚姻状况代码\n\t\n地方标准\n\t\n8\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:44:34\n\t\n编辑删除\n\n\n\t\n8\n\t\nxingbie001\n\t\n性别\n\t\n国际标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-08-04 14:13:46\n\t\n编辑删除\n\n\n\t\n9\n\t\nxingbie0\n\t\n性别\n\t\n国际标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-08-04 14:13:14\n\t\n编辑删除\n\n\n\t\n10\n\t\n99kshs\n\t\n性别代码\n\t\n国际标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-08-04 14:12:03\n\t\n编辑删除\n\n\n\t\n11\n\t\nxingbie001\n\t\n性别代码\n\t\n地方标准\n\t\n3\n\t\n审批通过\n\t\n\t\n\t\n2025-05-15 13:46:08\n\t\n编辑删除\n共 11 条\n1\n前往页",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "输入关键字进行过滤",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入代码名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择标准分级",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "O-DSS-005",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "代码编码",
+    "代码名称",
+    "标准分级",
+    "代码项数量",
+    "审批状态",
+    "使用频次",
+    "说明",
+    "创建时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "新增",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-add-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "批量删除",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-delete-new"
+    },
+    {
+      "text": "导出",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-daochu"
+    },
+    {
+      "text": "导入",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-daoru"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "性别002",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "1",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--danger"
+    },
+    {
+      "text": "性别001",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "性别代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "4",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "家庭关系代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "7",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "常住类型代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "2",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人的性别代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "婚姻状况代码",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "8",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "性别",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "3",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "· 标准文档管理",
+    "· 标准术语管理",
+    "· 标准模型表管理",
+    "· 标准字段管理",
+    "· 标准代码管理",
+    "· 标准文档审批",
+    "· 标准模型表审批",
+    "· 标准字段审批",
+    "· 标准代码审批",
+    "· 标准查询"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准代码管理\n目录分类\n全部\n标准分类\n测试分类\n无标待立标\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t代码编码\t代码名称\t标准分级\t代码项数量\t审批状态\t使用频次\t说明\t创建时间\t操作\n\t\n1\n\t\nxb002\n\t\n性别002\n\t\n国家标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-11-20 02:41:44\n\t\n编辑删除\n\n\n\t\n2\n\t\n001\n\t\n性别001\n\t\n国家标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-11-20 02:40:13\n\t\n编辑删除\n\n\n\t\n3\n\t\nxingbie001\n\t\n性别代码\n\t\n国际标准\n\t\n4\n\t\n审批通过\n\t\n\t\n\t\n2025-11-14 19:18:19\n\t\n编辑删除\n\n\n\t\n4\n\t\nPDC0000018\n\t\n家庭关系代码\n\t\n地方标准\n\t\n7\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:48:16\n\t\n编辑删除\n\n\n\t\n5\n\t\nPDC0002496\n\t\n常住类型代码\n\t\n地方标准\n\t\n2\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:46:38\n\t\n编辑删除\n\n\n\t\n6\n\t\nPDC0000401\n\t\n人的性别代码\n\t\n地方标准\n\t\n4\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:45:30\n\t\n编辑删除\n\n\n\t\n7\n\t\nPDC0000397\n\t\n婚姻状况代码\n\t\n地方标准\n\t\n8\n\t\n审批通过\n\t\n\t\n\t\n2025-08-11 11:44:34\n\t\n编辑删除\n\n\n\t\n8\n\t\nxingbie001\n\t\n性别\n\t\n国际标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-08-04 14:13:46\n\t\n编辑删除\n\n\n\t\n9\n\t\nxingbie0\n\t\n性别\n\t\n国际标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-08-04 14:13:14\n\t\n编辑删除\n\n\n\t\n10\n\t\n99kshs\n\t\n性别代码\n\t\n国际标准\n\t\n1\n\t\n审批通过\n\t\n\t\n\t\n2025-08-04 14:12:03\n\t\n编辑删除\n\n\n\t\n11\n\t\nxingbie001\n\t\n性别代码\n\t\n地方标准\n\t\n3\n\t\n审批通过\n\t\n\t\n\t\n2025-05-15 13:46:08\n\t\n编辑删除\n共 11 条\n1\n前往页"
+}

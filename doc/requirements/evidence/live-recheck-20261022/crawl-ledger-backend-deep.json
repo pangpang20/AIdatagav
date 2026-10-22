@@ -1,0 +1,83 @@
+[
+  {
+    "code": "PLAT",
+    "name": "微服务平台",
+    "entry": "U-BWM-model-visible",
+    "discoveredAt": "2026-10-22T12:01:45.733Z",
+    "links": [
+      {
+        "name": "流程模型列表",
+        "status": "opened-review-content",
+        "path": "/module-flow/workflow/processModel",
+        "evidence": "U-BWM-model-visible",
+        "businessWriteExecuted": false,
+        "hierarchy": "工作流管理 → 流程模型",
+        "operations": [
+          {
+            "name": "查看流程图",
+            "status": "opened-review-content",
+            "path": "/module-flow/workflow/flowDesign",
+            "evidence": "U-BWM-model-diagram-ready",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "查看节点",
+            "status": "opened-review-content",
+            "path": "/module-flow/workflow/flowDesign",
+            "evidence": "U-BWM-model-node",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "配置节点信息",
+            "status": "opened-review-content",
+            "path": "/module-flow/workflow/flowDesign",
+            "evidence": "U-BWM-node-config-ready",
+            "businessWriteExecuted": false,
+            "optionEvidence": [
+              "U-BWM-node-config-bottom"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "表单列表",
+        "status": "opened-review-content",
+        "path": "/module-flow/formDesign/formList",
+        "evidence": "U-BWM-form-visible",
+        "businessWriteExecuted": false
+      }
+    ]
+  },
+  {
+    "code": "WO",
+    "name": "我的工单",
+    "entry": "U-WO-detail-basic",
+    "discoveredAt": "2026-10-22T12:08:53.721Z",
+    "links": [
+      {
+        "name": "工单详情",
+        "status": "opened-review-content",
+        "path": "/workorder/workbench/myWorkflowAndCopy2MeEdit",
+        "evidence": "U-WO-detail-basic",
+        "businessWriteExecuted": false,
+        "hierarchy": "工单管理 → 我的工单 → 查看",
+        "operations": [
+          {
+            "name": "表单信息",
+            "status": "opened-review-content",
+            "path": "/workorder/workbench/myWorkflowAndCopy2MeEdit",
+            "evidence": "U-WO-detail-form",
+            "businessWriteExecuted": false
+          },
+          {
+            "name": "审核历史",
+            "status": "opened-review-content",
+            "path": "/workorder/workbench/myWorkflowAndCopy2MeEdit",
+            "evidence": "U-WO-detail-history",
+            "businessWriteExecuted": false
+          }
+        ]
+      }
+    ]
+  }
+]

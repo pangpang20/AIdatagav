@@ -1,0 +1,181 @@
+{
+  "time": "2026-10-22T12:12:32.488Z",
+  "url": "/dsts/standard/plan/list",
+  "title": "数据标准检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准检测\n标准检测\n检测方案\n标准检测\n检测报告\n数据评价\n评价任务\n检测方案\n查询重置\n复制\n启用\n取消启用\n\t序号\t方案名称\t适用对象\t方案说明\t状态\t适用标准字段\t任务\t创建时间\t操作\n暂无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入方案名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "F-DSTS-001",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "",
+    "序号",
+    "方案名称",
+    "适用对象",
+    "方案说明",
+    "状态",
+    "适用标准字段",
+    "任务",
+    "创建时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "复制",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-fuzhi"
+    },
+    {
+      "text": "启用",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-qiyong1"
+    },
+    {
+      "text": "取消启用",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-quxiaoqiyong"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": true
+    }
+  ],
+  "navigation": [
+    "检测方案",
+    "标准检测",
+    "检测报告",
+    "评价任务"
+  ],
+  "pageTitles": [
+    " 检测方案 "
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准检测\n标准检测\n检测方案\n标准检测\n检测报告\n数据评价\n评价任务\n检测方案\n查询重置\n复制\n启用\n取消启用\n\t序号\t方案名称\t适用对象\t方案说明\t状态\t适用标准字段\t任务\t创建时间\t操作\n暂无数据"
+}

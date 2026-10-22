@@ -1,0 +1,540 @@
+{
+  "time": "2026-10-22T12:13:09.409Z",
+  "url": "/sms/system/compenontManage",
+  "title": "任务编排与调度",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n 概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n 调度统计\n配置管理\n系统管理\n组件管理\n初始化\n组件管理\n控制组件\n数据采集\n数据开发\nGLDM数据开发\n查询重置\n序号\t组件名称\t系统Key\t执行器Key\t创建时间\n\t创建人\n\t操作\t\n1\n\t\n分支\n\t\ncommon_schedule\n\t\ncontrol_switch\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n2\n\t\nAPI采集\n\t\ndis\n\t\napi_collection\n\t\n2025-05-15 11:46:58\n\t\n王学民\n\t\n编辑删除排序\n\n\n3\n\t\n数据清洗\n\t\ngldm_base\n\t\ngldm_base_std\n\t\n2025-05-15 11:49:35\n\t\n王学民\n\t\n编辑删除排序\n\n\n4\n\t\nSQL\n\t\ncommon_schedule_general\n\t\ndws_sql\n\t\n2025-05-15 11:51:07\n\t\n王学民\n\t\n编辑删除排序\n\n\n5\n\t\n子流程\n\t\ncommon_schedule\n\t\ncontrol_sub\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n6\n\t\n文件采集\n\t\ndis\n\t\ndis_file\n\t\n2025-05-15 11:47:22\n\t\n王学民\n\t\n编辑删除排序\n\n\n7\n\t\n数据加工\n\t\ngldm_base\n\t\ngldm_base_layer\n\t\n2025-05-15 11:49:45\n\t\n王学民\n\t\n编辑删除排序\n\n\n8\n\t\nFlink\n\t\ncommon_schedule_general\n\t\nflink\n\t\n2025-05-15 11:51:27\n\t\n王学民\n\t\n编辑删除排序\n\n\n9\n\t\n循环\n\t\ncommon_schedule\n\t\ncontrol_loop\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n10\n\t\nKAFKA采集\n\t\ndis\n\t\ndis_kafka\n\t\n2025-05-15 11:47:37\n\t\n王学民\n\t\n编辑删除排序\n\n\n11\n\t\nFlink-SQL\n\t\ncommon_schedule_general\n\t\nflink_sql\n\t\n2025-05-15 11:51:52\n\t\n王学民\n\t\n编辑删除排序\n\n\n12\n\t\n开始\n\t\ncommon_schedule\n\t\ncontrol_start\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n13\n\t\n库表实时采集\n\t\ndis\n\t\ndis_real_time\n\t\n2025-05-15 11:47:52\n\t\n王学民\n\t\n编辑删除排序\n\n\n14\n\t\nHive\n\t\ncommon_schedule_general\n\t\nhive_sql\n\t\n2025-05-15 11:52:00\n\t\n王学民\n\t\n编辑删除排序\n\n\n15\n\t\n流数据加工\n\t\ncommon_schedule\n\t\ncontrol_realtime\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n16\n\t\n文件解析\n\t\ndis\n\t\nfile_parse\n\t\n2025-05-15 11:48:07\n\t\n王学民\n\t\n编辑删除排序\n\n\n17\n\t\nSpark--SQL\n\t\ncommon_schedule_general\n\t\nspark_sql\n\t\n2025-05-15 11:52:15\n\t\n王学民\n\t\n编辑删除排序\n\n\n18\n\t\nSpark\n\t\ncommon_schedule_general\n\t\nspark\n\t\n2025-05-15 11:52:25\n\t\n王学民\n\t\n编辑删除排序\n\n\n19\n\t\n表采集\n\t\ndis\n\t\ndis_data\n\t\n2025-05-15 11:48:46\n\t\n王学民\n\t\n编辑删除排序\n\n\n20\n\t\nPython\n\t\ncommon_schedule_general\n\t\npython\n\t\n2025-05-15 11:52:34\n\t\n王学民\n\t\n编辑删除排序\n共 22 条\n12\n前往页\n组件管理\n组件名称\n所属组\n关联系统\n关联执行器\n类型\n图标\n数仓\n开发\n采集\n计算\n节点\n逻辑\n源数据\n接口\n流程\n函数\n循环\n文件\n数据\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入组件名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "2",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "组件名称",
+      "placeholder": "请输入组件名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "50",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "所属组",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联系统",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "关联执行器",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "类型",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-SMS-025-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "组件名称",
+      "requiredMarker": true,
+      "text": "组件名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入组件名称",
+          "maxlength": "50",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "所属组",
+      "requiredMarker": true,
+      "text": "所属组",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "关联系统",
+      "requiredMarker": true,
+      "text": "关联系统",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "关联执行器",
+      "requiredMarker": true,
+      "text": "关联执行器",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "类型",
+      "requiredMarker": false,
+      "text": "类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "图标",
+      "requiredMarker": false,
+      "text": "图标\n数仓\n开发\n采集\n计算\n节点\n逻辑\n源数据\n接口\n流程\n函数\n循环\n文件\n数据",
+      "fields": [
+        {
+          "type": "file",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "组件名称",
+    "系统Key",
+    "执行器Key",
+    "创建时间",
+    "创建人",
+    "操作",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "新增分类",
+      "cls": "audaque-link-text iconfontmain main-add-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "分支",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--danger"
+    },
+    {
+      "text": "排序",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--active el-popover__reference"
+    },
+    {
+      "text": "API采集",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "数据清洗",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "SQL",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "子流程",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "文件采集",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "数据加工",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "Flink",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "循环",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "KAFKA采集",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "Flink-SQL",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "开始",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "库表实时采集",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "Hive",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "流数据加工",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "文件解析",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "Spark--SQL",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "Spark",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "表采集",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    },
+    {
+      "text": "Python",
+      "title": "",
+      "cls": "audaque-link-text audaque-link-text--key--active"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    " 概览",
+    "我的流程",
+    "流程调度管理",
+    "· 周期任务作业监控",
+    "· 实时任务作业监控",
+    "· 告警信息查询",
+    "· 告警推送管理",
+    "归集表查询",
+    "开发表管理",
+    "函数开发",
+    "脚本开发",
+    "· 标准层",
+    "· 原子层",
+    "· 整合层",
+    "· 主题层",
+    "· 安全层",
+    "· 标准代码集查询",
+    "· 源系统代码集管理",
+    "· 源与标准映射管理",
+    "· 函数管理",
+    "· 算法包管理",
+    "· IDE平台初始化",
+    " 调度统计",
+    "系统管理",
+    "组件管理",
+    "初始化"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n 概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n 调度统计\n配置管理\n系统管理\n组件管理\n初始化\n组件管理\n控制组件\n数据采集\n数据开发\nGLDM数据开发\n查询重置\n序号\t组件名称\t系统Key\t执行器Key\t创建时间\n\t创建人\n\t操作\t\n1\n\t\n分支\n\t\ncommon_schedule\n\t\ncontrol_switch\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n2\n\t\nAPI采集\n\t\ndis\n\t\napi_collection\n\t\n2025-05-15 11:46:58\n\t\n王学民\n\t\n编辑删除排序\n\n\n3\n\t\n数据清洗\n\t\ngldm_base\n\t\ngldm_base_std\n\t\n2025-05-15 11:49:35\n\t\n王学民\n\t\n编辑删除排序\n\n\n4\n\t\nSQL\n\t\ncommon_schedule_general\n\t\ndws_sql\n\t\n2025-05-15 11:51:07\n\t\n王学民\n\t\n编辑删除排序\n\n\n5\n\t\n子流程\n\t\ncommon_schedule\n\t\ncontrol_sub\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n6\n\t\n文件采集\n\t\ndis\n\t\ndis_file\n\t\n2025-05-15 11:47:22\n\t\n王学民\n\t\n编辑删除排序\n\n\n7\n\t\n数据加工\n\t\ngldm_base\n\t\ngldm_base_layer\n\t\n2025-05-15 11:49:45\n\t\n王学民\n\t\n编辑删除排序\n\n\n8\n\t\nFlink\n\t\ncommon_schedule_general\n\t\nflink\n\t\n2025-05-15 11:51:27\n\t\n王学民\n\t\n编辑删除排序\n\n\n9\n\t\n循环\n\t\ncommon_schedule\n\t\ncontrol_loop\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n10\n\t\nKAFKA采集\n\t\ndis\n\t\ndis_kafka\n\t\n2025-05-15 11:47:37\n\t\n王学民\n\t\n编辑删除排序\n\n\n11\n\t\nFlink-SQL\n\t\ncommon_schedule_general\n\t\nflink_sql\n\t\n2025-05-15 11:51:52\n\t\n王学民\n\t\n编辑删除排序\n\n\n12\n\t\n开始\n\t\ncommon_schedule\n\t\ncontrol_start\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n13\n\t\n库表实时采集\n\t\ndis\n\t\ndis_real_time\n\t\n2025-05-15 11:47:52\n\t\n王学民\n\t\n编辑删除排序\n\n\n14\n\t\nHive\n\t\ncommon_schedule_general\n\t\nhive_sql\n\t\n2025-05-15 11:52:00\n\t\n王学民\n\t\n编辑删除排序\n\n\n15\n\t\n流数据加工\n\t\ncommon_schedule\n\t\ncontrol_realtime\n\t\n2025-05-14 11:32:12\n\t\n超级管理员\n\t\n编辑删除排序\n\n\n16\n\t\n文件解析\n\t\ndis\n\t\nfile_parse\n\t\n2025-05-15 11:48:07\n\t\n王学民\n\t\n编辑删除排序\n\n\n17\n\t\nSpark--SQL\n\t\ncommon_schedule_general\n\t\nspark_sql\n\t\n2025-05-15 11:52:15\n\t\n王学民\n\t\n编辑删除排序\n\n\n18\n\t\nSpark\n\t\ncommon_schedule_general\n\t\nspark\n\t\n2025-05-15 11:52:25\n\t\n王学民\n\t\n编辑删除排序\n\n\n19\n\t\n表采集\n\t\ndis\n\t\ndis_data\n\t\n2025-05-15 11:48:46\n\t\n王学民\n\t\n编辑删除排序\n\n\n20\n\t\nPython\n\t\ncommon_schedule_general\n\t\npython\n\t\n2025-05-15 11:52:34\n\t\n王学民\n\t\n编辑删除排序\n共 22 条\n12\n前往页\n组件管理\n组件名称\n所属组\n关联系统\n关联执行器\n类型\n图标\n数仓\n开发\n采集\n计算\n节点\n逻辑\n源数据\n接口\n流程\n函数\n循环\n文件\n数据\n取 消提 交",
+  "operation": {
+    "menu": "配置管理 → 组件管理",
+    "action": "编辑",
+    "source": "H-SMS-025",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,825 @@
+[
+  {
+    "code": "DAP",
+    "name": "指标管理",
+    "source": "E045-indicator",
+    "entry": "K-DAP-000-entry",
+    "discoveredAt": "2026-10-22T12:00:09.331Z",
+    "links": [
+      {
+        "name": "· 数据源管理",
+        "hierarchy": "管理 → 数据源 → · 数据源管理",
+        "occurrence": 0,
+        "id": "K-DAP-001",
+        "status": "opened-review-content",
+        "path": "/dap/manage/dataSource/dataSourceList",
+        "evidence": "K-DAP-001",
+        "operations": []
+      },
+      {
+        "name": "· 数据域管理",
+        "hierarchy": "管理 → 数据域 → · 数据域管理",
+        "occurrence": 0,
+        "id": "K-DAP-002",
+        "status": "opened-review-content",
+        "path": "/dap/manage/dataField/dataFieldList",
+        "evidence": "K-DAP-002",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-002-op1",
+            "path": "/dap/manage/dataField/dataFieldEdit",
+            "selectControls": 0
+          },
+          {
+            "name": "编辑",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-002-op2",
+            "path": "/dap/manage/dataField/dataFieldEdit",
+            "selectControls": 0
+          },
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-002-op3",
+            "path": "/dap/manage/dataField/dataFieldEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "· 逻辑表物化管理",
+        "hierarchy": "管理 → 配置 → · 逻辑表物化管理",
+        "occurrence": 0,
+        "id": "K-DAP-003",
+        "status": "opened-review-content",
+        "path": "/dap/manage/deploy/logicalTableList",
+        "evidence": "K-DAP-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-003-op1",
+            "path": "/dap/manage/deploy/logicalTableEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "K-DAP-003-op1-options0",
+              "K-DAP-003-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 统计周期管理",
+        "hierarchy": "管理 → 统计周期 → · 统计周期管理",
+        "occurrence": 0,
+        "id": "K-DAP-004",
+        "status": "opened-review-content",
+        "path": "/dap/manage/statPeriod/statPeriodList",
+        "evidence": "K-DAP-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-004-op1",
+            "path": "/dap/manage/statPeriod/statPeriodEdit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "K-DAP-004-op1-options0",
+              "K-DAP-004-op1-options1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 维度管理",
+        "hierarchy": "研发 → 规范定义 → · 维度管理",
+        "occurrence": 0,
+        "id": "K-DAP-005",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/dimensionList",
+        "evidence": "K-DAP-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-005-op1",
+            "path": "/dap/research/standard/dimensionList"
+          }
+        ]
+      },
+      {
+        "name": "· 业务过程",
+        "hierarchy": "研发 → 规范定义 → · 业务过程",
+        "occurrence": 0,
+        "id": "K-DAP-006",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/businessDefList",
+        "evidence": "K-DAP-006",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-006-op1",
+            "path": "/dap/research/standard/businessDefEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "K-DAP-006-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 原子指标",
+        "hierarchy": "研发 → 规范定义 → · 原子指标",
+        "occurrence": 0,
+        "id": "K-DAP-007",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/atomList",
+        "evidence": "K-DAP-007",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-007-op1",
+            "path": "/dap/research/standard/atomList"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-007-op2",
+            "path": "/dap/research/standard/atomList"
+          }
+        ]
+      },
+      {
+        "name": "· 衍生指标",
+        "hierarchy": "研发 → 规范定义 → · 衍生指标",
+        "occurrence": 0,
+        "id": "K-DAP-008",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/derivative",
+        "evidence": "K-DAP-008",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-008-op1",
+            "path": "/dap/research/standard/derivative"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-008-op2",
+            "path": "/dap/research/standard/derivative"
+          }
+        ]
+      },
+      {
+        "name": "· 业务限定词",
+        "hierarchy": "研发 → 规范定义 → · 业务限定词",
+        "occurrence": 0,
+        "id": "K-DAP-009",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/businessLimitList",
+        "evidence": "K-DAP-009",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-009-op1",
+            "path": "/dap/research/standard/businessLimitList"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-009-op2",
+            "path": "/dap/research/standard/businessLimitList"
+          }
+        ]
+      },
+      {
+        "name": "· 派生指标",
+        "hierarchy": "研发 → 规范定义 → · 派生指标",
+        "occurrence": 0,
+        "id": "K-DAP-010",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/accCycleList",
+        "evidence": "K-DAP-010",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-010-op1",
+            "path": "/dap/research/standard/accCycleList"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-010-op2",
+            "path": "/dap/research/standard/accCycleList"
+          }
+        ]
+      },
+      {
+        "name": "· 自定义指标",
+        "hierarchy": "研发 → 规范定义 → · 自定义指标",
+        "occurrence": 0,
+        "id": "K-DAP-011",
+        "status": "opened-review-content",
+        "path": "/dap/research/standard/diyList",
+        "evidence": "K-DAP-011",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-011-op1",
+            "path": "/dap/research/standard/diyList"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-011-op2",
+            "path": "/dap/research/standard/diyList"
+          }
+        ]
+      },
+      {
+        "name": "· 维度逻辑表",
+        "hierarchy": "研发 → 逻辑表 → · 维度逻辑表",
+        "occurrence": 0,
+        "id": "K-DAP-012",
+        "status": "opened-review-content",
+        "path": "/dap/research/logicTable/dimensionTableList",
+        "evidence": "K-DAP-012",
+        "operations": []
+      },
+      {
+        "name": "· 事实逻辑表",
+        "hierarchy": "研发 → 逻辑表 → · 事实逻辑表",
+        "occurrence": 0,
+        "id": "K-DAP-013",
+        "status": "opened-review-content",
+        "path": "/dap/research/logicTable/factLogicTableList",
+        "evidence": "K-DAP-013",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-013-op1",
+            "path": "/dap/research/logicTable/factLogicTableAdd",
+            "selectControls": 3,
+            "optionEvidence": [
+              "K-DAP-013-op1-options0",
+              "K-DAP-013-op1-options1",
+              "K-DAP-013-op1-options2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 汇总逻辑表",
+        "hierarchy": "研发 → 逻辑表 → · 汇总逻辑表",
+        "occurrence": 0,
+        "id": "K-DAP-014",
+        "status": "opened-review-content",
+        "path": "/dap/research/logicTable/summaryTableList",
+        "evidence": "K-DAP-014",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-014-op1",
+            "path": "/dap/research/logicTable/summaryTableListAdd",
+            "selectControls": 1,
+            "optionEvidence": [
+              "K-DAP-014-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 结果表",
+        "hierarchy": "研发 → 逻辑表 → · 结果表",
+        "occurrence": 0,
+        "id": "K-DAP-015",
+        "status": "opened-review-content",
+        "path": "/dap/research/logicTable/resultTableList",
+        "evidence": "K-DAP-015",
+        "operations": []
+      },
+      {
+        "name": "· 发布管理",
+        "hierarchy": "发布 → 发布 → · 发布管理",
+        "occurrence": 0,
+        "id": "K-DAP-016",
+        "status": "opened-review-content",
+        "path": "/dap/review/reviewManage/reviewManageList",
+        "evidence": "K-DAP-016",
+        "operations": []
+      },
+      {
+        "name": "· 调度管理",
+        "hierarchy": "运维 → 调度 → · 调度管理",
+        "occurrence": 0,
+        "id": "K-DAP-017",
+        "status": "opened-review-content",
+        "path": "/dap/devOps/dispatch/dispatchList",
+        "evidence": "K-DAP-017",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-017-op1",
+            "path": "/dap/devOps/dispatch/dispatchEdit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "K-DAP-017-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "· 数据分析",
+        "hierarchy": "分析 → 数据分析 → · 数据分析",
+        "occurrence": 0,
+        "id": "K-DAP-018",
+        "status": "opened-review-content",
+        "path": "/dap/analysis/dataAnalysis/dataAnalysisList",
+        "evidence": "K-DAP-018",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-018-op1",
+            "path": "/dap/analysis/dataAnalysis/dataAnalysisList"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-018-op2",
+            "path": "/dap/analysis/dataAnalysis/dataAnalysisList"
+          }
+        ]
+      },
+      {
+        "name": "· 分析门户",
+        "hierarchy": "分析 → 数据分析 → · 分析门户",
+        "occurrence": 0,
+        "id": "K-DAP-019",
+        "status": "opened-review-content",
+        "path": "/dap/analysis/analysisGateway/gatewayList",
+        "evidence": "K-DAP-019",
+        "operations": []
+      },
+      {
+        "name": "· 监控规则管理",
+        "hierarchy": "监控 → 监控管理 → · 监控规则管理",
+        "occurrence": 0,
+        "id": "K-DAP-020",
+        "status": "opened-review-content",
+        "path": "/dap/monitor/manage/ruleManageList",
+        "evidence": "K-DAP-020",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DAP-020-op1",
+            "path": "/dap/monitor/manage/ruleManageList"
+          }
+        ]
+      },
+      {
+        "name": "· 告警管理",
+        "hierarchy": "监控 → 监控管理 → · 告警管理",
+        "occurrence": 0,
+        "id": "K-DAP-021",
+        "status": "opened-review-content",
+        "path": "/dap/monitor/manage/warnManageList",
+        "evidence": "K-DAP-021",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "TMS",
+    "name": "标签管理",
+    "source": "E046-tags",
+    "entry": "K-TMS-000-entry",
+    "discoveredAt": "2026-10-22T12:12:02.831Z",
+    "links": [
+      {
+        "name": "数据标签总览",
+        "hierarchy": "数据标签总览",
+        "occurrence": 0,
+        "id": "K-TMS-001",
+        "status": "opened-review-content",
+        "path": "/tms/overview/index",
+        "evidence": "K-TMS-001",
+        "operations": []
+      },
+      {
+        "name": "工作组",
+        "hierarchy": "工作组",
+        "occurrence": 0,
+        "id": "K-TMS-002",
+        "status": "opened-review-content",
+        "path": "/tms/group/list",
+        "evidence": "K-TMS-002",
+        "operations": []
+      },
+      {
+        "name": "标签模型",
+        "hierarchy": "标签模型管理 → 标签模型",
+        "occurrence": 0,
+        "id": "K-TMS-003",
+        "status": "opened-review-content",
+        "path": "/tms/model/modelList",
+        "evidence": "K-TMS-003",
+        "operations": []
+      },
+      {
+        "name": "实体属性",
+        "hierarchy": "标签模型管理 → 实体属性",
+        "occurrence": 0,
+        "id": "K-TMS-004",
+        "status": "opened-review-content",
+        "path": "/tms/model/propList",
+        "evidence": "K-TMS-004",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-TMS-004-op1",
+            "path": "/tms/model/propAdd",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "数据标签",
+        "hierarchy": "数据标签体系 → 数据标签",
+        "occurrence": 0,
+        "id": "K-TMS-005",
+        "status": "opened-review-content",
+        "path": "/tms/system/dataTag/list",
+        "evidence": "K-TMS-005",
+        "operations": []
+      },
+      {
+        "name": "用户分群",
+        "hierarchy": "数据标签体系 → 用户分群",
+        "occurrence": 0,
+        "id": "K-TMS-006",
+        "status": "opened-review-content",
+        "path": "/tms/system/userGroup/list",
+        "evidence": "K-TMS-006",
+        "operations": []
+      },
+      {
+        "name": "用户画像",
+        "hierarchy": "数据标签体系 → 用户画像",
+        "occurrence": 0,
+        "id": "K-TMS-007",
+        "status": "opened-review-content",
+        "path": "/tms/system/userPortrait/list",
+        "evidence": "K-TMS-007",
+        "operations": []
+      },
+      {
+        "name": "属性分析",
+        "hierarchy": "数据标签体系 → 属性分析",
+        "occurrence": 0,
+        "id": "K-TMS-008",
+        "status": "opened-review-content",
+        "path": "/tms/system/attributeList",
+        "evidence": "K-TMS-008",
+        "operations": []
+      },
+      {
+        "name": "手工标签",
+        "hierarchy": "数据标签体系 → 手工标签",
+        "occurrence": 0,
+        "id": "K-TMS-009",
+        "status": "opened-review-content",
+        "path": "/tms/system/handTag",
+        "evidence": "K-TMS-009",
+        "operations": []
+      },
+      {
+        "name": "任务调度配置",
+        "hierarchy": "数据标签体系 → 任务调度配置",
+        "occurrence": 0,
+        "id": "K-TMS-010",
+        "status": "opened-review-content",
+        "path": "/tms/schedule/list",
+        "evidence": "K-TMS-010",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-TMS-010-op1",
+            "path": "/tms/schedule/edit",
+            "selectControls": 1,
+            "optionEvidence": [
+              "K-TMS-010-op1-options0"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "资产标签",
+        "hierarchy": "数据资产标签 → 资产标签",
+        "occurrence": 0,
+        "id": "K-TMS-011",
+        "status": "opened-review-content",
+        "path": "/tms/assets/assetsList",
+        "evidence": "K-TMS-011",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-TMS-011-op1",
+            "path": "/tms/assets/assetsEdit",
+            "selectControls": 0
+          }
+        ]
+      },
+      {
+        "name": "文件标签",
+        "hierarchy": "数据资产标签 → 文件标签",
+        "occurrence": 0,
+        "id": "K-TMS-012",
+        "status": "opened-review-content",
+        "path": "/tms/assets/fileList",
+        "evidence": "K-TMS-012",
+        "operations": []
+      },
+      {
+        "name": "文件检索",
+        "hierarchy": "数据资产标签 → 文件检索",
+        "occurrence": 0,
+        "id": "K-TMS-013",
+        "status": "opened-review-content",
+        "path": "/tms/assets/retrievalList",
+        "evidence": "K-TMS-013",
+        "operations": []
+      },
+      {
+        "name": "变更管理",
+        "hierarchy": "数据资产标签 → 变更管理",
+        "occurrence": 0,
+        "id": "K-TMS-014",
+        "status": "opened-review-content",
+        "path": "/tms/assets/assetsAudit",
+        "evidence": "K-TMS-014",
+        "operations": []
+      },
+      {
+        "name": "我的申请",
+        "hierarchy": "个人中心 → 我的申请",
+        "occurrence": 0,
+        "id": "K-TMS-015",
+        "status": "opened-review-content",
+        "path": "/tms/person/myApplyList",
+        "evidence": "K-TMS-015",
+        "operations": []
+      },
+      {
+        "name": "我的审批",
+        "hierarchy": "个人中心 → 我的审批",
+        "occurrence": 0,
+        "id": "K-TMS-016",
+        "status": "opened-review-content",
+        "path": "/tms/person/myApprovalList",
+        "evidence": "K-TMS-016",
+        "operations": []
+      },
+      {
+        "name": "我的反馈",
+        "hierarchy": "个人中心 → 我的反馈",
+        "occurrence": 0,
+        "id": "K-TMS-017",
+        "status": "opened-review-content",
+        "path": "/tms/person/myFeedback",
+        "evidence": "K-TMS-017",
+        "operations": []
+      },
+      {
+        "name": "API服务列表",
+        "hierarchy": "标签服务 → API服务列表",
+        "occurrence": 0,
+        "id": "K-TMS-018",
+        "status": "opened-review-content",
+        "path": "/tms/api/dataLabelsApiList",
+        "evidence": "K-TMS-018",
+        "operations": []
+      }
+    ]
+  },
+  {
+    "code": "IDQS",
+    "name": "智能查询系统",
+    "source": "E047-ai-query",
+    "entry": "K-IDQS-000-entry",
+    "discoveredAt": "2026-10-22T12:14:59.267Z",
+    "links": [
+      {
+        "name": "即席查询",
+        "hierarchy": "即席查询 → 即席查询",
+        "occurrence": 0,
+        "id": "K-IDQS-001",
+        "status": "opened-review-content",
+        "path": "/idqs/inquire",
+        "evidence": "K-IDQS-001",
+        "operations": []
+      },
+      {
+        "name": "设置查询范围",
+        "hierarchy": "即席查询 → 设置查询范围",
+        "occurrence": 0,
+        "id": "K-IDQS-002",
+        "status": "opened-review-content",
+        "path": "/idqs/queryScope/list",
+        "evidence": "K-IDQS-002",
+        "operations": []
+      },
+      {
+        "name": "已有查询配置",
+        "hierarchy": "即席查询 → 已有查询配置",
+        "occurrence": 0,
+        "id": "K-IDQS-003",
+        "status": "opened-review-content",
+        "path": "/idqs/queryConfig/list",
+        "evidence": "K-IDQS-003",
+        "operations": [
+          {
+            "name": "查看",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-IDQS-003-op1",
+            "path": "/idqs/inquire"
+          }
+        ]
+      },
+      {
+        "name": "智能查询",
+        "hierarchy": "智能查询 → 智能查询",
+        "occurrence": 0,
+        "id": "K-IDQS-004",
+        "status": "opened-review-content",
+        "path": "/idqs/intelligentQuery",
+        "evidence": "K-IDQS-004",
+        "operations": []
+      },
+      {
+        "name": "推荐的查询问题",
+        "hierarchy": "智能查询 → 推荐的查询问题",
+        "occurrence": 0,
+        "id": "K-IDQS-005",
+        "status": "opened-review-content",
+        "path": "/idqs/queryRecommend/list",
+        "evidence": "K-IDQS-005",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-IDQS-005-op1",
+            "path": "/idqs/queryRecommend/edit",
+            "selectControls": 2,
+            "optionEvidence": [
+              "K-IDQS-005-op1-options0",
+              "K-IDQS-005-op1-options1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "DACS",
+    "name": "资产目录系统",
+    "source": "E048-asset-catalog",
+    "entry": "K-DACS-000-entry",
+    "discoveredAt": "2026-10-22T12:16:37.497Z",
+    "links": [
+      {
+        "name": "整体概览",
+        "hierarchy": "概览 → 整体概览",
+        "occurrence": 0,
+        "id": "K-DACS-001",
+        "status": "opened-review-content",
+        "path": "/dacs/overview/overview",
+        "evidence": "K-DACS-001",
+        "operations": []
+      },
+      {
+        "name": "数据资源目录",
+        "hierarchy": "数据资源 → 数据资源目录",
+        "occurrence": 0,
+        "id": "K-DACS-002",
+        "status": "opened-review-content",
+        "path": "/dacs/dataResource/resourceCatalog",
+        "evidence": "K-DACS-002",
+        "operations": []
+      },
+      {
+        "name": "数据资产目录",
+        "hierarchy": "数据资产 → 数据资产目录",
+        "occurrence": 0,
+        "id": "K-DACS-003",
+        "status": "opened-review-content",
+        "path": "/dacs/dataAsset/assetCatalog",
+        "evidence": "K-DACS-003",
+        "operations": [
+          {
+            "name": "新增",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DACS-003-op1",
+            "path": "/dacs/dataAsset/assetCatalog"
+          },
+          {
+            "name": "修改",
+            "status": "opened-review-content",
+            "businessWriteExecuted": false,
+            "evidence": "K-DACS-003-op2",
+            "path": "/dacs/dataAsset/assetCatalog"
+          }
+        ]
+      },
+      {
+        "name": "我的待办",
+        "hierarchy": "审批中心 → 我的待办",
+        "occurrence": 0,
+        "id": "K-DACS-004",
+        "status": "navigation-error",
+        "reason": "TimeoutError"
+      },
+      {
+        "name": "我的已办",
+        "hierarchy": "审批中心 → 我的已办",
+        "occurrence": 0,
+        "id": "K-DACS-005",
+        "status": "navigation-error",
+        "reason": "Error"
+      },
+      {
+        "name": "全部审批记录",
+        "hierarchy": "审批中心 → 全部审批记录",
+        "occurrence": 0,
+        "id": "K-DACS-006",
+        "status": "pending"
+      },
+      {
+        "name": "资产画像",
+        "hierarchy": "资产台账 → 资产画像",
+        "occurrence": 0,
+        "id": "K-DACS-007",
+        "status": "pending"
+      },
+      {
+        "name": "资产血缘",
+        "hierarchy": "资产台账 → 资产血缘",
+        "occurrence": 0,
+        "id": "K-DACS-008",
+        "status": "pending"
+      },
+      {
+        "name": "标签管理",
+        "hierarchy": "资产台账 → 标签管理",
+        "occurrence": 0,
+        "id": "K-DACS-009",
+        "status": "pending"
+      }
+    ]
+  }
+]

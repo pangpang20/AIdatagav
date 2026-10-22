@@ -1,0 +1,261 @@
+{
+  "time": "2026-10-22T12:44:08.369Z",
+  "url": "/rtms/report/reportTemplate/detail",
+  "title": "报告模板",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n报告模板\n· 模板管理\n新增模板管理\n温馨提示：请不要在模板里面粘贴图片，否则可能会导致功能异常。\n返回\n模板名称\n适用对象\n报告类型\n模板文件\n 上传文档只能上传Word文档docx格式的文件，且大小不能超过10MB！\n模板说明\n取 消下一步",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "模板名称",
+      "placeholder": "请填写模板名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "适用对象",
+      "placeholder": "请填写适用对象",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "报告类型",
+      "placeholder": "请选择报告类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": " 上传文档",
+      "label": "模板文件",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "模板说明",
+      "placeholder": "请填写模板说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "250",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "下一步",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-RTMS-001-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "模板名称",
+      "requiredMarker": true,
+      "text": "模板名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请填写模板名称",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "适用对象",
+      "requiredMarker": false,
+      "text": "适用对象",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请填写适用对象",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "报告类型",
+      "requiredMarker": true,
+      "text": "报告类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择报告类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "模板文件",
+      "requiredMarker": false,
+      "text": "模板文件\n 上传文档只能上传Word文档docx格式的文件，且大小不能超过10MB！",
+      "fields": [
+        {
+          "type": "file",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "模板说明",
+      "requiredMarker": false,
+      "text": "模板说明",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请填写模板说明",
+          "maxlength": "250",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "· 模板管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n报告模板\n报告模板管理\n报告模板\n· 模板管理\n新增模板管理\n温馨提示：请不要在模板里面粘贴图片，否则可能会导致功能异常。\n返回\n模板名称\n适用对象\n报告类型\n模板文件\n 上传文档只能上传Word文档docx格式的文件，且大小不能超过10MB！\n模板说明\n取 消下一步",
+  "operation": {
+    "menu": "报告模板管理 → 报告模板 → · 模板管理",
+    "action": "新增",
+    "source": "V-RTMS-001",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

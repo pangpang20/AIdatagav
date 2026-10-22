@@ -1,0 +1,152 @@
+{
+  "time": "2026-10-22T11:54:45.129Z",
+  "url": "/datasource/kafka/edit",
+  "title": "数据源管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n新增kafka\n返回\n数据源名称\n配置topic信息\n手动添加topic\n获取topic信息\n序号\tTopic名称\t字段数量\t主体数据\tKey序列化/反序列化类型\tValue序列化/反序列化类型\t操作\n暂无数据\n取 消提 交\n\n无数据",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据源名称",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-DS-006-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "数据源名称",
+      "requiredMarker": true,
+      "text": "数据源名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "Topic名称",
+    "字段数量",
+    "主体数据",
+    "Key序列化/反序列化类型",
+    "Value序列化/反序列化类型",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "手动添加topic",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add"
+    },
+    {
+      "text": "获取topic信息",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "· 驱动管理",
+    "· 数据源管理",
+    "· 部门数据源",
+    "· 数据源列表",
+    "API数据源",
+    "kafka数据源"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据源管理\n数据源管理\n数据源管理\n· 驱动管理\n· 数据源管理\n· 部门数据源\n· 数据源列表\nAPI数据源\nkafka数据源\n新增kafka\n返回\n数据源名称\n配置topic信息\n手动添加topic\n获取topic信息\n序号\tTopic名称\t字段数量\t主体数据\tKey序列化/反序列化类型\tValue序列化/反序列化类型\t操作\n暂无数据\n取 消提 交\n\n无数据"
+}

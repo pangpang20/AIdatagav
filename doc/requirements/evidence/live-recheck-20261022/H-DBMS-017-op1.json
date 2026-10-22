@@ -1,0 +1,370 @@
+{
+  "time": "2026-10-22T11:45:34.887Z",
+  "url": "/dop/dbms/config/applyConfig/edit",
+  "title": "数据需求管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n数据调研报表\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n 数据归集\n 参考文档\n 配置管理\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n返回\n查看配置\n选择\t资源名称\t\n\t\n*单位名称\n\n\n\t\n*科室名称\n\n\n\t\n*系统名称\n\n\n\t\n*是否垂管\n\n\n\t\n*数据存储方式\n\n\n\t\n*数据更新频率\n\n\n\t\n*系统访问入口（系统网址）\n\n\n\t\n*网络位置\n\n\n\t\n*共享方式\n\n\n\t\n*建设单位负责人及其联系方式\n\n\n\t\n数据格式\n\n\n\t\n当前数据量\n\n\n\t\n使用范围(用户范围)\n\n\n\t\n系统数据库类型及版本\n\n\n\t\n建设单位\n\n\n\t\n承建单位\n\n\n\t\n承建单位联系人及联系方式\n\n\n\t\n用户\n\n\n\t\n系统功能描述\n\n\n\t\n备注",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-DBMS-017-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [],
+  "headers": [
+    "选择",
+    "资源名称",
+    ""
+  ],
+  "actions": [
+    {
+      "text": "返回",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--title main-back-new"
+    }
+  ],
+  "options": [
+    {
+      "text": "选择",
+      "selected": false,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    },
+    {
+      "text": "",
+      "selected": true,
+      "disabled": true
+    }
+  ],
+  "navigation": [
+    " 调研概览",
+    "委办局信息",
+    "调研团队信息",
+    "参考文档",
+    "调研里程碑",
+    "调研计划列表",
+    " 调研实施",
+    "数据调研报表",
+    "信息系统清单",
+    "数据目录清单",
+    "数据字典清单",
+    "接口资源清单",
+    "数据需求清单",
+    "业务需求清单",
+    " 数据归集",
+    " 参考文档",
+    " 配置管理"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据需求管理\n 调研概览\n调研准备\n委办局信息\n调研团队信息\n参考文档\n调研计划\n调研里程碑\n调研计划列表\n 调研实施\n调研报告\n数据调研报表\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n 数据归集\n 参考文档\n 配置管理\n信息系统清单\n数据目录清单\n数据字典清单\n接口资源清单\n数据需求清单\n业务需求清单\n返回\n查看配置\n选择\t资源名称\t\n\t\n*单位名称\n\n\n\t\n*科室名称\n\n\n\t\n*系统名称\n\n\n\t\n*是否垂管\n\n\n\t\n*数据存储方式\n\n\n\t\n*数据更新频率\n\n\n\t\n*系统访问入口（系统网址）\n\n\n\t\n*网络位置\n\n\n\t\n*共享方式\n\n\n\t\n*建设单位负责人及其联系方式\n\n\n\t\n数据格式\n\n\n\t\n当前数据量\n\n\n\t\n使用范围(用户范围)\n\n\n\t\n系统数据库类型及版本\n\n\n\t\n建设单位\n\n\n\t\n承建单位\n\n\n\t\n承建单位联系人及联系方式\n\n\n\t\n用户\n\n\n\t\n系统功能描述\n\n\n\t\n备注",
+  "operation": {
+    "menu": "配置管理",
+    "action": "查看",
+    "source": "H-DBMS-017",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

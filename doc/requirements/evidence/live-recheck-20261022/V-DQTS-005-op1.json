@@ -1,0 +1,199 @@
+{
+  "time": "2026-10-22T12:36:26.944Z",
+  "url": "/dqts/plan/edit",
+  "title": "数据质量检测",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n检测方案\n质量规则\n质量检测\n检测报告\n任务调度配置\n评价管理\n评价任务\n新增检测方案\n返回\n方案名称\n0/100\n方案说明\n0/1000\n方案附件\n点击上传支持PDF文档、ZIP压缩包上传，文件大小限制10M\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "方案名称",
+      "placeholder": "请输入方案名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "方案说明",
+      "placeholder": "请输入方案说明",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "1000",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-DQTS-005-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "方案名称",
+      "requiredMarker": true,
+      "text": "方案名称\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入方案名称",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "方案说明",
+      "requiredMarker": false,
+      "text": "方案说明\n0/1000",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入方案说明",
+          "maxlength": "1000",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "方案附件",
+      "requiredMarker": false,
+      "text": "方案附件\n点击上传支持PDF文档、ZIP压缩包上传，文件大小限制10M",
+      "fields": [
+        {
+          "type": "file",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [
+    {
+      "text": "点击上传",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dqts-shangchuan"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "列分析",
+    "智能分期",
+    "规则识别",
+    "质量规则推荐",
+    "检测方案",
+    "质量规则",
+    "质量检测",
+    "检测报告",
+    "任务调度配置",
+    "评价任务"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据质量检测\n智能识别管理\n列分析\n智能分期\n规则识别\n质量规则推荐\n数据质量检测\n检测方案\n质量规则\n质量检测\n检测报告\n任务调度配置\n评价管理\n评价任务\n新增检测方案\n返回\n方案名称\n0/100\n方案说明\n0/1000\n方案附件\n点击上传支持PDF文档、ZIP压缩包上传，文件大小限制10M\n取 消提 交",
+  "operation": {
+    "menu": "数据质量检测 → 检测方案",
+    "action": "新增",
+    "source": "V-DQTS-005",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "time": "2026-10-22T12:14:56.462Z",
+  "url": "/dms/configure/modelPro/list",
+  "title": "规范化数据建模",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n· 开发环境配置\n· 模型属性配置\n模型属性配置\n查询重置\n新增\n序号\t模型属性\t名称\t表名前缀\t表名后缀\t表名分隔符\t表名固定分段\t前置字段\t后置字段\t操作\n1\n\t\n普通模型\n\t\n业务库\n\t\nA\n\t\nBV\n\t\n_\n\t\n3\n\t\n0\n\t\n0\n\t\n配置\n删除\n\n\n2\n\t\n数仓模型\n\t\n安全层\n\t\na\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n3\n\t\n5\n\t\n配置\n删除\n\n\n3\n\t\n数仓模型\n\t\n主题层\n\t\nm\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n3\n\t\n5\n\t\n配置\n删除\n\n\n4\n\t\n数仓模型\n\t\n整合层\n\t\nc\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n5\n\t\n9\n\t\n配置\n删除\n\n\n5\n\t\n数仓模型\n\t\n原子层\n\t\nb\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n5\n\t\n10\n\t\n配置\n删除\n共 5 条\n1\n前往页\n新增建模属性\n模型属性\n名称\n表名前缀\n表名后缀\n表名分隔符\n表名固定分段\n前置字段\n新增\n英文名\t中文名\t字段类型\t长度\t精度\t默认值\t非空\t主键\t操作\n暂无数据\n后置字段\n新增\n英文名\t中文名\t字段类型\t长度\t精度\t默认值\t非空\t主键\t操作\n暂无数据\n取 消确 定",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择模型属性",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入名称查询",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "Close",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "模型属性",
+      "placeholder": "请选择模型属性",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名前缀",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名后缀",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名分隔符",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名固定分段",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确 定",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-DMS-006-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "模型属性",
+      "requiredMarker": false,
+      "text": "模型属性",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择模型属性",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "名称",
+      "requiredMarker": true,
+      "text": "名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名前缀",
+      "requiredMarker": false,
+      "text": "表名前缀",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名后缀",
+      "requiredMarker": false,
+      "text": "表名后缀",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名分隔符",
+      "requiredMarker": false,
+      "text": "表名分隔符",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "表名固定分段",
+      "requiredMarker": false,
+      "text": "表名固定分段",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "",
+      "requiredMarker": false,
+      "text": "前置字段\n新增\n英文名\t中文名\t字段类型\t长度\t精度\t默认值\t非空\t主键\t操作\n暂无数据",
+      "fields": []
+    },
+    {
+      "label": "",
+      "requiredMarker": false,
+      "text": "后置字段\n新增\n英文名\t中文名\t字段类型\t长度\t精度\t默认值\t非空\t主键\t操作\n暂无数据",
+      "fields": []
+    }
+  ],
+  "headers": [
+    "序号",
+    "模型属性",
+    "名称",
+    "表名前缀",
+    "表名后缀",
+    "表名分隔符",
+    "表名固定分段",
+    "前置字段",
+    "后置字段",
+    "操作",
+    "英文名",
+    "中文名",
+    "字段类型",
+    "长度",
+    "精度",
+    "默认值",
+    "非空",
+    "主键",
+    "操作",
+    "英文名",
+    "中文名",
+    "字段类型",
+    "长度",
+    "精度",
+    "默认值",
+    "非空",
+    "主键",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "配置",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--inline-block audaque-link-text--danger"
+    }
+  ],
+  "options": [],
+  "navigation": [
+    "· 模型设计",
+    "· 模型物化",
+    "· 模型分析",
+    "· 模型数据统计",
+    "· 开发环境配置",
+    "· 模型属性配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n规范化数据建模\n模型管理\n模型管理\n· 模型设计\n· 模型物化\n· 模型分析\n· 模型数据统计\n系统配置\n· 开发环境配置\n· 模型属性配置\n模型属性配置\n查询重置\n新增\n序号\t模型属性\t名称\t表名前缀\t表名后缀\t表名分隔符\t表名固定分段\t前置字段\t后置字段\t操作\n1\n\t\n普通模型\n\t\n业务库\n\t\nA\n\t\nBV\n\t\n_\n\t\n3\n\t\n0\n\t\n0\n\t\n配置\n删除\n\n\n2\n\t\n数仓模型\n\t\n安全层\n\t\na\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n3\n\t\n5\n\t\n配置\n删除\n\n\n3\n\t\n数仓模型\n\t\n主题层\n\t\nm\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n3\n\t\n5\n\t\n配置\n删除\n\n\n4\n\t\n数仓模型\n\t\n整合层\n\t\nc\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n5\n\t\n9\n\t\n配置\n删除\n\n\n5\n\t\n数仓模型\n\t\n原子层\n\t\nb\n\t\ncur\n\t\n_\n\t\n未设置\n\t\n5\n\t\n10\n\t\n配置\n删除\n共 5 条\n1\n前往页\n新增建模属性\n模型属性\n名称\n表名前缀\n表名后缀\n表名分隔符\n表名固定分段\n前置字段\n新增\n英文名\t中文名\t字段类型\t长度\t精度\t默认值\t非空\t主键\t操作\n暂无数据\n后置字段\n新增\n英文名\t中文名\t字段类型\t长度\t精度\t默认值\t非空\t主键\t操作\n暂无数据\n取 消确 定",
+  "operation": {
+    "menu": "模型管理 → 系统配置 → · 模型属性配置",
+    "action": "新增",
+    "source": "H-DMS-006",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

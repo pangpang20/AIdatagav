@@ -1,0 +1,1261 @@
+{
+  "time": "2026-10-22T12:02:57.425Z",
+  "url": "/sms/schedule/alarm/pushEdit",
+  "title": "任务编排与调度",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n 概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n 调度统计\n配置管理\n系统管理\n组件管理\n初始化\n新增告警推送\n返回\n接收人\n推送频率\n监控流程\n全部\n指定\n状态\n取 消提 交\ntest0107\n陈瑶\n陈红斌\njiaxb\n胡瑞\n李万可\n李万可\n万志浩\nsafeceshi\n胡波\ntestAbc\n陈琛\nCUST169\nCUST167\nCUST168\nCUST166\nCUST153\nCUST152\nCUST151\nCUST150\nCUST149\nCUST148\nCUST147\nCUST146\nCUST145\nCUST144\nCUST143\nCUST142\nCUST141\nCUST140\nCUST139\nCUST138\nCUST137\nCUST136\nCUST135\nCUST134\nCUST133\nCUST132\nCUST131\nCUST130\nCUST129\nCUST128\nCUST127\nCUST126\nCUST125\nCUST124\nCUST123\nCUST122\nCUST121\nCUST120\nCUST119\nCUST118\nCUST117\nCUST116\nCUST115\nCUST114\nCUST113\nCUST112\nCUST111\nCUST110\nCUST109\nCUST108\nCUST107\nCUST106\nCUST105\nCUST104\nCUST103\nCUST102\nCUST101\nCUST100\nCUST099\nCUST097\nCUST096\nCUST095\nCUST094\nCUST093\nCUST092\nCUST091\nCUST090\nCUST089\nCUST088\nCUST087\nCUST086\nCUST085\nCUST084\nCUST083\nCUST082\nCUST081\nCUST080\nCUST079\nCUST078\nCUST077\nCUST076\nCUST075\nCUST074\nCUST073\nCUST072\nCUST071\nCUST070\nCUST069\nCUST068\nCUST067\nCUST066\nCUST065\nCUST064\nCUST063\nCUST062\nCUST061\nCUST060\nCUST059\nCUST058\nCUST057\nCUST056\nCUST055\nCUST054\nCUST053\nCUST052\nCUST051\nCUST050\nCUST049\nCUST048\nCUST046\nCUST047\nCUST045\nCUST044\nCUST043\nCUST042\nCUST041\nCUST040\nCUST039\nCUST038\nCUST037\nCUST036\nCUST035\nCUST034\nCUST033\nCUST032\nCUST031\nCUST030\nCUST029\nCUST028\nCUST027\nCUST026\nCUST025\nCUST024\nCUST023\nCUST022\nccyex11\nccyex01\n彭进\n小燕\nCUST002\nCUST001\nCUST003\nCUST004\nCUST005\nCUST006\nCUST007\nCUST008\nCUST009\nCUST010\nCUST011\nCUST012\nCUST013\nCUST014\nCUST015\nCUST016\n陈云亮\nCUST019\nCUST020\nCUST021\nchenshangy\n倪宏伟\n李庆洲\n黄世龙\n张志丹\n苏雨轩\n徐林\n余伊晴\n李邱林\n张风祥\n许松\nczj001\ndemo007\n邓小超\n张昆\nmzj001\njializhi\ntest123\n王学民\n马睿\n梁孔昌\n朱帝远\nyyc\n罗霞\n超级管理员",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "接收人",
+      "placeholder": "选择人员",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "推送频率",
+      "placeholder": "请选择推送频率",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "监控流程",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "监控流程",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "状态",
+      "placeholder": "请选择状态",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "H-SMS-007-op1-options0",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "接收人",
+      "requiredMarker": true,
+      "text": "接收人",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "选择人员",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "推送频率",
+      "requiredMarker": true,
+      "text": "推送频率",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择推送频率",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "监控流程",
+      "requiredMarker": true,
+      "text": "监控流程\n全部\n指定",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "状态",
+      "requiredMarker": true,
+      "text": "状态",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择状态",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [],
+  "actions": [],
+  "options": [
+    {
+      "text": "全部",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "指定",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "test0107",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "陈瑶",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "陈红斌",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "jiaxb",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "胡瑞",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "李万可",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "李万可",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "万志浩",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "safeceshi",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "胡波",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "testAbc",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "陈琛",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST169",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST167",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST168",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST166",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST153",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST152",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST151",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST150",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST149",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST148",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST147",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST146",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST145",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST144",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST143",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST142",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST141",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST140",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST139",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST138",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST137",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST136",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST135",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST134",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST133",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST132",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST131",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST130",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST129",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST128",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST127",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST126",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST125",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST124",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST123",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST122",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST121",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST120",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST119",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST118",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST117",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST116",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST115",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST114",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST113",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST112",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST111",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST110",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST109",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST108",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST107",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST106",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST105",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST104",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST103",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST102",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST101",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST100",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST099",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST097",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST096",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST095",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST094",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST093",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST092",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST091",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST090",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST089",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST088",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST087",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST086",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST085",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST084",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST083",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST082",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST081",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST080",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST079",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST078",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST077",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST076",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST075",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST074",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST073",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST072",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST071",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST070",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST069",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST068",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST067",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST066",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST065",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST064",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST063",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST062",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST061",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST060",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST059",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST058",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST057",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST056",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST055",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST054",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST053",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST052",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST051",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST050",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST049",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST048",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST046",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST047",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST045",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST044",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST043",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST042",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST041",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST040",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST039",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST038",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST037",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST036",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST035",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST034",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST033",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST032",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST031",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST030",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST029",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST028",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST027",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST026",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST025",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST024",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST023",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST022",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "ccyex11",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "ccyex01",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "彭进",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "小燕",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST002",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST001",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST003",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST004",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST005",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST006",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST007",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST008",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST009",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST010",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST011",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST012",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST013",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST014",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST015",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST016",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "陈云亮",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST019",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST020",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "CUST021",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "chenshangy",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "倪宏伟",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "李庆洲",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "黄世龙",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "张志丹",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "苏雨轩",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "徐林",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "余伊晴",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "李邱林",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "张风祥",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "许松",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "czj001",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "demo007",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "邓小超",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "张昆",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "mzj001",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "jializhi",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "test123",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "王学民",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "马睿",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "梁孔昌",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "朱帝远",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "yyc",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "罗霞",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "超级管理员",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    " 概览",
+    "我的流程",
+    "流程调度管理",
+    "· 周期任务作业监控",
+    "· 实时任务作业监控",
+    "· 告警信息查询",
+    "· 告警推送管理",
+    "归集表查询",
+    "开发表管理",
+    "函数开发",
+    "脚本开发",
+    "· 标准层",
+    "· 原子层",
+    "· 整合层",
+    "· 主题层",
+    "· 安全层",
+    "· 标准代码集查询",
+    "· 源系统代码集管理",
+    "· 源与标准映射管理",
+    "· 函数管理",
+    "· 算法包管理",
+    "· IDE平台初始化",
+    " 调度统计",
+    "系统管理",
+    "组件管理",
+    "初始化"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n任务编排与调度\n 概览\n流程开发\n我的流程\n流程调度\n流程调度管理\n流程监控\n· 周期任务作业监控\n· 实时任务作业监控\n告警管理\n· 告警信息查询\n· 告警推送管理\n资源管理\n归集表查询\n开发表管理\n函数开发\n脚本开发\nGLDM开发IDE\n标化加工IDE\n· 标准层\n分层开发IDE\n· 原子层\n· 整合层\n· 主题层\n· 安全层\n规则配置\n· 标准代码集查询\n· 源系统代码集管理\n· 源与标准映射管理\n· 函数管理\n· 算法包管理\nIDE平台配置\n· IDE平台初始化\n 调度统计\n配置管理\n系统管理\n组件管理\n初始化\n新增告警推送\n返回\n接收人\n推送频率\n监控流程\n全部\n指定\n状态\n取 消提 交\ntest0107\n陈瑶\n陈红斌\njiaxb\n胡瑞\n李万可\n李万可\n万志浩\nsafeceshi\n胡波\ntestAbc\n陈琛\nCUST169\nCUST167\nCUST168\nCUST166\nCUST153\nCUST152\nCUST151\nCUST150\nCUST149\nCUST148\nCUST147\nCUST146\nCUST145\nCUST144\nCUST143\nCUST142\nCUST141\nCUST140\nCUST139\nCUST138\nCUST137\nCUST136\nCUST135\nCUST134\nCUST133\nCUST132\nCUST131\nCUST130\nCUST129\nCUST128\nCUST127\nCUST126\nCUST125\nCUST124\nCUST123\nCUST122\nCUST121\nCUST120\nCUST119\nCUST118\nCUST117\nCUST116\nCUST115\nCUST114\nCUST113\nCUST112\nCUST111\nCUST110\nCUST109\nCUST108\nCUST107\nCUST106\nCUST105\nCUST104\nCUST103\nCUST102\nCUST101\nCUST100\nCUST099\nCUST097\nCUST096\nCUST095\nCUST094\nCUST093\nCUST092\nCUST091\nCUST090\nCUST089\nCUST088\nCUST087\nCUST086\nCUST085\nCUST084\nCUST083\nCUST082\nCUST081\nCUST080\nCUST079\nCUST078\nCUST077\nCUST076\nCUST075\nCUST074\nCUST073\nCUST072\nCUST071\nCUST070\nCUST069\nCUST068\nCUST067\nCUST066\nCUST065\nCUST064\nCUST063\nCUST062\nCUST061\nCUST060\nCUST059\nCUST058\nCUST057\nCUST056\nCUST055\nCUST054\nCUST053\nCUST052\nCUST051\nCUST050\nCUST049\nCUST048\nCUST046\nCUST047\nCUST045\nCUST044\nCUST043\nCUST042\nCUST041\nCUST040\nCUST039\nCUST038\nCUST037\nCUST036\nCUST035\nCUST034\nCUST033\nCUST032\nCUST031\nCUST030\nCUST029\nCUST028\nCUST027\nCUST026\nCUST025\nCUST024\nCUST023\nCUST022\nccyex11\nccyex01\n彭进\n小燕\nCUST002\nCUST001\nCUST003\nCUST004\nCUST005\nCUST006\nCUST007\nCUST008\nCUST009\nCUST010\nCUST011\nCUST012\nCUST013\nCUST014\nCUST015\nCUST016\n陈云亮\nCUST019\nCUST020\nCUST021\nchenshangy\n倪宏伟\n李庆洲\n黄世龙\n张志丹\n苏雨轩\n徐林\n余伊晴\n李邱林\n张风祥\n许松\nczj001\ndemo007\n邓小超\n张昆\nmzj001\njializhi\ntest123\n王学民\n马睿\n梁孔昌\n朱帝远\nyyc\n罗霞\n超级管理员"
+}

@@ -1,0 +1,318 @@
+{
+  "time": "2026-10-22T12:43:16.512Z",
+  "url": "/ais/interface/interfaceAuthorizationEdit",
+  "title": "AI数据智能辅助",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\nAI数据智能辅助\n库管理\n识别召回库\nNL2SQL库\n在线验证\n数据源\n字段识别验证任务\n表识别验证任务\nNL2SQL验证任务\n模型管理\nNL2SQL模型管理\n 分级目录\n 接口授权\n接口授权\n返回\n基本信息\n申请人\n0/32\n授权接口\n申请备注\n0/200\n接口信息\n阈值\n授权内容\n授权ip\n 新增Ip\n序号\tip\t操作\n暂无数据\n授权召回库\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "申请人",
+      "placeholder": "请输入申请人",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "32",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "授权接口",
+      "placeholder": "请选择授权接口",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "申请备注",
+      "placeholder": "请输入申请备注",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "阈值",
+      "placeholder": "请输入阈值",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "阈值",
+      "placeholder": "请选择阈值类型",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": " 新增Ip",
+      "label": "授权ip",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "授权召回库",
+      "placeholder": "请选择召回库",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-AIS-009-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "申请人",
+      "requiredMarker": true,
+      "text": "申请人\n0/32",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入申请人",
+          "maxlength": "32",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "授权接口",
+      "requiredMarker": true,
+      "text": "授权接口",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择授权接口",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "申请备注",
+      "requiredMarker": false,
+      "text": "申请备注\n0/200",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入申请备注",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "阈值",
+      "requiredMarker": true,
+      "text": "阈值",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入阈值",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择阈值类型",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "授权ip",
+      "requiredMarker": true,
+      "text": "授权ip\n 新增Ip\n序号\tip\t操作\n暂无数据",
+      "fields": []
+    },
+    {
+      "label": "授权召回库",
+      "requiredMarker": true,
+      "text": "授权召回库",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择召回库",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "序号",
+    "ip",
+    "操作"
+  ],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "识别召回库",
+    "NL2SQL库",
+    "数据源",
+    "字段识别验证任务",
+    "表识别验证任务",
+    "NL2SQL验证任务",
+    "NL2SQL模型管理",
+    " 分级目录",
+    " 接口授权"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\nAI数据智能辅助\n库管理\n识别召回库\nNL2SQL库\n在线验证\n数据源\n字段识别验证任务\n表识别验证任务\nNL2SQL验证任务\n模型管理\nNL2SQL模型管理\n 分级目录\n 接口授权\n接口授权\n返回\n基本信息\n申请人\n0/32\n授权接口\n申请备注\n0/200\n接口信息\n阈值\n授权内容\n授权ip\n 新增Ip\n序号\tip\t操作\n暂无数据\n授权召回库\n取 消提 交",
+  "operation": {
+    "menu": "接口授权",
+    "action": "新增",
+    "source": "V-AIS-009",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

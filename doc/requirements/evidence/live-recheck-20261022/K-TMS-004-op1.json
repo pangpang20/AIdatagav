@@ -1,0 +1,218 @@
+{
+  "time": "2026-10-22T12:12:30.925Z",
+  "url": "/tms/model/propAdd",
+  "title": "标签管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n新增实体属性\n返回\n表名\n列信息\n新增删除\n\t列名(属性名)\t显示名\t数据类型\t单位格式\t字典信息\n暂无数据\n取消确定",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "表名",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "列信息\n新增删除",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确定",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "K-TMS-004-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "表名",
+      "requiredMarker": true,
+      "text": "表名",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "输入关键字进行过滤",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "列信息\n新增删除",
+      "requiredMarker": true,
+      "text": "列信息\n新增删除\n\t列名(属性名)\t显示名\t数据类型\t单位格式\t字典信息\n暂无数据",
+      "fields": [
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "",
+    "列名(属性名)",
+    "显示名",
+    "数据类型",
+    "单位格式",
+    "字典信息"
+  ],
+  "actions": [
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-delete-new"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": true
+    }
+  ],
+  "navigation": [
+    " 数据标签总览",
+    " 工作组",
+    "标签模型",
+    "实体属性",
+    "数据标签",
+    "用户分群",
+    "用户画像",
+    "属性分析",
+    "手工标签",
+    "任务调度配置",
+    "资产标签",
+    "文件标签",
+    "文件检索",
+    "变更管理",
+    "我的申请",
+    "我的审批",
+    "我的反馈",
+    "API服务列表"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n标签管理\n 数据标签总览\n 工作组\n标签模型管理\n标签模型\n实体属性\n数据标签体系\n数据标签\n用户分群\n用户画像\n属性分析\n手工标签\n任务调度配置\n数据资产标签\n资产标签\n文件标签\n文件检索\n变更管理\n个人中心\n我的申请\n我的审批\n我的反馈\n标签服务\nAPI服务列表\n新增实体属性\n返回\n表名\n列信息\n新增删除\n\t列名(属性名)\t显示名\t数据类型\t单位格式\t字典信息\n暂无数据\n取消确定",
+  "operation": {
+    "menu": "标签模型管理 → 实体属性",
+    "action": "新增",
+    "source": "K-TMS-004",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

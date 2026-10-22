@@ -1,0 +1,728 @@
+{
+  "time": "2026-10-22T12:55:46.445Z",
+  "url": "/dss/standard/system/dataSetList",
+  "title": "数据标准管理",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准模型表管理\n标准模型表分类\n人口 (RK)\nxinxi (XI)\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t标准模型表编码\t标准模型表名称\t标准模型表说明\t审批状态\t关联标准字段\t更新时间\t操作\n\t\n1\n\t\ng876trdfgh\n\t\ndfgh\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-07-09 11:37:11\n\t\n编辑删除\n\n\n\t\n2\n\t\nuserinfo\n\t\nuserinfo\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-05-15 11:31:22\n\t\n编辑删除\n\n\n\t\n3\n\t\nPDM0000009\n\t\n人口基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-11-14 19:24:55\n\t\n编辑删除\n\n\n\t\n4\n\t\nPDM0000013\n\t\n民政基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:55:57\n\t\n编辑删除\n\n\n\t\n5\n\t\nPDM0000017\n\t\n住房基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:55:21\n\t\n编辑删除\n\n\n\t\n6\n\t\nPDM0000016\n\t\n住房公积金基础信息\n\t\n\t\n审批通过\n\t\n5\n\t\n2025-08-11 11:55:02\n\t\n编辑删除\n\n\n\t\n7\n\t\nPDM0000015\n\t\n社会保险基础信息\n\t\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:54:37\n\t\n编辑删除\n\n\n\t\n8\n\t\nPDM0000014\n\t\n劳动就业基础信息\n\t\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:54:16\n\t\n编辑删除\n\n\n\t\n9\n\t\nPDM0000012\n\t\n卫生健康基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:53:14\n\t\n编辑删除\n\n\n\t\n10\n\t\nPDM0000011\n\t\n教育基础信息\n\t\n\t\n审批通过\n\t\n7\n\t\n2025-08-11 11:52:52\n\t\n编辑删除\n\n\n\t\n11\n\t\nPDM0000010\n\t\n户籍基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:52:17\n\t\n编辑删除\n共 11 条\n1\n前往页\n编辑标准模型表分类\n标准模型表分类名称\n标准模型表分类编码\n说明\n关闭确定",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入要搜索的内容",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请输入标准模型表名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "255",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "查询",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "重置",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "number",
+      "text": "",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": "1",
+      "max": "1",
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "",
+      "label": "Close",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标准模型表分类名称",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "25",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "标准模型表分类编码",
+      "placeholder": "编码为两位大写字母",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "2",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "说明",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "关闭",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "确定",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-DSS-003-op3",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "标准模型表分类名称",
+      "requiredMarker": true,
+      "text": "标准模型表分类名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "25",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "标准模型表分类编码",
+      "requiredMarker": true,
+      "text": "标准模型表分类编码",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "编码为两位大写字母",
+          "maxlength": "2",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "说明",
+      "requiredMarker": false,
+      "text": "说明",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    }
+  ],
+  "headers": [
+    "",
+    "序号",
+    "标准模型表编码",
+    "标准模型表名称",
+    "标准模型表说明",
+    "审批状态",
+    "关联标准字段",
+    "更新时间",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "",
+      "title": "删除",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-delete-new"
+    },
+    {
+      "text": "",
+      "title": "修改",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-edit-new"
+    },
+    {
+      "text": "",
+      "title": "新增",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-add-new"
+    },
+    {
+      "text": "",
+      "title": "关闭左侧",
+      "cls": "iconfontmain audaque-action-icon--title-tree main-tree-close"
+    },
+    {
+      "text": "批量删除",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-delete-new"
+    },
+    {
+      "text": "导出",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-daochu"
+    },
+    {
+      "text": "导入",
+      "title": "",
+      "cls": "iconfont audaque-action-icon--opreate dssms-daoru"
+    },
+    {
+      "text": "新增",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    },
+    {
+      "text": "dfgh",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "1",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "编辑",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--active"
+    },
+    {
+      "text": "删除",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--danger"
+    },
+    {
+      "text": "userinfo",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "人口基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "10",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "民政基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "住房基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "住房公积金基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "5",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "社会保险基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "4",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "劳动就业基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "卫生健康基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "教育基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "7",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    },
+    {
+      "text": "户籍基础信息",
+      "title": "",
+      "cls": "audaque-link-text-content audaque-link-text--key--active"
+    }
+  ],
+  "options": [
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "· 标准文档管理",
+    "· 标准术语管理",
+    "· 标准模型表管理",
+    "· 标准字段管理",
+    "· 标准代码管理",
+    "· 标准文档审批",
+    "· 标准模型表审批",
+    "· 标准字段审批",
+    "· 标准代码审批",
+    "· 标准查询"
+  ],
+  "pageTitles": [
+    " 标准模型表管理 ",
+    "编辑标准模型表分类"
+  ],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据标准管理\n标准\n标准体系文档管理\n· 标准文档管理\n· 标准术语管理\n标准体系管理\n· 标准模型表管理\n· 标准字段管理\n· 标准代码管理\n标准审批管理\n· 标准文档审批\n· 标准模型表审批\n· 标准字段审批\n· 标准代码审批\n标准查询\n· 标准查询\n标准模型表管理\n标准模型表分类\n人口 (RK)\nxinxi (XI)\n查询重置\n批量删除\n导出\n导入\n新增\n\t序号\t标准模型表编码\t标准模型表名称\t标准模型表说明\t审批状态\t关联标准字段\t更新时间\t操作\n\t\n1\n\t\ng876trdfgh\n\t\ndfgh\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-07-09 11:37:11\n\t\n编辑删除\n\n\n\t\n2\n\t\nuserinfo\n\t\nuserinfo\n\t\n\t\n审批通过\n\t\n1\n\t\n2026-05-15 11:31:22\n\t\n编辑删除\n\n\n\t\n3\n\t\nPDM0000009\n\t\n人口基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-11-14 19:24:55\n\t\n编辑删除\n\n\n\t\n4\n\t\nPDM0000013\n\t\n民政基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:55:57\n\t\n编辑删除\n\n\n\t\n5\n\t\nPDM0000017\n\t\n住房基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:55:21\n\t\n编辑删除\n\n\n\t\n6\n\t\nPDM0000016\n\t\n住房公积金基础信息\n\t\n\t\n审批通过\n\t\n5\n\t\n2025-08-11 11:55:02\n\t\n编辑删除\n\n\n\t\n7\n\t\nPDM0000015\n\t\n社会保险基础信息\n\t\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:54:37\n\t\n编辑删除\n\n\n\t\n8\n\t\nPDM0000014\n\t\n劳动就业基础信息\n\t\n\t\n审批通过\n\t\n4\n\t\n2025-08-11 11:54:16\n\t\n编辑删除\n\n\n\t\n9\n\t\nPDM0000012\n\t\n卫生健康基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:53:14\n\t\n编辑删除\n\n\n\t\n10\n\t\nPDM0000011\n\t\n教育基础信息\n\t\n\t\n审批通过\n\t\n7\n\t\n2025-08-11 11:52:52\n\t\n编辑删除\n\n\n\t\n11\n\t\nPDM0000010\n\t\n户籍基础信息\n\t\n\t\n审批通过\n\t\n10\n\t\n2025-08-11 11:52:17\n\t\n编辑删除\n共 11 条\n1\n前往页\n编辑标准模型表分类\n标准模型表分类名称\n标准模型表分类编码\n说明\n关闭确定",
+  "operation": {
+    "menu": "标准 → 标准体系管理 → · 标准模型表管理",
+    "action": "修改",
+    "source": "V-DSS-003",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

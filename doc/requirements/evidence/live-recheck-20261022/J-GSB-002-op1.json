@@ -1,0 +1,499 @@
+{
+  "time": "2026-10-22T11:44:16.148Z",
+  "url": "/gsb/manage/table",
+  "title": "数据服务支撑",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务支撑\n服务目录\n服务目录\n服务管理\n注册管理\n消费管理\n服务审批\n注册审批\n服务控制\n消费IP管理\n服务统计\n配置\n数源配置\n新增库表注册\n返回\n基本信息\n服务中文名\n0/100\n服务英文名\n0/100\n传输协议\n HTTPS\n SOAP-HTTPS\n调用方式\nGet\nPost\n服务描述\n0/200\n附件信息\n点击上传\n序号\t附件名称\t附件类型\t操作\n暂无数据\n资源信息\n服务提供方\n请选择\n\t\n提供方代码\n数据源名称\n数据源类型\n* 资源表信息\n新增资源表\n序号\t资源表名称\t操作\n暂无数据\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "服务中文名",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "服务英文名",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "100",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "传输协议",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "传输协议",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "调用方式",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "text": "",
+      "label": "调用方式",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": null,
+      "text": "",
+      "label": "服务描述",
+      "placeholder": "请输入",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "200",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "服务提供方",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "提供方代码",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据源名称",
+      "placeholder": "请选择",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": true
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "数据源类型",
+      "placeholder": null,
+      "required": false,
+      "disabled": true,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "J-GSB-002-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "服务中文名",
+      "requiredMarker": true,
+      "text": "服务中文名\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "服务英文名",
+      "requiredMarker": true,
+      "text": "服务英文名\n0/100",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入",
+          "maxlength": "100",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "传输协议",
+      "requiredMarker": true,
+      "text": "传输协议\n HTTPS\n SOAP-HTTPS",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "调用方式",
+      "requiredMarker": true,
+      "text": "调用方式\nGet\nPost",
+      "fields": [
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        },
+        {
+          "type": "radio",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "服务描述",
+      "requiredMarker": true,
+      "text": "服务描述\n0/200",
+      "fields": [
+        {
+          "type": "textarea",
+          "placeholder": "请输入",
+          "maxlength": "200",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "附件信息",
+      "requiredMarker": false,
+      "text": "附件信息\n点击上传\n序号\t附件名称\t附件类型\t操作\n暂无数据",
+      "fields": [
+        {
+          "type": "file",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "服务提供方",
+      "requiredMarker": true,
+      "text": "服务提供方\n请选择\n\t",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "提供方代码",
+      "requiredMarker": false,
+      "text": "提供方代码",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "数据源名称",
+      "requiredMarker": true,
+      "text": "数据源名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请选择",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": true,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "数据源类型",
+      "requiredMarker": false,
+      "text": "数据源类型",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "label": "* 资源表信息",
+      "requiredMarker": false,
+      "text": "* 资源表信息\n新增资源表\n序号\t资源表名称\t操作\n暂无数据",
+      "fields": []
+    }
+  ],
+  "headers": [
+    "序号",
+    "附件名称",
+    "附件类型",
+    "操作",
+    "序号",
+    "资源表名称",
+    "操作"
+  ],
+  "actions": [
+    {
+      "text": "点击上传",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-shangchuan"
+    },
+    {
+      "text": "新增资源表",
+      "title": "",
+      "cls": "iconfontmain audaque-action-icon--opreate main-add-new"
+    }
+  ],
+  "options": [
+    {
+      "text": " HTTPS",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": " SOAP-HTTPS",
+      "selected": false,
+      "disabled": false
+    },
+    {
+      "text": "Get",
+      "selected": true,
+      "disabled": false
+    },
+    {
+      "text": "Post",
+      "selected": false,
+      "disabled": false
+    }
+  ],
+  "navigation": [
+    "服务目录",
+    "注册管理",
+    "消费管理",
+    "注册审批",
+    "消费IP管理",
+    "服务统计",
+    "数源配置"
+  ],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务支撑\n服务目录\n服务目录\n服务管理\n注册管理\n消费管理\n服务审批\n注册审批\n服务控制\n消费IP管理\n服务统计\n配置\n数源配置\n新增库表注册\n返回\n基本信息\n服务中文名\n0/100\n服务英文名\n0/100\n传输协议\n HTTPS\n SOAP-HTTPS\n调用方式\nGet\nPost\n服务描述\n0/200\n附件信息\n点击上传\n序号\t附件名称\t附件类型\t操作\n暂无数据\n资源信息\n服务提供方\n请选择\n\t\n提供方代码\n数据源名称\n数据源类型\n* 资源表信息\n新增资源表\n序号\t资源表名称\t操作\n暂无数据\n取 消提 交",
+  "operation": {
+    "menu": "服务管理 → 注册管理",
+    "action": "库表注册",
+    "source": "J-GSB-002",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}

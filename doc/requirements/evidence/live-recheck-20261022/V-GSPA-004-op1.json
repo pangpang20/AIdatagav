@@ -1,0 +1,185 @@
+{
+  "time": "2026-10-22T13:03:56.319Z",
+  "url": "/gsp/content/sheet/edit",
+  "title": "数据服务门户",
+  "text": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务门户\n政务共享门户后台管理\n快捷入口管理\n知识管理\n版块管理\n· 栏目管理\n· 布局管理\n· 版块管理\n· 内容管理\n模板管理\n布局新增\n返回\n名称\n描述\n栏目\n添加栏目\n栏目名称\n\t\n栏目类型\n\t\n顺序号\n\t\n操作\n暂无数据\n取 消提 交",
+  "controls": [
+    {
+      "tag": "DIV",
+      "type": null,
+      "text": "myspace",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "默认租户",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "SPAN",
+      "type": null,
+      "text": "欢迎，陈云亮",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "名称",
+      "placeholder": "请输入名称",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "30",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "text": "",
+      "label": "描述",
+      "placeholder": "请输入描述",
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": "150",
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "取 消",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "提 交",
+      "label": "",
+      "placeholder": null,
+      "required": false,
+      "disabled": false,
+      "min": null,
+      "max": null,
+      "minlength": null,
+      "maxlength": null,
+      "pattern": null,
+      "readonly": false
+    }
+  ],
+  "headings": [],
+  "frames": [],
+  "id": "V-GSPA-004-op1",
+  "source": "受控Chrome实际页面，Playwright只读交互",
+  "blockedRequests": [],
+  "forms": [
+    {
+      "label": "名称",
+      "requiredMarker": true,
+      "text": "名称",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入名称",
+          "maxlength": "30",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "描述",
+      "requiredMarker": false,
+      "text": "描述",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "请输入描述",
+          "maxlength": "150",
+          "min": null,
+          "max": null,
+          "readonly": false,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "label": "栏目",
+      "requiredMarker": false,
+      "text": "栏目\n添加栏目\n栏目名称\n\t\n栏目类型\n\t\n顺序号\n\t\n操作\n暂无数据",
+      "fields": []
+    }
+  ],
+  "headers": [
+    "栏目名称",
+    "栏目类型",
+    "顺序号",
+    "操作"
+  ],
+  "actions": [],
+  "options": [],
+  "navigation": [
+    "快捷入口管理",
+    "知识管理",
+    "· 栏目管理",
+    "· 布局管理",
+    "· 版块管理",
+    "· 内容管理",
+    "模板管理"
+  ],
+  "pageTitles": [],
+  "tabs": [],
+  "content": "myspace\n消息通知\n工作台\n默认租户\n欢迎，陈云亮\n数据运营平台\n工作台\n需求管理\n数据开发\n数据一体化\n数据资产\n数据评价\n后台\n数据服务门户\n政务共享门户后台管理\n快捷入口管理\n知识管理\n版块管理\n· 栏目管理\n· 布局管理\n· 版块管理\n· 内容管理\n模板管理\n布局新增\n返回\n名称\n描述\n栏目\n添加栏目\n栏目名称\n\t\n栏目类型\n\t\n顺序号\n\t\n操作\n暂无数据\n取 消提 交",
+  "operation": {
+    "menu": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+    "action": "新增",
+    "source": "V-GSPA-004",
+    "changedContent": true,
+    "businessWriteExecuted": false
+  }
+}
