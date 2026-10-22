@@ -16,6 +16,8 @@ module.exports = function install({ page, capture, fs, evRoot, journalName = 'cr
     if (fs.existsSync(evRoot + '/' + id + '.json') || fs.existsSync(evRoot + '/' + id + '.png'))
       throw new Error('Evidence ID already exists; use a new batch prefix');
     let d = await capture(id, page);
+    d.pageTitles = await page.locator('.audaque-table-title__title-text:visible, .el-dialog__title:visible').allTextContents();
+    d.tabs = await page.locator('[role="tab"]:visible').allTextContents();
     if (d.text !== (await page.locator('body').innerText()).split(new URL(page.url()).origin).join(''))
       d.captureTimingLimit = 'Body changed during screenshot; verify image and metadata independently.';
     const main = page.locator('.el-main:visible').first();
@@ -125,7 +127,7 @@ module.exports = function install({ page, capture, fs, evRoot, journalName = 'cr
   };
   const inspectOperations = async (link, base) => {
     link.operations = [];
-    const labels = ['新增', '新建', '编辑', '修改', '查看详情', '详情', '查看', '设计', '版本管理', '运行结果', '库表注册', '第三方接口注册', '资源导入', '编目', '需求任务'];
+    const labels = ['新增', '新建', '编辑', '修改', '查看详情', '详情', '查看', '设计', '版本管理', '运行结果', '库表注册', '第三方接口注册', '资源导入', '编目', '需求任务', '配置', '办理', '成员管理', '关联权限', '业务信息', '数据字典', '变更信息', '字段管理'];
     for (const label of labels) {
       const target = actionText(label);
       if (!await target.count()) continue;
@@ -154,6 +156,9 @@ module.exports = function install({ page, capture, fs, evRoot, journalName = 'cr
             try {
               await s.click(); await page.waitForTimeout(300);
               const options = await report(d.id + '-options' + i);
+              options.interaction = { type: 'expand-select', label: await s.evaluate(e =>
+                e.closest('.el-form-item')?.querySelector('label')?.innerText || '') };
+              fs.writeFileSync(evRoot + '/' + options.id + '.json', JSON.stringify(options, null, 2) + '\n');
               (op.optionEvidence ||= []).push(options.id);
               await s.click();
             } catch (e) { op.optionLimit = e.name; break; }
@@ -200,6 +205,10 @@ module.exports = function install({ page, capture, fs, evRoot, journalName = 'cr
       }
       try {
         await expandAll();
+        if (!await page.locator('.el-menu-item:visible').filter({hasText:link.name}).count()) {
+          await goto(new URL(route, page.url()).href);
+          await expandAll();
+        }
         const d = await menu(link.name, link.id, link.occurrence);
         link.path = d.url; link.evidence = d.id;
         link.status = d.blockedRequests.length ? 'opened-with-request-limits' : 'opened-review-content';

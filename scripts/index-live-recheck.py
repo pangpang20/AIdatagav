@@ -31,6 +31,27 @@ INVALID['Y-DIS-003'] = '菜单为库离线同步，实际路径和正文为表�
 INVALID['Y-DIS-003-op1'] = '来自错配的库离线菜单，实际为表同步新增；保留原表单但不用于库离线需求。'
 INVALID['P-DRMS-003-op1'] = '需求新增的截图、正文实际为新增项目，不能证明新增需求目标。'
 INVALID['Z-DS-006'] = 'kafka菜单路径下正文与表头仍为API数据源，不证明kafka数据源目标。'
+INVALID['N-TMS-009'] = '手工标签路径下正文仍为属性分析，且截图期间正文变化，不能证明手工标签目标。'
+INVALID['Q-GSPA-000-entry'] = '正文只显示外壳，元素采样与正文不在同一加载阶段，不作为门户完整目标。'
+INVALID['O-DSS-002'] = '标准术语路径下正文仍为标准文档管理，不证明标准术语目标。'
+INVALID['N-DACS-007'] = '资产画像路径下正文仍为全部审批记录，不证明资产画像目标。'
+INVALID.update({sid:'应用系统管理操作实际打开事项维护表单，不能用于应用系统字段。' for sid in [
+    'J-DCS-009','J-DCS-009-op1','J-DCS-009-op1-options0','J-DCS-009-op1-options1','J-DCS-009-op1-options2','J-DCS-009-op1-options3']})
+INVALID['N-DACS-004'] = '我的待办路径下正文仍为数据资产目录，不能证明待办目标。'
+INVALID['O-DSS-008'] = '标准字段审批路径下正文和表头仍为标准模型表申请，不证明字段审批。'
+INVALID['O-DSTS-003'] = '检测报告路径下正文仍为标准检测任务，不证明报告目标。'
+INVALID['N-DAP-007'] = '原子指标路径下正文和表头仍为业务过程，不证明原子指标目标。'
+INVALID['N-DAP-014'] = '汇总逻辑表路径下正文仍为事实逻辑表，不证明汇总逻辑表目标。'
+INVALID['N-DAP-021'] = '告警管理路径下正文和表头仍为监控规则管理，不证明告警目标。'
+INVALID['O-DSETS-005'] = '数据分级模板路径下正文仍为索引表管理，不证明数据分级模板目标。'
+INVALID['N-TMS-012'] = '文件标签路径下正文为资产标签；是否共用组件未确认，不用于定义文件标签特有行为。'
+INVALID['N-TMS-015'] = '我的申请路径下正文为变更管理；个人范围和共用组件关系未确认。'
+INVALID['U-BWM-model-diagram'] = '流程名称点击后路由与正文尚未切换，仍为模型列表；以diagram-ready为流程图证据。'
+INVALID['U-BWM-node-config'] = '配置弹窗尚未展开完整，仅取得节点属性面板；以node-config-ready及bottom为配置证据。'
+INVALID.update({f'H-GDRS-{i:03}':'点击相应上报菜单后仍停留在库表任务管理路径，未取得所选上报目标；不推断重定向原因。' for i in range(15, 24)})
+INVALID['H-SMS-019-op1'] = '点击新增后仍为代码映射列表及请求异常，未取得维护目标，不能补造映射表单。'
+INVALID['H-DS-002'] = '数据源管理路径下正文仍为驱动管理；截图期间正文变化，不能用作数据源列表证据，独立维护目标另行判断。'
+INVALID['H-SMS-020'] = '函数管理路径下正文仍为源与标准映射管理，不能证明函数列表；函数新增目标另行判断。'
 
 
 def target_limitation(d):
@@ -49,10 +70,40 @@ def target_limitation(d):
     return reason
 
 
+def canonical_groups(groups):
+    """Reconcile early flat menus with later observed hierarchy, without merging siblings."""
+    def leaf(link):
+        return link['name'].strip().lstrip('·').strip()
+    candidates = {}
+    for group in groups:
+        for link in group['links']:
+            if link.get('hierarchy') and link['hierarchy'] != link['name']:
+                candidates.setdefault((group.get('code', group.get('name')), leaf(link)), {})[link['hierarchy']] = link.get('path')
+    result = []
+    for group in groups:
+        links = []
+        for link in group['links']:
+            item = dict(link)
+            if not link.get('hierarchy'):
+                options = candidates.get((group.get('code', group.get('name')), leaf(link)), {})
+                exact = [name for name, path in options.items() if path and path == link.get('path')]
+                if len(exact) == 1:
+                    item['hierarchy'] = exact[0]
+                elif len(options) == 1:
+                    item['hierarchy'] = next(iter(options))
+                elif len(options) > 1:
+                    # Keep the raw ledger as history; an ambiguous flat observation
+                    # must not become an extra current menu or be assigned arbitrarily.
+                    continue
+            links.append(item)
+        result.append({**group, 'links':links})
+    return result
+
+
 def select_groups(groups):
     """Merge discovered links by hierarchy; preserve each attempt and good source."""
     latest = {}
-    for group in sorted(groups, key=lambda g: g.get('discoveredAt', '')):
+    for group in sorted(canonical_groups(groups), key=lambda g: g.get('discoveredAt', '')):
         code = group.get('code', group['name'])
         if code not in latest:
             latest[code] = {**group, 'links': []}
@@ -102,7 +153,7 @@ def main():
             '来源：用户手动登录后的可见受控Chrome，Playwright实际导航/展开/打开表单。视口1500×1000。', '',
             '截图与JSON保留页面业务原文，仅供本项目获授权人员查阅；不保存密码输入值、请求头、Cookie或Token。页面自身隐藏值不推测恢复。', '',
             '打开和取消是只读观察，不能证明保存、删除、授权、发布或任务执行成功。无效目标采样逐条保留并标记。', '',
-            '[总索引](../../README.md) · [逐链接状态](../../全链接核查清单.md)', '',
+            '[总索引](../../README.md) · [逐链接状态](../../全链接核查清单.md) · [运行尝试与限制](./运行尝试与限制.md)', '',
             '| 证据 | 北京时间 | 路径 | 用途/状态 | 限制 |', '|---|---|---|---|---|']
     for d in samples:
         stamp = datetime.fromisoformat(d['time'].replace('Z', '+00:00')).astimezone(timezone(timedelta(hours=8))).isoformat(timespec='seconds')
@@ -121,6 +172,7 @@ def main():
         groups += json.loads(extra.read_text(encoding='utf-8'))
     latest = select_groups(groups)
     limitations = {d['id']: d['limitation'] for d in samples if not d['targetValid']}
+    by_id = {d['id']:d for d in samples}
     out = ['# 全链接核查清单', '',
            '按真实展开的菜单登记发现范围。状态仅表示页面访问和证据取得，不是业务验收。未提交任何业务写入。', '',
            '后台复核证据及表单见[现场证据索引](./evidence/live-recheck-20261022/README.md)；账号弹窗见[用户菜单需求](./02-工作台/用户菜单补充清单.md)。', '',
@@ -130,19 +182,38 @@ def main():
               'navigation-error': '导航未完成，不能计为已覆盖',
               'target-not-observed': '点击后未取得独立目标，不能计为已覆盖',
               'write-risk-not-opened': '名称涉及写入，未直接执行'}
+    def attempt_cells(item):
+        sid = item.get('evidence')
+        evidence = f'[截图](./evidence/live-recheck-20261022/{sid}.png)' if sid else '未取得'
+        state = '无效目标：' + limitations[sid] if sid in limitations else states.get(item['status'], item['status'])
+        path = cell(item.get('path') or '未知')
+        history = item.get('attempts', [])
+        if history and item['status'] == 'pending':
+            state = '最近队列未处理'
+        prior = next((by_id[a['evidence']] for a in reversed(history)
+                      if a.get('evidence') in by_id and by_id[a['evidence']]['targetValid']), None)
+        if prior and (not sid or sid in limitations):
+            state += '；历史可用目标，不能据此称最近重访成功'
+            evidence += f'；[历史可用目标](./evidence/live-recheck-20261022/{prior["id"]}.png)'
+            path += '；历史：' + cell(prior['url'])
+        return path, state, evidence
+
     for g in latest.values():
         for link in g['links']:
-            sid = link.get('evidence')
-            evidence = f'[截图](./evidence/live-recheck-20261022/{sid}.png)' if sid else '未取得'
-            state = '无效目标：' + limitations[sid] if sid in limitations else states.get(link['status'], link['status'])
-            out.append(f"| {cell(g['name'])} | {cell(link.get('hierarchy', link['name']))} | {cell(link.get('path', '未知'))} | {state} | {evidence} |")
-            for op in link.get('operations', []):
-                sid = op.get('evidence')
-                evidence = f'[截图](./evidence/live-recheck-20261022/{sid}.png)' if sid else '未取得'
-                state = '无效目标：' + limitations[sid] if sid in limitations else states.get(op['status'], op['status'])
-                out.append(f"| {cell(g['name'])} | {cell(link.get('hierarchy', link['name']))} → {cell(op['name'])} | {cell(op.get('path', '未知'))} | {state} | {evidence} |")
+            path, state, evidence = attempt_cells(link)
+            out.append(f"| {cell(g['name'])} | {cell(link.get('hierarchy', link['name']))} | {path} | {state} | {evidence} |")
+            operations = {}
+            for attempt in [*link.get('attempts', []), link]:
+                for op in attempt.get('operations', []):
+                    operations.setdefault(op['name'], []).append(op)
+            for name, attempts in operations.items():
+                op = {**attempts[-1], 'attempts':attempts[:-1]}
+                path, state, evidence = attempt_cells(op)
+                if not any(o['name'] == name for o in link.get('operations', [])):
+                    state = '历史操作目标；' + state
+                out.append(f"| {cell(g['name'])} | {cell(link.get('hierarchy', link['name']))} → {cell(name)} | {path} | {state} | {evidence} |")
     out += ['', '## 核查边界', '',
-            '同一模块多轮取证时，按采样时间合并不同层级菜单并显示最近尝试；旧尝试保留于现场目录的crawl-ledger及证据索引。失败不会抹去历史证据，重复采样不相加为覆盖数量。', '',
+            '同一模块多轮取证时，按采样时间合并不同层级菜单并显示最近尝试；最近队列未处理、失败或无效时并列保留历史可用目标，历史维护操作也保留且单独标记。旧尝试保留于现场目录的crawl-ledger及证据索引。早期平铺菜单仅在名称或路径能唯一对应时并入后来实际层级；无法定位父级的旧同名项保留在原始日志，不额外计为当前菜单。失败不会抹去历史证据，重复采样不相加为覆盖数量。', '',
             '新增/编辑表单可打开，但保存、删除最终确认、改密、部门切换、退出、重发、启停、部署和流程状态改变未执行。', '',
             '列表中不同业务对象可能打开不同类型详情；本清单不把首条样本代表为全部状态与全部记录。无样本、动态字段、分页后记录、嵌套标签和权限分支按各模块缺口继续列明。']
     (ROOT / '全链接核查清单.md').write_text('\n'.join(out) + '\n', encoding='utf-8', newline='\n')

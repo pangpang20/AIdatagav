@@ -33,6 +33,29 @@ class LiveIndexTests(unittest.TestCase):
             self.assertTrue(idx.target_limitation(sample))
         self.assertFalse(idx.target_limitation({'id':'form', 'text':'新增', 'forms':[{'label':'名称'}]}))
 
+    def test_later_unprocessed_queue_keeps_prior_page_and_operation_visible(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); live = root / 'evidence/live-recheck-20261022'; live.mkdir(parents=True)
+            for sid, title in [('old', '列表'), ('add', '新增')]:
+                sample = {'id':sid, 'time':'2026-10-22T01:00:00Z', 'url':'/'+sid,
+                          'text':title, 'headers':['名称']}
+                (live/(sid+'.json')).write_text(json.dumps(sample), encoding='utf-8')
+            groups = [
+                {'code':'X', 'name':'模块', 'discoveredAt':'2026-10-22T01:00:00Z', 'links':[
+                    {'name':'列表', 'status':'opened-review-content', 'evidence':'old', 'path':'/old',
+                     'operations':[{'name':'新增', 'status':'opened-review-content', 'evidence':'add', 'path':'/add'}]}]},
+                {'code':'X', 'name':'模块', 'discoveredAt':'2026-10-22T02:00:00Z', 'links':[
+                    {'name':'列表', 'status':'pending'}]},
+            ]
+            (live/'crawl-ledger.json').write_text(json.dumps(groups), encoding='utf-8')
+            with patch.object(idx, 'ROOT', root), patch.object(idx, 'LIVE', live), redirect_stdout(StringIO()):
+                idx.main()
+            result = (root/'全链接核查清单.md').read_text(encoding='utf-8')
+            self.assertIn('最近队列未处理', result)
+            self.assertIn('历史可用目标', result)
+            self.assertIn('old.png', result)
+            self.assertIn('add.png', result)
+
     def test_stale_target_is_kept_and_cannot_appear_as_covered(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); live = root / 'evidence/live-recheck-20261022'; live.mkdir(parents=True)

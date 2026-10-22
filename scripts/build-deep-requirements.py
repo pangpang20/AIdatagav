@@ -36,7 +36,7 @@ PURPOSE = {
     'DTM': '按数据表控制预览、申请和使用权限',
     'OSS': '汇总目录运营、订阅和开发情况，并核对跨系统指标来源',
     'DSS': '维护数据标准及其版本、分类、代码集和关联关系',
-    'DQ': '管理质量规则、方案及结果，区分规则定义和检测执行',
+    'DQ': '在可访问的数据范围内组织SQL查询、历史和结果，区分查询定义与执行结果',
     'DSTS': '配置标准检测方案并读取检测报告',
     'DSETS': '组织数据分类分级、安全检测和人工复核',
     'DQTS': '通过字段分析和规则配置定义质量检测，并解释结果与异常',
@@ -67,6 +67,8 @@ DECISIONS = {
     'WO': '同一申请可产生多个节点工单；办理、撤回、催办和查看分别授权，不能按按钮名称推定执行结果。',
     'SPACE': '空间成员关系不等同部门或租户角色；空间切换后的资源范围和授权继承需确认。',
 }
+READ_ACTIONS = {'查看', '查看详情', '详情', '运行结果', '版本管理', '业务信息', '数据字典',
+                '变更信息', '查看流程图', '查看节点', '配置节点信息', '表单信息', '审核历史'}
 
 
 def cell(value):
@@ -79,6 +81,50 @@ def unique(values):
 
 def evidence_link(sid):
     return f'[{sid}](../evidence/live-recheck-20261022/{sid}.png) / [页面元素](../evidence/live-recheck-20261022/{sid}.json)'
+
+
+def prerequisite(sample):
+    """Do not describe a prerequisite dialog as an opened maintenance form."""
+    if sample.get('forms'):
+        return ''
+    lines = (sample.get('text') or '').splitlines()
+    for line in lines[-12:]:
+        if re.fullmatch(r'请(?:先)?选择(?:分类|数据源|分组|目录)[!！。]?', line.strip()) or line.strip() == '请先初始化':
+            return line.strip()
+    return ''
+
+
+def operation_scope(sample):
+    """Qualify a reviewed subobject without inferring from the clicked label."""
+    if sample.get('url') == '/dacs/dataAsset/assetCatalog':
+        lines = (sample.get('text') or '').splitlines()[-12:]
+        if any(line.strip() in {'添加资产类目', '修改资产类目'} for line in lines):
+            return '资产类目'
+    return ''
+
+
+def historical_delete(code, name, records):
+    leaf = name.split(' → ')[-1].strip().lstrip('·').strip().casefold()
+    matches = [r for r in records if r['module'] == code and r['name'].strip().casefold() == leaf]
+    if len(matches) == 1:
+        op = matches[0]['operations'].get('delete', {})
+        if op.get('opened') and op.get('confirmationObserved') and op.get('evidence'):
+            links = '；'.join(f'[{sid}](../evidence/{sid}.png)' for sid in op['evidence'])
+            return '历史确认框：'+links+'；最终删除未执行，引用保护与真实结果待确认'
+    return '未取得本轮确认页；未自动触发未知删除入口，适用性与删除保护待确认'
+
+
+def business_notes(code, samples, notes_path=None):
+    path = notes_path or Path(__file__).with_name('deep-business-notes.json')
+    notes = json.loads(path.read_text(encoding='utf-8')).get(code, [])
+    out = []
+    for note in notes:
+        if not all(sid in samples and not IDX.target_limitation(samples[sid]) for sid in note['evidence']):
+            continue
+        out += [f'### {note["title"]}', '', '【页面观察】'+note['observation'], '',
+                '【拟定需求】'+note['proposal'], '', '【待确认】'+note['gap'], '',
+                '来源：'+'；'.join(evidence_link(sid) for sid in note['evidence'])+'。', '']
+    return out
 
 
 def form_rows(sample):
@@ -95,10 +141,14 @@ def form_rows(sample):
             flags = []
             if field.get('readonly'): flags.append('只读输入/选择展示')
             if field.get('disabled'): flags.append('禁用')
+            marker = '页面星标' if form.get('requiredMarker') else (
+                '页面标签含*；必填语义待确认' if re.match(r'^\s*\*', form.get('label', ''))
+                else '未观察到星标，不等于后端可空')
             rows.append((form.get('label') or field.get('placeholder') or '无可见标签',
-                         '页面星标' if form.get('requiredMarker') else '未观察到星标，不等于后端可空',
+                         marker,
                          field.get('type') or '组合控件', '；'.join(limits) or '未取得明确上下限',
-                         '；'.join(flags) or '未禁用'))
+                         '；'.join(flags) or '未禁用', field.get('placeholder') or '无',
+                         form.get('text', '').strip() or '无'))
     return rows
 
 
@@ -111,8 +161,11 @@ def load_groups(live):
 
 def collect(groups, samples):
     objects = {}
-    for group in groups:
+    for group in IDX.canonical_groups(groups):
         code = group['code']
+        if not group['links'] and group.get('entry') in samples and not IDX.target_limitation(samples[group['entry']]):
+            objects.setdefault(code, {})['主页面'] = {'name':'主页面', 'source':group['entry'],
+                'attempts':[{'status':'opened-review-content'}], 'operations':{}}
         for link in group['links']:
             name = link.get('hierarchy', link['name'])
             obj = objects.setdefault(code, {}).setdefault(name, {'name':name, 'attempts':[], 'operations':{}})
@@ -147,7 +200,9 @@ def build(root=ROOT):
             if obj.get('source'):
                 features.append({'key':obj['name']+'::页面', 'name':obj['name'], 'kind':'页面', 'source':obj['source'], 'object':obj})
             for op in obj['operations'].values():
-                features.append({'key':obj['name']+'::'+op['name'], 'name':obj['name']+' → '+op['name'], 'kind':op['name'], 'source':op['source'], 'object':obj})
+                extras = [sid for sid in op.get('optionEvidence', []) if sid in samples and not IDX.target_limitation(samples[sid])]
+                scope = operation_scope(samples[op['source']])
+                features.append({'key':obj['name']+'::'+op['name'], 'name':obj['name']+' → '+op['name']+('（'+scope+'）' if scope else ''), 'kind':op['name'], 'source':op['source'], 'extraSources':extras, 'object':obj})
         if not features: continue
         for feature in features:
             rid = previous.get(feature['key'])
@@ -161,8 +216,21 @@ def build(root=ROOT):
         for obj in objects[code].values():
             last = obj['attempts'][-1]
             source = evidence_link(obj['source']) if obj.get('source') else '【待确认】未取得可用目标正文'
-            ops = '、'.join(obj['operations']) or '未取得独立操作目标；不能据此判定产品不支持'
+            ops = '、'.join(name + ('（仅取得前置提示，未到表单）' if prerequisite(samples[op['source']]) else '') for name, op in obj['operations'].items()) or '未取得独立操作目标；不能据此判定产品不支持'
             out.append(f'| {cell(obj["name"])} | {source} | {cell(ops)} | {cell(last["status"])}；不等同业务通过 |')
+        out += ['', '### 逐对象增删改查边界', '',
+                '“未取得”表示本轮缺少独立目标，不表示产品一定支持或不支持。审批、日志、统计和运行实例等对象是否允许人工维护需单独判断。旧确认框证据继续保留于模块正文。', '',
+                '| 对象/分区 | 查询/展示 | 详情 | 新增/注册/导入 | 编辑/修改 | 删除 | 其他已进入目标 |', '|---|---|---|---|---|---|---|']
+        for obj in objects[code].values():
+            ops = obj['operations']
+            def op_links(names):
+                selected = [('仅前置提示；' if prerequisite(samples[op['source']]) else '') + evidence_link(op['source']) for name, op in ops.items() if name in names]
+                return '；'.join(selected) or '未取得；适用性和目标待确认'
+            columns = [obj['name'], evidence_link(obj['source']) if obj.get('source') else '未取得',
+                       op_links(['查看','详情','查看详情']), op_links(['新增','新建','库表注册','第三方接口注册','资源导入']),
+                       op_links(['编辑','修改']), historical_delete(code, obj['name'], registry.get('crudObjects', [])),
+                       '、'.join(name for name in ops if name not in ['查看','详情','查看详情','新增','新建','库表注册','第三方接口注册','资源导入','编辑','修改']) or '未取得']
+            out.append('| '+' | '.join(cell(v) for v in columns)+' |')
         out += ['', '## 3. 编号功能需求', '']
         field_sections = []
         cases = []
@@ -176,48 +244,75 @@ def build(root=ROOT):
             actions = unique(a.get('text') or a.get('title') for a in d.get('actions', []))
             out += [f'### {rid} {feature["name"]}', '',
                     f'**业务目的**：使用者在“{feature["object"]["name"]}”处理对应对象；与其他菜单分别保留查询条件、对象标识和处理状态。', '',
-                    f'【页面观察】实际路径为`{d["url"]}`。' + (f'当前可见字段：{"、".join(labels)}。' if labels else ''), '']
+                    f'【页面观察】实际路径为`{d["url"]}`。' + (f'当前页面标题：{"、".join(unique(d.get("pageTitles", [])))}。' if d.get('pageTitles') else '') + (f'当前可见字段：{"、".join(labels)}。' if labels else ''), '']
+            if d.get('tabs'):
+                out += ['【页面观察】可见标签：'+'、'.join(unique(d['tabs']))+'。仅标签存在不能证明其内容已打开；未单独取证的标签列为待确认。', '']
+            instructions = unique(line.strip() for line in d.get('text', '').splitlines()
+                                  if len(line) < 240 and any(word in line for word in ['支持格式', '支持上传', '最多上传', '单个文件', '文件大小', '格式要求', '注:', '注：', '注意:', '注意：']))
+            if instructions:
+                out += ['【页面文案】'+ '；'.join(instructions)+'。这是页面声明，尚未通过上传、执行或后端边界测试验证。', '']
             if kind == '页面':
                 out += ['**用户操作与系统响应**：', '',
                         f'1. 从“{feature["name"]}”进入目标页，先核对当前部门、空间及对象范围。',
                         '2. ' + ('页面提供的输入或选择提示为：'+'、'.join(conditions)+'。其匹配方式、默认值和多条件组合语义待确认。' if conditions else '当前样本没有可用于完整定义检索条件的输入，不能推测支持全文或模糊查询。'),
                         '3. ' + ('列表展示：'+'、'.join(headers)+'。记录条数、名称和当时状态属于样本。' if headers else '该页不按普通表格定义；实际卡片、图形或前置提示以来源截图为准。'),
                         '4. ' + ('可见操作包括：'+'、'.join(actions)+'。只有本文件另列并附目标页证据的操作才算已进入；其余仅确认入口可见。' if actions else '未取得可独立识别的行内操作；不推定存在维护能力。'), '']
+            elif prerequisite(d):
+                out += [f'【操作观察】点击“{kind}”后页面提示“{prerequisite(d)}”。本次停留在前置条件提示，未取得实际维护表单；不能据此补造字段、保存流程或后端规则。', '',
+                        '【待确认】分类/数据源等前置对象的选择范围、默认值、继承与切换行为；满足前置条件后的实际目标仍需独立取证。', '']
+            elif kind in READ_ACTIONS:
+                out += ['**读取流程与内容**：', '',
+                        f'1. 从“{feature["object"]["name"]}”打开“{kind}”，读取本节引用的目标。',
+                        '2. ' + ('核对'+ '、'.join(labels)+'；禁用与只读控件表示当前展示状态，不代表可直接维护。' if labels else '按目标正文、表格和图形读取内容；没有字段的标签不补造编辑表单。'),
+                        '3. ' + ('结果表列：'+'、'.join(headers)+'。仅为当前样本；不推导状态全集及计算口径。' if headers else '页面没有普通结果表，实际内容见来源截图。'), '',
+                        '【拟定需求】目标内容按所选对象标识、版本和当前权限读取；切换对象时清理旧内容，空结果、读取失败及无权访问分别提示，返回恢复查询上下文。读取页面不应提交业务变更。', '']
             else:
                 out += ['**操作流程**：', '',
                         f'1. 从“{feature["object"]["name"]}”点击“{kind}”，取得本节所引目标。',
                         '2. ' + ('逐项处理'+'、'.join(labels)+'；字段星标、长度和禁用状态见第4节。' if labels else '目标页没有取得完整可维护字段，不能依入口名称补造表单。'),
                         '3. 页面中的最终保存、提交、删除、运行或审批动作未执行。取消后的返回位置仅在独立操作记录明确记载时作为已观察结果。', '',
                         '【拟定需求】维护表单提交前逐字段校验；出错定位字段并保留非秘密输入。保存期间防重复提交；超时先核查结果再允许重试。修改按稳定标识回读目标与版本，取消不改变原记录。以上为拟定开发行为。', '']
+            if kind != '页面' and operation_scope(d):
+                out += ['【操作观察】本次打开的是“'+operation_scope(d)+'”维护弹窗；不作为资产登记或资产记录编辑的目标证据。自定义控件标签与原始文字见来源，未提取到HTML表单属性不代表该弹窗无字段。', '']
             if '暂无数据' in d.get('text',''):
                 out += ['【页面观察】采样中出现“暂无数据”；它可能属于列表、下拉或子表，须结合截图定位。不能据此宣称整个模块无数据，也不能用空列表证明查询失败。', '']
             if '请求异常' in d.get('text',''):
                 out += ['【待确认】本样本可见“请求异常”；它不证明根因、持续故障或业务无记录。保留已加载字段，未加载部分不用于定义功能。', '']
             if '初始化' in d.get('text','') and '请先' in d.get('text',''):
                 out += ['【页面文案】存在初始化前置提示；本轮未初始化，后续字段和可执行能力待取得配置后的证据。', '']
+            source_ids = [feature['source'], *feature.get('extraSources', [])]
             out += [f'【拟定需求】业务依赖：{DECISIONS.get(code, "对象唯一范围、引用关系、生命周期状态、读写权限及生效条件需逐项确认；不能从当前记录样本推定全量规则。")}', '',
-                    f'**来源与验证**：{evidence_link(feature["source"])}。仅验证已记载的页面打开和元素读取；接口、持久化、权限隔离和最终业务结果未验证。', '']
+                    '**来源与验证**：'+'；'.join(evidence_link(sid) for sid in source_ids)+'。仅验证已记载的页面打开和元素读取；接口、持久化、权限隔离和最终业务结果未验证。', '']
             rows = form_rows(d)
             if rows:
-                field_sections += [f'#### {rid} 字段', '', '| 标签 | 必填依据 | 控件 | 当前约束 | 状态 |', '|---|---|---|---|---|']
+                field_sections += [f'#### {rid} 字段', '', '| 标签 | 必填依据 | 控件 | 当前约束 | 状态 | 输入提示（页面文案） | 同屏字段文案/候选样本 |', '|---|---|---|---|---|---|---|']
                 field_sections += ['| '+' | '.join(cell(x) for x in row)+' |' for row in rows]
                 options = unique(o.get('text','') for o in d.get('options', []))
                 if options: field_sections += ['', '【页面观察】当前同屏选项：'+ '、'.join(options)+'。选项与字段的归属按截图核对；用户、部门和数据源名称为动态样本，不是固定枚举。']
+                for sid in feature.get('extraSources', []):
+                    option_sample = samples[sid]
+                    values = unique(o.get('text', '') for o in option_sample.get('options', []))
+                    label = option_sample.get('interaction', {}).get('label') or '下拉控件（字段归属见截图）'
+                    field_sections += ['', f'【操作观察】展开“{label}”：'+ ('、'.join(values) if values else '本次未取得候选文字，不判定产品无候选')+'。来源：'+evidence_link(sid)+'。仅当前账号和上下文候选，不作为固定枚举或候选总量上限。']
                 field_sections += ['', '未给出单位的数字属性不能自行补单位；password上的min不等于minlength；只读选择输入不等于该业务字段不可选择。', '']
             suffix = rid.split('-')[-1]
             for n, scenario in enumerate([
+                '未选分类、数据源或分组时只提示前置条件，不创建业务记录',
+                '满足前置条件后进入正确对象表单；取消返回时不丢失原查询和分类上下文',
+                '前置对象失效或失权时拒绝继续，失败与无候选分别提示并允许恢复',
+            ] if prerequisite(d) else [
                 '有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文',
                 '加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件',
                 '越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权',
-            ] if kind == '页面' else [
+            ] if kind == '页面' or kind in READ_ACTIONS else [
                 '打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则',
                 '取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果',
                 '无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示',
             ], 1):
                 cases.append(f'| {code}-AC-{500+len(cases):03} | {cell(scenario)} | {rid} | 【拟定，未执行】 |')
-            registered.append({'id':rid, 'key':feature['key'], 'evidence':[feature['source']]})
+            registered.append({'id':rid, 'key':feature['key'], 'evidence':source_ids})
         out += ['## 4. 字段、枚举和约束', '', '下表逐项记录控件事实，不等同服务端规则。必填星标、HTML属性、动态候选与建议分别解释。', '', *field_sections,
-                '## 5. 主要流程', '', f'业务主线：{PURPOSE.get(code, "进入对象页，按权限读取并处理对象")}。', '',
+                '## 5. 主要流程', '', *business_notes(code, samples), f'业务主线：{PURPOSE.get(code, "进入对象页，按权限读取并处理对象")}。', '',
                 DECISIONS.get(code, '跨模块关联仅在页面显示引用时建立；接口和状态契约待评审。'), '',
                 '【拟定需求】查询→识别对象→打开目标→核对关联与当前版本→编辑草稿→人工确认→提交→回读结果。正式写入、审批或运行必须有独立授权和服务端结果；本次只执行其中的页面读取部分。', '',
                 '## 6. 验收用例', '', '| 编号 | 场景 | 关联需求 | 执行状态 |', '|---|---|---|---|', *cases, '',
