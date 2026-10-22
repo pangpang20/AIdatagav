@@ -26,3 +26,4 @@ replay_pid*
 # Python documentation validation caches
 __pycache__/
 *.pyc
+doc/requirements/evidence/live-recheck-20261022/pause-requested
