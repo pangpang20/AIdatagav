@@ -6,7 +6,7 @@ const test = require('node:test');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
-const { augmentFile, buttonNamesFromControls, buildSpec, fieldName, operationType } = require('../scripts/augment-requirement-specs');
+const { augmentFile, buttonNamesFromControls, buildSpec, fieldName, operationType, syncBusinessAcceptance } = require('../scripts/augment-requirement-specs');
 
 function formalDocuments() {
   return fs.readdirSync(REQUIREMENTS, { withFileTypes: true })
@@ -60,12 +60,13 @@ test('all formal requirements contain the eight implementation specification sec
       assert.equal(cases.length, 5, `${requirement.id} should have five acceptance checks`);
       for (const item of cases) {
         const columns = item.split('|').slice(1, -1).map((column) => column.trim());
-        assert.equal(columns.length, 3, `${requirement.id} acceptance row must have three columns`);
+        assert.equal(columns.length, 4, `${requirement.id} acceptance row must include its requirement reference`);
         const caseId = columns[0];
         assert.match(caseId, new RegExp(`^${requirement.id.split('-')[0]}-AC-\\d{3}$`, 'u'));
         assert.ok(!seenAcceptance.has(caseId), `duplicate acceptance ${caseId}`);
         seenAcceptance.add(caseId);
-        assert.equal(columns[2], '【拟定，未执行】', `${caseId} must remain unexecuted`);
+        assert.equal(columns[2], requirement.id, `${caseId} must reference its owning requirement`);
+        assert.equal(columns[3], '【拟定，未执行】', `${caseId} must remain unexecuted`);
       }
       assert.match(requirement.text, /方法与相对路径|读取\/查询请求方法与路径|方法与路径/u, `${requirement.id} API status missing`);
       assert.match(requirement.text, /【待确认】允许访问本页面/u, `${requirement.id} permission status missing`);
@@ -133,6 +134,50 @@ test('refreshing an unchanged document does not write it again', () => {
     assert.equal(fs.readFileSync(file, 'utf8'), generated);
   } finally {
     process.argv.splice(0, process.argv.length, ...originalArgs);
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});
+
+test('refresh preserves published acceptance IDs and new requirements allocate unused IDs', () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'requirement-ids-'));
+  const file = path.join(directory, '需求说明.md');
+  const originalArgs = process.argv.slice();
+  try {
+    fs.writeFileSync(file, '### TST-001 已发布需求\n' + buildSpec('TST-001', '已发布需求', '', [], 101), 'utf8');
+    fs.appendFileSync(file, '\n### TST-002 新增需求\n', 'utf8');
+    process.argv.push('--refresh');
+    augmentFile(file);
+    const text = fs.readFileSync(file, 'utf8');
+    const ids = [...text.matchAll(/^\| (TST-AC-\d{3}) \|/gm)].map((match) => match[1]);
+    assert.deepEqual(ids, Array.from({ length: 10 }, (_, index) => `TST-AC-${index + 101}`));
+    assert.equal(augmentFile(file).changed, false);
+  } finally {
+    process.argv.splice(0, process.argv.length, ...originalArgs);
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});
+
+test('business acceptance registry follows document order without changing historical evidence or execution status', () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'requirement-registry-'));
+  try {
+    fs.mkdirSync(path.join(directory, '01-样例'));
+    fs.writeFileSync(path.join(directory, '01-样例', '需求说明.md'),
+      '### TST-001 样例\n' + buildSpec('TST-001', '样例', '', [], 11) +
+      '\n## 6. 原有验收\n| TST-AC-001 | 原有检查 | TST-001 | 【拟定，未执行】 |\n', 'utf8');
+    const module = {
+      code: 'TST', directory: '01-样例', businessAcceptance: ['TST-AC-001'],
+      researchSha256: 'unchanged-archive-hash', acceptance: [{ id: 'TST-AC-001', executed: false }],
+    };
+    const manifest = path.join(directory, '采样清单.json');
+    fs.writeFileSync(manifest, JSON.stringify({ modules: [module], samples: [{ id: 'historic' }] }, null, 2) + '\n');
+    assert.equal(syncBusinessAcceptance(directory), 1);
+    const updated = JSON.parse(fs.readFileSync(manifest, 'utf8'));
+    assert.deepEqual(updated.modules[0].businessAcceptance, ['TST-AC-011', 'TST-AC-012', 'TST-AC-013', 'TST-AC-014', 'TST-AC-015', 'TST-AC-001']);
+    assert.equal(updated.modules[0].researchSha256, module.researchSha256);
+    assert.deepEqual(updated.modules[0].acceptance, module.acceptance);
+    assert.deepEqual(updated.samples, [{ id: 'historic' }]);
+    assert.equal(syncBusinessAcceptance(directory), 0);
+  } finally {
     fs.rmSync(directory, { recursive: true, force: true });
   }
 });

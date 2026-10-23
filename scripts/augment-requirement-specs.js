@@ -379,13 +379,13 @@ function buildSpec(id, title, block, sourceIds, acceptanceStart = 1) {
     '',
     `#### 5. 验收标准（${id}）`,
     '',
-    '| 验收编号 | 可执行检查项 | 状态 |',
-    '|---|---|---|',
-    `| ${acceptanceId(0)} | 页面打开后标题、路由、字段顺序、按钮和${write ? '写入对象' : '查询对象'}与证据一致。 | 【拟定，未执行】 |`,
-    `| ${acceptanceId(1)} | 合法输入${write ? '提交后显示服务端成功结果并回读目标记录' : '查询后展示结果、空结果和分页状态'}；不把页面文案当成后端成功。 | 【拟定，未执行】 |`,
-    `| ${acceptanceId(2)} | ${type === 'create' ? '必填缺失、长度/格式错误、重复对象和服务端校验失败' : type === 'update' ? '字段校验失败、对象失效和并发版本冲突' : type === 'delete' ? '存在引用、目标失效和权限不足' : type === 'execute' ? '前置状态不满足、重复触发和权限不足' : '空结果、无权限和服务端查询失败'}时显示相应状态，不伪报成功并保留可恢复上下文。 | 【拟定，未执行】 |`,
-    `| ${acceptanceId(3)} | 网络超时、服务不可用、权限不足和${type === 'read' ? '查询状态恢复' : '并发或重复请求'}均有明确处理；重试不会重复写入或覆盖新版本。 | 【拟定，未执行】 |`,
-    `| ${acceptanceId(4)} | 取消、关闭、返回和重复点击符合交互规则；${write ? '取消不新增/修改/删除/执行记录。' : '新条件不会被旧响应覆盖。'} | 【拟定，未执行】 |`,
+    '| 验收编号 | 可执行检查项 | 关联需求 | 状态 |',
+    '|---|---|---|---|',
+    `| ${acceptanceId(0)} | 页面打开后标题、路由、字段顺序、按钮和${write ? '写入对象' : '查询对象'}与证据一致。 | ${id} | 【拟定，未执行】 |`,
+    `| ${acceptanceId(1)} | 合法输入${write ? '提交后显示服务端成功结果并回读目标记录' : '查询后展示结果、空结果和分页状态'}；不把页面文案当成后端成功。 | ${id} | 【拟定，未执行】 |`,
+    `| ${acceptanceId(2)} | ${type === 'create' ? '必填缺失、长度/格式错误、重复对象和服务端校验失败' : type === 'update' ? '字段校验失败、对象失效和并发版本冲突' : type === 'delete' ? '存在引用、目标失效和权限不足' : type === 'execute' ? '前置状态不满足、重复触发和权限不足' : '空结果、无权限和服务端查询失败'}时显示相应状态，不伪报成功并保留可恢复上下文。 | ${id} | 【拟定，未执行】 |`,
+    `| ${acceptanceId(3)} | 网络超时、服务不可用、权限不足和${type === 'read' ? '查询状态恢复' : '并发或重复请求'}均有明确处理；重试不会重复写入或覆盖新版本。 | ${id} | 【拟定，未执行】 |`,
+    `| ${acceptanceId(4)} | 取消、关闭、返回和重复点击符合交互规则；${write ? '取消不新增/修改/删除/执行记录。' : '新条件不会被旧响应覆盖。'} | ${id} | 【拟定，未执行】 |`,
     '',
     `#### 6. 权限与安全要求（${id}）`,
     '',
@@ -419,11 +419,18 @@ function augmentFile(file, acceptanceCounters = new Map()) {
   const acceptanceStarts = new Map();
   if (matches.length) {
     const prefix = matches[0][1].split('-')[0];
-    let nextAcceptance = acceptanceCounters.get(prefix);
-    if (nextAcceptance == null) nextAcceptance = maxAcceptanceSequence(path.dirname(file), prefix) + 1;
-    for (const match of matches) {
-      acceptanceStarts.set(match.index, nextAcceptance);
-      nextAcceptance += 5;
+    let nextAcceptance = Math.max(acceptanceCounters.get(prefix) || 1, maxAcceptanceSequence(path.dirname(file), prefix) + 1);
+    for (let index = 0; index < matches.length; index += 1) {
+      const match = matches[index];
+      const block = text.slice(match.index, matches[index + 1]?.index ?? text.length);
+      const markerIndex = block.indexOf(`<!-- 完整规格:${match[1]} -->`);
+      const existing = markerIndex < 0 ? null : block.slice(markerIndex).match(new RegExp(`^\\| ${prefix}-AC-(\\d{3}) \\|`, 'm'));
+      if (existing) {
+        acceptanceStarts.set(match.index, Number(existing[1]));
+      } else {
+        acceptanceStarts.set(match.index, nextAcceptance);
+        nextAcceptance += 5;
+      }
     }
     acceptanceCounters.set(prefix, nextAcceptance);
   }
@@ -473,11 +480,27 @@ function maxAcceptanceSequence(directory, prefix) {
   for (const name of ['需求说明.md', '子页面与操作细化.md']) {
     const file = path.join(directory, name);
     if (!fs.existsSync(file)) continue;
-    const text = withoutGeneratedSpecs(read(file));
+    const text = read(file);
     const expression = new RegExp(`${prefix}-AC-(\\d{3})`, 'g');
     for (const match of text.matchAll(expression)) maximum = Math.max(maximum, Number(match[1]));
   }
   return maximum;
+}
+
+function syncBusinessAcceptance(root = REQUIREMENTS) {
+  const file = path.join(root, '采样清单.json');
+  const manifest = JSON.parse(read(file));
+  let changed = 0;
+  for (const module of manifest.modules) {
+    if (!Array.isArray(module.businessAcceptance)) continue;
+    const text = read(path.join(root, module.directory, '需求说明.md'));
+    const cases = [...text.matchAll(/^\| ([A-Z]+-AC-\d{3}) \|/gm)].map((match) => match[1]);
+    if (JSON.stringify(cases) === JSON.stringify(module.businessAcceptance)) continue;
+    module.businessAcceptance = cases;
+    changed += 1;
+  }
+  if (changed) fs.writeFileSync(file, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+  return changed;
 }
 
 function run() {
@@ -492,9 +515,10 @@ function run() {
   const acceptanceCounters = new Map();
   const results = files.map((file) => augmentFile(file, acceptanceCounters));
   const changed = results.filter((result) => result.changed);
-  console.log(JSON.stringify({ files: results.length, changed: changed.length, requirements: results.reduce((n, result) => n + result.requirements, 0) }));
+  const registriesChanged = syncBusinessAcceptance();
+  console.log(JSON.stringify({ files: results.length, changed: changed.length, registriesChanged, requirements: results.reduce((n, result) => n + result.requirements, 0) }));
 }
 
 if (require.main === module) run();
 
-module.exports = { buttonNamesFromControls, fieldName, buildSpec, operationType, augmentFile, maxAcceptanceSequence, withoutGeneratedSpecs };
+module.exports = { buttonNamesFromControls, fieldName, buildSpec, operationType, augmentFile, maxAcceptanceSequence, withoutGeneratedSpecs, syncBusinessAcceptance };

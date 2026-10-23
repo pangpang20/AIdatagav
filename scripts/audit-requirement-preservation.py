@@ -11,11 +11,20 @@ normalizer = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(normalizer)
 
 
-def equivalent(before, after, suffix):
+def equivalent(before, after, suffix, editorial_revision=None):
     if suffix == '.png':
         return before == after
-    expected = normalizer.normalize_text(before.decode('utf-8'), markdown=suffix == '.md').encode('utf-8')
-    return expected == after
+    expected = normalizer.normalize_text(before.decode('utf-8'), markdown=suffix == '.md')
+    if editorial_revision is not None:
+        if suffix != '.md' or hashlib.sha256(expected.encode('utf-8')).hexdigest() != editorial_revision.get('sourceSha256'):
+            return False
+        for replacement in editorial_revision.get('replacements', []):
+            original = replacement.get('before', '')
+            count = replacement.get('occurrences', 0)
+            if not original or count < 1 or expected.count(original) != count:
+                return False
+            expected = expected.replace(original, replacement.get('after', ''))
+    return expected.encode('utf-8') == after
 
 
 def audit(repo, baseline):
@@ -30,8 +39,8 @@ def audit(repo, baseline):
     for module in manifest['modules']:
         folder = docs / module['directory']
         archive = folder / module['researchFile']
-        if not equivalent(previous(folder / '需求说明.md'), archive.read_bytes(), '.md'):
-            errors.append(module['code'] + ': archive differs beyond route normalization')
+        if not equivalent(previous(folder / '需求说明.md'), archive.read_bytes(), '.md', module.get('researchEditorialRevision')):
+            errors.append(module['code'] + ': archive differs beyond approved normalization/editorial revision')
         if hashlib.sha256(archive.read_bytes()).hexdigest() != module['researchSha256']:
             errors.append(module['code'] + ': archive registry hash mismatch')
     if not equivalent(previous(docs / '00-总览与跨模块流程.md'), (docs / '调研总览.md').read_bytes(), '.md'):

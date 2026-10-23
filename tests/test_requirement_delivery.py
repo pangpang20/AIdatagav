@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import unittest
 from pathlib import Path
 
@@ -84,6 +85,29 @@ class RequirementDeliveryTests(unittest.TestCase):
         self.assertEqual([], v.supplement_errors(text, record))
         self.assertTrue(v.supplement_errors(text.replace('【拟定，未执行】', '【已执行】'), record))
         self.assertTrue(v.supplement_errors(text.replace('UAC-001 |', 'UAC-999 |'), record))
+
+    def test_archive_editorial_revision_is_exact_and_does_not_allow_evidence_changes(self):
+        spec = importlib.util.spec_from_file_location('preservation_revision', SCRIPT.with_name('audit-requirement-preservation.py'))
+        audit = importlib.util.module_from_spec(spec); spec.loader.exec_module(audit)
+        before='密码控件为 password，未观察到 maxlength。\n'.encode('utf8')
+        after='密码控件为 password。\n'.encode('utf8')
+        revision={'sourceSha256':hashlib.sha256(before).hexdigest(),
+                  'replacements':[{'before':'，未观察到 maxlength','after':'','occurrences':1}]}
+        self.assertTrue(audit.equivalent(before,after,'.md',revision))
+        self.assertFalse(audit.equivalent(before,after.replace(b'password',b'text'),'.md',revision))
+        self.assertFalse(audit.equivalent(before,after,'.json',revision))
+        revision['sourceSha256']='incorrect'
+        self.assertFalse(audit.equivalent(before,after,'.md',revision))
+
+    def test_archive_editorial_revision_rejects_wrong_occurrence_count(self):
+        spec = importlib.util.spec_from_file_location('preservation_count', SCRIPT.with_name('audit-requirement-preservation.py'))
+        audit = importlib.util.module_from_spec(spec); spec.loader.exec_module(audit)
+        before=b'one missing phrase\ntwo missing phrase\n';after=b'one\ntwo\n'
+        revision={'sourceSha256':hashlib.sha256(before).hexdigest(),
+                  'replacements':[{'before':' missing phrase','after':'','occurrences':1}]}
+        self.assertFalse(audit.equivalent(before,after,'.md',revision))
+        revision['replacements'][0]['occurrences']=2
+        self.assertTrue(audit.equivalent(before,after,'.md',revision))
 
 
 if __name__ == '__main__':

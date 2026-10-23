@@ -143,6 +143,20 @@ class BusinessRequirementsValidationTests(unittest.TestCase):
     def test_unobserved_operation_cannot_disappear(self):
         self.assertTrue(any('operation coverage' in x for x in self.check(self.text.replace('| DS-108 | 修改来源 | 可修改范围待确认 |',''))))
 
+    def test_nested_spec_sections_do_not_replace_module_pending_section(self):
+        nested='#### 7. 页面布局与状态（DS-107）\n布局。\n#### 8. 证据与待确认项（DS-107）\n来源。\n'
+        text=self.text.replace('## 4. 字段', nested+'## 4. 字段')
+        self.assertEqual([],self.check(text))
+        missing=text.replace('| DS-108 | 修改来源 | 可修改范围待确认 |','')
+        self.assertTrue(any('operation coverage' in x for x in self.check(missing)))
+
+    def test_nested_source_table_cannot_replace_module_source_section(self):
+        nested='#### 8. 证据与待确认项（DS-107）\n| DS-107 | [E1](../evidence/E1.png) | 内部来源 |\n'
+        text=self.text.replace('## 4. 字段',nested+'## 4. 字段')
+        self.assertEqual([],self.check(text))
+        text=text.replace('## 8. 依据\n| DS-107 | [E1](../evidence/E1.png) | 附录 |','## 8. 依据\n无来源')
+        self.assertTrue(any('missing business source' in x for x in self.check(text)))
+
     def test_business_fields_reject_invented_limit(self):
         self.assertTrue(any('unsupported business constraint' in x for x in self.check(self.text.replace('上限100字符','上限200字符'))))
 

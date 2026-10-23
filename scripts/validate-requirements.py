@@ -191,6 +191,11 @@ def archive_errors(path,module):
         return [f'{module["code"]}: research archive hash mismatch']
     return []
 
+def module_section(text,number):
+    """Read an exact level-two section, excluding similarly numbered nested specs."""
+    match=re.search(r'^## '+str(number)+r'\. [^\n]*\n(.*?)(?=^## |\Z)',text,re.M|re.S)
+    return match.group(1) if match else ''
+
 def business_errors(text,module,research,data):
     """Validate readable drafts separately from historical observation records."""
     errors=[];code=module['code'];registry=module.get('businessRequirements',[])
@@ -207,7 +212,7 @@ def business_errors(text,module,research,data):
         refs=re.findall(r'(?<![A-Z-])[A-Z]+-\d{3}\b',row)
         if not refs or any(ref not in ids for ref in refs):
             errors.append(f'{code}: invalid business acceptance reference')
-    source_section=text.split('## 8.',1)[-1]
+    source_section=module_section(text,8)
     for req in registry:
         rid=req['id']
         match=re.search(r'^### '+re.escape(rid)+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
@@ -228,7 +233,7 @@ def business_errors(text,module,research,data):
             elif data[key].get('quality',{}).get('targetValid') is False:
                 errors.append(f'{rid}: invalid business source {key}')
     historical=set(re.findall(r'^### ([A-Z]+-\d{3}) .+ — (?:查询与列表|详情|新增|编辑|删除确认)$',research,re.M))
-    pending_section=text.split('## 7.',1)[-1].split('## 8.',1)[0]
+    pending_section=module_section(text,7)
     pending=set(re.findall(r'^\| ([A-Z]+-\d{3}) \|',pending_section,re.M))
     if historical!=((set(ids)&historical)|pending) or (set(ids)&pending):
         errors.append(f'{code}: business operation coverage mismatch')
