@@ -170,12 +170,12 @@ def form_rows(sample):
             if field.get('disabled'): flags.append('禁用')
             marker = '页面星标' if form.get('requiredMarker') else (
                 '页面标签含*；必填语义待确认' if re.match(r'^\s*\*', form.get('label', ''))
-                else '未观察到星标，不等于后端可空')
-            rows.append((form.get('label') or field.get('placeholder') or '无可见标签',
+                else '')
+            rows.append((form.get('label') or '',
                          marker,
-                         field.get('type') or '组合控件', '；'.join(limits) or '未取得明确上下限',
-                         '；'.join(flags) or '未禁用', field.get('placeholder') or '无',
-                         form.get('text', '').strip() or '无'))
+                         field.get('type') or '', '；'.join(limits),
+                         '；'.join(flags), field.get('placeholder') or '',
+                         form.get('text', '').strip()))
     return rows
 
 

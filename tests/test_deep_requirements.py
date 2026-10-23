@@ -86,8 +86,23 @@ class DeepRequirementsTests(unittest.TestCase):
             {'label':'共享类型','text':'共享类型\n无条件共享\n有条件共享','fields':[{'type':'radio'}]},
         ]})
         self.assertEqual('区间为1-10', rows[0][5])
-        self.assertEqual('未取得明确上下限', rows[0][3])
+        self.assertEqual('', rows[0][1])
+        self.assertEqual('', rows[0][3])
+        self.assertEqual('', rows[0][4])
         self.assertIn('有条件共享', rows[1][6])
+
+    def test_unknown_field_rules_are_blank_but_observed_rules_remain(self):
+        rows = builder.form_rows({'forms':[
+            {'label':'名称','requiredMarker':False,'fields':[
+                {'type':'text','maxlength':'24','readonly':False,'disabled':False}]},
+            {'label':'密码','requiredMarker':True,'fields':[
+                {'type':'password','maxlength':'16','disabled':True}]},
+        ]})
+        self.assertEqual(('名称', '', 'text', 'maxlength=24（当前前端字符上限）', '', '', ''), rows[0])
+        self.assertEqual(('密码', '页面星标', 'password', 'maxlength=16（当前前端字符上限）', '禁用', '', ''), rows[1])
+
+    def test_missing_field_metadata_is_blank(self):
+        self.assertEqual(('', '', '', '', '', '', ''), builder.form_rows({'forms':[{}]})[0])
 
     def test_literal_star_in_custom_label_is_not_reported_as_absent(self):
         row = builder.form_rows({'forms':[{'label':'* 配置评价对象 （0）',
