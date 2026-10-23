@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const { specs: reviewedSpecs, renderReviewedSpec } = require('./source-review-specs');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
@@ -451,7 +452,9 @@ function augmentFile(file, acceptanceCounters = new Map()) {
     const originalBlock = markerIndex >= 0 ? block.slice(0, markerIndex).trimEnd() : block.trimEnd();
     const sourceRefs = evidenceRefs(originalBlock, file);
     const acceptanceStart = acceptanceStarts.get(start);
-    const spec = buildSpec(id, title, block, sourceRefs, acceptanceStart);
+    const spec = reviewedSpecs[id]
+      ? renderReviewedSpec(reviewedSpecs[id], acceptanceStart, sourceLinks(sourceRefs))
+      : buildSpec(id, title, block, sourceRefs, acceptanceStart);
     text = text.slice(0, start) + originalBlock + '\n\n' + spec + text.slice(end);
     changed = true;
   }
@@ -503,6 +506,40 @@ function syncBusinessAcceptance(root = REQUIREMENTS) {
   return changed;
 }
 
+function refreshUserMenu(root = REQUIREMENTS) {
+  const file = path.join(root, '02-工作台', '用户菜单补充清单.md');
+  if (!fs.existsSync(file)) return false;
+  const original = read(file);
+  let text = original;
+  const matches = [...text.matchAll(/^### (UAC-\d{3})[^\n]*\n/gm)];
+  for (const match of matches.reverse()) {
+    const id = match[1];
+    if (!reviewedSpecs[id]) continue;
+    const contentStart = match.index + match[0].length;
+    const next = text.slice(contentStart).search(/\n### |\n## /);
+    const end = next < 0 ? text.length : contentStart + next + 1;
+    const block = text.slice(match.index, end);
+    const marker = block.indexOf(`<!-- 完整规格:${id} -->`);
+    const body = (marker < 0 ? block : block.slice(0, marker)).trimEnd();
+    const cases = [...original.matchAll(/^\| (UAC-AC-\d{3}) \|([^\n]*)$/gm)]
+      .filter(row => row[2].includes(`| ${id} |`));
+    if (cases.length !== 5) throw new Error(`${id}: expected five existing user-menu acceptance cases`);
+    const spec = renderReviewedSpec(reviewedSpecs[id], Number(cases[0][1].slice(-3)))
+      .replace(/^\| (UAC-AC-\d{3}) \|/gm, '| 检查项（登记到$1） |');
+    text = text.slice(0, match.index) + body + '\n\n' + spec + text.slice(end);
+  }
+  const caseIndexes = new Map();
+  text = text.replace(/^\| (UAC-AC-\d{3}) \|([^\n]*)$/gm, (row, caseId, tail) => {
+    const id = tail.match(/\| (UAC-\d{3}) \|/)?.[1];
+    if (!reviewedSpecs[id]) return row;
+    const index = caseIndexes.get(id) || 0;
+    caseIndexes.set(id, index + 1);
+    return `| ${caseId} | ${reviewedSpecs[id].checks[index].replace(/\|/g, '&#124;')} | ${id} | 【拟定，未执行】 |`;
+  });
+  if (text !== original) fs.writeFileSync(file, text, 'utf8');
+  return text !== original;
+}
+
 function run() {
   const files = [];
   for (const dir of fs.readdirSync(REQUIREMENTS, { withFileTypes: true })) {
@@ -515,10 +552,11 @@ function run() {
   const acceptanceCounters = new Map();
   const results = files.map((file) => augmentFile(file, acceptanceCounters));
   const changed = results.filter((result) => result.changed);
+  const userMenuChanged = refreshUserMenu();
   const registriesChanged = syncBusinessAcceptance();
-  console.log(JSON.stringify({ files: results.length, changed: changed.length, registriesChanged, requirements: results.reduce((n, result) => n + result.requirements, 0) }));
+  console.log(JSON.stringify({ files: results.length, changed: changed.length, userMenuChanged, registriesChanged, requirements: results.reduce((n, result) => n + result.requirements, 0) }));
 }
 
 if (require.main === module) run();
 
-module.exports = { buttonNamesFromControls, fieldName, buildSpec, operationType, augmentFile, maxAcceptanceSequence, withoutGeneratedSpecs, syncBusinessAcceptance };
+module.exports = { buttonNamesFromControls, fieldName, buildSpec, operationType, augmentFile, maxAcceptanceSequence, withoutGeneratedSpecs, syncBusinessAcceptance, refreshUserMenu };
