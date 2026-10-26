@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const { specs: reviewedSpecs, renderReviewedSpec } = require('./source-review-specs');
 const { renderLoginSpec } = require('./login-requirement-spec');
+const { renderHomeSpec } = require('./workbench-requirement-spec');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
@@ -453,7 +454,8 @@ function augmentFile(file, acceptanceCounters = new Map()) {
     const originalBlock = markerIndex >= 0 ? block.slice(0, markerIndex).trimEnd() : block.trimEnd();
     const sourceRefs = evidenceRefs(originalBlock, file);
     const acceptanceStart = acceptanceStarts.get(start);
-    const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart) : reviewedSpecs[id]
+    const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)
+      : ['HOME-001', 'HOME-002'].includes(id) ? renderHomeSpec(id, acceptanceStart) : reviewedSpecs[id]
       ? renderReviewedSpec(reviewedSpecs[id], acceptanceStart, sourceLinks(sourceRefs))
       : buildSpec(id, title, block, sourceRefs, acceptanceStart);
     text = text.slice(0, start) + originalBlock + '\n\n' + spec + text.slice(end);

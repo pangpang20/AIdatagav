@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "static-source",
+  "inspectedAt": "2026-10-26T06:37:14.714Z",
+  "businessRequests": 0,
+  "applicationAcceptanceExecuted": false,
+  "limitations": [
+    "公开静态资源GET后离线核对，未执行下载代码",
+    "没有受控浏览器能力，未点击工作台、请求业务API或新增截图",
+    "截图来自2026-10-22，静态资源获取于2026-10-26，不能保证同一构建",
+    "前端契约不证明服务端授权、办理结果、完整计数或安全措施"
+  ],
+  "sources": [
+    {
+      "id": "HOME-SRC-STAGE",
+      "resourcePath": "/dop/static/js/views-stage.d28b633e.js",
+      "localName": "views-stage.d28b633e.js",
+      "fetchedAt": "2026-10-26T06:04:50.578714+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 315174,
+      "sha256": "3ea4236c8657fcfbde8de8988a6c483fca9c81b9ac6d5a059b94eecc81e3d0c3",
+      "excerpts": [
+        {
+          "anchor": "data:function(){return{activeName:",
+          "start": 23940,
+          "end": 26750,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "e7f17cde97aa8ad86f42eec659298e58385758878d8d12f691da13ffee28f203",
+          "text": "data:function(){return{activeName:\"0\",activeList:[],tabData:[],tabDataImages:[{name:[\"数据开发场景\",\"Data development scenarios\"],backgroundImg:i(\"ffe3\"),steps:[{imgUrl:i(\"9207\"),name:[\"需求调研\",\"Data demand research\"]},{imgUrl:i(\"9b1f\"),name:[\"配置数据源\",\"Data source access\"]},{imgUrl:i(\"fcde\"),name:[\"归集数据\",\"data Integration\"]},{imgUrl:i(\"b665\"),name:[\"规范建模\",\"Standardized modeling\"]},{imgUrl:i(\"69a3\"),name:[\"构件开发\",\"Component management\"]},{imgUrl:i(\"f071\"),name:[\"任务编排调度\",\"Task arrangement and scheduling\"]}]},{name:[\"数据一体化场景\",\"Data integration scenario\"],backgroundImg:i(\"0416\"),steps:[{imgUrl:i(\"891a\"),name:[\"数据查询、订阅\",\"Government data portal\"]},{imgUrl:i(\"9765\"),name:[\"数据编目\",\"Data directory management\"]},{imgUrl:i(\"51f4\"),name:[\"数据交换\",\"Data exchange\"]},{imgUrl:i(\"9eae\"),name:[\"服务封装应用\",\"data service\"]}]},{name:[\"数据分析场景\",\"Data analysis scenarios\"],backgroundImg:i(\"0cd5\"),steps:[{imgUrl:i(\"88c0\"),name:[\"指标开发\",\"Data indicator design\"]},{imgUrl:i(\"416b\"),name:[\"标签设计\",\"Data label management\"]}]},{name:[\"数据评测场景\",\"Data evaluation scenarios\"],backgroundImg:i(\"c63f\"),steps:[{imgUrl:i(\"abb7\"),name:[\"标准检测\",\"Standard testing\"]},{imgUrl:i(\"8ecd\"),name:[\"质量检测\",\"Quality inspection\"]},{imgUrl:i(\"7261\"),name:[\"安全检测\",\"Security testing\"]},{imgUrl:i(\"0647\"),name:[\"评价\",\"Evaluation management\"]}]}],appList:[],dealNum:1,swiperOption:{slidesPerView:4,spaceBetween:16,breakpointsBase:\"container\",navigation:{nextEl:\".swiper-button-next\",prevEl:\".swiper-button-prev\"}},taskAllData:[],taskData:[],taskTodoData:[],taskDoneData:[],showAllClassify:!1,classify:[{type:1,datas:[],datasBac:[],isCheck:!1,defImgClass:\"img1\",checkImgClass:\"img1-c\",numCheckClass:\"num1\",title:this.$t(\"stage.requirementClass\")},{type:2,datas:[],datasBac:[],isCheck:!1,defImgClass:\"img2\",checkImgClass:\"img2-c\",numCheckClass:\"num2\",title:this.$t(\"stage.governanceAndDevelopment\")},{type:3,datas:[],datasBac:[],isCheck:!1,defImgClass:\"img3\",checkImgClass:\"img3-c\",numCheckClass:\"num3\",title:this.$t(\"stage.evaluationWorkOrder\")},{type:4,datas:[],datasBac:[],isCheck:!1,defImgClass:\"img4\",checkImgClass:\"img4-c\",numCheckClass:\"num4\",title:this.$t(\"stage.operationAndMaintenanceWorkOrder\")},{type:6,datas:[],datasBac:[],isCheck:!1,defImgClass:\"img6\",checkImgClass:\"img6-c\",numCheckClass:\"num6\",title:this.$t(\"stage.monitoringAlarmClass\")},{type:7,datas:[],datasBac:[],isCheck:!1,defImgClass:\"img7\",checkImgClass:\"img7-c\",numCheckClass:\"num7\",title:this.$t(\"stage.other\")}],params:{pageRequest:{pageNo:1,pageSize:9999999,order:[{prop:\"id\",asc:!1}]}},tableFetchStatus:1,queryParams:{id:\"\",pageType:\"\"},filterList:[]}},created:function(){var t=this;this.getAllData(1),Object(o.getAllSystem)().then((function(e){var i=[];e.forEach((function(t){t.categories.forEach((function(t){t.systems.forEach((function(t){i.push(t)}))}))})),t.appList=i,t.getAllScene()}))},mou"
+        },
+        {
+          "anchor": "created:function(){var t=this;this.getAllData(1)",
+          "start": 26507,
+          "end": 26801,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "d9657fec48f653e500268ee19307114a9e805b3b221172cb6a13b72eb1f0313f",
+          "text": "created:function(){var t=this;this.getAllData(1),Object(o.getAllSystem)().then((function(e){var i=[];e.forEach((function(t){t.categories.forEach((function(t){t.systems.forEach((function(t){i.push(t)}))}))})),t.appList=i,t.getAllScene()}))},mounted:function(){},methods:{getAllScene:function(){v"
+        },
+        {
+          "anchor": "getAllScene:function",
+          "start": 26777,
+          "end": 28277,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "b4e1fa46b4c7476c5fdc4322c4d640096e7d32d6158963d78096d09389cefb56",
+          "text": "getAllScene:function(){var t=this;Object(o.findEnableScene)({state:1}).then((function(e){e&&e.forEach((function(e,i){t.activeList.push({name:e.sceneName,val:i.toString()});var a={title:t.$t(\"stage.scenarioDescription\"),content:e.sceneExplain,backgroundImg:\"\"},s=[];e.steps&&e.steps.forEach((function(i){var a=\"\";a=1==i.route?t.getAppKey(i.appKey):i.url;var n={stepTitle:i.title,itemTitle:i.name,content:i.appDesc,imgUrl:\"\",appId:a,appType:i.route};s.push(n),t.getPicImg(i.fileKey,n,\"imgUrl\",e.remark,i.remark)})),a.containerData=s,t.tabData.push(a),t.getPicImg(e.fileKey,a,\"backgroundImg\",e.remark)}))}))},getPicImg:function(t,e,i,a,s){var n=this;if(t)Object(r.getOriginKey)({key:t}).then((function(t){Object(r.ossExport)(t).then((function(t){var a=URL.createObjectURL(t.data);n.$set(e,i,a)}))}));else{var o=null,l=this.tabDataImages.findIndex((function(t){return t.name.includes(a)}));if(l>-1&&(o=this.tabDataImages[l].backgroundImg),s){var d=this.tabDataImages[l].steps.findIndex((function(t){return t.name.includes(s)}));d>-1&&(o=this.tabDataImages[l].steps[d].imgUrl)}null!=o&&this.$set(e,i,o)}},getAppKey:function(t){var e=this.appList.findIndex((function(e){return e.id==t}));return e>-1?this.appList[e].key:t},getAppName:function(t){var e=this.appList.findIndex((function(e){return e.key==t}));return e>-1?this.appList[e].name:\"\"},gotoRouter:function(t){if(1==t.appType){var e=this.getAppName(t.appId);s.a.setGlobalState({message:{global:{switchApp:{appId:t.appId,openStyle:1,name:e}}}})}else "
+        },
+        {
+          "anchor": "gotoRouter:function",
+          "start": 28115,
+          "end": 30415,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c7be3a3f83e2d787d111fefc374e13f0f4ab2e92622205b7fc33eeb6382eae12",
+          "text": "gotoRouter:function(t){if(1==t.appType){var e=this.getAppName(t.appId);s.a.setGlobalState({message:{global:{switchApp:{appId:t.appId,openStyle:1,name:e}}}})}else s.a.setGlobalState({message:{global:{switchApp:{appId:\"\",url:t.appId,openStyle:2}}}})},switchClassify:function(){this.showAllClassify=!this.showAllClassify},requestList:function(){this.getAllData(this.dealNum)},getAllData:function(t){this.taskAllData=[],this.taskData=[],this.dealNum=t,this.getTaskTodoPage(),this.getTaskDonePage()},getTaskTodoPage:function(){var t=this;Object(n.taskTodoPage)(this.params).then((function(e){t.taskTodoData=e.datas?e.datas:[],1==t.dealNum&&(t.tableFetchStatus=t.taskTodoData.length>0?2:3,t.dealtClick())})).catch((function(e){1==t.dealNum&&(t.tableFetchStatus=4)}))},getTaskDonePage:function(){var t=this;Object(n.taskDonePage)(this.params).then((function(e){t.taskDoneData=e.datas?e.datas:[],2==t.dealNum&&(t.tableFetchStatus=t.taskDoneData.length>0?2:3,t.dealtClick())})).catch((function(e){2==t.dealNum&&(t.tableFetchStatus=4)}))},dealtClick:function(){var t=this,e=[];this.taskAllData=[],this.classify.forEach((function(t){t.datasBac=[]})),(e=1==this.dealNum?this.taskTodoData:this.taskDoneData).forEach((function(t){null==t.bizType&&(t.bizType=7)})),e.forEach((function(e){var i=t.classify.findIndex((function(t){return e.bizType==t.type}));i>-1&&t.classify[i].datasBac.push(e),t.taskAllData.push(e)})),this.classify.forEach((function(t){t.datas=t.datasBac})),this.filterData()},workOrderFilter:function(t){if(t.isCheck=!t.isCheck,t.isCheck)this.filterList.push(t.type);else{var e=this.filterList.indexOf(t.type);-1!==e&&this.filterList.splice(e,1)}this.filterData()},filterData:function(){var t=this,e=[];this.taskAllData.forEach((function(i){-1==t.filterList.indexOf(i.bizType)&&e.push(i)})),this.taskData=e},showMore:function(){var t=this.getAppName(\"workorder\");s.a.setGlobalState({message:{global:{switchApp:{appId:\"workorder\",url:\"\",openStyle:1,name:t}}}})},handleDataClick:function(t){this.queryParams={id:t.taskId,pageType:\"upcoming\"},this.$refs.stageWorkflowDialogRef.show()},veiwDataClick:function(t){this.queryParams={id:t.taskId,pageType:\"done\"},this.$refs.stageWorkflowDialogRef.show()},refreshWorkflowData:function(){}},beforeDestroy:function(){}}),c=(i(\"24c6\"),i(\"2877\")),h=Object(c.a)"
+        },
+        {
+          "anchor": "refreshWorkflowData:function",
+          "start": 30315,
+          "end": 30400,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ee5f310c3a56e01fa0e96d45f7419a85b3e6aea466633cd12ab5574ec4d7f39e",
+          "text": "refreshWorkflowData:function(){}},beforeDestroy:function(){}}),c=(i(\"24c6\"),i(\"2877\")"
+        },
+        {
+          "anchor": "staticClass:\"dop-stage-home\"",
+          "start": 30481,
+          "end": 36581,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "6f456f145a622776b262c89f598ea910341bc016fd0947ac316ace8a98a905ef",
+          "text": "staticClass:\"dop-stage-home\"},[e(\"div\",{staticClass:\"dop-stage-home-container\"},[e(\"div\",{staticClass:\"left-container\"},[e(\"div\",{staticClass:\"left-container-top\"},[e(\"el-tabs\",{model:{value:t.activeName,callback:function(e){t.activeName=e},expression:\"activeName\"}},t._l(t.activeList,(function(t){return e(\"el-tab-pane\",{key:t.val,attrs:{label:t.name,name:t.val}})})),1)],1),e(\"div\",{staticClass:\"left-container-info\"},[e(\"div\",{class:\"imgc\",style:{\"background-image\":t.tabData[Number(t.activeName)]?\"url(\"+t.tabData[Number(t.activeName)].backgroundImg+\")\":\"\"}},[e(\"div\",{staticClass:\"info-item\"},[e(\"p\",{staticClass:\"info-title\"},[t._v(\" \"+t._s(t.tabData[Number(t.activeName)]?t.tabData[Number(t.activeName)].title:\"\")+\" \")]),e(\"p\",{staticClass:\"info-content\"},[t._v(\" \"+t._s(t.tabData[Number(t.activeName)]?t.tabData[Number(t.activeName)].content:\"\")+\" \")])])])]),e(\"div\",{staticClass:\"left-container-content\"},[e(\"swiper\",{staticClass:\"swiper-contain\",attrs:{options:t.swiperOption}},t._l(t.tabData[Number(t.activeName)]?t.tabData[Number(t.activeName)].containerData:[],(function(i,a){return e(\"swiper-slide\",{key:a},[e(\"div\",{staticClass:\"swiper-slide-steps\"},[e(\"div\",{staticClass:\"steps\"},[e(\"div\",{staticClass:\"step-item\"},[e(\"div\",{staticClass:\"step-item-contain\"},[e(\"div\",[t._v(t._s(a+1))])]),e(\"div\",{class:a+1<(t.tabData[Number(t.activeName)]?t.tabData[Number(t.activeName)].containerData:[]).length?\"step-item-line\":\"step-item-line2\"}),e(\"div\",{staticClass:\"step-item-title\",attrs:{title:i.stepTitle}},[t._v(\" \"+t._s(i.stepTitle)+\" \")])])])]),e(\"div\",{staticClass:\"swiper-item\"},[e(\"div\",{staticClass:\"swiper-item-logo\",style:{backgroundImage:\"url(\"+i.imgUrl+\")\"}}),e(\"div\",{staticClass:\"swiper-item-title\",attrs:{title:i.itemTitle}},[t._v(t._s(i.itemTitle))]),e(\"div\",{staticClass:\"swiper-item-content\"},[t._v(\" \"+t._s(i.content)+\" \")]),e(\"div\",{staticClass:\"bottom-contain\"},[e(\"div\",{staticClass:\"swiper-item-button\",on:{click:function(e){return t.gotoRouter(i)}}},[t._v(\" \"+t._s(t.$t(\"stage.start\"))+\" \")])])])])})),1),e(\"div\",{staticClass:\"swiper-button-prev\"}),e(\"div\",{staticClass:\"swiper-button-next\"})],1)]),e(\"div\",{staticClass:\"right-container\"},[e(\"div\",{staticClass:\"top\"},[e(\"div\",{staticClass:\"personal\"},[e(\"div\",{staticClass:\"personal-logo\"}),e(\"div\",{staticClass:\"personal-title\"},[t._v(\" \"+t._s(t.$t(\"stage.personalWorkbench\"))+\" \")])]),e(\"div\",{staticClass:\"top-content\"},[e(\"div\",{staticClass:\"dealt\",class:\"1\"!=t.dealNum?\"\":\"dealt-active\",on:{click:function(e){return t.getAllData(1)}}},[e(\"div\",{staticClass:\"dealt-img\"}),e(\"div\",{staticClass:\"dealt-thing\"},[t._v(\" \"+t._s(t.$t(\"stage.toDoList\"))+\" \")]),e(\"div\",{staticClass:\"dealt-num\",class:\"1\"!=t.dealNum?\"\":\"dealt-num-active\"},[t._v(\" \"+t._s(t.taskTodoData.length)+\" \")])]),e(\"div\",{staticClass:\"complete\",class:\"2\"!=t.dealNum?\"\":\"complete-active\",on:{click:function(e){return t.getAllData(2)}}},[e(\"div\",{staticClass:\"complete-img\"}),e(\"div\",{staticClass:\"complete-thing\"},[t._v(\" \"+t._s(t.$t(\"stage.completedItems\"))+\" \")]),e(\"div\",{staticClass:\"complete-num\",class:\"2\"!=t.dealNum?\"\":\"complete-num-active\"},[t._v(\" \"+t._s(t.taskDoneData.length)+\" \")])])]),e(\"div\",{staticClass:\"top-center\"},[e(\"div\",{staticClass:\"task\"},[t._v(t._s(t.$t(\"stage.taskWorkOrder\")))]),e(\"div\",{staticClass:\"more\",on:{click:t.showMore}},[t._v(t._s(t.$t(\"stage.more\"))+\">\")])]),e(\"div\",{staticClass:\"top-bottom\"},t._l(t.showAllClassify?t.classify:t.classify.slice(0,3),(function(i,a){return e(\"div\",{key:a,staticClass:\"bottom-item\",on:{click:function(e){return t.workOrderFilter(i)}}},[e(\"div\",{class:[\"b-item-img\",i.isCheck?i.checkImgClass:i.defImgClass]}),e(\"div\",{staticClass:\"item-info\"},[e(\"div\",{class:[\"info-num\",i.isCheck?i.numCheckClass:\"\"]},[t._v(\" \"+t._s(i.datas.length)+\" \")]),e(\"div\",{staticClass:\"info-title\",attrs:{title:i.title}},[t._v(\" \"+t._s(i.title)+\" \")])])])})),0),e(\"div\",{staticClass:\"top-line\"},[e(\"div\",{staticClass:\"m-line\"}),e(\"div\",{staticClass:\"m-msg\",on:{click:t.switchClassify}},[t._v(\" \"+t._s(t.showAllClassify?t.$t(\"stage.packUp\"):t.$t(\"stage.openUp\"))+\" \"),e(\"i\",{class:[t.showAllClassify?\"el-icon-arrow-up\":\"el-icon-arrow-down\",\"m-i\"]})]),e(\"div\",{staticClass:\"m-line\"})])]),e(\"div\",{staticClass:\"content\"},[t.taskData.length>0?t._l(t.taskData,(function(i,a){return e(\"div\",{key:a,staticClass:\"content-item\"},[e(\"i\",{class:[\"iconfont\",\"dfw-workorder-\"+i.bizType,\"ic-msg\",\"ic-\"+i.bizType]}),e(\"div\",{staticClass:\"item-content\"},[e(\"div\",{staticClass:\"item-top-content\"},[e(\"div\",{staticClass:\"item-top-content-main\"},[t._v(\" \"+t._s(i.title)+\" \")]),e(\"div\",{staticClass:\"item-top-button\"},[1==t.dealNum?e(\"span\",{staticStyle:{cursor:\"pointer\"},on:{click:function(e){return t.handleDataClick(i)}}},[t._v(\" \"+t._s(t.$t(\"stage.handle\"))+\" \")]):t._e(),2==t.dealNum?e(\"span\",{staticStyle:{cursor:\"pointer\"},on:{click:function(e){return t.veiwDataClick(i)}}},[t._v(\" \"+t._s(t.$t(\"stage.view\"))+\" \")]):t._e()])]),e(\"div\",{staticClass:\"item-date\"},[t._v(\" \"+t._s(t.audaqueFormatTimeToDateMixin(i.createTime))+\" \")])])])})):e(\"div\",{staticClass:\"no-data el-table__empty-text\"},[e(\"audaque-table-empty\",{attrs:{tableFetchStatus:t.tableFetchStatus,\"is-new\":!1},on:{fetch:t.requestList}})],1)],2)])]),e(\"StageWorkflowDialog\",{ref:\"stageWorkflowDialogRef\",attrs:{queryParams:t.queryParams},on:{refresh:t.requestList}})],1)}),[],!1,null,\"5fddd9e7\",null);e.default=h.exports},\"1eb5\":function(t,e){t.exports=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtc"
+        },
+        {
+          "anchor": ".dop-stage-home[data-v-5fddd9e7]{",
+          "start": 43033,
+          "end": 44573,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "2f48d07ac04a2a23b43c66b7a6e37f25cd3bb7e770d0f7d9040503d42ee708b1",
+          "text": ".dop-stage-home[data-v-5fddd9e7]{width:100%;height:100%;min-width:1200px;min-height:850px}.dop-stage-home .no-data[data-v-5fddd9e7]{height:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;width:100%;overflow:hidden}.dop-stage-home .dop-stage-home-container[data-v-5fddd9e7]{width:100%;height:100%;background:#f5f7fe;display:-ms-flexbox;display:flex;padding:16px}.dop-stage-home .dop-stage-home-container .left-container[data-v-5fddd9e7]{width:calc(73% - 16px);min-width:1372px;padding:0 24px 16px 24px;background:#fff;display:-ms-flexbox;display:flex;-ms-flex-flow:column;flex-flow:column;box-shadow:0 0 15px 0 hsla(0,0%,86.7%,.3);margin-right:16px;border-radius:8px}.dop-stage-home .dop-stage-home-container .left-container .left-container-top[data-v-5fddd9e7]{height:62px}.dop-stage-home .dop-stage-home-container .left-container .left-container-top[data-v-5fddd9e7] .el-tabs__item{height:62px;line-height:62px}.dop-stage-home .dop-stage-home-container .left-container .left-container-info[data-v-5fddd9e7]{height:240px;background-color:#f8f8fb;border-radius:8px;margin-top:24px}.dop-stage-home .dop-stage-home-container .left-container .left-container-info .imgc[data-v-5fddd9e7]{padding-left:37px;position:relative;width:100%;height:100%;background-size:auto 100%;background-position:100%;background-repeat:no-repeat}.dop-stage-home .dop-stage-home-container .left-container .left-container-info .info-title[data-v-5fddd9e7]{font-size:16px;font-weight:700;color:"
+        },
+        {
+          "anchor": "@media screen and (min-width:1916px)",
+          "start": 61923,
+          "end": 64023,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "7b0a4d5980e946ca429630d5a992b933edcdc1d6ca0273efa1a2ac509fee8d86",
+          "text": "@media screen and (min-width:1916px){.left-container-content .swiper-slide[data-v-5fddd9e7]{width:20%!important}}@media screen and (min-width:1435px)and (max-width:1915px){.dop-stage-home[data-v-5fddd9e7]{min-height:680px!important}.dop-stage-home .left-container[data-v-5fddd9e7]{min-width:984px!important;padding:0 16px 16px 16px!important}.dop-stage-home .left-container .left-container-top[data-v-5fddd9e7]{height:48px!important}.dop-stage-home .left-container .left-container-top[data-v-5fddd9e7] .el-tabs__item{height:48px!important;line-height:48px!important}.dop-stage-home .left-container .left-container-info[data-v-5fddd9e7]{margin-top:16px!important;height:186px!important}.dop-stage-home .left-container .left-container-info .info-title[data-v-5fddd9e7]{padding-top:20px!important}.dop-stage-home .left-container .left-container-info .info-content[data-v-5fddd9e7]{margin-top:28px!important;line-height:30px!important;font-size:14px!important}.dop-stage-home .left-container .left-container-content[data-v-5fddd9e7]{padding-top:16px!important}.dop-stage-home .left-container .left-container-content .swiper-contain[data-v-5fddd9e7]{width:93.6%;height:100%}.dop-stage-home .left-container .left-container-content .swiper-contain .swiper-item[data-v-5fddd9e7]{margin-top:16px!important;padding:16px!important}.dop-stage-home .left-container .left-container-content .swiper-contain .swiper-item .swiper-item-logo[data-v-5fddd9e7]{width:48px!important;height:48px!important}.dop-stage-home .left-container .left-container-content .swiper-contain .swiper-item .swiper-item-title[data-v-5fddd9e7]{margin-top:14px!important;margin-bottom:14px!important}.dop-stage-home .left-container .left-container-content .swiper-contain .swiper-item .swiper-item-content[data-v-5fddd9e7]{-webkit-line-clamp:4!important;font-size:13px!important}.dop-stage-home .left-container .left-container-content .swiper-contain .swiper-item .swiper-item-content[data-v-5fddd9e7]:hover{top:113px!important}.dop-stage-home .left-container .left-container-content .swiper-contain .swiper-slide[data-v-5fddd9e7]{width:25%!"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-API",
+      "resourcePath": "/dop/static/js/api-stage.4cfc4aa2.js",
+      "localName": "api-stage.4cfc4aa2.js",
+      "fetchedAt": "2026-10-26T06:04:50.505652+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 1952,
+      "sha256": "bd50683e7e85dd129a61f71ad01f1ca76c70aaceccc31499f2c83614102c7b3f",
+      "excerpts": [
+        {
+          "anchor": "var r=n(\"5530\")",
+          "start": 662,
+          "end": 1862,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "52e23ac6109af3f50014a73219f0d734ad5565f74fc99f4f6789e4879261dfbb",
+          "text": "var r=n(\"5530\"),o=n(\"bcab\"),u=n(\"5c0b\"),c=function(){return Object(o.b)(\"commonWorkflow\")||u.commonWorkflow},a=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Object(o.d)().request(c()+\"/act/task/done/page\",\"POST\",t)},s=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Object(o.d)().request(c()+\"/act/task/todo/page\",\"POST\",t)},d=function(t,e){return Object(o.d)().request(c()+\"/act/form/one\",\"POST\",Object(r.a)(Object(r.a)({},e),{},{id:t,needSnapshot:!0}))},i=function(t){return Object(o.d)().request(c()+\"/act/task/deal\",\"POST\",t)},f=function(t){return Object(o.d)().request(c()+\"/act/task/return/node\",\"POST\",t)},b=function(t){return Object(o.d)().request(c()+\"/act/task/todo/info\",\"POST\",t)},O=function(t){return Object(o.d)().request(c()+\"/act/task/next/node\",\"POST\",t)},k=function(t){return Object(o.d)().request(c()+\"/act/task/done/info\",\"POST\",t)},j=function(t){return Object(o.d)().request(c()+\"/act/task/record\",\"POST\",t)},T=function(t){return Object(o.d)().request(c()+\"/act/def/diagram\",\"GET\",t,{responseType:\"blob\"})},p=function(t){return Object(o.d)().request((Object(o.b)(\"commonUser\")||u.commonUser)+\"/user/page\",\"POS"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-SCENE-API",
+      "resourcePath": "/dop/static/js/api-stageManage.217c0f48.js",
+      "localName": "api-stageManage.217c0f48.js",
+      "fetchedAt": "2026-10-26T06:04:50.509016+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 1416,
+      "sha256": "7202e900db8717d81bb9494a39299c8c9a43f027c46ff84408e7677864d426e0",
+      "excerpts": [
+        {
+          "anchor": "var c=t(\"bcab\")",
+          "start": 565,
+          "end": 965,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "6b2ded35752535ea8411b1fe2a25045105a2e81d46437636bb1c3ea743dafa69",
+          "text": "var c=t(\"bcab\"),r=t(\"5c0b\"),u=function(){return Object(c.b)(\"dopManage\")||r.dopManage},o=function(e){return Object(c.d)().request(u()+\"/workbenchscene/list\",\"POST\",e)},b=function(){return Object(c.d)().request(u()+\"/workbenchscene/findEnableScene\",\"GET\")},s=function(e){return Object(c.d)().request(u()+\"/workbenchscene/\".concat(e),\"GET\")},d=function(e){return Object(c.d)().request(u()+\"/workbenchsc"
+        },
+        {
+          "anchor": "h=function(){return Object(c.d)().request(u()+\"/open/getSys\"",
+          "start": 1343,
+          "end": 1416,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "7ad541f9c078b0f2c60dc0fb107e199e3b8646761cd52d7f1d244a71a305d964",
+          "text": "h=function(){return Object(c.d)().request(u()+\"/open/getSys\",\"GET\")}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-DIALOG",
+      "resourcePath": "/dop/static/js/components-workbench-stageWorkflowDialog.1025a830.js",
+      "localName": "components-workbench-stageWorkflowDialog.1025a830.js",
+      "fetchedAt": "2026-10-26T06:04:50.514277+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 29023,
+      "sha256": "cc72cc59e0386affce703741b05718a65393e6e53315e8ee2267455ce9573f25",
+      "excerpts": [
+        {
+          "anchor": "data:function(){return{showWorkflowDialog:",
+          "start": 4508,
+          "end": 5938,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8431c9aea0b4d2055a54d7fccecd075882c42920e55f0c5731682090be209634",
+          "text": "data:function(){return{showWorkflowDialog:!1,procStatusNS:l.procStatusNS,reviewStatus:l.reviewStatus,taskId:\"\",pageType:\"\",ruleForm:{newAssigneeId:null,userIds:[],ccUid:[]},rules:{comment:{required:!0,message:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseEnterReviewComments\"),trigger:[\"blur\",\"change\"]},type:{required:!0,message:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseSelectTheTypeOfOperation\"),trigger:\"change\"},newAssigneeId:{required:!0,message:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseSpecifyAUser\"),trigger:\"change\"},backTaskSid:{required:!0,message:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseSelectTheNextNodeHandler\"),trigger:\"change\"}},nodeData:[],key2:1,formConf:{},echoFormData:{},activeName:\"0\",userInfoForm:{},userInfoRules:{},isShowFormItem:!0,tabsNames:{0:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.basicInformation\"),1:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.formInformation\"),2:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.taskHandling\"),3:F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditHistory\")},categoryOptions:[],historyNodes:[],nextNodes:[],defaultUserOptions:[],getRequestInstance:Object(g.d)(),userList:s.userList,CURRENT_USER_ID:T,isShowTip:!1,tipText:\"\",isSubmit:!1,ENABLED_DOP:x,DOP_MULTI_SPACE:S,workOrderTypeList:l.workOrderTypeList}},computed:{},created:function(){},mounted:function(){},watch:{},filters:{},methods"
+        },
+        {
+          "anchor": "queryData:function",
+          "start": 5940,
+          "end": 9590,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "0a44553b1e89d08109adcd81b8d495e16e7681df4b0cc1bea37a3dc58c003343",
+          "text": "queryData:function(){var e=this;this.taskId=this.queryParams.id,this.pageType=this.queryParams.pageType,this.ruleForm={newAssigneeId:null,userIds:[],ccUid:[]},this.nodeData=[],this.key2=1,this.formConf={},this.echoFormData={},this.activeName=\"0\",this.userInfoForm={},this.userInfoRules={},this.isShowFormItem=!0,this.categoryOptions=[],this.historyNodes=[],this.nextNodes=[],this.defaultUserOptions=[],this.isShowTip=!1,this.tipText=\"\",this.isSubmit=!1,Object(s.sysCategoryList)().then((function(t){e.categoryOptions=t,e.taskId&&(e.getTodoInfo(),\"upcoming\"===e.pageType&&e.getNodes())}))},show:function(){this.showWorkflowDialog=!0},getTip:function(e){this.isShowTip=!0,this.tipText=e},submitForm:function(){},getTodoInfo:function(){var e,t=this;\"upcoming\"===this.pageType?e=Object(s.taskDetail)({taskId:this.taskId}):\"done\"===this.pageType&&(e=Object(s.finishedTaskDetail)({taskId:this.taskId})),e.then((function(e){var o=\"\";e.createTime=t.formatTimeToDate(e.createTime),e.procStatus=t.procStatusNS[e.procStatus],e.ccInfo&&e.ccInfo.forEach((function(e){o+=e.uname+\",\"})),e.bizType=y.a.formmatList(t.workOrderTypeList,e.bizType,{key:\"value\",value:\"label\"}),t.userInfoForm=e,t.userInfoForm.ccInfo=o.substring(0,o.lastIndexOf(\",\")),e.bizInfo&&(t.echoFormData=JSON.parse(e.bizInfo)),t.loadFormInfo()}))},formatTimeToDate:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"yyyy-MM-dd hh:mm:ss\";return e?y.b.dateFormat(e,t):\"-\"},loadFormInfo:function(){var e=this;this.userInfoForm.formId?Object(s.formDesignSelect)(this.userInfoForm.formId).then((function(t){t.formJson?(e.isShowFormItem=!0,e.formConf=JSON.parse(t.formJson||\"{}\"),e.key2=+new Date):e.isShowFormItem=!1})):this.isShowFormItem=!1},getNodes:function(){var e=this;Promise.all([Object(s.nextNode)({taskId:this.taskId}),Object(s.taskCanBackToNodes)({taskId:this.taskId})]).then((function(t){t[0]&&t[0].length>0&&(e.nextNodes=t[0].map((function(e){return Object(i.a)(Object(i.a)({},e),{},{nodeId:k()})}))),t[1]&&t[1].length>0&&(e.historyNodes=t[1].map((function(e){return Object(i.a)(Object(i.a)({},e),{},{nodeId:k()})}))),setTimeout((function(){e.$set(e.ruleForm,\"optType\",1),e.switchType(1)}),1e3)}))},switchType:function(e){if(this.nodeData=[],this.$set(this.ruleForm,\"backTaskSid\",\"\"),this.$set(this.ruleForm,\"newAssigneeId\",null),this.$refs.ruleForm.clearValidate(),1===e){this.nodeData=this.nextNodes,this.nodeData.map((function(e){return e.taskName=e.taskName||\" \"}));var t=this.nodeData[0];if(t){var o=t.relateIds,r=\"\";this.$set(this.ruleForm,\"backTaskSid\",this.nodeData[0].nodeId),o&&Object.keys(o).length>0&&(r=Object.values(o).join(\";\")),this.$set(this.ruleForm,\"nameStr\",r),this.defaultUserOptions=this.userOptions(this.nodeData[0])}}},switchNode:function(e){var t=this.nodeData.find((function(t){return t.nodeId===e}));t?(this.$set(this.ruleForm,\"userIds\",t.uidStr),this.defaultUserOptions=this.userOptions(t)):(this.$set(this.ruleForm,\"userIds\",[]),this.defaultUserOptions=[])},userOptions:function(e){for(var t=e.uidStr||[],o=e.nameStr,r=[],i=0;i<t.length;i++)r.push({id:t[i],name:o[i]});return r},submitTask:function(){var e=this,t=this;this.$refs.ruleForm.validate((function(o){if(!o)return!1;t.isSubmit=!0,Object(s.taskSubmit)({optType:e.ruleForm.optType,taskId:e.taskId,comment:e.ruleForm.comment,ccUid:e.ruleForm.ccUid,userStr:e.ruleForm.userIds,newAssigneeId:e.ruleForm.newAssigneeId}).then((function(){t.isSubmit=!1,t.$AudaqueToast.tip({template:\"\".concat(F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.successfulOperation\")),methods:{okEvent:function(){t.$emit(\"refresh\"),t.showWorkflowDialog=!1}}})})).catch((function(){t.isSubmit=!1}))}))}}},_"
+        },
+        {
+          "anchor": "submitTask:function",
+          "start": 9032,
+          "end": 9677,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "5c66a9f0706f7f8a9207f153b87cccfa39d87222a75986dd6817629372b9b40e",
+          "text": "submitTask:function(){var e=this,t=this;this.$refs.ruleForm.validate((function(o){if(!o)return!1;t.isSubmit=!0,Object(s.taskSubmit)({optType:e.ruleForm.optType,taskId:e.taskId,comment:e.ruleForm.comment,ccUid:e.ruleForm.ccUid,userStr:e.ruleForm.userIds,newAssigneeId:e.ruleForm.newAssigneeId}).then((function(){t.isSubmit=!1,t.$AudaqueToast.tip({template:\"\".concat(F(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.successfulOperation\")),methods:{okEvent:function(){t.$emit(\"refresh\"),t.showWorkflowDialog=!1}}})})).catch((function(){t.isSubmit=!1}))}))}}},_=(o(\"f438\"),o(\"2877\")),N=Object(_.a)(O,(function(){var e=this,t=e._self._c;return t(\"di"
+        },
+        {
+          "anchor": "t(\"el-dialog\",{attrs:",
+          "start": 9681,
+          "end": 15531,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8172b9d712e8ee9df9204c36e0dbc955794e1dc68fd6c6b7090ea278838929c9",
+          "text": "t(\"el-dialog\",{attrs:{\"append-to-body\":\"\",title:\"工单详情\",visible:e.showWorkflowDialog,\"custom-class\":\"dop-worlflow-dialog\",width:\"1000px\"},on:{\"update:visible\":function(t){e.showWorkflowDialog=t},open:e.queryData}},[t(\"div\",{staticClass:\"workflow-mian\"},[t(\"div\",{staticClass:\"mian-left\"},[t(\"el-tabs\",{staticClass:\"workbench-edit\",attrs:{\"tab-position\":\"top\"},model:{value:e.activeName,callback:function(t){e.activeName=t},expression:\"activeName\"}},[t(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.basicInformation\"),name:\"0\"}},[t(\"audaque-form\",{ref:\"userInfoForm\",staticClass:\"demo-ruleForm\",attrs:{model:e.userInfoForm,rules:e.userInfoRules,id:\"updateNode0\"}},[t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.businessNumber2\"),prop:\"categoryName\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.categoryCode,callback:function(t){e.$set(e.userInfoForm,\"categoryCode\",t)},expression:\"userInfoForm.categoryCode\"}})],1),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.businessName\"),prop:\"processName\"}},[t(\"el-select\",{staticStyle:{width:\"100%\"},attrs:{disabled:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseChoose\"),clearable:\"\"},model:{value:e.userInfoForm.categoryCode,callback:function(t){e.$set(e.userInfoForm,\"categoryCode\",t)},expression:\"userInfoForm.categoryCode\"}},e._l(e.categoryOptions,(function(e,o){return t(\"el-option\",{key:o,attrs:{label:e.categoryName,value:e.categoryCode}})})),1)],1),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.nodeName\"),prop:\"taskName\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.taskName,callback:function(t){e.$set(e.userInfoForm,\"taskName\",t)},expression:\"userInfoForm.taskName\"}})],1),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.applicationTitle\"),prop:\"title\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.title,callback:function(t){e.$set(e.userInfoForm,\"title\",t)},expression:\"userInfoForm.title\"}})],1),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.sponsor\"),prop:\"applicantName\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.applicantName,callback:function(t){e.$set(e.userInfoForm,\"applicantName\",t)},expression:\"userInfoForm.applicantName\"}})],1),e.userInfoForm.ccInfo&&e.userInfoForm.ccInfo.length>0?t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.cc\"),prop:\"ccInfo\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.ccInfo,callback:function(t){e.$set(e.userInfoForm,\"ccInfo\",t)},expression:\"userInfoForm.ccInfo\"}})],1):e._e(),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.sponsorsOrganization\"),prop:\"applicantDep\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.applicantDep,callback:function(t){e.$set(e.userInfoForm,\"applicantDep\",t)},expression:\"userInfoForm.applicantDep\"}})],1),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.theStartingTime\"),prop:\"startTime\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.createTime,callback:function(t){e.$set(e.userInfoForm,\"createTime\",t)},expression:\"userInfoForm.createTime\"}})],1),t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.state\")}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.procStatus,callback:function(t){e.$set(e.userInfoForm,\"procStatus\",t)},expression:\"userInfoForm.procStatus\"}})],1),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowListVue.sourceApplication\"),prop:\"appCode\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.appCode,callback:function(t){e.$set(e.userInfoForm,\"appCode\",t)},expression:\"userInfoForm.appCode\"}})],1):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?t(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\"),prop:\"bizType\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.bizType,callback:function(t){e.$set(e.userInfoForm,\"bizType\",t)},expression:\"userInfoForm.bizType\"}})],1):e._e()],1)],1),t(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.formInformation\"),name:\"1\"}},[t(\"div\",{attrs:{id:\"updateNode1\"}},[e.isShowFormItem?[t(\"div\",[t(\"audaque-form-parser\",{key:e.key2,ref:\"formParser\",attrs:{formConf:e.formConf,isDisabled:!0,echoFormData:e.echoFormData,getRequestInstance:e.getRequestInstance},on:{submit:e.submitForm}})],1)]:t(\"div\",{staticClass:\"air-item\"},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.noFormInformation\"))+\" \")])],2)]),t(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditHistory\"),name:\"3\"}},[e.isShowTip?t(\"div\",{staticClass:\"err-tip\"},[e._v(e._s(e.tipText))]):e._e(),\"3\"===e.activeName?t(\"process-info-component\",{attrs:{id:\"updateNode3\",procInstId:e.userInfoForm.procInstId||e.userInfoForm.bizCode,procDefId:e.userInfoForm.procDef"
+        },
+        {
+          "anchor": "\"upcoming\"===e.pageType?t(\"div\",{staticClass:\"mian-right\"}",
+          "start": 15577,
+          "end": 21977,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a70bcb31b9a705230cc5e82c1ae25b29268f8a6e5742dc194faaa4f8fa4df34c",
+          "text": "\"upcoming\"===e.pageType?t(\"div\",{staticClass:\"mian-right\"},[t(\"div\",{staticClass:\"right-title\"},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.taskHandling\"))+\" \")]),t(\"div\",{staticClass:\"right-con\"},[t(\"audaque-form\",{ref:\"ruleForm\",attrs:{\"is-two-in-row\":!1,id:\"updateNode2\",model:e.ruleForm,rules:e.rules,\"label-width\":\"110px\",disabled:e.userInfoForm.procStatus>=2}},[t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditOperation\"),prop:\"optType\"}},[t(\"el-radio-group\",{staticClass:\"swap-radio\",on:{change:e.switchType},model:{value:e.ruleForm.optType,callback:function(t){e.$set(e.ruleForm,\"optType\",t)},expression:\"ruleForm.optType\"}},[\"SYS_DATA_ANALYSIS\"!=e.userInfoForm.categoryCode?t(\"el-radio\",{attrs:{label:1}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pass\"))+\" \")]):e._e(),t(\"el-radio\",{attrs:{label:4}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.turnDown\"))+\" \")]),e.userInfoForm.countersignNeed<=0?t(\"el-radio\",{attrs:{label:5}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.commissioned\"))+\" \")]):e._e(),\"SYS_DATA_ANALYSIS\"===e.userInfoForm.categoryCode?t(\"el-radio\",{attrs:{label:16}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.selectNode\"))+\" \")]):e._e(),e.userInfoForm.countersignNeed<=0?t(\"el-radio\",{attrs:{label:6}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.transfer\"))+\" \")]):e._e()],1)],1),t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditOpinion\"),prop:\"comment\"}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{type:\"textarea\",placeholder:\"\",clearable:\"\",maxlength:\"70\",\"show-word-limit\":\"\"},model:{value:e.ruleForm.comment,callback:function(t){e.$set(e.ruleForm,\"comment\",t)},expression:\"ruleForm.comment\"}})],1),t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.cc\"),prop:\"ccUid\"}},[t(\"audaque-search-select\",{attrs:{multiple:\"\",keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.ccUid,callback:function(t){e.$set(e.ruleForm,\"ccUid\",t)},expression:\"ruleForm.ccUid\"}})],1),e.nodeData.length>0&&1===e.ruleForm.optType||16===e.ruleForm.optType?t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.nextNode\")}},[t(\"el-select\",{staticClass:\"opinion-line\",staticStyle:{width:\"50%\"},attrs:{placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseChoose\"),clearable:\"\",disabled:1===e.ruleForm.optType},on:{change:e.switchNode},model:{value:e.ruleForm.backTaskSid,callback:function(t){e.$set(e.ruleForm,\"backTaskSid\",t)},expression:\"ruleForm.backTaskSid\"}},e._l(e.nodeData,(function(e,o){return t(\"el-option\",{key:o,attrs:{label:e.taskName,value:e.nodeId}})})),1)],1):e._e(),e.nodeData.length>0&&1===e.ruleForm.optType?t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.reviewer\")}},[t(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.ruleForm.nameStr,callback:function(t){e.$set(e.ruleForm,\"nameStr\",t)},expression:\"ruleForm.nameStr\"}})],1):e._e(),e.nodeData.length>0&&1===e.ruleForm.optType&&!e.userInfoForm.owner&&e.userInfoForm.countersignNeed<=0||16===e.ruleForm.optType?t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.designateTheNextOperator\"),prop:\"userIds\"}},[t(\"audaque-search-select\",{attrs:{multiple:\"\",keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.userIds,callback:function(t){e.$set(e.ruleForm,\"userIds\",t)},expression:\"ruleForm.userIds\"}})],1):e._e(),5===e.ruleForm.optType?t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.delegatedUser\"),prop:\"newAssigneeId\"}},[t(\"audaque-search-select\",{attrs:{keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},filterFunc:function(t){return t.id!=e.CURRENT_USER_ID},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.newAssigneeId,callback:function(t){e.$set(e.ruleForm,\"newAssigneeId\",t)},expression:\"ruleForm.newAssigneeId\"}})],1):e._e(),6===e.ruleForm.optType?t(\"el-form-item\",{staticClass:\"audaque-form-item-full\",attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.transferredUsers\"),prop:\"newAssigneeId\"}},[t(\"audaque-search-select\",{attrs:{keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},filterFunc:function(t){return t.id!=e.CURRENT_USER_ID},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.newAssigneeId,callback:function(t){e.$set(e.ruleForm,\"newAssigneeId\",t)},expression:\"ruleForm.newAssigneeId\"}})],1):e._e()],1)],1)]):e._e()]),t(\"span\",{staticClass:\"dialog-footer\",attrs:{slot:\"footer\"},slot:\"footer\"},[\"upcoming\"===e.pageType?t(\"div\",{staticClass:\"submit-line\"},[t(\"el-button\",{on:{click:function(t){e.showWorkflowDialog=!1}}},[e._v(\"取消\")]),t(\"el-button\",{attrs:{type:\"primary\",loading:e.isSubmit,disabled:e.userInfoForm.procStatus>=2||e.isSubmit},on:{click:e.submitTask}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.submit\"))+\" \")])],1):t(\"div\",[t(\"el-button\",{attrs:{type:\"primary\"},on:{click:function(t){e.showWorkflowDialog=!1}}},[e._v(\"确定\")])],1)])])],1)}),[],!1,null,\"25d011fa\",null);t.default=N.exports},cc6f:function(e,t,o){\"use strict\";o.r(t);o(\"a15b\"),o(\"d3b7\"),o(\"ac1f\"),o(\"00b4\"),o(\"3ca3\"),o(\"5319\"),o(\"ddb0\"),o(\"2b3d\"),o(\"9861\"),o(\"88a7\"),o(\"271a\"),o(\"5494\");var r=o(\"47c0\"),i=o(\"0d4f\"),a=o(\"fb1f\"),n={name:\"processInfoComponent\",mixins:[r.audaqueUtilsMixin],data:function(){return{tableData:[],imgUrl:null}},props:[\"procInstId\",\"procDefId\",\"procStatus\",\"categoryCode\"],watch:{procInstId:{handler:function(){},deep:!0}},created:function(){var e=this,t={};0==this.procStatus?t={categoryCode:this.categoryCode}:this.procInst"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-HISTORY",
+      "resourcePath": "/dop/static/js/components-workbench-processInfoComponent.5331b22c.js",
+      "localName": "components-workbench-processInfoComponent.5331b22c.js",
+      "fetchedAt": "2026-10-26T06:04:50.774862+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 5415,
+      "sha256": "e1a3c6a24ac44512aa6e9453ddbfafa4158ec27ab6c7f1317922453c74d39fe8",
+      "excerpts": [
+        {
+          "anchor": "var n=o(\"47c0\")",
+          "start": 280,
+          "end": 3730,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "582abc6f1eb4bc24c9a1ff2cf395cab67df18c2c473de79953406c975b19b405",
+          "text": "var n=o(\"47c0\"),r=o(\"0d4f\"),c=o(\"fb1f\"),a={name:\"processInfoComponent\",mixins:[n.audaqueUtilsMixin],data:function(){return{tableData:[],imgUrl:null}},props:[\"procInstId\",\"procDefId\",\"procStatus\",\"categoryCode\"],watch:{procInstId:{handler:function(){},deep:!0}},created:function(){var t=this,e={};0==this.procStatus?e={categoryCode:this.categoryCode}:this.procInstId?(e={procInstId:this.procInstId},this.loadTableData()):e={modelDefId:this.procDefId},Object(c.actDefDiagram)(e).then((function(e){window.URL=window.URL||window.webkitURL;var o=URL.createObjectURL(e);t.imgUrl=o}))},methods:{loadTableData:function(){var t=this;Object(c.taskRecord)({procInstId:this.procInstId}).then((function(e){t.tableData=e,e&&e[0]&&e[0].comments&&e[0].comments[0]&&\"19\"===e[0].comments[0].type&&e[0].comments[0].comment&&t.$emit(\"getTip\",e[0].comments[0].comment)}))},markRed:function(t){if(!t)return\"-\";for(var e=(t=r.e.preventXss(t)).split(\",\"),o=0;o<e.length;o++){var n=e[o];if(/_\\*$/.test(n)){var c=n.replace(\"_*\",\"\");e[o]='<span style=\"color:red;\">'+c+\"</span>\"}}return e.join(\",\")}}},s=o(\"2877\"),i=Object(s.a)(a,(function(){var t=this,e=t._self._c;return e(\"div\",{staticClass:\"process-info-component\"},[e(\"div\",{staticStyle:{\"text-align\":\"center\"}},[e(\"img\",{staticStyle:{\"margin-bottom\":\"20px\",\"max-width\":\"100%\"},attrs:{src:t.imgUrl}})]),e(\"el-table\",{staticStyle:{width:\"100%\"},attrs:{data:t.tableData,border:\"\",\"row-key\":\"id\",stripe:\"\",\"tooltip-effect\":\"light\"}},[e(\"el-table-column\",{attrs:{type:\"index\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.serialNumber\"),index:function(t){return t+1},width:\"50\"}}),e(\"el-table-column\",{attrs:{prop:\"taskName\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.activityProcess\"),\"show-overflow-tooltip\":\"\"}}),e(\"el-table-column\",{attrs:{prop:\"taskCreateTime\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.receivingTime\"),\"show-overflow-tooltip\":\"\"},scopedSlots:t._u([{key:\"default\",fn:function(e){return[t._v(t._s(t.audaqueFormatTimeToDateMixin(e.row.createTime)))]}}])}),e(\"el-table-column\",{attrs:{prop:\"finishTime\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.completeTime\"),\"show-overflow-tooltip\":\"\"},scopedSlots:t._u([{key:\"default\",fn:function(e){return[t._v(t._s(t.audaqueFormatTimeToDateMixin(e.row.finishTime)))]}}])}),e(\"el-table-column\",{attrs:{prop:\"duration\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.processingTime\"),\"show-overflow-tooltip\":\"\"}}),e(\"el-table-column\",{attrs:{prop:\"candidate\",\"show-overflow-tooltip\":\"\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.participant\")},scopedSlots:t._u([{key:\"default\",fn:function(o){return[e(\"span\",{domProps:{innerHTML:t._s(t.markRed(o.row.candidate))}})]}}])}),e(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"comment\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.auditOpinion\")},scopedSlots:t._u([{key:\"default\",fn:function(o){return t._l(o.row.comments,(function(o,n){return e(\"span\",{key:\"c-\"+n},[t._v(\" \"+t._s(o.assigneeName||\"-\")+\": \"+t._s(o.comment||\"-\")+\"; \"),e(\"br\")])}))}}])}),e(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"optName\",label:t.$t(\"componentsWorkbenchProcessInfoComponentVue.review\")}})],1)],1)}),[],!1,null,\"7f673b0a\",null);e.default=i.exports},fb1f:function(t,e,o){\"use strict\";o.r(e),o.d(e,\"taskDonePage\",(function(){return s})),o.d(e,\"taskTodoPage\",(function(){return i})),o.d(e,\"formDesignSelect\",(function(){return u})),o.d(e,\"taskS"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-TYPES",
+      "resourcePath": "/dop/static/js/components-workbench-workflowTypes.1b4e56e2.js",
+      "localName": "components-workbench-workflowTypes.1b4e56e2.js",
+      "fetchedAt": "2026-10-26T06:04:50.774862+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 1467,
+      "sha256": "69b4ddb5a9a0773c0f04476aed4035c13538f8911d086a2a5df8d213140d0488",
+      "excerpts": [
+        {
+          "anchor": "var l=r(\"12cb\")",
+          "start": 281,
+          "end": 1467,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "539ca18c999e8a64e5f1854aa1c6fd1be895068e57413d89aa64858f68f45e6e",
+          "text": "var l=r(\"12cb\"),s=[{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.toBeInitiated\"),value:-1},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.underReview\"),value:0},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.missionCompleted\"),value:1},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.taskInitiatorWithdraws\"),value:2}],t={0:l.default.t(\"viewsWorkbenchWorkflowTypesJs.draft\"),1:l.default.t(\"viewsWorkbenchWorkflowTypesJs.processing\"),2:l.default.t(\"viewsWorkbenchWorkflowTypesJs.hangUp\"),3:l.default.t(\"viewsWorkbenchWorkflowTypesJs.finish\"),4:l.default.t(\"viewsWorkbenchWorkflowTypesJs.withdrawn\")},a=[{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.requestWorkOrder\"),value:1},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.qualityInspectionWorkOrder\"),value:2},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.evaluationWorkOrder\"),value:3},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.operationAndMaintenanceWorkOrder\"),value:4},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.indicatorWorkOrder\"),value:5},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.examineAndApprove\"),value:6},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.other\"),value:7}]}}]);"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-DOP",
+      "resourcePath": "/dop/static/js/app.73911832.js",
+      "localName": "dop-app.73911832.js",
+      "fetchedAt": "2026-10-26T06:03:43.890148+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 1335219,
+      "sha256": "9012c934aa036b81aed6febe8e98ce14a95b19ed7497504de98cb0618dab4a07",
+      "excerpts": [
+        {
+          "anchor": "\"5c0b\":function",
+          "start": 880249,
+          "end": 880874,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c5565a2e1c2d625fe19cae463499fe37b08ab63375716e4f992a39dcf43ad143",
+          "text": "\"5c0b\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"dop\",(function(){return o})),n.d(t,\"commonOss\",(function(){return r})),n.d(t,\"commonUser\",(function(){return a})),n.d(t,\"commonAuth\",(function(){return i})),n.d(t,\"commonCaptcha\",(function(){return s})),n.d(t,\"dopSpace\",(function(){return c})),n.d(t,\"commonWorkflow\",(function(){return l})),n.d(t,\"dopManage\",(function(){return u})),n.d(t,\"commonApp\",(function(){return p}));var o=\"/dop/factory\",r=\"/common/oss\",a=\"/common/user\",i=\"/common/auth\",s=\"/common/basic/captcha\",c=\"/dop/space\",l=\"/common/workflow\",u=\"/dop/manage\",p=\"/common/app\"},\"5c6c\":function(e,t,n){\"use strict"
+        },
+        {
+          "anchor": "bcab:function",
+          "start": 1240904,
+          "end": 1241829,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "09e4c7bb2c315d26a9938cbdd21928ac4cdd432b51aa466ad2ee08169b5d4651",
+          "text": "bcab:function(e,t,n){\"use strict\";function o(){}n.d(t,\"a\",(function(){return r})),n.d(t,\"e\",(function(){return i})),n.d(t,\"b\",(function(){return s})),n.d(t,\"d\",(function(){return c})),n.d(t,\"c\",(function(){return l}));const r=new class{constructor(){this.actions={onGlobalStateChange:o,setGlobalState:o}}setActions(e){this.actions=e}onGlobalStateChange(...e){return this.actions.onGlobalStateChange(...e)}setGlobalState(...e){return this.actions.setGlobalState(...e)}};let a={};function i(e){a=e,a.requestInstance=e.getRequestInstance()}function s(e){if(a.config)return a.config.MODULE_URL_PREFIX[e];throw new Error(\"过早调用getModulePrefix方法\")}function c(){if(a.requestInstance)return a.requestInstance;throw new Error(\"过早调用getRequestInstance方法\")}function l(){return a}},c04e:function(e,t,n){\"use strict\";var o=n(\"c65b\"),r=n(\"861d\"),a=n(\"d9b5\"),i=n(\"dc4a\"),s=n(\"485a\"),c=n(\"b622\"),l=TypeError,u=c(\"toPrimitive\");e.exports=functi"
+        },
+        {
+          "anchor": "f=function(e){return Object(r.d)().request(a.commonOss",
+          "start": 116970,
+          "end": 117315,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "111def44759ec1e2dae7bb26884aadee5c12987d60e6eb78cb2420754144aa3c",
+          "text": "f=function(e){return Object(r.d)().request(a.commonOss+\"/oss/downloadFileObject\",\"GET\",{key:e,businessDescription:\"111\"},{performance:{rawData:!0},responseType:\"blob\"})},m=function(e){return Object(r.d)().request(c()+\"/common/upload\",\"POST\",e)},h=function(e){return Object(r.d)().request(c()+\"/common/getOriginKey\",\"GET\",e)},g=function(e,t,n){re"
+        },
+        {
+          "anchor": "stage:{dataDevelopmentScenarios:",
+          "start": 915850,
+          "end": 916500,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "6aad8e27cbee01afa81f9bd0027802d489f7e23a3e4c0581a793893f150bc713",
+          "text": "stage:{dataDevelopmentScenarios:\"数据开发场景\",dataIntegrationScenario:\"数据一体化场景\",dataAnalysisScenario:\"数据分析场景\",dataEvaluationScenario:\"数据评测场景\",start:\"开始使用\",personalWorkbench:\"个人工作台\",toDoList:\"待办事项\",completedItems:\"已完成事项\",requirementClass:\"需求工单\",governanceAndDevelopment:\"质检工单\",evaluationWorkOrder:\"测评工单\",operationAndMaintenanceWorkOrder:\"运维工单\",monitoringAlarmClass:\"审批工单\",other:\"其他\",taskWorkOrder:\"任务工单\",packUp:\"收起\",openUp:\"展开\",more:\"更多\",handle:\"处理\",view:\"查看\",scenarioDescription:\"场景说明\",commit1:\"利用数据仓库扩充实现效率和效益提升，面向政务、企业增强或建设数据仓库，实现多源数据的归集，完成大数据传输、清洗、加工重组等，以低时延的查询需求为要求，确保大数据可用于企业或政务相关领域的预测分析、智能推荐、数据应用等方面。\",commit2:\"建设市级共享交换平台，将数据进行采集并完成数据标准清洗后共享发布，自动同步本"
+        },
+        {
+          "anchor": "viewsWorkbenchWorkflowFinishedAndReviewEditVue:{",
+          "start": 970439,
+          "end": 971969,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "98ce47dea097aff70a1c3a45c24fa337f291ccf0b32a97cd34d642f5533e823c",
+          "text": "viewsWorkbenchWorkflowFinishedAndReviewEditVue:{cannotExported:\"未设计表单无法导出\",check:\"查看\",dealWith:\"处理\",mine:\"我的\",done:\"已办\",upcoming:\"待办\",basicInformation:\"基本信息\",businessNumber2:\"业务编号\",businessName:\"业务名称\",pleaseChoose:\"请选择\",nodeName:\"节点名称\",applicationTitle:\"申请标题\",sponsor:\"发起人\",cc:\"抄送人\",sponsorsOrganization:\"发起人所属组织\",theStartingTime:\"发起时间\",state:\"状态\",formInformation:\"表单信息\",noFormInformation:\"暂无表单信息!\",taskHandling:\"任务办理\",auditOperation:\"审核操作\",pass:\"通过\",turnDown:\"驳回\",commissioned:\"委办\",selectNode:\"选择节点\",auditOpinion:\"审核意见\",nextNode:\"下一节点\",reviewer:\"审核人\",designateTheNextOperator:\"指定下一操作人\",delegatedUser:\"委办用户\",auditHistory:\"审核历史\",submit:\"提交\",pleaseEnterReviewComments:\"请输入审核意见\",pleaseSelectTheTypeOfOperation:\"请选择操作的类型\",pleaseAppointADelegator:\"请指定委派人\",pleaseSelectTheNextNodeHandler:\"请选择下一节点处理人\",successfulOperation:\"操作成功\",transferredUsers:\"转派用户\",transfer:\"转派\",pleaseSpecifyAUser:\"请指定用户\"},componentsWorkbenchProcessInfoComponentVue:{serialNumber:\"序号\",activityProcess:\"活动流程\",receivingTime:\"接收时间\",completeTime:\"完成时间\",processingTime:\"处理时长\",participant:\"参与者\",auditOpinion:\"审核意见\",review:\"审核\"},viewsWorkbenchWorkflowTypesJs:{toBeInitiated:\"待发起\",underReview:\"审核中\",missionCompleted:\"任务完成\",taskInitiatorWithdraws:\"任务发起人撤回\",terminateProcess:\"终止流程\",taskDelete:\"任务删除\",adminDelete:\"管理员人删除\",draft:\"草稿\",processing:\"处理中\",hangUp:\"挂起\",finish:\"结束\",withdrawn:\"已撤回\",requestWorkOrder:\"需求工单\",qualityInspectionWorkOrder:\"质检工单\",evaluationWorkOrder:\"测评工单\",operationAndMaintenanceWorkOrder:\"运维工单\",indicatorWorkOrder:\"指标工单\",examineAndApprove:\"审批\",other:\"其他\"},"
+        },
+        {
+          "anchor": "viewsWorkbenchWorkflowTypesJs:{",
+          "start": 971526,
+          "end": 972006,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "52a2cc445a2afec5196db95dff787f4b00f75cc0bcd2b7e112dfa89153b8a065",
+          "text": "viewsWorkbenchWorkflowTypesJs:{toBeInitiated:\"待发起\",underReview:\"审核中\",missionCompleted:\"任务完成\",taskInitiatorWithdraws:\"任务发起人撤回\",terminateProcess:\"终止流程\",taskDelete:\"任务删除\",adminDelete:\"管理员人删除\",draft:\"草稿\",processing:\"处理中\",hangUp:\"挂起\",finish:\"结束\",withdrawn:\"已撤回\",requestWorkOrder:\"需求工单\",qualityInspectionWorkOrder:\"质检工单\",evaluationWorkOrder:\"测评工单\",operationAndMaintenanceWorkOrder:\"运维工单\",indicatorWorkOrder:\"指标工单\",examineAndApprove:\"审批\",other:\"其他\"},viewsWorkbenchMyWorkflowListVue:{myTi"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-SHELL",
+      "resourcePath": "/static/js/app.7ec981a3.js",
+      "localName": "shell-app.7ec981a3.js",
+      "fetchedAt": "2026-10-26T06:07:41.824383+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 1417837,
+      "sha256": "a0d2d44668353c4522b2fbc45d7c25d4286ffdb630050b2f11a5bc6a44f8af68",
+      "excerpts": [
+        {
+          "anchor": "Ns=window.__$__,Rs=",
+          "start": 764255,
+          "end": 764845,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "7c1bd75ca1d00bc24d91f1051a8dacdbd7b27fbc9bace1bd0a1e6a8eb8412472",
+          "text": "Ns=window.__$__,Rs=Ns.MODULE_URL_PREFIX.commonUser||\"/common/user\",Ls=Ns.MODULE_URL_PREFIX.commonApp||\"/common/app\",Ds=function(e){return es().request(Rs+\"/main/menus\",\"GET\",e)},Ms=function(e){return es().request(Rs+\"/pub/menus\",\"GET\",e)},Us=function(){return es().request(Rs+\"/user/isAdmin\",\"GET\",{},{performance:{isHiddleErrorMessage:!0}})},Fs=r(\"5c1a\"),zs=r.n(Fs),Vs=(r(\"a15b\"),window.__$__.MODULE_URL_PREFIX.commonMsg||\"/common/msg\"),Hs=function(e){return es().request(Vs+\"/msg/message/loginUser\",\"POST\",u({},e))},$s={name:\"MsgListDrawer\",mixins:[ko.audaqueUtilsMixin],data:function(){r"
+        },
+        {
+          "anchor": "requestMenu:function",
+          "start": 809111,
+          "end": 811531,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "45476b089fd0e67c78387423431ce758ac4a0e06e4b2fa9cc7f21a5956270129",
+          "text": "requestMenu:function(e,t){var r=this;if(e===this.ADMIN_MANAGE_ROUTES.key)this.$_config.HEADER_TITLE&&(this.applicationName=this.ADMIN_MANAGE_ROUTES.applictionName,document.title=this.ADMIN_MANAGE_ROUTES.applictionName),Us().then((function(e){e&&(!function(e){if(e&&e.length>0){var t=location.pathname;return t=Ki(t),-1!==e.findIndex((function(e){return e.route===t}))}}(r.ADMIN_MANAGE_ROUTES.children)?sessionStorage.removeItem(\"audaque_appid\"):r.menuTree=[r.ADMIN_MANAGE_ROUTES])})).catch((function(){r.menuTree=[]}));else{var n=Fi(this.menu,e);if(!n)return t&&wi.Message.warning(this.$t(\"app.appNoMenu\")),void(this.menuTree=[]);this.SET_APP_PERMISSION(function e(t){var r=t;if(r){r.route&&(Ui[r.route]=r.permissions||[]);var n=r.children;n&&n.forEach((function(t){e(t)}))}return Ui}(n)),n&&n.children&&n.children.length>0?this.menuTree=n.children:this.menuTree=[],7===this.theme.layoutTheme&&this.menuTree.length>0&&(this.projectList=this.menuTree.map((function(e){return l({name:e.name,id:e.id,simpleName:e.simpleName||e.name,iconClass:e.icon?e.icon:\"\",permissions:e.permissions},r.urlKey,e[r.urlKey])})))}this.handleShowMenuNavigation()},handleShowMenuNavigation:function(){var e,t,r;this.isShowMenuNavigation=(e=this.$route.path,t=Wi(e),r=Qi(e),!(t||Hi.HIDDEN_NAVIGATION_KEY_LIST.includes(r)))},requestAppList:function(){var e=this;es().request(Ls+\"/app/appList\",\"GET\").then((function(t){if(t){var r=t;if(!e.userInfo.enabledDop){var n=Xs({key:\"psm\"},t);\"number\"==typeof n&&n>=0&&r.splice(n,1)}e.appList=r;var o=Xi();e.defaultActiveIndex=o?Xs({key:o},e.appList):-1;var i=function(e,t){for(var r=e.key,n=0;n<t.length;n++)for(var o=t[n].categories,i=0;i<o.length;i++){var a=o[i].systems.find((function(e){return e.key===r}));if(a)return a.name}}({key:o},e.appList);i&&(e.applicationName=i,document.title=i)}}))},requestUserInfo:function(){var e=this;return vs().then((function(t){e.enabledDop=t.enabledDop,e.SET_USER_INFO(t),e.requestAppList()}))},requestSelfInfo:function(){var e=this;ms().then((function(t){e.SET_SELF_INFO(t),e.handleWaterMark(t)}))},goto:function(e,t){sessionStorage.setItem(\"menuListedLastPath\",e.replace(/\\?.*$/,\"\"));var r=this.$_config.FRONT_URL+e;t?history.replaceState({},\"\",r):history.pushState({},\"\",r)},onMenuItemClick:function(e,t){var r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];this.activePath=e.route,this.handlePermission(e),r&&(sessionStorage.removeItem(\"listSearchSt"
+        },
+        {
+          "anchor": "onMenuItemClick:function",
+          "start": 811344,
+          "end": 812394,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "0644bd30a26db6c4dde4cc6806348a213117cdf699523d94b996ec27a23b6223",
+          "text": "onMenuItemClick:function(e,t){var r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];this.activePath=e.route,this.handlePermission(e),r&&(sessionStorage.removeItem(\"listSearchStore\"),sessionStorage.removeItem(\"multilistSearchStore\"),this.goto(e[this.urlKey],t))},appItemClick:function(e){if((this.isShowPullMenu=!1,this.userInfo.enabledDop&&0===this.spaceList.length)&&this.$_config.SPACE_KEY_LIST.concat(Gs).includes(e.key))return void wi.Message.warning(this.$t(\"app.appNoSpace\"));this.$refs.framePage.switchAppToggle(),this.jumpMethod(e)},menuItemHover:function(e,t){sessionStorage.setItem(\"audaqueDefaultActiveIndex\",t),this.pullMenuData=e,this.isSingleSystem(e)?this.isShowPullMenu=!1:this.isShowPullMenu=!0},menuItemHoverHandle:function(e){this.isShowPullMenu=e,this.$refs.menuNavigation.updateChildHove(e)},handleGoHome:function(){var e,t=Fi(this.menu,\"workbench\");if(this.systemConfig.dopAccess&&(null==t||null===(e=t.children)||void 0===e?void 0:e.length)>0){var r=this.$_config.HOME_PAGE_PATH;r&&(this.handleFirstPosition(0),sessi"
+        },
+        {
+          "anchor": "jumpMethod:function",
+          "start": 812650,
+          "end": 814540,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "7ef35ec62ead64e1ed518ff6589fa34174f5124931446f673cf10fe3ea64ef17",
+          "text": "jumpMethod:function(e){var t=e.key;2===e.openStyle?window.open(e.url,\"_blank\"):1===e.openStyle&&(this.defaultActiveIndex=Xs(e,this.appList),this.applicationName=e.name,document.title=e.name,t?(sessionStorage.setItem(\"audaque_appid\",t),this.$refs.audaquePullPage.updateAppId(),this.requestMenu(t,!0)):e.url&&history.pushState(null,null,\"\".concat(e.url)))},switchMicroservePlatform:function(e){var t=e.key;this.handleFirstPosition(e.position),sessionStorage.setItem(\"audaque_appid\",t),this.$refs.framePage.switchAppToggle(),this.requestMenu(t,!0),this.applicationName=e.name,document.title=e.name},handleFirstPosition:function(e){this.defaultActiveIndex=e,sessionStorage.setItem(\"audaqueDefaultActiveIndex\",e)},menuItemClick:function(e,t){if(this.isSingleSystem(e)){var r=e.categories[0].systems[0];if(sessionStorage.setItem(\"audaque_appid\",r.key),this.$refs.framePage.switchAppToggle(),this.userInfo.enabledDop&&0===this.spaceList.length)if(this.$_config.SPACE_KEY_LIST.concat(Gs).includes(r.key))return void wi.Message.warning(this.$t(\"app.appNoSpace\"));this.jumpMethod(r)}else this.isShowPullMenu=!0;this.handleFirstPosition(t)},isSingleSystem:function(e){var t,r;return 1===(null===(t=e.categories)||void 0===t?void 0:t.length)&&!e.categories[0].categoryName&&1===(null===(r=e.categories[0].systems)||void 0===r?void 0:r.length)},isSameOrigin:function(e){var t=window.location.protocol,r=window.location.host,n=new URL(e);return n.protocol===t&&n.host===r},restoreModulePosition:function(e){if(7===this.theme.layoutTheme)this.defaultActiveIndex=e;else if(8===this.theme.layoutTheme){var t=sessionStorage.getItem(\"audaqueDefaultActiveIndex\");t&&(this.defaultActiveIndex=Number.parseInt(t))}},onSwitchFirstModule:function(e,t){this.handleFirstPosition(t),this.$refs.framePage.handleSwitchModule({item:e,index:t})},handleIsShowWorkbench:function(){var e,t=Fi(this.menu,\"workbench\");(null==t|"
+        },
+        {
+          "anchor": "Qs=window.__$__.MODULE_URL_PREFIX.dopSpace",
+          "start": 797532,
+          "end": 800502,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "86a250e969daee82630151203dafbcd438d4d71e14f97a67e794f918c96594cd",
+          "text": "Qs=window.__$__.MODULE_URL_PREFIX.dopSpace||\"/dop/space\";function Xs(e,t){for(var r=e.key,n=0;n<t.length;n++)for(var o=t[n].categories,i=0;i<o.length;i++){if(o[i].systems.findIndex((function(e){return e.key===r}))>=0)return n}}var Js={mixins:[],data:function(){return{isShowSwitchLanguage:this.$_config.IS_SHOW_SWITCH_LANGUAGE,projectOptions:[],projectInfo:null,spaceId:\"\",projectName:\"\"}},props:{data:{type:Array,required:!0,default:function(){return[]}},enabledDop:{type:Boolean}},components:{},watch:{enabledDop:{handler:function(e){e&&this.requestSpaceList()}}},computed:u(u({},Object(ta.c)(\"currentUser\",[\"systemConfig\",\"userInfo\"])),{},{isShowProjectList:function(){return this.projectOptions.length>0&&this.userInfo.enabledDop}}),created:function(){this.requestSpaceList()},mounted:function(){var e=localStorage.getItem(\"language\")||this.$_config.message.global.locale;this.handleLanguageCommand(e)},methods:u(u({},Object(ta.b)(\"currentUser\",[\"SET_PROJECT_SPACE_ITEMS\",\"SET_ALL_PROJECT_SPACE_ITEMS\"])),{},{updateSpaceList:function(){this.requestSpaceList()},requestSpaceList:function(){var e=this;this.systemConfig.dopAccess?(es().request(Qs+\"/common/list\",\"GET\").then((function(t){e.projectOptions=null!=t&&t.list?null==t?void 0:t.list:[],e.SET_PROJECT_SPACE_ITEMS(e.projectOptions),e.spaceId=t.spaceId;var r=e.projectOptions.find((function(t){return t.id===e.spaceId}));e.projectName=r?r.name:\"\"})),es().request(Qs+\"/workspace/allList\",\"GET\").then((function(t){var r=t||[];e.SET_ALL_PROJECT_SPACE_ITEMS(r)}))):this.projectOptions=[]},handleLanguageCommand:function(e){this.$i18n.locale=e,localStorage.setItem(\"language\",e),this.$_config.message.global.locale=e,ea.setGlobalState({message:{global:{locale:e}}})},handleProjectCommand:function(e){var t=this;sessionStorage.getItem(\"switchSpacePrompt\")?this.switchProjectSpace(e):this.$AudaqueToast.message({template:'\\n                            <div class=\"prompt-item\">{{$t(\\'user.switchProjectSpacePrompt\\')}}</div>\\n                            <div class=\"is-prompt-btn\">\\n                                <el-radio v-model=\"switchSpacePrompt\" :label=\"true\">{{$t(\\'user.dontRemindMeAgain\\')}}</el-radio>\\n                            </div>\\n                            ',data:{switchSpacePrompt:!1,hideCancel_a_d_q:!1},methods:{okEvent:function(){this.switchSpacePrompt&&sessionStorage.setItem(\"switchSpacePrompt\",!0),t.switchProjectSpace(e)}}})},switchProjectSpace:function(e){var t,r=this;(t=e,es().request(Qs+\"/common/switchSpace/\"+t,\"PUT\")).then((function(){var t=r.projectOptions.find((function(t){return t.id===e}));t&&(r.projectName=t.name);var n=function e(t,r){if(t){var n=t[0];return null!=n&&n[r]?n:e(null==n?void 0:n.children,r)}}(r.data,\"route\");new URL(location.href).pathname===(null==n?void 0:n.route)?ea.setGlobalState({message:{dop:{updateProjectSpaceId:e}}}):n&&history.pushState(null,null,n.route)}))}}),beforeDestroy:function(){}},Zs=(r(\"f3c5\"),r(\"6e43\"),Object(Bs.a)(Js,(function(){var e="
+        },
+        {
+          "anchor": "changeTenant:function",
+          "start": 793369,
+          "end": 794459,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ef405975eb38218b205546d58c06492357bfb7ce8fbe0698d3680e4b49eec63c",
+          "text": "changeTenant:function(e){var t=this;if(this.userInfo.tenantId!=e){var r=this;(function(e){return es().request(us+\"/main/tenant/main/\".concat(e),\"PUT\")})(e).then((function(){wi.Message.success(t.$t(\"user.switchTenantSuccess\")),r.refreshPage()})).catch((function(e){JSON.stringify(e).indexOf(t.$t(\"user.logOutHint\"))>-1&&js()}))}},refreshPage:function(){this.getNoticeList(),sessionStorage.removeItem(\"audaquLastPath\"),sessionStorage.removeItem(\"menuListedLastPath\"),ea.setGlobalState({message:{global:{switchTenant:!0}}});var e=this.systemConfig.dopAccess?\"workbench\":this.$_config.FIRST_MODULE_ID;sessionStorage.setItem(\"audaque_appid\",e),this.$emit(\"update-menu\",e);var t=this.$_config.FIRST_PAGE_PATH||Di;ss(t=Gi(t))},openMsgListDrawer:function(){var e=this;this.isShowMsgListDrawer=!0,this.$nextTick((function(){e.$refs.myMsgDrawer.open()}))},handleStaging:function(){this.$emit(\"switch-other-product\",{key:\"workbench\",name:this.$t(\"user.staging\"),position:0})},isOpen:function(e){e||(this.isShowMsgListDrawer=!1)}}),beforeDestroy:function(){}},Ws=(r(\"ffaa\"),Object(Bs.a)(Ys,(function(){"
+        },
+        {
+          "anchor": "us=cs.MODULE_URL_PREFIX.commonUser",
+          "start": 760436,
+          "end": 760981,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "47a683f500f21e4d5e640334b813d08f3333dca3e147b6aeb01ebe74a691b00f",
+          "text": "us=cs.MODULE_URL_PREFIX.commonUser||\"/common/user\",ps=cs.MODULE_URL_PREFIX.commonAuth||\"/common/auth\",fs=cs.MODULE_URL_PREFIX.commonOss||\"/common/oss\",ds=cs.MODULE_URL_PREFIX.commonConfig||\"/common/config\",hs=cs.MODULE_URL_PREFIX.commonMsg||\"/common/msg\",gs=function(){return es().request(us+\"/pub/login\",\"GET\")},ms=function(){return es().request(us+\"/main/self\",\"GET\")},vs=function(){return es().request(us+\"/main/subject\",\"GET\")},bs=function(){return es().request(us+\"/main/icon\",\"GET\")},ys=function(){return es().request(us+\"/main/key\",\"GET\")"
+        },
+        {
+          "anchor": "qa={\"Content-Type\":\"application/json;",
+          "start": 755130,
+          "end": 756180,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a2aee7d2755c98e02e3a9c3c7b15db6ab2a59b517cec50d7300f315c31ec09f7",
+          "text": "qa={\"Content-Type\":\"application/json;\",\"X-Requested-With\":\"XMLHttpRequest\",\"Cache-Control\":\"no-cache\",Pragma:\"no-cache\"},Ga=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];e.request.use((function(e){var n=$a(e.url,r),o=\"number\"==typeof e.timeout?e.timeout:2e4;e.timeout=n>=0?n:o,e.withCredentials=!0;var i=u(u(u({},qa),t.headers||{}),e.headers||{}),a=\"\",s=document.getElementById(\"X-CSRF-TOKEN\");s&&\"{X-CSRF-TOKEN}\"!==s.value&&(a=s.value),a&&(i[\"X-CSRF-TOKEN\"]=a);var l=localStorage.getItem(\"adq-token\");l&&\"undefined\"!==l&&\"null\"!==l&&(i[\"adq-token\"]=l),e.data instanceof FormData&&(i[\"Content-Type\"]=\"application/form-data\");var c=(new Date).getTime();i[\"X-TIMESTAMP\"]=c;var p=Vi.e.uuid();i[\"X-NONCE\"]=p;var f=Ha.getUri(e),d=Vi.c.generateSignInfo(e,f,c,p,Ha),h=Vi.c.sha256ToHex(d);return i[\"X-SIGN\"]=h,u(u(u({},t),e),{},{headers:i})}),(function(e){return Promise.reject(e)}))},Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?"
+        },
+        {
+          "anchor": "Ka=window.__$__BASE,Ya=function",
+          "start": 756097,
+          "end": 757807,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ee10fb00457ec76b69d644c7eef1cfe0bd46bc9cfe38cbef8e7fbc0e9823d0c1",
+          "text": "Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:function(){};e.response.use((function(e){var r=e.headers[\"adq-token\"];if(r&&\"undefined\"!==r&&\"null\"!==r&&localStorage.setItem(\"adq-token\",r),e.config.performance&&e.config.performance.rawData)return e;var n=Ka.NETWORK_ERROR_CODE||202;return e.status===n?Wa(e,t):e.data}),(function(e){return Wa(e.response,t)}))};function Wa(e,t){return Qa.apply(this,arguments)}function Qa(){return(Qa=s(regeneratorRuntime.mark((function e(t,r){var n,o,i,a,s;return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!((a=t||{}).data&&a.data.code&&r(a.data.code,t))){e.next=3;break}return e.abrupt(\"return\",Promise.reject(a));case 3:if(s=\"\",!a||!a.data){e.next=14;break}if(\"[object Blob]\"!==Object.prototype.toString.apply(a.data)){e.next=11;break}return e.next=8,a.data.text().then((function(e){return/^[{[]/.test(e)?(JSON.parse(e)||{}).msg:\"\"}));case 8:s=e.sent,e.next=12;break;case 11:s=a.data.msg;case 12:e.next=15;break;case 14:s=t&&t.message;case 15:return/timeout of \\d{1,10}ms exceeded/.test(s)&&(s=Pi.t(\"request.timedOut\")),s&&s.indexOf(\"Network Error\")>-1&&(s=Pi.t(\"request.networkError\")),null!==(n=a.config)&&void 0!==n&&null!==(o=n.performance)&&void 0!==o&&o.isHiddleErrorMessage||1003===(null==a||null===(i=a.data)||void 0===i?void 0:i.code)||wi.Message.error(s||Pi.t(\"request.requestException\")),e.abrupt(\"return\",Promise.reject(a));case 20:case\"end\":return e.stop()}}),e)})))).apply(this,arguments)}var Xa=function(){function e(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:function(){},r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&voi"
+        },
+        {
+          "anchor": "key:\"request\",value:function(e,t,r)",
+          "start": 757952,
+          "end": 758357,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "4a3c64144266f2b0d10c9c3f31686037369e51e803fe7d393b698be2098f30eb",
+          "text": "key:\"request\",value:function(e,t,r){var n=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{},o=\"/\"===e.charAt(0)?e.substr(1):e,i=u({url:o,method:t.toLowerCase()},n);return\"get\"===t.toLowerCase()?r&&(i.params=r):i.data=r||{},this._request(i)}},{key:\"_request\",value:function(e){return this.$http.request(e)}},{key:\"getInstance\",value:function(){return this}}]),e}(),Ja=null;function Za(){var e=argum"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-BASE",
+      "resourcePath": "/serviceConfig.base.js",
+      "localName": "serviceConfig.base.js",
+      "fetchedAt": "2026-10-26T06:07:41.425372+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 1774,
+      "sha256": "1a56c1c445a53f9a95384f1c33f1a59ed3de2723141f157ff838ca90d30fb113",
+      "excerpts": [
+        {
+          "anchor": "NETWORK_ERROR_CODE: 202",
+          "start": 755,
+          "end": 778,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8f59a792b6d56831f01f981a1c139144b88c724c15094b8280b4b81eec84d5ff",
+          "text": "NETWORK_ERROR_CODE: 202"
+        }
+      ]
+    },
+    {
+      "id": "HOME-SRC-CONFIG",
+      "resourcePath": "/serviceConfig.prod.js",
+      "localName": "serviceConfig.prod.js",
+      "fetchedAt": "2026-10-26T06:07:41.447650+00:00",
+      "inspectedAt": "2026-10-26T06:37:14.714Z",
+      "bytes": 7699,
+      "sha256": "9a95e7062419b2867854c72bb2e66c0ed75e94b87e72406c183d9e9bc5e757fb",
+      "excerpts": [
+        {
+          "anchor": "API_BASE_URL: baseUrl + '/back'",
+          "start": 342,
+          "end": 381,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "348c50b443d9a9d26d635edff457489ee554eacba4ad5e0c283dae44240fbcb5",
+          "text": "API_BASE_URL: baseUrl + '/back', //后台接口"
+        },
+        {
+          "anchor": "MODULE_URL_PREFIX: {}",
+          "start": 1570,
+          "end": 1591,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "97bb9c758d9ec7db70b29c35554f459f1476d3cd000323a7dc2d41c36080b9f3",
+          "text": "MODULE_URL_PREFIX: {}"
+        }
+      ]
+    }
+  ]
+}

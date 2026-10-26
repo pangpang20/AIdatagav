@@ -279,7 +279,7 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "菜单授权来源、空间切换影响、事项去重/计数及已读同步",
+        "criticalDecisions": "服务端权限矩阵、事项分页/完整计数、节点关联与并发办理契约",
         "objectBoundary": "应用入口、个人事项与当前空间/租户上下文",
         "expandedOperations": [
           "HOME-001",
