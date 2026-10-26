@@ -1,0 +1,4 @@
+interface:
+  display_name: "业务需求核对与细化"
+  short_description: "依据页面与源码细化可开发的业务需求，包含字段、接口、布局、非功能指标和验收"
+  default_prompt: "请使用 $business-requirements-review 逐项核对指定功能，将字段、交互、接口、布局、非功能要求与验收细化为可开发的业务规格，并单独记录核查依据。"
