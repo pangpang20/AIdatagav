@@ -12,6 +12,29 @@ SPEC.loader.exec_module(builder)
 
 
 class DeepRequirementsTests(unittest.TestCase):
+    def test_preserve_reviewed_drms_requires_exact_registry_and_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'drms';folder.mkdir()
+            file=folder/'子页面与操作细化.md'
+            text=('<!-- drms:generated-spec-v1 -->\n<!-- 业务规格格式:plain-v1 -->\n'
+                  '### DRMS-500 看板\n[E1](../E1.png)\n### DRMS-501 项目\n[E2](../E2.png)\n')
+            module={'code':'DRMS','directory':'drms'}
+            record={'requirements':[{'id':'DRMS-500','evidence':['E1']},{'id':'DRMS-501','evidence':['E2']}]}
+            file.write_text(text,encoding='utf8')
+            before=file.read_bytes()
+            self.assertIs(record,builder.preserve_reviewed(root,module,record))
+            self.assertEqual(before,file.read_bytes())
+            self.assertIsNone(builder.preserve_reviewed(root,{'code':'OTHER'},record))
+            for bad,pattern in [(text.replace('<!-- 业务规格格式:plain-v1 -->',''),'plain format'),
+                                (text.replace('DRMS-501','DRMS-502'),'registry mismatch'),
+                                (text.replace('E2.png','E3.png'),'evidence missing')]:
+                file.write_text(bad,encoding='utf8')
+                with self.assertRaisesRegex(ValueError,pattern):builder.preserve_reviewed(root,module,record)
+            file.write_text(text,encoding='utf8')
+            with self.assertRaisesRegex(ValueError,'registered IDs'):builder.preserve_reviewed(root,module,None)
+            record['requirements'].reverse()
+            with self.assertRaisesRegex(ValueError,'registry mismatch'):builder.preserve_reviewed(root,module,record)
+
     def test_flat_menu_and_observed_hierarchy_count_as_one_object(self):
         groups = [{'code':'X','links':[{'name':'· 任务','path':'/tasks','evidence':'a'}]},
                   {'code':'X','links':[{'name':'· 任务','hierarchy':'开发 → · 任务','path':'/tasks','evidence':'b'}]}]

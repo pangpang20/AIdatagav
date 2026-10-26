@@ -7029,8 +7029,8 @@
       "url": "/drms/requirement/my",
       "image": "evidence/live-recheck-20261022/P-DRMS-003.png",
       "metadata": "evidence/live-recheck-20261022/P-DRMS-003.json",
-      "targetValid": true,
-      "limitation": ""
+      "targetValid": false,
+      "limitation": "我的需求路径和菜单下正文仍为项目列表；仅支持导航，完整需求列表使用Y-DRMS-003。"
     },
     {
       "id": "P-DRMS-004",
@@ -7110,8 +7110,8 @@
       "url": "/drms/advisory/handle",
       "image": "evidence/live-recheck-20261022/P-DRMS-008.png",
       "metadata": "evidence/live-recheck-20261022/P-DRMS-008.json",
-      "targetValid": true,
-      "limitation": ""
+      "targetValid": false,
+      "limitation": "咨询处理路径和菜单下正文仍为咨询列表；仅支持导航，处理页两页签使用Z-DRMS-008。"
     },
     {
       "id": "Q-DCS-000-entry",

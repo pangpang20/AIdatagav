@@ -4,6 +4,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 SCRIPT=Path(__file__).resolve().parents[1]/'scripts/validate-requirements.py'
 spec=importlib.util.spec_from_file_location('validator',SCRIPT)
@@ -155,6 +156,11 @@ class BusinessRequirementsValidationTests(unittest.TestCase):
         self.assertTrue(any('unexecuted' in e for e in self.check(text.replace('| 未执行 |','| 已执行 |'))))
         self.assertTrue(any('research labels' in e for e in self.check(text+'\n【页面观察】\n')))
 
+    def test_plain_spec_link_target_can_reference_legacy_anchor_but_not_hide_labels(self):
+        text=self.plain_text()+'\n[规划](../AI能力规划.md#ai-001-示例拟定需求)\n'
+        self.assertEqual([],self.check(text))
+        self.assertTrue(any('research labels' in e for e in self.check(text+'\n[【待确认】](../AI能力规划.md)\n')))
+
     def test_plain_audit_requires_evidence_and_external_dependency_boundaries(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder=Path(tmp)
@@ -212,5 +218,28 @@ class BusinessRequirementsValidationTests(unittest.TestCase):
             self.assertEqual([],v.archive_errors(path,module))
             path.write_text('变化后的记录。\n',encoding='utf8')
             self.assertTrue(any('archive hash' in x for x in v.archive_errors(path,module)))
+
+class LivePlainAcceptanceTests(unittest.TestCase):
+    def test_live_plain_status_is_exact_and_does_not_allow_execution_claims(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);live=root/'evidence/live';live.mkdir(parents=True)
+            (live/'E1.png').write_bytes(b'fixture validated separately')
+            (live/'E1.json').write_text(json.dumps({'id':'E1','time':'2026-10-22T00:00:00Z','url':'/test'}),encoding='utf8')
+            (live/'manifest.json').write_text(json.dumps({'readOnly':True,'businessWritesExecuted':False,'samples':[
+                {'id':'E1','metadata':'evidence/live/E1.json','image':'evidence/live/E1.png','time':'2026-10-22T00:00:00Z','url':'/test','targetValid':True}]}),encoding='utf8')
+            doc=root/'document.md'
+            text=('<!-- 业务规格格式:plain-v1 -->\n## 1. 入口\n## 2. 页面\n## 3. 功能\n'
+                  '### DRMS-500 查询\n[E1](evidence/live/E1.png)\n## 4. 字段\n## 5. 流程\n## 6. 验收\n'
+                  '| DRMS-AC-500 | 查询 | DRMS-500 | 未执行 |\n## 7. 边界\n## 8. 来源\n')
+            record={'manifest':'evidence/live/manifest.json','documents':[
+                {'code':'DRMS','file':'document.md','requirements':[{'id':'DRMS-500','evidence':['E1']}]}]}
+            with patch.object(v,'png_check',return_value=None):
+                doc.write_text(text,encoding='utf8')
+                self.assertEqual([],v.live_recheck_errors(root,record))
+                for status in ['已执行','通过','未执行通过','未执行；已通过']:
+                    doc.write_text(text.replace('| 未执行 |','| '+status+' |'),encoding='utf8')
+                    self.assertTrue(any('overclaim' in e for e in v.live_recheck_errors(root,record)))
+                doc.write_text(text.replace('<!-- 业务规格格式:plain-v1 -->',''),encoding='utf8')
+                self.assertTrue(any('overclaim' in e for e in v.live_recheck_errors(root,record)))
 
 if __name__=='__main__':unittest.main()

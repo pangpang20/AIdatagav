@@ -790,7 +790,7 @@
 | [P-DRMS-002](./P-DRMS-002.png) / [JSON](./P-DRMS-002.json) | 2026-10-22T19:29:31+08:00 | /drms/project/my | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [P-DRMS-003-op1-options0](./P-DRMS-003-op1-options0.png) / [JSON](./P-DRMS-003-op1-options0.json) | 2026-10-22T19:30:17+08:00 | /drms/project/edit | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [P-DRMS-003-op1](./P-DRMS-003-op1.png) / [JSON](./P-DRMS-003-op1.json) | 2026-10-22T19:30:17+08:00 | /drms/project/edit | 无效目标证据 | 需求新增的截图、正文实际为新增项目，不能证明新增需求目标。 |
-| [P-DRMS-003](./P-DRMS-003.png) / [JSON](./P-DRMS-003.json) | 2026-10-22T19:30:14+08:00 | /drms/requirement/my | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
+| [P-DRMS-003](./P-DRMS-003.png) / [JSON](./P-DRMS-003.json) | 2026-10-22T19:30:14+08:00 | /drms/requirement/my | 无效目标证据 | 我的需求路径和菜单下正文仍为项目列表；仅支持导航，完整需求列表使用Y-DRMS-003。 |
 | [P-DRMS-004](./P-DRMS-004.png) / [JSON](./P-DRMS-004.json) | 2026-10-22T19:30:38+08:00 | /drms/task/my | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [P-DRMS-005](./P-DRMS-005.png) / [JSON](./P-DRMS-005.json) | 2026-10-22T19:30:42+08:00 | /drms/task/pending | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [P-DRMS-006](./P-DRMS-006.png) / [JSON](./P-DRMS-006.json) | 2026-10-22T19:30:44+08:00 | /drms/task/processed | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
@@ -799,7 +799,7 @@
 | [P-DRMS-007](./P-DRMS-007.png) / [JSON](./P-DRMS-007.json) | 2026-10-22T19:30:46+08:00 | /drms/advisory/list | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [P-DRMS-008-op1-options0](./P-DRMS-008-op1-options0.png) / [JSON](./P-DRMS-008-op1-options0.json) | 2026-10-22T19:31:14+08:00 | /drms/advisory/edit | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [P-DRMS-008-op1](./P-DRMS-008-op1.png) / [JSON](./P-DRMS-008-op1.json) | 2026-10-22T19:31:13+08:00 | /drms/advisory/edit | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
-| [P-DRMS-008](./P-DRMS-008.png) / [JSON](./P-DRMS-008.json) | 2026-10-22T19:31:09+08:00 | /drms/advisory/handle | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
+| [P-DRMS-008](./P-DRMS-008.png) / [JSON](./P-DRMS-008.json) | 2026-10-22T19:31:09+08:00 | /drms/advisory/handle | 无效目标证据 | 咨询处理路径和菜单下正文仍为咨询列表；仅支持导航，处理页两页签使用Z-DRMS-008。 |
 | [Q-DCS-000-entry](./Q-DCS-000-entry.png) / [JSON](./Q-DCS-000-entry.json) | 2026-10-22T19:27:16+08:00 | /dcs/analyze/internal | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [Q-DCS-001](./Q-DCS-001.png) / [JSON](./Q-DCS-001.json) | 2026-10-22T19:27:41+08:00 | /dcs/analyze/internal | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |
 | [Q-DCS-002](./Q-DCS-002.png) / [JSON](./Q-DCS-002.json) | 2026-10-22T19:27:46+08:00 | /dcs/analyze/agency | 页面/控件观察，业务未提交 | 仅当前账号、当前样本及可见区域；服务端行为未验收 |

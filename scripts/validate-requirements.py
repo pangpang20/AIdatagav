@@ -226,7 +226,8 @@ def business_errors(text,module,research,data):
     plain=plain_format(text)
     if plain:
         if './核查记录.md' not in LINK.findall(text):errors.append(f'{code}: plain business audit link missing')
-        if re.search(r'【|】|待确认|拟定需求|本轮|源码|历史DOM',text):
+        prose=LINK.sub(lambda m:m.group(0).split('](')[0]+']',text)
+        if re.search(r'【|】|待确认|拟定需求|本轮|源码|历史DOM',prose):
             errors.append(f'{code}: plain business specification contains research labels')
     ids=[x['id'] for x in registry]
     for n in range(1,9):
@@ -336,7 +337,7 @@ def live_recheck_errors(root,record):
                 if not block or sid+'.png' not in block.group(1):
                     errors.append(f'{req["id"]}: evidence not linked in requirement')
         for row in AC.findall(text):
-            if '【拟定，未执行】' not in row or '【已执行' in row:
+            if not unexecuted_row(row,plain_format(text)):
                 errors.append(f'{module["code"]}: business acceptance execution overclaim')
             refs=re.findall(r'(?<![A-Z-])[A-Z]+-\d{3}\b',row)
             if len(refs)!=1 or refs[0] not in requirements:

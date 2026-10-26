@@ -1205,8 +1205,15 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "需求后三步、提交/受理/退回状态、任务是否自动生成、项目/附件删除保护",
-        "objectBoundary": "项目、需求申请、咨询与协作任务",
+        "criticalDecisions": [
+          "后端字段类型、成功失败DTO、唯一性和错误code",
+          "部门/租户/角色/对象权限矩阵与直接URL鉴权",
+          "子集合省略/空数组/null语义、删除引用保护与快照一致性",
+          "工作流完整状态机、幂等和并发事务",
+          "临时文件TTL、已引用附件删除/恢复、内容安全与下载鉴权",
+          "看板统计时区、排序与零分母契约"
+        ],
+        "objectBoundary": "项目、需求申请及其字段/数据源/附件、人工关联协作任务及流程快照、独立咨询；已查前端约定不等同后端业务验收",
         "expandedOperations": [
           "DRMS-100",
           "DRMS-102",
@@ -1218,7 +1225,8 @@
           "DRMS-117",
           "DRMS-001",
           "DRMS-002"
-        ]
+        ],
+        "reviewDocument": "03-业务需求管理系统/核查记录.md"
       },
       "aiProposals": [
         "AI-001"
@@ -34822,6 +34830,9 @@
             "id": "DRMS-504",
             "key": "需求管理 → 我的需求::页面",
             "evidence": [
+              "Y-DRMS-003"
+            ],
+            "previousEvidence": [
               "P-DRMS-003"
             ]
           },
@@ -34872,6 +34883,9 @@
             "id": "DRMS-510",
             "key": "需求咨询 → 咨询处理::页面",
             "evidence": [
+              "Z-DRMS-008"
+            ],
+            "previousEvidence": [
               "P-DRMS-008"
             ]
           },
@@ -38796,6 +38810,9 @@
           "id": "DRMS-504",
           "key": "需求管理 → 我的需求::页面",
           "evidence": [
+            "Y-DRMS-003"
+          ],
+          "previousEvidence": [
             "P-DRMS-003"
           ]
         },
@@ -38846,6 +38863,9 @@
           "id": "DRMS-510",
           "key": "需求咨询 → 咨询处理::页面",
           "evidence": [
+            "Z-DRMS-008"
+          ],
+          "previousEvidence": [
             "P-DRMS-008"
           ]
         },
