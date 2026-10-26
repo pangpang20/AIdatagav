@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "static-source",
+  "inspectedAt": "2026-10-26T14:07:50.380Z",
+  "publicStaticGets": 16,
+  "businessRequests": 0,
+  "browserOperations": 0,
+  "applicationAcceptanceExecuted": false,
+  "invalidSamples": [
+    {
+      "path": "/workorder/",
+      "localName": "index.html",
+      "bytes": 1505,
+      "sha256": "141e9fe6af685a4cfa2b0aa283851ddb77f41cc4e884e846a135672ef16e8a20",
+      "fetchedAt": "2026-10-26T13:30:32.760Z",
+      "validFor": "父壳返回的静态样本；不作为工单微应用入口或页面证据"
+    }
+  ],
+  "limitations": [
+    "16次公开静态GET后只读文本；未执行下载代码或调用业务API",
+    "当前无受控浏览器或Network，没有本次新截图",
+    "/workorder/返回父壳；/workorder/index.html才是对应微应用入口",
+    "复用父应用配置/请求保留原获取时间；历史截图不保证与静态代码同一版本",
+    "前端不能证明后端授权、事务、办理结果、通知送达或完整动态表单契约"
+  ],
+  "sources": [
+    {
+      "id": "WO-SRC-TODO",
+      "resourcePath": "/workorder/static/js/views-workbench-workflowReviewList.f3187f93.js",
+      "localName": "views-workbench-workflowReviewList.f3187f93.js",
+      "fetchedAt": "2026-10-26T13:32:35.678Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 11259,
+      "sha256": "2675c586a03f2a67a6993c8e092450c0f2dc0394ced50aaf2097d12b65989af9",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 3594,
+          "end": 10998,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "74256ea8ef2f7c2ce4b28217977ba836594995be249d40e1630767ab1bb5efcc",
+          "text": "data:function(){return{categoryOptions:[],procStatusNS:c.procStatusNS,audaqueIsRequestFirstMixin:!1,ENABLED_DOP:w,DOP_MULTI_SPACE:f,projectSpaceMap:b,workOrderTypeList:c.workOrderTypeList}},created:function(){this.loadBusinessName()},methods:{getCategoryName:function(e){var t=this.categoryOptions.find((function(t){return t.categoryCode===e}));return t?t.categoryName:\"-\"},applyTimeChangeHandle:function(e){this.audaqueSearchMixin.createTimeStart=e?e[0]:null,this.audaqueSearchMixin.createTimeEnd=e?e[1]:null},loadBusinessName:function(){var e=this;Object(s.sysCategoryList)().then((function(t){e.categoryOptions=t,e.audaqueRequestListMixin()}))},goto:function(e){this.$router.push({path:\"/workbench/workflowFinishedAndReviewEdit\",query:{id:e.taskId,optType:\"edit\",pageType:\"upcoming\"}})}}},v=a(\"2877\"),h=Object(v.a)(k,(function(){var e=this,t=e.$createElement,a=e._self._c||t;return a(\"audaque-table-list-page\",[a(\"template\",{slot:\"title\"},[a(\"audaque-table-title\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.myToDo\")}})],1),a(\"template\",{slot:\"search\"},[a(\"audaque-table-search\",{on:{close:function(t){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.businessName\")}},[a(\"el-select\",{attrs:{filterable:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowReviewListVue.pleaseSelectABusinessName\"),clearable:\"\"},model:{value:e.audaqueSearchMixin.categoryCode,callback:function(t){e.$set(e.audaqueSearchMixin,\"categoryCode\",t)},expression:\"audaqueSearchMixin.categoryCode\"}},e._l(e.categoryOptions,(function(e,t){return a(\"el-option\",{key:t,attrs:{label:e.categoryName,value:e.categoryCode}})})),1)],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.applicationTitle\")}},[a(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],staticClass:\"autoSize f14\",attrs:{clearable:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowReviewListVue.pleaseEnterApplicationTitle\")},model:{value:e.audaqueSearchMixin.title,callback:function(t){e.$set(e.audaqueSearchMixin,\"title\",t)},expression:\"audaqueSearchMixin.title\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.sponsor\")}},[a(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],staticClass:\"autoSize f14\",attrs:{clearable:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowReviewListVue.pleaseEnterTheSponsor\")},model:{value:e.audaqueSearchMixin.applicantName,callback:function(t){e.$set(e.audaqueSearchMixin,\"applicantName\",t)},expression:\"audaqueSearchMixin.applicantName\"}})],1),a(\"audaque-table-search-item\",{staticClass:\"search-time-line\",attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.theStartingTime\")}},[a(\"el-date-picker\",{attrs:{type:\"datetimerange\",\"range-separator\":\"-\",\"value-format\":\"yyyy-MM-dd HH:mm:ss\",\"start-placeholder\":e.$t(\"viewsWorkbenchWorkflowReviewListVue.startDate\"),\"end-placeholder\":e.$t(\"viewsWorkbenchWorkflowReviewListVue.endDate\"),clearable:\"\"},on:{change:e.applyTimeChangeHandle},model:{value:e.audaqueSearchMixin.applyTimeRange,callback:function(t){e.$set(e.audaqueSearchMixin,\"applyTimeRange\",t)},expression:\"audaqueSearchMixin.applyTimeRange\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.businessName\")}},[a(\"el-select\",{attrs:{filterable:\"\",placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\"),clearable:\"\",multiple:\"\"},model:{value:e.audaqueSearchMixin.bizTypeList,callback:function(t){e.$set(e.audaqueSearchMixin,\"bizTypeList\",t)},expression:\"audaqueSearchMixin.bizTypeList\"}},e._l(e.workOrderTypeList,(function(e,t){return a(\"el-option\",{key:t,attrs:{label:e.label,value:e.value}})})),1)],1)],1)],1),[a(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[a(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.serialNumber\"),type:\"index\",index:e.audaqueIndexMethodMixin}}),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"spaceId\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.digitalSpaceIdentity\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.projectSpaceMap[t.row.spaceId]))]}}],null,!1,3745401983)}):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"appCode\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.sourceApplication\")}}):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"bizType\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(\" \"+e._s(e.audaqueFormmatListMixin(e.workOrderTypeList,t.row.bizType,{key:\"value\",value:\"label\"}))+\" \")]}}],null,!1,3552885340)}):e._e(),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"procInstId\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.serialNumber1\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"categoryCode\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.businessNumber2\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"categoryName\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.businessName\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.getCategoryName(t.row.categoryCode)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"taskName\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.nodeName\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"title\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.applicationTitle\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"applicantName\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.sponsor\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"createTime\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.theStartingTime\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.createTime)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"nodeDeadLine\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.nodeDeadline\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.nodeDeadLine)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"procStatus\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.processStatus\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(\" \"+e._s(e.procStatusNS[t.row.procStatus]||\"-\")+\" \")]}}])}),a(\"audaque-table-operate-column\",{attrs:{\"show-overflow-tooltip\":\"\",label:e.$t(\"viewsWorkbenchWorkflowReviewListVue.operate\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[2!=t.row.procStatus?a(\"audaque-link-text\",{attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.handle\")},on:{click:function(a){return e.goto(t.row)}}}):e._e()]}}])})],1),a(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,\"3b37907e\",null);t.default=h.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-DONE",
+      "resourcePath": "/workorder/static/js/views-workbench-workflowFinishedList.c481039c.js",
+      "localName": "views-workbench-workflowFinishedList.c481039c.js",
+      "fetchedAt": "2026-10-26T13:32:35.714Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 11506,
+      "sha256": "4406c80a69f0eb7c0c5a7dd659a288e390a42a3cc760b5d1fd1318d3b69d34be",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 2238,
+          "end": 9566,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "9fa4a3d2ded69dbe01c548e7e7328956238ccec883df2ad8430a99cad6d8b69f",
+          "text": "data:function(){return{categoryOptions:[],applicationTime:null,titles:[w(\"viewsWorkbenchWorkflowFinishedListVue.iHaveDone\")],activityName:0,procStatusNS:p.procStatusNS,audaqueIsRequestFirstMixin:!1,ENABLED_DOP:h,DOP_MULTI_SPACE:k,projectSpaceMap:v,workOrderTypeList:p.workOrderTypeList}},created:function(){this.loadBusinessName()},methods:{getCategoryName:function(e){var t=this.categoryOptions.find((function(t){return t.categoryCode===e}));return t?t.categoryName:\"-\"},applyTimeChangeHandle:function(e){this.audaqueSearchMixin.createTimeStart=e?e[0]:null,this.audaqueSearchMixin.createTimeEnd=e?e[1]:null},changeTableList:function(e){this.activityName=e,this.audaqueResetListMixin()},loadBusinessName:function(){var e=this;Object(u.sysCategoryList)().then((function(t){e.categoryOptions=t,e.audaqueRequestListMixin()}))},goto:function(e){this.$router.push({path:\"/workbench/workflowFinishedAndReviewEdit\",query:{id:e.taskId,optType:\"view\",pageType:\"done\"}})}}},W=a(\"2877\"),y=Object(W.a)(m,(function(){var e=this,t=e.$createElement,a=e._self._c||t;return a(\"audaque-table-list-page\",[a(\"template\",{slot:\"title\"},[a(\"audaque-table-title\",{attrs:{titles:e.titles,index:e.activityName},on:{change:e.changeTableList}})],1),a(\"template\",{slot:\"search\"},[a(\"audaque-table-search\",{on:{close:function(t){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.businessName\")}},[a(\"el-select\",{attrs:{filterable:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.pleaseSelectABusinessName\"),clearable:\"\"},model:{value:e.audaqueSearchMixin.categoryCode,callback:function(t){e.$set(e.audaqueSearchMixin,\"categoryCode\",t)},expression:\"audaqueSearchMixin.categoryCode\"}},e._l(e.categoryOptions,(function(e,t){return a(\"el-option\",{key:t,attrs:{label:e.categoryName,value:e.categoryCode}})})),1)],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.applicationTitle\")}},[a(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],staticClass:\"autoSize f14\",attrs:{clearable:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.pleaseEnterApplicationTitle\")},model:{value:e.audaqueSearchMixin.title,callback:function(t){e.$set(e.audaqueSearchMixin,\"title\",t)},expression:\"audaqueSearchMixin.title\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.sponsor\")}},[a(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],staticClass:\"autoSize f14\",attrs:{clearable:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.pleaseEnterTheSponsor\")},model:{value:e.audaqueSearchMixin.applicantName,callback:function(t){e.$set(e.audaqueSearchMixin,\"applicantName\",t)},expression:\"audaqueSearchMixin.applicantName\"}})],1),a(\"audaque-table-search-item\",{staticClass:\"search-time-line\",attrs:{title:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.theStartingTime\")}},[a(\"el-date-picker\",{attrs:{type:\"datetimerange\",\"range-separator\":\"-\",\"value-format\":\"yyyy-MM-dd HH:mm:ss\",\"start-placeholder\":e.$t(\"viewsWorkbenchWorkflowFinishedListVue.startDate\"),\"end-placeholder\":e.$t(\"viewsWorkbenchWorkflowFinishedListVue.endDate\"),clearable:\"\"},on:{change:e.applyTimeChangeHandle},model:{value:e.audaqueSearchMixin.applyTimeRange,callback:function(t){e.$set(e.audaqueSearchMixin,\"applyTimeRange\",t)},expression:\"audaqueSearchMixin.applyTimeRange\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.businessName\")}},[a(\"el-select\",{attrs:{filterable:\"\",placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\"),clearable:\"\",multiple:\"\"},model:{value:e.audaqueSearchMixin.bizTypeList,callback:function(t){e.$set(e.audaqueSearchMixin,\"bizTypeList\",t)},expression:\"audaqueSearchMixin.bizTypeList\"}},e._l(e.workOrderTypeList,(function(e,t){return a(\"el-option\",{key:t,attrs:{label:e.label,value:e.value}})})),1)],1)],1)],1),[a(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[a(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.serialNumber\"),type:\"index\",index:e.audaqueIndexMethodMixin}}),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"spaceId\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.digitalSpaceIdentity\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.projectSpaceMap[t.row.spaceId]))]}}],null,!1,3745401983)}):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"appCode\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.sourceApplication\")}}):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"bizType\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(\" \"+e._s(e.audaqueFormmatListMixin(e.workOrderTypeList,t.row.bizType,{key:\"value\",value:\"label\"}))+\" \")]}}],null,!1,3552885340)}):e._e(),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"procInstId\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.serialNumber1\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"categoryCode\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.businessNumber2\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"categoryName\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.businessName\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.getCategoryName(t.row.categoryCode)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"taskName\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.nodeName\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"title\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.applicationTitle\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"applicantName\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.sponsor\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"createTime\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.theStartingTime\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.createTime)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"procStatus\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.processStatus\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(\" \"+e._s(e.procStatusNS[t.row.procStatus]||\"-\")+\" \")]}}])}),a(\"audaque-table-operate-column\",{attrs:{\"show-overflow-tooltip\":\"\",label:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.operate\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"audaque-link-text\",{attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchWorkflowFinishedListVue.check\")},on:{click:function(a){return e.goto(t.row)}}})]}}])})],1),a(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,null,null);t.default=y.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-MINE",
+      "resourcePath": "/workorder/static/js/views-workbench-myWorkflowList.6961a07f.js",
+      "localName": "views-workbench-myWorkflowList.6961a07f.js",
+      "fetchedAt": "2026-10-26T13:32:35.757Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 20080,
+      "sha256": "3b2d6436180299f4fe6e4053f216eb0b06c5862a191a7ac3b611e2bb32a380ac",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 2332,
+          "end": 16606,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "0098796d9823d603312a0ffd99111ea2d3b7e94743d0e47fa51ccbed8450b7d4",
+          "text": "data:function(){return{audaqueFixedSearchMixin:{},procStatusNS:l.procStatusNS,reviewStatus:l.reviewStatus,workOrderTypeList:l.workOrderTypeList,categoryOptions:[],audaqueIsRequestFirstMixin:!1,ENABLED_DOP:w,DOP_MULTI_SPACE:h,projectSpaceMap:v}},computed:{},created:function(){this.loadBusinessName()},mounted:function(){},methods:{enumerateTranslations:function(e,t){if(!t)return\"-\";var a=e.find((function(e){return e.value==t}));return a&&a.label||\"-\"},getCategoryName:function(e){var t=this.categoryOptions.find((function(t){return t.categoryCode===e}));return t?t.categoryName:\"-\"},applyTimeChangeHandle:function(e){this.audaqueSearchMixin.applyTimeStart=e?e[0]:null,this.audaqueSearchMixin.applyTimeEnd=e?e[1]:null},loadBusinessName:function(){var e=this;Object(d.sysCategoryList)().then((function(t){e.categoryOptions=t,e.audaqueRequestListMixin()}))},editDialog:function(e){var t=this,a=this;Promise.all([Object(c.actSelect)(e.bizCode),Object(d.formDesignSelect)(e.formId)]).then((function(o){var r=o[1],n=o[0],i=JSON.parse(n.bizInfo),s=JSON.parse(r.formJson||\"{}\"),u=+new Date;t.$AudaqueToast.dialog({title:m(\"viewsWorkbenchMyWorkflowListVue.editBusinessNumber\")+\"(\"+(e.categoryCode||\"\")+\")\",width:\"700px\",data:{echoFormData:i,formConf:s,keep:!0,key2:u,getRequestInstance:Object(p.d)()},components:{},template:'\\n                        <audaque-form-parser\\n                            ref=\"formParser\"\\n                            :key=\"key2\"\\n                            :formConf=\"formConf\"\\n                            :isDisabled=\"false\"\\n                            :echoFormData=\"echoFormData\"\\n                            @submit=\"submitForm\"\\n                            @reset=\"resetForm\"\\n                            :getRequestInstance=\"getRequestInstance\"\\n                        ></audaque-form-parser>\\n                ',methods:{okEvent:function(){return!!r.formJson&&(this.$refs.formParser.submitForm(),this.keep)},submitForm:function(t){var o=this;this.keep=!1,Object(c.updateActBiz)({title:e.title,id:e.id,bizInfo:JSON.stringify(t)}).then((function(){o.$AudaqueToast.tip({template:\"\".concat(m(\"viewsWorkbenchMyWorkflowListVue.successfulOperation\")),methods:{okEvent:function(){a.audaqueRequestListMixin()}}})}))},resetForm:function(){}}})}))},start:function(e){var t=this;this.$AudaqueToast.dialog({title:m(\"viewsWorkbenchMyWorkflowListVue.initiateProcess\"),width:\"700px\",data:{processrRuleForm:{userId:[]},processrRules:{},ruleForm:{userIds:[]},defaultUserOptions:[],userList:b.userList},components:{},template:'\\n                    <el-form\\n                        :model=\"processrRuleForm\"\\n                        :rules=\"processrRules\"\\n                        ref=\"ruleForm\"\\n                        label-width=\"100px\"\\n                    >\\n                        <el-form-item :label=\"$t(\\'viewsWorkbenchMyWorkflowListVue.cc\\')\" prop=\"userId\">\\n                             <audaque-search-select\\n                                    multiple\\n                                    v-model=\"ruleForm.userIds\"\\n                                    :keyMap=\"{ display: \\'name\\', value: \\'id\\' }\"\\n                                    fuzzySearchField=\"obscureName\"\\n                                    :fixedParams=\"{}\"\\n                                    :fetchList=\"userList\"\\n                                    :selectedOptions=\"defaultUserOptions\"\\n                                ></audaque-search-select>\\n                        </el-form-item>\\n                    </el-form>\\n                ',methods:{okEvent:function(){this.processStartSubmit()},processStartSubmit:function(){var a=this;this.$refs.ruleForm.validate((function(o){if(!o)return!1;Object(c.procStart)({id:e.id,title:e.title,ccUid:a.ruleForm.userIds,categoryCode:e.categoryCode,appKey:\"ubp\"}).then((function(){a.$AudaqueToast.tip({template:\"\".concat(m(\"viewsWorkbenchMyWorkflowListVue.startSuccessfully\"))}),t.audaqueRequestListMixin()}))}))}}})},goto:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"view\";this.$router.push({path:\"/workbench/myWorkflowAndCopy2MeEdit\",query:{procStatus:e.procStatus,formId:e.formId,bizCode:e.bizCode,tableName:e.tableName,optType:t}})},revoke:function(e){var t=this,a=this;Object(c.procCancel)({procInstId:e.bizCode}).then((function(){t.$AudaqueToast.tip({template:\"\".concat(m(\"viewsWorkbenchMyWorkflowListVue.canceledSuccessfully\")),methods:{okEvent:function(){a.audaqueRequestListMixin()}}})}))},urge:function(e){var t=this;this.$AudaqueToast.dialog({title:m(\"viewsWorkbenchMyWorkflowListVue.reminder\"),width:\"500px\",data:{urgeRuleForm:{},rules:{message:[f.AudaqueElementValidator.isNotEmpty(\"blur\",m(\"viewsWorkbenchMyWorkflowListVue.pleaseEnterInformationContent\"))]}},template:'\\n                    <audaque-form :isTwoInRow=\"false\" :model=\"urgeRuleForm\" ref=\"form\" :rules=\"rules\" label-width=\"100px\">\\n                        <el-form-item :label=\"$t(\\'viewsWorkbenchMyWorkflowListVue.information\\')\" prop=\"message\">\\n                            <el-input                  \\n                                class=\"news-type-sys-introduction\"\\n                                type=\"textarea\"\\n                                maxlength=\"200\"\\n                                show-word-limit\\n                                :placeholder=\"$t(\\'viewsWorkbenchMyWorkflowListVue.pleaseEnterInformationContent\\')\"\\n                                v-audaque-input-trim\\n                                v-model=\"urgeRuleForm.message\"\\n                            ></el-input>\\n                        </el-form-item>\\n                    </audaque-form>\\n                ',methods:{okEvent:function(){var a=this,o=!1;return this.$refs.form.validate((function(r){if(!r)return o=!0,!1;Object(c.hasten)({procInstId:e.bizCode,comment:a.urgeRuleForm.message}).then((function(){t.$AudaqueToast.tip({template:m(\"viewsWorkbenchMyWorkflowListVue.successfulReminder\")}),t.audaqueRequestListMixin()}))})),o}}})}}},W=a(\"2877\"),q=Object(W.a)(y,(function(){var e=this,t=e.$createElement,a=e._self._c||t;return a(\"audaque-table-list-page\",[a(\"template\",{slot:\"title\"},[a(\"audaque-table-title\",{attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowListVue.myTicket\")}})],1),a(\"template\",{slot:\"operate\"},[a(\"audaque-table-title\",{attrs:{type:\"operate\"}})],1),a(\"template\",{slot:\"search\"},[a(\"audaque-table-search\",{on:{close:function(t){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowListVue.businessName\")}},[a(\"el-select\",{attrs:{filterable:\"\",placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.pleaseSelectABusinessName\"),clearable:\"\"},model:{value:e.audaqueSearchMixin.categoryCode,callback:function(t){e.$set(e.audaqueSearchMixin,\"categoryCode\",t)},expression:\"audaqueSearchMixin.categoryCode\"}},e._l(e.categoryOptions,(function(e,t){return a(\"el-option\",{key:t,attrs:{label:e.categoryName,value:e.categoryCode}})})),1)],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowListVue.applicationTitle\")}},[a(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],staticClass:\"autoSize f14\",attrs:{clearable:\"\",placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.pleaseEnterApplicationTitle\")},model:{value:e.audaqueSearchMixin.title,callback:function(t){e.$set(e.audaqueSearchMixin,\"title\",t)},expression:\"audaqueSearchMixin.title\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowListVue.processStatus\")}},[a(\"el-select\",{attrs:{placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.pleaseSelectProcessStatus\"),clearable:\"\",multiple:\"\",\"collapse-tags\":\"\"},model:{value:e.audaqueSearchMixin.procStatusList,callback:function(t){e.$set(e.audaqueSearchMixin,\"procStatusList\",t)},expression:\"audaqueSearchMixin.procStatusList\"}},e._l(e.procStatusNS,(function(e,t){return a(\"el-option\",{key:e,attrs:{label:e,value:Number(t)}})})),1)],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowListVue.approvalStatus\")}},[a(\"el-select\",{attrs:{placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.pleaseSelectReviewStatus\"),clearable:\"\",multiple:\"\",\"collapse-tags\":\"\"},model:{value:e.audaqueSearchMixin.optTypeList,callback:function(t){e.$set(e.audaqueSearchMixin,\"optTypeList\",t)},expression:\"audaqueSearchMixin.optTypeList\"}},e._l(e.reviewStatus,(function(e){return a(\"el-option\",{key:e.value,attrs:{label:e.label,value:e.value}})})),1)],1),a(\"audaque-table-search-item\",{staticClass:\"search-time-line\",attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowListVue.theStartingTime\")}},[a(\"el-date-picker\",{attrs:{type:\"datetimerange\",\"range-separator\":\"-\",\"value-format\":\"yyyy-MM-dd HH:mm:ss\",\"start-placeholder\":e.$t(\"viewsWorkbenchMyWorkflowListVue.startDate\"),\"end-placeholder\":e.$t(\"viewsWorkbenchMyWorkflowListVue.endDate\"),clearable:\"\"},on:{change:e.applyTimeChangeHandle},model:{value:e.audaqueSearchMixin.applyTimeRange,callback:function(t){e.$set(e.audaqueSearchMixin,\"applyTimeRange\",t)},expression:\"audaqueSearchMixin.applyTimeRange\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:e.$t(\"viewsWorkbenchWorkflowReviewListVue.businessName\")}},[a(\"el-select\",{attrs:{filterable:\"\",placeholder:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\"),clearable:\"\",multiple:\"\"},model:{value:e.audaqueSearchMixin.bizTypeList,callback:function(t){e.$set(e.audaqueSearchMixin,\"bizTypeList\",t)},expression:\"audaqueSearchMixin.bizTypeList\"}},e._l(e.workOrderTypeList,(function(e,t){return a(\"el-option\",{key:t,attrs:{label:e.label,value:e.value}})})),1)],1)],1)],1),[a(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[a(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:e.$t(\"viewsWorkbenchMyWorkflowListVue.serialNumber\"),type:\"index\",index:e.audaqueIndexMethodMixin}}),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"spaceId\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.digitalSpaceIdentity\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.projectSpaceMap[t.row.spaceId]))]}}],null,!1,3745401983)}):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"appCode\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.sourceApplication\")}}):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"bizType\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(\" \"+e._s(e.audaqueFormmatListMixin(e.workOrderTypeList,t.row.bizType,{key:\"value\",value:\"label\"}))+\" \")]}}],null,!1,3552885340)}):e._e(),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"bizCode\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.serialNumber1\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"categoryCode\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.businessNumber2\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"categoryName\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.businessName\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.getCategoryName(t.row.categoryCode)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"title\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.applicationTitle\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"createTime\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.theStartingTime\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.createTime)))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"duration\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.hasBeenTransferred\")}}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"procStatus\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.processStatus\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.procStatusNS[t.row.procStatus]))]}}])}),a(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"bizResult\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.approvalStatus\")}}),a(\"audaque-table-operate-column\",{attrs:{\"show-overflow-tooltip\":\"\",label:e.$t(\"viewsWorkbenchMyWorkflowListVue.operate\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"audaque-link-text\",{attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchMyWorkflowListVue.check\")},on:{click:function(a){return e.goto(t.row,\"view\")}}}),0===t.row.procStatus?[a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"update\"},expression:\"{ key: 'update' }\"}],attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchMyWorkflowListVue.edit\")},on:{click:function(a){return e.editDialog(t.row)}}}),a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"start\"},expression:\"{ key: 'start' }\"}],attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchMyWorkflowListVue.startUp\")},on:{click:function(a){return e.start(t.row)}}}),a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"delete\"},expression:\"{ key: 'delete' }\"}],attrs:{type:\"text-danger\",title:e.$t(\"viewsWorkbenchMyWorkflowListVue.delete\")},on:{click:function(a){return e.audaqueDeleteMixin(t.row)}}})]:1===t.row.procStatus?[a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"revoke\"},expression:\"{ key: 'revoke' }\"}],attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchMyWorkflowListVue.withdraw\")},on:{click:function(a){return e.revoke(t.row)}}}),a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"urge\"},expression:\"{ key: 'urge' }\"}],attrs:{type:\"text\",title:e.$t(\"viewsWorkbenchMyWorkflowListVue.reminder\")},on:{click:function(a){return e.urge(t.row)}}})]:e._e()]}}])})],1),a(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,null,null);t.default=q.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-TASK",
+      "resourcePath": "/workorder/static/js/views-workbench-workflowFinishedAndReviewEdit.32134d8d.js",
+      "localName": "views-workbench-workflowFinishedAndReviewEdit.32134d8d.js",
+      "fetchedAt": "2026-10-26T13:32:35.824Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 23619,
+      "sha256": "fc5faa203d70ef01c5790546c7c96a7004dbd90523e99b6705923828522481ea",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 6433,
+          "end": 23217,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "def828a2507510846142847ab89390620e33ef72ea213c5b684f46210eb7f6e5",
+          "text": "data:function(){return{procStatusNS:d.procStatusNS,reviewStatus:d.reviewStatus,taskId:this.$route.query.id,pageType:this.$route.query.pageType,ruleForm:{newAssigneeId:null,userIds:[],ccUid:[]},rules:{comment:{required:!0,message:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseEnterReviewComments\"),trigger:[\"blur\",\"change\"]},type:{required:!0,message:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseSelectTheTypeOfOperation\"),trigger:\"change\"},newAssigneeId:{required:!0,message:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseSpecifyAUser\"),trigger:\"change\"},backTaskSid:{required:!0,message:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseSelectTheNextNodeHandler\"),trigger:\"change\"}},nodeData:[],key2:1,formConf:{},echoFormData:{},activeName:\"0\",userInfoForm:{},userInfoRules:{},isShowFormItem:!0,tabsNames:{0:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.basicInformation\"),1:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.formInformation\"),2:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.taskHandling\"),3:A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditHistory\")},categoryOptions:[],historyNodes:[],nextNodes:[],defaultUserOptions:[],getRequestInstance:Object(T.d)(),userList:u.userList,CURRENT_USER_ID:N,isShowTip:!1,tipText:\"\",isSubmit:!1,ENABLED_DOP:x,DOP_MULTI_SPACE:$,workOrderTypeList:d.workOrderTypeList}},computed:{},components:{processInfoComponent:n.default},created:function(){var e=this;Object(l.sysCategoryList)().then((function(t){e.categoryOptions=t,e.taskId&&(e.getTodoInfo(),\"upcoming\"===e.pageType&&e.getNodes())}))},methods:{getTip:function(e){this.isShowTip=!0,this.tipText=e},submitForm:function(){},getTodoInfo:function(){var e,t=this;\"upcoming\"===this.pageType?e=Object(l.taskDetail)({taskId:this.taskId}):\"done\"===this.pageType&&(e=Object(l.finishedTaskDetail)({taskId:this.taskId})),e.then((function(e){var r=\"\";e.createTime=t.formatTimeToDate(e.createTime),e.procStatus=t.procStatusNS[e.procStatus],e.ccInfo&&e.ccInfo.forEach((function(e){r+=e.uname+\",\"})),e.bizType=S.a.formmatList(t.workOrderTypeList,e.bizType,{key:\"value\",value:\"label\"}),t.userInfoForm=e,t.userInfoForm.ccInfo=r.substring(0,r.lastIndexOf(\",\")),e.bizInfo&&(t.echoFormData=JSON.parse(e.bizInfo)),t.loadFormInfo()}))},formatTimeToDate:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"yyyy-MM-dd hh:mm:ss\";return e?S.b.dateFormat(e,t):\"-\"},loadFormInfo:function(){var e=this;this.userInfoForm.formId?Object(l.formDesignSelect)(this.userInfoForm.formId).then((function(t){t.formJson?(e.isShowFormItem=!0,e.formConf=JSON.parse(t.formJson||\"{}\"),e.key2=+new Date):e.isShowFormItem=!1})):this.isShowFormItem=!1},getNodes:function(){var e=this;Promise.all([Object(l.nextNode)({taskId:this.taskId}),Object(l.taskCanBackToNodes)({taskId:this.taskId})]).then((function(t){t[0]&&t[0].length>0&&(e.nextNodes=t[0].map((function(e){return Object(i.a)(Object(i.a)({},e),{},{nodeId:W()})}))),t[1]&&t[1].length>0&&(e.historyNodes=t[1].map((function(e){return Object(i.a)(Object(i.a)({},e),{},{nodeId:W()})}))),setTimeout((function(){e.$set(e.ruleForm,\"optType\",1),e.switchType(1)}),1e3)}))},switchType:function(e){if(this.nodeData=[],this.$set(this.ruleForm,\"backTaskSid\",\"\"),this.$set(this.ruleForm,\"newAssigneeId\",null),this.$refs.ruleForm.clearValidate(),1===e){this.nodeData=this.nextNodes,this.nodeData.map((function(e){return e.taskName=e.taskName||\" \"}));var t=this.nodeData[0];if(t){var r=t.relateIds,o=\"\";this.$set(this.ruleForm,\"backTaskSid\",this.nodeData[0].nodeId),r&&Object.keys(r).length>0&&(o=Object.values(r).join(\";\")),this.$set(this.ruleForm,\"nameStr\",o),this.defaultUserOptions=this.userOptions(this.nodeData[0])}}},switchNode:function(e){var t=this.nodeData.find((function(t){return t.nodeId===e}));t?(this.$set(this.ruleForm,\"userIds\",t.uidStr),this.defaultUserOptions=this.userOptions(t)):(this.$set(this.ruleForm,\"userIds\",[]),this.defaultUserOptions=[])},userOptions:function(e){for(var t=e.uidStr||[],r=e.nameStr,o=[],i=0;i<t.length;i++)o.push({id:t[i],name:r[i]});return o},submitTask:function(){var e=this,t=this;this.$refs.ruleForm.validate((function(r){if(!r)return!1;t.isSubmit=!0,Object(l.taskSubmit)({optType:e.ruleForm.optType,taskId:e.taskId,comment:e.ruleForm.comment,ccUid:e.ruleForm.ccUid,userStr:e.ruleForm.userIds,newAssigneeId:e.ruleForm.newAssigneeId}).then((function(){t.isSubmit=!1,t.$AudaqueToast.tip({template:\"\".concat(A(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.successfulOperation\")),methods:{okEvent:function(){t.$router.go(-1)}}})})).catch((function(){t.isSubmit=!1}))}))}}},R=(r(\"8e8e\"),r(\"2877\")),_=Object(R.a)(E,(function(){var e=this,t=e.$createElement,r=e._self._c||t;return r(\"audaque-detail-form-page\",{staticClass:\"workflow-review-edit\",attrs:{title:(\"view\"===e.$route.query.optType?e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.check\"):e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.dealWith\"))+e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.mine\")+(\"done\"===e.pageType?e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.done\"):e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.upcoming\")),\"opt-type\":e.$route.query.optType}},[r(\"el-tabs\",{staticClass:\"workbench-edit\",attrs:{\"tab-position\":\"top\"},model:{value:e.activeName,callback:function(t){e.activeName=t},expression:\"activeName\"}},[r(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.basicInformation\"),name:\"0\"}},[r(\"audaque-form\",{ref:\"userInfoForm\",staticClass:\"demo-ruleForm\",attrs:{model:e.userInfoForm,rules:e.userInfoRules,\"label-width\":\"120px\",id:\"updateNode0\"}},[r(\"el-row\",{attrs:{gutter:e.audaqueGutterMixin}},[r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.businessNumber2\"),prop:\"categoryName\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.categoryCode,callback:function(t){e.$set(e.userInfoForm,\"categoryCode\",t)},expression:\"userInfoForm.categoryCode\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.businessName\"),prop:\"processName\"}},[r(\"el-select\",{staticStyle:{width:\"100%\"},attrs:{disabled:\"\",placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseChoose\"),clearable:\"\"},model:{value:e.userInfoForm.categoryCode,callback:function(t){e.$set(e.userInfoForm,\"categoryCode\",t)},expression:\"userInfoForm.categoryCode\"}},e._l(e.categoryOptions,(function(e,t){return r(\"el-option\",{key:t,attrs:{label:e.categoryName,value:e.categoryCode}})})),1)],1)],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.nodeName\"),prop:\"taskName\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.taskName,callback:function(t){e.$set(e.userInfoForm,\"taskName\",t)},expression:\"userInfoForm.taskName\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.applicationTitle\"),prop:\"title\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.title,callback:function(t){e.$set(e.userInfoForm,\"title\",t)},expression:\"userInfoForm.title\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.sponsor\"),prop:\"applicantName\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.applicantName,callback:function(t){e.$set(e.userInfoForm,\"applicantName\",t)},expression:\"userInfoForm.applicantName\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[e.userInfoForm.ccInfo&&e.userInfoForm.ccInfo.length>0?r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.cc\"),prop:\"ccInfo\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.ccInfo,callback:function(t){e.$set(e.userInfoForm,\"ccInfo\",t)},expression:\"userInfoForm.ccInfo\"}})],1):e._e()],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.sponsorsOrganization\"),prop:\"applicantDep\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.applicantDep,callback:function(t){e.$set(e.userInfoForm,\"applicantDep\",t)},expression:\"userInfoForm.applicantDep\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.theStartingTime\"),prop:\"startTime\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.createTime,callback:function(t){e.$set(e.userInfoForm,\"createTime\",t)},expression:\"userInfoForm.createTime\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.state\")}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.procStatus,callback:function(t){e.$set(e.userInfoForm,\"procStatus\",t)},expression:\"userInfoForm.procStatus\"}})],1)],1),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowListVue.sourceApplication\"),prop:\"appCode\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.appCode,callback:function(t){e.$set(e.userInfoForm,\"appCode\",t)},expression:\"userInfoForm.appCode\"}})],1)],1):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?r(\"el-col\",{attrs:{span:12}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\"),prop:\"bizType\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.bizType,callback:function(t){e.$set(e.userInfoForm,\"bizType\",t)},expression:\"userInfoForm.bizType\"}})],1)],1):e._e()],1)],1)],1),r(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.formInformation\"),name:\"1\"}},[r(\"div\",{attrs:{id:\"updateNode1\"}},[e.isShowFormItem?[r(\"div\",[r(\"audaque-form-parser\",{key:e.key2,ref:\"formParser\",attrs:{formConf:e.formConf,isDisabled:!0,echoFormData:e.echoFormData,getRequestInstance:e.getRequestInstance},on:{submit:e.submitForm}})],1)]:r(\"div\",{staticClass:\"air-item\"},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.noFormInformation\"))+\" \")])],2)]),\"upcoming\"===e.pageType?r(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.taskHandling\"),name:\"2\"}},[r(\"div\",[r(\"audaque-form\",{ref:\"ruleForm\",attrs:{id:\"updateNode2\",model:e.ruleForm,rules:e.rules,\"label-width\":\"110px\",disabled:e.userInfoForm.procStatus>=2}},[r(\"el-row\",{attrs:{gutter:e.audaqueGutterMixin}},[r(\"el-col\",{attrs:{span:24}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditOperation\"),prop:\"optType\"}},[r(\"div\",[r(\"el-radio-group\",{on:{change:e.switchType},model:{value:e.ruleForm.optType,callback:function(t){e.$set(e.ruleForm,\"optType\",t)},expression:\"ruleForm.optType\"}},[\"SYS_DATA_ANALYSIS\"!=e.userInfoForm.categoryCode?r(\"el-radio\",{attrs:{label:1}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pass\"))+\" \")]):e._e(),r(\"el-radio\",{attrs:{label:4}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.turnDown\"))+\" \")]),e.userInfoForm.countersignNeed<=0?r(\"el-radio\",{attrs:{label:5}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.commissioned\"))+\" \")]):e._e(),\"SYS_DATA_ANALYSIS\"===e.userInfoForm.categoryCode?r(\"el-radio\",{attrs:{label:16}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.selectNode\"))+\" \")]):e._e(),e.userInfoForm.countersignNeed<=0?r(\"el-radio\",{attrs:{label:6}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.transfer\"))+\" \")]):e._e()],1)],1)])],1),r(\"el-col\",{attrs:{span:24}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditOpinion\"),prop:\"comment\"}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{type:\"textarea\",placeholder:\"\",clearable:\"\",maxlength:\"70\",\"show-word-limit\":\"\"},model:{value:e.ruleForm.comment,callback:function(t){e.$set(e.ruleForm,\"comment\",t)},expression:\"ruleForm.comment\"}})],1)],1),r(\"el-col\",{attrs:{span:24}},[r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.cc\"),prop:\"ccUid\"}},[r(\"audaque-search-select\",{attrs:{multiple:\"\",keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.ccUid,callback:function(t){e.$set(e.ruleForm,\"ccUid\",t)},expression:\"ruleForm.ccUid\"}})],1)],1),r(\"el-col\",{attrs:{span:12}},[e.nodeData.length>0&&1===e.ruleForm.optType||16===e.ruleForm.optType?r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.nextNode\")}},[r(\"el-select\",{staticClass:\"opinion-line\",staticStyle:{width:\"50%\"},attrs:{placeholder:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.pleaseChoose\"),clearable:\"\",disabled:1===e.ruleForm.optType},on:{change:e.switchNode},model:{value:e.ruleForm.backTaskSid,callback:function(t){e.$set(e.ruleForm,\"backTaskSid\",t)},expression:\"ruleForm.backTaskSid\"}},e._l(e.nodeData,(function(e,t){return r(\"el-option\",{key:t,attrs:{label:e.taskName,value:e.nodeId}})})),1)],1):e._e()],1),r(\"el-col\",{attrs:{span:12}},[e.nodeData.length>0&&1===e.ruleForm.optType?r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.reviewer\")}},[r(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.ruleForm.nameStr,callback:function(t){e.$set(e.ruleForm,\"nameStr\",t)},expression:\"ruleForm.nameStr\"}})],1):e._e()],1),r(\"el-col\",{attrs:{span:24}},[e.nodeData.length>0&&1===e.ruleForm.optType&&!e.userInfoForm.owner&&e.userInfoForm.countersignNeed<=0||16===e.ruleForm.optType?r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.designateTheNextOperator\"),prop:\"userIds\"}},[r(\"audaque-search-select\",{attrs:{multiple:\"\",keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.userIds,callback:function(t){e.$set(e.ruleForm,\"userIds\",t)},expression:\"ruleForm.userIds\"}})],1):e._e()],1),r(\"el-col\",{attrs:{span:24}},[5===e.ruleForm.optType?r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.delegatedUser\"),prop:\"newAssigneeId\"}},[r(\"audaque-search-select\",{attrs:{keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},filterFunc:function(t){return t.id!=e.CURRENT_USER_ID},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.newAssigneeId,callback:function(t){e.$set(e.ruleForm,\"newAssigneeId\",t)},expression:\"ruleForm.newAssigneeId\"}})],1):e._e()],1),r(\"el-col\",{attrs:{span:24}},[6===e.ruleForm.optType?r(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.transferredUsers\"),prop:\"newAssigneeId\"}},[r(\"audaque-search-select\",{attrs:{keyMap:{display:\"name\",value:\"id\"},fuzzySearchField:\"obscureName\",fixedParams:{},filterFunc:function(t){return t.id!=e.CURRENT_USER_ID},fetchList:e.userList,selectedOptions:e.defaultUserOptions},model:{value:e.ruleForm.newAssigneeId,callback:function(t){e.$set(e.ruleForm,\"newAssigneeId\",t)},expression:\"ruleForm.newAssigneeId\"}})],1):e._e()],1)],1)],1)],1)]):e._e(),r(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.auditHistory\"),name:\"3\"}},[e.isShowTip?r(\"div\",{staticClass:\"err-tip\"},[e._v(e._s(e.tipText))]):e._e(),\"3\"===e.activeName?r(\"process-info-component\",{attrs:{id:\"updateNode3\",procInstId:e.userInfoForm.procInstId||e.userInfoForm.bizCode,procDefId:e.userInfoForm.procDefId},on:{getTip:e.getTip}}):e._e()],1)],1),r(\"template\",{slot:\"bottom\"},[\"2\"===e.activeName?r(\"div\",{staticClass:\"submit-line\"},[r(\"el-button\",{attrs:{type:\"primary\",loading:e.isSubmit,disabled:e.userInfoForm.procStatus>=2||e.isSubmit},on:{click:e.submitTask}},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchWorkflowFinishedAndReviewEditVue.submit\"))+\" \")])],1):r(\"div\")])],2)}),[],!1,null,\"791cfb83\",null);t.default=_.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-DETAIL",
+      "resourcePath": "/workorder/static/js/views-workbench-myWorkflowAndCopy2MeEdit.19e5767c.js",
+      "localName": "views-workbench-myWorkflowAndCopy2MeEdit.19e5767c.js",
+      "fetchedAt": "2026-10-26T13:32:35.860Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 11549,
+      "sha256": "8d4ecc7a0ee46afa786662d441aff7c23fc95a5401ee22bce9efb2bed865365b",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 3451,
+          "end": 10612,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ffe2fd2124fafff48ce83f0acc71e1cd61782ed25a64c27b064fcf94f8b00014",
+          "text": "data:function(){var e=this.$route.query;return{bizCode:e.bizCode,formId:e.formId,tableName:e.tableName,optType:e.optType,procStatus:e.procStatus,key2:+new Date,formConf:{},echoFormData:{},activeName:\"0\",userInfoForm:{},userInfoRules:{},procStatusNS:l.procStatusNS,isShowFormItem:!0,tabsNames:{0:b(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.basicInformation\"),1:b(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.formInformation\"),2:b(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.auditHistory\")},categoryOptions:[],getRequestInstance:Object(p.d)(),workOrderTypeList:l.workOrderTypeList,ENABLED_DOP:k,DOP_MULTI_SPACE:v}},computed:{},components:{processInfoComponent:u.default},created:function(){this.loadBusinessName()},methods:{loadBusinessName:function(){var e=this;Object(d.sysCategoryList)().then((function(t){e.categoryOptions=t,e.init()}))},init:function(){var e=this;this.formId?Object(d.formDesignSelect)(this.formId).then((function(t){t.formJson?(e.isShowFormItem=!0,e.formConf=JSON.parse(t.formJson||\"{}\"),e.key2=+new Date):e.isShowFormItem=!1})):this.isShowFormItem=!1,this.getActData()},getActData:function(){var e=this;Object(c.actSelect)(this.bizCode).then((function(t){var o=\"\";t.createTime=e.formatTimeToDate(t.createTime),t.procStatus=e.procStatusNS[t.procStatus],t.ccInfo&&t.ccInfo.forEach((function(e){o+=e.uname+\",\"})),t.bizType=m.a.formmatList(e.workOrderTypeList,t.bizType,{key:\"value\",value:\"label\"}),e.userInfoForm=t,e.userInfoForm.ccInfo=o.substring(0,o.lastIndexOf(\",\")),t.bizInfo&&(e.echoFormData=JSON.parse(t.bizInfo),e.key2=+new Date)}))},formatTimeToDate:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"yyyy-MM-dd hh:mm:ss\";return e?m.b.dateFormat(e,t):\"-\"}}},h=(o(\"2230\"),o(\"2877\")),I=Object(h.a)(y,(function(){var e=this,t=e.$createElement,o=e._self._c||t;return o(\"audaque-detail-form-page\",{staticClass:\"my-workflow-edit\",attrs:{title:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.ticketDetails\"),\"opt-type\":e.$route.query.optType}},[o(\"el-tabs\",{staticClass:\"workbench-edit\",attrs:{\"tab-position\":\"top\"},model:{value:e.activeName,callback:function(t){e.activeName=t},expression:\"activeName\"}},[o(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.basicInformation\"),name:\"0\"}},[o(\"audaque-form\",{ref:\"userInfoForm\",attrs:{model:e.userInfoForm,rules:e.userInfoRules,id:\"updateNode0\",\"label-width\":\"120px\"}},[o(\"el-row\",{attrs:{gutter:e.audaqueGutterMixin}},[o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.businessNumber2\"),prop:\"categoryCode\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.categoryCode,callback:function(t){e.$set(e.userInfoForm,\"categoryCode\",t)},expression:\"userInfoForm.categoryCode\"}})],1)],1),o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.businessName\"),prop:\"processName\"}},[o(\"el-select\",{staticStyle:{width:\"100%\"},attrs:{disabled:\"\",placeholder:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.pleaseChoose\"),clearable:\"\"},model:{value:e.userInfoForm.categoryCode,callback:function(t){e.$set(e.userInfoForm,\"categoryCode\",t)},expression:\"userInfoForm.categoryCode\"}},e._l(e.categoryOptions,(function(e,t){return o(\"el-option\",{key:t,attrs:{label:e.categoryName,value:e.categoryCode}})})),1)],1)],1),o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.applicationTitle\"),prop:\"title\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.title,callback:function(t){e.$set(e.userInfoForm,\"title\",t)},expression:\"userInfoForm.title\"}})],1)],1),o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.applicationTime\"),prop:\"title\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.createTime,callback:function(t){e.$set(e.userInfoForm,\"createTime\",t)},expression:\"userInfoForm.createTime\"}})],1)],1),o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.hasBeenTransferred\"),prop:\"duration\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.duration,callback:function(t){e.$set(e.userInfoForm,\"duration\",t)},expression:\"userInfoForm.duration\"}})],1)],1),o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.processStatus\"),prop:\"procStatus\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.procStatus,callback:function(t){e.$set(e.userInfoForm,\"procStatus\",t)},expression:\"userInfoForm.procStatus\"}})],1)],1),o(\"el-col\",{attrs:{span:12}},[e.userInfoForm.ccInfo&&e.userInfoForm.ccInfo.length>0?o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.cc\"),prop:\"ccInfo\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.ccInfo,callback:function(t){e.$set(e.userInfoForm,\"ccInfo\",t)},expression:\"userInfoForm.ccInfo\"}})],1):e._e()],1),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowListVue.sourceApplication\"),prop:\"appCode\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.appCode,callback:function(t){e.$set(e.userInfoForm,\"appCode\",t)},expression:\"userInfoForm.appCode\"}})],1)],1):e._e(),e.ENABLED_DOP&&e.DOP_MULTI_SPACE?o(\"el-col\",{attrs:{span:12}},[o(\"el-form-item\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowListVue.workOrderType\"),prop:\"bizType\"}},[o(\"el-input\",{directives:[{name:\"audaque-input-trim\",rawName:\"v-audaque-input-trim\"}],attrs:{disabled:\"\"},model:{value:e.userInfoForm.bizType,callback:function(t){e.$set(e.userInfoForm,\"bizType\",t)},expression:\"userInfoForm.bizType\"}})],1)],1):e._e()],1)],1)],1),o(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.formInformation\"),name:\"1\"}},[o(\"div\",{attrs:{id:\"updateNode1\"}},[e.isShowFormItem?[Object.keys(e.formConf).length>0?o(\"audaque-form-parser\",{key:e.key2,ref:\"formParser\",attrs:{formConf:e.formConf,isDisabled:\"view\"===e.optType,echoFormData:e.echoFormData,getRequestInstance:e.getRequestInstance}}):e._e()]:o(\"div\",{staticClass:\"air-item\"},[e._v(\" \"+e._s(e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.noFormInformation\"))+\" \")])],2)]),o(\"el-tab-pane\",{attrs:{label:e.$t(\"viewsWorkbenchMyWorkflowAndCopy2MeEditVue.auditHistory\"),name:\"2\"}},[\"2\"===e.activeName?o(\"process-info-component\",{attrs:{id:\"updateNode2\",procStatus:e.procStatus,procInstId:e.userInfoForm.procInstId||e.userInfoForm.bizCode,categoryCode:e.userInfoForm.categoryCode}}):e._e()],1)],1)],1)}),[],!1,null,\"dab87178\",null);t.default=I.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-HISTORY",
+      "resourcePath": "/workorder/static/js/components-workbench-processInfoComponent.b060476e.js",
+      "localName": "components-workbench-processInfoComponent.b060476e.js",
+      "fetchedAt": "2026-10-26T13:32:35.990Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 333505,
+      "sha256": "729fb667f6aa62c72f71cd7bb50a6753fd34980a4dbe1c5b89dd55fbd9e9283a",
+      "excerpts": [
+        {
+          "anchor": "name:\"processInfoComponent\"",
+          "start": 194955,
+          "end": 198191,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "5568f4aa1393c60f21d7838d93b511ebc8af6c1556bf3a6d877571b0e23a8447",
+          "text": "name:\"processInfoComponent\",mixins:[n.audaqueUtilsMixin],data:function(){return{tableData:[],imgUrl:null}},props:[\"procInstId\",\"procDefId\",\"procStatus\",\"categoryCode\"],watch:{procInstId:{handler:function(){},deep:!0}},created:function(){var e=this,t={};0==this.procStatus?t={categoryCode:this.categoryCode}:this.procInstId?(t={procInstId:this.procInstId},this.loadTableData()):t={modelDefId:this.procDefId},Object(s.actDefDiagram)(t).then((function(t){window.URL=window.URL||window.webkitURL;var r=URL.createObjectURL(t);e.imgUrl=r}))},methods:{loadTableData:function(){var e=this;Object(a.taskRecord)({procInstId:this.procInstId}).then((function(t){e.tableData=t,t&&t[0]&&t[0].comments&&t[0].comments[0]&&\"19\"===t[0].comments[0].type&&t[0].comments[0].comment&&e.$emit(\"getTip\",t[0].comments[0].comment)}))},markRed:function(e){if(!e)return\"-\";for(var t=(e=i.c.preventXss(e)).split(\",\"),r=0;r<t.length;r++){var n=t[r];if(/_\\*$/.test(n)){var a=n.replace(\"_*\",\"\");t[r]='<span style=\"color:red;\">'+a+\"</span>\"}}return t.join(\",\")}}},c=r(\"2877\"),u=Object(c.a)(o,(function(){var e=this,t=e.$createElement,r=e._self._c||t;return r(\"div\",{staticClass:\"process-info-component\"},[r(\"div\",{staticStyle:{\"text-align\":\"center\"}},[r(\"img\",{staticStyle:{\"margin-bottom\":\"20px\",\"max-width\":\"100%\"},attrs:{src:e.imgUrl}})]),r(\"el-table\",{staticStyle:{width:\"100%\"},attrs:{data:e.tableData,border:\"\",\"row-key\":\"id\",stripe:\"\",\"tooltip-effect\":\"light\"}},[r(\"el-table-column\",{attrs:{type:\"index\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.serialNumber\"),index:function(e){return e+1},width:\"50\"}}),r(\"el-table-column\",{attrs:{prop:\"taskName\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.activityProcess\"),\"show-overflow-tooltip\":\"\"}}),r(\"el-table-column\",{attrs:{prop:\"taskCreateTime\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.receivingTime\"),\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.createTime)))]}}])}),r(\"el-table-column\",{attrs:{prop:\"finishTime\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.completeTime\"),\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.finishTime)))]}}])}),r(\"el-table-column\",{attrs:{prop:\"duration\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.processingTime\"),\"show-overflow-tooltip\":\"\"}}),r(\"el-table-column\",{attrs:{prop:\"candidate\",\"show-overflow-tooltip\":\"\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.participant\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return[r(\"span\",{domProps:{innerHTML:e._s(e.markRed(t.row.candidate))}})]}}])}),r(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"comment\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.auditOpinion\")},scopedSlots:e._u([{key:\"default\",fn:function(t){return e._l(t.row.comments,(function(t,n){return r(\"span\",{key:\"c-\"+n},[e._v(\" \"+e._s(t.assigneeName||\"-\")+\": \"+e._s(t.comment||\"-\")+\"; \"),r(\"br\")])}))}}])}),r(\"el-table-column\",{attrs:{\"show-overflow-tooltip\":\"\",prop:\"optName\",label:e.$t(\"componentsWorkbenchProcessInfoComponentVue.review\")}})],1)],1)}),[],!1,null,\"7665349a\",null);t.default=u.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-COMMON-API",
+      "resourcePath": "/workorder/static/js/api-common.cfc92f1a.js",
+      "localName": "api-common.cfc92f1a.js",
+      "fetchedAt": "2026-10-26T13:32:35.501Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 798,
+      "sha256": "be2ee9b4dc9a7187b6d559391da1e41ee7e9434ab27aa76f2b805c8fe9f88d99",
+      "excerpts": [
+        {
+          "anchor": "var ",
+          "start": 279,
+          "end": 798,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "1ebc6319e48f2dcd086c12fea922f908ff2ff31d8e78c4fd5dbba5c687699bcc",
+          "text": "var e=r(\"bcab\"),c=r(\"5c0b\"),t=function(o){return Object(e.d)().request((Object(e.b)(\"commonUser\")||c.commonUser)+\"/user/page\",\"POST\",o)},m=function(o){return Object(e.d)().request((Object(e.b)(\"commonWorkflow\")||c.commonWorkflow)+\"/act/def/diagram\",\"GET\",o,{responseType:\"blob\"})}},\"5c0b\":function(o,n,r){\"use strict\";r.r(n),r.d(n,\"commonWorkflow\",(function(){return e})),r.d(n,\"commonUser\",(function(){return c})),r.d(n,\"commonMsg\",(function(){return t}));var e=\"/common/workflow\",c=\"/common/user\",t=\"/common/msg\"}}]);"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-MINE-API",
+      "resourcePath": "/workorder/static/js/api-workbench-myWorkflow.bdf1c002.js",
+      "localName": "api-workbench-myWorkflow.bdf1c002.js",
+      "fetchedAt": "2026-10-26T13:32:35.561Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1763,
+      "sha256": "3f276a40dffc9ee3ea95f2fe75eab7db1ed5175c5e80dca739661596b7bab89f",
+      "excerpts": [
+        {
+          "anchor": "var ",
+          "start": 550,
+          "end": 1763,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "54884ab2e1a4caa017077ef888a4e25bb9861f1c822345b89fce83af5a115417",
+          "text": "var r=e(\"5530\"),c=e(\"bcab\"),o=e(\"5c0b\"),u=function(){return Object(c.b)(\"commonWorkflow\")||o.commonWorkflow},a=function(t){return Object(c.d)().request(u()+\"/act/biz/page\",\"POST\",t)},i=function(t){return Object(c.d)().request(u()+\"/act/biz/\".concat(t),\"DELETE\")},d=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Object(c.d)().request(u()+\"/act/task/deal\",\"POST\",Object(r.a)(Object(r.a)({},t),{},{optType:14}))},s=function(t){return Object(c.d)().request(u()+\"/act/task/start\",\"POST\",t)},b=function(t){return Object(c.d)().request(u()+\"/act/task/record\",\"POST\",t)},f=function(t){return Object(c.d)().request(u()+\"/act/task/deal\",\"POST\",Object(r.a)(Object(r.a)({},t),{},{optType:2}))},O=function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return Object(c.d)().request(u()+\"/act/biz/one\",\"POST\",Object(r.a)(Object(r.a)({},n),{},{bizCode:t}))},m=function(t){return Object(c.d)().request(u()+\"/act/biz/update\",\"POST\",t)}},\"5c0b\":function(t,n,e){\"use strict\";e.r(n),e.d(n,\"commonWorkflow\",(function(){return r})),e.d(n,\"commonUser\",(function(){return c})),e.d(n,\"commonMsg\",(function(){return o}));var r=\"/common/workflow\",c=\"/common/user\",o=\"/common/msg\"}}]);"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-DONE-API",
+      "resourcePath": "/workorder/static/js/api-workbench-workflowFinished.4352a8f3.js",
+      "localName": "api-workbench-workflowFinished.4352a8f3.js",
+      "fetchedAt": "2026-10-26T13:32:35.600Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 645,
+      "sha256": "cf314aba59452e108c427094cbb875d2baa4932c3fe45c9792c9098603745faf",
+      "excerpts": [
+        {
+          "anchor": "var ",
+          "start": 346,
+          "end": 645,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "6310b131ec6e8526aedd4d973a34446165f65650479c181d2c37d3a3ef64770b",
+          "text": "var c=\"/common/workflow\",e=\"/common/user\",t=\"/common/msg\"},ce54:function(o,n,r){\"use strict\";r.r(n),r.d(n,\"taskDone\",(function(){return t}));var c=r(\"bcab\"),e=r(\"5c0b\"),t=function(o){return Object(c.d)().request((Object(c.b)(\"commonWorkflow\")||e.commonWorkflow)+\"/act/task/done/page\",\"POST\",o)}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-TODO-API",
+      "resourcePath": "/workorder/static/js/api-workbench-workflowReview.a147a8a2.js",
+      "localName": "api-workbench-workflowReview.a147a8a2.js",
+      "fetchedAt": "2026-10-26T13:32:35.640Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1614,
+      "sha256": "ba356050fc4a4e1f4b41f79d5d5e74a5c83e4553e90e490f1d2cd11d5b6c4d28",
+      "excerpts": [
+        {
+          "anchor": "var ",
+          "start": 580,
+          "end": 1614,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "65e5c8bb6f37679e0299a470333b0e83bdda57789e9ff6f7362653c22b99c02c",
+          "text": "var o=e(\"5530\"),r=e(\"bcab\"),c=e(\"5c0b\"),u=function(){return Object(r.b)(\"commonWorkflow\")||c.commonWorkflow},a=function(t){return Object(r.d)().request(u()+\"/act/task/todo/page\",\"POST\",t)},i=function(t){return Object(r.d)().request(u()+\"/act/category/list\",\"POST\",t)},s=function(t,n){return Object(r.d)().request(u()+\"/act/form/one\",\"POST\",Object(o.a)(Object(o.a)({},n),{},{id:t,needSnapshot:!0}))},d=function(t){return Object(r.d)().request(u()+\"/act/task/deal\",\"POST\",t)},f=function(t){return Object(r.d)().request(u()+\"/act/task/return/node\",\"POST\",t)},k=function(t){return Object(r.d)().request(u()+\"/act/task/next/node\",\"POST\",t)},m=function(t){return Object(r.d)().request(u()+\"/act/task/todo/info\",\"POST\",t)},b=function(t){return Object(r.d)().request(u()+\"/act/task/done/info\",\"POST\",t)}},\"5c0b\":function(t,n,e){\"use strict\";e.r(n),e.d(n,\"commonWorkflow\",(function(){return o})),e.d(n,\"commonUser\",(function(){return r})),e.d(n,\"commonMsg\",(function(){return c}));var o=\"/common/workflow\",r=\"/common/user\",c=\"/common/msg\"}}]);"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-TYPES",
+      "resourcePath": "/workorder/static/js/views-workbench-workflowTypes.64ad498a.js",
+      "localName": "views-workbench-workflowTypes.64ad498a.js",
+      "fetchedAt": "2026-10-26T13:32:35.919Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1476,
+      "sha256": "5ff11e20445ab6aab5a060a4ef773091bb9038089d044adcbd9c1924d22efb04",
+      "excerpts": [
+        {
+          "anchor": "var ",
+          "start": 290,
+          "end": 1476,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "539ca18c999e8a64e5f1854aa1c6fd1be895068e57413d89aa64858f68f45e6e",
+          "text": "var l=r(\"12cb\"),s=[{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.toBeInitiated\"),value:-1},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.underReview\"),value:0},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.missionCompleted\"),value:1},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.taskInitiatorWithdraws\"),value:2}],t={0:l.default.t(\"viewsWorkbenchWorkflowTypesJs.draft\"),1:l.default.t(\"viewsWorkbenchWorkflowTypesJs.processing\"),2:l.default.t(\"viewsWorkbenchWorkflowTypesJs.hangUp\"),3:l.default.t(\"viewsWorkbenchWorkflowTypesJs.finish\"),4:l.default.t(\"viewsWorkbenchWorkflowTypesJs.withdrawn\")},a=[{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.requestWorkOrder\"),value:1},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.qualityInspectionWorkOrder\"),value:2},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.evaluationWorkOrder\"),value:3},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.operationAndMaintenanceWorkOrder\"),value:4},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.indicatorWorkOrder\"),value:5},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.examineAndApprove\"),value:6},{label:l.default.t(\"viewsWorkbenchWorkflowTypesJs.other\"),value:7}]}}]);"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-ENTRY",
+      "resourcePath": "/workorder/index.html",
+      "localName": "wo-index.html",
+      "fetchedAt": "2026-10-26T13:31:46.207Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 7998,
+      "sha256": "ab1258dc6063e02a1dea9d5bf77df59345a0c6e59defa376624729a060ee2795",
+      "excerpts": [
+        {
+          "anchor": "/workorder/static/js/app.6c843d58.js",
+          "start": 7152,
+          "end": 7193,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "2f840fc5bd8809c6e60589b42cf4af331d3352d763591366b3d77db9e679c270",
+          "text": "/workorder/static/js/app.6c843d58.js\" rel"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-GATEWAY",
+      "resourcePath": "/workorder/static/js/app.6c843d58.js",
+      "localName": "wo-app.js",
+      "fetchedAt": "2026-10-26T13:31:46.412Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 2082543,
+      "sha256": "5b8436493430e40b949f2d950a25ed3a3869100301ba09c08d875ed728271578",
+      "excerpts": [
+        {
+          "anchor": "bcab:function",
+          "start": 1624649,
+          "end": 1625574,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "b13732680c111ef3941484427914a291fc853e4f5c157af7b952e3205cdd92cd",
+          "text": "bcab:function(e,t,n){\"use strict\";function r(){}n.d(t,\"a\",(function(){return o})),n.d(t,\"e\",(function(){return i})),n.d(t,\"b\",(function(){return s})),n.d(t,\"d\",(function(){return l})),n.d(t,\"c\",(function(){return c}));const o=new class{constructor(){this.actions={onGlobalStateChange:r,setGlobalState:r}}setActions(e){this.actions=e}onGlobalStateChange(...e){return this.actions.onGlobalStateChange(...e)}setGlobalState(...e){return this.actions.setGlobalState(...e)}};let a={};function i(e){a=e,a.requestInstance=e.getRequestInstance()}function s(e){if(a.config)return a.config.MODULE_URL_PREFIX[e];throw new Error(\"过早调用getModulePrefix方法\")}function l(){if(a.requestInstance)return a.requestInstance;throw new Error(\"过早调用getRequestInstance方法\")}function c(){return a}},bd88:function(e,t){const n=[\"a\",\"abbr\",\"address\",\"article\",\"aside\",\"audio\",\"b\",\"blockquote\",\"body\",\"button\",\"canvas\",\"caption\",\"cite\",\"code\",\"dd\",\"del\",\"deta"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-ROUTES",
+      "resourcePath": "/workorder/static/js/app.6c843d58.js",
+      "localName": "wo-app.js",
+      "fetchedAt": "2026-10-26T13:31:46.412Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 2082543,
+      "sha256": "5b8436493430e40b949f2d950a25ed3a3869100301ba09c08d875ed728271578",
+      "excerpts": [
+        {
+          "anchor": "path:\"/workbench/myWorkflowList\"",
+          "start": 95381,
+          "end": 95469,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "89611250fcc808bf6b0436000a98472c95c9aba684c14447fd005d219c270536",
+          "text": "path:\"/workbench/myWorkflowList\",meta:{name:{list:\"routerModulesWorkbenchJs.myTicket\"}},"
+        },
+        {
+          "anchor": "path:\"/workbench/myWorkflowAndCopy2MeEdit\"",
+          "start": 95643,
+          "end": 95824,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "3f304e0953e706e299dd5faddfdbe0bfb60d3df1f4e02543082bc03dddc5b0eb",
+          "text": "path:\"/workbench/myWorkflowAndCopy2MeEdit\",meta:{name:{add:\"manuallyAdded.copy2MeEditTitleAdd\",view:\"manuallyAdded.copy2MeEditTitleView\",edit:\"manuallyAdded.copy2MeEditTitleEdit\"}},"
+        },
+        {
+          "anchor": "path:\"/workbench/workflowReviewList\"",
+          "start": 95882,
+          "end": 95972,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "34cd887cdaac4a681ef848d3cfa47772083c635a55cdd527084432fba44bceaa",
+          "text": "path:\"/workbench/workflowReviewList\",meta:{name:{list:\"routerModulesWorkbenchJs.myToDo\"}},"
+        },
+        {
+          "anchor": "path:\"/workbench/workflowFinishedList\"",
+          "start": 96024,
+          "end": 96119,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "feffd664d32ba9707fdc069c3a665e7f812976ed060d2fd4b67d7caa55d7f9d6",
+          "text": "path:\"/workbench/workflowFinishedList\",meta:{name:{list:\"routerModulesWorkbenchJs.iHaveDone\"}},"
+        },
+        {
+          "anchor": "path:\"/workbench/workflowFinishedAndReviewEdit\"",
+          "start": 96173,
+          "end": 96236,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a001139dc0427bf877052e233baa895dbf1314bc36f6498fa70070d9ee1fd5d7",
+          "text": "path:\"/workbench/workflowFinishedAndReviewEdit\",meta:{name:\"\"},"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-LANGUAGE",
+      "resourcePath": "/workorder/static/js/app.6c843d58.js",
+      "localName": "wo-app.js",
+      "fetchedAt": "2026-10-26T13:31:46.412Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 2082543,
+      "sha256": "5b8436493430e40b949f2d950a25ed3a3869100301ba09c08d875ed728271578",
+      "excerpts": [
+        {
+          "anchor": "viewsWorkbenchWorkflowTypesJs:{",
+          "start": 1087616,
+          "end": 1088058,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "f47e2d00ebc335cba5ef24ccaa40b506c451549297c712da45f838311a774ad0",
+          "text": "viewsWorkbenchWorkflowTypesJs:{toBeInitiated:\"待发起\",underReview:\"审核中\",missionCompleted:\"任务完成\",taskInitiatorWithdraws:\"任务发起人撤回\",terminateProcess:\"终止流程\",taskDelete:\"任务删除\",adminDelete:\"管理员人删除\",draft:\"草稿\",processing:\"处理中\",hangUp:\"挂起\",finish:\"结束\",withdrawn:\"已撤回\",requestWorkOrder:\"需求工单\",qualityInspectionWorkOrder:\"质检工单\",evaluationWorkOrder:\"测评工单\",operationAndMaintenanceWorkOrder:\"运维工单\",indicatorWorkOrder:\"指标工单\",examineAndApprove:\"审批\",other:\"其他\"}"
+        },
+        {
+          "anchor": "viewsWorkbenchMyWorkflowListVue:{",
+          "start": 1084960,
+          "end": 1085820,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "67d7bec59dd9af32a2416ef1d182c39fd1b0f826e86926262a429c3547b5972a",
+          "text": "viewsWorkbenchMyWorkflowListVue:{myTicket:\"我的工单\",filter:\"筛选\",businessName:\"业务名称\",pleaseChoose:\"请选择\",applicationTitle:\"申请标题\",processStatus:\"流程状态\",approvalStatus:\"审核状态\",theStartingTime:\"发起时间\",startDate:\"开始日期\",endDate:\"结束日期\",serialNumber:\"序号\",serialNumber1:\"流水号\",businessNumber2:\"业务编号\",hasBeenTransferred:\"已流转\",operate:\"操作\",check:\"查看\",edit:\"编辑\",startUp:\"启动\",delete:\"删除\",withdraw:\"撤回\",reminder:\"催办\",myTask:\"我的任务.xlsx\",editBusinessNumber:\"编辑业务编号\",successfulOperation:\"操作成功\",initiateProcess:\"发起流程\",cc:\"抄送人\",startSuccessfully:\"启动成功\",canceledSuccessfully:\"撤销成功\",pleaseEnterInformationContent:\"请输入信息内容\",information:\"信息内容\",successfulReminder:\"催办成功\",digitalSpaceIdentity:\"数字空间标识\",pleaseEnterApplicationTitle:\"请输入申请标题\",pleaseSelectABusinessName:\"请选择业务名称\",pleaseSelectProcessStatus:\"请选择流程状态\",pleaseSelectReviewStatus:\"请选择审核状态\",sourceApplication:\"来源应用\",workOrderType:\"工单类型\"}"
+        },
+        {
+          "anchor": "viewsWorkbenchWorkflowFinishedListVue:{",
+          "start": 1086709,
+          "end": 1087171,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "2053697fb9248d0d9991433b47b57e4a60b62efea736dc0ebbbe585766ce0716",
+          "text": "viewsWorkbenchWorkflowFinishedListVue:{filter:\"筛选\",businessName:\"业务名称\",pleaseChoose:\"请选择\",applicationTitle:\"申请标题\",sponsor:\"发起人\",theStartingTime:\"发起时间\",startDate:\"开始日期\",endDate:\"结束日期\",serialNumber:\"序号\",serialNumber1:\"流水号\",businessNumber2:\"业务编号\",nodeName:\"节点名称\",processStatus:\"流程状态\",operate:\"操作\",check:\"查看\",iHaveDone:\"我的已办\",resignationApplicationForm:\"离职申请表\",pleaseEnterApplicationTitle:\"请输入申请标题\",pleaseEnterTheSponsor:\"请输入发起人\",pleaseSelectABusinessName:\"请选择业务名称\"}"
+        },
+        {
+          "anchor": "viewsWorkbenchWorkflowReviewListVue:{",
+          "start": 1087172,
+          "end": 1087615,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "f62e81f1187487e7bdd3e8e3bc05a1c9b92cee64762b8f088db1128976dbbca5",
+          "text": "viewsWorkbenchWorkflowReviewListVue:{myToDo:\"我的待办\",filter:\"筛选\",businessName:\"业务名称\",pleaseChoose:\"请选择\",applicationTitle:\"申请标题\",sponsor:\"发起人\",processStatus:\"流程状态\",theStartingTime:\"发起时间\",startDate:\"开始日期\",endDate:\"结束日期\",serialNumber:\"序号\",serialNumber1:\"流水号\",businessNumber2:\"业务编号\",nodeName:\"节点名称\",nodeDeadline:\"节点期限\",operate:\"操作\",handle:\"办理\",pleaseEnterApplicationTitle:\"请输入申请标题\",pleaseEnterTheSponsor:\"请输入发起人\",pleaseSelectABusinessName:\"请选择业务名称\"}"
+        },
+        {
+          "anchor": "viewsWorkbenchMyWorkflowAndCopy2MeEditVue:{",
+          "start": 1084598,
+          "end": 1084959,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "4f370f3ee05e8839edfcd861cbed4e83cb5ac56449cf1c7ac1de6c773bec20e4",
+          "text": "viewsWorkbenchMyWorkflowAndCopy2MeEditVue:{ticketDetails:\"工单详情\",basicInformation:\"基本信息\",businessNumber2:\"业务编号\",businessName:\"业务名称\",pleaseChoose:\"请选择\",applicationTitle:\"申请标题\",applicationTime:\"申请时间\",hasBeenTransferred:\"已流转\",processStatus:\"流程状态\",cc:\"抄送人\",formInformation:\"表单信息\",noFormInformation:\"暂无表单信息!\",auditHistory:\"审核历史\",pleaseEnterApplicationTitle:\"请输入申请标题\"}"
+        },
+        {
+          "anchor": "viewsWorkbenchWorkflowFinishedAndReviewEditVue:{",
+          "start": 1085821,
+          "end": 1086708,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "bff088d92af43598069a66924bb9b6333fa5ec2e96b7643fcc104ef73220033f",
+          "text": "viewsWorkbenchWorkflowFinishedAndReviewEditVue:{cannotExported:\"未设计表单无法导出\",check:\"查看\",dealWith:\"处理\",mine:\"我的\",done:\"已办\",upcoming:\"待办\",basicInformation:\"基本信息\",businessNumber2:\"业务编号\",businessName:\"业务名称\",pleaseChoose:\"请选择\",nodeName:\"节点名称\",applicationTitle:\"申请标题\",sponsor:\"发起人\",cc:\"抄送人\",sponsorsOrganization:\"发起人所属组织\",theStartingTime:\"发起时间\",state:\"状态\",formInformation:\"表单信息\",noFormInformation:\"暂无表单信息!\",taskHandling:\"任务办理\",auditOperation:\"审核操作\",pass:\"通过\",turnDown:\"驳回\",commissioned:\"委办\",selectNode:\"选择节点\",auditOpinion:\"审核意见\",nextNode:\"下一节点\",reviewer:\"审核人\",designateTheNextOperator:\"指定下一操作人\",delegatedUser:\"委办用户\",auditHistory:\"审核历史\",submit:\"提交\",pleaseEnterReviewComments:\"请输入审核意见\",pleaseSelectTheTypeOfOperation:\"请选择操作的类型\",pleaseAppointADelegator:\"请指定委派人\",pleaseSelectTheNextNodeHandler:\"请选择下一节点处理人\",successfulOperation:\"操作成功\",transferredUsers:\"转派用户\",transfer:\"转派\",pleaseSpecifyAUser:\"请指定用户\"}"
+        },
+        {
+          "anchor": "componentsWorkbenchProcessInfoComponentVue:{",
+          "start": 1075985,
+          "end": 1076183,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ef0352501720420d7ddeb9222755d91f11d046ce11bfe8e17fd1e6b592ec0eed",
+          "text": "componentsWorkbenchProcessInfoComponentVue:{serialNumber:\"序号\",activityProcess:\"活动流程\",receivingTime:\"接收时间\",completeTime:\"完成时间\",processingTime:\"处理时长\",participant:\"参与者\",auditOpinion:\"审核意见\",review:\"审核\"}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-LIST-MIXINS",
+      "resourcePath": "/workorder/static/js/chunk-@audaque/vue-utils.d722f2bd.js",
+      "localName": "chunk-@audaque-vue-utils.d722f2bd.js",
+      "fetchedAt": "2026-10-26T13:40:10.392Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 403758,
+      "sha256": "b3000e83f2b9777a81668febe14e413434c56b47a334b809193688c9af5abb63",
+      "excerpts": [
+        {
+          "anchor": "pageSize:20",
+          "start": 337448,
+          "end": 341038,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "56c08e97c17756c8d6c9fff99b265865edd3e20843c2e8260be27081ea109d84",
+          "text": "pageSize:20,pageNo:1,order:[{prop:\"id\",asc:!1}]},audaqueDataListMixin:{datas:[],total:0},audaqueTableFetchStatusMixin:1,audaqueListIsStoreMixin:!0,audaquePathMixin:window.location.pathname,audaqueRequestUrlParamsMixin:[]}},watch:{\"$i18n.locale\":{handler:function(){this.resetData()},immediate:!0}},created:function(){var e=this;this.audaqueOldSearchMixin=JSON.stringify(this.audaqueSearchMixin),this.getSaveSearchStore(),setTimeout((function(){e.audaqueIsRequestFirstMixin&&e.audaqueRequestListMixin()}),0)},methods:{getSaveSearchStore:function(){if(this.audaqueListIsStoreMixin){var e=sessionStorage.getItem(\"listSearchStore\");if(e&&(e=JSON.parse(e)).path===this.audaquePathMixin){this.audaqueSearchMixin=e.value;var t=e.value.pageRequest;this.audaquePageRequestMixin.pageNo=t.pageNo||1,this.audaquePageRequestMixin.pageSize=t.pageSize||20}}return null},initRequestList:function(){this.audaqueTableFetchStatusMixin=1,this.audaqueDataListMixin.datas=[],this.audaqueDataListMixin.total=0},audaqueRequestListMixin:function(t){var r=this;this.initRequestList();var n=t||e;if(n){this.audaquefetchBeforeHandleMixin&&this.audaquefetchBeforeHandleMixin(),this.audaqueTableFetchStatusMixin=1;var i={pageNo:this.audaquePageRequestMixin.pageNo,pageSize:this.audaquePageRequestMixin.pageSize,order:this.audaquePageRequestMixin.order};this.audaqueSearchMixin=Object.assign(this.audaqueSearchMixin,{pageRequest:i});var a=Object.assign({},this.audaqueSearchMixin,this.audaqueFixedSearchMixin);(this.audaqueRequestUrlParamsMixin.length>0?n(this.audaqueRequestUrlParamsMixin[0],a):n(a)).then((function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=e.hasOwnProperty(\"datas\"),n=[],i=0;n=(t?e.datas:e)||[],i=(t?e.total:e.length)||0,r.audaqueDataListMixin.datas=n,r.audaqueDataListMixin.total=i,r.audaqueTableFetchStatusMixin=0===i?3:2,r.audaqueFetchAfterHandleMixin&&r.audaqueFetchAfterHandleMixin()})).catch((function(e){r.audaqueTableFetchStatusMixin=4}))}},audaqueSearchListMixin:function(){this.audaqueBeforeRequestListMixin&&this.audaqueBeforeRequestListMixin(),this.audaquePageRequestMixin.pageNo=1,this.audaqueRequestListMixin()},audaqueAddFixedSearchParamMixin:function(e,t){this.audaqueOldSearchMixin=JSON.parse(this.audaqueOldSearchMixin),this.audaqueOldSearchMixin[e]=t,this.audaqueOldSearchMixin=JSON.stringify(this.audaqueOldSearchMixin)},resetData:function(){Object.keys(this.audaqueOldSearchMixin).length>0&&(this.audaqueSearchMixin=JSON.parse(this.audaqueOldSearchMixin)),this.audaqueResetFetchHandleMixin&&this.audaqueResetFetchHandleMixin(),this.audaquePageRequestMixin.pageNo=1},audaqueResetListMixin:function(){this.audaqueBeforeResetListMixin&&this.audaqueBeforeResetListMixin(),this.resetData(),this.audaqueRequestListMixin()},audaqueOnSizeChangeMixin:function(e){this.audaquePageRequestMixin.pageSize=e,this.audaquePageRequestMixin.pageNo=1,this.audaqueRequestListMixin()},audaqueOnCurrentChangeMixin:function(e){this.audaquePageRequestMixin.pageNo=e,this.audaqueRequestListMixin()},audaqueIndexMethodMixin:function(e){return this.audaquePageRequestMixin.pageSize*(this.audaquePageRequestMixin.pageNo-1)+e+1},audaqueChangeRequestListFnMinix:function(e){this.resetData(),this.audaqueRequestListMixin(e)}},beforeDestroy:function(){if(this.audaqueListIsStoreMixin){var e={path:this.audaquePathMixin,value:this.audaqueSearchMixin},t=JSON.stringify(e);sessionStorage.setItem(\"listSearchStore\",t)}}}});function u(e,t,r){return t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function c(e,t){var r=Object.keys(e);if(Object.g"
+        },
+        {
+          "anchor": "删除操作不能恢复，确定删除吗？",
+          "start": 335556,
+          "end": 337426,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "de3b8e49a1f40063b377cf4b81cc8883bc9fef49ac14daea7b11e1b97e76c4e1",
+          "text": "删除操作不能恢复，确定删除吗？\",audaqueDeleteHintTextKeyMixin:\"audaqueVueUtilsMixin.deleteHint\",audaqueDeleteChockeHintMixin:\"请先选中要删除的数据\",audaqueDeleteChockeHintTextKeyMixin:\"audaqueVueUtilsMixin.deleteChoice\",audaqueDeleteSuccessHint:\"删除成功\",audaqueDeleteSuccessTextKeyHint:\"audaqueVueUtilsMixin.deleteSuccess\",audaqueDeleteRowItemMixin:null}},methods:{audaqueDeleteMixin:function(e){if(this.audaqueDeleteRowItemMixin=e,this.audaqueCheckDeleteMixin&&this.audaqueCheckDeleteMixin(e)){var t=this;this.$AudaqueToast.warn({template:this.$t?this.$t(this.audaqueDeleteHintTextKeyMixin):this.audaqueDeleteHintMixin,methods:{okEvent:function(){t.audaqueRequestDeleteMixin(e.id)}}})}},audaqueDeleteBatchMixin:function(e){var t=this;\"string\"==typeof e&&e||Array.isArray(e)&&e.length>0?this.$AudaqueToast.warn({template:t.$t?t.$t(t.audaqueDeleteHintTextKeyMixin):t.audaqueDeleteHintMixin,methods:{okEvent:function(){t.audaqueRequestDeleteMixin(e)}}}):this.$AudaqueToast.error({template:this.$t?this.$t(this.audaqueDeleteChockeHintTextKeyMixin):this.audaqueDeleteChockeHintMixin})},audaqueRequestDeleteMixin:function(t){var r=this;e&&e(t).then((function(){var e=r;r.$AudaqueToast.tip({template:r.$t?e.$t(e.audaqueDeleteSuccessTextKeyHint):e.audaqueDeleteSuccessHint,methods:{okEvent:function(){1==e.audaqueDataListMixin.datas.length%e.audaquePageRequestMixin.pageSize&&e.audaquePageRequestMixin.pageNo>1&&e.audaquePageRequestMixin.pageNo--,e.audaqueDeleteAfterHandle?e.audaqueDeleteAfterHandle():e.audaqueRequestListMixin&&e.audaqueRequestListMixin()},handleCloseEvent:function(){e.audaqueRequestListMixin&&e.audaqueRequestListMixin()}}})})).catch((function(e){}))},audaqueCheckDeleteMixin:function(e){return!0}}}},s=(r(\"e9c4\"),r(\"cca6\"),r(\"b64b\"),function(e){return{data:function(){return{audaqueIsRequestFirstMixin:!0,audaqueSearchMixin:{},audaqueOldSearchMixin:{},audaqueFixedSearchMixin:{},aud"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-PAGINATION",
+      "resourcePath": "/workorder/static/js/chunk-@audaque/vue-components.6e70d300.js",
+      "localName": "chunk-@audaque-vue-components.6e70d300.js",
+      "fetchedAt": "2026-10-26T13:40:10.342Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1168774,
+      "sha256": "2534e49bd4ab4feef0148a01e68d26eda1518225c07c562df919c1da20fe18c7",
+      "excerpts": [
+        {
+          "anchor": "name:\"AudaquePagination\"",
+          "start": 1001291,
+          "end": 1002170,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "f7c6f0cab31e9f46432117988a298df1b163553d8a44b4257248b08c60ce2fff",
+          "text": "name:\"AudaquePagination\",props:{background:{type:Boolean,default:!0},pageSize:{type:Number,required:!0,validator:function(e){return e>0}},currentPage:{type:Number,required:!0,validator:function(e){return e>0}},total:{type:Number,required:!0,validator:function(e){return e>=0}},layout:{type:String,default:\"total, sizes, prev, pager, next, jumper\"},pageSizes:{type:Array,default:function(){}}},methods:{}}),a=(n(\"d894\"),n(\"2877\")),r=Object(a.a)(i,(function(){var e=this,t=e.$createElement,n=e._self._c||t;return e.total>0?n(\"div\",{staticClass:\"audaque-pagination\"},[n(\"el-pagination\",e._g(e._b({staticClass:\"audaque-pagination-conent\",attrs:{\"current-page\":e.currentPage,\"page-size\":e.pageSize,\"page-sizes\":e.pageSizes,layout:e.layout,total:e.total,background:e.background}},\"el-pagination\",e.$attrs,!1),e.$listeners))],1):e._e()}),[],!1,null,\"4588d212\",null);t.default=r.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-CONTROLS",
+      "resourcePath": "/workorder/static/js/chunk-@audaque/vue-components.6e70d300.js",
+      "localName": "chunk-@audaque-vue-components.6e70d300.js",
+      "fetchedAt": "2026-10-26T13:40:10.342Z",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1168774,
+      "sha256": "2534e49bd4ab4feef0148a01e68d26eda1518225c07c562df919c1da20fe18c7",
+      "excerpts": [
+        {
+          "anchor": "name:\"AudaqueTableSearch\"",
+          "start": 109448,
+          "end": 113393,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "b160e26dd9812540134e69cff0e1a8b2808ee2304dc95c2a64eecf0bdfa59d78",
+          "text": "name:\"AudaqueTableSearch\",provide:function(){return{parent:this}},data:function(){return{isExpand:!1,maxColumn:4,childNodes:0,column:4,searchPosition:3,widthObj:Object.freeze({2:\"audaque-table-search__search-item-2\",3:\"audaque-table-search__search-item-3\",4:\"audaque-table-search__search-item-4\"}),searchPositionObj:Object.freeze({4:{0:\"audaque-table-search__search-item-offset-1\",1:\"audaque-table-search__search-item-offset-2\",2:\"audaque-table-search__search-item-offset-4\",3:\"\"},3:{0:\"audaque-table-search__search-item-offset-3-2\",1:\"audaque-table-search__search-item-offset-3\",2:\"\"},2:{0:\"audaque-table-search__search-item-offset-2\",1:\"\"}}),expandText:\"\"}},props:{},components:{},watch:{status:{handler:function(){var e=this;this.$nextTick((function(){e.updateStatus()}))}}},computed:{renderExpandText:function(){return this.isExpand?this.t(\"audaque.tableSearch.fold\"):this.t(\"audaque.tableSearch.unfold\")}},created:function(){},mounted:function(){window.addEventListener(\"resize\",this.handleResize),this.updateStatus()},activated:function(){this.updateStatus()},methods:{updateStatus:function(){this.childNodes=this.getChildNodes().length-1,this.column=this.getCol(),this.getResidualSearchSize(!1),this.toggle()},search:function(e){e.stopPropagation(),this.$emit(\"search\")},reset:function(e){e.stopPropagation(),this.$emit(\"reset\")},handleResize:function(){this.column=this.getCol(),this.getResidualSearchSize(this.isExpand),this.toggle()},onHandleExpandShrink:function(){this.isExpand=!this.isExpand,this.getResidualSearchSize(this.isExpand),this.toggle()},getCol:function(){var e=this.$refs.audaqueTableSearch.offsetWidth;return Math.floor(Math.min(4,Math.max(2,e/270)))},getChildNodes:function(){var e=this.$refs.audaqueTableSearch.childNodes;return e=(e=Array.from(e)).filter((function(e){var t;return\"none\"!==(null==e||null===(t=e.style)||void 0===t?void 0:t.display)&&\"#comment\"!==(null==e?void 0:e.nodeName)}))},getResidualSearchSize:function(e){var t=this.getChildNodes().length-1;e?this.searchPosition=t%this.column:t>=this.column?this.searchPosition=this.column:this.searchPosition=t%this.column},toggle:function(){var e=this,t=this.getCol(),n=this.getChildNodes();n.forEach((function(i,a){var r,o,s,l;Array.from(i.classList).includes(\"audaque-table-search__search-item-hidden\")&&(null===(l=i.classList)||void 0===l||l.toggle(\"audaque-table-search__search-item-hidden\")),e.isExpand||a>=t-1&&a!==n.length-1&&i.classList.add(\"audaque-table-search__search-item-hidden\"),null==i||null===(r=i.classList)||void 0===r||r.remove(\"audaque-table-search__search-item-2\"),null==i||null===(o=i.classList)||void 0===o||o.remove(\"audaque-table-search__search-item-3\"),null==i||null===(s=i.classList)||void 0===s||s.remove(\"audaque-table-search__search-item-4\");var u=e.widthObj[e.column];i.classList.add(u)}))}},beforeDestroy:function(){window.removeEventListener(\"resize\",this.handleResize)}},a=(n(\"5750\"),n(\"2877\")),r=Object(a.a)(i,(function(){var e=this,t=e.$createElement,n=e._self._c||t;return n(\"div\",{ref:\"audaqueTableSearch\",staticClass:\"audaque-table-search\",on:{keydown:function(t){return!t.type.indexOf(\"key\")&&e._k(t.keyCode,\"enter\",13,t.key,\"Enter\")?null:function(t){return e.search(t)}.apply(null,arguments)}}},[e._t(\"default\"),n(\"div\",{staticClass:\"audaque-table-search__search-item search-layout\",class:[e.widthObj[e.column],e.searchPositionObj[e.column][e.searchPosition]]},[n(\"el-button\",{staticClass:\"audaque-form-button\",attrs:{type:\"primary\"},on:{click:e.search}},[e._v(\" \"+e._s(e.t(\"audaque.tableSearch.search\"))+\" \")]),n(\"el-button\",{staticClass:\"audaque-form-button\",on:{click:e.reset}},[e._v(e._s(e.t(\"audaque.tableSearch.reset\")))]),e.childNodes>=e.column?n(\"span\",{staticClass:\"expand-layout\",on:{click:e.onHandleExpandShrink}},[n(\"span\",[e._v(e._s(e.renderExpandText))]),n(\"i\",{class:[e.isExpand?\"el-icon-arrow-up\":\"el-icon-arrow-down\",\"text-icon\"]})]):e._e()],1)],2)}),[],!1,null,\"76f3ee23\",null);t.default=r.exports}"
+        },
+        {
+          "anchor": "name:\"AudaqueSearchSelect\"",
+          "start": 118894,
+          "end": 124201,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "2132de5aa07173c221e1a15cefbf862a67ca4c2c2df43dd2268efdf2597a91bd",
+          "text": "name:\"AudaqueSearchSelect\",data:function(){return{times:0,inputWidth:0,dataList:[],dataListFirst:[],loading:!1,pageRequest:{pageNo:1,pageSize:20},total:0,selectedValue:\"\",type:\"list\"}},model:{prop:\"value\",event:\"change\"},props:{multiple:{type:Boolean,default:!1},multipleLimit:{type:Number,default:0},value:{type:[Array,Number,String],required:!0},placeholder:{type:String,default:\"\"},fuzzySearchField:{type:String,required:!0,default:\"\"},fixedParams:{type:Object,default:function(){return{}}},fetchList:{type:[Function,Array],required:!0},filterFunc:{type:Function,default:function(e){return e}},keyMap:{type:Object,default:function(){return{display:\"name(account)\",value:\"id\"}}},selectedOptions:{type:Array,default:function(){return[]}},optType:{type:String,default:\"add\"},optionPadding:{type:Number,default:0}},components:{},computed:{computedDataList:function(){if(Array.isArray(this.fetchList))return this.getOptions(this.fetchList);if(\"add\"!==this.optType){var e=this.getOptions(this.selectedOptions);return this.combine(this.dataList,e).filter(this.filterFunc)}return this.dataList.filter(this.filterFunc)}},created:function(){this.selectedValue=this.value,\"function\"==typeof this.fetchList&&this.requestDataList()},watch:{value:function(e){this.times=0,\"\"!==e&&null!=e?this.fillSelectedValue(e):this.selectedValue=e}},mounted:function(){},methods:{fillSelectedValue:function(e){var t=this;this.computedDataList.length>0||this.times>=100?this.selectedValue=e:this.times<100&&(this.times++,setTimeout((function(){return t.fillSelectedValue(e)}),200))},changeHandel:function(e){this.$emit(\"change\",e)},visibleChangeHandle:function(e){this.inputWidth=this.$refs.select.$el.clientWidth-(this.optionPadding>0?this.optionPadding:this.multiple?80:40),e||\"function\"!=typeof this.fetchList||(this.type=\"list\",this.pageRequest.pageNo=1,this.dataList=this.dataListFirst)},remoteMethod:function(e){var t=this;if(\"\"!==e){this.loading=!0,this.type=\"search\";var n=this.makeObjectByPathString(e,this.fuzzySearchField);this.fetchList(Object(r.a)(Object(r.a)(Object(r.a)({},n),this.fixedParams),{},{pageRequest:{pageNo:1,pageSize:200}})).then((function(e){t.dataList=t.getOptions(e.datas)})).finally((function(){return t.loading=!1}))}else this.multiple||(this.type=\"list\",this.dataList=this.dataListFirst)},makeObjectByPathString:function(e,t){for(var n=t.split(\".\").filter((function(e){return e})),i={},a=i,r=0;r<n.length;r++){var o=n[r];n.length===r+1?a[o]=e:(a[o]={},a=a[o])}return i},getValueByPathString:function(e,t){for(var n=t.split(\".\"),i=e,a=0;a<n.length;a++)i=i[n[a]];return i},getOptions:function(e){var t=this;return e.map((function(e){var n=t.getFormattedValue(e,t.keyMap.display),i=t.getFormattedValue(e,t.keyMap.value);return Object(r.a)(Object(r.a)({},e),{},{id:i,name:n})}))},getFormattedValue:function(e,t){for(var n=t,r=t.matchAll(/[a-z0-9_.]+/gi),o=Object(a.a)(r),s=\"\",l={number:Number,string:String,boolean:Boolean},u=0;u<o.length;u++)s=this.getValueByPathString(e,o[u][0])||\"\",n=n.replace(new RegExp(o[u][0],\"g\"),s);return l[Object(i.a)(s)](n)},requestDataList:function(){var e=this;this.fetchList(Object(r.a)(Object(r.a)({},this.fixedParams),{},{pageRequest:this.pageRequest})).then((function(t){var n=e.getOptions(t.datas);e.dataListFirst=n,e.dataList=n,e.total=t.total}))},combine:function(e,t){var n=[];return t.forEach((function(t){for(var i=!1,a=0;a<e.length;a++)if(e[a].id===t.id){i=!0;break}i||n.push(t)})),e.concat(n)},loadMoreUserList:function(){var e=this;if(\"search\"!==this.type&&\"function\"==typeof this.fetchList&&this.dataList.length<this.total){this.pageRequest.pageNo++,this.loading=!0;var t=Date.now();this.fetchList(Object(r.a)(Object(r.a)({},this.fixedParams),{},{pageRequest:this.pageRequest})).then((function(n){var i=e.getOptions(n.datas);Date.now()-t>500||setTimeout((function(){e.loading=!1,e.dataList=e.combine(e.dataList,i)}),500)})).catch((function(){return e.loading=!1}))}}}}),s=(n(\"40f0\"),n(\"2877\")),l=Object(s.a)(o,(function(){var e=this,t=e.$createElement,n=e._self._c||t;return n(\"div\",[n(\"div\",{directives:[{name:\"show\",rawName:\"v-show\",value:\"view\"===e.optType&&!e.multiple,expression:\"optType === 'view' && !multiple\"}],staticClass:\"false-select\",attrs:{title:e.$refs.select&&e.$refs.select.selectedLabel}},[n(\"span\",[e._v(e._s(e.$refs.select&&e.$refs.select.selectedLabel))])]),n(\"el-select\",e._b({directives:[{name:\"show\",rawName:\"v-show\",value:\"view\"!==e.optType||e.multiple,expression:\"optType !== 'view' || multiple\"},{name:\"audaque-loadmore\",rawName:\"v-audaque-loadmore\",value:e.loadMoreUserList,expression:\"loadMoreUserList\"}],ref:\"select\",staticStyle:{width:\"100%\"},attrs:{clearable:\"\",filterable:\"\",placeholder:e.placeholder,remote:\"\",multiple:e.multiple,\"multiple-limit\":e.multipleLimit,\"remote-method\":Array.isArray(this.fetchList)?null:e.remoteMethod,loading:e.loading},on:{change:e.changeHandel,\"visible-change\":e.visibleChangeHandle},model:{value:e.selectedValue,callback:function(t){e.selectedValue=t},expression:\"selectedValue\"}},\"el-select\",e.$attrs,!1),e._l(e.computedDataList,(function(t){return n(\"el-option\",{key:t.id,attrs:{label:t.name,value:t.id}},[n(\"div\",{staticClass:\"global-ellipsis\",style:{width:e.inputWidth+\"px\"},attrs:{title:t.name}},[e._v(\" \"+e._s(t.name)+\" \")])])})),1)],1)}),[],!1,null,\"07491f74\",null);t.default=l.exports}"
+        }
+      ]
+    },
+    {
+      "id": "WO-SRC-SHELL-REQUEST",
+      "resourcePath": "/static/js/app.7ec981a3.js",
+      "localName": "shell-app.7ec981a3.js",
+      "fetchedAt": "2026-10-26T06:07:41.824383+00:00",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1417837,
+      "sha256": "a0d2d44668353c4522b2fbc45d7c25d4286ffdb630050b2f11a5bc6a44f8af68",
+      "excerpts": [
+        {
+          "anchor": "qa={\"Content-Type\":\"application/json;",
+          "start": 755130,
+          "end": 756180,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a2aee7d2755c98e02e3a9c3c7b15db6ab2a59b517cec50d7300f315c31ec09f7",
+          "text": "qa={\"Content-Type\":\"application/json;\",\"X-Requested-With\":\"XMLHttpRequest\",\"Cache-Control\":\"no-cache\",Pragma:\"no-cache\"},Ga=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];e.request.use((function(e){var n=$a(e.url,r),o=\"number\"==typeof e.timeout?e.timeout:2e4;e.timeout=n>=0?n:o,e.withCredentials=!0;var i=u(u(u({},qa),t.headers||{}),e.headers||{}),a=\"\",s=document.getElementById(\"X-CSRF-TOKEN\");s&&\"{X-CSRF-TOKEN}\"!==s.value&&(a=s.value),a&&(i[\"X-CSRF-TOKEN\"]=a);var l=localStorage.getItem(\"adq-token\");l&&\"undefined\"!==l&&\"null\"!==l&&(i[\"adq-token\"]=l),e.data instanceof FormData&&(i[\"Content-Type\"]=\"application/form-data\");var c=(new Date).getTime();i[\"X-TIMESTAMP\"]=c;var p=Vi.e.uuid();i[\"X-NONCE\"]=p;var f=Ha.getUri(e),d=Vi.c.generateSignInfo(e,f,c,p,Ha),h=Vi.c.sha256ToHex(d);return i[\"X-SIGN\"]=h,u(u(u({},t),e),{},{headers:i})}),(function(e){return Promise.reject(e)}))},Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?"
+        },
+        {
+          "anchor": "Ka=window.__$__BASE,Ya=function",
+          "start": 756097,
+          "end": 757807,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ee10fb00457ec76b69d644c7eef1cfe0bd46bc9cfe38cbef8e7fbc0e9823d0c1",
+          "text": "Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:function(){};e.response.use((function(e){var r=e.headers[\"adq-token\"];if(r&&\"undefined\"!==r&&\"null\"!==r&&localStorage.setItem(\"adq-token\",r),e.config.performance&&e.config.performance.rawData)return e;var n=Ka.NETWORK_ERROR_CODE||202;return e.status===n?Wa(e,t):e.data}),(function(e){return Wa(e.response,t)}))};function Wa(e,t){return Qa.apply(this,arguments)}function Qa(){return(Qa=s(regeneratorRuntime.mark((function e(t,r){var n,o,i,a,s;return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!((a=t||{}).data&&a.data.code&&r(a.data.code,t))){e.next=3;break}return e.abrupt(\"return\",Promise.reject(a));case 3:if(s=\"\",!a||!a.data){e.next=14;break}if(\"[object Blob]\"!==Object.prototype.toString.apply(a.data)){e.next=11;break}return e.next=8,a.data.text().then((function(e){return/^[{[]/.test(e)?(JSON.parse(e)||{}).msg:\"\"}));case 8:s=e.sent,e.next=12;break;case 11:s=a.data.msg;case 12:e.next=15;break;case 14:s=t&&t.message;case 15:return/timeout of \\d{1,10}ms exceeded/.test(s)&&(s=Pi.t(\"request.timedOut\")),s&&s.indexOf(\"Network Error\")>-1&&(s=Pi.t(\"request.networkError\")),null!==(n=a.config)&&void 0!==n&&null!==(o=n.performance)&&void 0!==o&&o.isHiddleErrorMessage||1003===(null==a||null===(i=a.data)||void 0===i?void 0:i.code)||wi.Message.error(s||Pi.t(\"request.requestException\")),e.abrupt(\"return\",Promise.reject(a));case 20:case\"end\":return e.stop()}}),e)})))).apply(this,arguments)}var Xa=function(){function e(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:function(){},r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&voi"
+        },
+        {
+          "anchor": "key:\"request\",value:function(e,t,r)",
+          "start": 757952,
+          "end": 758357,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "4a3c64144266f2b0d10c9c3f31686037369e51e803fe7d393b698be2098f30eb",
+          "text": "key:\"request\",value:function(e,t,r){var n=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{},o=\"/\"===e.charAt(0)?e.substr(1):e,i=u({url:o,method:t.toLowerCase()},n);return\"get\"===t.toLowerCase()?r&&(i.params=r):i.data=r||{},this._request(i)}},{key:\"_request\",value:function(e){return this.$http.request(e)}},{key:\"getInstance\",value:function(){return this}}]),e}(),Ja=null;function Za(){var e=argum"
+        }
+      ],
+      "sourceGroup": "shared"
+    },
+    {
+      "id": "WO-SRC-BASE",
+      "resourcePath": "/serviceConfig.base.js",
+      "localName": "serviceConfig.base.js",
+      "fetchedAt": "2026-10-26T06:07:41.425372+00:00",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 1774,
+      "sha256": "1a56c1c445a53f9a95384f1c33f1a59ed3de2723141f157ff838ca90d30fb113",
+      "excerpts": [
+        {
+          "anchor": "NETWORK_ERROR_CODE: 202",
+          "start": 755,
+          "end": 778,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8f59a792b6d56831f01f981a1c139144b88c724c15094b8280b4b81eec84d5ff",
+          "text": "NETWORK_ERROR_CODE: 202"
+        }
+      ],
+      "sourceGroup": "shared"
+    },
+    {
+      "id": "WO-SRC-CONFIG",
+      "resourcePath": "/serviceConfig.prod.js",
+      "localName": "serviceConfig.prod.js",
+      "fetchedAt": "2026-10-26T06:07:41.447650+00:00",
+      "inspectedAt": "2026-10-26T14:07:50.380Z",
+      "bytes": 7699,
+      "sha256": "9a95e7062419b2867854c72bb2e66c0ed75e94b87e72406c183d9e9bc5e757fb",
+      "excerpts": [
+        {
+          "anchor": "API_BASE_URL: baseUrl + '/back'",
+          "start": 342,
+          "end": 381,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "348c50b443d9a9d26d635edff457489ee554eacba4ad5e0c283dae44240fbcb5",
+          "text": "API_BASE_URL: baseUrl + '/back', //后台接口"
+        },
+        {
+          "anchor": "MODULE_URL_PREFIX: {}",
+          "start": 1570,
+          "end": 1591,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "97bb9c758d9ec7db70b29c35554f459f1476d3cd000323a7dc2d41c36080b9f3",
+          "text": "MODULE_URL_PREFIX: {}"
+        },
+        {
+          "anchor": "entry: baseUrl + '/workorder/index.html'",
+          "start": 2600,
+          "end": 2640,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "da4359c39fcca3f3698391cb89b587ff0a013332f94e9be961950dcf7fbf96ee",
+          "text": "entry: baseUrl + '/workorder/index.html'"
+        }
+      ],
+      "sourceGroup": "shared"
+    }
+  ]
+}

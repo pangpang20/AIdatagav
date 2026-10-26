@@ -11,6 +11,7 @@ const { renderHomeSpec } = require('./workbench-requirement-spec');
 const { MAIN: drmsMain, SUB: drmsSub, renderFeature: renderDrmsFeature } = require('./drms-requirement-spec');
 const { MAIN: dbmsMain, SUB: dbmsSub, renderFeature: renderDbmsFeature } = require('./dbms-requirement-spec');
 const { MAIN: cmsMain, SUB: cmsSub, renderFeature: renderCmsFeature } = require('./cms-requirement-spec');
+const { MAIN: woMain, SUB: woSub, renderFeature: renderWoFeature } = require('./wo-requirement-spec');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
@@ -474,6 +475,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...cmsMain, ...cmsSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed CMS requirement: ' + id);
       text = text.slice(0, start) + renderCmsFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- wo:generated-spec-v1 -->')) {
+      const entry = [...woMain, ...woSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed WO requirement: ' + id);
+      text = text.slice(0, start) + renderWoFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)

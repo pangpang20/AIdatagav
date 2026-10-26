@@ -4284,8 +4284,8 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "每类工单动作/意见、候选人、委派/撤回、节点期限、失败补偿及状态映射",
-        "objectBoundary": "源业务单、工单实例、流程节点与办理记录",
+        "criticalDecisions": "已查9项主/子规格、三身份/日期参数、六字段办理与本人条件动作；后端DTO/权限、会签及16节点、事务去重和未知结果核查、动态表单版本、通知送达及历史政策仍限制真实交付",
+        "objectBoundary": "源业务、本人业务id/bizCode、流程procInstId、节点taskId、发布表单formId与办理记录分别处理；本人草稿删除不是删除待办",
         "expandedOperations": [
           "WO-100",
           "WO-001"
