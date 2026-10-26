@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "inspectedAt": "2026-10-26T02:45:15.625Z",
+  "evidenceType": "static-source",
+  "applicationAcceptanceExecuted": false,
+  "businessRequests": 0,
+  "limitations": [
+    "仅公开静态资源GET与离线提取，没有业务接口请求、登录尝试或新浏览器截图",
+    "历史截图与本次静态资源不保证同一版本",
+    "E002截图密码区域为既有不透明覆盖，不能推断密码框视觉细节",
+    "客户端定义不证明后端校验或运行成功"
+  ],
+  "sources": [
+    {
+      "id": "LOGIN-SRC-FORM",
+      "resourcePath": "/module-login/static/js/views-login-login.42fd202c.js",
+      "localName": "login-views-login-login.42fd202c.js",
+      "fetchedAt": "2026-10-26T02:41:03.123634+00:00",
+      "inspectedAt": "2026-10-26T02:45:15.625Z",
+      "bytes": 343741,
+      "sha256": "816b0b305e3981850b17470b9e4d196c3418e2142759bfe8d7126042b5f704bb",
+      "excerpts": [
+        {
+          "anchor": "loginForm:{username:",
+          "start": 274825,
+          "end": 276175,
+          "offsetUnit": "UTF-16 code units",
+          "text": "loginForm:{username:\"\",password:\"\",authCode:\"\",agreeToPrivacyStatement:!1},bgc:l.a,bgcLR:h.a,logo:d.a,left_bgc:y.a,loginRules:{username:[a.AudaqueElementValidator.isNotEmpty(\"blur\",m(\"viewsLoginLoginVue.accountCannotBeEmpty\"))],password:[a.AudaqueElementValidator.isNotEmpty(\"blur\",m(\"viewsLoginLoginVue.passwordCanNotBeBlank\")),a.AudaqueElementValidator.lengthGT(4,\"blur\",m(\"manuallyAdded.lengthGT\",{num:4}))],authCode:[a.AudaqueElementValidator.isNotEmpty(\"blur\",m(\"viewsLoginLoginVue.verificationCodeMustBeFilled\"))],agreeToPrivacyStatement:[{required:!0,trigger:\"change\",validator:function(e,t,r){!0===t?r():r(new Error(m(\"viewsLoginLoginVue.pleaseTickPrivacyStatement\")))}}]},passwordType:\"password\",loading:!1,ticket:\"\",codeIMG:\"\",objectURL:\"\",status:0,showPrivacyElement:!1}},components:{},created:function(){var e=this;this.requestPublicKey(),this.requestIsLogin(),this.requestBase64(),Object(i.getPrivacyStatus)().then((function(t){t&&(e.showPrivacyElement=!0)})).finally((function(){return e.status+=1}))},methods:{showPrivacyDialog:function(){var e=this;this.objectURL?this.openDialog():Object(i.getPrivacy)().then((function(t){window.URL=window.URL||window.webkitURL,t&&t.size>0&&(e.objectURL=URL.createObjectURL(t),e.openDialog())}))},openDialog:function(){this.$AudaqueToast.dialog({title:m(\"viewsLoginLoginVue.privacyStatement\"),width:",
+          "sha256": "e54762aee6e401dd990387e06eb26d01625242474e924f60237dcd9ac35b87df"
+        },
+        {
+          "anchor": "created:function(){var e=this;this.requestPublicKey()",
+          "start": 275622,
+          "end": 277922,
+          "offsetUnit": "UTF-16 code units",
+          "text": "created:function(){var e=this;this.requestPublicKey(),this.requestIsLogin(),this.requestBase64(),Object(i.getPrivacyStatus)().then((function(t){t&&(e.showPrivacyElement=!0)})).finally((function(){return e.status+=1}))},methods:{showPrivacyDialog:function(){var e=this;this.objectURL?this.openDialog():Object(i.getPrivacy)().then((function(t){window.URL=window.URL||window.webkitURL,t&&t.size>0&&(e.objectURL=URL.createObjectURL(t),e.openDialog())}))},openDialog:function(){this.$AudaqueToast.dialog({title:m(\"viewsLoginLoginVue.privacyStatement\"),width:\"1000px\",className:\"dialog-to-max-height\",template:'<iframe :src=\"src\" style=\"width:100%;height:100%\"></iframe>',data:{src:this.objectURL,hideCancel_a_d_q:!0,okBtnName:m(\"viewsLoginLoginVue.closure\")},mounted:function(){},methods:{okEvent:function(){},cancelEvent:function(){}}})},passwBlur:function(e){e&&e.target.value.length>0&&(e.target.value=this.encryptStr(e.target.value))},requestPublicKey:function(){Object(i.publicKey)().then((function(e){var t=\"-----BEGIN PUBLIC KEY-----\\n\".concat(e,\"\\n-----END PUBLIC KEY-----\");C=c.a.pki.publicKeyFromPem(t)}))},requestIsLogin:function(){var e=this;Object(i.userIsLogin)().then((function(t){t&&e.handleLoginSuccess(\"auto\")}))},requestBase64:function(){var e=this;Object(i.base64Image)().then((function(t){e.codeIMG=t?\"data:image/png;base64,\"+t:\"\"})).finally((function(){return e.status+=1}))},showPwd:function(){this.passwordType=\"password\"===this.passwordType?\"text\":\"password\"},updateCode:function(){this.requestBase64()},handleLogin:function(){var e=this,t=this;this.$refs.loginForm.validate((function(r){if(!r)return!1;e.loading=!0,t.requestLogin()}))},encryptStr:function(e){var t=C.encrypt(e,\"RSA-OAEP\",{md:c.a.md.sha256.create(),mgf1:{md:c.a.md.sha256.create()}});return c.a.util.encode64(t)},requestLogin:function(){var e=this,t={account:this.loginForm.username.trim(),password:this.encryptStr(this.loginForm.password),imgCode:this.loginForm.authCode||\"8888\",agreeToPrivacyStatement:this.loginForm.agreeToPrivacyStatement};Object(i.login)(t).then((function(){e.handleLoginSuccess(\"click\")})).catch((function(t){var r;e.loading=!1,1109!==(null==t||null===(r=t.data)||void 0===r?void 0:r.code)&&e.requestBase64()})).finally((function(){}))},handleLoginSuccess:function(e){this.handleUserData();",
+          "sha256": "2148c31f8865f8f8052fc2fb7506d78777c2dc55cc79b969a5264468c88eec2a"
+        },
+        {
+          "anchor": "passwBlur:function",
+          "start": 276456,
+          "end": 278456,
+          "offsetUnit": "UTF-16 code units",
+          "text": "passwBlur:function(e){e&&e.target.value.length>0&&(e.target.value=this.encryptStr(e.target.value))},requestPublicKey:function(){Object(i.publicKey)().then((function(e){var t=\"-----BEGIN PUBLIC KEY-----\\n\".concat(e,\"\\n-----END PUBLIC KEY-----\");C=c.a.pki.publicKeyFromPem(t)}))},requestIsLogin:function(){var e=this;Object(i.userIsLogin)().then((function(t){t&&e.handleLoginSuccess(\"auto\")}))},requestBase64:function(){var e=this;Object(i.base64Image)().then((function(t){e.codeIMG=t?\"data:image/png;base64,\"+t:\"\"})).finally((function(){return e.status+=1}))},showPwd:function(){this.passwordType=\"password\"===this.passwordType?\"text\":\"password\"},updateCode:function(){this.requestBase64()},handleLogin:function(){var e=this,t=this;this.$refs.loginForm.validate((function(r){if(!r)return!1;e.loading=!0,t.requestLogin()}))},encryptStr:function(e){var t=C.encrypt(e,\"RSA-OAEP\",{md:c.a.md.sha256.create(),mgf1:{md:c.a.md.sha256.create()}});return c.a.util.encode64(t)},requestLogin:function(){var e=this,t={account:this.loginForm.username.trim(),password:this.encryptStr(this.loginForm.password),imgCode:this.loginForm.authCode||\"8888\",agreeToPrivacyStatement:this.loginForm.agreeToPrivacyStatement};Object(i.login)(t).then((function(){e.handleLoginSuccess(\"click\")})).catch((function(t){var r;e.loading=!1,1109!==(null==t||null===(r=t.data)||void 0===r?void 0:r.code)&&e.requestBase64()})).finally((function(){}))},handleLoginSuccess:function(e){this.handleUserData();var t=Object(s.c)(),r=t.constants,n=t.emitFnc,a=t.config,o=this.$route.query.cid;if(o&&\"click\"===e)location.replace(\"\".concat(a.API_BASE_URL).concat(i.grantingPath,\"?cid=\").concat(o));else{var c=n.handleProjectPrifix(r.transferPath);location.replace(c)}},handleUserData:function(){var e=sessionStorage.getItem(\"audaque_username\"),t=this.loginForm.username;e&&e!==t&&Object(s.c)().emitFnc.handleRemoveUserCache();sessionStorage.setItem(\"audaque_username\",t)}},mounted:function(){}},S=(r(\"e330\"),r(\"2877\")),b=Object(S.a)(E,(function(){v",
+          "sha256": "7954c7b38944fc035d0d08b4f02d0f7407c01ac058262d338e6a023e0e702c43"
+        },
+        {
+          "anchor": "handleLogin:function",
+          "start": 277146,
+          "end": 279346,
+          "offsetUnit": "UTF-16 code units",
+          "text": "handleLogin:function(){var e=this,t=this;this.$refs.loginForm.validate((function(r){if(!r)return!1;e.loading=!0,t.requestLogin()}))},encryptStr:function(e){var t=C.encrypt(e,\"RSA-OAEP\",{md:c.a.md.sha256.create(),mgf1:{md:c.a.md.sha256.create()}});return c.a.util.encode64(t)},requestLogin:function(){var e=this,t={account:this.loginForm.username.trim(),password:this.encryptStr(this.loginForm.password),imgCode:this.loginForm.authCode||\"8888\",agreeToPrivacyStatement:this.loginForm.agreeToPrivacyStatement};Object(i.login)(t).then((function(){e.handleLoginSuccess(\"click\")})).catch((function(t){var r;e.loading=!1,1109!==(null==t||null===(r=t.data)||void 0===r?void 0:r.code)&&e.requestBase64()})).finally((function(){}))},handleLoginSuccess:function(e){this.handleUserData();var t=Object(s.c)(),r=t.constants,n=t.emitFnc,a=t.config,o=this.$route.query.cid;if(o&&\"click\"===e)location.replace(\"\".concat(a.API_BASE_URL).concat(i.grantingPath,\"?cid=\").concat(o));else{var c=n.handleProjectPrifix(r.transferPath);location.replace(c)}},handleUserData:function(){var e=sessionStorage.getItem(\"audaque_username\"),t=this.loginForm.username;e&&e!==t&&Object(s.c)().emitFnc.handleRemoveUserCache();sessionStorage.setItem(\"audaque_username\",t)}},mounted:function(){}},S=(r(\"e330\"),r(\"2877\")),b=Object(S.a)(E,(function(){var e=this,t=e.$createElement,r=e._self._c||t;return r(\"div\",{class:[\"sys-login-container-\"+e.LOGIN_PAGE_TYPE],style:{backgroundImage:\"url(\"+(\"center\"===e.LOGIN_PAGE_TYPE?e.bgc:e.bgcLR)+\")\"}},[\"left-right\"===e.LOGIN_PAGE_TYPE?r(\"div\",{staticClass:\"left-bgc\",style:{backgroundImage:\"url(\"+e.left_bgc+\")\"}}):e._e(),r(\"div\",{directives:[{name:\"show\",rawName:\"v-show\",value:e.status>=2,expression:\"status >= 2\"}],staticClass:\"sys-login-main-form\",staticStyle:{\"z-index\":\"999\"}},[r(\"el-form\",{ref:\"loginForm\",staticClass:\"sys-login-form\",attrs:{autocomplete:\"on\",model:e.loginForm,rules:e.loginRules,\"label-position\":\"left\"},nativeOn:{keyup:function(t){return!t.type.indexOf(\"key\")&&e._k(t.keyCode,\"enter\",13,t.key,\"Enter\")?null:e.handleLogin.apply(null,arguments)}}},[r(\"div\",{staticClass:\"title-container\"},[e._v(\" \"+e._s(e.loginTitle||e.$t(\"viewsLoginLoginVue.welcomeToTheMicroservicesPlatform",
+          "sha256": "4c394bc282107a1516f89a2b2f1256bdb93fdeb4799e42575509218c1099ea18"
+        },
+        {
+          "anchor": "staticClass:\"sys-login-main-form\"",
+          "start": 278864,
+          "end": 283764,
+          "offsetUnit": "UTF-16 code units",
+          "text": "staticClass:\"sys-login-main-form\",staticStyle:{\"z-index\":\"999\"}},[r(\"el-form\",{ref:\"loginForm\",staticClass:\"sys-login-form\",attrs:{autocomplete:\"on\",model:e.loginForm,rules:e.loginRules,\"label-position\":\"left\"},nativeOn:{keyup:function(t){return!t.type.indexOf(\"key\")&&e._k(t.keyCode,\"enter\",13,t.key,\"Enter\")?null:e.handleLogin.apply(null,arguments)}}},[r(\"div\",{staticClass:\"title-container\"},[e._v(\" \"+e._s(e.loginTitle||e.$t(\"viewsLoginLoginVue.welcomeToTheMicroservicesPlatform\"))+\" \")]),r(\"el-form-item\",{attrs:{prop:\"username\"}},[\"left-right\"!==e.LOGIN_PAGE_TYPE?r(\"i\",{staticClass:\"iconfontmain main-zhanghao accout line\",attrs:{\"aria-hidden\":\"true\"}}):e._e(),r(\"el-input\",{staticClass:\"accout-input\",attrs:{\"show-word-limit-x\":\"\",name:\"username\",type:\"text\",maxlength:\"20\",autocomplete:\"off\",placeholder:e.$t(\"viewsLoginLoginVue.account\"),clearable:\"\"},model:{value:e.loginForm.username,callback:function(t){e.$set(e.loginForm,\"username\",t)},expression:\"loginForm.username\"}})],1),r(\"el-form-item\",{attrs:{prop:\"password\"}},[\"left-right\"!==e.LOGIN_PAGE_TYPE?r(\"i\",{staticClass:\"iconfontmain main-mima1 password line lock\",attrs:{\"aria-hidden\":\"true\"}}):e._e(),r(\"el-input\",{staticClass:\"password-input\",attrs:{name:\"password\",type:e.passwordType,autocomplete:\"on\",placeholder:e.$t(\"viewsLoginLoginVue.password\"),clearable:\"\"},on:{blur:e.passwBlur,focus:function(t){e.loginForm.password=\"\"}},model:{value:e.loginForm.password,callback:function(t){e.$set(e.loginForm,\"password\",t)},expression:\"loginForm.password\"}})],1),e.codeIMG?r(\"el-form-item\",{attrs:{prop:\"authCode\"}},[r(\"div\",{staticStyle:{display:\"flex\",\"flex-direction\":\"row\",\"justify-content\":\"space-between\"}},[r(\"div\",{staticClass:\"auth-code\"},[\"left-right\"!==e.LOGIN_PAGE_TYPE?r(\"i\",{staticClass:\"iconfontmain main-mima1 authcode line\",attrs:{\"aria-hidden\":\"true\"}}):e._e(),r(\"el-input\",{staticClass:\"password-input\",attrs:{name:\"username\",type:\"text\",autocomplete:\"off\",placeholder:e.$t(\"viewsLoginLoginVue.verificationCode\"),clearable:\"\"},model:{value:e.loginForm.authCode,callback:function(t){e.$set(e.loginForm,\"authCode\",t)},expression:\"loginForm.authCode\"}})],1),r(\"div\",{staticClass:\"code-img\"},[r(\"img\",{attrs:{alt:\"\",title:e.$t(\"viewsLoginLoginVue.clickToSwitchVerificationCode\"),src:e.codeIMG},on:{click:e.updateCode}})])])]):e._e(),e.showPrivacyElement?r(\"el-form-item\",{staticClass:\"reset-item-height\",attrs:{label:\"\",prop:\"agreeToPrivacyStatement\"}},[r(\"el-checkbox-group\",{staticStyle:{display:\"inline-block\",width:\"78px\",\"line-height\":\"16px\",height:\"16px\"},model:{value:e.loginForm.agreeToPrivacyStatement,callback:function(t){e.$set(e.loginForm,\"agreeToPrivacyStatement\",t)},expression:\"loginForm.agreeToPrivacyStatement\"}},[r(\"el-checkbox\",{attrs:{label:e.$t(\"viewsLoginLoginVue.read\")}},[e._v(\" \"+e._s(e.$t(\"viewsLoginLoginVue.read\"))+\" \")])],1),r(\"span\",{staticStyle:{color:\"#3C96FF\",cursor:\"pointer\"},on:{click:e.showPrivacyDialog}},[e._v(\" \"+e._s(e.$t(\"viewsLoginLoginVue.privacyStatement\"))+\" \")])],1):e._e(),r(\"el-button\",{staticClass:\"login-btn\",attrs:{type:\"primary\",loading:e.loading},on:{click:e.handleLogin}},[e._v(\" \"+e._s(e.$t(\"viewsLoginLoginVue.logIn\"))+\" \")])],1),\"center\"===e.LOGIN_PAGE_TYPE?r(\"div\",{staticClass:\"copyright\"},[e._v(\" Copyright ©2011 - \"+e._s((new Date).getFullYear())+\" \"+e._s(e.$t(\"viewsLoginLoginVue.systemVersionNumber\"))+e._s(e.VERSION)+\" \")]):e._e()],1)])}),[],!1,null,null,null);t.default=b.exports},df7c:function(e,t,r){(function(e){function r(e,t){for(var r=0,n=e.length-1;n>=0;n--){var i=e[n];\".\"===i?e.splice(n,1):\"..\"===i?(e.splice(n,1),r++):r&&(e.splice(n,1),r--)}if(t)for(;r--;r)e.unshift(\"..\");return e}function n(e,t){if(e.filter)return e.filter(t);for(var r=[],n=0;n<e.length;n++)t(e[n],n,e)&&r.push(e[n]);return r}t.resolve=function(){for(var t=\"\",i=!1,a=arguments.length-1;a>=-1&&!i;a--){var s=a>=0?arguments[a]:e.cwd();if(\"string\"!=typeof s)throw new TypeError(\"Arguments to path.resolve must be strings\");s&&(t=s+\"/\"+t,i=\"/\"===s.charAt(0))}return(i?\"/\":\"\")+(t=r(n(t.split(\"/\"),(function(e){return!!e})),!i).join(\"/\"))||\".\"},t.normalize=function(e){var a=t.isAbsolute(e),s=\"/\"===i(e,-1);return(e=r(n(e.split(\"/\"),(function(e){return!!e})),!a).join(\"/\"))||a||(e=\".\"),e&&s&&(e+=\"/\"),(a?\"/\":\"\")+e},t.isAbsolute=function(e){return\"/\"===e.charAt(0)},t.join=function(){var e=Array.prototype.slice.call(arguments,0);return t.normalize(n(e,(function(e,t){if(\"string\"!=typeof e)throw new TypeError(\"Arguments to path.join must be strings\");return e})).join(\"/\"))},t.relative=function(e,r){function n(e){for(var t=0;t<e.length&&\"\"===e[t];t++);for(var r=e.length-1;r>=0&&\"\"===e[r];r--);return t>r?[]:e.slice(t,r-t+1)}e=t.resolve(e).substr(1),r=t.resolve(r).substr(1);for(var i=n(e.split(\"/\")),a=n(r.split(\"/\")),s=Math.min(i.length,a.length),o=s,c=0;c<s;c++)if(i[c]!==a[c]){o=c;break}var u=[];for(c=o;c<i.length;c++)u.push(\"..\");return(u=u.concat(a.slice(o))).join(\"/\")},t",
+          "sha256": "aa527f64976bdc5e2fdf00ac6f71cb24456d520f53b99b6f20ca9375376d9271"
+        },
+        {
+          "anchor": ".sys-login-container-left-right{",
+          "start": 137428,
+          "end": 141728,
+          "offsetUnit": "UTF-16 code units",
+          "text": ".sys-login-container-left-right{background-repeat:no-repeat;background-size:100% 100%;background-position:50%;height:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.sys-login-container-left-right .el-input__inner{color:#333;border:1px solid #f0f0f0}.sys-login-container-left-right .el-input__inner:focus{border:1px solid #3c96ff}.sys-login-container-left-right input::-webkit-input-placeholder{color:grey}.sys-login-container-left-right input::-moz-input-placeholder{color:grey}.sys-login-container-left-right input::-ms-input-placeholder{color:grey}.sys-login-container-left-right input:-webkit-autofill{box-shadow:inset 0 0 0 1000px #f8fbff}.sys-login-container-left-right .title-logo{position:absolute;left:50px;top:50px;width:414px;height:65px;background-position:0;background-size:100%;background-repeat:no-repeat}.sys-login-container-left-right .left-bgc{margin-right:5%;width:811px;height:540px;margin-top:-.14%;background-repeat:no-repeat;background-size:100%}.sys-login-container-left-right .el-form-item{margin-bottom:25px}.sys-login-container-left-right .el-form-item.reset-item-height .el-form-item__content{line-height:16px;height:16px}.sys-login-container-left-right .auth-code .el-input--medium .el-input__inner,.sys-login-container-left-right .el-input--medium .el-input__inner{line-height:56px;height:56px}.sys-login-container-left-right .copyright{position:absolute;width:200%;bottom:-139px;text-align:center;line-height:108px;color:#b0b3bb;font-size:14px;margin-left:-50%;left:0}.sys-login-container-left-right .sys-login-main-form{margin-top:-.14%;position:relative;border-radius:3px;opacity:1;width:490px;background-color:#fff;padding:0 60px 100px;box-shadow:1px 1px 13px rgba(133,148,160,.2)}.sys-login-container-left-right .sys-login-main-form input:-webkit-autofill,.sys-login-container-left-right .sys-login-main-form select:-webkit-autofill,.sys-login-container-left-right .sys-login-main-form textarea:-webkit-autofill{background-color:transparent;background-image:none;color:#000}.sys-login-container-left-right .sys-login-main-form .accout,.sys-login-container-left-right .sys-login-main-form .password{position:absolute;top:7px;z-index:999}.sys-login-container-left-right .sys-login-main-form .authcode{position:absolute;top:8px;z-index:999}.sys-login-container-left-right .sys-login-main-form .show-pwd-btn{position:absolute;right:10px;top:7px;font-size:16px}.sys-login-container-left-right .sys-login-main-form .accout,.sys-login-container-left-right .sys-login-main-form .authcode,.sys-login-container-left-right .sys-login-main-form .password{left:10px}.sys-login-container-left-right .sys-login-main-form .accout-input .el-input__inner,.sys-login-container-left-right .sys-login-main-form .password-input .el-input__inner{padding-left:20px;background:#f8fbff}.sys-login-container-left-right .sys-login-main-form .login-btn{width:100%;font-size:20px;padding:14px 20px;background:#3c96ff;border-radius:4px;line-height:26px}.sys-login-container-left-right .sys-login-main-form .code-img{height:56px;background-color:#000;width:120px;margin-left:10px}.sys-login-container-left-right .sys-login-main-form .code-img img{height:100%;width:100%;cursor:pointer}.sys-login-container-left-right .title-container{height:178px;line-height:178px;font-size:34px;color:#3c4044;text-align:center;overflow:hidden}.sys-login-container-left-right .sys-login-form .line:after{content:\"\";position:absolute;width:1px;height:16px;top:10px;left:29px;border-right:1px solid #dcdcdc}.sys-login-container-left-right .sys-login-form .lock:after{left:29px}.sys-login-container-left-right .auth-code{width:270px}@media screen and (max-width:1600px){.sys-login-container-center .sys-login-main-form{padding:0 50px 29px;width:436px}.sys-login-container-center .sys-login-main-form .copyright{bottom:-98px}.sys-login-container-center .title-container{height:90px;line-height:90px;font-size:24px}.sys-login-container-center .login-btn{width:100%;font-size:20px;padding:10px 20px}.sys-login-container-center .auth-code .el-input--medium .el-input__inner,.sys-login-container-center .el-input--medium .el-input__inner,.sys-login-container-center .sys-login-main-form .code-img{height:42px;line-height:42px}.sys-login-container",
+          "sha256": "d9c68a8c306198e152fd770b4f8c1c9c7dad18109ab003a06c83c5d438afb20e"
+        },
+        {
+          "anchor": "screen and (max-width:1600px)",
+          "start": 141127,
+          "end": 146127,
+          "offsetUnit": "UTF-16 code units",
+          "text": "screen and (max-width:1600px){.sys-login-container-center .sys-login-main-form{padding:0 50px 29px;width:436px}.sys-login-container-center .sys-login-main-form .copyright{bottom:-98px}.sys-login-container-center .title-container{height:90px;line-height:90px;font-size:24px}.sys-login-container-center .login-btn{width:100%;font-size:20px;padding:10px 20px}.sys-login-container-center .auth-code .el-input--medium .el-input__inner,.sys-login-container-center .el-input--medium .el-input__inner,.sys-login-container-center .sys-login-main-form .code-img{height:42px;line-height:42px}.sys-login-container-center .sys-login-main-form .accout,.sys-login-container-center .sys-login-main-form .authcode,.sys-login-container-center .sys-login-main-form .password,.sys-login-container-center .sys-login-main-form .show-pwd-btn{top:3px}.sys-login-container-left-right .left-bgc{width:608px;height:405px;background-size:100%;margin-right:8%;-ms-flex-negative:0;flex-shrink:0}.sys-login-container-left-right .title-logo{position:absolute;left:38px;top:38px;width:310px;height:60px}.sys-login-container-left-right .el-input--medium .el-input__inner{line-height:50px;height:50px}.sys-login-container-left-right .sys-login-main-form .login-btn{line-height:20px}.sys-login-container-left-right .auth-code .el-input--medium .el-input__inner{height:50px;line-height:50px}.sys-login-container-left-right .sys-login-main-form .code-img{height:50px}.sys-login-container-left-right .sys-login-main-form{padding:0 40px 90px;width:392px}.sys-login-container-left-right .sys-login-main-form .copyright{bottom:-98px}.sys-login-container-left-right .title-container{height:120px;line-height:120px;font-size:24px}.sys-login-container-center-left-right .login-btn{width:100%;font-size:20px;padding:10px 20px}.sys-login-container-center-left-right .auth-code .el-input--medium .el-input__inner,.sys-login-container-center-left-right .el-input--medium .el-input__inner,.sys-login-container-center-left-right .sys-login-main-form .code-img{height:42px;line-height:42px}.sys-login-container-center-left-right .sys-login-main-form .accout,.sys-login-container-center-left-right .sys-login-main-form .authcode,.sys-login-container-center-left-right .sys-login-main-form .password,.sys-login-container-center-left-right .sys-login-main-form .show-pwd-btn{top:3px}}',\"\"]),e.exports=t},9152:function(e,t){t.read=function(e,t,r,n,i){var a,s,o=8*i-n-1,c=(1<<o)-1,u=c>>1,l=-7,f=r?i-1:0,h=r?-1:1,p=e[t+f];for(f+=h,a=p&(1<<-l)-1,p>>=-l,l+=o;l>0;a=256*a+e[t+f],f+=h,l-=8);for(s=a&(1<<-l)-1,a>>=-l,l+=n;l>0;s=256*s+e[t+f],f+=h,l-=8);if(0===a)a=1-u;else{if(a===c)return s?NaN:1/0*(p?-1:1);s+=Math.pow(2,n),a-=u}return(p?-1:1)*s*Math.pow(2,a-n)},t.write=function(e,t,r,n,i,a){var s,o,c,u=8*a-i-1,l=(1<<u)-1,f=l>>1,h=23===i?Math.pow(2,-24)-Math.pow(2,-77):0,p=n?0:a-1,d=n?1:-1,g=t<0||0===t&&1/t<0?1:0;for(t=Math.abs(t),isNaN(t)||t===1/0?(o=isNaN(t)?1:0,s=l):(s=Math.floor(Math.log(t)/Math.LN2),t*(c=Math.pow(2,-s))<1&&(s--,c*=2),(t+=s+f>=1?h/c:h*Math.pow(2,1-f))*c>=2&&(s++,c/=2),s+f>=l?(o=0,s=l):s+f>=1?(o=(t*c-1)*Math.pow(2,i),s+=f):(o=t*Math.pow(2,f-1)*Math.pow(2,i),s=0));i>=8;e[r+p]=255&o,p+=d,o/=256,i-=8);for(s=s<<i|o,u+=i;u>0;e[r+p]=255&s,p+=d,s/=256,u-=8);e[r+p-d]|=128*g}},9861:function(e,t,r){\"use strict\";r(\"e260\");var n=r(\"23e7\"),i=r(\"d066\"),a=r(\"0d3b\"),s=r(\"6eeb\"),o=r(\"e2cc\"),c=r(\"d44e\"),u=r(\"9ed3\"),l=r(\"69f3\"),f=r(\"19aa\"),h=r(\"5135\"),p=r(\"0366\"),d=r(\"f5df\"),g=r(\"825a\"),y=r(\"861d\"),m=r(\"577e\"),v=r(\"7c73\"),C=r(\"5c6c\"),E=r(\"9a1f\"),S=r(\"35a1\"),b=r(\"b622\"),T=i(\"fetch\"),I=i(\"Request\"),A=I&&I.prototype,B=i(\"Headers\"),w=b(\"iterator\"),N=l.set,R=l.getterFor(\"URLSearchParams\"),_=l.getterFor(\"URLSearchParamsIterator\"),L=/\\+/g,k=Array(4),U=function(e){return k[e-1]||(k[e-1]=RegExp(\"((?:%[\\\\da-f]{2}){\"+e+\"})\",\"gi\"))},D=function(e){try{return decodeURIComponent(e)}catch(t){return e}},P=function(e){var t=e.replace(L,\" \"),r=4;try{return decodeURIComponent(t)}catch(e){for(;r;)t=t.replace(U(r--),D);return t}},x=/[!'()~]|%20/g,O={\"!\":\"%21\",\"'\":\"%27\",\"(\":\"%28\",\")\":\"%29\",\"~\":\"%7E\",\"%20\":\"+\"},V=function(e){return O[e]},K=function(e){return encodeURIComponent(e).replace(x,V)},M=function(e,t){if(t)for(var r,n,i=t.split(\"&\"),a=0;a<i.length;)(r=i[a++]).length&&(n=r.split(\"=\"),e.push({key:P(n.shift()),value:P(n.join(\"=\"))}))},F=function(e){this.entries.length=0,M(this.entries,e)},j=function(e,t){if(e<t)throw TypeError(\"Not enough arguments\")},q=u((function(e,t){N(this,{type:\"URLSearchParamsIterator\",iterator:E(R(e).entries),kind:t})}),\"Iterator\",(function(){var e=_(this),t=e.kind,r=e.iterator.next(),n=r.value;return r.done||(r.value=\"keys\"===t?n.key:\"values\"===t?n.value:[n.key,n.value]),r})),G=function(){f(this,G,\"URLSearchParams\");var e,t,r,n,i,a,s,o,c,u=arguments.length>0?arguments[0]:void 0,l=this,p=[];if(N(l,{type:\"URLSearchParams\",entries:p,updateURL:function(){},updateSearchParams:F}),void 0!==u)if(y(u))if(\"function\"==typeof(e=S(u)))for(r=(t=e.call(u)).next;!(n=r.call(t)).done;){if((s=(a=(i=E(g(n.value))).next).call(i)).",
+          "sha256": "06d83e57c03d9e54a79d14cddc94d785e0c7a2a76effbf805debdba77aa01482"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-SRC-API",
+      "resourcePath": "/module-login/static/js/api-login.a6dbe736.js",
+      "localName": "login-api-login.a6dbe736.js",
+      "fetchedAt": "2026-10-26T02:41:02.357325+00:00",
+      "inspectedAt": "2026-10-26T02:45:15.625Z",
+      "bytes": 1495,
+      "sha256": "9de560511873c87e323e44c0b8c4b5639583bc4d86ccbf6e58e822f9c4556a37",
+      "excerpts": [
+        {
+          "anchor": "var c=\"/common/auth\"",
+          "start": 296,
+          "end": 446,
+          "offsetUnit": "UTF-16 code units",
+          "text": "var c=\"/common/auth\",r=\"/common/captcha\",o=\"/common/user\"},\"7ded\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"base64Image\",(function(){return i})),e.d(",
+          "sha256": "cfba297374ac46ddc4208e3b8bfb73d8b1ed5e40dcd468a1f3703f7f57d4b906"
+        },
+        {
+          "anchor": "var c=e(\"bcab\")",
+          "start": 743,
+          "end": 1495,
+          "offsetUnit": "UTF-16 code units",
+          "text": "var c=e(\"bcab\"),r=e(\"5c0b\"),o=function(){return Object(c.b)(\"commonAuth\")||r.commonAuth},u=function(){return Object(c.b)(\"commonUser\")||r.commonUser},i=function(){return Object(c.d)().request((Object(c.b)(\"commonCaptcha\")||r.commonCaptcha)+\"/captcha/img64\",\"GET\")},a=function(){return Object(c.d)().request(o()+\"/login/key\",\"GET\")},s=function(){return Object(c.d)().request(u()+\"/pub/login\",\"GET\")},m=function(n){return Object(c.d)().request(o()+\"/login\",\"POST\",n)},b=function(){return Object(c.d)().request(u()+\"/main/subject\",\"GET\")},d=function(){return Object(c.d)().request(u()+\"/privacy/getPrivacy\",\"GET\",{},{responseType:\"blob\"})},f=function(){return Object(c.d)().request(u()+\"/privacy/getPrivacyStatus\",\"GET\")},g=\"/common/sso/cas/granting\"}}]);",
+          "sha256": "a0f33600e6d38d4685eb29baf8d70a2faee222050682919e5c09b31e22b32e71"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-SRC-VALIDATOR",
+      "resourcePath": "/module-login/static/js/chunk-@audaque/vue-utils.af9799ec.js",
+      "localName": "login-vue-utils.af9799ec.js",
+      "fetchedAt": "2026-10-26T02:41:03.702406+00:00",
+      "inspectedAt": "2026-10-26T02:45:15.625Z",
+      "bytes": 403770,
+      "sha256": "f4e245db51ce24788a4f490f070fb64abfbfddf4cecc0bed7a0ad9581c8c6812",
+      "excerpts": [
+        {
+          "anchor": "lengthGT:function",
+          "start": 357408,
+          "end": 357828,
+          "offsetUnit": "UTF-16 code units",
+          "text": "lengthGT:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:10,t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"blur\",r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:\"\",n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];return{required:n,trigger:t,validator:function(t,n,i){(n+\"\").length<e?i(new Error(r)):i()}}},lengthLT:function(){var e=arguments.length>0&&void 0!==arg",
+          "sha256": "a98ffe5fa50c8d8c2295429025015f6cb87b5362605a12c6f98475f0b5e16f61"
+        },
+        {
+          "anchor": "isNotEmpty:function",
+          "start": 356016,
+          "end": 356416,
+          "offsetUnit": "UTF-16 code units",
+          "text": "isNotEmpty:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"blur\",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"\",r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];return{required:r,trigger:e,validator:function(e,r,n){w(r)?n():n(new Error(t))}}},isMobilePhone:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"blur\",t=arguments.le",
+          "sha256": "0c497653b84369c09ab88351aa16ad47435912e2ff412f68cb61f56c8d68abb9"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-SRC-LOCALE",
+      "resourcePath": "/module-login/static/js/app.641c4267.js",
+      "localName": "login-app.641c4267.js",
+      "fetchedAt": "2026-10-26T02:41:03.430808+00:00",
+      "inspectedAt": "2026-10-26T02:45:15.625Z",
+      "bytes": 275864,
+      "sha256": "7568f28b4404f7144189fbef3cecc9addc583f49d1c470d240cb1e336d07ddc9",
+      "excerpts": [
+        {
+          "anchor": "lengthGT:\"字符长度",
+          "start": 94752,
+          "end": 95622,
+          "offsetUnit": "UTF-16 code units",
+          "text": "lengthGT:\"字符长度应大于等于{num}\"},routerModulesModuleNameJs:{logIn:\"登录\"},viewsLoginLoginVue:{welcomeToTheMicroservicesPlatform:\"欢迎使用微服务平台\",account:\"请输入账号\",password:\"请输入密码\",verificationCode:\"请输入验证码\",clickToSwitchVerificationCode:\"点击切换验证码\",read:\"已阅读\",privacyStatement:\"《用户协议》\",logIn:\"登录\",systemVersionNumber:\"系统版本号\",accountCannotBeEmpty:\"账号不能为空\",accountFormatIsIncorrect:\"账号格式不正确\",passwordCanNotBeBlank:\"密码不能为空\",verificationCodeMustBeFilled:\"验证码不能为空\",pleaseTickPrivacyStatement:\"请勾选用户协议\",closure:\"关 闭\"}}},\"85e7\":function(t,e,n){var r=n(\"1a14\"),o=n(\"77e9\"),i=n(\"9876\");t.exports=n(\"0bad\")?Object.defineProperties:function(t,e){o(t);for(var n,a=i(e),s=a.length,c=0;s>c;)r.f(t,n=a[c++],e[n]);return t}},\"861d\":function(t,e){t.exports=function(t){return\"object\"==typeof t?null!==t:\"function\"==typeof t}},8673:function(t,e,n){var r={\"./App\":[\"3dfd\",9],\"./App.vue\":[\"3dfd\",9],\"./api/lo",
+          "sha256": "9340a0a764b14fd5d0c38d41fe643f0b59ac2b598b791c179d9e540325673661"
+        }
+      ]
+    }
+  ]
+}
