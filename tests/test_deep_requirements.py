@@ -12,6 +12,27 @@ SPEC.loader.exec_module(builder)
 
 
 class DeepRequirementsTests(unittest.TestCase):
+    def test_preserve_reviewed_ds_requires_exact_order_and_screenshots(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'ds';folder.mkdir()
+            file=folder/'子页面与操作细化.md'
+            text=('<!-- ds:generated-spec-v1 -->\n<!-- 业务规格格式:plain-v1 -->\n'
+                  '### DS-500 驱动\n[H1](../H1.png)\n### DS-501 连接\n[H2](../H2.png)\n')
+            module={'code':'DS','directory':'ds'}
+            record={'requirements':[{'id':'DS-500','evidence':['H1']},{'id':'DS-501','evidence':['H2']}]}
+            file.write_text(text,encoding='utf8')
+            self.assertIs(record,builder.preserve_reviewed(root,module,record))
+            self.assertEqual(text,file.read_text(encoding='utf8'))
+            for bad,pattern in [(text.replace('DS-501','DS-502'),'registry mismatch'),
+                                (text.replace('H2.png','H3.png'),'evidence missing'),
+                                (text.replace('<!-- 业务规格格式:plain-v1 -->',''),'plain format')]:
+                file.write_text(bad,encoding='utf8')
+                with self.assertRaisesRegex(ValueError,pattern):builder.preserve_reviewed(root,module,record)
+            file.write_text(text,encoding='utf8')
+            with self.assertRaisesRegex(ValueError,'registered IDs'):builder.preserve_reviewed(root,module,None)
+            record['requirements'].reverse()
+            with self.assertRaisesRegex(ValueError,'registry mismatch'):builder.preserve_reviewed(root,module,record)
+
     def test_preserve_reviewed_wo_requires_order_and_original_screenshots(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);folder=root/'wo';folder.mkdir()

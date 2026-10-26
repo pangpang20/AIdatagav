@@ -5784,7 +5784,7 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "驱动字段协议、来源标识共享、API/Topic子项、连接测试副作用、密文保留及可见范围授权",
+        "criticalDecisions": "完整驱动/连接器协议、后端DTO与200/201语义、密文保留/轮换、三范围动作授权、并发/引用/去重、远端连接与文件生命周期",
         "objectBoundary": "驱动模板、连接定义、API定义与Kafka Topic配置",
         "expandedOperations": [
           "DS-100",
@@ -5804,7 +5804,11 @@
           "DS-127",
           "DS-128",
           "DS-129"
-        ]
+        ],
+        "reviewedAt": "2026-10-26",
+        "auditDocument": "07-数据源管理/核查记录.md",
+        "staticEvidence": "evidence/ds-review-20261026/index.json",
+        "nonfunctionalRequirements": 15
       },
       "aiProposals": [
         "AI-003"
