@@ -38,12 +38,14 @@ test('all formal requirements contain the eight implementation specification sec
   for (const file of formalDocuments()) {
     documents += 1;
     const text = fs.readFileSync(file, 'utf8');
+    const plain = text.includes('<!-- 业务规格格式:plain-v1 -->');
     for (const requirement of requirementBlocks(text)) {
       assert.ok(!seenRequirements.has(requirement.id), `duplicate requirement ${requirement.id}`);
       seenRequirements.add(requirement.id);
       assert.ok(requirement.text.includes(`<!-- 完整规格:${requirement.id} -->`), `${requirement.id} marker missing`);
       for (let index = 0; index < expectedSections.length; index += 1) {
-        assert.ok(requirement.text.includes(`#### ${index + 1}. ${expectedSections[index]}（${requirement.id}）`), `${requirement.id} missing ${expectedSections[index]}`);
+        const title = plain && index === 7 ? '关联文档' : expectedSections[index];
+        assert.ok(requirement.text.includes(`#### ${index + 1}. ${title}（${requirement.id}）`), `${requirement.id} missing ${title}`);
       }
       const specStart = requirement.text.indexOf(`<!-- 完整规格:${requirement.id} -->`);
       const spec = requirement.text.slice(specStart);
@@ -66,10 +68,11 @@ test('all formal requirements contain the eight implementation specification sec
         assert.ok(!seenAcceptance.has(caseId), `duplicate acceptance ${caseId}`);
         seenAcceptance.add(caseId);
         assert.equal(columns[2], requirement.id, `${caseId} must reference its owning requirement`);
-        assert.equal(columns[3], '【拟定，未执行】', `${caseId} must remain unexecuted`);
+        assert.equal(columns[3], plain ? '未执行' : '【拟定，未执行】', `${caseId} must remain unexecuted`);
       }
       assert.match(requirement.text, /方法与相对路径|读取\/查询请求方法与路径|方法与路径/u, `${requirement.id} API status missing`);
-      assert.match(requirement.text, /【待确认】允许访问本页面/u, `${requirement.id} permission status missing`);
+      assert.match(requirement.text, plain ? /允许访问本页面/u : /【待确认】允许访问本页面/u, `${requirement.id} permission status missing`);
+      if (plain) assert.ok(fs.existsSync(path.join(path.dirname(file),'核查记录.md')), `${requirement.id} audit record missing`);
     }
   }
 

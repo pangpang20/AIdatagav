@@ -29,6 +29,14 @@ class RequirementsValidationTests(unittest.TestCase):
         errors=v.markdown_errors('| AUTH-AC-001 | 描述 |',Path('C:/docs/a.md'),Path('C:/docs'))
         self.assertTrue(any('execution status' in e for e in errors))
 
+    def test_plain_unexecuted_status_requires_registered_plain_format(self):
+        row='| AUTH-AC-001 | 描述 | AUTH-001 | 未执行 |'
+        path=Path('C:/docs/a.md');root=Path('C:/docs')
+        self.assertTrue(v.markdown_errors(row,path,root))
+        self.assertEqual([],v.markdown_errors('<!-- 业务规格格式:plain-v1 -->\n'+row,path,root))
+        for status in ['通过','未执行通过','已执行','执行成功']:
+            self.assertTrue(v.markdown_errors('<!-- 业务规格格式:plain-v1 -->\n'+row.replace('未执行',status),path,root))
+
     def test_duplicate_acceptance_with_different_description_is_rejected(self):
         text='| AUTH-AC-001 | A | 【拟定，未执行】 |\n| AUTH-AC-001 | B | 【拟定，未执行】 |'
         errors=v.markdown_errors(text,Path('C:/docs/a.md'),Path('C:/docs'))
@@ -130,6 +138,32 @@ class BusinessRequirementsValidationTests(unittest.TestCase):
 
     def test_business_draft_can_reference_preserved_research(self):
         self.assertEqual([],self.check())
+
+    def plain_text(self):
+        return ('<!-- 业务规格格式:plain-v1 -->\n'+self.text
+            .replace('结果与异常处理【拟定需求】','结果与异常处理')
+            .replace('【拟定，未执行】','未执行')
+            .replace('待确认','业务边界')
+            +'\n[核查记录](./核查记录.md)\n')
+
+    def test_plain_spec_keeps_business_traceability_without_inline_research_labels(self):
+        self.assertEqual([],self.check(self.plain_text()))
+
+    def test_plain_spec_cannot_drop_audit_or_claim_acceptance(self):
+        text=self.plain_text()
+        self.assertTrue(any('audit' in e for e in self.check(text.replace('[核查记录](./核查记录.md)',''))))
+        self.assertTrue(any('unexecuted' in e for e in self.check(text.replace('| 未执行 |','| 已执行 |'))))
+        self.assertTrue(any('research labels' in e for e in self.check(text+'\n【页面观察】\n')))
+
+    def test_plain_audit_requires_evidence_and_external_dependency_boundaries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder=Path(tmp)
+            text=self.plain_text()
+            self.assertTrue(v.plain_audit_errors(text,folder))
+            (folder/'核查记录.md').write_text('## 核查结论\n来源与结论。\n## 外部依赖\n服务端行为不能由客户端证明。\n## 验证状态\n应用验收未执行。',encoding='utf8')
+            self.assertEqual([],v.plain_audit_errors(text,folder))
+            (folder/'核查记录.md').write_text('核查完成。',encoding='utf8')
+            self.assertTrue(v.plain_audit_errors(text,folder))
 
     def test_business_rule_without_purpose_is_rejected(self):
         self.assertTrue(any('business purpose' in x for x in self.check(self.text.replace('**业务目的**：登记来源。',''))))

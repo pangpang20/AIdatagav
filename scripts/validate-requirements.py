@@ -14,12 +14,34 @@ REQ=re.compile(r'^### ([A-Z]+-\d{3})\b',re.M)
 AC=re.compile(r'^\| [A-Z]+-AC-\d{3} \|.*$',re.M)
 PLACEHOLDERS=('['+'当前用户'+']','['+'当前账号'+']','['+'样本数据行已隐去'+']')
 DEPLOYMENT_ORIGIN=re.compile(r'https?://'+re.escape('www.'+'audaqueproxy'+'.com')+r':10223',re.I)
+PLAIN_FORMAT='<!-- 业务规格格式:plain-v1 -->'
+
+def plain_format(text):
+    return PLAIN_FORMAT in text.splitlines()
+
+def unexecuted_row(row,plain=False):
+    if plain:
+        return row.strip().strip('|').split('|')[-1].strip()=='未执行'
+    return '【拟定，未执行】' in row and '【已执行' not in row
+
+def plain_audit_errors(text,folder):
+    """A plain business specification must retain a separate investigation boundary."""
+    if not plain_format(text):return []
+    audit=folder/'核查记录.md'
+    if not audit.is_file():return ['plain: linked audit record missing']
+    content=audit.read_text(encoding='utf-8')
+    errors=[]
+    for title in ['核查结论','外部依赖','验证状态']:
+        match=re.search(r'^## '+title+r'\s*\n(.*?)(?=^## |\Z)',content,re.M|re.S)
+        if not match or not match.group(1).strip():errors.append(f'plain: audit section {title} missing or empty')
+    return errors
 
 def deployment_errors(text,label):
     return [f'{label}: deployment origin must be route-only'] if DEPLOYMENT_ORIGIN.search(text) else []
 
 def development_errors(text,module):
     errors=[];code=module['code'];review=module.get('developmentReview',{})
+    detail='**开发处理细则**' if plain_format(text) else '**开发处理细则【拟定需求】**'
     ids=[r['id'] for r in module.get('businessRequirements',[])]
     if review.get('status')!='partial-ui-only' or review.get('productionReady') is not False:
         errors.append(f'{code}: partial evidence cannot be production-ready')
@@ -29,7 +51,7 @@ def development_errors(text,module):
         errors.append(f'{code}: development operation registry mismatch')
     for rid in ids:
         block=re.search(r'^### '+re.escape(rid)+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
-        if not block or '**开发处理细则【拟定需求】**' not in block.group(1):
+        if not block or detail not in block.group(1):
             errors.append(f'{rid}: development handling details missing')
     return errors
 
@@ -108,7 +130,9 @@ def markdown_errors(text,path,root):
         if pattern is AC:values=[row.split('|')[1].strip() for row in values]
         if len(values)!=len(set(values)):errors.append(f'{path.name}: duplicate {label} id')
     for row in AC.findall(text):
-        if '已执行' not in row and '【拟定，未执行】' not in row:
+        if plain_format(text) and not unexecuted_row(row,True):
+            errors.append(f'{path.name}: plain acceptance must remain unexecuted; execution status invalid')
+        elif not plain_format(text) and '已执行' not in row and '【拟定，未执行】' not in row:
             errors.append(f'{path.name}: acceptance lacks explicit execution status')
         if '【拟定需求】' in row and '【已执行' in row:
             errors.append(f'{path.name}: proposed acceptance claimed executed')
@@ -199,6 +223,11 @@ def module_section(text,number):
 def business_errors(text,module,research,data):
     """Validate readable drafts separately from historical observation records."""
     errors=[];code=module['code'];registry=module.get('businessRequirements',[])
+    plain=plain_format(text)
+    if plain:
+        if './核查记录.md' not in LINK.findall(text):errors.append(f'{code}: plain business audit link missing')
+        if re.search(r'【|】|待确认|拟定需求|本轮|源码|历史DOM',text):
+            errors.append(f'{code}: plain business specification contains research labels')
     ids=[x['id'] for x in registry]
     for n in range(1,9):
         if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{code}: business section {n} missing')
@@ -207,7 +236,7 @@ def business_errors(text,module,research,data):
     if [r.split('|')[1].strip() for r in cases]!=module.get('businessAcceptance',[]):
         errors.append(f'{code}: business acceptance registry mismatch')
     for row in cases:
-        if '【拟定，未执行】' not in row or '【已执行' in row:
+        if not unexecuted_row(row,plain):
             errors.append(f'{code}: business acceptance must remain unexecuted')
         refs=re.findall(r'(?<![A-Z-])[A-Z]+-\d{3}\b',row)
         if not refs or any(ref not in ids for ref in refs):
@@ -223,7 +252,8 @@ def business_errors(text,module,research,data):
         steps=re.findall(r'^\d+\.([^\n]*)',block,re.M)
         if not steps or any(not step.strip() for step in steps):
             errors.append(f'{rid}: missing or empty step')
-        if '**操作与规则**' not in block or '结果与异常处理【拟定需求】' not in block:
+        result_label='**结果与异常处理**' if plain else '结果与异常处理【拟定需求】'
+        if '**操作与规则**' not in block or result_label not in block:
             errors.append(f'{rid}: business behavior structure incomplete')
         row=next((line for line in source_section.splitlines() if line.startswith('| '+rid+' |')),'')
         if not req.get('evidence'):errors.append(f'{rid}: missing business source')
@@ -347,6 +377,7 @@ def validate(root):
             business=(folder/'需求说明.md').read_text(encoding='utf-8')
             errors+=business_errors(business,m,text,data)
             errors+=development_errors(business,m)
+            errors+=plain_audit_errors(business,folder)
             business_ids+=REQ.findall(business)+[r.split('|')[1].strip() for r in AC.findall(business)]
         for n in range(1,9):
             if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{m["code"]}: missing section {n}')

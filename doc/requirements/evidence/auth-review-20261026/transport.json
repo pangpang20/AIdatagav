@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "inspectedAt": "2026-10-26T03:21:20.132Z",
+  "evidenceType": "static-source",
+  "applicationAcceptanceExecuted": false,
+  "businessRequests": 0,
+  "limitations": [
+    "只核对客户端与配置；没有执行应用代码、认证、业务接口或浏览器验收",
+    "服务端响应、密码存储、会话安全与运行表现不能由静态文件证明",
+    "配置仅反映采样环境；部署端点和实际凭据不进入证据"
+  ],
+  "sources": [
+    {
+      "id": "LOGIN-HTTP-CLIENT",
+      "resourcePath": "/static/js/app.7ec981a3.js",
+      "localName": "app.7ec981a3.js",
+      "fetchedAt": "2026-10-26T03:05:19.067026+00:00",
+      "inspectedAt": "2026-10-26T03:21:20.132Z",
+      "bytes": 1417837,
+      "sha256": "a0d2d44668353c4522b2fbc45d7c25d4286ffdb630050b2f11a5bc6a44f8af68",
+      "excerpts": [
+        {
+          "anchor": "qa={\"Content-Type\"",
+          "start": 755130,
+          "end": 756180,
+          "offsetUnit": "UTF-16 code units",
+          "text": "qa={\"Content-Type\":\"application/json;\",\"X-Requested-With\":\"XMLHttpRequest\",\"Cache-Control\":\"no-cache\",Pragma:\"no-cache\"},Ga=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];e.request.use((function(e){var n=$a(e.url,r),o=\"number\"==typeof e.timeout?e.timeout:2e4;e.timeout=n>=0?n:o,e.withCredentials=!0;var i=u(u(u({},qa),t.headers||{}),e.headers||{}),a=\"\",s=document.getElementById(\"X-CSRF-TOKEN\");s&&\"{X-CSRF-TOKEN}\"!==s.value&&(a=s.value),a&&(i[\"X-CSRF-TOKEN\"]=a);var l=localStorage.getItem(\"adq-token\");l&&\"undefined\"!==l&&\"null\"!==l&&(i[\"adq-token\"]=l),e.data instanceof FormData&&(i[\"Content-Type\"]=\"application/form-data\");var c=(new Date).getTime();i[\"X-TIMESTAMP\"]=c;var p=Vi.e.uuid();i[\"X-NONCE\"]=p;var f=Ha.getUri(e),d=Vi.c.generateSignInfo(e,f,c,p,Ha),h=Vi.c.sha256ToHex(d);return i[\"X-SIGN\"]=h,u(u(u({},t),e),{},{headers:i})}),(function(e){return Promise.reject(e)}))},Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?",
+          "sha256": "a2aee7d2755c98e02e3a9c3c7b15db6ab2a59b517cec50d7300f315c31ec09f7"
+        },
+        {
+          "anchor": "Ya=function(e){var t=arguments.length>1",
+          "start": 756117,
+          "end": 756505,
+          "offsetUnit": "UTF-16 code units",
+          "text": "Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:function(){};e.response.use((function(e){var r=e.headers[\"adq-token\"];if(r&&\"undefined\"!==r&&\"null\"!==r&&localStorage.setItem(\"adq-token\",r),e.config.performance&&e.config.performance.rawData)return e;var n=Ka.NETWORK_ERROR_CODE||202;return e.status===n?Wa(e,t):e.data}),(function(e){return Wa(e.response,t)}))};",
+          "sha256": "fdbc54d7442fa9677b2677492f026a33533487edc53b77e762f261d83d6ca32d"
+        },
+        {
+          "anchor": "function Wa(e,t){return Qa.apply",
+          "start": 756505,
+          "end": 757745,
+          "offsetUnit": "UTF-16 code units",
+          "text": "function Wa(e,t){return Qa.apply(this,arguments)}function Qa(){return(Qa=s(regeneratorRuntime.mark((function e(t,r){var n,o,i,a,s;return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!((a=t||{}).data&&a.data.code&&r(a.data.code,t))){e.next=3;break}return e.abrupt(\"return\",Promise.reject(a));case 3:if(s=\"\",!a||!a.data){e.next=14;break}if(\"[object Blob]\"!==Object.prototype.toString.apply(a.data)){e.next=11;break}return e.next=8,a.data.text().then((function(e){return/^[{[]/.test(e)?(JSON.parse(e)||{}).msg:\"\"}));case 8:s=e.sent,e.next=12;break;case 11:s=a.data.msg;case 12:e.next=15;break;case 14:s=t&&t.message;case 15:return/timeout of \\d{1,10}ms exceeded/.test(s)&&(s=Pi.t(\"request.timedOut\")),s&&s.indexOf(\"Network Error\")>-1&&(s=Pi.t(\"request.networkError\")),null!==(n=a.config)&&void 0!==n&&null!==(o=n.performance)&&void 0!==o&&o.isHiddleErrorMessage||1003===(null==a||null===(i=a.data)||void 0===i?void 0:i.code)||wi.Message.error(s||Pi.t(\"request.requestException\")),e.abrupt(\"return\",Promise.reject(a));case 20:case\"end\":return e.stop()}}),e)})))).apply(this,arguments)}var Xa=function(){function e(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:function(){},r=arguments.length>1&&v",
+          "sha256": "414b2afbc3a2a549e73eba9e8114bbe8dfba6916080835407afecceafc27db3e"
+        },
+        {
+          "anchor": "o=\"/\"===e.charAt(0)",
+          "start": 758052,
+          "end": 758242,
+          "offsetUnit": "UTF-16 code units",
+          "text": "o=\"/\"===e.charAt(0)?e.substr(1):e,i=u({url:o,method:t.toLowerCase()},n);return\"get\"===t.toLowerCase()?r&&(i.params=r):i.data=r||{},this._request(i)}},{key:\"_request\",value:function(e){return",
+          "sha256": "7c0b14aa305d7c1f0b37c68ba411087acd25fcfd8d9e177fbe8c77399e154642"
+        },
+        {
+          "anchor": "function lu(e){return function(e){if(1002===e)",
+          "start": 848848,
+          "end": 849398,
+          "offsetUnit": "UTF-16 code units",
+          "text": "function lu(e){return function(e){if(1002===e){var t=Ji.LOGIN_PATH||Ni,r=location.pathname;return window.localStorage.removeItem(\"adq-token\"),r!==t&&r!==Gi(t)&&(sessionStorage.setItem(\"isOverdueLogout\",\"true\"),t=Gi(t),window.open(t,\"_self\",\"noopener,noreferrer,resizable\")),!0}if(1109===e){var n=Ji.MODIFY_PWD_PATH||Li;return n=Gi(n),window.history.pushState({},\"\",n),!0}if(1012===e)return location.reload(),!0;if(1003===e){var o=Gi(\"/module-common/noPermission\");window.history.pushState({},\"\",o)}}(e)}function cu(){return uu.apply(this,arguments)}f",
+          "sha256": "89ee454d4d3b119a278811bf50f910898469cb2a171548ee2209dced82b31e6e"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-EMPTY-CHECK",
+      "resourcePath": "/module-login/static/js/chunk-@audaque/vue-utils.af9799ec.js",
+      "localName": "login-vue-utils.af9799ec.js",
+      "fetchedAt": "2026-10-26T02:41:03.702406+00:00",
+      "inspectedAt": "2026-10-26T03:21:20.132Z",
+      "bytes": 403770,
+      "sha256": "f4e245db51ce24788a4f490f070fb64abfbfddf4cecc0bed7a0ad9581c8c6812",
+      "excerpts": [
+        {
+          "anchor": "isNotEmpty:e=>",
+          "start": 353063,
+          "end": 353133,
+          "offsetUnit": "UTF-16 code units",
+          "text": "isNotEmpty:e=>Array.isArray(e)?e.length>0:!(null==e||\"\"===e),isWhiteLi",
+          "sha256": "d6e54ed7904980512e95c121f948a5aa97e78f4c6342acd1e2c88bdace1ddecd"
+        },
+        {
+          "anchor": "w=b.isNotEmpty",
+          "start": 354971,
+          "end": 354989,
+          "offsetUnit": "UTF-16 code units",
+          "text": "w=b.isNotEmpty,N=b",
+          "sha256": "3e2e50fb509b4d5649dca9b4fb8b74e9b934f5922b50ca898e7f4b34153eb8ee"
+        },
+        {
+          "anchor": "isNotEmpty:function",
+          "start": 356016,
+          "end": 356326,
+          "offsetUnit": "UTF-16 code units",
+          "text": "isNotEmpty:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"blur\",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"\",r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];return{required:r,trigger:e,validator:function(e,r,n){w(r)?n():n(new Error(t))}}},isMobilePhone:fun",
+          "sha256": "35bce864e145b43e0634c67a49e09feab6503427223993ba80e88a74ba74a455"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-CHECKBOX",
+      "resourcePath": "/module-login/static/js/chunk-element-ui.94642ac6.js",
+      "localName": "login-element-ui.94642ac6.js",
+      "fetchedAt": "2026-10-26T03:05:19.445550+00:00",
+      "inspectedAt": "2026-10-26T03:21:20.132Z",
+      "bytes": 659449,
+      "sha256": "79b4fdfceb3fa34310864db6c10c69d622f76c0385f497a5b856ccb664d92233",
+      "excerpts": [
+        {
+          "anchor": "var ut=ct,ht=function",
+          "start": 139766,
+          "end": 141936,
+          "offsetUnit": "UTF-16 code units",
+          "text": "var ut=ct,ht=function(){var e=this,t=e.$createElement,i=e._self._c||t;return i(\"label\",{staticClass:\"el-checkbox\",class:[e.border&&e.checkboxSize?\"el-checkbox--\"+e.checkboxSize:\"\",{\"is-disabled\":e.isDisabled},{\"is-bordered\":e.border},{\"is-checked\":e.isChecked}],attrs:{id:e.id}},[i(\"span\",{staticClass:\"el-checkbox__input\",class:{\"is-disabled\":e.isDisabled,\"is-checked\":e.isChecked,\"is-indeterminate\":e.indeterminate,\"is-focus\":e.focus},attrs:{tabindex:!!e.indeterminate&&0,role:!!e.indeterminate&&\"checkbox\",\"aria-checked\":!!e.indeterminate&&\"mixed\"}},[i(\"span\",{staticClass:\"el-checkbox__inner\"}),e.trueLabel||e.falseLabel?i(\"input\",{directives:[{name:\"model\",rawName:\"v-model\",value:e.model,expression:\"model\"}],staticClass:\"el-checkbox__original\",attrs:{type:\"checkbox\",\"aria-hidden\":e.indeterminate?\"true\":\"false\",name:e.name,disabled:e.isDisabled,\"true-value\":e.trueLabel,\"false-value\":e.falseLabel},domProps:{checked:Array.isArray(e.model)?e._i(e.model,null)>-1:e._q(e.model,e.trueLabel)},on:{change:[function(t){var i=e.model,n=t.target,s=n.checked?e.trueLabel:e.falseLabel;if(Array.isArray(i)){var r=e._i(i,null);n.checked?r<0&&(e.model=i.concat([null])):r>-1&&(e.model=i.slice(0,r).concat(i.slice(r+1)))}else e.model=s},e.handleChange],focus:function(t){e.focus=!0},blur:function(t){e.focus=!1}}}):i(\"input\",{directives:[{name:\"model\",rawName:\"v-model\",value:e.model,expression:\"model\"}],staticClass:\"el-checkbox__original\",attrs:{type:\"checkbox\",\"aria-hidden\":e.indeterminate?\"true\":\"false\",disabled:e.isDisabled,name:e.name},domProps:{value:e.label,checked:Array.isArray(e.model)?e._i(e.model,e.label)>-1:e.model},on:{change:[function(t){var i=e.model,n=t.target,s=!!n.checked;if(Array.isArray(i)){var r=e.label,a=e._i(i,r);n.checked?a<0&&(e.model=i.concat([r])):a>-1&&(e.model=i.slice(0,a).concat(i.slice(a+1)))}else e.model=s},e.handleChange],focus:function(t){e.focus=!0},blur:function(t){e.focus=!1}}})]),e.$slots.default||e.label?i(\"span\",{staticClass:\"el-checkbox__label\"},[e._t(\"default\"),e.$slots.default?e._e():[e._v(e._s(e.label))]],2):e._e()])};ht._withStripped=!0;var dt=s({name:\"ElCheckbox\",mixins:[k.a],inject:{elForm:{default:\"\"},elFormItem:{d",
+          "sha256": "76c7a7da6d6d82ff486546723337fa4b38bef42d3263ccacb8069fe9c0483698"
+        },
+        {
+          "anchor": "name:\"ElCheckbox\"",
+          "start": 141864,
+          "end": 143224,
+          "offsetUnit": "UTF-16 code units",
+          "text": "name:\"ElCheckbox\",mixins:[k.a],inject:{elForm:{default:\"\"},elFormItem:{default:\"\"}},componentName:\"ElCheckbox\",data:function(){return{selfModel:!1,focus:!1,isLimitExceeded:!1}},computed:{model:{get:function(){return this.isGroup?this.store:void 0!==this.value?this.value:this.selfModel},set:function(e){this.isGroup?(this.isLimitExceeded=!1,void 0!==this._checkboxGroup.min&&e.length<this._checkboxGroup.min&&(this.isLimitExceeded=!0),void 0!==this._checkboxGroup.max&&e.length>this._checkboxGroup.max&&(this.isLimitExceeded=!0),!1===this.isLimitExceeded&&this.dispatch(\"ElCheckboxGroup\",\"input\",[e])):(this.$emit(\"input\",e),this.selfModel=e)}},isChecked:function(){return\"[object Boolean]\"==={}.toString.call(this.model)?this.model:Array.isArray(this.model)?this.model.indexOf(this.label)>-1:null!==this.model&&void 0!==this.model?this.model===this.trueLabel:void 0},isGroup:function(){for(var e=this.$parent;e;){if(\"ElCheckboxGroup\"===e.$options.componentName)return this._checkboxGroup=e,!0;e=e.$parent}return!1},store:function(){return this._checkboxGroup?this._checkboxGroup.value:this.value},isLimitDisabled:function(){var e=this._checkboxGroup,t=e.max,i=e.min;return!(!t&&!i)&&this.model.length>=t&&!this.isChecked||this.model.length<=i&&this.isChecked},isDisabled:function(){return this.isGroup?this._checkboxGroup.disabled||this.disabled||(this.elForm",
+          "sha256": "cade1f26bef43c37b1aad26c19a58ec1392443ef1830d57285e84537f0d6f35b"
+        },
+        {
+          "anchor": "name:\"ElCheckboxGroup\"",
+          "start": 149177,
+          "end": 149707,
+          "offsetUnit": "UTF-16 code units",
+          "text": "name:\"ElCheckboxGroup\",componentName:\"ElCheckboxGroup\",mixins:[k.a],inject:{elFormItem:{default:\"\"}},props:{value:{},disabled:Boolean,min:Number,max:Number,size:String,fill:String,textColor:String},computed:{_elFormItemSize:function(){return(this.elFormItem||{}).elFormItemSize},checkboxGroupSize:function(){return this.size||this._elFormItemSize||(this.$ELEMENT||{}).size}},watch:{value:function(e){this.dispatch(\"ElFormItem\",\"el.form.change\",[e])}}},yt,[],!1,null,null,null);_t.options.__file=\"packages/checkbox/src/checkbox-gro",
+          "sha256": "413c87ea657f7bc6838bf6d69138a5cac5050abc861c338ac8a100de58e4bff7"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-REQUEST-SIGN",
+      "resourcePath": "/static/js/chunk-@audaque/web-utils.2d2d8fd1.js",
+      "localName": "web-utils.2d2d8fd1.js",
+      "fetchedAt": "2026-10-26T03:05:19.600596+00:00",
+      "inspectedAt": "2026-10-26T03:21:20.132Z",
+      "bytes": 3313,
+      "sha256": "77e19f5650b3cbd42ed65350c6e79c780746e2489d3b9d46a83c6aa0ba10c686",
+      "excerpts": [
+        {
+          "anchor": "generateSignInfo(t,e,n,r,s)",
+          "start": 2263,
+          "end": 3028,
+          "offsetUnit": "UTF-16 code units",
+          "text": "generateSignInfo(t,e,n,r,s){if(!s)throw new Error(\"generateSignInfo没有传递参数axios\");let a=\"\";const i=t.method;let l=e.trim().split(\"?\")[0];if(\"get\"===i){let n=\"\",r=e;const i=/\\?/.test(t.url)&&t.url.substring(t.url.indexOf(\"?\")+1);if(i){const t=i.split(\"&\");for(let e=0;e<t.length;e++){const r={baseURL:\"\",url:\"\",params:{\"\":t[e]}};n+=\"&\"+s.getUri(r).substring(2).replace(/%3D/g,\"=\")}n=n.substring(1).replace(/\\+/g,\"%20\").replace(/%2B/g,\"+\"),r=e.replace(i,n)}const o=r.indexOf(\"?\");a=-1!==o?r.trim().substring(o+1):\"\",a&&(a=a.replace(/'/g,\"%27\"),a+=\"\\n\")}else{const e=t.data;e&&(a=e instanceof FormData?o.formdata2String(e):\"object\"==typeof e?JSON.stringify(e):e,a+=\"\\n\")}l.startsWith(\"/\")||(l=\"/\"+l);return`${l}\\n${a}${r}\\n${n}\\n`}},u={uuid(t,e){const n=\"0123456789ABCD",
+          "sha256": "0486fa51af4c6afa0a0fac61c39006e91e3f6b5c2d438578323159767bec6e5c"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-CONFIG-BASE",
+      "resourcePath": "/serviceConfig.base.js",
+      "localName": "runtime-serviceConfig.base.js",
+      "fetchedAt": "2026-10-26T03:05:19.833758+00:00",
+      "inspectedAt": "2026-10-26T03:21:20.132Z",
+      "bytes": 1774,
+      "sha256": "1a56c1c445a53f9a95384f1c33f1a59ed3de2723141f157ff838ca90d30fb113",
+      "excerpts": [
+        {
+          "anchor": "LOGIN_PAGE_TYPE: 'left-right'",
+          "start": 468,
+          "end": 497,
+          "offsetUnit": "UTF-16 code units",
+          "text": "LOGIN_PAGE_TYPE: 'left-right'",
+          "sha256": "5019daf78766b254ddf9cb4a89de3450b615566e9d3b6c5be6820c0ada573d83"
+        },
+        {
+          "anchor": "NETWORK_ERROR_CODE: 202",
+          "start": 755,
+          "end": 778,
+          "offsetUnit": "UTF-16 code units",
+          "text": "NETWORK_ERROR_CODE: 202",
+          "sha256": "8f59a792b6d56831f01f981a1c139144b88c724c15094b8280b4b81eec84d5ff"
+        }
+      ]
+    },
+    {
+      "id": "LOGIN-CONFIG-PROD",
+      "resourcePath": "/serviceConfig.prod.js",
+      "localName": "runtime-serviceConfig.prod.js",
+      "fetchedAt": "2026-10-26T03:05:19.979922+00:00",
+      "inspectedAt": "2026-10-26T03:21:20.132Z",
+      "bytes": 7699,
+      "sha256": "9a95e7062419b2867854c72bb2e66c0ed75e94b87e72406c183d9e9bc5e757fb",
+      "excerpts": [
+        {
+          "anchor": "API_BASE_URL: baseUrl + '/back'",
+          "start": 342,
+          "end": 373,
+          "offsetUnit": "UTF-16 code units",
+          "text": "API_BASE_URL: baseUrl + '/back'",
+          "sha256": "1d261cfb42fa36c6270c866d419bb8921b02b277904d713f7f3469bd7e50cafd"
+        },
+        {
+          "anchor": "LOGIN_PATH: ''",
+          "start": 395,
+          "end": 410,
+          "offsetUnit": "UTF-16 code units",
+          "text": "LOGIN_PATH: '',",
+          "sha256": "498a5445d65f8738ef8bb04cfa41ce1aea634404ae93b15a8d602112003f7835"
+        },
+        {
+          "anchor": "MODIFY_PWD_PATH: ''",
+          "start": 729,
+          "end": 749,
+          "offsetUnit": "UTF-16 code units",
+          "text": "MODIFY_PWD_PATH: '',",
+          "sha256": "aee0b3e5df460b4f81086f1ec190ad897297d5561071f6c51fb36f8ca3e0f6e8"
+        }
+      ]
+    }
+  ]
+}
