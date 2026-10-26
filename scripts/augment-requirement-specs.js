@@ -9,6 +9,7 @@ const { specs: reviewedSpecs, renderReviewedSpec } = require('./source-review-sp
 const { renderLoginSpec } = require('./login-requirement-spec');
 const { renderHomeSpec } = require('./workbench-requirement-spec');
 const { MAIN: drmsMain, SUB: drmsSub, renderFeature: renderDrmsFeature } = require('./drms-requirement-spec');
+const { MAIN: dbmsMain, SUB: dbmsSub, renderFeature: renderDbmsFeature } = require('./dbms-requirement-spec');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
@@ -460,6 +461,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       if (!entry) throw new Error('Unregistered reviewed DRMS requirement: ' + id);
       const replacement = renderDrmsFeature(entry) + '\n';
       text = text.slice(0, start) + replacement + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- dbms:generated-spec-v1 -->')) {
+      const entry = [...dbmsMain, ...dbmsSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DBMS requirement: ' + id);
+      text = text.slice(0, start) + renderDbmsFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)

@@ -12,6 +12,27 @@ SPEC.loader.exec_module(builder)
 
 
 class DeepRequirementsTests(unittest.TestCase):
+    def test_preserve_reviewed_dbms_refuses_registry_or_screenshot_loss(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'dbms';folder.mkdir()
+            file=folder/'子页面与操作细化.md'
+            text=('<!-- dbms:generated-spec-v1 -->\n<!-- 业务规格格式:plain-v1 -->\n'
+                  '### DBMS-500 概览\n[E1](../E1.png)\n### DBMS-501 委办局\n[E2](../E2.png)\n')
+            module={'code':'DBMS','directory':'dbms'}
+            record={'requirements':[{'id':'DBMS-500','evidence':['E1']},{'id':'DBMS-501','evidence':['E2']}]}
+            file.write_text(text,encoding='utf8')
+            self.assertIs(record,builder.preserve_reviewed(root,module,record))
+            self.assertEqual(text,file.read_text(encoding='utf8'))
+            for bad,pattern in [(text.replace('DBMS-501','DBMS-502'),'registry mismatch'),
+                                (text.replace('E2.png','E3.png'),'evidence missing'),
+                                (text.replace('<!-- 业务规格格式:plain-v1 -->',''),'plain format')]:
+                file.write_text(bad,encoding='utf8')
+                with self.assertRaisesRegex(ValueError,pattern):builder.preserve_reviewed(root,module,record)
+            file.write_text(text,encoding='utf8')
+            with self.assertRaisesRegex(ValueError,'registered IDs'):builder.preserve_reviewed(root,module,None)
+            record['requirements'].reverse()
+            with self.assertRaisesRegex(ValueError,'registry mismatch'):builder.preserve_reviewed(root,module,record)
+
     def test_preserve_reviewed_drms_requires_exact_registry_and_evidence(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);folder=root/'drms';folder.mkdir()

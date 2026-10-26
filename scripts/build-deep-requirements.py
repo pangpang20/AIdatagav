@@ -208,21 +208,22 @@ def collect(groups, samples):
 
 
 def preserve_reviewed(root,module,registered):
-    """Keep a manually reviewed DRMS document and its exact published ledger."""
-    if module.get('code')!='DRMS':return None
+    """Keep a reviewed domain document and its exact published ledger."""
+    code=module.get('code')
+    if code not in ('DRMS','DBMS'):return None
     target=root/module['directory']/'子页面与操作细化.md'
     if not target.is_file():return None
     text=target.read_text(encoding='utf-8')
-    if '<!-- drms:generated-spec-v1 -->' not in text:return None
+    if '<!-- '+code.lower()+':generated-spec-v1 -->' not in text:return None
     if '<!-- 业务规格格式:plain-v1 -->' not in text or not registered:
-        raise ValueError('DRMS reviewed document requires plain format and registered IDs')
-    actual=re.findall(r'^### (DRMS-\d{3})\b',text,re.M)
+        raise ValueError(code+' reviewed document requires plain format and registered IDs')
+    actual=re.findall(r'^### ('+code+r'-\d{3})\b',text,re.M)
     expected=[r['id'] for r in registered['requirements']]
-    if actual!=expected:raise ValueError('DRMS reviewed requirement registry mismatch')
+    if actual!=expected:raise ValueError(code+' reviewed requirement registry mismatch')
     for item in registered['requirements']:
         block=re.search(r'^### '+item['id']+r'\b(.*?)(?=^### |^## |\Z)',text,re.M|re.S)
         if not item.get('evidence') or not all(s+'.png' in block.group(1) for s in item['evidence']):
-            raise ValueError('DRMS reviewed evidence missing: '+item['id'])
+            raise ValueError(code+' reviewed evidence missing: '+item['id'])
     return registered
 
 

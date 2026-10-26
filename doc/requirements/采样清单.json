@@ -2904,8 +2904,8 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "计划/实施/成果的字段、阶段完成口径、人员选择范围、日期先后及重叠规则",
-        "objectBoundary": "委办局联系人、团队、里程碑、计划、实施资料与归集成果",
+        "criticalDecisions": "已查35项页面/操作的前端字段、调用和布局；后端角色与对象鉴权、DTO及唯一/引用规则、计划/归集事务和幂等、文件生命周期、导入回执、动态配置迁移及统计口径仍限制真实交付",
+        "objectBoundary": "委办局、团队、里程碑、计划、实施八类成果、两类参考文档、六类清单、归集和项目字段配置；无入口的实施/归集主记录不虚构CRUD",
         "expandedOperations": [
           "DBMS-100",
           "DBMS-102",
