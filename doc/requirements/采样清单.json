@@ -4009,8 +4009,8 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "四种规则编辑器、保存/确认/发布语义、分类/导出页及个人移除的真实范围",
-        "objectBoundary": "构件规则、构件名称配置与个人使用记录",
+        "criticalDecisions": "已查21项页面/操作的字段、调用与布局；后端授权/DTO、保存留页的真实身份、唯一/引用/发布及批量事务、文件生命周期、导出/个人作用域与记录参数契约仍限制真实交付",
+        "objectBoundary": "构件开发多类型/数据库规则、名称实体、业务分类字典、超市供给、个人记录与导出批次；三种删除范围分开，无人工记录CRUD不臆造",
         "expandedOperations": [
           "CMS-100",
           "CMS-101",

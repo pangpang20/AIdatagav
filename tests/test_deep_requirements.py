@@ -12,6 +12,27 @@ SPEC.loader.exec_module(builder)
 
 
 class DeepRequirementsTests(unittest.TestCase):
+    def test_preserve_reviewed_cms_requires_registered_order_and_screenshots(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);folder=root/'cms';folder.mkdir()
+            file=folder/'子页面与操作细化.md'
+            text=('<!-- cms:generated-spec-v1 -->\n<!-- 业务规格格式:plain-v1 -->\n'
+                  '### CMS-500 超市\n[E1](../E1.png)\n### CMS-506 新增规则\n[E2](../E2.png)\n')
+            module={'code':'CMS','directory':'cms'}
+            record={'requirements':[{'id':'CMS-500','evidence':['E1']},{'id':'CMS-506','evidence':['E2']}]}
+            file.write_text(text,encoding='utf8')
+            self.assertIs(record,builder.preserve_reviewed(root,module,record))
+            self.assertEqual(text,file.read_text(encoding='utf8'))
+            for bad,pattern in [(text.replace('CMS-506','CMS-507'),'registry mismatch'),
+                                (text.replace('E2.png','E3.png'),'evidence missing'),
+                                (text.replace('<!-- 业务规格格式:plain-v1 -->',''),'plain format')]:
+                file.write_text(bad,encoding='utf8')
+                with self.assertRaisesRegex(ValueError,pattern):builder.preserve_reviewed(root,module,record)
+            file.write_text(text,encoding='utf8')
+            with self.assertRaisesRegex(ValueError,'registered IDs'):builder.preserve_reviewed(root,module,None)
+            record['requirements'].reverse()
+            with self.assertRaisesRegex(ValueError,'registry mismatch'):builder.preserve_reviewed(root,module,record)
+
     def test_preserve_reviewed_dbms_refuses_registry_or_screenshot_loss(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);folder=root/'dbms';folder.mkdir()
