@@ -1,0 +1,3921 @@
+{
+  "main": {
+    "entries": [
+      {
+        "id": "DCS-001",
+        "title": "查看目录资源统计",
+        "route": "",
+        "sources": [],
+        "acceptance": [
+          "DCS-AC-605",
+          "DCS-AC-606",
+          "DCS-AC-607",
+          "DCS-AC-608",
+          "DCS-AC-609"
+        ]
+      },
+      {
+        "id": "DCS-002",
+        "title": "按时间和机构查看目录概况",
+        "route": "",
+        "sources": [],
+        "acceptance": [
+          "DCS-AC-610",
+          "DCS-AC-611",
+          "DCS-AC-612",
+          "DCS-AC-613",
+          "DCS-AC-614"
+        ]
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "DCS-AC-605",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-605",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-606",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-606",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-607",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-607",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-608",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-608",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-609",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-609",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-610",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-610",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-611",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-611",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-612",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-612",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-613",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-613",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-614",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-614",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-001",
+        "text": "按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-001",
+          "查看目录资源统计",
+          "按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-002",
+        "text": "按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-002",
+          "按时间和机构查看目录概况",
+          "按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-003",
+        "text": "任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+        "requirement": "DCS-001",
+        "originalCells": [
+          "DCS-AC-003",
+          "展示失败与统计来源",
+          "任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+          "DCS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-004",
+        "text": "任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+        "requirement": "DCS-002",
+        "originalCells": [
+          "DCS-AC-004",
+          "展示失败与统计来源",
+          "任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+          "DCS-002",
+          "【拟定，未执行】"
+        ]
+      }
+    ],
+    "sourceRows": [
+      "| DCS-001 | [E038-catalog](../evidence/E038-catalog.png) | [原始记录](./调研记录.md) |",
+      "| DCS-002 | [E038-catalog](../evidence/E038-catalog.png) | [原始记录](./调研记录.md) |"
+    ],
+    "boundaries": [
+      [
+        "DCS-100",
+        "查询资源编目",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资源元数据、责任部门、共享属性、草稿/审批/发布规则"
+      ],
+      [
+        "DCS-101",
+        "查看资源编目",
+        "详情内容、关联项及查看权限；业务范围涉及：资源元数据、责任部门、共享属性、草稿/审批/发布规则"
+      ],
+      [
+        "DCS-102",
+        "新增资源编目",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资源元数据、责任部门、共享属性、草稿/审批/发布规则"
+      ],
+      [
+        "DCS-103",
+        "修改资源编目",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资源元数据、责任部门、共享属性、草稿/审批/发布规则"
+      ],
+      [
+        "DCS-104",
+        "删除资源编目",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资源元数据、责任部门、共享属性、草稿/审批/发布规则"
+      ],
+      [
+        "DCS-105",
+        "查询上报管理",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：上报部门、批次、范围、退回修订与撤回/删除"
+      ],
+      [
+        "DCS-106",
+        "查看上报管理",
+        "详情内容、关联项及查看权限；业务范围涉及：上报部门、批次、范围、退回修订与撤回/删除"
+      ],
+      [
+        "DCS-107",
+        "新增上报管理",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：上报部门、批次、范围、退回修订与撤回/删除"
+      ],
+      [
+        "DCS-108",
+        "修改上报管理",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：上报部门、批次、范围、退回修订与撤回/删除"
+      ],
+      [
+        "DCS-109",
+        "删除上报管理",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：上报部门、批次、范围、退回修订与撤回/删除"
+      ],
+      [
+        "DCS-110",
+        "查询目录中心",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：分类、部门、目录属性、发布版本与订阅关系"
+      ],
+      [
+        "DCS-111",
+        "查看目录中心",
+        "详情内容、关联项及查看权限；业务范围涉及：分类、部门、目录属性、发布版本与订阅关系"
+      ],
+      [
+        "DCS-112",
+        "新增目录中心",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：分类、部门、目录属性、发布版本与订阅关系"
+      ],
+      [
+        "DCS-113",
+        "修改目录中心",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：分类、部门、目录属性、发布版本与订阅关系"
+      ],
+      [
+        "DCS-114",
+        "删除目录中心",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：分类、部门、目录属性、发布版本与订阅关系"
+      ]
+    ]
+  },
+  "sub": {
+    "entries": [
+      {
+        "id": "DCS-500",
+        "title": "服务统计 → 机构内部统计分析",
+        "route": "/dcs/analyze/internal",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-001.png"
+        ],
+        "acceptance": [
+          "DCS-AC-615",
+          "DCS-AC-616",
+          "DCS-AC-617",
+          "DCS-AC-618",
+          "DCS-AC-619"
+        ]
+      },
+      {
+        "id": "DCS-501",
+        "title": "服务统计 → 所有机构统计分析",
+        "route": "/dcs/analyze/agency",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-002.png"
+        ],
+        "acceptance": [
+          "DCS-AC-620",
+          "DCS-AC-621",
+          "DCS-AC-622",
+          "DCS-AC-623",
+          "DCS-AC-624"
+        ]
+      },
+      {
+        "id": "DCS-502",
+        "title": "资源编目 → 目录管理 → · 资源管理",
+        "route": "/dcs/resources/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/U-DCS-resource-menu.png"
+        ],
+        "acceptance": [
+          "DCS-AC-625",
+          "DCS-AC-626",
+          "DCS-AC-627",
+          "DCS-AC-628",
+          "DCS-AC-629"
+        ]
+      },
+      {
+        "id": "DCS-525",
+        "title": "资源编目 → 目录管理 → · 资源管理 → 查看",
+        "route": "/dcs/resources/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-003-op1.png"
+        ],
+        "acceptance": [
+          "DCS-AC-630",
+          "DCS-AC-631",
+          "DCS-AC-632",
+          "DCS-AC-633",
+          "DCS-AC-634"
+        ]
+      },
+      {
+        "id": "DCS-526",
+        "title": "资源编目 → 目录管理 → · 资源管理 → 资源导入",
+        "route": "/dcs/resources/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-003-op2.png",
+          "../evidence/live-recheck-20261022/J-DCS-003-op2-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-003-op2-options1.png"
+        ],
+        "acceptance": [
+          "DCS-AC-635",
+          "DCS-AC-636",
+          "DCS-AC-637",
+          "DCS-AC-638",
+          "DCS-AC-639"
+        ]
+      },
+      {
+        "id": "DCS-527",
+        "title": "资源编目 → 目录管理 → · 资源管理 → 编目",
+        "route": "/dcs/resources/edit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-003-op3.png",
+          "../evidence/live-recheck-20261022/J-DCS-003-op3-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-003-op3-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-003-op3-options3.png",
+          "../evidence/live-recheck-20261022/J-DCS-003-op3-options4.png"
+        ],
+        "acceptance": [
+          "DCS-AC-640",
+          "DCS-AC-641",
+          "DCS-AC-642",
+          "DCS-AC-643",
+          "DCS-AC-644"
+        ]
+      },
+      {
+        "id": "DCS-503",
+        "title": "资源编目 → 目录管理 → · 目录管理",
+        "route": "/dcs/catalogue/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-004.png"
+        ],
+        "acceptance": [
+          "DCS-AC-645",
+          "DCS-AC-646",
+          "DCS-AC-647",
+          "DCS-AC-648",
+          "DCS-AC-649"
+        ]
+      },
+      {
+        "id": "DCS-528",
+        "title": "资源编目 → 目录管理 → · 目录管理 → 编辑",
+        "route": "/dcs/resources/edit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-004-op1.png",
+          "../evidence/live-recheck-20261022/J-DCS-004-op1-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-004-op1-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-004-op1-options3.png",
+          "../evidence/live-recheck-20261022/J-DCS-004-op1-options4.png"
+        ],
+        "acceptance": [
+          "DCS-AC-650",
+          "DCS-AC-651",
+          "DCS-AC-652",
+          "DCS-AC-653",
+          "DCS-AC-654"
+        ]
+      },
+      {
+        "id": "DCS-504",
+        "title": "资源编目 → 流程审批 → · 我发起的流程",
+        "route": "/dcs/catalogue/initiate",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-005.png"
+        ],
+        "acceptance": [
+          "DCS-AC-655",
+          "DCS-AC-656",
+          "DCS-AC-657",
+          "DCS-AC-658",
+          "DCS-AC-659"
+        ]
+      },
+      {
+        "id": "DCS-529",
+        "title": "资源编目 → 流程审批 → · 我发起的流程 → 详情",
+        "route": "/dcs/catalogue/audit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-005-op1.png"
+        ],
+        "acceptance": [
+          "DCS-AC-660",
+          "DCS-AC-661",
+          "DCS-AC-662",
+          "DCS-AC-663",
+          "DCS-AC-664"
+        ]
+      },
+      {
+        "id": "DCS-505",
+        "title": "资源编目 → 流程审批 → · 我处理的流程",
+        "route": "/dcs/catalogue/handle",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-006.png"
+        ],
+        "acceptance": [
+          "DCS-AC-665",
+          "DCS-AC-666",
+          "DCS-AC-667",
+          "DCS-AC-668",
+          "DCS-AC-669"
+        ]
+      },
+      {
+        "id": "DCS-506",
+        "title": "资源编目 → 系统管理 → · 业务管理",
+        "route": "/dcs/systemManagement/businessList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-007.png"
+        ],
+        "acceptance": [
+          "DCS-AC-670",
+          "DCS-AC-671",
+          "DCS-AC-672",
+          "DCS-AC-673",
+          "DCS-AC-674"
+        ]
+      },
+      {
+        "id": "DCS-507",
+        "title": "资源编目 → 系统管理 → · 业务管理 → 新增",
+        "route": "/dcs/systemManagement/businessEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-007-op1.png",
+          "../evidence/live-recheck-20261022/J-DCS-007-op1-options0.png"
+        ],
+        "acceptance": [
+          "DCS-AC-675",
+          "DCS-AC-676",
+          "DCS-AC-677",
+          "DCS-AC-678",
+          "DCS-AC-679"
+        ]
+      },
+      {
+        "id": "DCS-530",
+        "title": "资源编目 → 系统管理 → · 业务管理 → 编辑",
+        "route": "/dcs/systemManagement/businessEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-007-op2.png",
+          "../evidence/live-recheck-20261022/J-DCS-007-op2-options0.png"
+        ],
+        "acceptance": [
+          "DCS-AC-680",
+          "DCS-AC-681",
+          "DCS-AC-682",
+          "DCS-AC-683",
+          "DCS-AC-684"
+        ]
+      },
+      {
+        "id": "DCS-508",
+        "title": "资源编目 → 系统管理 → · 事项管理",
+        "route": "/dcs/systemManagement/matterList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-008.png"
+        ],
+        "acceptance": [
+          "DCS-AC-685",
+          "DCS-AC-686",
+          "DCS-AC-687",
+          "DCS-AC-688",
+          "DCS-AC-689"
+        ]
+      },
+      {
+        "id": "DCS-509",
+        "title": "资源编目 → 系统管理 → · 事项管理 → 新增",
+        "route": "/dcs/systemManagement/matterEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-008-op1.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op1-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op1-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op1-options2.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op1-options3.png"
+        ],
+        "acceptance": [
+          "DCS-AC-690",
+          "DCS-AC-691",
+          "DCS-AC-692",
+          "DCS-AC-693",
+          "DCS-AC-694"
+        ]
+      },
+      {
+        "id": "DCS-531",
+        "title": "资源编目 → 系统管理 → · 事项管理 → 编辑",
+        "route": "/dcs/systemManagement/matterEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-008-op2.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op2-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op2-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op2-options2.png",
+          "../evidence/live-recheck-20261022/J-DCS-008-op2-options3.png"
+        ],
+        "acceptance": [
+          "DCS-AC-695",
+          "DCS-AC-696",
+          "DCS-AC-697",
+          "DCS-AC-698",
+          "DCS-AC-699"
+        ]
+      },
+      {
+        "id": "DCS-510",
+        "title": "资源编目 → 系统管理 → · 应用系统管理",
+        "route": "/dcs/applicationManagement/applicationManagement",
+        "sources": [
+          "../evidence/live-recheck-20261022/Q-DCS-009.png"
+        ],
+        "acceptance": [
+          "DCS-AC-700",
+          "DCS-AC-701",
+          "DCS-AC-702",
+          "DCS-AC-703",
+          "DCS-AC-704"
+        ]
+      },
+      {
+        "id": "DCS-511",
+        "title": "资源编目 → 系统管理 → · 应用系统管理 → 新增",
+        "route": "/dcs/applicationManagement/applicationEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/Q-DCS-009-op1.png",
+          "../evidence/live-recheck-20261022/Q-DCS-009-op1-options0.png",
+          "../evidence/live-recheck-20261022/Q-DCS-009-op1-options1.png",
+          "../evidence/live-recheck-20261022/Q-DCS-009-op1-options2.png"
+        ],
+        "acceptance": [
+          "DCS-AC-705",
+          "DCS-AC-706",
+          "DCS-AC-707",
+          "DCS-AC-708",
+          "DCS-AC-709"
+        ]
+      },
+      {
+        "id": "DCS-532",
+        "title": "资源编目 → 系统管理 → · 应用系统管理 → 编辑",
+        "route": "/dcs/applicationManagement/applicationEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-009-op2.png",
+          "../evidence/live-recheck-20261022/J-DCS-009-op2-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-009-op2-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-009-op2-options2.png"
+        ],
+        "acceptance": [
+          "DCS-AC-710",
+          "DCS-AC-711",
+          "DCS-AC-712",
+          "DCS-AC-713",
+          "DCS-AC-714"
+        ]
+      },
+      {
+        "id": "DCS-512",
+        "title": "上报管理 → 目录上报审核",
+        "route": "/dcs/dirApproval/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-010.png"
+        ],
+        "acceptance": [
+          "DCS-AC-715",
+          "DCS-AC-716",
+          "DCS-AC-717",
+          "DCS-AC-718",
+          "DCS-AC-719"
+        ]
+      },
+      {
+        "id": "DCS-513",
+        "title": "上报管理 → 机构接入管理",
+        "route": "/dcs/access/limitList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-011.png"
+        ],
+        "acceptance": [
+          "DCS-AC-720",
+          "DCS-AC-721",
+          "DCS-AC-722",
+          "DCS-AC-723",
+          "DCS-AC-724"
+        ]
+      },
+      {
+        "id": "DCS-514",
+        "title": "上报管理 → 机构接入管理 → 新增",
+        "route": "/dcs/access/limitEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-011-op1.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op1-options0.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op1-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op1-options2.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op1-options3.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op1-options4.png"
+        ],
+        "acceptance": [
+          "DCS-AC-725",
+          "DCS-AC-726",
+          "DCS-AC-727",
+          "DCS-AC-728",
+          "DCS-AC-729"
+        ]
+      },
+      {
+        "id": "DCS-533",
+        "title": "上报管理 → 机构接入管理 → 编辑",
+        "route": "/dcs/access/limitEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-011-op2.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op2-options1.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op2-options2.png",
+          "../evidence/live-recheck-20261022/J-DCS-011-op2-options3.png"
+        ],
+        "acceptance": [
+          "DCS-AC-730",
+          "DCS-AC-731",
+          "DCS-AC-732",
+          "DCS-AC-733",
+          "DCS-AC-734"
+        ]
+      },
+      {
+        "id": "DCS-515",
+        "title": "上报管理 → 目录分类管理",
+        "route": "/dcs/category/manageList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-012.png"
+        ],
+        "acceptance": [
+          "DCS-AC-735",
+          "DCS-AC-736",
+          "DCS-AC-737",
+          "DCS-AC-738",
+          "DCS-AC-739"
+        ]
+      },
+      {
+        "id": "DCS-516",
+        "title": "上报管理 → 目录分类管理 → 新增",
+        "route": "/dcs/category/manageList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-012-op1.png",
+          "../evidence/live-recheck-20261022/J-DCS-012-op1-options0.png"
+        ],
+        "acceptance": [
+          "DCS-AC-740",
+          "DCS-AC-741",
+          "DCS-AC-742",
+          "DCS-AC-743",
+          "DCS-AC-744"
+        ]
+      },
+      {
+        "id": "DCS-534",
+        "title": "上报管理 → 目录分类管理 → 编辑",
+        "route": "/dcs/category/manageList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-012-op2.png"
+        ],
+        "acceptance": [
+          "DCS-AC-745",
+          "DCS-AC-746",
+          "DCS-AC-747",
+          "DCS-AC-748",
+          "DCS-AC-749"
+        ]
+      },
+      {
+        "id": "DCS-517",
+        "title": "目录中心 → 目录中心 → · 级联目录中心",
+        "route": "/dcs/cataCenter/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-013.png"
+        ],
+        "acceptance": [
+          "DCS-AC-750",
+          "DCS-AC-751",
+          "DCS-AC-752",
+          "DCS-AC-753",
+          "DCS-AC-754"
+        ]
+      },
+      {
+        "id": "DCS-518",
+        "title": "目录中心 → 目录中心 → · 部门目录中心",
+        "route": "/dcs/deptCataCenter/list",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-014.png"
+        ],
+        "acceptance": [
+          "DCS-AC-755",
+          "DCS-AC-756",
+          "DCS-AC-757",
+          "DCS-AC-758",
+          "DCS-AC-759"
+        ]
+      },
+      {
+        "id": "DCS-519",
+        "title": "目录中心 → 清单管理 → · 责任清单",
+        "route": "/dcs/inventory/duty",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-015.png"
+        ],
+        "acceptance": [
+          "DCS-AC-760",
+          "DCS-AC-761",
+          "DCS-AC-762",
+          "DCS-AC-763",
+          "DCS-AC-764"
+        ]
+      },
+      {
+        "id": "DCS-520",
+        "title": "目录中心 → 清单管理 → · 负面清单",
+        "route": "/dcs/inventory/negative",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-016.png"
+        ],
+        "acceptance": [
+          "DCS-AC-765",
+          "DCS-AC-766",
+          "DCS-AC-767",
+          "DCS-AC-768",
+          "DCS-AC-769"
+        ]
+      },
+      {
+        "id": "DCS-521",
+        "title": "目录中心 → 我的目录 → · 我订阅的目录",
+        "route": "/dcs/myCatalogue/applyList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-017.png"
+        ],
+        "acceptance": [
+          "DCS-AC-770",
+          "DCS-AC-771",
+          "DCS-AC-772",
+          "DCS-AC-773",
+          "DCS-AC-774"
+        ]
+      },
+      {
+        "id": "DCS-522",
+        "title": "目录中心 → 我的目录 → · 我收藏的目录",
+        "route": "/dcs/myCatalogue/favorite",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-018.png"
+        ],
+        "acceptance": [
+          "DCS-AC-775",
+          "DCS-AC-776",
+          "DCS-AC-777",
+          "DCS-AC-778",
+          "DCS-AC-779"
+        ]
+      },
+      {
+        "id": "DCS-523",
+        "title": "目录中心 → 流程审批 → · 我发起的流程",
+        "route": "/dcs/processApprove/initiateList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-019.png"
+        ],
+        "acceptance": [
+          "DCS-AC-780",
+          "DCS-AC-781",
+          "DCS-AC-782",
+          "DCS-AC-783",
+          "DCS-AC-784"
+        ]
+      },
+      {
+        "id": "DCS-524",
+        "title": "目录中心 → 流程审批 → · 我处理的流程",
+        "route": "/dcs/processApprove/handleList",
+        "sources": [
+          "../evidence/live-recheck-20261022/J-DCS-020.png"
+        ],
+        "acceptance": [
+          "DCS-AC-785",
+          "DCS-AC-786",
+          "DCS-AC-787",
+          "DCS-AC-788",
+          "DCS-AC-789"
+        ]
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "DCS-AC-615",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-615",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-616",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-616",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-617",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-617",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-618",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-618",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-619",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-619",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-620",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-620",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-621",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-621",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-622",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-622",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-623",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-623",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-624",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-624",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-625",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-625",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-626",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-626",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-627",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-627",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-628",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-628",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-629",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-629",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-630",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-630",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-631",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-631",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-632",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-632",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-633",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-633",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-634",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-634",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-635",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-635",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-636",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-636",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-637",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-637",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-638",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-638",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-639",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-639",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-640",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-640",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-641",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-641",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-642",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-642",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-643",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-643",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-644",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-644",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-645",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-645",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-646",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-646",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-647",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-647",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-648",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-648",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-649",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-649",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-650",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-650",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-651",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-651",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-652",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-652",
+          "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-653",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-653",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-654",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-654",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-655",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-655",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-656",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-656",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-657",
+        "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-657",
+          "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-658",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-658",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-659",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-659",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-660",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-660",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-661",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-661",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-662",
+        "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-662",
+          "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-663",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-663",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-664",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-664",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-665",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-665",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-666",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-666",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-667",
+        "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-667",
+          "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-668",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-668",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-669",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-669",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-670",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-670",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-671",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-671",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-672",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-672",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-673",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-673",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-674",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-674",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-675",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-675",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-676",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-676",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-677",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-677",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-678",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-678",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-679",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-679",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-680",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-680",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-681",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-681",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-682",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-682",
+          "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-683",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-683",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-684",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-684",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-685",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-685",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-686",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-686",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-687",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-687",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-688",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-688",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-689",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-689",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-690",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-690",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-691",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-691",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-692",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-692",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-693",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-693",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-694",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-694",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-695",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-695",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-696",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-696",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-697",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-697",
+          "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-698",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-698",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-699",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-699",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-700",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-700",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-701",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-701",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-702",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-702",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-703",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-703",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-704",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-704",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-705",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-705",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-706",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-706",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-707",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-707",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-708",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-708",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-709",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-709",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-710",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-710",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-711",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-711",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-712",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-712",
+          "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-713",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-713",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-714",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-714",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-715",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-715",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-716",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-716",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-717",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-717",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-718",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-718",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-719",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-719",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-720",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-720",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-721",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-721",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-722",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-722",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-723",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-723",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-724",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-724",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-725",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-725",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-726",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-726",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-727",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-727",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-728",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-728",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-729",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-729",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-730",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-730",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-731",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-731",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-732",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-732",
+          "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-733",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-733",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-734",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-734",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-735",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-735",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-736",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-736",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-737",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-737",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-738",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-738",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-739",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-739",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-740",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-740",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-741",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-741",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-742",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-742",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-743",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-743",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-744",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-744",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-745",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-745",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-746",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-746",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-747",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-747",
+          "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-748",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-748",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-749",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-749",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-750",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-750",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-751",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-751",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-752",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-752",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-753",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-753",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-754",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-754",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-755",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-755",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-756",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-756",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-757",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-757",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-758",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-758",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-759",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-759",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-760",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-760",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-761",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-761",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-762",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-762",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-763",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-763",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-764",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-764",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-765",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-765",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-766",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-766",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-767",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-767",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-768",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-768",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-769",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-769",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-770",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-770",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-771",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-771",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-772",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-772",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-773",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-773",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-774",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-774",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-775",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-775",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-776",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-776",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-777",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-777",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-778",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-778",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-779",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-779",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-780",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-780",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-781",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-781",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-782",
+        "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-782",
+          "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-783",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-783",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-784",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-784",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-785",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-785",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-786",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-786",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-787",
+        "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-787",
+          "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-788",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-788",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-789",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-789",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-500",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-500",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-501",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-501",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-502",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-500",
+        "originalCells": [
+          "DCS-AC-502",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-500",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-503",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-503",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-504",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-504",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-505",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-501",
+        "originalCells": [
+          "DCS-AC-505",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-501",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-506",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-506",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-507",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-507",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-508",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-502",
+        "originalCells": [
+          "DCS-AC-508",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-502",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-509",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-509",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-510",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-510",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-511",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-525",
+        "originalCells": [
+          "DCS-AC-511",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-525",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-512",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-512",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-513",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-513",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-514",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-526",
+        "originalCells": [
+          "DCS-AC-514",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-526",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-515",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-515",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-516",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-516",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-517",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-527",
+        "originalCells": [
+          "DCS-AC-517",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-527",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-518",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-518",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-519",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-519",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-520",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-503",
+        "originalCells": [
+          "DCS-AC-520",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-503",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-521",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-521",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-522",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-522",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-523",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-528",
+        "originalCells": [
+          "DCS-AC-523",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-528",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-524",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-524",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-525",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-525",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-526",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-504",
+        "originalCells": [
+          "DCS-AC-526",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-504",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-527",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-527",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-528",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-528",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-529",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-529",
+        "originalCells": [
+          "DCS-AC-529",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-529",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-530",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-530",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-531",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-531",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-532",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-505",
+        "originalCells": [
+          "DCS-AC-532",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-505",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-533",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-533",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-534",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-534",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-535",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-506",
+        "originalCells": [
+          "DCS-AC-535",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-506",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-536",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-536",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-537",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-537",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-538",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-507",
+        "originalCells": [
+          "DCS-AC-538",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-507",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-539",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-539",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-540",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-540",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-541",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-530",
+        "originalCells": [
+          "DCS-AC-541",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-530",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-542",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-542",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-543",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-543",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-544",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-508",
+        "originalCells": [
+          "DCS-AC-544",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-508",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-545",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-545",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-546",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-546",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-547",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-509",
+        "originalCells": [
+          "DCS-AC-547",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-509",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-548",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-548",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-549",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-549",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-550",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-531",
+        "originalCells": [
+          "DCS-AC-550",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-531",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-551",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-551",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-552",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-552",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-553",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-510",
+        "originalCells": [
+          "DCS-AC-553",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-510",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-554",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-554",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-555",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-555",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-556",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-511",
+        "originalCells": [
+          "DCS-AC-556",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-511",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-557",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-557",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-558",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-558",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-559",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-532",
+        "originalCells": [
+          "DCS-AC-559",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-532",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-560",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-560",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-561",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-561",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-562",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-512",
+        "originalCells": [
+          "DCS-AC-562",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-512",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-563",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-563",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-564",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-564",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-565",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-513",
+        "originalCells": [
+          "DCS-AC-565",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-513",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-566",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-566",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-567",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-567",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-568",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-514",
+        "originalCells": [
+          "DCS-AC-568",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-514",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-569",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-569",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-570",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-570",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-571",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-533",
+        "originalCells": [
+          "DCS-AC-571",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-533",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-572",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-572",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-573",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-573",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-574",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-515",
+        "originalCells": [
+          "DCS-AC-574",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-515",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-575",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-575",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-576",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-576",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-577",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-516",
+        "originalCells": [
+          "DCS-AC-577",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-516",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-578",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-578",
+          "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-579",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-579",
+          "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-580",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "DCS-534",
+        "originalCells": [
+          "DCS-AC-580",
+          "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+          "DCS-534",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-581",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-581",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-582",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-582",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-583",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-517",
+        "originalCells": [
+          "DCS-AC-583",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-517",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-584",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-584",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-585",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-585",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-586",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-518",
+        "originalCells": [
+          "DCS-AC-586",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-518",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-587",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-587",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-588",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-588",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-589",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-519",
+        "originalCells": [
+          "DCS-AC-589",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-519",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-590",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-590",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-591",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-591",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-592",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-520",
+        "originalCells": [
+          "DCS-AC-592",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-520",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-593",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-593",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-594",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-594",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-595",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-521",
+        "originalCells": [
+          "DCS-AC-595",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-521",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-596",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-596",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-597",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-597",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-598",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-522",
+        "originalCells": [
+          "DCS-AC-598",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-522",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-599",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-599",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-600",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-600",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-601",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-523",
+        "originalCells": [
+          "DCS-AC-601",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-523",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-602",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-602",
+          "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-603",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-603",
+          "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "DCS-AC-604",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "DCS-524",
+        "originalCells": [
+          "DCS-AC-604",
+          "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+          "DCS-524",
+          "【拟定，未执行】"
+        ]
+      }
+    ],
+    "sourceRows": [],
+    "boundaries": []
+  }
+}
