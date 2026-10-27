@@ -13,6 +13,7 @@ const { MAIN: dbmsMain, SUB: dbmsSub, renderFeature: renderDbmsFeature } = requi
 const { MAIN: cmsMain, SUB: cmsSub, renderFeature: renderCmsFeature } = require('./cms-requirement-spec');
 const { MAIN: woMain, SUB: woSub, renderFeature: renderWoFeature } = require('./wo-requirement-spec');
 const { MAIN: dsMain, SUB: dsSub, renderFeature: renderDsFeature } = require('./ds-requirement-spec');
+const { MAIN: dmsMain, SUB: dmsSub, renderFeature: renderDmsFeature } = require('./dms-requirement-spec');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
@@ -488,6 +489,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...dsMain, ...dsSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed DS requirement: ' + id);
       text = text.slice(0, start) + renderDsFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- dms:generated-spec-v1 -->')) {
+      const entry = [...dmsMain, ...dmsSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DMS requirement: ' + id);
+      text = text.slice(0, start) + renderDmsFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)

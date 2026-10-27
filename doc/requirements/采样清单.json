@@ -8727,11 +8727,24 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "实体字段结构、画布保存、版本兼容、物化SQL/事务/回退以及比较规则",
-        "objectBoundary": "模型、实体/字段/关系、模型版本与物化记录",
+        "criticalDecisions": "已细化9项主/子规格与72条功能验收；完整画布/DTO、版本与事务、物化终态/覆盖恢复、分析统计口径及隔离运行仍需交付",
+        "objectBoundary": "模型/版本、画布设计、物化记录/后台实例、分析任务/结果、两类统计及两类配置分别建模",
         "expandedOperations": [
           "DMS-100",
           "DMS-001"
+        ],
+        "reviewedAt": "2026-10-27",
+        "auditFile": "核查记录.md",
+        "nonfunctionalRequirements": 15,
+        "functionalAcceptanceCases": 72,
+        "expandedSubOperations": [
+          "DMS-506",
+          "DMS-507",
+          "DMS-508",
+          "DMS-509",
+          "DMS-510",
+          "DMS-511",
+          "DMS-512"
         ]
       }
     },

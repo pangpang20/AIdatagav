@@ -70,8 +70,8 @@ test('all formal requirements contain the eight implementation specification sec
         assert.equal(columns[2], requirement.id, `${caseId} must reference its owning requirement`);
         assert.equal(columns[3], plain ? '未执行' : '【拟定，未执行】', `${caseId} must remain unexecuted`);
       }
-      assert.match(requirement.text, /方法与相对路径|读取\/查询请求方法与路径|方法与路径/u, `${requirement.id} API status missing`);
-      assert.match(requirement.text, plain ? /允许访问本页面/u : /【待确认】允许访问本页面/u, `${requirement.id} permission status missing`);
+      assert.match(requirement.text, /方法与相对路径|读取\/查询请求方法与路径|方法与路径|HTTP方法 \| 相对路径/u, `${requirement.id} API status missing`);
+      assert.match(requirement.text, plain ? /允许访问本页面|服务端逐对象核验.*范围|服务端对菜单.*分别鉴权/u : /【待确认】允许访问本页面/u, `${requirement.id} permission status missing`);
       if (plain) assert.ok(fs.existsSync(path.join(path.dirname(file),'核查记录.md')), `${requirement.id} audit record missing`);
     }
   }
