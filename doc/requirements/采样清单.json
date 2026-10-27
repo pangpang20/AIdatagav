@@ -18475,11 +18475,22 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "资源是否复用公共来源、预览页、权限申请/审批/撤销、到期和行列控制",
-        "objectBoundary": "数据库资源、表资源、授权申请与权限记录",
         "expandedOperations": [
           "DTM-100",
           "DTM-001"
+        ],
+        "criticalDecisions": "正式DTO与可授上界、草稿/工作流竞争、防重与版本、授权期限/粒度/下发、全库快照、附件清理、原子转交",
+        "objectBoundary": "数据库/表元数据、申请、工作流任务、有效权限/授权历史、附件及资源负责人分开",
+        "functionalAcceptanceCases": 56,
+        "nonfunctionalRequirements": 16,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "DTM-500",
+          "DTM-501",
+          "DTM-502",
+          "DTM-503",
+          "DTM-504"
         ]
       }
     },
