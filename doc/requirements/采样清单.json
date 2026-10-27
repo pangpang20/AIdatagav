@@ -16524,11 +16524,38 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "三目标页、模型实体、规则/分群、成员权限、上线/作废和热门统计",
-        "objectBoundary": "工作组、标签模型、标签定义/版本与应用关系",
+        "criticalDecisions": "服务端DTO/权限、规则与SQL安全、统计状态和截止、调度终态/时区、两套审批、发布GET和FTP路径合同",
+        "objectBoundary": "工作组/成员关系、模型/列/属性、标签/分类、申请/审核、任务/结果、资产映射和文件来源分别标识",
         "expandedOperations": [
           "TMS-001",
           "TMS-002"
+        ],
+        "functionalAcceptanceCases": 182,
+        "nonfunctionalRequirements": 16,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "TMS-500",
+          "TMS-501",
+          "TMS-502",
+          "TMS-503",
+          "TMS-504",
+          "TMS-505",
+          "TMS-506",
+          "TMS-507",
+          "TMS-508",
+          "TMS-509",
+          "TMS-510",
+          "TMS-511",
+          "TMS-512",
+          "TMS-513",
+          "TMS-514",
+          "TMS-515",
+          "TMS-516",
+          "TMS-517",
+          "TMS-518",
+          "TMS-519",
+          "TMS-520"
         ]
       },
       "aiProposals": [
