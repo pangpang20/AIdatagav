@@ -13947,7 +13947,15 @@
         "expandedOperations": [
           "GSB-100",
           "GSB-001"
-        ]
+        ],
+        "reviewStatus": "evidence-bounded-refined",
+        "reviewedAt": "2026-10-27",
+        "auditFile": "核查记录.md",
+        "functionalSpecifications": 12,
+        "functionalAcceptanceCases": 96,
+        "nonfunctionalRequirements": 16,
+        "sourceEvidence": "evidence/gsb-review-20261027/index.json",
+        "applicationAcceptanceExecuted": false
       }
     },
     {
