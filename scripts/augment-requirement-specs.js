@@ -24,6 +24,8 @@ const { MAIN: dseMain, SUB: dseSub, renderFeature: renderDseFeature } = require(
 
 const { MAIN: dcsMain, SUB: dcsSub, renderFeature: renderDcsFeature } = require('./dcs-requirement-spec');
 
+const { MAIN: gspMain, SUB: gspSub, renderFeature: renderGspFeature } = require('./gsp-requirement-spec');
+
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
 const EVIDENCE = path.join(REQUIREMENTS, 'evidence', 'live-recheck-20261022');
@@ -552,6 +554,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...dcsMain, ...dcsSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed DCS requirement: ' + id);
       text = text.slice(0, start) + renderDcsFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- gsp:generated-spec-v1 -->')) {
+      const entry = [...gspMain, ...gspSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed GSP requirement: ' + id);
+      text = text.slice(0, start) + renderGspFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)

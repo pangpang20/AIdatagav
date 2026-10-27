@@ -14234,12 +14234,26 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "详情、购数车/申请/订单流程、下载鉴权、授权期限与订阅变更",
-        "objectBoundary": "门户数据清单、资源详情、申请/订单与订阅",
+        "criticalDecisions": "对象与字段授权/字典、统计及图谱合同、API订阅支持、申请幂等回查及审批交换交接、附件与下载安全",
+        "objectBoundary": "门户维护个人车/收藏/申请引用；目录生命周期归目录管理；审批授权与交换运行独立",
         "expandedOperations": [
           "GSP-100",
           "GSP-001"
-        ]
+        ],
+        "expandedSubOperations": [
+          "GSP-500",
+          "GSP-501",
+          "GSP-502",
+          "GSP-505",
+          "GSP-506",
+          "GSP-503",
+          "GSP-504",
+          "GSP-507"
+        ],
+        "functionalAcceptanceCases": 80,
+        "nonfunctionalRequirements": 16,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27"
       },
       "aiProposals": [
         "AI-007"
