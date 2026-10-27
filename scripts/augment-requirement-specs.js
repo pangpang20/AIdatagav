@@ -556,6 +556,13 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       text = text.slice(0, start) + renderDcsFeature(entry) + '\n' + text.slice(end);
       continue;
     }
+    if (originalText.includes('<!-- gspa:generated-spec-v1 -->')) {
+      const { MAIN, SUB, renderFeature } = require('./gspa-requirement-spec');
+      const entry = [...MAIN, ...SUB].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed GSPA requirement: ' + id);
+      text = text.slice(0, start) + renderFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
     if (originalText.includes('<!-- gsp:generated-spec-v1 -->')) {
       const entry = [...gspMain, ...gspSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed GSP requirement: ' + id);

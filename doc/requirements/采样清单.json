@@ -14523,7 +14523,15 @@
         "expandedOperations": [
           "GSPA-100",
           "GSPA-001"
-        ]
+        ],
+        "reviewDate": "2026-10-27",
+        "reviewRecord": "18-数据服务门户后台管理/核查记录.md",
+        "specificationFormat": "plain-v1",
+        "functionalSpecifications": 16,
+        "functionalAcceptanceCases": 128,
+        "nonfunctionalRequirements": 15,
+        "applicationAcceptanceExecuted": false,
+        "staticEvidence": "evidence/gspa-review-20261027/index.json"
       }
     },
     {

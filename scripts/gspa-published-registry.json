@@ -1,0 +1,1392 @@
+{
+  "main": {
+    "entries": [
+      {
+        "id": "GSPA-100",
+        "title": "查询快捷入口管理",
+        "acceptance": [
+          "GSPA-AC-542",
+          "GSPA-AC-543",
+          "GSPA-AC-544",
+          "GSPA-AC-545",
+          "GSPA-AC-546"
+        ],
+        "sources": []
+      },
+      {
+        "id": "GSPA-001",
+        "title": "查看门户运营入口",
+        "acceptance": [
+          "GSPA-AC-547",
+          "GSPA-AC-548",
+          "GSPA-AC-549",
+          "GSPA-AC-550",
+          "GSPA-AC-551"
+        ],
+        "sources": []
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "GSPA-AC-542",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-543",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-544",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-545",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-546",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-547",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-001"
+      },
+      {
+        "id": "GSPA-AC-548",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-001"
+      },
+      {
+        "id": "GSPA-AC-549",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-001"
+      },
+      {
+        "id": "GSPA-AC-550",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-001"
+      },
+      {
+        "id": "GSPA-AC-551",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-001"
+      },
+      {
+        "id": "GSPA-AC-001",
+        "text": "查询与结果；在具备本模块访问权限时进入快捷入口管理，使用已定义条件查询，核对本需求列出的结果列；无匹配时显示空结果。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-002",
+        "text": "异常与边界；查询失败、重试及重置；恢复默认条件并核对分页、排序和授权范围。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-003",
+        "text": "查看门户运营入口；按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+        "requirement": "GSPA-001"
+      },
+      {
+        "id": "GSPA-AC-004",
+        "text": "查询竞态与返回恢复；先发条件A再发B，使A后返回；界面最终显示B的结果及总数。进入详情再返回，应恢复已提交条件、页码和排序；查询失败不将旧结果冒充新结果。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-005",
+        "text": "数据隔离；同一用户在两个授权范围不同的空间分别查询；结果只含各自可见记录。直接改变请求中的空间标识不扩大访问范围。空间真实权限矩阵须先确认。",
+        "requirement": "GSPA-100"
+      },
+      {
+        "id": "GSPA-AC-006",
+        "text": "展示失败与统计来源；任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+        "requirement": "GSPA-001"
+      }
+    ],
+    "sourceRows": [
+      "| GSPA-100 | [C021-original-content](../evidence/C021-original-content.png) | [调研细节](./调研记录.md#gspa-100-快捷入口管理--查询与列表) |",
+      "| GSPA-001 | [E042-portal-admin](../evidence/E042-portal-admin.png)；[E043-assets-nav](../evidence/E043-assets-nav.png) | [原始记录](./调研记录.md) |"
+    ],
+    "boundaries": [
+      "| GSPA-101 | 查看快捷入口管理 | 详情内容、关联项及查看权限；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| GSPA-102 | 新增快捷入口管理 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| GSPA-103 | 修改快捷入口管理 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| GSPA-104 | 删除快捷入口管理 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |"
+    ]
+  },
+  "sub": {
+    "entries": [
+      {
+        "id": "GSPA-500",
+        "title": "政务共享门户后台管理 → 快捷入口管理",
+        "acceptance": [
+          "GSPA-AC-552",
+          "GSPA-AC-553",
+          "GSPA-AC-554",
+          "GSPA-AC-555",
+          "GSPA-AC-556"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-001.png"
+        ]
+      },
+      {
+        "id": "GSPA-501",
+        "title": "政务共享门户后台管理 → 知识管理",
+        "acceptance": [
+          "GSPA-AC-557",
+          "GSPA-AC-558",
+          "GSPA-AC-559",
+          "GSPA-AC-560",
+          "GSPA-AC-561"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-002.png"
+        ]
+      },
+      {
+        "id": "GSPA-507",
+        "title": "政务共享门户后台管理 → 知识管理 → 新增",
+        "acceptance": [
+          "GSPA-AC-562",
+          "GSPA-AC-563",
+          "GSPA-AC-564",
+          "GSPA-AC-565",
+          "GSPA-AC-566"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-002-op1.png",
+          "../evidence/live-recheck-20261022/V-GSPA-002-op1-options0.png"
+        ]
+      },
+      {
+        "id": "GSPA-508",
+        "title": "政务共享门户后台管理 → 知识管理 → 编辑",
+        "acceptance": [
+          "GSPA-AC-567",
+          "GSPA-AC-568",
+          "GSPA-AC-569",
+          "GSPA-AC-570",
+          "GSPA-AC-571"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-002-op2.png",
+          "../evidence/live-recheck-20261022/V-GSPA-002-op2-options0.png"
+        ]
+      },
+      {
+        "id": "GSPA-502",
+        "title": "政务共享门户后台管理 → 版块管理 → · 栏目管理",
+        "acceptance": [
+          "GSPA-AC-572",
+          "GSPA-AC-573",
+          "GSPA-AC-574",
+          "GSPA-AC-575",
+          "GSPA-AC-576"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-003.png"
+        ]
+      },
+      {
+        "id": "GSPA-509",
+        "title": "政务共享门户后台管理 → 版块管理 → · 栏目管理 → 新增",
+        "acceptance": [
+          "GSPA-AC-577",
+          "GSPA-AC-578",
+          "GSPA-AC-579",
+          "GSPA-AC-580",
+          "GSPA-AC-581"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-003-op1.png",
+          "../evidence/live-recheck-20261022/V-GSPA-003-op1-options0.png"
+        ]
+      },
+      {
+        "id": "GSPA-503",
+        "title": "政务共享门户后台管理 → 版块管理 → · 布局管理",
+        "acceptance": [
+          "GSPA-AC-582",
+          "GSPA-AC-583",
+          "GSPA-AC-584",
+          "GSPA-AC-585",
+          "GSPA-AC-586"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-004.png"
+        ]
+      },
+      {
+        "id": "GSPA-510",
+        "title": "政务共享门户后台管理 → 版块管理 → · 布局管理 → 新增",
+        "acceptance": [
+          "GSPA-AC-587",
+          "GSPA-AC-588",
+          "GSPA-AC-589",
+          "GSPA-AC-590",
+          "GSPA-AC-591"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-004-op1.png"
+        ]
+      },
+      {
+        "id": "GSPA-504",
+        "title": "政务共享门户后台管理 → 版块管理 → · 版块管理",
+        "acceptance": [
+          "GSPA-AC-592",
+          "GSPA-AC-593",
+          "GSPA-AC-594",
+          "GSPA-AC-595",
+          "GSPA-AC-596"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-005.png"
+        ]
+      },
+      {
+        "id": "GSPA-511",
+        "title": "政务共享门户后台管理 → 版块管理 → · 版块管理 → 新增",
+        "acceptance": [
+          "GSPA-AC-597",
+          "GSPA-AC-598",
+          "GSPA-AC-599",
+          "GSPA-AC-600",
+          "GSPA-AC-601"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-005-op1.png",
+          "../evidence/live-recheck-20261022/V-GSPA-005-op1-options0.png"
+        ]
+      },
+      {
+        "id": "GSPA-512",
+        "title": "政务共享门户后台管理 → 版块管理 → · 版块管理 → 编辑",
+        "acceptance": [
+          "GSPA-AC-602",
+          "GSPA-AC-603",
+          "GSPA-AC-604",
+          "GSPA-AC-605",
+          "GSPA-AC-606"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-005-op2.png"
+        ]
+      },
+      {
+        "id": "GSPA-505",
+        "title": "政务共享门户后台管理 → 版块管理 → · 内容管理",
+        "acceptance": [
+          "GSPA-AC-607",
+          "GSPA-AC-608",
+          "GSPA-AC-609",
+          "GSPA-AC-610",
+          "GSPA-AC-611"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-006.png"
+        ]
+      },
+      {
+        "id": "GSPA-513",
+        "title": "政务共享门户后台管理 → 版块管理 → · 内容管理 → 新增",
+        "acceptance": [
+          "GSPA-AC-612",
+          "GSPA-AC-613",
+          "GSPA-AC-614",
+          "GSPA-AC-615",
+          "GSPA-AC-616"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-006-op1.png",
+          "../evidence/live-recheck-20261022/V-GSPA-006-op1-options0.png"
+        ]
+      },
+      {
+        "id": "GSPA-506",
+        "title": "政务共享门户后台管理 → 模板管理",
+        "acceptance": [
+          "GSPA-AC-617",
+          "GSPA-AC-618",
+          "GSPA-AC-619",
+          "GSPA-AC-620",
+          "GSPA-AC-621"
+        ],
+        "sources": [
+          "../evidence/live-recheck-20261022/V-GSPA-007.png"
+        ]
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "GSPA-AC-552",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-553",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-554",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-555",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-556",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-557",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-558",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-559",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-560",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-561",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-562",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-563",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-564",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-565",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-566",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-567",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-568",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-569",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-570",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-571",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-572",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-573",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-574",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-575",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-576",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-577",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-578",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-579",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-580",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-581",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-582",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-583",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-584",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-585",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-586",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-587",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-588",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-589",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-590",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-591",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-592",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-593",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-594",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-595",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-596",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-597",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-598",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-599",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-600",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-601",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-602",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-603",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-604",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-605",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-606",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-607",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-608",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-609",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-610",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-611",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-612",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-613",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-614",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-615",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-616",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-617",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-618",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-619",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-620",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-621",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-500",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-501",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-502",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-500"
+      },
+      {
+        "id": "GSPA-AC-503",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-504",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-505",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-501"
+      },
+      {
+        "id": "GSPA-AC-506",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-507",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-508",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-507"
+      },
+      {
+        "id": "GSPA-AC-509",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-510",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-511",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-508"
+      },
+      {
+        "id": "GSPA-AC-512",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-513",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-514",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-502"
+      },
+      {
+        "id": "GSPA-AC-515",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-516",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-517",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-509"
+      },
+      {
+        "id": "GSPA-AC-518",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-519",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-520",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-503"
+      },
+      {
+        "id": "GSPA-AC-521",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-522",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-523",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-510"
+      },
+      {
+        "id": "GSPA-AC-524",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-525",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-526",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-504"
+      },
+      {
+        "id": "GSPA-AC-527",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-528",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-529",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-511"
+      },
+      {
+        "id": "GSPA-AC-530",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-531",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-532",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-512"
+      },
+      {
+        "id": "GSPA-AC-533",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-534",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-535",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-505"
+      },
+      {
+        "id": "GSPA-AC-536",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-537",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-538",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GSPA-513"
+      },
+      {
+        "id": "GSPA-AC-539",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-540",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GSPA-506"
+      },
+      {
+        "id": "GSPA-AC-541",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GSPA-506"
+      }
+    ],
+    "sourceRows": [],
+    "boundaries": []
+  },
+  "historicalFiles": {
+    "evidence/C021-original-content.json": "e89b6962eb2fc139e8f6f3f247c0d5c4be10e6acd7cd3614732a2df8aeddfba0",
+    "evidence/C021-original-content.png": "0199e34fffb689d5bd5f1373211bbfc64ffdf6e5f87a738701d421416ec8c5c1",
+    "evidence/E042-portal-admin.json": "fdd8ac0a2d9372d71e5044a2be5f8ea4b7dc5320c3b41feffe8ef9f402bffc45",
+    "evidence/E042-portal-admin.png": "3d403e46d7a318c672213a73158c832eafc05737fe842fb6255829ebfd84f307",
+    "evidence/E043-assets-nav.json": "df9082e933bfcad83711d27f94c36c39ecba668702001853f35b9d201e2ba10c",
+    "evidence/E043-assets-nav.png": "7c00191e9284efc24e1db9c6329b9c1605da987a98bc4961999b49e224eab7d0",
+    "evidence/live-recheck-20261022/V-GSPA-001.json": "b25d7dfc3f61244010fd57cd48d146449346bfa228093ff1b64abddeb274abe5",
+    "evidence/live-recheck-20261022/V-GSPA-001.png": "2b858942a4a49917b231b6b74f0113239499f429824b5245a1a34f826490c155",
+    "evidence/live-recheck-20261022/V-GSPA-002-op1-options0.json": "1c413b8e6806a892bb23ec15173c9c99c0ea1bc9fb818102f09b7dbd1ba731cf",
+    "evidence/live-recheck-20261022/V-GSPA-002-op1-options0.png": "90b803da014db41d268151b96eac6ec80bfeba606bee1ef1c38b47ff78bc579b",
+    "evidence/live-recheck-20261022/V-GSPA-002-op1.json": "d9e6ede3ab7febc548b90acfb74a10fe81ca595cce0f8a65b14bd334447021d8",
+    "evidence/live-recheck-20261022/V-GSPA-002-op1.png": "264d67f8a0a3c8b63122eb84b39b393d013eefb838b2183a9a64e44c8fa1851a",
+    "evidence/live-recheck-20261022/V-GSPA-002-op2-options0.json": "124ad806a8391e9d91b9b90a27573cc1024bfc6c5ef9e0db27c0f75365c27445",
+    "evidence/live-recheck-20261022/V-GSPA-002-op2-options0.png": "cc72a7dd1f0b2635da4b4c727e1f4d2f5d34862deb805372eeb733ca7b55e020",
+    "evidence/live-recheck-20261022/V-GSPA-002-op2.json": "da436f2bd4e3d97e079e68a09bd6c19c7a823d1dc8d6f3438f50d28de1548caf",
+    "evidence/live-recheck-20261022/V-GSPA-002-op2.png": "863801fb6f940fe0e4973b0c7084efe2d7745b91828990270e0a34a05831494e",
+    "evidence/live-recheck-20261022/V-GSPA-002.json": "2d08fb72a2eaa70220576b99efcb98dd3acf8d9470ee6f1a6f0c3eadc3160afa",
+    "evidence/live-recheck-20261022/V-GSPA-002.png": "c1fda45c60c6e2383ea256640d77453b8cb77146927dfd9e97ef5ef7c81eeb89",
+    "evidence/live-recheck-20261022/V-GSPA-003-op1-options0.json": "64591fe7b35fa9ec758a24215e99cfd36ee7e655e807413d73f4336fe069781c",
+    "evidence/live-recheck-20261022/V-GSPA-003-op1-options0.png": "77a0610c77942a2b589eb466e24a59ffb42eaa68f944f7954b32dc003050d62c",
+    "evidence/live-recheck-20261022/V-GSPA-003-op1.json": "f5a9f85b88e6f7feb1fb55080ce683b8a7aaeb0e246c93a2187d1a3b0df7908b",
+    "evidence/live-recheck-20261022/V-GSPA-003-op1.png": "8248bc0f9849a5a709c45d1b7e95823732f2405b808daa16cf713d01adf69cc0",
+    "evidence/live-recheck-20261022/V-GSPA-003.json": "f83d967ded8ef0be18136a66df7d84a82fb40a7997f0714a3c6569d00bbecf32",
+    "evidence/live-recheck-20261022/V-GSPA-003.png": "5570dbc322a8be9ee2a885c6e8f93f3ad6fe18af7fb27232143148415173b0ed",
+    "evidence/live-recheck-20261022/V-GSPA-004-op1.json": "52ce893e098493bab229c3ef23090419deb87277e1252d8af1d92287ea1daa1e",
+    "evidence/live-recheck-20261022/V-GSPA-004-op1.png": "dd2c5a7792f248f99d39499cab831ddb44666cc5e36b9827fd46d004ef81c8a2",
+    "evidence/live-recheck-20261022/V-GSPA-004.json": "0e88caeb8aaf2973ad1853281056217d63cbea64a30d7d5bf65fc6c2bc607fdf",
+    "evidence/live-recheck-20261022/V-GSPA-004.png": "33476900637dfbbcd6f502a78ac63531f1d8bf533c97742b99c6cffff395c4c4",
+    "evidence/live-recheck-20261022/V-GSPA-005-op1-options0.json": "aed866920420b85c311bcf991daf476f1b917ae8beae49294b06e06b7a4015cc",
+    "evidence/live-recheck-20261022/V-GSPA-005-op1-options0.png": "2d94ccec50b667f751d3a90fe7231ada7c26d4d3c7bfae4aeb5a2d4d30ada647",
+    "evidence/live-recheck-20261022/V-GSPA-005-op1.json": "8ccf83069daba0bfe6612804d23e60a592cc5371f7b5f1797c7fe8b24bc50b82",
+    "evidence/live-recheck-20261022/V-GSPA-005-op1.png": "a7ba15d2daca4df23fba33cd0279fb65d41779f30c220cefff19a612d855e99c",
+    "evidence/live-recheck-20261022/V-GSPA-005-op2.json": "e9236bc5d17a5b8686f07c7cca394add26db83c0143814ddb9119c3db41fb3f0",
+    "evidence/live-recheck-20261022/V-GSPA-005-op2.png": "16882574c32af39792a5c4e2ba8c8ce43a9ebf55946a548c87c0330dfda285e1",
+    "evidence/live-recheck-20261022/V-GSPA-005.json": "461d113e95926db43ba6dbcdf557a684ec63227a00b3d5a76d9a3a063344d3f2",
+    "evidence/live-recheck-20261022/V-GSPA-005.png": "adc50b929b68db1c0931db34d6c879363582a3f655ae55efd54e8f0b11dc1e00",
+    "evidence/live-recheck-20261022/V-GSPA-006-op1-options0.json": "a60d98b0db96a650b32ab223ebaa032add1b9031beca738ebd1ab9df1ae4b414",
+    "evidence/live-recheck-20261022/V-GSPA-006-op1-options0.png": "e56ca1fab843c2bb9e27ba7023e60c2d41752ecf45a4b867e56cf5d2ba0d23cb",
+    "evidence/live-recheck-20261022/V-GSPA-006-op1.json": "8940b7389d5a6499ae2548dd9e1c7f570c1a68926a17b1a5433386fbf0a412c3",
+    "evidence/live-recheck-20261022/V-GSPA-006-op1.png": "fc7d8d8f509064cba0eb2b04cc041ba0e5d4c760cefd892aa5672b2a464168fb",
+    "evidence/live-recheck-20261022/V-GSPA-006.json": "036cbb563b196b02340a50a6da0dd7b7b8d4a7a93d3848977a2e9923becc1db7",
+    "evidence/live-recheck-20261022/V-GSPA-006.png": "ad54f3ca9ac97eb3188b0c37b966c8c42955446f584ef17f3fb4213f008b24e8",
+    "evidence/live-recheck-20261022/V-GSPA-007.json": "5c2b0bd7cd6db1e9613b4bfaf89ff92ad5ea5ab55b3996a5b08a9d0ed4839036",
+    "evidence/live-recheck-20261022/V-GSPA-007.png": "92032e18f8abc2bc11a237be5b2f813be71ca34188e66205afd52fe157336457",
+    "evidence/live-recheck-20261022/J-GSPA-000-entry.json": "88869a01f5d032c8e34cb676bd03ebeda05041d53c45453deec2a0ecefd349f1",
+    "evidence/live-recheck-20261022/J-GSPA-000-entry.png": "bc811531fbe423dea97c88225c20a93001bc159577ac2def558d5db77406ec58",
+    "evidence/live-recheck-20261022/J-GSPA-001.json": "2d7ee88f2886dd5e2e77d48b49c5707354b1cc93df6bd6e3a318e7e9976617d6",
+    "evidence/live-recheck-20261022/J-GSPA-001.png": "2b858942a4a49917b231b6b74f0113239499f429824b5245a1a34f826490c155",
+    "evidence/live-recheck-20261022/J-GSPA-002-op1-options0.json": "13bb40c3255dbadb4e9fbb9029b73cd63a7fbf1100f80bb0b65f327b0ee8f2c2",
+    "evidence/live-recheck-20261022/J-GSPA-002-op1-options0.png": "7c488067d1a2dc2ad9ec384bf894b6d1494f792dd4f49608376376fef06bce9d",
+    "evidence/live-recheck-20261022/J-GSPA-002-op1.json": "25add0447b3f5e850d5a22f18a719e0457fabe13a922ee31f54406b54229313c",
+    "evidence/live-recheck-20261022/J-GSPA-002-op1.png": "264d67f8a0a3c8b63122eb84b39b393d013eefb838b2183a9a64e44c8fa1851a",
+    "evidence/live-recheck-20261022/J-GSPA-002.json": "9193789b4e1bd9b58270cbe3f976f49c3c600e68c817f7a2764958151d5c1987",
+    "evidence/live-recheck-20261022/J-GSPA-002.png": "c1fda45c60c6e2383ea256640d77453b8cb77146927dfd9e97ef5ef7c81eeb89",
+    "evidence/live-recheck-20261022/N-GSPA-000-entry.json": "e4bb17f9b42f0dcda989a79e4ba2ed72c328d013981ab58427c1ebbbd6a7f77b",
+    "evidence/live-recheck-20261022/N-GSPA-000-entry.png": "74519109ce6f63cc0d1e2a334493d7fbed9bc166a276060bc881d0e744e49113",
+    "evidence/live-recheck-20261022/N-GSPA-001.json": "50c7236c1e564b8adc9ebc407b9dd9d4b934b9f991f052da57b5545dd6b08b03",
+    "evidence/live-recheck-20261022/N-GSPA-001.png": "2b858942a4a49917b231b6b74f0113239499f429824b5245a1a34f826490c155",
+    "evidence/live-recheck-20261022/N-GSPA-002.json": "42039e71699e11e613f8ddcf9f13049ae6be02a068aaa1d0c03a0156d3a5f199",
+    "evidence/live-recheck-20261022/N-GSPA-002.png": "c1fda45c60c6e2383ea256640d77453b8cb77146927dfd9e97ef5ef7c81eeb89",
+    "evidence/live-recheck-20261022/N-GSPA-003.json": "a05bb4cf30c5ecd8454ec76cf1ac1acd06cf8d35b3fc23dc32508f818539c4de",
+    "evidence/live-recheck-20261022/N-GSPA-003.png": "5570dbc322a8be9ee2a885c6e8f93f3ad6fe18af7fb27232143148415173b0ed",
+    "evidence/live-recheck-20261022/N-GSPA-004.json": "c136aa11a8696a75f60e2b9e68a4d6fa45e2373f1a10bf81f6efed504957bf3d",
+    "evidence/live-recheck-20261022/N-GSPA-004.png": "33476900637dfbbcd6f502a78ac63531f1d8bf533c97742b99c6cffff395c4c4",
+    "evidence/live-recheck-20261022/N-GSPA-005.json": "680907715735715d37e2cd05759b90262845693df0757ee12e413fc9ffaf7502",
+    "evidence/live-recheck-20261022/N-GSPA-005.png": "adc50b929b68db1c0931db34d6c879363582a3f655ae55efd54e8f0b11dc1e00",
+    "evidence/live-recheck-20261022/N-GSPA-006.json": "6223f35e4e90d3ba82a07a84bdadde3f39213a77e8f0194803968cb69594494a",
+    "evidence/live-recheck-20261022/N-GSPA-006.png": "ad54f3ca9ac97eb3188b0c37b966c8c42955446f584ef17f3fb4213f008b24e8",
+    "evidence/live-recheck-20261022/N-GSPA-007.json": "ae5eeffeec82809fcf8f9a2127047e2cc00eb919372bfefa2bc80d7fa4d77203",
+    "evidence/live-recheck-20261022/N-GSPA-007.png": "92032e18f8abc2bc11a237be5b2f813be71ca34188e66205afd52fe157336457",
+    "evidence/live-recheck-20261022/Q-GSPA-000-entry.json": "2183b4feb27bf63adb5d87ed003ae45a73ec630935759ed5ad675412fa779e2d",
+    "evidence/live-recheck-20261022/Q-GSPA-000-entry.png": "99a9b165cddf09b0107f80e0f21a26d7a3d3a509153ff3a6c734c78e786949ff",
+    "evidence/live-recheck-20261022/V-GSPA-000-entry.json": "4c200b1b8b397e37d010758cb9c2bfc67917bc9f49ac5732c33a9ae9492b8840",
+    "evidence/live-recheck-20261022/V-GSPA-000-entry.png": "2d8935fc0e270e663799a2c66257a819fec796c0d6b2adfaab696401350bd93f",
+    "evidence/live-recheck-20261022/X-GSPA-000-entry.json": "fdf3018cbb326e3326da2654075a6fb6010fd3a45c56789dbc9a465ec758a9b7",
+    "evidence/live-recheck-20261022/X-GSPA-000-entry.png": "a2ff1b31104e7ee22623c12adeae9d5d3ee56fdad83f430105baafc2ab397c70",
+    "evidence/live-recheck-20261022/X-GSPA-001.json": "9e6d7b2272402d7e3186ad98a5f0623adad64aa7645187c077bc63123dd347a0",
+    "evidence/live-recheck-20261022/X-GSPA-001.png": "2b858942a4a49917b231b6b74f0113239499f429824b5245a1a34f826490c155",
+    "evidence/live-recheck-20261022/X-GSPA-002-op1.json": "e4d27a8f5bb67b2ceef94969996a6b339d7ba471519b6cfd43c50dfb906970dd",
+    "evidence/live-recheck-20261022/X-GSPA-002-op1.png": "767e48e49683f29e4da0e453d7bc40661512a2e0629cbf322bec727acc12c668",
+    "evidence/live-recheck-20261022/X-GSPA-002.json": "990cf4b39ec3618a5571e118aaa75aa5ab71f9b813b04700da5e8c2c93666ab4",
+    "evidence/live-recheck-20261022/X-GSPA-002.png": "c1fda45c60c6e2383ea256640d77453b8cb77146927dfd9e97ef5ef7c81eeb89",
+    "evidence/live-recheck-20261022/X-GSPA-003-op1-options0.json": "d882c189a5751ae5a5455df782dec9539e11e0d25d520b33fe14e772f6e9303e",
+    "evidence/live-recheck-20261022/X-GSPA-003-op1-options0.png": "047d19cfacedc66f797bcb22200bc68368f9c91fdd59f699aa1206385de61192",
+    "evidence/live-recheck-20261022/X-GSPA-003-op1.json": "134ea736b0a888299cc08a46fe034544c60ffe229bb6ed11fee2ecc763e56dbd",
+    "evidence/live-recheck-20261022/X-GSPA-003-op1.png": "a6a868949d3e051ba43e69c45c8091e6b7c3e0607e7b031eafb77850d5ad8682",
+    "evidence/live-recheck-20261022/X-GSPA-003.json": "24829dd4dcfe267d1cbbc31055e67ba16ee56d6e79dae13fcb27c6a03642d9a7",
+    "evidence/live-recheck-20261022/X-GSPA-003.png": "46c69f3646092aaa2d4ea6d6db5a45cb7b4333d23f3c2b70bcd421874f9be9e2",
+    "evidence/live-recheck-20261022/X-GSPA-004-op1-options0.json": "7c3a69ad95ae205ac416e9a011610ab3edbfc0c739527ab7aa77680a6d326187",
+    "evidence/live-recheck-20261022/X-GSPA-004-op1-options0.png": "24a035238654df6417b92d6647d4abcf29e0bb778aac482b832ca417a8206639",
+    "evidence/live-recheck-20261022/X-GSPA-004-op1.json": "a4400142390af784884f498e66453aba87d7d146b4e3b6a6ed5f9b704a887396",
+    "evidence/live-recheck-20261022/X-GSPA-004-op1.png": "e428fd9a60d67bc093a2f4dcca661d4ddb369c730ef3dac93639ac4d233204ef",
+    "evidence/live-recheck-20261022/X-GSPA-004.json": "70d25d686be7a9e5d15792eae648051e8ab52452162dd6894bcafe46ec06935a",
+    "evidence/live-recheck-20261022/X-GSPA-004.png": "4034ead98de327f455defee9552bd370b7da3fd6cf13a8e56574638cd6f6b16a",
+    "evidence/live-recheck-20261022/X-GSPA-005-op1.json": "b1da5f84490261abda6541848fffa485bcce0862e8823a7e847ce0cc9ebe5ea5",
+    "evidence/live-recheck-20261022/X-GSPA-005-op1.png": "85d13ee54b504f51388f2e3931b0770f571f7ca8cbedc7bb32dc4e2f528b813e",
+    "evidence/live-recheck-20261022/X-GSPA-005.json": "7daa1cc415158434ebb2d58e54ed1109f475ebf68dec6b3ce9a7f2077311c9a9",
+    "evidence/live-recheck-20261022/X-GSPA-005.png": "adc50b929b68db1c0931db34d6c879363582a3f655ae55efd54e8f0b11dc1e00",
+    "evidence/live-recheck-20261022/X-GSPA-006-op1-options0.json": "32d1246c8f87fcd0c2ce95a7fb4e5d83a815f1fbc381a51fe70a89567606d777",
+    "evidence/live-recheck-20261022/X-GSPA-006-op1-options0.png": "ba782d1edb2413959ed1c61f105f22e01aa8b3d9cfeff8f2a7af87cf9643435f",
+    "evidence/live-recheck-20261022/X-GSPA-006-op1.json": "7659f2ec6e05712664fa11fa6dc8929e60650e66ac38a590ed91d312f175ab3a",
+    "evidence/live-recheck-20261022/X-GSPA-006-op1.png": "fb789423ff2da2a208c711d9c1fb1429915241b8669761f7f3351ca49d4e4ce0",
+    "evidence/live-recheck-20261022/X-GSPA-006.json": "7e6abe91625cc4e40d2e39c533d52226da2664919ae586eb2c3d56f369a84e30",
+    "evidence/live-recheck-20261022/X-GSPA-006.png": "645a414aa6d596d0eb93492a65eaac140917f0a174ab0e70844b287714d960af",
+    "evidence/live-recheck-20261022/Z-GSPA-000-entry.json": "90c8063959a7245007b87f7bbcabd975b3280e091c5b2ae056f6441016d3b407",
+    "evidence/live-recheck-20261022/Z-GSPA-000-entry.png": "e5fb0913eb3692c6e63bfce9bf5bcef916e9a6846da03191cdf993ff7265b612",
+    "evidence/live-recheck-20261022/Z-GSPA-001.json": "14385416c7f34dacb54ab799128f952b4190f2f04ce26bb92dcc58eff88033f3",
+    "evidence/live-recheck-20261022/Z-GSPA-001.png": "2b858942a4a49917b231b6b74f0113239499f429824b5245a1a34f826490c155",
+    "evidence/live-recheck-20261022/Z-GSPA-002.json": "160b965242deb8e7fbc80c824fb4b07fb5a8a835e4c6b91a433996914c3a1e1c",
+    "evidence/live-recheck-20261022/Z-GSPA-002.png": "c1fda45c60c6e2383ea256640d77453b8cb77146927dfd9e97ef5ef7c81eeb89",
+    "evidence/live-recheck-20261022/Z-GSPA-003.json": "a75a2fd0f6477fb6574ad08c9f8f8a31747f5292d9d3934d6009ed952c6bb928",
+    "evidence/live-recheck-20261022/Z-GSPA-003.png": "5570dbc322a8be9ee2a885c6e8f93f3ad6fe18af7fb27232143148415173b0ed",
+    "evidence/live-recheck-20261022/Z-GSPA-004.json": "6f993d74e1a5f45ebd327d03f9cb2de2cedf174b3d32c154901b4e3f7ae52f4e",
+    "evidence/live-recheck-20261022/Z-GSPA-004.png": "33476900637dfbbcd6f502a78ac63531f1d8bf533c97742b99c6cffff395c4c4",
+    "evidence/live-recheck-20261022/Z-GSPA-005.json": "d1882c051646d7cef16c43f3744561abb4ec4e9f27c8ec8e482c56ed8daf35bf",
+    "evidence/live-recheck-20261022/Z-GSPA-005.png": "adc50b929b68db1c0931db34d6c879363582a3f655ae55efd54e8f0b11dc1e00",
+    "evidence/live-recheck-20261022/Z-GSPA-006.json": "4206199ff262137001396e932ca235df25383e41fc6425f827042f994a2ce42d",
+    "evidence/live-recheck-20261022/Z-GSPA-006.png": "ad54f3ca9ac97eb3188b0c37b966c8c42955446f584ef17f3fb4213f008b24e8",
+    "evidence/live-recheck-20261022/Z-GSPA-007.json": "61269fd4698d7f2e059cb374fd8d1b8f41fcb5a1cfc98f7ecf3b7ffbcb76856d",
+    "evidence/live-recheck-20261022/Z-GSPA-007.png": "92032e18f8abc2bc11a237be5b2f813be71ca34188e66205afd52fe157336457"
+  },
+  "researchSha256": "d8fbd58d9b0d237034d435a9f3c8f6f929d9e93a01816f4845915d294c909580",
+  "registry": {
+    "module": {
+      "code": "GSPA",
+      "name": "数据服务门户后台管理",
+      "group": "数据一体化",
+      "directory": "18-数据服务门户后台管理",
+      "evidence": [
+        "E042-portal-admin",
+        "E043-assets-nav"
+      ],
+      "supplements": [
+        "C021-original-content",
+        "R009-E043-assets-nav"
+      ],
+      "requirements": [
+        {
+          "id": "GSPA-001",
+          "kind": "【页面观察】",
+          "evidence": [
+            "E042-portal-admin",
+            "E043-assets-nav"
+          ]
+        },
+        {
+          "id": "GSPA-002",
+          "kind": "【页面观察】",
+          "evidence": [
+            "E042-portal-admin"
+          ]
+        },
+        {
+          "id": "GSPA-003",
+          "kind": "【拟定需求】",
+          "evidence": []
+        },
+        {
+          "id": "GSPA-004",
+          "kind": "【拟定需求】",
+          "evidence": []
+        },
+        {
+          "id": "GSPA-100",
+          "kind": "【操作观察】",
+          "evidence": [
+            "C021-original-content"
+          ]
+        },
+        {
+          "id": "GSPA-101",
+          "kind": "【待确认】",
+          "evidence": [
+            "C021-original-content"
+          ]
+        },
+        {
+          "id": "GSPA-102",
+          "kind": "【待确认】",
+          "evidence": [
+            "C021-original-content"
+          ]
+        },
+        {
+          "id": "GSPA-103",
+          "kind": "【待确认】",
+          "evidence": [
+            "C021-original-content"
+          ]
+        },
+        {
+          "id": "GSPA-104",
+          "kind": "【待确认】",
+          "evidence": [
+            "C021-original-content"
+          ]
+        }
+      ],
+      "acceptance": [
+        {
+          "id": "GSPA-AC-001",
+          "executed": true,
+          "evidence": [
+            "E042-portal-admin"
+          ]
+        },
+        {
+          "id": "GSPA-AC-002",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-003",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-004",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-005",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-006",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-100",
+          "executed": true,
+          "evidence": [
+            "C021-original-content"
+          ]
+        },
+        {
+          "id": "GSPA-AC-101",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-102",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-103",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-104",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-105",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-106",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-107",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-108",
+          "executed": false,
+          "evidence": []
+        },
+        {
+          "id": "GSPA-AC-109",
+          "executed": false,
+          "evidence": []
+        }
+      ],
+      "crudObjects": [
+        {
+          "module": "GSPA",
+          "name": "快捷入口管理",
+          "listEvidence": "C021-original-content",
+          "operations": {
+            "list": {
+              "status": "已观察",
+              "evidence": [
+                "C021-original-content"
+              ],
+              "opened": true,
+              "confirmationObserved": null,
+              "businessWriteExecuted": false
+            },
+            "detail": {
+              "status": "待确认：当前未取得入口/记录",
+              "evidence": [
+                "C021-original-content"
+              ],
+              "opened": false,
+              "confirmationObserved": null,
+              "businessWriteExecuted": false
+            },
+            "add": {
+              "status": "待确认：当前未取得入口/记录",
+              "evidence": [
+                "C021-original-content"
+              ],
+              "opened": false,
+              "confirmationObserved": null,
+              "businessWriteExecuted": false
+            },
+            "edit": {
+              "status": "待确认：当前未取得入口/记录",
+              "evidence": [
+                "C021-original-content"
+              ],
+              "opened": false,
+              "confirmationObserved": null,
+              "businessWriteExecuted": false
+            },
+            "delete": {
+              "status": "待确认：当前未取得入口/记录",
+              "evidence": [
+                "C021-original-content"
+              ],
+              "opened": false,
+              "confirmationObserved": false,
+              "businessWriteExecuted": false
+            }
+          }
+        }
+      ],
+      "researchFile": "调研记录.md",
+      "researchSha256": "d8fbd58d9b0d237034d435a9f3c8f6f929d9e93a01816f4845915d294c909580",
+      "businessRequirements": [
+        {
+          "id": "GSPA-100",
+          "object": "快捷入口管理",
+          "operation": "list",
+          "evidence": [
+            "C021-original-content"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "GSPA-001",
+          "object": "数据服务门户后台管理",
+          "operation": "entry",
+          "evidence": [
+            "E042-portal-admin",
+            "E043-assets-nav"
+          ],
+          "proposedResults": true
+        }
+      ],
+      "businessAcceptance": [
+        "GSPA-AC-542",
+        "GSPA-AC-543",
+        "GSPA-AC-544",
+        "GSPA-AC-545",
+        "GSPA-AC-546",
+        "GSPA-AC-547",
+        "GSPA-AC-548",
+        "GSPA-AC-549",
+        "GSPA-AC-550",
+        "GSPA-AC-551",
+        "GSPA-AC-001",
+        "GSPA-AC-002",
+        "GSPA-AC-003",
+        "GSPA-AC-004",
+        "GSPA-AC-005",
+        "GSPA-AC-006"
+      ],
+      "developmentReview": {
+        "status": "partial-ui-only",
+        "productionReady": false,
+        "criticalDecisions": "图标/链接/排序表单、内置条目、发布生效和缓存失效规则",
+        "objectBoundary": "门户快捷入口与内容配置/发布版本",
+        "expandedOperations": [
+          "GSPA-100",
+          "GSPA-001"
+        ]
+      }
+    },
+    "deepDive": {
+      "code": "GSPA",
+      "file": "18-数据服务门户后台管理/子页面与操作细化.md",
+      "requirements": [
+        {
+          "id": "GSPA-500",
+          "key": "政务共享门户后台管理 → 快捷入口管理::页面",
+          "evidence": [
+            "V-GSPA-001"
+          ]
+        },
+        {
+          "id": "GSPA-501",
+          "key": "政务共享门户后台管理 → 知识管理::页面",
+          "evidence": [
+            "V-GSPA-002"
+          ]
+        },
+        {
+          "id": "GSPA-507",
+          "key": "政务共享门户后台管理 → 知识管理::新增",
+          "evidence": [
+            "V-GSPA-002-op1",
+            "V-GSPA-002-op1-options0"
+          ]
+        },
+        {
+          "id": "GSPA-508",
+          "key": "政务共享门户后台管理 → 知识管理::编辑",
+          "evidence": [
+            "V-GSPA-002-op2",
+            "V-GSPA-002-op2-options0"
+          ]
+        },
+        {
+          "id": "GSPA-502",
+          "key": "政务共享门户后台管理 → 版块管理 → · 栏目管理::页面",
+          "evidence": [
+            "V-GSPA-003"
+          ]
+        },
+        {
+          "id": "GSPA-509",
+          "key": "政务共享门户后台管理 → 版块管理 → · 栏目管理::新增",
+          "evidence": [
+            "V-GSPA-003-op1",
+            "V-GSPA-003-op1-options0"
+          ]
+        },
+        {
+          "id": "GSPA-503",
+          "key": "政务共享门户后台管理 → 版块管理 → · 布局管理::页面",
+          "evidence": [
+            "V-GSPA-004"
+          ]
+        },
+        {
+          "id": "GSPA-510",
+          "key": "政务共享门户后台管理 → 版块管理 → · 布局管理::新增",
+          "evidence": [
+            "V-GSPA-004-op1"
+          ]
+        },
+        {
+          "id": "GSPA-504",
+          "key": "政务共享门户后台管理 → 版块管理 → · 版块管理::页面",
+          "evidence": [
+            "V-GSPA-005"
+          ]
+        },
+        {
+          "id": "GSPA-511",
+          "key": "政务共享门户后台管理 → 版块管理 → · 版块管理::新增",
+          "evidence": [
+            "V-GSPA-005-op1",
+            "V-GSPA-005-op1-options0"
+          ]
+        },
+        {
+          "id": "GSPA-512",
+          "key": "政务共享门户后台管理 → 版块管理 → · 版块管理::编辑",
+          "evidence": [
+            "V-GSPA-005-op2"
+          ]
+        },
+        {
+          "id": "GSPA-505",
+          "key": "政务共享门户后台管理 → 版块管理 → · 内容管理::页面",
+          "evidence": [
+            "V-GSPA-006"
+          ]
+        },
+        {
+          "id": "GSPA-513",
+          "key": "政务共享门户后台管理 → 版块管理 → · 内容管理::新增",
+          "evidence": [
+            "V-GSPA-006-op1",
+            "V-GSPA-006-op1-options0"
+          ]
+        },
+        {
+          "id": "GSPA-506",
+          "key": "政务共享门户后台管理 → 模板管理::页面",
+          "evidence": [
+            "V-GSPA-007"
+          ]
+        }
+      ]
+    }
+  }
+}

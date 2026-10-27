@@ -1,0 +1,834 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "static-source",
+  "inspectedAt": "2026-10-27T08:18:02.841Z",
+  "publicStaticGets": 27,
+  "businessRequestsByCollector": 0,
+  "applicationAcceptanceExecuted": false,
+  "limitations": [
+    "业务路由跳转/module-login/login，未登录、未进入业务正文；没有新截图及业务Network",
+    "下载代码仅离线阅读，不执行；浏览器自动初始化请求未抓包",
+    "历史页面采样2026-10-22与静态资源2026-10-27不保证同构建",
+    "服务端DTO、权限、持久化、缓存生效和性能均未实测"
+  ],
+  "sources": [
+    {
+      "id": "GSPA-SRC-COLUMN-API",
+      "resourcePath": "/gsp/static/js/api-content-column.c88dea2f.js",
+      "localName": "api-content-column.c88dea2f.js",
+      "fetchedAt": "2026-10-27T08:15:36.852Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1606,
+      "sha256": "ce0c37731b6d0a3a45e332dbf9062c0069796d5cc091bfc77b9a12438bdc4012",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 1606,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ce0c37731b6d0a3a45e332dbf9062c0069796d5cc091bfc77b9a12438bdc4012",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-content-column\",\"api-serviceConstant\"],{\"5c0b\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"content\",(function(){return u})),e.d(t,\"oss\",(function(){return c}));var u=\"/gsp/manage\",c=\"/common/oss\"},\"670a\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"columnList\",(function(){return o})),e.d(t,\"columnAllListEnabled\",(function(){return i})),e.d(t,\"columnListEnabled\",(function(){return l})),e.d(t,\"createColumn\",(function(){return s})),e.d(t,\"updateColumn\",(function(){return a})),e.d(t,\"deleteColumn\",(function(){return b})),e.d(t,\"readColumn\",(function(){return f})),e.d(t,\"enableColumn\",(function(){return m})),e.d(t,\"disableColumn\",(function(){return d})),e.d(t,\"enabledColumn\",(function(){return O}));var u=e(\"bcab\"),c=e(\"5c0b\"),r=function(){return Object(u.a)(\"gsp-manage\")||c.content},o=function(n){return Object(u.c)().request(r()+\"/column/page\",\"POST\",n)},i=function(){return Object(u.c)().request(r()+\"/column/list\",\"POST\")},l=function(){return Object(u.c)().request(r()+\"/column/list/enabled\",\"POST\")},s=function(n){return Object(u.c)().request(r()+\"/column\",\"POST\",n)},a=function(n,t){return Object(u.c)().request(r()+\"/column/\"+n,\"PUT\",t)},b=function(n){return Object(u.c)().request(r()+\"/column/\"+n,\"DELETE\",{})},f=function(n,t){return Object(u.c)().request(r()+\"/column/\"+n,\"GET\",t)},m=function(n,t){return Object(u.c)().request(r()+\"/column/\"+n+\"/enable\",\"PUT\",t)},d=function(n,t){return Object(u.c)().request(r()+\"/column/\"+n+\"/disable\",\"PUT\",t)},O=function(){return Object(u.c)().request(r()+\"/column/list/enabled\",\"POST\")}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-CONTENT-API",
+      "resourcePath": "/gsp/static/js/api-content-content.8fdacb0b.js",
+      "localName": "api-content-content.8fdacb0b.js",
+      "fetchedAt": "2026-10-27T08:15:36.883Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1242,
+      "sha256": "80f5ee2185b147b9e48bc1a62a973500ed9046fcf978f93240210351f8a60c50",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 1242,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "80f5ee2185b147b9e48bc1a62a973500ed9046fcf978f93240210351f8a60c50",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-content-content\",\"api-serviceConstant\"],{\"5c0b\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"content\",(function(){return c})),e.d(t,\"oss\",(function(){return r}));var c=\"/gsp/manage\",r=\"/common/oss\"},\"757b\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"contentList\",(function(){return o})),e.d(t,\"createContent\",(function(){return i})),e.d(t,\"updateContent\",(function(){return s})),e.d(t,\"deleteContent\",(function(){return a})),e.d(t,\"readContent\",(function(){return f})),e.d(t,\"cancelContent\",(function(){return b})),e.d(t,\"publishContent\",(function(){return p}));var c=e(\"bcab\"),r=e(\"5c0b\"),u=function(){return Object(c.a)(\"gsp-manage\")||r.content},o=function(n){return Object(c.c)().request(u()+\"/content/page\",\"POST\",n)},i=function(n){return Object(c.c)().request(u()+\"/content\",\"POST\",n)},s=function(n,t){return Object(c.c)().request(u()+\"/content/\"+n,\"PUT\",t)},a=function(n){return Object(c.c)().request(u()+\"/content/\"+n,\"DELETE\",{})},f=function(n,t){return Object(c.c)().request(u()+\"/content/\"+n,\"GET\",t)},b=function(n,t){return Object(c.c)().request(u()+\"/content/\"+n+\"/cancel\",\"PUT\",t)},p=function(n){return Object(c.c)().request(u()+\"/content/\"+n+\"/publish\",\"PUT\")}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-FORUM-API",
+      "resourcePath": "/gsp/static/js/api-content-forum.07483c40.js",
+      "localName": "api-content-forum.07483c40.js",
+      "fetchedAt": "2026-10-27T08:15:36.928Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1208,
+      "sha256": "c888e45547a3f876d3ac8714c83fcd8e026a3190887dd4cb53475bb7ec73e047",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 1208,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c888e45547a3f876d3ac8714c83fcd8e026a3190887dd4cb53475bb7ec73e047",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-content-forum\",\"api-serviceConstant\"],{\"0e29\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"forumList\",(function(){return o})),e.d(t,\"createForum\",(function(){return i})),e.d(t,\"updateForum\",(function(){return f})),e.d(t,\"deleteForum\",(function(){return s})),e.d(t,\"readForum\",(function(){return a})),e.d(t,\"enableForum\",(function(){return m})),e.d(t,\"disableForum\",(function(){return b}));var r=e(\"bcab\"),u=e(\"5c0b\"),c=function(){return Object(r.a)(\"gsp-manage\")||u.content},o=function(n){return Object(r.c)().request(c()+\"/forum/page\",\"POST\",n)},i=function(n){return Object(r.c)().request(c()+\"/forum\",\"POST\",n)},f=function(n,t){return Object(r.c)().request(c()+\"/forum/\"+n,\"PUT\",t)},s=function(n){return Object(r.c)().request(c()+\"/forum/\"+n,\"DELETE\",{})},a=function(n,t){return Object(r.c)().request(c()+\"/forum/\"+n,\"GET\",t)},m=function(n){return Object(r.c)().request(c()+\"/forum/\"+n+\"/enable\",\"PUT\")},b=function(n){return Object(r.c)().request(c()+\"/forum/\"+n+\"/disable\",\"PUT\")}},\"5c0b\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"content\",(function(){return r})),e.d(t,\"oss\",(function(){return u}));var r=\"/gsp/manage\",u=\"/common/oss\"}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-SHEET-API",
+      "resourcePath": "/gsp/static/js/api-content-sheet.a9736bfa.js",
+      "localName": "api-content-sheet.a9736bfa.js",
+      "fetchedAt": "2026-10-27T08:15:36.954Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1607,
+      "sha256": "35f69207d2e50a29d730a74fa844ea95941e6a26c177516e90070320f14d1955",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 1607,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "35f69207d2e50a29d730a74fa844ea95941e6a26c177516e90070320f14d1955",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-content-sheet\",\"api-serviceConstant\"],{\"22fe\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"sheetList\",(function(){return o})),n.d(t,\"createSheet\",(function(){return s})),n.d(t,\"updateSheet\",(function(){return i})),n.d(t,\"deleteSheet\",(function(){return f})),n.d(t,\"readSheet\",(function(){return a})),n.d(t,\"enableSheet\",(function(){return h})),n.d(t,\"disableSheet\",(function(){return b})),n.d(t,\"createSheetColumn\",(function(){return d})),n.d(t,\"updateSheetColumn\",(function(){return p})),n.d(t,\"deleteSheetColumn\",(function(){return O}));var u=n(\"bcab\"),r=n(\"5c0b\"),c=function(){return Object(u.a)(\"gsp-manage\")||r.content},o=function(e){return Object(u.c)().request(c()+\"/sheet/page\",\"POST\",e)},s=function(e){return Object(u.c)().request(c()+\"/sheet\",\"POST\",e)},i=function(e,t){return Object(u.c)().request(c()+\"/sheet/\"+e,\"PUT\",t)},f=function(e){return Object(u.c)().request(c()+\"/sheet/\"+e,\"DELETE\",{})},a=function(e){return Object(u.c)().request(c()+\"/sheet/\"+e,\"GET\")},h=function(e){return Object(u.c)().request(c()+\"/sheet/\"+e+\"/enable\",\"PUT\")},b=function(e){return Object(u.c)().request(c()+\"/sheet/\"+e+\"/disable\",\"PUT\")},d=function(e,t){return Object(u.c)().request(c()+\"/sheet/\"+e+\"/column\",\"POST\",t)},p=function(e,t,n){return Object(u.c)().request(c()+\"/sheet/\"+e+\"/column/\"+t,\"PUT\",n)},O=function(e,t){return Object(u.c)().request(c()+\"/sheet/\"+e+\"/column/\"+t,\"DELETE\")}},\"5c0b\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"content\",(function(){return u})),n.d(t,\"oss\",(function(){return r}));var u=\"/gsp/manage\",r=\"/common/oss\"}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-ENTRY-API",
+      "resourcePath": "/gsp/static/js/api-entrance-list.f08cb570.js",
+      "localName": "api-entrance-list.f08cb570.js",
+      "fetchedAt": "2026-10-27T08:15:36.982Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1180,
+      "sha256": "5e64f30678cf676d4140cdbdf60b9034912f6a3ba288b64a68f8443644c601a2",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 1180,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "5e64f30678cf676d4140cdbdf60b9034912f6a3ba288b64a68f8443644c601a2",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-entrance-list\",\"api-serviceConstant\"],{\"5c0b\":function(n,e,t){\"use strict\";t.r(e),t.d(e,\"content\",(function(){return r})),t.d(e,\"oss\",(function(){return c}));var r=\"/gsp/manage\",c=\"/common/oss\"},a226:function(n,e,t){\"use strict\";t.r(e),t.d(e,\"entranceList\",(function(){return i})),t.d(e,\"deleteEntrance\",(function(){return s})),t.d(e,\"upEntrance\",(function(){return o})),t.d(e,\"downEntrance\",(function(){return a})),t.d(e,\"enableForum\",(function(){return p})),t.d(e,\"disableForum\",(function(){return b}));var r=t(\"bcab\"),c=t(\"5c0b\"),u=function(){return Object(r.a)(\"gsp-manage\")||c.content},i=function(n){return Object(r.c)().request(u()+\"/gspquickentry/page\",\"POST\",n)},s=function(n){return Object(r.c)().request(u()+\"/gspquickentry/remove/\"+n,\"DELETE\",{})},o=function(n,e){return Object(r.c)().request(u()+\"/gspquickentry/\"+n+\"/change/\"+e,\"PUT\")},a=function(n,e){return Object(r.c)().request(u()+\"/gspquickentry/\"+n+\"/change/\"+e,\"PUT\")},p=function(n){return Object(r.c)().request(u()+\"/gspquickentry/\"+n+\"/enable\",\"PUT\")},b=function(n){return Object(r.c)().request(u()+\"/gspquickentry/\"+n+\"/disable\",\"PUT\")}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-KNOWLEDGE-API",
+      "resourcePath": "/gsp/static/js/api-knowledge-edit.bbd22cf1.js",
+      "localName": "api-knowledge-edit.bbd22cf1.js",
+      "fetchedAt": "2026-10-27T08:15:37.008Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 739,
+      "sha256": "53e70edae861dda67821b9104ca04db78da049c752e74668ed49884d8260e4d6",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 739,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "53e70edae861dda67821b9104ca04db78da049c752e74668ed49884d8260e4d6",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-knowledge-edit\",\"api-serviceConstant\"],{\"5c0b\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"content\",(function(){return c})),e.d(t,\"oss\",(function(){return r}));var c=\"/gsp/manage\",r=\"/common/oss\"},dd9d:function(n,t,e){\"use strict\";e.r(t),e.d(t,\"createinfo\",(function(){return u})),e.d(t,\"updateinfo\",(function(){return i})),e.d(t,\"readinfo\",(function(){return s}));var c=e(\"bcab\"),r=e(\"5c0b\"),o=function(){return Object(c.a)(\"gsp-manage\")||r.content},u=function(n){return Object(c.c)().request(o()+\"/gspinfo/add\",\"POST\",n)},i=function(n,t){return Object(c.c)().request(o()+\"/gspinfo/\"+n,\"PUT\",t)},s=function(n,t){return Object(c.c)().request(o()+\"/gspinfo/\"+n,\"GET\",t)}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-KNOWLEDGE-LIST-API",
+      "resourcePath": "/gsp/static/js/api-knowledge-list.b8699d8d.js",
+      "localName": "api-knowledge-list.b8699d8d.js",
+      "fetchedAt": "2026-10-27T08:15:37.062Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 859,
+      "sha256": "cd23bb5a37bfc61635df0a0e6443cbb1fcf1aced51fdbc08accf863a55f38c85",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 859,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "cd23bb5a37bfc61635df0a0e6443cbb1fcf1aced51fdbc08accf863a55f38c85",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-knowledge-list\",\"api-serviceConstant\"],{\"5c0b\":function(n,t,e){\"use strict\";e.r(t),e.d(t,\"content\",(function(){return o})),e.d(t,\"oss\",(function(){return r}));var o=\"/gsp/manage\",r=\"/common/oss\"},a6a7:function(n,t,e){\"use strict\";e.r(t),e.d(t,\"infoList\",(function(){return u})),e.d(t,\"deleteinfo\",(function(){return i})),e.d(t,\"upInfo\",(function(){return s})),e.d(t,\"downInfo\",(function(){return f}));var o=e(\"bcab\"),r=e(\"5c0b\"),c=function(){return Object(o.a)(\"gsp-manage\")||r.content},u=function(n){return Object(o.c)().request(c()+\"/gspinfo/page\",\"POST\",n)},i=function(n){return Object(o.c)().request(c()+\"/gspinfo/remove/\"+n,\"DELETE\",{})},s=function(n){return Object(o.c)().request(c()+\"/gspinfo/up/\"+n,\"PUT\")},f=function(n){return Object(o.c)().request(c()+\"/gspinfo/down/\"+n,\"PUT\")}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-TEMPLATE-API",
+      "resourcePath": "/gsp/static/js/api-template-list.d5f5bdb1.js",
+      "localName": "api-template-list.d5f5bdb1.js",
+      "fetchedAt": "2026-10-27T08:15:37.117Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 641,
+      "sha256": "e3c3addc2a0dc35b9f080ef3dc333bc22df088445dc59b76bc8607d7432a472e",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 641,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "e3c3addc2a0dc35b9f080ef3dc333bc22df088445dc59b76bc8607d7432a472e",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"api-template-list\",\"api-serviceConstant\"],{\"51c6\":function(t,n,e){\"use strict\";e.r(n),e.d(n,\"templateList\",(function(){return u})),e.d(n,\"updateTemplate\",(function(){return o}));var c=e(\"bcab\"),s=e(\"5c0b\"),r=function(){return Object(c.a)(\"gsp-manage\")||s.content},u=function(t){return Object(c.c)().request(r()+\"/gsptemplate/list\",\"POST\",t)},o=function(t,n){return Object(c.c)().request(r()+\"/gsptemplate/\"+t,\"PUT\",n)}},\"5c0b\":function(t,n,e){\"use strict\";e.r(n),e.d(n,\"content\",(function(){return c})),e.d(n,\"oss\",(function(){return s}));var c=\"/gsp/manage\",s=\"/common/oss\"}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-ENTRY",
+      "resourcePath": "/gsp/static/js/views-entrance-list.ff29146e.js",
+      "localName": "views-entrance-list.ff29146e.js",
+      "fetchedAt": "2026-10-27T08:15:37.453Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 4803,
+      "sha256": "814cd825b995b39063ed60fa8f93fd55e57035d792c328d4513934bf25e84d1f",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 534,
+          "end": 1446,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "92e4a82ac9e3f0e0cbd5f4489f0f18b221769a366df78ae39ddac18191ea1860",
+          "text": "data:function(){return{audaqueTempData:{},audaquePageRequestMixin:{order:[{prop:\"seq\",asc:!0}]}}},components:{},watch:{},computed:{},created:function(){},activated:function(){},mounted:function(){},methods:{isShowDown:function(e){return e.$index!==this.audaqueDataListMixin.datas.length-1},statusChange:function(e,t){var n=this;\"0\"===e?Object(a.disableForum)(t.id).then((function(){n.$message.success(\"禁用成功\"),n.audaqueRequestListMixin()})):Object(a.enableForum)(t.id).then((function(){n.$message.success(\"启用成功\"),n.audaqueRequestListMixin()}))},operating:function(e,t){var n=this,u=e.row;\"down\"===t?Object(a.downEntrance)(u.id,this.audaqueDataListMixin.datas[e.$index+1].id).then((function(e){n.$message.success(\"操作成功\"),n.audaqueRequestListMixin()})):\"up\"===t&&Object(a.upEntrance)(u.id,this.audaqueDataListMixin.datas[e.$index-1].id).then((function(e){n.$message.success(\"操作成功\"),n.audaqueRequestListMixin()}))}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-KNOWLEDGE-LIST",
+      "resourcePath": "/gsp/static/js/views-knowledge-list.7cbc3e19.js",
+      "localName": "views-knowledge-list.7cbc3e19.js",
+      "fetchedAt": "2026-10-27T08:15:37.529Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 8866,
+      "sha256": "abd68a7f1c598ab97c628679b17c35bd10281922f0d55e25f855165c4538892b",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 1827,
+          "end": 2549,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "6d2617b97c54bae597ba73daf3586970c8c8f25022243ef92aa3033fd12195c4",
+          "text": "data:function(){return{audaqueTempData:{},type_options:i.type_options,status_options:i.status_options,audaqueFormEditFormUrlMixin:\"/knowledge/edit\"}},components:{},watch:{},computed:{},created:function(){},activated:function(){},mounted:function(){},methods:{audaqueResetFetchHandleMixin:function(){this.audaqueTempData.lastModifyTime=[]},handleOptTimeChange:function(e){this.audaqueSearchMixin.startTime=e?e[0]:null,this.audaqueSearchMixin.endTime=e?e[1]:null},operating:function(e){var a=this;0==e.status?Object(n.upInfo)(e.id).then((function(e){a.$message.success(\"上线成功\"),a.audaqueRequestListMixin()})):1==e.status&&Object(n.downInfo)(e.id).then((function(e){a.$message.success(\"下线成功\"),a.audaqueRequestListMixin()}))}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-COLUMN",
+      "resourcePath": "/gsp/static/js/views-content-column-edit.2800d374.js",
+      "localName": "views-content-column-edit.2800d374.js",
+      "fetchedAt": "2026-10-27T08:15:37.138Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 4425,
+      "sha256": "8b18a33b01784a11b5e3949f0d3aeabc721d6f874c9269534b13e8a549bb5b6d",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 2174,
+          "end": 2744,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "fa9f7f2f840ddfe6ed354db03289f3c8f68a4017f17d40e25cdc1d44754f4554",
+          "text": "data:function(){var e=this.$route.query.optType;return{audaqueFormInfoMixin:{name:\"\",type:\"\",description:\"\"},audaqueFormRulesMixin:{name:[o.AudaqueElementValidator.isNotEmpty()],type:[o.AudaqueElementValidator.isNotEmpty(\"change\")]},type_options:[{name:\"标题列表\",value:\"LIST\"},{name:\"轮播图\",value:\"SLIDE_SHOW\"}],enabled_options:[{name:\"已启用\",value:\"0\"},{name:\"已停用\",value:\"1\"}],optType:e,optTypeOptions:{add:\"新增\",edit:\"编辑\",view:\"查看\"}}},components:{},watch:{},computed:{pageTitle:function(){return\"栏目\".concat(this.optTypeOptions[this.optType])}},created:function(){},methods:{},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-COLUMN-LIST",
+      "resourcePath": "/gsp/static/js/views-content-column-list.25cea62e.js",
+      "localName": "views-content-column-list.25cea62e.js",
+      "fetchedAt": "2026-10-27T08:15:37.159Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 7084,
+      "sha256": "c4a86fbbe99116d91b810934f69466095edd770842d1530575526168c96449ec",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 405,
+          "end": 1401,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a30d84a8cb78e30f64268b8413d46a2e58e2a853240203278b8021f1436de5e0",
+          "text": "data:function(){return{audaqueTempData:{},audaquePageRequestMixin:{order:[{prop:\"lastModifyTime\",asc:!1}]},type_options:[{name:\"标题列表\",value:\"LIST\"},{name:\"轮播图\",value:\"SLIDE_SHOW\"},{name:\"磁贴\",value:\"TILE\"},{name:\"图片\",value:\"PICTURE\"},{name:\"图文列表\",value:\"PICTURE_TEXT\"},{name:\"链接列表_横向\",value:\"HOR_LINK\"},{name:\"链接列表_纵向\",value:\"VER_LINK\"},{name:\"侧边窗\",value:\"SIDE_WINDOW\"}],enabled_options:[{name:\"已启用\",value:!0},{name:\"已停用\",value:!1}],audaqueFormEditFormUrlMixin:\"/content/column/edit\"}},components:{},watch:{},computed:{},created:function(){},activated:function(){},mounted:function(){},methods:{goto:function(){var e=this,n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"view\",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};switch(n){case\"start\":Object(a.enableColumn)(t.id).then((function(){e.$message.success(\"启用成功\"),e.audaqueRequestListMixin()}));break;case\"stop\":Object(a.disableColumn)(t.id).then((function(){e.$message.success(\"停用成功\"),e.audaqueRequestListMixin()}))}}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-SHEET",
+      "resourcePath": "/gsp/static/js/views-content-sheet-edit.09fb2410.js",
+      "localName": "views-content-sheet-edit.09fb2410.js",
+      "fetchedAt": "2026-10-27T08:15:37.412Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 17200,
+      "sha256": "38b06dd4e3dfe3e030970335501acb62050c05e73b2110aad529c000d737e423",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 627,
+          "end": 9046,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "9b3c8b5fa3dc93402951ba5201bcf14b5881f4e1d9e233e493634ca9684bcc08",
+          "text": "data:function(){var e=this.$route.query.optType;return{audaqueFormInfoMixin:{name:\"\",description:\"\",sheetColumns:[]},audaqueFormRulesMixin:{name:[o.AudaqueElementValidator.isNotEmpty()]},enabled_options:[{name:\"已启用\",value:\"0\"},{name:\"已停用\",value:\"1\"}],id:this.$route.query.id,seqs:[],optType:e,optTypeOptions:{add:\"新增\",edit:\"编辑\",view:\"查看\"}}},components:{},watch:{},computed:{pageTitle:function(){return\"布局\".concat(this.optTypeOptions[this.optType])}},created:function(){this.getenabledColumn()},methods:{getEnumLabel:function(e,t){for(var n=0;n<e.length;n++)if(e[n].value===t)return e[n].name;return\"-\"},getenabledColumn:function(){var e=this;Object(a.enabledColumn)().then((function(t){e.enabledColumnData=t}))},audaqueReadAfterHandleMixin:function(){this.seqs=this.audaqueFormInfoMixin.sheetColumns.map((function(e){return e.seq}))},operate:function(e){var t=this,n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{params:[],column:\"\",seq:0,col:0,smCol:0,hideName:!1,hideMore:!1},a=arguments.length>2&&void 0!==arguments[2]?arguments[2]:-1,i=this.id,u=this;switch(n=JSON.parse(JSON.stringify(n)),e){case\"add\":case\"edit\":if(n.column){var l=n.column.id;delete n.column,n.column=l,n.params=n.params.split(\",\")}this.$AudaqueToast.dialog({title:\"add\"===e?\"新增\":\"编辑\",width:\"800px\",template:'\\n                            <div class=\"\">\\n                                <el-form\\n                                    :model=\"form\"\\n                                    label-width=\"160px\"\\n                                    class=\"form\"\\n                                    ref=\"form\"\\n                                    :rules=\"rules\"\\n                                >\\n                                    <el-form-item  label=\"栏目\" prop=\"column\">\\n                                        <el-select\\n                                            v-model=\"form.column\"\\n                                            style=\"width:100%\"\\n                                            clearable\\n                                            placeholder=\"\"\\n                                        >\\n                                            <el-option\\n                                                v-for=\"item in enabledColumnData\"\\n                                                :key=\"item.id\"\\n                                                :label=\"item.name\"\\n                                                :value=\"item.id\"\\n                                            >\\n                                            </el-option>\\n                                        </el-select>\\n                                    </el-form-item>\\n                                    <el-form-item label=\"顺序号\" prop=\"seq\">\\n                                        <el-input-number v-model=\"form.seq\" :precision=\"0\" :min=\"1\" :max=\"100\" label=\"\"></el-input-number>\\n                                    </el-form-item>\\n                                    <el-form-item label=\"显示内容\" prop=\"params\">\\n                                        <el-select\\n                                            multiple\\n                                            v-model=\"form.params\"\\n                                            style=\"width:100%\"\\n                                            clearable\\n                                            placeholder=\"\"\\n                                        >\\n                                            <el-option\\n                                                v-for=\"item in paramsDict\"\\n                                                :key=\"item.id\"\\n                                                :label=\"item.label\"\\n                                                :value=\"item.value\"\\n                                            >\\n                                            </el-option>\\n                                        </el-select>\\n                                    </el-form-item>\\n                                    <el-form-item label=\"显示内容数量\" prop=\"contentSize\">\\n                                        <el-input-number v-model=\"form.contentSize\" :precision=\"0\" :min=\"1\" :max=\"30\" label=\"\"></el-input-number>\\n                                    </el-form-item>\\n\\x3c!--                                    <el-form-item label=\"是否隐藏栏目标题\" prop=\"hideName\" >--\\x3e\\n\\x3c!--                                        <el-select--\\x3e\\n\\x3c!--                                            v-model=\"form.hideName\"--\\x3e\\n\\x3c!--                                            style=\"width:100%\"--\\x3e\\n\\x3c!--                                            clearable--\\x3e\\n\\x3c!--                                            placeholder=\"\"--\\x3e\\n\\x3c!--                                        >--\\x3e\\n\\x3c!--                                            <el-option--\\x3e\\n\\x3c!--                                                v-for=\"item in hideNameDict\"--\\x3e\\n\\x3c!--                                                :key=\"item.id\"--\\x3e\\n\\x3c!--                                                :label=\"item.label\"--\\x3e\\n\\x3c!--                                                :value=\"item.value\"--\\x3e\\n\\x3c!--                                            >--\\x3e\\n\\x3c!--                                            </el-option>--\\x3e\\n\\x3c!--                                        </el-select>--\\x3e\\n\\x3c!--                                    </el-form-item>--\\x3e\\n\\x3c!--                                    <el-form-item label=\"是否隐藏\\'更多\\'按钮\" prop=\"hideMore\">--\\x3e\\n\\x3c!--                                        <el-select--\\x3e\\n\\x3c!--                                            v-model=\"form.hideMore\"--\\x3e\\n\\x3c!--                                            style=\"width:100%\"--\\x3e\\n\\x3c!--                                            clearable--\\x3e\\n\\x3c!--                                            placeholder=\"\"--\\x3e\\n\\x3c!--                                        >--\\x3e\\n\\x3c!--                                            <el-option--\\x3e\\n\\x3c!--                                                v-for=\"item in hideMoreDict\"--\\x3e\\n\\x3c!--                                                :key=\"item.id\"--\\x3e\\n\\x3c!--                                                :label=\"item.label\"--\\x3e\\n\\x3c!--                                                :value=\"item.value\"--\\x3e\\n\\x3c!--                                            >--\\x3e\\n\\x3c!--                                            </el-option>--\\x3e\\n\\x3c!--                                        </el-select>--\\x3e\\n\\x3c!--                                    </el-form-item>--\\x3e\\n                                </el-form>\\n                        </div>\\n                        ',data:{enabledColumnData:u.enabledColumnData,form:n,rules:{column:[o.AudaqueElementValidator.isNotEmpty(\"change\")],seq:[{validator:function(e,t,n){var r=u.seqs;t?r.includes(t)&&r[a]!==t?n(new Error(\"顺序号已存在，不能重复\")):n():n(new Error(\"不能为空\"))},trigger:\"change\"}],params:[{required:!0,trigger:\"change\",message:\"不能为空\"}],col:[{required:!0,trigger:\"change\",message:\"不能为空\"}],smCol:[{required:!0,trigger:\"change\",message:\"不能为空\"}],hideName:[{required:!0,trigger:\"change\",message:\"不能为空\"}],hideMore:[{required:!0,trigger:\"change\",message:\"不能为空\"}]},paramsDict:[{label:\"短标题\",value:\"titleShow\"},{label:\"标题\",value:\"title\"},{label:\"发稿日期\",value:\"commitDate\"}],hideNameDict:[{label:\"是\",value:!0},{label:\"否\",value:!1}],hideMoreDict:[{label:\"是\",value:!0},{label:\"否\",value:!1}]},methods:{okEvent:function(){var t=this,a=!1;return this.$refs.form.validate((function(o){if(!o)return a=!0,!1;var l=JSON.parse(JSON.stringify(t.form));l.params=l.params.join(\",\"),l.column={id:l.column},delete l.columnName,u.id?\"add\"===e?Object(r.createSheetColumn)(i,l).then((function(){t.$message.success(\"新增成功\"),u.audaqueRequestDetailFormMixin()})):Object(r.updateSheetColumn)(i,n.id,l).then((function(){t.$message.success(\"编辑成功\"),u.audaqueRequestDetailFormMixin()})):(l.column.name=t.getCorrespondValue(t.form.column,\"name\"),l.column.type=t.getCorrespondValue(t.form.column,\"type\"),u.audaqueFormInfoMixin.sheetColumns.push(l))})),a},getCorrespondValue:function(e,t){for(var n=0;n<this.enabledColumnData.length;n++){var r=this.enabledColumnData[n];if(r.id===e)return r[t]}}}});break;case\"delete\":u.id?Object(r.deleteSheetColumn)(i,n.id).then((function(){t.$message.success(\"删除成功\"),t.audaqueRequestDetailFormMixin()})):this.audaqueFormInfoMixin.sheetColumns.splice(a,1)}}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-SHEET-LIST",
+      "resourcePath": "/gsp/static/js/views-content-sheet-list.814629cb.js",
+      "localName": "views-content-sheet-list.814629cb.js",
+      "fetchedAt": "2026-10-27T08:15:37.432Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 6750,
+      "sha256": "9b4b45b5413042351f9c4ac66bb82c21805b7f3f6744e3b46d1a2615b15471f2",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 2226,
+          "end": 2956,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "3f0740cf004c5da1e0e74212e8ffac7c346771284c6e74a124f8cb1aeea79147",
+          "text": "data:function(){return{audaqueTempData:{},audaquePageRequestMixin:{order:[{prop:\"lastModifyTime\",asc:!1}]},enabled_options:[{name:\"已启用\",value:!0},{name:\"已停用\",value:!1}],audaqueFormEditFormUrlMixin:\"/content/sheet/edit\"}},components:{},watch:{},computed:{},created:function(){},activated:function(){},mounted:function(){},methods:{goto:function(){var e=this,t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"view\",a=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};switch(t){case\"start\":Object(n.enableSheet)(a.id).then((function(){e.$message.success(\"启用成功\"),e.audaqueRequestListMixin()}));break;case\"stop\":Object(n.disableSheet)(a.id).then((function(){e.$message.success(\"停用成功\"),e.audaqueRequestListMixin()}))}}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-FORUM",
+      "resourcePath": "/gsp/static/js/views-content-forum-edit.d3ac2961.js",
+      "localName": "views-content-forum-edit.d3ac2961.js",
+      "fetchedAt": "2026-10-27T08:15:37.370Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 8616,
+      "sha256": "c7680cd8acc939646205362fa21854d931addd66664921ad5251ed4d3b1d624d",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 3397,
+          "end": 5199,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "66b39b838428c7c17fe240ac93b41bf79e08dfa70732e6b4c2aa9fa7de04ad28",
+          "text": "data:function(){var e=this,t=this.$route.query.optType;return{audaqueFormInfoMixin:{name:\"\",seq:\"\",type:\"ROUTE\",description:\"\"},audaqueFormRulesMixin:{name:[i.AudaqueElementValidator.isNotEmpty()],seq:[i.AudaqueElementValidator.isNotEmpty()],type:[i.AudaqueElementValidator.isNotEmpty()],url:[{validator:function(t,n,u){n||\"SITE\"!==e.audaqueFormRulesMixin.type?u():u(new Error(\"不能为空\"))},trigger:\"change\"}],sheet2:[{validator:function(t,n,u){n||\"ROUTE\"!==e.audaqueFormRulesMixin.type?u():u(new Error(\"不能为空\"))},trigger:\"change\"}]},type_options:[{name:\"内部布局\",value:\"ROUTE\"},{name:\"外部链接\",value:\"SITE\"}],enabled_options:[{name:\"已启用\",value:\"0\"},{name:\"已停用\",value:\"1\"}],unUsedSheetList:[],optType:t,moduleType:null,optTypeOptions:{add:\"新增\",edit:\"编辑\",view:\"查看\"}}},components:{},watch:{},computed:{pageTitle:function(){return\"版块\".concat(this.optTypeOptions[this.optType],\" - \").concat(this.getEnumLabel(this.type_options,this.audaqueFormInfoMixin.type))}},created:function(){this.getSheetList()},methods:{getEnumLabel:function(e,t){for(var n=0;n<e.length;n++)if(e[n].value===t)return e[n].name;return\"-\"},getSheetList:function(){var e=this;Object(a.sheetList)().then((function(t){var n=t.datas.map((function(e){return Object(u.a)(Object(u.a)({},e),{},{disabled:!e.enabled||e.used})}));e.unUsedSheetList=n}))},audaqueReadAfterHandleMixin:function(){this.moduleType=this.audaqueFormInfoMixin.type,\"CUSTOMIZATION\"===this.moduleType&&this.type_options.push({name:\"定制布局\",value:\"CUSTOMIZATION\"}),this.$set(this.audaqueFormInfoMixin,\"sheet2\",this.audaqueFormInfoMixin.sheet?this.audaqueFormInfoMixin.sheet.id:\"\")},audaqueFormBeforeHandleMixin:function(){this.audaqueFormInfoMixin.sheet={id:this.audaqueFormInfoMixin.sheet2}},changeType:function(){this.audaqueFormInfoMixin.url=\"\",this.audaqueFormInfoMixin.sheet2=\"\"}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-FORUM-LIST",
+      "resourcePath": "/gsp/static/js/views-content-forum-list.9ff33168.js",
+      "localName": "views-content-forum-list.9ff33168.js",
+      "fetchedAt": "2026-10-27T08:15:37.390Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 6617,
+      "sha256": "573d00d63a613862bcb522dd51e51a4e82caa3a098271d9792128fa9e2f4e86f",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 1504,
+          "end": 2329,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "20499347db7cfe4ecb594b462b5f4546d68bad64ed0159810af6f431dfd53071",
+          "text": "data:function(){return{audaqueTempData:{},audaquePageRequestMixin:{order:[{prop:\"seq\",asc:!1}]},type_options:[{name:\"外部链接\",value:\"SITE\"},{name:\"内部布局\",value:\"ROUTE\"},{name:\"定制布局\",value:\"CUSTOMIZATION\"}],enabled_options:[{name:\"已启用\",value:!0},{name:\"已停用\",value:!1}],audaqueFormEditFormUrlMixin:\"/content/forum/edit\"}},components:{},watch:{},computed:{},created:function(){},activated:function(){},mounted:function(){},methods:{goto:function(){var e=this,a=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"view\",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};switch(a){case\"start\":Object(n.enableForum)(t.id).then((function(){e.$message.success(\"启用成功\"),e.audaqueRequestListMixin()}));break;case\"stop\":Object(n.disableForum)(t.id).then((function(){e.$message.success(\"停用成功\"),e.audaqueRequestListMixin()}))}}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-CONTENT-LIST",
+      "resourcePath": "/gsp/static/js/views-content-content-list.a3e83f05.js",
+      "localName": "views-content-content-list.a3e83f05.js",
+      "fetchedAt": "2026-10-27T08:15:37.349Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 8895,
+      "sha256": "2925635bf2afd7bb617e72b986d094110cb3ce4bdcc1f75b6d813258d2b15c2e",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 3094,
+          "end": 4001,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "be330b927a73b47cdf1812e007d3fd168ed1f5d6fc662bb012f33cbe3f763d39",
+          "text": "data:function(){return{audaqueTempData:{},audaquePageRequestMixin:{order:[{prop:\"commitDate\",asc:!1}]},published_options:[{name:\"未发布\",value:!1},{name:\"已发布\",value:!0}],columnListEnabledData:[],audaqueFormEditFormUrlMixin:\"/content/content/edit\"}},components:{},watch:{},computed:{},created:function(){this.getColumnListEnabled()},activated:function(){},mounted:function(){},methods:{getColumnListEnabled:function(){var e=this;Object(u.columnListEnabled)().then((function(t){e.columnListEnabledData=t}))},goto:function(){var e=this,t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:\"view\",n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};switch(t){case\"start\":Object(a.publishContent)(n.id).then((function(){e.$message.success(\"发布成功\"),e.audaqueRequestListMixin()}));break;case\"stop\":Object(a.cancelContent)(n.id).then((function(){e.$message.success(\"下架成功\"),e.audaqueRequestListMixin()}))}}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-TEMPLATE",
+      "resourcePath": "/gsp/static/js/views-template-list.25f8d7a4.js",
+      "localName": "views-template-list.25f8d7a4.js",
+      "fetchedAt": "2026-10-27T08:15:37.550Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 14141,
+      "sha256": "384b83a044a84922c735bde52a0c3d3e69eafa7b67440f4b6b1b2df831832ada",
+      "excerpts": [
+        {
+          "anchor": "data:function",
+          "start": 4992,
+          "end": 6316,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c5995c18b97bb1b9b6b065a283e4019cf4e7177f03495a791c7398ee4d74685b",
+          "text": "data:function(){return{ruleForm:{},rules:{},articleGspTemplateDo:[],listGspTemplateDo:[],articleTemplateObj:{},listTemplateObj:{},listTemplateImg:null,articleTemplateImg:null}},components:{},watch:{},computed:{},created:function(){this.initData()},activated:function(){},mounted:function(){},methods:{initData:function(){var A=this;Object(a.templateList)().then((function(t){A.articleGspTemplateDo=t.articleGspTemplateDo||[],A.listGspTemplateDo=t.listGspTemplateDo||[],A.articleGspTemplateDo.map((function(t){A.articleTemplateObj[t.id]=t,1===t.status&&(A.$set(A.ruleForm,\"articleTemplate\",t.id),A.articleTemplateChange(t.id))})),A.listGspTemplateDo.map((function(t){A.listTemplateObj[t.id]=t,1===t.status&&(A.$set(A.ruleForm,\"listTemplate\",t.id),A.listTemplateChange(t.id))}))}))},listTemplateChange:function(A){this.listTemplateImg=e(\"0e14\")(\"./template-\".concat(this.listTemplateObj[A].templateType,\"-\").concat(this.listTemplateObj[A].templateCode,\".png\"))},articleTemplateChange:function(A){this.articleTemplateImg=e(\"0e14\")(\"./template-\".concat(this.articleTemplateObj[A].templateType,\"-\").concat(this.articleTemplateObj[A].templateCode,\".png\"))},save:function(A,t){var e=this;A?Object(a.updateTemplate)(A,{templateType:t,id:A}).then((function(){e.$message.success(\"保存成功\"),e.initData()})):this.$message.error(\"请选择模板\")}},"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-ENTRY-RENDER",
+      "resourcePath": "/gsp/static/js/views-entrance-list.ff29146e.js",
+      "localName": "views-entrance-list.ff29146e.js",
+      "fetchedAt": "2026-10-27T08:15:37.453Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 4803,
+      "sha256": "814cd825b995b39063ed60fa8f93fd55e57035d792c328d4513934bf25e84d1f",
+      "excerpts": [
+        {
+          "anchor": "var e=this,t=e._self._c;return t(\"audaque-table-list-page\",[",
+          "start": 1514,
+          "end": 3810,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "4161219cea78b75e9fc91c91b83f2f0d4e6e5d10a2b4c0e18be6ef8cb0fe0eba",
+          "text": "var e=this,t=e._self._c;return t(\"audaque-table-list-page\",[t(\"template\",{slot:\"title\"}),[t(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[t(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:\"序号\",type:\"index\",index:e.audaqueIndexMethodMixin}}),t(\"el-table-column\",{attrs:{prop:\"name\",label:\"功能名称\",\"show-overflow-tooltip\":\"\"}}),t(\"el-table-column\",{attrs:{prop:\"icon\",label:\"图标\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(e){return[t(\"img\",{attrs:{src:e.row.icon,alt:\"\",width:\"30px\"}})]}}])}),t(\"el-table-column\",{attrs:{prop:\"status\",label:\"状态\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[t(\"el-switch\",{attrs:{\"inactive-value\":\"0\",\"active-value\":\"1\"},on:{change:function(t){e.statusChange(t,n.row)}},model:{value:n.row.status,callback:function(t){e.$set(n.row,\"status\",t)},expression:\"scope.row.status\"}})]}}])}),t(\"el-table-column\",{attrs:{prop:\"lastModifyTime\",label:\"编辑时间\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[t(\"span\",[e._v(e._s(e.audaqueFormatTimeToDateMixin(n.row.lastModifyTime)))])]}}])}),t(\"el-table-column\",{attrs:{width:e.audaqueOpreateWidthMixin,label:\"操作\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[e.isShowDown(n)?t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"gsp-xiayi\",title:\"下移\"},on:{click:function(t){return e.operating(n,\"down\")}}}):e._e(),0!=n.$index?t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"gsp-shangyi\",title:\"上移\"},on:{click:function(t){return e.operating(n,\"up\")}}}):e._e()]}}])})],1),t(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,\"06d02cca\",null);t.default=o.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-COLUMN-RENDER",
+      "resourcePath": "/gsp/static/js/views-content-column-edit.2800d374.js",
+      "localName": "views-content-column-edit.2800d374.js",
+      "fetchedAt": "2026-10-27T08:15:37.138Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 4425,
+      "sha256": "8b18a33b01784a11b5e3949f0d3aeabc721d6f874c9269534b13e8a549bb5b6d",
+      "excerpts": [
+        {
+          "anchor": "var e=this,n=e._self._c;return n(\"audaque-detail-form-page\",",
+          "start": 2812,
+          "end": 4326,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "0d9f0a1c8c48852cd89f86de12a24b664b7dd9fccbfcc086165c5bbb6c6d0ed4",
+          "text": "var e=this,n=e._self._c;return n(\"audaque-detail-form-page\",{attrs:{title:e.pageTitle,\"opt-type\":e.audaqueOptTypeMixin},on:{\"submit-click\":e.audaqueSubmitMixin}},[n(\"audaque-form\",{ref:e.audaqueFormRefMixin,attrs:{model:e.audaqueFormInfoMixin,disabled:e.audaqueOptTypeMixin===e.audaqueFormTypeMixin.view,rules:e.audaqueFormRulesMixin}},[n(\"el-row\",[n(\"el-col\",{attrs:{span:24}},[n(\"el-form-item\",{attrs:{label:\"名称\",prop:\"name\"}},[n(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入名称\",maxlength:30},model:{value:e.audaqueFormInfoMixin.name,callback:function(n){e.$set(e.audaqueFormInfoMixin,\"name\",\"string\"==typeof n?n.trim():n)},expression:\"audaqueFormInfoMixin.name\"}})],1)],1)],1),n(\"el-row\",[n(\"el-col\",{attrs:{span:24}},[n(\"el-form-item\",{attrs:{label:\"类型\",prop:\"type\"}},[n(\"el-select\",{attrs:{placeholder:\"请选择类型\"},model:{value:e.audaqueFormInfoMixin.type,callback:function(n){e.$set(e.audaqueFormInfoMixin,\"type\",n)},expression:\"audaqueFormInfoMixin.type\"}},e._l(e.type_options,(function(e){return n(\"el-option\",{key:e.name,attrs:{label:e.name,value:e.value}})})),1)],1)],1)],1),n(\"el-row\",[n(\"el-col\",{attrs:{span:24}},[n(\"el-form-item\",{attrs:{label:\"描述\",prop:\"description\"}},[n(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入描述\",maxlength:150},model:{value:e.audaqueFormInfoMixin.description,callback:function(n){e.$set(e.audaqueFormInfoMixin,\"description\",\"string\"==typeof n?n.trim():n)},expression:\"audaqueFormInfoMixin.description\"}})],1)],1)],1)],1)],1)}),[],!1,null,\"4e71cc7e\",null);n.default=i.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-COLUMN-LIST-RENDER",
+      "resourcePath": "/gsp/static/js/views-content-column-list.25cea62e.js",
+      "localName": "views-content-column-list.25cea62e.js",
+      "fetchedAt": "2026-10-27T08:15:37.159Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 7084,
+      "sha256": "c4a86fbbe99116d91b810934f69466095edd770842d1530575526168c96449ec",
+      "excerpts": [
+        {
+          "anchor": "var e=this,n=e._self._c;return n(\"audaque-table-list-page\",[",
+          "start": 1469,
+          "end": 5094,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "174e75b038f4b1b70778c48990f77256caa7871cded8c1e7b0a40c95be6c7484",
+          "text": "var e=this,n=e._self._c;return n(\"audaque-table-list-page\",[n(\"template\",{slot:\"title\"},[n(\"audaque-table-title\",{attrs:{title:e.$route.meta.name}},[n(\"audaque-action-icon\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.create},expression:\"{ key: audaqueIconTypeMixin.create }\"}],attrs:{iconClass:\"main-add\",title:\"新增\"},on:{click:e.audaqueAddItemMixin}}),n(\"audaque-action-icon\",{attrs:{iconClass:\"main-list-search\",title:\"筛选\"},on:{click:e.audaqueToggleSearchMinix}})],1)],1),n(\"template\",{slot:\"search\"},[n(\"audaque-table-search\",{directives:[{name:\"show\",rawName:\"v-show\",value:e.audaqueSearchBarVisibleMixin,expression:\"audaqueSearchBarVisibleMixin\"}],on:{close:function(n){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[n(\"audaque-table-search-item\",{attrs:{title:\"名称\"}},[n(\"el-input\",{attrs:{placeholder:\"请选择名称\",clearable:\"\",maxlength:255},model:{value:e.audaqueSearchMixin.name,callback:function(n){e.$set(e.audaqueSearchMixin,\"name\",\"string\"==typeof n?n.trim():n)},expression:\"audaqueSearchMixin.name\"}})],1)],1)],1),[n(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[n(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:\"序号\",type:\"index\",index:e.audaqueIndexMethodMixin}}),n(\"el-table-column\",{attrs:{prop:\"name\",label:\"名称\",\"show-overflow-tooltip\":\"\"}}),n(\"el-table-column\",{attrs:{label:\"类型\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[n(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.type_options,t.row.type))}})]}}])}),n(\"el-table-column\",{attrs:{label:\"启用状态\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[n(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.enabled_options,t.row.enabled,!0))}})]}}])}),n(\"el-table-column\",{attrs:{width:e.audaqueOpreateWidthMixin,label:\"操作\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[t.row.enabled?e._e():n(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"main-edit\",title:\"编辑\"},on:{click:function(n){return e.audaqueGotoEditPageMixin(t.row,e.audaqueFormTypeMixin.edit)}}}),t.row.enabled?n(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.stop},expression:\"{ key: audaqueIconTypeMixin.stop }\"}],attrs:{iconClass:\"main-jinyong1\",title:\"停用\"},on:{click:function(n){return e.goto(\"stop\",t.row)}}}):n(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.stop},expression:\"{ key: audaqueIconTypeMixin.stop }\"}],attrs:{iconClass:\"main-qiyong2\",title:\"启用\"},on:{click:function(n){return e.goto(\"start\",t.row)}}}),t.row.enabled?e._e():n(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.delete},expression:\"{ key: audaqueIconTypeMixin.delete }\"}],attrs:{iconClass:\"main-delete\",title:\"删除\"},on:{click:function(n){return e.audaqueDeleteMixin(t.row)}}})]}}])})],1),n(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,\"ef1548b0\",null);n.default=r.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-SHEET-RENDER",
+      "resourcePath": "/gsp/static/js/views-content-sheet-edit.09fb2410.js",
+      "localName": "views-content-sheet-edit.09fb2410.js",
+      "fetchedAt": "2026-10-27T08:15:37.412Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 17200,
+      "sha256": "38b06dd4e3dfe3e030970335501acb62050c05e73b2110aad529c000d737e423",
+      "excerpts": [
+        {
+          "anchor": "var e=this,t=e._self._c;return t(\"audaque-detail-form-page\",",
+          "start": 9114,
+          "end": 11627,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8e6825179bd3899a5614d27d395060ae14edd08fa929a09b894ed4747fc7714d",
+          "text": "var e=this,t=e._self._c;return t(\"audaque-detail-form-page\",{attrs:{title:e.pageTitle,\"opt-type\":e.audaqueOptTypeMixin},on:{\"submit-click\":e.audaqueSubmitMixin}},[t(\"audaque-form\",{ref:e.audaqueFormRefMixin,attrs:{model:e.audaqueFormInfoMixin,disabled:e.audaqueOptTypeMixin===e.audaqueFormTypeMixin.view,rules:e.audaqueFormRulesMixin}},[t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"名称\",prop:\"name\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入名称\",maxlength:30},model:{value:e.audaqueFormInfoMixin.name,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"name\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.name\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"描述\",prop:\"description\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入描述\",maxlength:150},model:{value:e.audaqueFormInfoMixin.description,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"description\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.description\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"栏目\",prop:\"\"}},[t(\"audaque-table-title\",{attrs:{title:\"\"}},[t(\"audaque-action-icon\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"operate\"},expression:\"{ key: 'operate' }\"}],attrs:{iconClass:\"main-add\",title:\"添加栏目\"},on:{click:function(t){return e.operate(\"add\")}}})],1),t(\"el-table\",{staticStyle:{width:\"100%\"},attrs:{data:e.audaqueFormInfoMixin.sheetColumns}},[t(\"el-table-column\",{attrs:{label:\"栏目名称\",prop:\"column.name\",\"show-overflow-tooltip\":\"\"}}),t(\"el-table-column\",{attrs:{label:\"栏目类型\",prop:\"column.type\",\"show-overflow-tooltip\":\"\"}}),t(\"el-table-column\",{attrs:{prop:\"seq\",label:\"顺序号\",\"show-overflow-tooltip\":\"\"}}),t(\"el-table-column\",{attrs:{width:e.audaqueOpreateWidthMixin,label:\"操作\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"operate\"},expression:\"{ key: 'operate' }\"}],attrs:{iconClass:\"main-edit\",title:\"编辑\"},on:{click:function(t){return e.operate(\"edit\",n.row,n.$index)}}}),t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:\"operate\"},expression:\"{ key: 'operate' }\"}],attrs:{iconClass:\"main-delete\",title:\"删除\"},on:{click:function(t){return e.operate(\"delete\",n.row,n.$index)}}})]}}])})],1)],1)],1)],1)],1)],1)}),[],!1,null,\"078c7106\",null);t.default=l.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-FORUM-RENDER",
+      "resourcePath": "/gsp/static/js/views-content-forum-edit.d3ac2961.js",
+      "localName": "views-content-forum-edit.d3ac2961.js",
+      "fetchedAt": "2026-10-27T08:15:37.370Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 8616,
+      "sha256": "c7680cd8acc939646205362fa21854d931addd66664921ad5251ed4d3b1d624d",
+      "excerpts": [
+        {
+          "anchor": "var e=this,t=e._self._c;return t(\"audaque-detail-form-page\",",
+          "start": 5267,
+          "end": 8457,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c61949868b53d7e20ad6a12a0fe7b046352f60e5c70454cf2ced4a23444ab09f",
+          "text": "var e=this,t=e._self._c;return t(\"audaque-detail-form-page\",{attrs:{title:e.pageTitle,\"opt-type\":e.audaqueOptTypeMixin},on:{\"submit-click\":e.audaqueSubmitMixin}},[t(\"audaque-form\",{ref:e.audaqueFormRefMixin,attrs:{model:e.audaqueFormInfoMixin,disabled:e.audaqueOptTypeMixin===e.audaqueFormTypeMixin.view,rules:e.audaqueFormRulesMixin}},[t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"名称\",prop:\"name\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入名称\",maxlength:6},model:{value:e.audaqueFormInfoMixin.name,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"name\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.name\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"顺序号\",prop:\"seq\"}},[t(\"el-input-number\",{attrs:{precision:0,step:1,type:\"number\",placeholder:\"请输入顺序号\",min:1,max:100},model:{value:e.audaqueFormInfoMixin.seq,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"seq\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.seq\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"版块类型\",prop:\"type\"}},[t(\"el-radio-group\",{attrs:{disabled:\"CUSTOMIZATION\"===e.moduleType},on:{change:e.changeType},model:{value:e.audaqueFormInfoMixin.type,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"type\",t)},expression:\"audaqueFormInfoMixin.type\"}},[e._l(e.type_options,(function(n){return[t(\"el-radio\",{key:n.name,attrs:{label:n.value}},[e._v(\" \"+e._s(n.name)+\" \")])]}))],2)],1)],1)],1),t(\"el-row\",{directives:[{name:\"show\",rawName:\"v-show\",value:\"SITE\"===e.audaqueFormInfoMixin.type,expression:\"audaqueFormInfoMixin.type === 'SITE'\"}]},[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"链接地址\",prop:\"url\"}},[t(\"el-input\",{attrs:{disabled:\"CUSTOMIZATION\"===e.moduleType,type:\"text\",placeholder:\"请输入链接\",maxlength:255},model:{value:e.audaqueFormInfoMixin.url,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"url\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.url\"}})],1)],1)],1),t(\"el-row\",{directives:[{name:\"show\",rawName:\"v-show\",value:\"ROUTE\"===e.audaqueFormInfoMixin.type,expression:\"audaqueFormInfoMixin.type === 'ROUTE'\"}]},[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"布局\",prop:\"sheet2\"}},[t(\"el-select\",{staticStyle:{width:\"100%\"},attrs:{disabled:\"CUSTOMIZATION\"===e.moduleType,disabledf:\"edit\"===e.optType,clearable:\"\",placeholder:\"\"},model:{value:e.audaqueFormInfoMixin.sheet2,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"sheet2\",t)},expression:\"audaqueFormInfoMixin.sheet2\"}},e._l(e.unUsedSheetList,(function(e){return t(\"el-option\",{key:e.id,attrs:{disabled:e.disabled,label:e.name,value:e.id}})})),1)],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"描述\",prop:\"description\"}},[t(\"el-input\",{attrs:{disabled:\"CUSTOMIZATION\"===e.moduleType,type:\"text\",placeholder:\"请输入描述\",maxlength:150},model:{value:e.audaqueFormInfoMixin.description,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"description\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.description\"}})],1)],1)],1)],1)],1)}),[],!1,null,\"e3020b92\",null);t.default=c.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-FORUM-LIST-RENDER",
+      "resourcePath": "/gsp/static/js/views-content-forum-list.9ff33168.js",
+      "localName": "views-content-forum-list.9ff33168.js",
+      "fetchedAt": "2026-10-27T08:15:37.390Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 6617,
+      "sha256": "573d00d63a613862bcb522dd51e51a4e82caa3a098271d9792128fa9e2f4e86f",
+      "excerpts": [
+        {
+          "anchor": "var e=this,a=e._self._c;return a(\"audaque-table-list-page\",[",
+          "start": 2397,
+          "end": 6151,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "b80cbce50660e23289c1735415f15a7feec1389cc0016751e6e8a24eaca5e198",
+          "text": "var e=this,a=e._self._c;return a(\"audaque-table-list-page\",[a(\"template\",{slot:\"title\"},[a(\"audaque-table-title\",{attrs:{title:e.$route.meta.name}},[a(\"audaque-action-icon\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.create},expression:\"{ key: audaqueIconTypeMixin.create }\"}],attrs:{iconClass:\"main-add\",title:\"新增\"},on:{click:e.audaqueAddItemMixin}}),a(\"audaque-action-icon\",{attrs:{iconClass:\"main-list-search\",title:\"筛选\"},on:{click:e.audaqueToggleSearchMinix}})],1)],1),a(\"template\",{slot:\"search\"},[a(\"audaque-table-search\",{directives:[{name:\"show\",rawName:\"v-show\",value:e.audaqueSearchBarVisibleMixin,expression:\"audaqueSearchBarVisibleMixin\"}],on:{close:function(a){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[a(\"audaque-table-search-item\",{attrs:{title:\"名称\"}},[a(\"el-input\",{attrs:{placeholder:\"请选择名称\",clearable:\"\",maxlength:255},model:{value:e.audaqueSearchMixin.name,callback:function(a){e.$set(e.audaqueSearchMixin,\"name\",\"string\"==typeof a?a.trim():a)},expression:\"audaqueSearchMixin.name\"}})],1)],1)],1),[a(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[a(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:\"序号\",type:\"index\",index:e.audaqueIndexMethodMixin}}),a(\"el-table-column\",{attrs:{prop:\"name\",label:\"名称\",\"show-overflow-tooltip\":\"\"}}),a(\"el-table-column\",{attrs:{label:\"版块类型\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.type_options,t.row.type))}})]}}])}),a(\"el-table-column\",{attrs:{prop:\"sheet.name\",label:\"布局名称\",\"show-overflow-tooltip\":\"\"}}),a(\"el-table-column\",{attrs:{label:\"启用状态\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.enabled_options,t.row.enabled,!0))}})]}}])}),a(\"el-table-column\",{attrs:{width:e.audaqueOpreateWidthMixin,label:\"操作\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[t.row.enabled?e._e():a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"main-edit\",title:\"编辑\"},on:{click:function(a){return e.audaqueGotoEditPageMixin(t.row,e.audaqueFormTypeMixin.edit)}}}),t.row.enabled?a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"main-jinyong1\",title:\"停用\"},on:{click:function(a){return e.goto(\"stop\",t.row)}}}):a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"main-qiyong2\",title:\"启用\"},on:{click:function(a){return e.goto(\"start\",t.row)}}}),\"CUSTOMIZATION\"===t.row.type||t.row.enabled?e._e():a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.delete},expression:\"{ key: audaqueIconTypeMixin.delete }\"}],attrs:{iconClass:\"main-delete\",title:\"删除\"},on:{click:function(a){return e.audaqueDeleteMixin(t.row)}}})]}}])})],1),a(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,\"585e0fbc\",null);a.default=r.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-CONTENT-LIST-RENDER",
+      "resourcePath": "/gsp/static/js/views-content-content-list.a3e83f05.js",
+      "localName": "views-content-content-list.a3e83f05.js",
+      "fetchedAt": "2026-10-27T08:15:37.349Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 8895,
+      "sha256": "2925635bf2afd7bb617e72b986d094110cb3ce4bdcc1f75b6d813258d2b15c2e",
+      "excerpts": [
+        {
+          "anchor": "var e=this,t=e._self._c;return t(\"audaque-table-list-page\",[",
+          "start": 4069,
+          "end": 8565,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "38258260391439c054c16fa49d75129e0e3710cb68d933104586fe1588e071c9",
+          "text": "var e=this,t=e._self._c;return t(\"audaque-table-list-page\",[t(\"template\",{slot:\"title\"},[t(\"audaque-table-title\",{attrs:{title:e.$route.meta.name}},[t(\"audaque-action-icon\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.create},expression:\"{ key: audaqueIconTypeMixin.create }\"}],attrs:{iconClass:\"main-add\",title:\"新增\"},on:{click:e.audaqueAddItemMixin}}),t(\"audaque-action-icon\",{attrs:{iconClass:\"main-list-search\",title:\"筛选\"},on:{click:e.audaqueToggleSearchMinix}})],1)],1),t(\"template\",{slot:\"search\"},[t(\"audaque-table-search\",{directives:[{name:\"show\",rawName:\"v-show\",value:e.audaqueSearchBarVisibleMixin,expression:\"audaqueSearchBarVisibleMixin\"}],on:{close:function(t){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[t(\"audaque-table-search-item\",{attrs:{title:\"标题\"}},[t(\"el-input\",{attrs:{placeholder:\"请选择标题\",clearable:\"\",maxlength:255},model:{value:e.audaqueSearchMixin.title,callback:function(t){e.$set(e.audaqueSearchMixin,\"title\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueSearchMixin.title\"}})],1),t(\"audaque-table-search-item\",{attrs:{title:\"所属栏目\"}},[t(\"el-select\",{attrs:{placeholder:\"请选择所属栏目\"},model:{value:e.audaqueSearchMixin.columnId,callback:function(t){e.$set(e.audaqueSearchMixin,\"columnId\",t)},expression:\"audaqueSearchMixin.columnId\"}},e._l(e.columnListEnabledData,(function(e){return t(\"el-option\",{key:e.id,attrs:{label:e.name,value:e.id}})})),1)],1),t(\"audaque-table-search-item\",{attrs:{title:\"发布状态\"}},[t(\"el-select\",{attrs:{placeholder:\"请选择发布状态\"},model:{value:e.audaqueSearchMixin.published,callback:function(t){e.$set(e.audaqueSearchMixin,\"published\",t)},expression:\"audaqueSearchMixin.published\"}},e._l(e.published_options,(function(e){return t(\"el-option\",{key:e.name,attrs:{label:e.name,value:e.value}})})),1)],1)],1)],1),[t(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[t(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:\"序号\",type:\"index\",index:e.audaqueIndexMethodMixin}}),t(\"el-table-column\",{attrs:{prop:\"title\",label:\"标题\",\"show-overflow-tooltip\":\"\"}}),t(\"el-table-column\",{attrs:{prop:\"columnName\",label:\"所属栏目\",\"show-overflow-tooltip\":\"\"}}),t(\"el-table-column\",{attrs:{label:\"发布状态\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[t(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.published_options,n.row.published,!0))}})]}}])}),t(\"el-table-column\",{attrs:{label:\"发稿日期\",width:e.audaqueDateWidthMixin,\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[t(\"span\",[e._v(e._s(e.audaqueFormatTimeToDateMixin(n.row.commitDate,\"yyyy-MM-dd\")))])]}}])}),t(\"el-table-column\",{attrs:{width:e.audaqueOpreateWidthMixin,label:\"操作\"},scopedSlots:e._u([{key:\"default\",fn:function(n){return[n.row.published?e._e():t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"main-edit\",title:\"编辑\"},on:{click:function(t){return e.audaqueGotoEditPageMixin(n.row,e.audaqueFormTypeMixin.edit)}}}),n.row.published?t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.stop},expression:\"{ key: audaqueIconTypeMixin.stop }\"}],attrs:{iconClass:\"main-jinyong1\",title:\"下架\"},on:{click:function(t){return e.goto(\"stop\",n.row)}}}):t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.start},expression:\"{ key: audaqueIconTypeMixin.start }\"}],attrs:{iconClass:\"main-qiyong2\",title:\"发布\"},on:{click:function(t){return e.goto(\"start\",n.row)}}}),n.row.published?e._e():t(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.delete},expression:\"{ key: audaqueIconTypeMixin.delete }\"}],attrs:{iconClass:\"main-delete\",title:\"删除\"},on:{click:function(t){return e.audaqueDeleteMixin(n.row)}}})]}}])})],1),t(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,\"0bd240ba\",null);t.default=r.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-TEMPLATE-RENDER",
+      "resourcePath": "/gsp/static/js/views-template-list.25f8d7a4.js",
+      "localName": "views-template-list.25f8d7a4.js",
+      "fetchedAt": "2026-10-27T08:15:37.550Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 14141,
+      "sha256": "384b83a044a84922c735bde52a0c3d3e69eafa7b67440f4b6b1b2df831832ada",
+      "excerpts": [
+        {
+          "anchor": "var A=this,t=A._self._c;return t(\"audaque-table-list-page\",{",
+          "start": 6396,
+          "end": 8142,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8aa219ccd6377d4bb5159d013b7c6a8322876f5b8edf8ab98d1e53269090621e",
+          "text": "var A=this,t=A._self._c;return t(\"audaque-table-list-page\",{staticClass:\"template-box\"},[t(\"template\",{slot:\"title\"},[t(\"audaque-table-title\",{attrs:{title:A.$route.meta.name}})],1),[t(\"el-form\",{ref:\"ruleForm\",staticClass:\"template-item\",attrs:{model:A.ruleForm,rules:A.rules,\"label-width\":\"100px\"}},[t(\"el-form-item\",{staticClass:\"item-title\",attrs:{label:\"列表模板\"}}),t(\"el-form-item\",{attrs:{label:\"模板选择\"}},[t(\"el-select\",{attrs:{placeholder:\"请选择模板\"},on:{change:A.listTemplateChange},model:{value:A.ruleForm.listTemplate,callback:function(t){A.$set(A.ruleForm,\"listTemplate\",t)},expression:\"ruleForm.listTemplate\"}},A._l(A.listGspTemplateDo,(function(A){return t(\"el-option\",{key:A.id,attrs:{label:A.templateName,value:A.id}})})),1),t(\"el-button\",{staticClass:\"save-btn\",attrs:{type:\"primary\"},on:{click:function(t){return A.save(A.ruleForm.listTemplate,\"1\")}}},[A._v(\" 保存 \")])],1),t(\"el-form-item\",{attrs:{label:\"预览图\"}},[t(\"div\",[t(\"img\",{attrs:{src:A.listTemplateImg,alt:\"\"}})])]),t(\"el-form-item\",{staticClass:\"item-title\",attrs:{label:\"文章页模板\"}}),t(\"el-form-item\",{attrs:{label:\"模板选择\"}},[t(\"el-select\",{attrs:{placeholder:\"请选择模板\"},on:{change:A.articleTemplateChange},model:{value:A.ruleForm.articleTemplate,callback:function(t){A.$set(A.ruleForm,\"articleTemplate\",t)},expression:\"ruleForm.articleTemplate\"}},A._l(A.articleGspTemplateDo,(function(A){return t(\"el-option\",{key:A.id,attrs:{label:A.templateName,value:A.id}})})),1),t(\"el-button\",{staticClass:\"save-btn\",attrs:{type:\"primary\"},on:{click:function(t){return A.save(A.ruleForm.articleTemplate,\"2\")}}},[A._v(\" 保存 \")])],1),t(\"el-form-item\",{attrs:{label:\"预览图\"}},[t(\"div\",[t(\"img\",{attrs:{src:A.articleTemplateImg,alt:\"\"}})])])],1)]],2)}),[],!1,null,\"4576615f\",null);t.default=C.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-KNOWLEDGE-LIST-RENDER",
+      "resourcePath": "/gsp/static/js/views-knowledge-list.7cbc3e19.js",
+      "localName": "views-knowledge-list.7cbc3e19.js",
+      "fetchedAt": "2026-10-27T08:15:37.529Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 8866,
+      "sha256": "abd68a7f1c598ab97c628679b17c35bd10281922f0d55e25f855165c4538892b",
+      "excerpts": [
+        {
+          "anchor": "var e=this,a=e._self._c;return a(\"audaque-table-list-page\",[",
+          "start": 2617,
+          "end": 8436,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "1cf6ab040d8067511c42bb12adcd60fb8f64beff62b6e22f9023fb6f13a91403",
+          "text": "var e=this,a=e._self._c;return a(\"audaque-table-list-page\",[a(\"template\",{slot:\"title\"},[a(\"audaque-table-title\",{attrs:{title:e.$route.meta.name}},[a(\"audaque-action-icon\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.create},expression:\"{ key: audaqueIconTypeMixin.create }\"}],attrs:{iconClass:\"main-add\",title:\"新增\"},on:{click:e.audaqueAddItemMixin}}),a(\"audaque-action-icon\",{attrs:{iconClass:\"main-list-search\",title:\"筛选\"},on:{click:e.audaqueToggleSearchMinix}})],1)],1),a(\"template\",{slot:\"search\"},[a(\"audaque-table-search\",{directives:[{name:\"show\",rawName:\"v-show\",value:e.audaqueSearchBarVisibleMixin,expression:\"audaqueSearchBarVisibleMixin\"}],on:{close:function(a){e.audaqueSearchBarVisibleMixin=!1},search:e.audaqueSearchListMixin,reset:e.audaqueResetListMixin}},[a(\"audaque-table-search-item\",{attrs:{title:\"标题\"}},[a(\"el-input\",{attrs:{placeholder:\"请输入标题关键词进行搜索\",clearable:\"\",maxlength:255},model:{value:e.audaqueSearchMixin.title,callback:function(a){e.$set(e.audaqueSearchMixin,\"title\",\"string\"==typeof a?a.trim():a)},expression:\"audaqueSearchMixin.title\"}})],1),a(\"audaque-table-search-item\",{attrs:{title:\"类型\"}},[a(\"el-select\",{attrs:{placeholder:\"请选择类型\",clearable:\"\"},model:{value:e.audaqueSearchMixin.category,callback:function(a){e.$set(e.audaqueSearchMixin,\"category\",a)},expression:\"audaqueSearchMixin.category\"}},e._l(e.type_options,(function(e){return a(\"el-option\",{key:e.value,attrs:{label:e.name,value:e.value}})})),1)],1),a(\"audaque-table-search-item\",{attrs:{title:\"状态\"}},[a(\"el-select\",{attrs:{placeholder:\"请选择状态\",clearable:\"\"},model:{value:e.audaqueSearchMixin.status,callback:function(a){e.$set(e.audaqueSearchMixin,\"status\",a)},expression:\"audaqueSearchMixin.status\"}},e._l(e.status_options,(function(e){return a(\"el-option\",{key:e.value,attrs:{label:e.name,value:e.value}})})),1)],1),a(\"audaque-table-search-item\",{attrs:{title:\"更新时间\"}},[a(\"el-date-picker\",{attrs:{clearable:\"\",type:\"datetimerange\",\"range-separator\":\"-\",\"picker-options\":e.audaquePickerOptionsMixin,\"start-placeholder\":\"开始日期\",\"end-placeholder\":\"结束日期\",\"value-format\":\"yyyy-MM-ddTHH:mm:ss\",format:\"yyyy-MM-dd HH:mm\"},on:{change:e.handleOptTimeChange},model:{value:e.audaqueTempData.lastModifyTime,callback:function(a){e.$set(e.audaqueTempData,\"lastModifyTime\",a)},expression:\"audaqueTempData.lastModifyTime\"}})],1)],1)],1),[a(\"audaque-table\",{attrs:{data:e.audaqueDataListMixin.datas,\"table-fetch-status\":e.audaqueTableFetchStatusMixin},on:{\"request-list\":e.audaqueRequestListMixin}},[a(\"el-table-column\",{attrs:{width:e.audaqueIndexWidthMixin,label:\"序号\",type:\"index\",index:e.audaqueIndexMethodMixin}}),a(\"el-table-column\",{attrs:{prop:\"title\",label:\"标题\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.read},expression:\"{ key: audaqueIconTypeMixin.read }\"}],attrs:{type:\"key\",title:t.row.title},on:{click:function(a){return e.audaqueGotoEditPageMixin(t.row,e.audaqueFormTypeMixin.view)}}})]}}])}),a(\"el-table-column\",{attrs:{label:\"类型\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.type_options,t.row.category))}})]}}])}),a(\"el-table-column\",{attrs:{label:\"状态\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"span\",{domProps:{innerHTML:e._s(e.$utils.getEnumLabel(e.status_options,t.row.status,!0))}})]}}])}),a(\"el-table-column\",{attrs:{prop:\"viewCount\",label:\"访问量\",sortable:\"\",\"show-overflow-tooltip\":\"\"}}),a(\"el-table-column\",{attrs:{prop:\"collectCount\",label:\"收藏量\",sortable:\"\",\"show-overflow-tooltip\":\"\"}}),a(\"el-table-column\",{attrs:{prop:\"downloadCount\",label:\"下载量\",sortable:\"\",\"show-overflow-tooltip\":\"\"}}),a(\"el-table-column\",{attrs:{prop:\"lastModifyTime\",label:\"更新时间\",\"show-overflow-tooltip\":\"\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[a(\"span\",[e._v(e._s(e.audaqueFormatTimeToDateMixin(t.row.lastModifyTime)))])]}}])}),a(\"el-table-column\",{attrs:{width:e.audaqueOpreateWidthMixin,label:\"操作\"},scopedSlots:e._u([{key:\"default\",fn:function(t){return[0==t.row.status?a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"main-edit\",title:\"编辑\"},on:{click:function(a){return e.audaqueGotoEditPageMixin(t.row,e.audaqueFormTypeMixin.edit)}}}):e._e(),1==t.row.status?a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"gsp-xiaxian\",title:\"下线\"},on:{click:function(a){return e.operating(t.row)}}}):e._e(),0==t.row.status?a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.update},expression:\"{ key: audaqueIconTypeMixin.update }\"}],attrs:{iconClass:\"gsp-shangxian\",title:\"上线\"},on:{click:function(a){return e.operating(t.row)}}}):e._e(),0==t.row.status?a(\"audaque-link-text\",{directives:[{name:\"audaque-permission\",rawName:\"v-audaque-permission\",value:{key:e.audaqueIconTypeMixin.delete},expression:\"{ key: audaqueIconTypeMixin.delete }\"}],attrs:{iconClass:\"main-delete\",title:\"删除\"},on:{click:function(a){return e.audaqueDeleteMixin(t.row)}}}):e._e()]}}])})],1),a(\"audaque-pagination\",{attrs:{\"current-page\":e.audaquePageRequestMixin.pageNo,\"page-size\":e.audaquePageRequestMixin.pageSize,total:e.audaqueDataListMixin.total},on:{\"size-change\":e.audaqueOnSizeChangeMixin,\"current-change\":e.audaqueOnCurrentChangeMixin}})]],2)}),[],!1,null,\"0657f8ab\",null);a.default=r.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-ENUM",
+      "resourcePath": "/gsp/static/js/views-knowledge-enumerate.f6346027.js",
+      "localName": "views-knowledge-enumerate.f6346027.js",
+      "fetchedAt": "2026-10-27T08:15:37.508Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 638,
+      "sha256": "89ac4caa02c1d901104156a2f16335bb92ae3ace69ec83d334e03e5cc76137ef",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 558,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "89ac4caa02c1d901104156a2f16335bb92ae3ace69ec83d334e03e5cc76137ef",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"views-knowledge-enumerate\"],{\"87a5\":function(e,n,a){\"use strict\";a.r(n),a.d(n,\"type_options\",(function(){return u})),a.d(n,\"status_options\",(function(){return t})),a.d(n,\"stdCategory_options\",(function(){return o}));var u=[{name:\"政策依据\",value:\"1\"},{name:\"标准规范\",value:\"2\"},{name:\"对接指引\",value:\"3\"},{name:\"操作指引\",value:\"4\"}],t=[{name:\"下线\",value:\"0\"},{name:\"上线\",value:\"1\"}],o=[{name:\"国家标准\",value:\"1\"},{name:\"行业标准\",value:\"2\"},{name:\"地方标准\",value:\"3\"},{name:\"企业标准\",value:\"4\"},{name:\"团体标准\",value:\"5\"}]}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-KNOWLEDGE",
+      "resourcePath": "/gsp/static/js/views-knowledge-edit.9fd81605.js",
+      "localName": "views-knowledge-edit.9fd81605.js",
+      "fetchedAt": "2026-10-27T08:15:37.475Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 10997,
+      "sha256": "19f6576509b6716d66c5636994633b52fa71e642b718f483b9ed29d9090185c5",
+      "excerpts": [
+        {
+          "anchor": "audaqueFormInfoMixin:",
+          "start": 2412,
+          "end": 2853,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c2ef32dc4392b7cfd279ea0e8c17fcdfc9ac932c623ab736d2477b11440faebb",
+          "text": "audaqueFormInfoMixin:{title:null,category:null,stdCategory:null,url:\"\",body:\"\",gspAttachmentDos:[],remark:\"\"},audaqueFormRulesMixin:{title:[i.AudaqueElementValidator.isNotEmpty()],category:[i.AudaqueElementValidator.isNotEmpty(\"change\")],stdCategory:[i.AudaqueElementValidator.isNotEmpty(\"change\")],url:[{required:!1,trigger:\"blur\",pattern:/(http|https):\\/\\/[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-.,@?^=%&:/~+#]*[\\w\\-@?^=%&/~+#])?/,message:\"不是合法的链接\"}]},"
+        },
+        {
+          "anchor": "accept:",
+          "start": 2910,
+          "end": 3043,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "93b71bbe9a3a72fdbf2efe381c4f9fc9142c53d4ccac8155c86db095beeeb29f",
+          "text": "accept:\".pdf,.xlsx,.xls,.docx,.doc,.txt,.png,.jpg,.jpeg,.gif,.bmp,.jar,.zip\",downloadUrl:d.API_BASE_URL+l.content+\"/gspOss/download1\""
+        },
+        {
+          "anchor": "audaqueReadAfterHandleMixin:",
+          "start": 4710,
+          "end": 5122,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "e682a41e832a9d0cf15518233d6f8c9df5b6c2b05498071ee4e0e0e762d93975",
+          "text": "audaqueReadAfterHandleMixin:function(){this.audaqueFormInfoMixin.gspAttachmentDos&&(this.fileList=JSON.parse(JSON.stringify(this.audaqueFormInfoMixin.gspAttachmentDos))),this.audaqueFormInfoMixin=JSON.parse(JSON.stringify(this.audaqueFormInfoMixin));var e=this.audaqueFormInfoMixin.body.replace(this.matchBaseUrlReg,d.API_BASE_URL+l.oss);this.editor.setData(this.$audaquePreventXss(e,this.$utils.xssOptions()))},"
+        },
+        {
+          "anchor": "onFilePreview:",
+          "start": 5306,
+          "end": 7132,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "b3a41903aa5dcbfe02119f1df79dcda2649231bbe42ec78bbcf840efa1f89561",
+          "text": "onFilePreview:function(e){if(e&&e.id){var t=this.downloadUrl+\"/\"+e.url;this.downloadFileXhr(t,e.name)}},downloadFileXhr:function(e,t){window.URL=window.URL||window.webkitURL;var a=new XMLHttpRequest;a.open(\"get\",e,!0),a.setRequestHeader(\"adq-token\",c),a.setRequestHeader(\"X-CSRF-TOKEN\",p()),a.responseType=\"blob\",a.onload=function(){if(200==this.status){var e=this.response,a=document.createElement(\"a\");a.download=t,a.style.display=\"none\",a.href=URL.createObjectURL(e),document.body.appendChild(a),a.click(),URL.revokeObjectURL(a.href),document.body.removeChild(a)}},a.send()},onBeforeUpload:function(e){var t=this.accept.split(\",\"),a=e.name.split(\".\").pop().toLowerCase();return-1===t.indexOf(\".\".concat(a))?(this.$AudaqueToast.error({template:\"只允许上传\".concat(t.join(\",\"),\"格式的文件\")}),!1):!(e.size>1024*this.uploadFileSize*1024)||(this.$AudaqueToast.error({template:\"超出单个文件最大\".concat(this.uploadFileSize,\"M限制！\")}),!1)},onFileUploadSuccess:function(e,t){var a=t.name,o=a.lastIndexOf(\".\");this.fileList.push({url:e,name:t.name,deleteFlag:1,fileSuffix:a.substr(o+1)})},onFileDelete:function(e,t){if(e.id){var a=e;a.deleteFlag=0,this.deleteFileList.push(a)}this.fileList=t},onFileUploadError:function(e){this.$AudaqueToast.error({template:e.message?e.message:e.msg})},onExceed:function(){this.$AudaqueToast.warn({template:\"最多只能上传5个文件\"})},save:function(){var e=this;this.$refs.audaqueFormRef.validate((function(t){if(t){var a=JSON.parse(JSON.stringify(e.audaqueFormInfoMixin));a.gspAttachmentDos=e.deleteFileList.concat(e.fileList),a.body=e.editor.getData(),e.audaqueFormInfoMixin&&e.audaqueFormInfoMixin.id?Object(o.updateinfo)(e.audaqueFormInfoMixin.id,a).then((function(){e.$AudaqueToast.tip({template:\"保存成功！\"}),e.doClose()})):Object(o.createinfo)(a).then((function(){e.$AudaqueToast.tip({template:\"保存成功！\"}),e.doClose()}))}}))}},"
+        },
+        {
+          "anchor": "label:\"知识标题\"",
+          "start": 7918,
+          "end": 10632,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ba24cbb726a7c4c249a44445598aef1b88bfb490fec8084fa83e05ae78be02c1",
+          "text": "label:\"知识标题\",prop:\"title\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入知识标题\",maxlength:150},model:{value:e.audaqueFormInfoMixin.title,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"title\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.title\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:12}},[t(\"el-form-item\",{attrs:{label:\"知识分类\",prop:\"category\"}},[t(\"el-select\",{attrs:{placeholder:\"请选择知识分类\"},model:{value:e.audaqueFormInfoMixin.category,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"category\",t)},expression:\"audaqueFormInfoMixin.category\"}},e._l(e.type_options,(function(e){return t(\"el-option\",{key:e.value,attrs:{label:e.name,value:e.value}})})),1)],1)],1),2==e.audaqueFormInfoMixin.category?t(\"el-col\",{attrs:{span:12}},[t(\"el-form-item\",{attrs:{label:\"标准类别\",prop:\"stdCategory\"}},[t(\"el-select\",{attrs:{placeholder:\"请选择标准类别\"},model:{value:e.audaqueFormInfoMixin.stdCategory,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"stdCategory\",t)},expression:\"audaqueFormInfoMixin.stdCategory\"}},e._l(e.stdCategory_options,(function(e){return t(\"el-option\",{key:e.value,attrs:{label:e.name,value:e.value}})})),1)],1)],1):e._e()],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"内容\",prop:\"body\"}},[t(\"div\",{attrs:{id:\"toolbar-container\"}}),t(\"div\",{attrs:{id:\"editor\"}})])],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"相关链接\",prop:\"url\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入相关链接\",maxlength:250},model:{value:e.audaqueFormInfoMixin.url,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"url\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.url\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"上传文档\",prop:\"gspAttachmentDos\"}},[t(\"el-upload\",{attrs:{headers:e.headers,action:e.uploadUrl,limit:5,accept:e.accept,\"before-upload\":e.onBeforeUpload,\"on-success\":e.onFileUploadSuccess,\"on-preview\":e.onFilePreview,\"on-remove\":e.onFileDelete,\"on-error\":e.onFileUploadError,\"on-exceed\":e.onExceed,\"file-list\":e.fileList}},[t(\"el-button\",{attrs:{icon:\"el-icon-upload2\"}},[e._v(\"上传文件\")]),t(\"div\",{staticClass:\"el-upload__tip\",attrs:{slot:\"tip\"},slot:\"tip\"},[e._v(\" \"+e._s(\"支持格式\"+e.accept.split(\",\")+\"文件\")+\" \")])],1)],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"文档说明\",prop:\"remark\"}},[t(\"el-input\",{attrs:{type:\"textarea\",placeholder:\"请输入文档说明\",maxlength:255},model:{value:e.audaqueFormInfoMixin.remark,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"remark\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.remark\"}})],1)],1)],1)],1)],1)}),[],!1,null,\"5fe5bc16\",null);t.default=g.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-CONTENT",
+      "resourcePath": "/gsp/static/js/views-content-content-edit.995a4e3e.js",
+      "localName": "views-content-content-edit.995a4e3e.js",
+      "fetchedAt": "2026-10-27T08:15:37.231Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 16903,
+      "sha256": "291079239b08cfa23f1846a637f04ed68ae5bcb45aab1b5909915e6ecce436a5",
+      "excerpts": [
+        {
+          "anchor": "audaqueFormInfoMixin:",
+          "start": 3945,
+          "end": 4964,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "c3375a58db173610eac46eca48107d17430d2cbef983c0f6c937a8353379c6a4",
+          "text": "audaqueFormInfoMixin:{title:\"\",titleShow:\"\",column:\"\",slidePicture:null,coverPicture:null,tilePicture:null,source:\"\",commitDate:\"\",overview:\"\",linkFlag:!1,body:\"\",url:\"\",attachment:null},pickerBeginDateBefore:{disabledDate:function(e){return e.getTime()>Date.now()}},audaqueFormRulesMixin:{title:[r.AudaqueElementValidator.isNotEmpty(),{required:!0,trigger:\"blur\",validator:function(e,t,n){/^[^<>]+$/.test(t+\"\")?n():n(new Error(\"不能够包含'<'、'>'字符\"))}}],columnName:[r.AudaqueElementValidator.isNotEmpty()],column:[r.AudaqueElementValidator.isNotEmpty(\"change\")],slidePicture:[r.AudaqueElementValidator.isNotEmpty()],coverPicture:[r.AudaqueElementValidator.isNotEmpty()],tilePicture:[r.AudaqueElementValidator.isNotEmpty()],source:[r.AudaqueElementValidator.isNotEmpty()],commitDate:[r.AudaqueElementValidator.isNotEmpty()],linkFlag:[r.AudaqueElementValidator.isNotEmpty(\"change\")],url:[{required:!1,trigger:\"blur\",pattern:/(http|https):\\/\\/[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-.,@?^=%&:/~+#]*[\\w\\-@?^=%&/~+#])?/,message:\"不是合法的链接\"}]},"
+        },
+        {
+          "anchor": "published_column_options:",
+          "start": 4964,
+          "end": 6678,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a735fd9f76e038693c99457a8c6e037b7ab8eb0c080001fe9c9ad26faccc4246",
+          "text": "published_column_options:[],columnTypeInfo:{SLIDE_SHOW:{name:\"轮播图片\",value:\"slidePicture\"},TILE:{name:\"磁贴图片\",value:\"tilePicture\"},PICTURE:{name:\"封面图片\",value:\"coverPicture\"},PICTURE_TEXT:{name:\"封面图片\",value:\"coverPicture\"}},accept:\".pdf,.xlsx,.xls,.docx,.doc,.txt,.png,.jpg,.jpeg,.gif,.bmp,.jar,.zip\",uploadUrl:c.API_BASE_URL+l.content+\"/gspOss/temp/upload\",displayUrl:c.API_BASE_URL+l.content+\"/gspOss/per/imgbs\",downloadUrl:c.API_BASE_URL+l.content+\"/gspOss/download1\",matchBaseUrlReg:/https?:\\/\\/[^>]+\\/common\\/oss/g,editor:null,fileList:[],headers:{\"adq-token\":d,Accept:\"application/json\",\"X-CSRF-TOKEN\":m()},uploadFileSize:window.uploadFileSize||10}},components:{},watch:{},computed:{imageUploadConfig:function(){var e=this.audaqueFormInfoMixin.column;if(e){var t=this.getTypeById(e)||{};return this.columnTypeInfo[t.type]}return null}},created:function(){this.getColumnListEnabled()},mounted:function(){this.initCKEditor()},methods:{doClose:function(){this.$router.go(-1)},getTypeById:function(e){return this.published_column_options.find((function(t){return t.id===e}))},getColumnListEnabled:function(){var e=this;\"edit\"===this.$route.query.optType?Object(i.columnAllListEnabled)().then((function(t){e.published_column_options=t})):Object(i.columnListEnabled)().then((function(t){e.published_column_options=t}))},beforePictureUpload:function(e){var t=e.size/1024<=500;return t||this.$AudaqueToast.error({template:\"图片大小不能超过 500KB!\"}),t},picSrc:function(e){return this.displayUrl+\"/\"+e},removePicture:function(e){this.audaqueFormInfoMixin[e]=null},uploadSuccess:function(e,t,n){var o=this,i=new FileReader;i.readAsDataURL(t.raw),i.onload=function(t){o.audaqueFormInfoMixin[n]={url:e,base64Url:t.target.result}}},"
+        },
+        {
+          "anchor": "audaqueReadAfterHandleMixin:",
+          "start": 8247,
+          "end": 10870,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "e864fb46591092293294ef87af5e156f84d68c4d53bec622149d4ce032b8e3be",
+          "text": "audaqueReadAfterHandleMixin:function(){this.audaqueFormInfoMixin.column=+this.audaqueFormInfoMixin.columnId,this.audaqueFormInfoMixin.attachment&&this.fileList.push(this.audaqueFormInfoMixin.attachment),this.audaqueFormInfoMixin=JSON.parse(JSON.stringify(this.audaqueFormInfoMixin));var e=this.audaqueFormInfoMixin.body.replace(this.matchBaseUrlReg,c.API_BASE_URL+l.oss);this.editor.setData(this.$audaquePreventXss(e,this.$utils.xssOptions()))},filterAttributes:function(e){for(var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[],n={},o=Object.keys(e),i=0;i<o.length;i++)t.includes(o[i])&&(n[o[i]]=e[o[i]]);return n},doSubmit:function(e){var t=this;this.$refs.audaqueFormRef.validate((function(n){if(n){var i=JSON.parse(JSON.stringify(t.audaqueFormInfoMixin));i.columnId=t.audaqueFormInfoMixin.column,i.slidePicture&&(i.slidePicture.base64Url=\"\"),t.fileList[0]&&!t.audaqueFormInfoMixin.linkFlag?i.attachment=t.fileList[0]:i.attachment=null,i.body=t.editor.getData(),t.audaqueFormInfoMixin&&t.audaqueFormInfoMixin.id?Object(o.updateContent)(t.audaqueFormInfoMixin.id,i).then((function(){e?t.doPublish(t.audaqueFormInfoMixin.id):(t.$AudaqueToast.tip({template:\"保存成功！\"}),t.doClose())})):Object(o.createContent)(i).then((function(n){e?t.doPublish(n):(t.$AudaqueToast.tip({template:\"保存成功！\"}),t.doClose())}))}}))},doPublish:function(e){var t=this;Object(o.publishContent)(e).then((function(){t.$AudaqueToast.tip({template:\"保存并发布成功！\"}),t.doClose()}))},onFilePreview:function(e){if(e&&e.id){var t=this.downloadUrl+\"/\"+e.url;this.downloadFileXhr(t,e.name)}},downloadFileXhr:function(e,t){window.URL=window.URL||window.webkitURL;var n=new XMLHttpRequest;n.open(\"get\",e,!0),n.setRequestHeader(\"adq-token\",d),n.setRequestHeader(\"X-CSRF-TOKEN\",m()),n.responseType=\"blob\",n.onload=function(){if(200==this.status){var e=this.response,n=document.createElement(\"a\");n.download=t,n.style.display=\"none\",n.href=URL.createObjectURL(e),document.body.appendChild(n),n.click(),URL.revokeObjectURL(n.href),document.body.removeChild(n)}},n.send()},onBeforeUpload:function(e){var t=this.accept.split(\",\"),n=e.name.split(\".\").pop().toLowerCase();return-1===t.indexOf(\".\".concat(n))?(this.$AudaqueToast.error({template:\"只允许上传\".concat(t.join(\",\"),\"格式的文件\")}),this.fileList=[],!1):!(e.size>1024*this.uploadFileSize*1024)||(this.$AudaqueToast.error({template:\"超出单个文件最大\".concat(this.uploadFileSize,\"M限制！\")}),this.fileList=[],!1)},onFileUploadSuccess:function(e,t){this.fileList.push({url:e,name:t.name})},onFileDelete:function(e,t){this.fileList=t},onFileUploadError:function(e){this.$AudaqueToast.error({template:e.message?e.message:e.msg})}},"
+        },
+        {
+          "anchor": "label:\"标题\"",
+          "start": 11727,
+          "end": 16299,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "1fdcc43cba156681b70896b0a6c5c9a07328e0289ef37ef6da342553380ed757",
+          "text": "label:\"标题\",prop:\"title\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入标题\",maxlength:150},model:{value:e.audaqueFormInfoMixin.title,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"title\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.title\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"短标题\",prop:\"titleShow\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入标题\",maxlength:30},model:{value:e.audaqueFormInfoMixin.titleShow,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"titleShow\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.titleShow\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"发布栏目\",prop:\"column\"}},[t(\"el-select\",{staticStyle:{width:\"100%\"},attrs:{placeholder:\"请选择发布栏目\"},model:{value:e.audaqueFormInfoMixin.column,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"column\",t)},expression:\"audaqueFormInfoMixin.column\"}},e._l(e.published_column_options,(function(e){return t(\"el-option\",{key:e.id,attrs:{label:e.name,value:e.id}})})),1)],1)],1)],1),e.imageUploadConfig?t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:e.imageUploadConfig.name,prop:e.imageUploadConfig.value}},[e.audaqueFormInfoMixin[e.imageUploadConfig.value]?[t(\"img\",{key:e.uploadUrl,staticStyle:{width:\"300px\",height:\"200px\"},attrs:{src:e.audaqueFormInfoMixin[e.imageUploadConfig.value].base64Url||e.picSrc(e.audaqueFormInfoMixin[e.imageUploadConfig.value].url)}}),t(\"div\",{staticClass:\"item-content\"},[t(\"el-button\",{attrs:{size:\"small\",type:\"primary\"},on:{click:function(t){return e.removePicture(e.imageUploadConfig.value)}}},[e._v(\" 删除 \")])],1)]:t(\"div\",{staticClass:\"item-content\"},[t(\"el-upload\",{staticClass:\"upload-demo\",attrs:{action:e.uploadUrl,headers:e.headers,accept:\"image/bmp,image/jpg,image/jpeg,image/png\",\"on-success\":function(t,n){return e.uploadSuccess(t,n,e.imageUploadConfig.value)},\"show-file-list\":!1,\"before-upload\":e.beforePictureUpload,multiple:!1}},[t(\"el-button\",{attrs:{size:\"small\",type:\"primary\"}},[e._v(\"选择文件\")]),t(\"div\",{staticClass:\"el-upload__tip\",attrs:{slot:\"tip\"},slot:\"tip\"},[e._v(\" 支持格式bmp,jpg,jpeg,png文件，图片尺寸640×360,不超过500KB \")])],1)],1)],2)],1)],1):e._e(),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"来源\",prop:\"source\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入来源\",maxlength:50},model:{value:e.audaqueFormInfoMixin.source,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"source\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.source\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"发稿日期\",prop:\"commitDate\"}},[t(\"el-date-picker\",{attrs:{\"picker-options\":e.pickerBeginDateBefore,type:\"date\",placeholder:\"选择日期\"},model:{value:e.audaqueFormInfoMixin.commitDate,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"commitDate\",t)},expression:\"audaqueFormInfoMixin.commitDate\"}})],1)],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"正文\",prop:\"body\"}},[t(\"div\",{attrs:{id:\"toolbar-container\"}}),t(\"div\",{attrs:{id:\"editor\"}})])],1)],1),t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"是否外部链接\",prop:\"linkFlag\"}},[t(\"el-radio-group\",{model:{value:e.audaqueFormInfoMixin.linkFlag,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"linkFlag\",t)},expression:\"audaqueFormInfoMixin.linkFlag\"}},[t(\"el-radio\",{attrs:{label:!0}},[e._v(\"是\")]),t(\"el-radio\",{attrs:{label:!1}},[e._v(\"否\")])],1)],1)],1)],1),e.audaqueFormInfoMixin.linkFlag?t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"链接地址\",prop:\"url\"}},[t(\"el-input\",{attrs:{type:\"text\",placeholder:\"请输入链接地址\",maxlength:255},model:{value:e.audaqueFormInfoMixin.url,callback:function(t){e.$set(e.audaqueFormInfoMixin,\"url\",\"string\"==typeof t?t.trim():t)},expression:\"audaqueFormInfoMixin.url\"}})],1)],1)],1):e._e(),e.audaqueFormInfoMixin.linkFlag?e._e():t(\"el-row\",[t(\"el-col\",{attrs:{span:24}},[t(\"el-form-item\",{attrs:{label:\"相关材料\",prop:\"attachment\"}},[t(\"el-upload\",{attrs:{headers:e.headers,action:e.uploadUrl,accept:e.accept,limit:1,\"before-upload\":e.onBeforeUpload,\"on-success\":e.onFileUploadSuccess,\"on-preview\":e.onFilePreview,\"on-remove\":e.onFileDelete,\"on-error\":e.onFileUploadError,\"file-list\":e.fileList}},[t(\"el-button\",{attrs:{icon:\"el-icon-upload2\"}},[e._v(\"上传文件\")]),t(\"div\",{staticClass:\"el-upload__tip\",attrs:{slot:\"tip\"},slot:\"tip\"},[e._v(\" \"+e._s(\"支持格式\"+e.accept.split(\",\")+\"文件\")+\" \")])],1)],1)],1)],1)],1)],1)}),[],!1,null,null,null);t.default=h.exports"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-UPLOAD",
+      "resourcePath": "/gsp/static/js/views-content-content-MyUploadAdapter.29740253.js",
+      "localName": "views-content-content-MyUploadAdapter.29740253.js",
+      "fetchedAt": "2026-10-27T08:15:37.209Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 2466,
+      "sha256": "7f0c695205bcdb7733095598a525c29f3c6c48d6211db1e98fb7fa682943ee03",
+      "excerpts": [
+        {
+          "anchor": "(window.webpackJsonp_gsp",
+          "start": 0,
+          "end": 2466,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "7f0c695205bcdb7733095598a525c29f3c6c48d6211db1e98fb7fa682943ee03",
+          "text": "(window.webpackJsonp_gsp=window.webpackJsonp_gsp||[]).push([[\"views-content-content-MyUploadAdapter\",\"api-serviceConstant\"],{\"5c0b\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"content\",(function(){return r})),n.d(t,\"oss\",(function(){return s}));var r=\"/gsp/manage\",s=\"/common/oss\"},\"6f1d\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"default\",(function(){return p}));n(\"d9e2\");var r=n(\"a38e\");function s(e,t){for(var n=0;n<t.length;n++){var s=t[n];s.enumerable=s.enumerable||!1,s.configurable=!0,\"value\"in s&&(s.writable=!0),Object.defineProperty(e,Object(r.a)(s.key),s)}}n(\"d3b7\"),n(\"b0c0\"),n(\"e9c4\");var o=n(\"bcab\"),i=n(\"5c0b\"),a=Object(o.b)(),u=a.config,d=a.adqToken,c=a.csrfToken,l=function(){function e(t,n){!function(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}(this,e),this.loader=t,this.ossInside=n,this.url=u.API_BASE_URL+i.content+\"/gspOss/upload\",this.displayUrl=u.API_BASE_URL+i.content+\"/gspOss/per/imgbs\",this.adqToken=d,this.csrfToken=c()}var t,n,r;return t=e,(n=[{key:\"upload\",value:function(){var e=this;return this.loader.file.then((function(t){return new Promise((function(n,r){e._initRequest(),e._initListeners(n,r,t),e._sendRequest(t)}))}))}},{key:\"abort\",value:function(){this.xhr&&this.xhr.abort()}},{key:\"_initRequest\",value:function(){var e=this.xhr=new XMLHttpRequest;e.open(\"POST\",this.url,!0),e.setRequestHeader(\"adq-token\",this.adqToken),e.setRequestHeader(\"X-CSRF-TOKEN\",this.csrfToken),e.setRequestHeader(\"withCredentials\",!0),e.setRequestHeader(\"Accept\",\"text/plain\"),e.responseType=\"text\"}},{key:\"_initListeners\",value:function(e,t,n){var r=this,s=this.xhr,o=this.loader,i=\"Couldn't upload file: \".concat(n.name,\".\");s.addEventListener(\"error\",(function(){return t(i)})),s.addEventListener(\"abort\",(function(){return t()})),s.addEventListener(\"load\",(function(){var n=s.response;if(!n||n.error)return t(n&&n.error&&n.error.message?n.error.message:i);e({default:r.displayUrl+\"/\"+n})})),s.upload&&s.upload.addEventListener(\"progress\",(function(e){e.lengthComputable&&(o.uploadTotal=e.total,o.uploaded=e.loaded)}))}},{key:\"_sendRequest\",value:function(e){var t=new FormData;t.append(\"file\",e||\"---\"),t.append(\"ossInside\",new Blob([JSON.stringify(this.ossInside)],{type:\"application/json\"})),this.xhr.send(t)}}])&&s(t.prototype,n),r&&s(t,r),Object.defineProperty(t,\"prototype\",{writable:!1}),e}();function p(e,t){e.plugins.get(\"FileRepository\").createUploadAdapter=function(e){return new l(e,t)}}}}]);"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-MIXINS",
+      "resourcePath": "/gsp/static/js/chunk-@audaque/vue-utils.a017c2f9.js",
+      "localName": "vue-utils.a017c2f9.js",
+      "fetchedAt": "2026-10-27T08:15:37.674Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 396507,
+      "sha256": "b65b52f020edee1334eb68625816158845d003ffece53a8da53c54a909fa1827",
+      "excerpts": [
+        {
+          "anchor": "audaqueDeleteMixin:function",
+          "start": 331026,
+          "end": 336382,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "f2675175563b575fcf88d90ecba0a93e30d8397a68f834e01228185441f78b23",
+          "text": "audaqueDeleteMixin:function(e){if(this.audaqueDeleteRowItemMixin=e,this.audaqueCheckDeleteMixin&&this.audaqueCheckDeleteMixin(e)){var t=this;this.$AudaqueToast.warn({template:this.$t?this.$t(this.audaqueDeleteHintTextKeyMixin):this.audaqueDeleteHintMixin,methods:{okEvent:function(){t.audaqueRequestDeleteMixin(e.id)}}})}},audaqueDeleteBatchMixin:function(e){var t=this;\"string\"==typeof e&&e||Array.isArray(e)&&e.length>0?this.$AudaqueToast.warn({template:t.$t?t.$t(t.audaqueDeleteHintTextKeyMixin):t.audaqueDeleteHintMixin,methods:{okEvent:function(){t.audaqueRequestDeleteMixin(e)}}}):this.$AudaqueToast.error({template:this.$t?this.$t(this.audaqueDeleteChockeHintTextKeyMixin):this.audaqueDeleteChockeHintMixin})},audaqueRequestDeleteMixin:function(t){var r=this;e&&e(t).then((function(){var e=r;r.$AudaqueToast.tip({template:r.$t?e.$t(e.audaqueDeleteSuccessTextKeyHint):e.audaqueDeleteSuccessHint,methods:{okEvent:function(){1==e.audaqueDataListMixin.datas.length%e.audaquePageRequestMixin.pageSize&&e.audaquePageRequestMixin.pageNo>1&&e.audaquePageRequestMixin.pageNo--,e.audaqueDeleteAfterHandle?e.audaqueDeleteAfterHandle():e.audaqueRequestListMixin&&e.audaqueRequestListMixin()}}})})).catch((function(e){}))},audaqueCheckDeleteMixin:function(e){return!0}}}},o=(r(\"e9c4\"),r(\"cca6\"),r(\"b64b\"),function(e){return{data:function(){return{audaqueIsRequestFirstMixin:!0,audaqueSearchMixin:{},audaqueOldSearchMixin:{},audaqueFixedSearchMixin:{},audaquePageRequestMixin:{pageSize:20,pageNo:1,order:[{prop:\"id\",asc:!1}]},audaqueDataListMixin:{datas:[],total:0},audaqueTableFetchStatusMixin:1,audaqueSearchBarVisibleMixin:!1,audaqueListIsStoreMixin:!0,audaquePathMixin:window.location.pathname}},watch:{\"$i18n.locale\":{handler:function(){this.resetData()},immediate:!0}},created:function(){var e=this;this.audaqueOldSearchMixin=JSON.stringify(this.audaqueSearchMixin),this.getSaveSearchStore(),setTimeout((function(){e.audaqueIsRequestFirstMixin&&e.audaqueRequestListMixin()}),0)},methods:{getSaveSearchStore:function(){if(this.audaqueListIsStoreMixin){var e=sessionStorage.getItem(\"listSearchStore\");if(e&&(e=JSON.parse(e)).path===this.audaquePathMixin){this.audaqueSearchMixin=e.value;var t=e.value.pageRequest;this.audaquePageRequestMixin.pageNo=t.pageNo||1,this.audaquePageRequestMixin.pageSize=t.pageSize||20}}return null},audaqueRequestListMixin:function(t){var r=this,n=t||e;if(n){this.audaquefetchBeforeHandleMixin&&this.audaquefetchBeforeHandleMixin(),this.audaqueTableFetchStatusMixin=1;var i={pageNo:this.audaquePageRequestMixin.pageNo,pageSize:this.audaquePageRequestMixin.pageSize,order:this.audaquePageRequestMixin.order};this.audaqueSearchMixin=Object.assign(this.audaqueSearchMixin,{pageRequest:i}),n(Object.assign({},this.audaqueSearchMixin,this.audaqueFixedSearchMixin)).then((function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=e.hasOwnProperty(\"datas\"),n=[],i=0;n=(t?e.datas:e)||[],i=(t?e.total:e.length)||0,r.audaqueDataListMixin.datas=n,r.audaqueDataListMixin.total=i,r.audaqueTableFetchStatusMixin=0===i?3:2,r.audaqueFetchAfterHandleMixin&&r.audaqueFetchAfterHandleMixin()})).catch((function(e){r.audaqueTableFetchStatusMixin=4}))}},audaqueSearchListMixin:function(){this.audaquePageRequestMixin.pageNo=1,this.audaqueRequestListMixin()},audaqueAddFixedSearchParamMixin:function(e,t){this.audaqueOldSearchMixin=JSON.parse(this.audaqueOldSearchMixin),this.audaqueOldSearchMixin[e]=t,this.audaqueOldSearchMixin=JSON.stringify(this.audaqueOldSearchMixin)},resetData:function(){Object.keys(this.audaqueOldSearchMixin).length>0&&(this.audaqueSearchMixin=JSON.parse(this.audaqueOldSearchMixin)),this.audaqueResetFetchHandleMixin&&this.audaqueResetFetchHandleMixin(),this.audaquePageRequestMixin.pageNo=1},audaqueResetListMixin:function(){this.resetData(),this.audaqueRequestListMixin()},audaqueOnSizeChangeMixin:function(e){this.audaquePageRequestMixin.pageSize=e,this.audaquePageRequestMixin.pageNo=1,this.audaqueRequestListMixin()},audaqueOnCurrentChangeMixin:function(e){this.audaquePageRequestMixin.pageNo=e,this.audaqueRequestListMixin()},audaqueIndexMethodMixin:function(e){return this.audaquePageRequestMixin.pageSize*(this.audaquePageRequestMixin.pageNo-1)+e+1},audaqueToggleSearchMinix:function(){this.audaqueSearchBarVisibleMixin=!this.audaqueSearchBarVisibleMixin},audaqueChangeRequestListFnMinix:function(e){this.resetData(),this.audaqueRequestListMixin(e)}},beforeDestroy:function(){if(this.audaqueListIsStoreMixin){var e={path:this.audaquePathMixin,value:this.audaqueSearchMixin},t=JSON.stringify(e);sessionStorage.setItem(\"listSearchStore\",t)}}}});function u(e,t,r){return t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function c(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),r.push.apply(r,n)}return r}function l(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{};t%2?c(Object(r),!0).forEach((function(t){u(e,t,r[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):c(Object(r)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))}))}return e}r(\"a4d3\"),r(\"4de4\"),r(\"d3b7\"),r(\"e439\"),r(\"159b\"),r(\"dbb4\");"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-FORM",
+      "resourcePath": "/gsp/static/js/chunk-@audaque/vue-utils.a017c2f9.js",
+      "localName": "vue-utils.a017c2f9.js",
+      "fetchedAt": "2026-10-27T08:15:37.674Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 396507,
+      "sha256": "b65b52f020edee1334eb68625816158845d003ffece53a8da53c54a909fa1827",
+      "excerpts": [
+        {
+          "anchor": "audaqueFormInfoMixin:{}",
+          "start": 337135,
+          "end": 340167,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "97f8a74875915e3d8f895ccdae427696717793e9f3fb8439ba917c5ec8925472",
+          "text": "audaqueFormInfoMixin:{},audaqueFormRefMixin:\"audaqueFormRef\",audaqueIsLoadingMixin:!1}},computed:{audaqueFormIsEditMixin:function(){return\"view\"===this.audaqueOptTypeMixin}},created:function(){var e,t;if(this.audaqueOptTypeMixin=this.$route.query.optType||this.optType,this.$t?this.audaqutTitleMixin=null===(e=this.$route)||void 0===e||null===(t=e.meta)||void 0===t?void 0:t.name[this.audaqueOptTypeMixin]:this.audaqutTitleMixin=this.audaqueTitleMapMixin[this.audaqueOptTypeMixin]+this.$route.meta.name,\"view\"===this.audaqueOptTypeMixin||\"edit\"===this.audaqueOptTypeMixin){var r=this.$route.query.id||this.id;this.audaqueIdMixin=\"number\"==typeof r?Number.parseInt(r):r,this.audaqueIsRequestFirstMixin&&this.audaqueRequestDetailFormMixin()}},methods:{audaqueGoBackMixin:function(){this.$router.go(-1)},audaqueRequestDetailFormMixin:function(){var t=this;e&&e(this.audaqueIdMixin).then((function(e){t.audaqueFormInfoMixin=e,t.audaqueReadAfterHandleMixin&&t.audaqueReadAfterHandleMixin()})).catch((function(e){}))},audaqueSubmitMixin:function(){var e=this,n=this;this.audaqueFormBeforeValidate&&this.audaqueFormBeforeValidate(),this.$refs[this.audaqueFormRefMixin].validate((function(i){if(!i)return!1;var a=e.audaqueFormBeforeHandleMixin&&e.audaqueFormBeforeHandleMixin()||Object.assign({},e.audaqueFormInfoMixin);e.audaqueIsLoadingMixin=!0,\"add\"===e.audaqueOptTypeMixin?r&&r(a).then((function(){e.audaqueIsLoadingMixin=!1,e.$AudaqueToast.tip({template:n.$t?n.$t(n.audaqueFormAddTextKeyMixin):n.audaqueFormAddMixin,methods:{okEvent:function(){n.audaqueFormAfterHandleMixin?n.audaqueFormAfterHandleMixin():n.audaqueGoBackMixin()}}})})).catch((function(){e.audaqueIsLoadingMixin=!1})):\"edit\"===e.audaqueOptTypeMixin&&t&&t(e.audaqueIdMixin,a).then((function(){e.audaqueIsLoadingMixin=!1,e.$AudaqueToast.tip({template:e.$t?n.$t(n.audaqueFormEditTextKeyMixin):n.audaqueFormEditMixin,methods:{okEvent:function(){n.audaqueFormAfterHandleMixin?n.audaqueFormAfterHandleMixin():n.audaqueGoBackMixin()}}})})).catch((function(){e.audaqueIsLoadingMixin=!1}))}))}}}}),h={data:function(){return{audaqueTableIndexWidthObjMixin:Object.freeze({\"zh-CN\":\"60\",en:\"110\"}),audaqueDateWidthMixin:\"160\",audaqueOpreateWidthMixin:\"120\",audaqueToolTipEffectMixin:\"light\",audaqueFormTypeMixin:Object.freeze({add:\"add\",view:\"view\",edit:\"edit\"}),audaquePickerOptionsMixin:Object.freeze({shortcuts:[{text:this.$t?this.$t(\"audaqueVueUtilsMixin.lastDay\"):\"最近一天\",onClick:function(e){var t=new Date,r=new Date;r.setTime(r.getTime()-864e5),e.$emit(\"pick\",[r,t])}},{text:this.$t?this.$t(\"audaqueVueUtilsMixin.lastWeek\"):\"最近一周\",onClick:function(e){var t=new Date,r=new Date;r.setTime(r.getTime()-6048e5),e.$emit(\"pick\",[r,t])}},{text:this.$t?this.$t(\"audaqueVueUtilsMixin.lastMonth\"):\"最近一个月\",onClick:function(e){var t=new Date,r=new Date;r.setTime(r.getTime()-2592e6),e.$emit(\"pick\",[r,t])}},{text:this.$t?this.$t(\"audaqueVueUtilsMixin.last3Months\"):\"最近三个月\",onClick:function(e){var t=new Date,r=new Date;r.setTime(r.getTime()-7776e6),e.$emit(\"pick\",[r,t])}}]})}},computed:{"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-APP",
+      "resourcePath": "/gsp/static/js/app.fa0ac79b.js",
+      "localName": "app.fa0ac79b.js",
+      "fetchedAt": "2026-10-27T08:15:37.621Z",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 618596,
+      "sha256": "ab3d612ad42627673bef319aa773df7fd6960ca5ab4138c085dfc1621461080e",
+      "excerpts": [
+        {
+          "anchor": "bcab:function",
+          "start": 492255,
+          "end": 492981,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "451beac0ef7987b7e106d62c912b5f04846094b75a742d9c8dcda1a995ae2d12",
+          "text": "bcab:function(e,t,r){\"use strict\";function n(){}r.d(t,\"d\",(function(){return o})),r.d(t,\"a\",(function(){return a})),r.d(t,\"c\",(function(){return s})),r.d(t,\"b\",(function(){return c}));new class{constructor(){this.actions={onGlobalStateChange:n,setGlobalState:n}}setActions(e){this.actions=e}onGlobalStateChange(...e){return this.actions.onGlobalStateChange(...e)}setGlobalState(...e){return this.actions.setGlobalState(...e)}};let i={};function o(e){i=e,i.requestInstance=e.getRequestInstance()}function a(e){if(i.config)return i.config.MODULE_URL_PREFIX[e];throw new Error(\"过早调用getModulePrefix方法\")}function s(){if(i.requestInstance)return i.requestInstance;throw new Error(\"过早调用getRequestInstance方法\")}function c(){return i}},"
+        },
+        {
+          "anchor": "path:\"/knowledge/list\"",
+          "start": 86242,
+          "end": 86398,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "b1733f27b15e2e2cf29bc289bcd73daffa9ba5592a81fea2cca2cf25b369f15d",
+          "text": "path:\"/knowledge/list\",meta:{name:\"列表\"},component:e(\"views/knowledge/list\")},{path:\"/knowledge/edit\",meta:{name:\"知识管理\"},component:e(\"views/knowledge/edit\")}"
+        },
+        {
+          "anchor": "path:\"/entrance/list\"",
+          "start": 438912,
+          "end": 439064,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "1b53c82efc8cd426f372358c29707a2fdab2ed378d7f979b3a669426bc86bfb9",
+          "text": "path:\"/entrance/list\",meta:{name:\"列表\"},component:e(\"views/entrance/list\")},{path:\"/entrance/edit\",meta:{name:\"快捷入口\"},component:e(\"views/entrance/edit\")}"
+        },
+        {
+          "anchor": "path:\"/template/list\"",
+          "start": 440892,
+          "end": 440966,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "2de08bb8dda0921d82b41c74dc9fae8decba501c4636c7c92b6f865e12d05e6e",
+          "text": "path:\"/template/list\",meta:{name:\"列表\"},component:e(\"views/template/list\")}"
+        }
+      ]
+    },
+    {
+      "id": "GSPA-SRC-REQUEST",
+      "resourcePath": "/static/js/app.7ec981a3.js",
+      "localName": "shell-app.7ec981a3.js",
+      "fetchedAt": "2026-10-26T06:07:41.824383+00:00",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1417837,
+      "sha256": "a0d2d44668353c4522b2fbc45d7c25d4286ffdb630050b2f11a5bc6a44f8af68",
+      "excerpts": [
+        {
+          "anchor": "qa={\"Content-Type\":\"application/json;",
+          "start": 755130,
+          "end": 756180,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "a2aee7d2755c98e02e3a9c3c7b15db6ab2a59b517cec50d7300f315c31ec09f7",
+          "text": "qa={\"Content-Type\":\"application/json;\",\"X-Requested-With\":\"XMLHttpRequest\",\"Cache-Control\":\"no-cache\",Pragma:\"no-cache\"},Ga=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];e.request.use((function(e){var n=$a(e.url,r),o=\"number\"==typeof e.timeout?e.timeout:2e4;e.timeout=n>=0?n:o,e.withCredentials=!0;var i=u(u(u({},qa),t.headers||{}),e.headers||{}),a=\"\",s=document.getElementById(\"X-CSRF-TOKEN\");s&&\"{X-CSRF-TOKEN}\"!==s.value&&(a=s.value),a&&(i[\"X-CSRF-TOKEN\"]=a);var l=localStorage.getItem(\"adq-token\");l&&\"undefined\"!==l&&\"null\"!==l&&(i[\"adq-token\"]=l),e.data instanceof FormData&&(i[\"Content-Type\"]=\"application/form-data\");var c=(new Date).getTime();i[\"X-TIMESTAMP\"]=c;var p=Vi.e.uuid();i[\"X-NONCE\"]=p;var f=Ha.getUri(e),d=Vi.c.generateSignInfo(e,f,c,p,Ha),h=Vi.c.sha256ToHex(d);return i[\"X-SIGN\"]=h,u(u(u({},t),e),{},{headers:i})}),(function(e){return Promise.reject(e)}))},Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?"
+        },
+        {
+          "anchor": "Ka=window.__$__BASE,Ya=function",
+          "start": 756097,
+          "end": 757807,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "ee10fb00457ec76b69d644c7eef1cfe0bd46bc9cfe38cbef8e7fbc0e9823d0c1",
+          "text": "Ka=window.__$__BASE,Ya=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:function(){};e.response.use((function(e){var r=e.headers[\"adq-token\"];if(r&&\"undefined\"!==r&&\"null\"!==r&&localStorage.setItem(\"adq-token\",r),e.config.performance&&e.config.performance.rawData)return e;var n=Ka.NETWORK_ERROR_CODE||202;return e.status===n?Wa(e,t):e.data}),(function(e){return Wa(e.response,t)}))};function Wa(e,t){return Qa.apply(this,arguments)}function Qa(){return(Qa=s(regeneratorRuntime.mark((function e(t,r){var n,o,i,a,s;return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!((a=t||{}).data&&a.data.code&&r(a.data.code,t))){e.next=3;break}return e.abrupt(\"return\",Promise.reject(a));case 3:if(s=\"\",!a||!a.data){e.next=14;break}if(\"[object Blob]\"!==Object.prototype.toString.apply(a.data)){e.next=11;break}return e.next=8,a.data.text().then((function(e){return/^[{[]/.test(e)?(JSON.parse(e)||{}).msg:\"\"}));case 8:s=e.sent,e.next=12;break;case 11:s=a.data.msg;case 12:e.next=15;break;case 14:s=t&&t.message;case 15:return/timeout of \\d{1,10}ms exceeded/.test(s)&&(s=Pi.t(\"request.timedOut\")),s&&s.indexOf(\"Network Error\")>-1&&(s=Pi.t(\"request.networkError\")),null!==(n=a.config)&&void 0!==n&&null!==(o=n.performance)&&void 0!==o&&o.isHiddleErrorMessage||1003===(null==a||null===(i=a.data)||void 0===i?void 0:i.code)||wi.Message.error(s||Pi.t(\"request.requestException\")),e.abrupt(\"return\",Promise.reject(a));case 20:case\"end\":return e.stop()}}),e)})))).apply(this,arguments)}var Xa=function(){function e(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:function(){},r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&voi"
+        },
+        {
+          "anchor": "key:\"request\",value:function(e,t,r)",
+          "start": 757952,
+          "end": 758357,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "4a3c64144266f2b0d10c9c3f31686037369e51e803fe7d393b698be2098f30eb",
+          "text": "key:\"request\",value:function(e,t,r){var n=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{},o=\"/\"===e.charAt(0)?e.substr(1):e,i=u({url:o,method:t.toLowerCase()},n);return\"get\"===t.toLowerCase()?r&&(i.params=r):i.data=r||{},this._request(i)}},{key:\"_request\",value:function(e){return this.$http.request(e)}},{key:\"getInstance\",value:function(){return this}}]),e}(),Ja=null;function Za(){var e=argum"
+        }
+      ],
+      "sourceGroup": "shared"
+    },
+    {
+      "id": "GSPA-SRC-BASE",
+      "resourcePath": "/serviceConfig.base.js",
+      "localName": "serviceConfig.base.js",
+      "fetchedAt": "2026-10-26T06:07:41.425372+00:00",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 1774,
+      "sha256": "1a56c1c445a53f9a95384f1c33f1a59ed3de2723141f157ff838ca90d30fb113",
+      "excerpts": [
+        {
+          "anchor": "NETWORK_ERROR_CODE: 202",
+          "start": 755,
+          "end": 778,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "8f59a792b6d56831f01f981a1c139144b88c724c15094b8280b4b81eec84d5ff",
+          "text": "NETWORK_ERROR_CODE: 202"
+        }
+      ],
+      "sourceGroup": "shared"
+    },
+    {
+      "id": "GSPA-SRC-CONFIG",
+      "resourcePath": "/serviceConfig.prod.js",
+      "localName": "serviceConfig.prod.js",
+      "fetchedAt": "2026-10-26T06:07:41.447650+00:00",
+      "inspectedAt": "2026-10-27T08:18:02.841Z",
+      "bytes": 7699,
+      "sha256": "9a95e7062419b2867854c72bb2e66c0ed75e94b87e72406c183d9e9bc5e757fb",
+      "excerpts": [
+        {
+          "anchor": "API_BASE_URL: baseUrl + '/back'",
+          "start": 342,
+          "end": 381,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "348c50b443d9a9d26d635edff457489ee554eacba4ad5e0c283dae44240fbcb5",
+          "text": "API_BASE_URL: baseUrl + '/back', //后台接口"
+        },
+        {
+          "anchor": "MODULE_URL_PREFIX: {}",
+          "start": 1570,
+          "end": 1591,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "97bb9c758d9ec7db70b29c35554f459f1476d3cd000323a7dc2d41c36080b9f3",
+          "text": "MODULE_URL_PREFIX: {}"
+        },
+        {
+          "anchor": "entry: baseUrl + '/gsp/index.html'",
+          "start": 5084,
+          "end": 5119,
+          "offsetUnit": "UTF-16 code units",
+          "sha256": "7e68b3f0a1257857920218d9ff1b02f2b30d0e2a0bc8d02b06b7694fd5e9315f",
+          "text": "entry: baseUrl + '/gsp/index.html'\n"
+        }
+      ],
+      "sourceGroup": "shared"
+    }
+  ]
+}
