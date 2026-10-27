@@ -16,6 +16,7 @@ const { MAIN: dsMain, SUB: dsSub, renderFeature: renderDsFeature } = require('./
 const { MAIN: smsMain, SUB: smsSub, renderFeature: renderSmsFeature } = require('./sms-requirement-spec');
 const { MAIN: disMain, SUB: disSub, renderFeature: renderDisFeature } = require('./dis-requirement-spec');
 const { MAIN: dmsMain, SUB: dmsSub, renderFeature: renderDmsFeature } = require('./dms-requirement-spec');
+const { MAIN: gdrsMain, SUB: gdrsSub, renderFeature: renderGdrsFeature } = require('./gdrs-requirement-spec');
 const { MAIN: dssMain, SUB: dssSub, renderFeature: renderDssFeature } = require('./dss-requirement-spec');
 const { MAIN: dqMain, SUB: dqSub, renderFeature: renderDqFeature } = require('./dq-requirement-spec');
 
@@ -511,6 +512,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...dssMain, ...dssSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed DSS requirement: ' + id);
       text = text.slice(0, start) + renderDssFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- gdrs:generated-spec-v1 -->')) {
+      const entry = [...gdrsMain, ...gdrsSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed GDRS requirement: ' + id);
+      text = text.slice(0, start) + renderGdrsFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     if (originalText.includes('<!-- dms:generated-spec-v1 -->')) {

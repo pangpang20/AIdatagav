@@ -1,0 +1,2560 @@
+{
+  "main": {
+    "entries": [
+      {
+        "id": "GDRS-100",
+        "title": "查询类别",
+        "route": "",
+        "sources": [],
+        "acceptance": [
+          "GDRS-AC-605",
+          "GDRS-AC-606",
+          "GDRS-AC-607",
+          "GDRS-AC-608",
+          "GDRS-AC-609"
+        ]
+      },
+      {
+        "id": "GDRS-102",
+        "title": "新增类别",
+        "route": "",
+        "sources": [],
+        "acceptance": [
+          "GDRS-AC-610",
+          "GDRS-AC-611",
+          "GDRS-AC-612",
+          "GDRS-AC-613",
+          "GDRS-AC-614"
+        ]
+      },
+      {
+        "id": "GDRS-001",
+        "title": "查看直报资源规模",
+        "route": "",
+        "sources": [],
+        "acceptance": [
+          "GDRS-AC-615",
+          "GDRS-AC-616",
+          "GDRS-AC-617",
+          "GDRS-AC-618",
+          "GDRS-AC-619"
+        ]
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "GDRS-AC-605",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-605",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-606",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-606",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-607",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-607",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-608",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-608",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-609",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-609",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-610",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-610",
+          "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-611",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-611",
+          "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-612",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-612",
+          "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-613",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-613",
+          "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-614",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-614",
+          "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-615",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-615",
+          "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-616",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-616",
+          "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-617",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-617",
+          "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-618",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-618",
+          "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-619",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-619",
+          "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-001",
+        "text": "在具备本模块访问权限时进入类别管理，使用已定义条件查询，核对本需求列出的结果列；无匹配时显示空结果。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-001",
+          "查询与结果",
+          "在具备本模块访问权限时进入类别管理，使用已定义条件查询，核对本需求列出的结果列；无匹配时显示空结果。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-002",
+        "text": "查询失败、重试及重置；恢复默认条件并核对分页、排序和授权范围。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-002",
+          "异常与边界",
+          "查询失败、重试及重置；恢复默认条件并核对分页、排序和授权范围。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-003",
+        "text": "按 GDRS-102 填写全部必填项并完成配置，提交后提示成功且新对象可在列表找到；多步功能逐步完成后再最终提交。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-003",
+          "新增主流程",
+          "按 GDRS-102 填写全部必填项并完成配置，提交后提示成功且新对象可在列表找到；多步功能逐步完成后再最终提交。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-004",
+        "text": "必填为空、已明确长度的临界值/超限、非法组合、取消重入、提交失败重试和重复提交；未知规则先完成产品确认。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-004",
+          "异常与边界",
+          "必填为空、已明确长度的临界值/超限、非法组合、取消重入、提交失败重试和重复提交；未知规则先完成产品确认。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-005",
+        "text": "按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-005",
+          "查看直报资源规模",
+          "按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-006",
+        "text": "先发条件A再发B，使A后返回；界面最终显示B的结果及总数。进入详情再返回，应恢复已提交条件、页码和排序；查询失败不将旧结果冒充新结果。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-006",
+          "查询竞态与返回恢复",
+          "先发条件A再发B，使A后返回；界面最终显示B的结果及总数。进入详情再返回，应恢复已提交条件、页码和排序；查询失败不将旧结果冒充新结果。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-007",
+        "text": "同一用户在两个授权范围不同的空间分别查询；结果只含各自可见记录。直接改变请求中的空间标识不扩大访问范围。空间真实权限矩阵须先确认。",
+        "requirement": "GDRS-100",
+        "originalCells": [
+          "GDRS-AC-007",
+          "数据隔离",
+          "同一用户在两个授权范围不同的空间分别查询；结果只含各自可见记录。直接改变请求中的空间标识不扩大访问范围。空间真实权限矩阵须先确认。",
+          "GDRS-100",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-008",
+        "text": "其他字段合法，仅将类别名置空后提交；字段旁显示必填原因，未发送业务写入，已填内容保留。空白字符串是否等同空值按公共规则建议评审。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-008",
+          "类别名必填",
+          "其他字段合法，仅将类别名置空后提交；字段旁显示必填原因，未发送业务写入，已填内容保留。空白字符串是否等同空值按公共规则建议评审。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-009",
+        "text": "其他字段合法，分别输入63、64、65个普通中文字符。前两组通过该字段长度校验；超限输入被阻止或显示长度错误，服务端拒绝超限。字符计数口径先按公共规则确认。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-009",
+          "类别名长度边界",
+          "其他字段合法，分别输入63、64、65个普通中文字符。前两组通过该字段长度校验；超限输入被阻止或显示长度错误，服务端拒绝超限。字符计数口径先按公共规则确认。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-010",
+        "text": "其他字段合法，分别输入254、255、256个普通中文字符。前两组通过该字段长度校验；超限输入被阻止或显示长度错误，服务端拒绝超限。字符计数口径先按公共规则确认。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-010",
+          "备注长度边界",
+          "其他字段合法，分别输入254、255、256个普通中文字符。前两组通过该字段长度校验；超限输入被阻止或显示长度错误，服务端拒绝超限。字符计数口径先按公共规则确认。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-011",
+        "text": "修改任一可编辑字段及子项后取消；无业务保存请求；重新进入读取原持久化值。多步草稿和临时附件按评审后的例外规则处理。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-011",
+          "取消后重入",
+          "修改任一可编辑字段及子项后取消；无业务保存请求；重新进入读取原持久化值。多步草稿和临时附件按评审后的例外规则处理。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-012",
+        "text": "模拟明确失败时保留输入及子项并允许重试；模拟写入超时时显示结果待核实，查询同一操作标识的结果后决定重试，不立即生成第二对象。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-012",
+          "提交失败和结果未知",
+          "模拟明确失败时保留输入及子项并允许重试；模拟写入超时时显示结果待核实，查询同一操作标识的结果后决定重试，不立即生成第二对象。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-013",
+        "text": "无维护权限或关联对象跨授权范围时服务端拒绝且无数据变化；同一操作标识连续提交两次仅形成一次业务结果。错误码按公共开发规则。",
+        "requirement": "GDRS-102",
+        "originalCells": [
+          "GDRS-AC-013",
+          "越权及重复请求",
+          "无维护权限或关联对象跨授权范围时服务端拒绝且无数据变化；同一操作标识连续提交两次仅形成一次业务结果。错误码按公共开发规则。",
+          "GDRS-102",
+          "【拟定，未执行】"
+        ]
+      },
+      {
+        "id": "GDRS-AC-014",
+        "text": "任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+        "requirement": "GDRS-001",
+        "originalCells": [
+          "GDRS-AC-014",
+          "展示失败与统计来源",
+          "任一指标加载失败时显示未取得数据，不填0；成功指标显示其数据时间和单位。菜单进入目标页后独立验权，统计口径未评审不验算业务总数。",
+          "GDRS-001",
+          "【拟定，未执行】"
+        ]
+      }
+    ],
+    "sourceRows": [
+      "| GDRS-100 | [F244-GDRS-category-add-cancel](../evidence/F244-GDRS-category-add-cancel.png)；[F226-GDRS-report-query](../evidence/F226-GDRS-report-query.png)；[F241-GDRS-category-query](../evidence/F241-GDRS-category-query.png)；[F227-GDRS-report-reset](../evidence/F227-GDRS-report-reset.png)；[F242-GDRS-category-reset](../evidence/F242-GDRS-category-reset.png) | [调研细节](./调研记录.md#gdrs-100-类别管理--查询与列表) |",
+      "| GDRS-102 | [F243-GDRS-category-add](../evidence/F243-GDRS-category-add.png)；[F229-GDRS-report-add-cancel](../evidence/F229-GDRS-report-add-cancel.png)；[F244-GDRS-category-add-cancel](../evidence/F244-GDRS-category-add-cancel.png) | [调研细节](./调研记录.md#gdrs-102-类别管理--新增) |",
+      "| GDRS-001 | [E035-reporting](../evidence/E035-reporting.png) | [原始记录](./调研记录.md) |"
+    ],
+    "boundaries": [
+      [
+        "GDRS-101",
+        "查看类别",
+        "详情内容、关联项及查看权限；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系"
+      ],
+      [
+        "GDRS-103",
+        "修改类别",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系"
+      ],
+      [
+        "GDRS-104",
+        "删除类别",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系"
+      ],
+      [
+        "GDRS-105",
+        "查询文件上报",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：文件选择、附件、提交/退回补报、版本和草稿删除"
+      ],
+      [
+        "GDRS-106",
+        "查看文件上报",
+        "详情内容、关联项及查看权限；业务范围涉及：文件选择、附件、提交/退回补报、版本和草稿删除"
+      ],
+      [
+        "GDRS-107",
+        "新增文件上报",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：文件选择、附件、提交/退回补报、版本和草稿删除"
+      ],
+      [
+        "GDRS-108",
+        "修改文件上报",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：文件选择、附件、提交/退回补报、版本和草稿删除"
+      ],
+      [
+        "GDRS-109",
+        "删除文件上报",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：文件选择、附件、提交/退回补报、版本和草稿删除"
+      ],
+      [
+        "GDRS-110",
+        "查询库表资源管理",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资源来源、字段结构、物理表关联和被表单/任务引用的规则"
+      ],
+      [
+        "GDRS-111",
+        "查看库表资源管理",
+        "详情内容、关联项及查看权限；业务范围涉及：资源来源、字段结构、物理表关联和被表单/任务引用的规则"
+      ],
+      [
+        "GDRS-112",
+        "新增库表资源管理",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资源来源、字段结构、物理表关联和被表单/任务引用的规则"
+      ],
+      [
+        "GDRS-113",
+        "修改库表资源管理",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资源来源、字段结构、物理表关联和被表单/任务引用的规则"
+      ],
+      [
+        "GDRS-114",
+        "删除库表资源管理",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资源来源、字段结构、物理表关联和被表单/任务引用的规则"
+      ],
+      [
+        "GDRS-115",
+        "查询表单管理",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：字段控件、布局、资源绑定、版本和已有上报记录的兼容"
+      ],
+      [
+        "GDRS-116",
+        "查看表单管理",
+        "详情内容、关联项及查看权限；业务范围涉及：字段控件、布局、资源绑定、版本和已有上报记录的兼容"
+      ],
+      [
+        "GDRS-117",
+        "新增表单管理",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：字段控件、布局、资源绑定、版本和已有上报记录的兼容"
+      ],
+      [
+        "GDRS-118",
+        "修改表单管理",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：字段控件、布局、资源绑定、版本和已有上报记录的兼容"
+      ],
+      [
+        "GDRS-119",
+        "删除表单管理",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：字段控件、布局、资源绑定、版本和已有上报记录的兼容"
+      ],
+      [
+        "GDRS-120",
+        "查询模板管理",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：模板文件、字段映射、版本和上报任务引用"
+      ],
+      [
+        "GDRS-121",
+        "查看模板管理",
+        "详情内容、关联项及查看权限；业务范围涉及：模板文件、字段映射、版本和上报任务引用"
+      ],
+      [
+        "GDRS-122",
+        "新增模板管理",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：模板文件、字段映射、版本和上报任务引用"
+      ],
+      [
+        "GDRS-123",
+        "修改模板管理",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：模板文件、字段映射、版本和上报任务引用"
+      ],
+      [
+        "GDRS-124",
+        "删除模板管理",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：模板文件、字段映射、版本和上报任务引用"
+      ],
+      [
+        "GDRS-125",
+        "查询上报授权",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资源、用户/部门、权限范围、有效期与撤销"
+      ],
+      [
+        "GDRS-126",
+        "查看上报授权",
+        "详情内容、关联项及查看权限；业务范围涉及：资源、用户/部门、权限范围、有效期与撤销"
+      ],
+      [
+        "GDRS-127",
+        "新增上报授权",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资源、用户/部门、权限范围、有效期与撤销"
+      ],
+      [
+        "GDRS-128",
+        "修改上报授权",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资源、用户/部门、权限范围、有效期与撤销"
+      ],
+      [
+        "GDRS-129",
+        "删除上报授权",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资源、用户/部门、权限范围、有效期与撤销"
+      ],
+      [
+        "GDRS-130",
+        "查询查询授权",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：可见字段、数据行范围、有效期和撤销后失效时点"
+      ],
+      [
+        "GDRS-131",
+        "查看查询授权",
+        "详情内容、关联项及查看权限；业务范围涉及：可见字段、数据行范围、有效期和撤销后失效时点"
+      ],
+      [
+        "GDRS-132",
+        "新增查询授权",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：可见字段、数据行范围、有效期和撤销后失效时点"
+      ],
+      [
+        "GDRS-133",
+        "修改查询授权",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：可见字段、数据行范围、有效期和撤销后失效时点"
+      ],
+      [
+        "GDRS-134",
+        "删除查询授权",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：可见字段、数据行范围、有效期和撤销后失效时点"
+      ],
+      [
+        "GDRS-135",
+        "查询直报任务管理",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资源、周期、截止日期、接收对象和进行中任务变更"
+      ],
+      [
+        "GDRS-136",
+        "查看直报任务管理",
+        "详情内容、关联项及查看权限；业务范围涉及：资源、周期、截止日期、接收对象和进行中任务变更"
+      ],
+      [
+        "GDRS-137",
+        "新增直报任务管理",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资源、周期、截止日期、接收对象和进行中任务变更"
+      ],
+      [
+        "GDRS-138",
+        "修改直报任务管理",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资源、周期、截止日期、接收对象和进行中任务变更"
+      ],
+      [
+        "GDRS-139",
+        "删除直报任务管理",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资源、周期、截止日期、接收对象和进行中任务变更"
+      ],
+      [
+        "GDRS-140",
+        "查询选项配置",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：选项值、顺序、层级和表单字段引用"
+      ],
+      [
+        "GDRS-141",
+        "查看选项配置",
+        "详情内容、关联项及查看权限；业务范围涉及：选项值、顺序、层级和表单字段引用"
+      ],
+      [
+        "GDRS-142",
+        "新增选项配置",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：选项值、顺序、层级和表单字段引用"
+      ],
+      [
+        "GDRS-143",
+        "修改选项配置",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：选项值、顺序、层级和表单字段引用"
+      ],
+      [
+        "GDRS-144",
+        "删除选项配置",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：选项值、顺序、层级和表单字段引用"
+      ],
+      [
+        "GDRS-145",
+        "查询审核管理",
+        "查询条件、结果列、默认排序和数据可见范围；业务范围涉及：审核单、历史意见、通过/退回、撤回与记录留存"
+      ],
+      [
+        "GDRS-146",
+        "查看审核管理",
+        "详情内容、关联项及查看权限；业务范围涉及：审核单、历史意见、通过/退回、撤回与记录留存"
+      ],
+      [
+        "GDRS-147",
+        "新增审核管理",
+        "是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：审核单、历史意见、通过/退回、撤回与记录留存"
+      ],
+      [
+        "GDRS-148",
+        "修改审核管理",
+        "是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：审核单、历史意见、通过/退回、撤回与记录留存"
+      ],
+      [
+        "GDRS-149",
+        "删除审核管理",
+        "是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：审核单、历史意见、通过/退回、撤回与记录留存"
+      ]
+    ]
+  },
+  "sub": {
+    "entries": [
+      {
+        "id": "GDRS-500",
+        "title": "首页",
+        "route": "/gdrs/index/indexInfo",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-001.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-620",
+          "GDRS-AC-621",
+          "GDRS-AC-622",
+          "GDRS-AC-623",
+          "GDRS-AC-624"
+        ]
+      },
+      {
+        "id": "GDRS-507",
+        "title": "直报管理 → 库表资源管理 → · 表单管理",
+        "route": "/gdrs/gdrs/structFormManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-003.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-625",
+          "GDRS-AC-626",
+          "GDRS-AC-627",
+          "GDRS-AC-628",
+          "GDRS-AC-629"
+        ]
+      },
+      {
+        "id": "GDRS-508",
+        "title": "直报管理 → 库表资源管理 → · 模板管理",
+        "route": "/gdrs/gdrs/structTemplateManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-004.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-630",
+          "GDRS-AC-631",
+          "GDRS-AC-632",
+          "GDRS-AC-633",
+          "GDRS-AC-634"
+        ]
+      },
+      {
+        "id": "GDRS-512",
+        "title": "直报管理 → 库表资源管理 → · 选项配置",
+        "route": "/gdrs/gdrs/configManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-008.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-635",
+          "GDRS-AC-636",
+          "GDRS-AC-637",
+          "GDRS-AC-638",
+          "GDRS-AC-639"
+        ]
+      },
+      {
+        "id": "GDRS-513",
+        "title": "直报管理 → 库表资源管理 → · 选项配置 → 新增",
+        "route": "/gdrs/gdrs/configManageEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-008-op1.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-640",
+          "GDRS-AC-641",
+          "GDRS-AC-642",
+          "GDRS-AC-643",
+          "GDRS-AC-644"
+        ]
+      },
+      {
+        "id": "GDRS-518",
+        "title": "直报管理 → 类别管理",
+        "route": "/gdrs/gdrs/categoryManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-013.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-645",
+          "GDRS-AC-646",
+          "GDRS-AC-647",
+          "GDRS-AC-648",
+          "GDRS-AC-649"
+        ]
+      },
+      {
+        "id": "GDRS-519",
+        "title": "直报管理 → 类别管理 → 新增",
+        "route": "/gdrs/gdrs/categoryManageEdit",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-013-op1.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-650",
+          "GDRS-AC-651",
+          "GDRS-AC-652",
+          "GDRS-AC-653",
+          "GDRS-AC-654"
+        ]
+      },
+      {
+        "id": "GDRS-525",
+        "title": "数据上报 → 标准化数据上报 → · 批量导入",
+        "route": "/gdrs/report/structBatchReportManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-019.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-655",
+          "GDRS-AC-656",
+          "GDRS-AC-657",
+          "GDRS-AC-658",
+          "GDRS-AC-659"
+        ]
+      },
+      {
+        "id": "GDRS-505",
+        "title": "审核管理",
+        "route": "/gdrs/approve/structApproveManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-028.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-660",
+          "GDRS-AC-661",
+          "GDRS-AC-662",
+          "GDRS-AC-663",
+          "GDRS-AC-664"
+        ]
+      },
+      {
+        "id": "GDRS-533",
+        "title": "上报统计 → 任务上报统计",
+        "route": "/gdrs/statistics/reportTaskStatistics",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-029.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-665",
+          "GDRS-AC-666",
+          "GDRS-AC-667",
+          "GDRS-AC-668",
+          "GDRS-AC-669"
+        ]
+      },
+      {
+        "id": "GDRS-534",
+        "title": "上报统计 → 库表资源上报时效统计",
+        "route": "/gdrs/statistics/structReportStatistics",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-030.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-670",
+          "GDRS-AC-671",
+          "GDRS-AC-672",
+          "GDRS-AC-673",
+          "GDRS-AC-674"
+        ]
+      },
+      {
+        "id": "GDRS-535",
+        "title": "上报统计 → 文件资源上报时效统计",
+        "route": "/gdrs/statistics/unstructReportStatistics",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-031.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-675",
+          "GDRS-AC-676",
+          "GDRS-AC-677",
+          "GDRS-AC-678",
+          "GDRS-AC-679"
+        ]
+      },
+      {
+        "id": "GDRS-536",
+        "title": "帮助",
+        "route": "/gdrs/help/helpCenter",
+        "sources": [
+          "../evidence/live-recheck-20261022/AA-GDRS-help.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-680",
+          "GDRS-AC-681",
+          "GDRS-AC-682",
+          "GDRS-AC-683",
+          "GDRS-AC-684"
+        ]
+      },
+      {
+        "id": "GDRS-537",
+        "title": "消息",
+        "route": "/gdrs/message/public",
+        "sources": [
+          "../evidence/live-recheck-20261022/AA-GDRS-message.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-685",
+          "GDRS-AC-686",
+          "GDRS-AC-687",
+          "GDRS-AC-688",
+          "GDRS-AC-689"
+        ]
+      },
+      {
+        "id": "GDRS-506",
+        "title": "直报管理 → 库表资源管理 → · 资源管理",
+        "route": "/gdrs/gdrs/resourceTableManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-002.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-690",
+          "GDRS-AC-691",
+          "GDRS-AC-692",
+          "GDRS-AC-693",
+          "GDRS-AC-694"
+        ]
+      },
+      {
+        "id": "GDRS-509",
+        "title": "直报管理 → 库表资源管理 → · 上报授权",
+        "route": "/gdrs/gdrs/templateAccreditServerManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-005.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-695",
+          "GDRS-AC-696",
+          "GDRS-AC-697",
+          "GDRS-AC-698",
+          "GDRS-AC-699"
+        ]
+      },
+      {
+        "id": "GDRS-510",
+        "title": "直报管理 → 库表资源管理 → · 查询授权",
+        "route": "/gdrs/gdrs/strctAccreditServerManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-006.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-700",
+          "GDRS-AC-701",
+          "GDRS-AC-702",
+          "GDRS-AC-703",
+          "GDRS-AC-704"
+        ]
+      },
+      {
+        "id": "GDRS-511",
+        "title": "直报管理 → 库表资源管理 → · 任务管理",
+        "route": "/gdrs/gdrs/structNotifyManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-007.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-705",
+          "GDRS-AC-706",
+          "GDRS-AC-707",
+          "GDRS-AC-708",
+          "GDRS-AC-709"
+        ]
+      },
+      {
+        "id": "GDRS-514",
+        "title": "直报管理 → 文件资源管理 → · 资源管理",
+        "route": "/gdrs/gdrs/unstructResourceManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-009.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-710",
+          "GDRS-AC-711",
+          "GDRS-AC-712",
+          "GDRS-AC-713",
+          "GDRS-AC-714"
+        ]
+      },
+      {
+        "id": "GDRS-515",
+        "title": "直报管理 → 文件资源管理 → · 上报授权",
+        "route": "/gdrs/gdrs/untemplateAccreditServerManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-010.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-715",
+          "GDRS-AC-716",
+          "GDRS-AC-717",
+          "GDRS-AC-718",
+          "GDRS-AC-719"
+        ]
+      },
+      {
+        "id": "GDRS-516",
+        "title": "直报管理 → 文件资源管理 → · 查询授权",
+        "route": "/gdrs/gdrs/unstrctAccreditServerManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-011.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-720",
+          "GDRS-AC-721",
+          "GDRS-AC-722",
+          "GDRS-AC-723",
+          "GDRS-AC-724"
+        ]
+      },
+      {
+        "id": "GDRS-517",
+        "title": "直报管理 → 文件资源管理 → · 任务管理",
+        "route": "/gdrs/gdrs/unstructNotifyManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-012.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-725",
+          "GDRS-AC-726",
+          "GDRS-AC-727",
+          "GDRS-AC-728",
+          "GDRS-AC-729"
+        ]
+      },
+      {
+        "id": "GDRS-520",
+        "title": "数据上报 → 标准化数据上报 → · 数据上报",
+        "route": "/gdrs/report/structReportManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/H-GDRS-014.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-730",
+          "GDRS-AC-731",
+          "GDRS-AC-732",
+          "GDRS-AC-733",
+          "GDRS-AC-734"
+        ]
+      },
+      {
+        "id": "GDRS-521",
+        "title": "数据上报 → 标准化数据上报 → · 数据查看",
+        "route": "/gdrs/report/structResourceDetail",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-015.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-735",
+          "GDRS-AC-736",
+          "GDRS-AC-737",
+          "GDRS-AC-738",
+          "GDRS-AC-739"
+        ]
+      },
+      {
+        "id": "GDRS-522",
+        "title": "数据上报 → 标准化数据上报 → · 上报任务",
+        "route": "/gdrs/report/structReportTask",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-016.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-740",
+          "GDRS-AC-741",
+          "GDRS-AC-742",
+          "GDRS-AC-743",
+          "GDRS-AC-744"
+        ]
+      },
+      {
+        "id": "GDRS-523",
+        "title": "数据上报 → 标准化数据上报 → · 上报记录",
+        "route": "/gdrs/report/structRecordManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-017.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-745",
+          "GDRS-AC-746",
+          "GDRS-AC-747",
+          "GDRS-AC-748",
+          "GDRS-AC-749"
+        ]
+      },
+      {
+        "id": "GDRS-524",
+        "title": "数据上报 → 标准化数据上报 → · 服务查询",
+        "route": "/gdrs/report/structAccreditDetail",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-018.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-750",
+          "GDRS-AC-751",
+          "GDRS-AC-752",
+          "GDRS-AC-753",
+          "GDRS-AC-754"
+        ]
+      },
+      {
+        "id": "GDRS-526",
+        "title": "数据上报 → 非标准化数据上报 → · 数据上报",
+        "route": "/gdrs/report/semiStructured/dataReporting",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-020.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-755",
+          "GDRS-AC-756",
+          "GDRS-AC-757",
+          "GDRS-AC-758",
+          "GDRS-AC-759"
+        ]
+      },
+      {
+        "id": "GDRS-527",
+        "title": "数据上报 → 非标准化数据上报 → · 上报任务",
+        "route": "/gdrs/report/semiStructured/semiStructReportTask",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-021.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-760",
+          "GDRS-AC-761",
+          "GDRS-AC-762",
+          "GDRS-AC-763",
+          "GDRS-AC-764"
+        ]
+      },
+      {
+        "id": "GDRS-528",
+        "title": "数据上报 → 非标准化数据上报 → · 上报记录",
+        "route": "/gdrs/report/semiStructured/reportRecord",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-022.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-765",
+          "GDRS-AC-766",
+          "GDRS-AC-767",
+          "GDRS-AC-768",
+          "GDRS-AC-769"
+        ]
+      },
+      {
+        "id": "GDRS-529",
+        "title": "数据上报 → 文件上报 → · 数据上报",
+        "route": "/gdrs/report/unstructReportManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-023.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-770",
+          "GDRS-AC-771",
+          "GDRS-AC-772",
+          "GDRS-AC-773",
+          "GDRS-AC-774"
+        ]
+      },
+      {
+        "id": "GDRS-538",
+        "title": "数据上报 → 文件上报 → · 数据查看",
+        "route": "/gdrs/report/ustructResourceDetail",
+        "sources": [
+          "../evidence/live-recheck-20261022/AA-GDRS-file-view.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-775",
+          "GDRS-AC-776",
+          "GDRS-AC-777",
+          "GDRS-AC-778",
+          "GDRS-AC-779"
+        ]
+      },
+      {
+        "id": "GDRS-530",
+        "title": "数据上报 → 文件上报 → · 上报任务",
+        "route": "/gdrs/report/unstructReportTask",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-025.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-780",
+          "GDRS-AC-781",
+          "GDRS-AC-782",
+          "GDRS-AC-783",
+          "GDRS-AC-784"
+        ]
+      },
+      {
+        "id": "GDRS-531",
+        "title": "数据上报 → 文件上报 → · 上报记录",
+        "route": "/gdrs/report/unstructRecordManage",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-026.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-785",
+          "GDRS-AC-786",
+          "GDRS-AC-787",
+          "GDRS-AC-788",
+          "GDRS-AC-789"
+        ]
+      },
+      {
+        "id": "GDRS-532",
+        "title": "数据上报 → 文件上报 → · 服务查询",
+        "route": "/gdrs/report/unstructAccreditDetail",
+        "sources": [
+          "../evidence/live-recheck-20261022/W-GDRS-027.png"
+        ],
+        "acceptance": [
+          "GDRS-AC-790",
+          "GDRS-AC-791",
+          "GDRS-AC-792",
+          "GDRS-AC-793",
+          "GDRS-AC-794"
+        ]
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "GDRS-AC-620",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-621",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-622",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-623",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-624",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-625",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-626",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-627",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-628",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-629",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-630",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-631",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-632",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-633",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-634",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-635",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-636",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-637",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-638",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-639",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-640",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-641",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-642",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-643",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-644",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-645",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-646",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-647",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-648",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-649",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-650",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-651",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-652",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-653",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-654",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-655",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-656",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-657",
+        "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-658",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-659",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-660",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-661",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-662",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-663",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-664",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-665",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-666",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-667",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-668",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-669",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-670",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-671",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-672",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-673",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-674",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-675",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-676",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-677",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-678",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-679",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-680",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-681",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-682",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-683",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-684",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-685",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-686",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-687",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-688",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-689",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-690",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-691",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-692",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-693",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-694",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-695",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-696",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-697",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-698",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-699",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-700",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-701",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-702",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-703",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-704",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-705",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-706",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-707",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-708",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-709",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-710",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-711",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-712",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-713",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-714",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-715",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-716",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-717",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-718",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-719",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-720",
+        "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-721",
+        "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-722",
+        "text": "字段校验失败、对象失效和并发版本冲突时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-723",
+        "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-724",
+        "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-725",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-726",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-727",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-728",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-729",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-730",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-731",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-732",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-733",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-734",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-735",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-736",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-737",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-738",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-739",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-740",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-741",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-742",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-743",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-744",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-745",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-746",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-747",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-748",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-749",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-750",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-751",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-752",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-753",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-754",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-755",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-756",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-757",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-758",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-759",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-760",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-761",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-762",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-763",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-764",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-765",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-766",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-767",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-768",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-769",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-770",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-771",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-772",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-773",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-774",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-775",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-776",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-777",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-778",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-779",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-780",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-781",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-782",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-783",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-784",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-785",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-786",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-787",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-788",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-789",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-790",
+        "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-791",
+        "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-792",
+        "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-793",
+        "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-794",
+        "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-500",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-501",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-502",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-500"
+      },
+      {
+        "id": "GDRS-AC-503",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-504",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-505",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-507"
+      },
+      {
+        "id": "GDRS-AC-506",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-507",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-508",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-508"
+      },
+      {
+        "id": "GDRS-AC-509",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-510",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-511",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-512"
+      },
+      {
+        "id": "GDRS-AC-512",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-513",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-514",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GDRS-513"
+      },
+      {
+        "id": "GDRS-AC-515",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-516",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-517",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-518"
+      },
+      {
+        "id": "GDRS-AC-518",
+        "text": "打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-519",
+        "text": "取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-520",
+        "text": "无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示",
+        "requirement": "GDRS-519"
+      },
+      {
+        "id": "GDRS-AC-521",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-522",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-523",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-525"
+      },
+      {
+        "id": "GDRS-AC-524",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-525",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-526",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-505"
+      },
+      {
+        "id": "GDRS-AC-527",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-528",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-529",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-533"
+      },
+      {
+        "id": "GDRS-AC-530",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-531",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-532",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-534"
+      },
+      {
+        "id": "GDRS-AC-533",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-534",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-535",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-535"
+      },
+      {
+        "id": "GDRS-AC-536",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-537",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-538",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-536"
+      },
+      {
+        "id": "GDRS-AC-539",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-540",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-541",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-537"
+      },
+      {
+        "id": "GDRS-AC-542",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-543",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-544",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-506"
+      },
+      {
+        "id": "GDRS-AC-545",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-546",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-547",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-509"
+      },
+      {
+        "id": "GDRS-AC-548",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-549",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-550",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-510"
+      },
+      {
+        "id": "GDRS-AC-551",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-552",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-553",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-511"
+      },
+      {
+        "id": "GDRS-AC-554",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-555",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-556",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-514"
+      },
+      {
+        "id": "GDRS-AC-557",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-558",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-559",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-515"
+      },
+      {
+        "id": "GDRS-AC-560",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-561",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-562",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-516"
+      },
+      {
+        "id": "GDRS-AC-563",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-564",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-565",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-517"
+      },
+      {
+        "id": "GDRS-AC-566",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-567",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-568",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-520"
+      },
+      {
+        "id": "GDRS-AC-569",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-570",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-571",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-521"
+      },
+      {
+        "id": "GDRS-AC-572",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-573",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-574",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-522"
+      },
+      {
+        "id": "GDRS-AC-575",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-576",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-577",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-523"
+      },
+      {
+        "id": "GDRS-AC-578",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-579",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-580",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-524"
+      },
+      {
+        "id": "GDRS-AC-581",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-582",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-583",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-526"
+      },
+      {
+        "id": "GDRS-AC-584",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-585",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-586",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-527"
+      },
+      {
+        "id": "GDRS-AC-587",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-588",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-589",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-528"
+      },
+      {
+        "id": "GDRS-AC-590",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-591",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-592",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-529"
+      },
+      {
+        "id": "GDRS-AC-593",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-594",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-595",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-538"
+      },
+      {
+        "id": "GDRS-AC-596",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-597",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-598",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-530"
+      },
+      {
+        "id": "GDRS-AC-599",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-600",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-601",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-531"
+      },
+      {
+        "id": "GDRS-AC-602",
+        "text": "有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-603",
+        "text": "加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件",
+        "requirement": "GDRS-532"
+      },
+      {
+        "id": "GDRS-AC-604",
+        "text": "越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权",
+        "requirement": "GDRS-532"
+      }
+    ],
+    "sourceRows": [],
+    "boundaries": []
+  }
+}
