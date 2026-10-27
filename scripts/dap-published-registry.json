@@ -1,0 +1,1459 @@
+{
+  "main": {
+    "requirements": [
+      {
+        "id": "DAP-100",
+        "title": "查询指标数据源管理",
+        "evidence": [
+          "C023-original-content"
+        ],
+        "route": "/dap/manage/dataSource/dataSourceList",
+        "acceptance": [
+          "DAP-AC-632",
+          "DAP-AC-633",
+          "DAP-AC-634",
+          "DAP-AC-635",
+          "DAP-AC-636"
+        ]
+      },
+      {
+        "id": "DAP-001",
+        "title": "查找指标数据来源",
+        "evidence": [
+          "E045-indicator"
+        ],
+        "route": "/dap/manage/dataSource/dataSourceList",
+        "acceptance": [
+          "DAP-AC-637",
+          "DAP-AC-638",
+          "DAP-AC-639",
+          "DAP-AC-640",
+          "DAP-AC-641"
+        ]
+      }
+    ],
+    "acceptance": [
+      "DAP-AC-632",
+      "DAP-AC-633",
+      "DAP-AC-634",
+      "DAP-AC-635",
+      "DAP-AC-636",
+      "DAP-AC-637",
+      "DAP-AC-638",
+      "DAP-AC-639",
+      "DAP-AC-640",
+      "DAP-AC-641",
+      "DAP-AC-001",
+      "DAP-AC-002",
+      "DAP-AC-003",
+      "DAP-AC-004",
+      "DAP-AC-005",
+      "DAP-AC-006"
+    ],
+    "associations": {
+      "DAP-AC-632": "DAP-100",
+      "DAP-AC-633": "DAP-100",
+      "DAP-AC-634": "DAP-100",
+      "DAP-AC-635": "DAP-100",
+      "DAP-AC-636": "DAP-100",
+      "DAP-AC-637": "DAP-001",
+      "DAP-AC-638": "DAP-001",
+      "DAP-AC-639": "DAP-001",
+      "DAP-AC-640": "DAP-001",
+      "DAP-AC-641": "DAP-001",
+      "DAP-AC-001": "DAP-100",
+      "DAP-AC-002": "DAP-100",
+      "DAP-AC-003": "DAP-001",
+      "DAP-AC-004": "DAP-100",
+      "DAP-AC-005": "DAP-100",
+      "DAP-AC-006": "DAP-001"
+    },
+    "sourceRows": [
+      "| DAP-100 | [C023-original-content](../evidence/C023-original-content.png) | [调研细节](./调研记录.md#dap-100-指标数据源管理--查询与列表) |",
+      "| DAP-001 | [E045-indicator](../evidence/E045-indicator.png) | [原始记录](./调研记录.md) |"
+    ]
+  },
+  "sub": {
+    "requirements": [
+      {
+        "id": "DAP-500",
+        "title": "管理 → 数据源 → · 数据源管理",
+        "evidence": [
+          "J-DAP-001"
+        ],
+        "route": "/dap/manage/dataSource/dataSourceList",
+        "acceptance": [
+          "DAP-AC-642",
+          "DAP-AC-643",
+          "DAP-AC-644",
+          "DAP-AC-645",
+          "DAP-AC-646"
+        ]
+      },
+      {
+        "id": "DAP-501",
+        "title": "管理 → 数据域 → · 数据域管理",
+        "evidence": [
+          "J-DAP-002"
+        ],
+        "route": "/dap/manage/dataField/dataFieldList",
+        "acceptance": [
+          "DAP-AC-647",
+          "DAP-AC-648",
+          "DAP-AC-649",
+          "DAP-AC-650",
+          "DAP-AC-651"
+        ]
+      },
+      {
+        "id": "DAP-502",
+        "title": "管理 → 数据域 → · 数据域管理 → 新增",
+        "evidence": [
+          "J-DAP-002-op1"
+        ],
+        "route": "/dap/manage/dataField/dataFieldEdit",
+        "acceptance": [
+          "DAP-AC-652",
+          "DAP-AC-653",
+          "DAP-AC-654",
+          "DAP-AC-655",
+          "DAP-AC-656"
+        ]
+      },
+      {
+        "id": "DAP-503",
+        "title": "管理 → 数据域 → · 数据域管理 → 编辑",
+        "evidence": [
+          "J-DAP-002-op2"
+        ],
+        "route": "/dap/manage/dataField/dataFieldEdit",
+        "acceptance": [
+          "DAP-AC-657",
+          "DAP-AC-658",
+          "DAP-AC-659",
+          "DAP-AC-660",
+          "DAP-AC-661"
+        ]
+      },
+      {
+        "id": "DAP-504",
+        "title": "管理 → 数据域 → · 数据域管理 → 查看",
+        "evidence": [
+          "J-DAP-002-op3"
+        ],
+        "route": "/dap/manage/dataField/dataFieldEdit",
+        "acceptance": [
+          "DAP-AC-662",
+          "DAP-AC-663",
+          "DAP-AC-664",
+          "DAP-AC-665",
+          "DAP-AC-666"
+        ]
+      },
+      {
+        "id": "DAP-505",
+        "title": "管理 → 配置 → · 逻辑表物化管理",
+        "evidence": [
+          "J-DAP-003"
+        ],
+        "route": "/dap/manage/deploy/logicalTableList",
+        "acceptance": [
+          "DAP-AC-667",
+          "DAP-AC-668",
+          "DAP-AC-669",
+          "DAP-AC-670",
+          "DAP-AC-671"
+        ]
+      },
+      {
+        "id": "DAP-506",
+        "title": "管理 → 配置 → · 逻辑表物化管理 → 新增",
+        "evidence": [
+          "J-DAP-003-op1",
+          "J-DAP-003-op1-options0",
+          "J-DAP-003-op1-options1"
+        ],
+        "route": "/dap/manage/deploy/logicalTableEdit",
+        "acceptance": [
+          "DAP-AC-672",
+          "DAP-AC-673",
+          "DAP-AC-674",
+          "DAP-AC-675",
+          "DAP-AC-676"
+        ]
+      },
+      {
+        "id": "DAP-507",
+        "title": "管理 → 统计周期 → · 统计周期管理",
+        "evidence": [
+          "J-DAP-004"
+        ],
+        "route": "/dap/manage/statPeriod/statPeriodList",
+        "acceptance": [
+          "DAP-AC-677",
+          "DAP-AC-678",
+          "DAP-AC-679",
+          "DAP-AC-680",
+          "DAP-AC-681"
+        ]
+      },
+      {
+        "id": "DAP-508",
+        "title": "管理 → 统计周期 → · 统计周期管理 → 新增",
+        "evidence": [
+          "J-DAP-004-op1",
+          "J-DAP-004-op1-options0",
+          "J-DAP-004-op1-options1"
+        ],
+        "route": "/dap/manage/statPeriod/statPeriodEdit",
+        "acceptance": [
+          "DAP-AC-682",
+          "DAP-AC-683",
+          "DAP-AC-684",
+          "DAP-AC-685",
+          "DAP-AC-686"
+        ]
+      },
+      {
+        "id": "DAP-509",
+        "title": "研发 → 规范定义 → · 维度管理",
+        "evidence": [
+          "J-DAP-005"
+        ],
+        "route": "/dap/research/standard/dimensionList",
+        "acceptance": [
+          "DAP-AC-687",
+          "DAP-AC-688",
+          "DAP-AC-689",
+          "DAP-AC-690",
+          "DAP-AC-691"
+        ]
+      },
+      {
+        "id": "DAP-510",
+        "title": "研发 → 规范定义 → · 维度管理 → 新增",
+        "evidence": [
+          "J-DAP-005-op1"
+        ],
+        "route": "/dap/research/standard/dimensionList",
+        "acceptance": [
+          "DAP-AC-692",
+          "DAP-AC-693",
+          "DAP-AC-694",
+          "DAP-AC-695",
+          "DAP-AC-696"
+        ]
+      },
+      {
+        "id": "DAP-511",
+        "title": "研发 → 规范定义 → · 业务过程",
+        "evidence": [
+          "J-DAP-006"
+        ],
+        "route": "/dap/research/standard/businessDefList",
+        "acceptance": [
+          "DAP-AC-697",
+          "DAP-AC-698",
+          "DAP-AC-699",
+          "DAP-AC-700",
+          "DAP-AC-701"
+        ]
+      },
+      {
+        "id": "DAP-512",
+        "title": "研发 → 规范定义 → · 业务过程 → 新增",
+        "evidence": [
+          "J-DAP-006-op1",
+          "J-DAP-006-op1-options0"
+        ],
+        "route": "/dap/research/standard/businessDefEdit",
+        "acceptance": [
+          "DAP-AC-702",
+          "DAP-AC-703",
+          "DAP-AC-704",
+          "DAP-AC-705",
+          "DAP-AC-706"
+        ]
+      },
+      {
+        "id": "DAP-513",
+        "title": "研发 → 规范定义 → · 原子指标",
+        "evidence": [
+          "J-DAP-007"
+        ],
+        "route": "/dap/research/standard/atomList",
+        "acceptance": [
+          "DAP-AC-707",
+          "DAP-AC-708",
+          "DAP-AC-709",
+          "DAP-AC-710",
+          "DAP-AC-711"
+        ]
+      },
+      {
+        "id": "DAP-514",
+        "title": "研发 → 规范定义 → · 原子指标 → 新增",
+        "evidence": [
+          "J-DAP-007-op1"
+        ],
+        "route": "/dap/research/standard/atomList",
+        "acceptance": [
+          "DAP-AC-712",
+          "DAP-AC-713",
+          "DAP-AC-714",
+          "DAP-AC-715",
+          "DAP-AC-716"
+        ]
+      },
+      {
+        "id": "DAP-515",
+        "title": "研发 → 规范定义 → · 原子指标 → 修改",
+        "evidence": [
+          "K-DAP-007-op2"
+        ],
+        "route": "/dap/research/standard/atomList",
+        "acceptance": [
+          "DAP-AC-717",
+          "DAP-AC-718",
+          "DAP-AC-719",
+          "DAP-AC-720",
+          "DAP-AC-721"
+        ]
+      },
+      {
+        "id": "DAP-516",
+        "title": "研发 → 规范定义 → · 衍生指标",
+        "evidence": [
+          "K-DAP-008"
+        ],
+        "route": "/dap/research/standard/derivative",
+        "acceptance": [
+          "DAP-AC-722",
+          "DAP-AC-723",
+          "DAP-AC-724",
+          "DAP-AC-725",
+          "DAP-AC-726"
+        ]
+      },
+      {
+        "id": "DAP-517",
+        "title": "研发 → 规范定义 → · 衍生指标 → 新增",
+        "evidence": [
+          "K-DAP-008-op1"
+        ],
+        "route": "/dap/research/standard/derivative",
+        "acceptance": [
+          "DAP-AC-727",
+          "DAP-AC-728",
+          "DAP-AC-729",
+          "DAP-AC-730",
+          "DAP-AC-731"
+        ]
+      },
+      {
+        "id": "DAP-518",
+        "title": "研发 → 规范定义 → · 衍生指标 → 修改",
+        "evidence": [
+          "K-DAP-008-op2"
+        ],
+        "route": "/dap/research/standard/derivative",
+        "acceptance": [
+          "DAP-AC-732",
+          "DAP-AC-733",
+          "DAP-AC-734",
+          "DAP-AC-735",
+          "DAP-AC-736"
+        ]
+      },
+      {
+        "id": "DAP-519",
+        "title": "研发 → 规范定义 → · 业务限定词",
+        "evidence": [
+          "K-DAP-009"
+        ],
+        "route": "/dap/research/standard/businessLimitList",
+        "acceptance": [
+          "DAP-AC-737",
+          "DAP-AC-738",
+          "DAP-AC-739",
+          "DAP-AC-740",
+          "DAP-AC-741"
+        ]
+      },
+      {
+        "id": "DAP-520",
+        "title": "研发 → 规范定义 → · 业务限定词 → 新增",
+        "evidence": [
+          "K-DAP-009-op1"
+        ],
+        "route": "/dap/research/standard/businessLimitList",
+        "acceptance": [
+          "DAP-AC-742",
+          "DAP-AC-743",
+          "DAP-AC-744",
+          "DAP-AC-745",
+          "DAP-AC-746"
+        ]
+      },
+      {
+        "id": "DAP-521",
+        "title": "研发 → 规范定义 → · 业务限定词 → 修改",
+        "evidence": [
+          "K-DAP-009-op2"
+        ],
+        "route": "/dap/research/standard/businessLimitList",
+        "acceptance": [
+          "DAP-AC-747",
+          "DAP-AC-748",
+          "DAP-AC-749",
+          "DAP-AC-750",
+          "DAP-AC-751"
+        ]
+      },
+      {
+        "id": "DAP-522",
+        "title": "研发 → 规范定义 → · 派生指标",
+        "evidence": [
+          "K-DAP-010"
+        ],
+        "route": "/dap/research/standard/accCycleList",
+        "acceptance": [
+          "DAP-AC-752",
+          "DAP-AC-753",
+          "DAP-AC-754",
+          "DAP-AC-755",
+          "DAP-AC-756"
+        ]
+      },
+      {
+        "id": "DAP-523",
+        "title": "研发 → 规范定义 → · 派生指标 → 新增",
+        "evidence": [
+          "K-DAP-010-op1"
+        ],
+        "route": "/dap/research/standard/accCycleList",
+        "acceptance": [
+          "DAP-AC-757",
+          "DAP-AC-758",
+          "DAP-AC-759",
+          "DAP-AC-760",
+          "DAP-AC-761"
+        ]
+      },
+      {
+        "id": "DAP-524",
+        "title": "研发 → 规范定义 → · 派生指标 → 修改",
+        "evidence": [
+          "K-DAP-010-op2"
+        ],
+        "route": "/dap/research/standard/accCycleList",
+        "acceptance": [
+          "DAP-AC-762",
+          "DAP-AC-763",
+          "DAP-AC-764",
+          "DAP-AC-765",
+          "DAP-AC-766"
+        ]
+      },
+      {
+        "id": "DAP-525",
+        "title": "研发 → 规范定义 → · 自定义指标",
+        "evidence": [
+          "K-DAP-011"
+        ],
+        "route": "/dap/research/standard/diyList",
+        "acceptance": [
+          "DAP-AC-767",
+          "DAP-AC-768",
+          "DAP-AC-769",
+          "DAP-AC-770",
+          "DAP-AC-771"
+        ]
+      },
+      {
+        "id": "DAP-526",
+        "title": "研发 → 规范定义 → · 自定义指标 → 新增",
+        "evidence": [
+          "K-DAP-011-op1"
+        ],
+        "route": "/dap/research/standard/diyList",
+        "acceptance": [
+          "DAP-AC-772",
+          "DAP-AC-773",
+          "DAP-AC-774",
+          "DAP-AC-775",
+          "DAP-AC-776"
+        ]
+      },
+      {
+        "id": "DAP-527",
+        "title": "研发 → 规范定义 → · 自定义指标 → 修改",
+        "evidence": [
+          "K-DAP-011-op2"
+        ],
+        "route": "/dap/research/standard/diyList",
+        "acceptance": [
+          "DAP-AC-777",
+          "DAP-AC-778",
+          "DAP-AC-779",
+          "DAP-AC-780",
+          "DAP-AC-781"
+        ]
+      },
+      {
+        "id": "DAP-528",
+        "title": "研发 → 逻辑表 → · 维度逻辑表",
+        "evidence": [
+          "K-DAP-012"
+        ],
+        "route": "/dap/research/logicTable/dimensionTableList",
+        "acceptance": [
+          "DAP-AC-782",
+          "DAP-AC-783",
+          "DAP-AC-784",
+          "DAP-AC-785",
+          "DAP-AC-786"
+        ]
+      },
+      {
+        "id": "DAP-529",
+        "title": "研发 → 逻辑表 → · 事实逻辑表",
+        "evidence": [
+          "K-DAP-013"
+        ],
+        "route": "/dap/research/logicTable/factLogicTableList",
+        "acceptance": [
+          "DAP-AC-787",
+          "DAP-AC-788",
+          "DAP-AC-789",
+          "DAP-AC-790",
+          "DAP-AC-791"
+        ]
+      },
+      {
+        "id": "DAP-530",
+        "title": "研发 → 逻辑表 → · 事实逻辑表 → 新增",
+        "evidence": [
+          "K-DAP-013-op1",
+          "K-DAP-013-op1-options0",
+          "K-DAP-013-op1-options1",
+          "K-DAP-013-op1-options2"
+        ],
+        "route": "/dap/research/logicTable/factLogicTableAdd",
+        "acceptance": [
+          "DAP-AC-792",
+          "DAP-AC-793",
+          "DAP-AC-794",
+          "DAP-AC-795",
+          "DAP-AC-796"
+        ]
+      },
+      {
+        "id": "DAP-531",
+        "title": "研发 → 逻辑表 → · 汇总逻辑表",
+        "evidence": [
+          "K-DAP-014"
+        ],
+        "route": "/dap/research/logicTable/summaryTableList",
+        "acceptance": [
+          "DAP-AC-797",
+          "DAP-AC-798",
+          "DAP-AC-799",
+          "DAP-AC-800",
+          "DAP-AC-801"
+        ]
+      },
+      {
+        "id": "DAP-532",
+        "title": "研发 → 逻辑表 → · 汇总逻辑表 → 新增",
+        "evidence": [
+          "K-DAP-014-op1",
+          "K-DAP-014-op1-options0"
+        ],
+        "route": "/dap/research/logicTable/summaryTableListAdd",
+        "acceptance": [
+          "DAP-AC-802",
+          "DAP-AC-803",
+          "DAP-AC-804",
+          "DAP-AC-805",
+          "DAP-AC-806"
+        ]
+      },
+      {
+        "id": "DAP-533",
+        "title": "研发 → 逻辑表 → · 结果表",
+        "evidence": [
+          "K-DAP-015"
+        ],
+        "route": "/dap/research/logicTable/resultTableList",
+        "acceptance": [
+          "DAP-AC-807",
+          "DAP-AC-808",
+          "DAP-AC-809",
+          "DAP-AC-810",
+          "DAP-AC-811"
+        ]
+      },
+      {
+        "id": "DAP-534",
+        "title": "发布 → 发布 → · 发布管理",
+        "evidence": [
+          "K-DAP-016"
+        ],
+        "route": "/dap/review/reviewManage/reviewManageList",
+        "acceptance": [
+          "DAP-AC-812",
+          "DAP-AC-813",
+          "DAP-AC-814",
+          "DAP-AC-815",
+          "DAP-AC-816"
+        ]
+      },
+      {
+        "id": "DAP-535",
+        "title": "运维 → 调度 → · 调度管理",
+        "evidence": [
+          "K-DAP-017"
+        ],
+        "route": "/dap/devOps/dispatch/dispatchList",
+        "acceptance": [
+          "DAP-AC-817",
+          "DAP-AC-818",
+          "DAP-AC-819",
+          "DAP-AC-820",
+          "DAP-AC-821"
+        ]
+      },
+      {
+        "id": "DAP-536",
+        "title": "运维 → 调度 → · 调度管理 → 新增",
+        "evidence": [
+          "K-DAP-017-op1",
+          "K-DAP-017-op1-options0"
+        ],
+        "route": "/dap/devOps/dispatch/dispatchEdit",
+        "acceptance": [
+          "DAP-AC-822",
+          "DAP-AC-823",
+          "DAP-AC-824",
+          "DAP-AC-825",
+          "DAP-AC-826"
+        ]
+      },
+      {
+        "id": "DAP-537",
+        "title": "分析 → 数据分析 → · 数据分析",
+        "evidence": [
+          "K-DAP-018"
+        ],
+        "route": "/dap/analysis/dataAnalysis/dataAnalysisList",
+        "acceptance": [
+          "DAP-AC-827",
+          "DAP-AC-828",
+          "DAP-AC-829",
+          "DAP-AC-830",
+          "DAP-AC-831"
+        ]
+      },
+      {
+        "id": "DAP-538",
+        "title": "分析 → 数据分析 → · 数据分析 → 新增",
+        "evidence": [
+          "K-DAP-018-op1"
+        ],
+        "route": "/dap/analysis/dataAnalysis/dataAnalysisList",
+        "acceptance": [
+          "DAP-AC-832",
+          "DAP-AC-833",
+          "DAP-AC-834",
+          "DAP-AC-835",
+          "DAP-AC-836"
+        ]
+      },
+      {
+        "id": "DAP-539",
+        "title": "分析 → 数据分析 → · 数据分析 → 修改",
+        "evidence": [
+          "K-DAP-018-op2"
+        ],
+        "route": "/dap/analysis/dataAnalysis/dataAnalysisList",
+        "acceptance": [
+          "DAP-AC-837",
+          "DAP-AC-838",
+          "DAP-AC-839",
+          "DAP-AC-840",
+          "DAP-AC-841"
+        ]
+      },
+      {
+        "id": "DAP-540",
+        "title": "分析 → 数据分析 → · 分析门户",
+        "evidence": [
+          "K-DAP-019"
+        ],
+        "route": "/dap/analysis/analysisGateway/gatewayList",
+        "acceptance": [
+          "DAP-AC-842",
+          "DAP-AC-843",
+          "DAP-AC-844",
+          "DAP-AC-845",
+          "DAP-AC-846"
+        ]
+      },
+      {
+        "id": "DAP-541",
+        "title": "监控 → 监控管理 → · 监控规则管理",
+        "evidence": [
+          "K-DAP-020"
+        ],
+        "route": "/dap/monitor/manage/ruleManageList",
+        "acceptance": [
+          "DAP-AC-847",
+          "DAP-AC-848",
+          "DAP-AC-849",
+          "DAP-AC-850",
+          "DAP-AC-851"
+        ]
+      },
+      {
+        "id": "DAP-542",
+        "title": "监控 → 监控管理 → · 监控规则管理 → 新增",
+        "evidence": [
+          "K-DAP-020-op1"
+        ],
+        "route": "/dap/monitor/manage/ruleManageList",
+        "acceptance": [
+          "DAP-AC-852",
+          "DAP-AC-853",
+          "DAP-AC-854",
+          "DAP-AC-855",
+          "DAP-AC-856"
+        ]
+      },
+      {
+        "id": "DAP-543",
+        "title": "监控 → 监控管理 → · 告警管理",
+        "evidence": [
+          "K-DAP-021"
+        ],
+        "route": "/dap/monitor/manage/warnManageList",
+        "acceptance": [
+          "DAP-AC-857",
+          "DAP-AC-858",
+          "DAP-AC-859",
+          "DAP-AC-860",
+          "DAP-AC-861"
+        ]
+      }
+    ],
+    "acceptance": [
+      "DAP-AC-642",
+      "DAP-AC-643",
+      "DAP-AC-644",
+      "DAP-AC-645",
+      "DAP-AC-646",
+      "DAP-AC-647",
+      "DAP-AC-648",
+      "DAP-AC-649",
+      "DAP-AC-650",
+      "DAP-AC-651",
+      "DAP-AC-652",
+      "DAP-AC-653",
+      "DAP-AC-654",
+      "DAP-AC-655",
+      "DAP-AC-656",
+      "DAP-AC-657",
+      "DAP-AC-658",
+      "DAP-AC-659",
+      "DAP-AC-660",
+      "DAP-AC-661",
+      "DAP-AC-662",
+      "DAP-AC-663",
+      "DAP-AC-664",
+      "DAP-AC-665",
+      "DAP-AC-666",
+      "DAP-AC-667",
+      "DAP-AC-668",
+      "DAP-AC-669",
+      "DAP-AC-670",
+      "DAP-AC-671",
+      "DAP-AC-672",
+      "DAP-AC-673",
+      "DAP-AC-674",
+      "DAP-AC-675",
+      "DAP-AC-676",
+      "DAP-AC-677",
+      "DAP-AC-678",
+      "DAP-AC-679",
+      "DAP-AC-680",
+      "DAP-AC-681",
+      "DAP-AC-682",
+      "DAP-AC-683",
+      "DAP-AC-684",
+      "DAP-AC-685",
+      "DAP-AC-686",
+      "DAP-AC-687",
+      "DAP-AC-688",
+      "DAP-AC-689",
+      "DAP-AC-690",
+      "DAP-AC-691",
+      "DAP-AC-692",
+      "DAP-AC-693",
+      "DAP-AC-694",
+      "DAP-AC-695",
+      "DAP-AC-696",
+      "DAP-AC-697",
+      "DAP-AC-698",
+      "DAP-AC-699",
+      "DAP-AC-700",
+      "DAP-AC-701",
+      "DAP-AC-702",
+      "DAP-AC-703",
+      "DAP-AC-704",
+      "DAP-AC-705",
+      "DAP-AC-706",
+      "DAP-AC-707",
+      "DAP-AC-708",
+      "DAP-AC-709",
+      "DAP-AC-710",
+      "DAP-AC-711",
+      "DAP-AC-712",
+      "DAP-AC-713",
+      "DAP-AC-714",
+      "DAP-AC-715",
+      "DAP-AC-716",
+      "DAP-AC-717",
+      "DAP-AC-718",
+      "DAP-AC-719",
+      "DAP-AC-720",
+      "DAP-AC-721",
+      "DAP-AC-722",
+      "DAP-AC-723",
+      "DAP-AC-724",
+      "DAP-AC-725",
+      "DAP-AC-726",
+      "DAP-AC-727",
+      "DAP-AC-728",
+      "DAP-AC-729",
+      "DAP-AC-730",
+      "DAP-AC-731",
+      "DAP-AC-732",
+      "DAP-AC-733",
+      "DAP-AC-734",
+      "DAP-AC-735",
+      "DAP-AC-736",
+      "DAP-AC-737",
+      "DAP-AC-738",
+      "DAP-AC-739",
+      "DAP-AC-740",
+      "DAP-AC-741",
+      "DAP-AC-742",
+      "DAP-AC-743",
+      "DAP-AC-744",
+      "DAP-AC-745",
+      "DAP-AC-746",
+      "DAP-AC-747",
+      "DAP-AC-748",
+      "DAP-AC-749",
+      "DAP-AC-750",
+      "DAP-AC-751",
+      "DAP-AC-752",
+      "DAP-AC-753",
+      "DAP-AC-754",
+      "DAP-AC-755",
+      "DAP-AC-756",
+      "DAP-AC-757",
+      "DAP-AC-758",
+      "DAP-AC-759",
+      "DAP-AC-760",
+      "DAP-AC-761",
+      "DAP-AC-762",
+      "DAP-AC-763",
+      "DAP-AC-764",
+      "DAP-AC-765",
+      "DAP-AC-766",
+      "DAP-AC-767",
+      "DAP-AC-768",
+      "DAP-AC-769",
+      "DAP-AC-770",
+      "DAP-AC-771",
+      "DAP-AC-772",
+      "DAP-AC-773",
+      "DAP-AC-774",
+      "DAP-AC-775",
+      "DAP-AC-776",
+      "DAP-AC-777",
+      "DAP-AC-778",
+      "DAP-AC-779",
+      "DAP-AC-780",
+      "DAP-AC-781",
+      "DAP-AC-782",
+      "DAP-AC-783",
+      "DAP-AC-784",
+      "DAP-AC-785",
+      "DAP-AC-786",
+      "DAP-AC-787",
+      "DAP-AC-788",
+      "DAP-AC-789",
+      "DAP-AC-790",
+      "DAP-AC-791",
+      "DAP-AC-792",
+      "DAP-AC-793",
+      "DAP-AC-794",
+      "DAP-AC-795",
+      "DAP-AC-796",
+      "DAP-AC-797",
+      "DAP-AC-798",
+      "DAP-AC-799",
+      "DAP-AC-800",
+      "DAP-AC-801",
+      "DAP-AC-802",
+      "DAP-AC-803",
+      "DAP-AC-804",
+      "DAP-AC-805",
+      "DAP-AC-806",
+      "DAP-AC-807",
+      "DAP-AC-808",
+      "DAP-AC-809",
+      "DAP-AC-810",
+      "DAP-AC-811",
+      "DAP-AC-812",
+      "DAP-AC-813",
+      "DAP-AC-814",
+      "DAP-AC-815",
+      "DAP-AC-816",
+      "DAP-AC-817",
+      "DAP-AC-818",
+      "DAP-AC-819",
+      "DAP-AC-820",
+      "DAP-AC-821",
+      "DAP-AC-822",
+      "DAP-AC-823",
+      "DAP-AC-824",
+      "DAP-AC-825",
+      "DAP-AC-826",
+      "DAP-AC-827",
+      "DAP-AC-828",
+      "DAP-AC-829",
+      "DAP-AC-830",
+      "DAP-AC-831",
+      "DAP-AC-832",
+      "DAP-AC-833",
+      "DAP-AC-834",
+      "DAP-AC-835",
+      "DAP-AC-836",
+      "DAP-AC-837",
+      "DAP-AC-838",
+      "DAP-AC-839",
+      "DAP-AC-840",
+      "DAP-AC-841",
+      "DAP-AC-842",
+      "DAP-AC-843",
+      "DAP-AC-844",
+      "DAP-AC-845",
+      "DAP-AC-846",
+      "DAP-AC-847",
+      "DAP-AC-848",
+      "DAP-AC-849",
+      "DAP-AC-850",
+      "DAP-AC-851",
+      "DAP-AC-852",
+      "DAP-AC-853",
+      "DAP-AC-854",
+      "DAP-AC-855",
+      "DAP-AC-856",
+      "DAP-AC-857",
+      "DAP-AC-858",
+      "DAP-AC-859",
+      "DAP-AC-860",
+      "DAP-AC-861",
+      "DAP-AC-500",
+      "DAP-AC-501",
+      "DAP-AC-502",
+      "DAP-AC-503",
+      "DAP-AC-504",
+      "DAP-AC-505",
+      "DAP-AC-506",
+      "DAP-AC-507",
+      "DAP-AC-508",
+      "DAP-AC-509",
+      "DAP-AC-510",
+      "DAP-AC-511",
+      "DAP-AC-512",
+      "DAP-AC-513",
+      "DAP-AC-514",
+      "DAP-AC-515",
+      "DAP-AC-516",
+      "DAP-AC-517",
+      "DAP-AC-518",
+      "DAP-AC-519",
+      "DAP-AC-520",
+      "DAP-AC-521",
+      "DAP-AC-522",
+      "DAP-AC-523",
+      "DAP-AC-524",
+      "DAP-AC-525",
+      "DAP-AC-526",
+      "DAP-AC-527",
+      "DAP-AC-528",
+      "DAP-AC-529",
+      "DAP-AC-530",
+      "DAP-AC-531",
+      "DAP-AC-532",
+      "DAP-AC-533",
+      "DAP-AC-534",
+      "DAP-AC-535",
+      "DAP-AC-536",
+      "DAP-AC-537",
+      "DAP-AC-538",
+      "DAP-AC-539",
+      "DAP-AC-540",
+      "DAP-AC-541",
+      "DAP-AC-542",
+      "DAP-AC-543",
+      "DAP-AC-544",
+      "DAP-AC-545",
+      "DAP-AC-546",
+      "DAP-AC-547",
+      "DAP-AC-548",
+      "DAP-AC-549",
+      "DAP-AC-550",
+      "DAP-AC-551",
+      "DAP-AC-552",
+      "DAP-AC-553",
+      "DAP-AC-554",
+      "DAP-AC-555",
+      "DAP-AC-556",
+      "DAP-AC-557",
+      "DAP-AC-558",
+      "DAP-AC-559",
+      "DAP-AC-560",
+      "DAP-AC-561",
+      "DAP-AC-562",
+      "DAP-AC-563",
+      "DAP-AC-564",
+      "DAP-AC-565",
+      "DAP-AC-566",
+      "DAP-AC-567",
+      "DAP-AC-568",
+      "DAP-AC-569",
+      "DAP-AC-570",
+      "DAP-AC-571",
+      "DAP-AC-572",
+      "DAP-AC-573",
+      "DAP-AC-574",
+      "DAP-AC-575",
+      "DAP-AC-576",
+      "DAP-AC-577",
+      "DAP-AC-578",
+      "DAP-AC-579",
+      "DAP-AC-580",
+      "DAP-AC-581",
+      "DAP-AC-582",
+      "DAP-AC-583",
+      "DAP-AC-584",
+      "DAP-AC-585",
+      "DAP-AC-586",
+      "DAP-AC-587",
+      "DAP-AC-588",
+      "DAP-AC-589",
+      "DAP-AC-590",
+      "DAP-AC-591",
+      "DAP-AC-592",
+      "DAP-AC-593",
+      "DAP-AC-594",
+      "DAP-AC-595",
+      "DAP-AC-596",
+      "DAP-AC-597",
+      "DAP-AC-598",
+      "DAP-AC-599",
+      "DAP-AC-600",
+      "DAP-AC-601",
+      "DAP-AC-602",
+      "DAP-AC-603",
+      "DAP-AC-604",
+      "DAP-AC-605",
+      "DAP-AC-606",
+      "DAP-AC-607",
+      "DAP-AC-608",
+      "DAP-AC-609",
+      "DAP-AC-610",
+      "DAP-AC-611",
+      "DAP-AC-612",
+      "DAP-AC-613",
+      "DAP-AC-614",
+      "DAP-AC-615",
+      "DAP-AC-616",
+      "DAP-AC-617",
+      "DAP-AC-618",
+      "DAP-AC-619",
+      "DAP-AC-620",
+      "DAP-AC-621",
+      "DAP-AC-622",
+      "DAP-AC-623",
+      "DAP-AC-624",
+      "DAP-AC-625",
+      "DAP-AC-626",
+      "DAP-AC-627",
+      "DAP-AC-628",
+      "DAP-AC-629",
+      "DAP-AC-630",
+      "DAP-AC-631"
+    ],
+    "associations": {
+      "DAP-AC-642": "DAP-500",
+      "DAP-AC-643": "DAP-500",
+      "DAP-AC-644": "DAP-500",
+      "DAP-AC-645": "DAP-500",
+      "DAP-AC-646": "DAP-500",
+      "DAP-AC-647": "DAP-501",
+      "DAP-AC-648": "DAP-501",
+      "DAP-AC-649": "DAP-501",
+      "DAP-AC-650": "DAP-501",
+      "DAP-AC-651": "DAP-501",
+      "DAP-AC-652": "DAP-502",
+      "DAP-AC-653": "DAP-502",
+      "DAP-AC-654": "DAP-502",
+      "DAP-AC-655": "DAP-502",
+      "DAP-AC-656": "DAP-502",
+      "DAP-AC-657": "DAP-503",
+      "DAP-AC-658": "DAP-503",
+      "DAP-AC-659": "DAP-503",
+      "DAP-AC-660": "DAP-503",
+      "DAP-AC-661": "DAP-503",
+      "DAP-AC-662": "DAP-504",
+      "DAP-AC-663": "DAP-504",
+      "DAP-AC-664": "DAP-504",
+      "DAP-AC-665": "DAP-504",
+      "DAP-AC-666": "DAP-504",
+      "DAP-AC-667": "DAP-505",
+      "DAP-AC-668": "DAP-505",
+      "DAP-AC-669": "DAP-505",
+      "DAP-AC-670": "DAP-505",
+      "DAP-AC-671": "DAP-505",
+      "DAP-AC-672": "DAP-506",
+      "DAP-AC-673": "DAP-506",
+      "DAP-AC-674": "DAP-506",
+      "DAP-AC-675": "DAP-506",
+      "DAP-AC-676": "DAP-506",
+      "DAP-AC-677": "DAP-507",
+      "DAP-AC-678": "DAP-507",
+      "DAP-AC-679": "DAP-507",
+      "DAP-AC-680": "DAP-507",
+      "DAP-AC-681": "DAP-507",
+      "DAP-AC-682": "DAP-508",
+      "DAP-AC-683": "DAP-508",
+      "DAP-AC-684": "DAP-508",
+      "DAP-AC-685": "DAP-508",
+      "DAP-AC-686": "DAP-508",
+      "DAP-AC-687": "DAP-509",
+      "DAP-AC-688": "DAP-509",
+      "DAP-AC-689": "DAP-509",
+      "DAP-AC-690": "DAP-509",
+      "DAP-AC-691": "DAP-509",
+      "DAP-AC-692": "DAP-510",
+      "DAP-AC-693": "DAP-510",
+      "DAP-AC-694": "DAP-510",
+      "DAP-AC-695": "DAP-510",
+      "DAP-AC-696": "DAP-510",
+      "DAP-AC-697": "DAP-511",
+      "DAP-AC-698": "DAP-511",
+      "DAP-AC-699": "DAP-511",
+      "DAP-AC-700": "DAP-511",
+      "DAP-AC-701": "DAP-511",
+      "DAP-AC-702": "DAP-512",
+      "DAP-AC-703": "DAP-512",
+      "DAP-AC-704": "DAP-512",
+      "DAP-AC-705": "DAP-512",
+      "DAP-AC-706": "DAP-512",
+      "DAP-AC-707": "DAP-513",
+      "DAP-AC-708": "DAP-513",
+      "DAP-AC-709": "DAP-513",
+      "DAP-AC-710": "DAP-513",
+      "DAP-AC-711": "DAP-513",
+      "DAP-AC-712": "DAP-514",
+      "DAP-AC-713": "DAP-514",
+      "DAP-AC-714": "DAP-514",
+      "DAP-AC-715": "DAP-514",
+      "DAP-AC-716": "DAP-514",
+      "DAP-AC-717": "DAP-515",
+      "DAP-AC-718": "DAP-515",
+      "DAP-AC-719": "DAP-515",
+      "DAP-AC-720": "DAP-515",
+      "DAP-AC-721": "DAP-515",
+      "DAP-AC-722": "DAP-516",
+      "DAP-AC-723": "DAP-516",
+      "DAP-AC-724": "DAP-516",
+      "DAP-AC-725": "DAP-516",
+      "DAP-AC-726": "DAP-516",
+      "DAP-AC-727": "DAP-517",
+      "DAP-AC-728": "DAP-517",
+      "DAP-AC-729": "DAP-517",
+      "DAP-AC-730": "DAP-517",
+      "DAP-AC-731": "DAP-517",
+      "DAP-AC-732": "DAP-518",
+      "DAP-AC-733": "DAP-518",
+      "DAP-AC-734": "DAP-518",
+      "DAP-AC-735": "DAP-518",
+      "DAP-AC-736": "DAP-518",
+      "DAP-AC-737": "DAP-519",
+      "DAP-AC-738": "DAP-519",
+      "DAP-AC-739": "DAP-519",
+      "DAP-AC-740": "DAP-519",
+      "DAP-AC-741": "DAP-519",
+      "DAP-AC-742": "DAP-520",
+      "DAP-AC-743": "DAP-520",
+      "DAP-AC-744": "DAP-520",
+      "DAP-AC-745": "DAP-520",
+      "DAP-AC-746": "DAP-520",
+      "DAP-AC-747": "DAP-521",
+      "DAP-AC-748": "DAP-521",
+      "DAP-AC-749": "DAP-521",
+      "DAP-AC-750": "DAP-521",
+      "DAP-AC-751": "DAP-521",
+      "DAP-AC-752": "DAP-522",
+      "DAP-AC-753": "DAP-522",
+      "DAP-AC-754": "DAP-522",
+      "DAP-AC-755": "DAP-522",
+      "DAP-AC-756": "DAP-522",
+      "DAP-AC-757": "DAP-523",
+      "DAP-AC-758": "DAP-523",
+      "DAP-AC-759": "DAP-523",
+      "DAP-AC-760": "DAP-523",
+      "DAP-AC-761": "DAP-523",
+      "DAP-AC-762": "DAP-524",
+      "DAP-AC-763": "DAP-524",
+      "DAP-AC-764": "DAP-524",
+      "DAP-AC-765": "DAP-524",
+      "DAP-AC-766": "DAP-524",
+      "DAP-AC-767": "DAP-525",
+      "DAP-AC-768": "DAP-525",
+      "DAP-AC-769": "DAP-525",
+      "DAP-AC-770": "DAP-525",
+      "DAP-AC-771": "DAP-525",
+      "DAP-AC-772": "DAP-526",
+      "DAP-AC-773": "DAP-526",
+      "DAP-AC-774": "DAP-526",
+      "DAP-AC-775": "DAP-526",
+      "DAP-AC-776": "DAP-526",
+      "DAP-AC-777": "DAP-527",
+      "DAP-AC-778": "DAP-527",
+      "DAP-AC-779": "DAP-527",
+      "DAP-AC-780": "DAP-527",
+      "DAP-AC-781": "DAP-527",
+      "DAP-AC-782": "DAP-528",
+      "DAP-AC-783": "DAP-528",
+      "DAP-AC-784": "DAP-528",
+      "DAP-AC-785": "DAP-528",
+      "DAP-AC-786": "DAP-528",
+      "DAP-AC-787": "DAP-529",
+      "DAP-AC-788": "DAP-529",
+      "DAP-AC-789": "DAP-529",
+      "DAP-AC-790": "DAP-529",
+      "DAP-AC-791": "DAP-529",
+      "DAP-AC-792": "DAP-530",
+      "DAP-AC-793": "DAP-530",
+      "DAP-AC-794": "DAP-530",
+      "DAP-AC-795": "DAP-530",
+      "DAP-AC-796": "DAP-530",
+      "DAP-AC-797": "DAP-531",
+      "DAP-AC-798": "DAP-531",
+      "DAP-AC-799": "DAP-531",
+      "DAP-AC-800": "DAP-531",
+      "DAP-AC-801": "DAP-531",
+      "DAP-AC-802": "DAP-532",
+      "DAP-AC-803": "DAP-532",
+      "DAP-AC-804": "DAP-532",
+      "DAP-AC-805": "DAP-532",
+      "DAP-AC-806": "DAP-532",
+      "DAP-AC-807": "DAP-533",
+      "DAP-AC-808": "DAP-533",
+      "DAP-AC-809": "DAP-533",
+      "DAP-AC-810": "DAP-533",
+      "DAP-AC-811": "DAP-533",
+      "DAP-AC-812": "DAP-534",
+      "DAP-AC-813": "DAP-534",
+      "DAP-AC-814": "DAP-534",
+      "DAP-AC-815": "DAP-534",
+      "DAP-AC-816": "DAP-534",
+      "DAP-AC-817": "DAP-535",
+      "DAP-AC-818": "DAP-535",
+      "DAP-AC-819": "DAP-535",
+      "DAP-AC-820": "DAP-535",
+      "DAP-AC-821": "DAP-535",
+      "DAP-AC-822": "DAP-536",
+      "DAP-AC-823": "DAP-536",
+      "DAP-AC-824": "DAP-536",
+      "DAP-AC-825": "DAP-536",
+      "DAP-AC-826": "DAP-536",
+      "DAP-AC-827": "DAP-537",
+      "DAP-AC-828": "DAP-537",
+      "DAP-AC-829": "DAP-537",
+      "DAP-AC-830": "DAP-537",
+      "DAP-AC-831": "DAP-537",
+      "DAP-AC-832": "DAP-538",
+      "DAP-AC-833": "DAP-538",
+      "DAP-AC-834": "DAP-538",
+      "DAP-AC-835": "DAP-538",
+      "DAP-AC-836": "DAP-538",
+      "DAP-AC-837": "DAP-539",
+      "DAP-AC-838": "DAP-539",
+      "DAP-AC-839": "DAP-539",
+      "DAP-AC-840": "DAP-539",
+      "DAP-AC-841": "DAP-539",
+      "DAP-AC-842": "DAP-540",
+      "DAP-AC-843": "DAP-540",
+      "DAP-AC-844": "DAP-540",
+      "DAP-AC-845": "DAP-540",
+      "DAP-AC-846": "DAP-540",
+      "DAP-AC-847": "DAP-541",
+      "DAP-AC-848": "DAP-541",
+      "DAP-AC-849": "DAP-541",
+      "DAP-AC-850": "DAP-541",
+      "DAP-AC-851": "DAP-541",
+      "DAP-AC-852": "DAP-542",
+      "DAP-AC-853": "DAP-542",
+      "DAP-AC-854": "DAP-542",
+      "DAP-AC-855": "DAP-542",
+      "DAP-AC-856": "DAP-542",
+      "DAP-AC-857": "DAP-543",
+      "DAP-AC-858": "DAP-543",
+      "DAP-AC-859": "DAP-543",
+      "DAP-AC-860": "DAP-543",
+      "DAP-AC-861": "DAP-543",
+      "DAP-AC-500": "DAP-500",
+      "DAP-AC-501": "DAP-500",
+      "DAP-AC-502": "DAP-500",
+      "DAP-AC-503": "DAP-501",
+      "DAP-AC-504": "DAP-501",
+      "DAP-AC-505": "DAP-501",
+      "DAP-AC-506": "DAP-502",
+      "DAP-AC-507": "DAP-502",
+      "DAP-AC-508": "DAP-502",
+      "DAP-AC-509": "DAP-503",
+      "DAP-AC-510": "DAP-503",
+      "DAP-AC-511": "DAP-503",
+      "DAP-AC-512": "DAP-504",
+      "DAP-AC-513": "DAP-504",
+      "DAP-AC-514": "DAP-504",
+      "DAP-AC-515": "DAP-505",
+      "DAP-AC-516": "DAP-505",
+      "DAP-AC-517": "DAP-505",
+      "DAP-AC-518": "DAP-506",
+      "DAP-AC-519": "DAP-506",
+      "DAP-AC-520": "DAP-506",
+      "DAP-AC-521": "DAP-507",
+      "DAP-AC-522": "DAP-507",
+      "DAP-AC-523": "DAP-507",
+      "DAP-AC-524": "DAP-508",
+      "DAP-AC-525": "DAP-508",
+      "DAP-AC-526": "DAP-508",
+      "DAP-AC-527": "DAP-509",
+      "DAP-AC-528": "DAP-509",
+      "DAP-AC-529": "DAP-509",
+      "DAP-AC-530": "DAP-510",
+      "DAP-AC-531": "DAP-510",
+      "DAP-AC-532": "DAP-510",
+      "DAP-AC-533": "DAP-511",
+      "DAP-AC-534": "DAP-511",
+      "DAP-AC-535": "DAP-511",
+      "DAP-AC-536": "DAP-512",
+      "DAP-AC-537": "DAP-512",
+      "DAP-AC-538": "DAP-512",
+      "DAP-AC-539": "DAP-513",
+      "DAP-AC-540": "DAP-513",
+      "DAP-AC-541": "DAP-513",
+      "DAP-AC-542": "DAP-514",
+      "DAP-AC-543": "DAP-514",
+      "DAP-AC-544": "DAP-514",
+      "DAP-AC-545": "DAP-515",
+      "DAP-AC-546": "DAP-515",
+      "DAP-AC-547": "DAP-515",
+      "DAP-AC-548": "DAP-516",
+      "DAP-AC-549": "DAP-516",
+      "DAP-AC-550": "DAP-516",
+      "DAP-AC-551": "DAP-517",
+      "DAP-AC-552": "DAP-517",
+      "DAP-AC-553": "DAP-517",
+      "DAP-AC-554": "DAP-518",
+      "DAP-AC-555": "DAP-518",
+      "DAP-AC-556": "DAP-518",
+      "DAP-AC-557": "DAP-519",
+      "DAP-AC-558": "DAP-519",
+      "DAP-AC-559": "DAP-519",
+      "DAP-AC-560": "DAP-520",
+      "DAP-AC-561": "DAP-520",
+      "DAP-AC-562": "DAP-520",
+      "DAP-AC-563": "DAP-521",
+      "DAP-AC-564": "DAP-521",
+      "DAP-AC-565": "DAP-521",
+      "DAP-AC-566": "DAP-522",
+      "DAP-AC-567": "DAP-522",
+      "DAP-AC-568": "DAP-522",
+      "DAP-AC-569": "DAP-523",
+      "DAP-AC-570": "DAP-523",
+      "DAP-AC-571": "DAP-523",
+      "DAP-AC-572": "DAP-524",
+      "DAP-AC-573": "DAP-524",
+      "DAP-AC-574": "DAP-524",
+      "DAP-AC-575": "DAP-525",
+      "DAP-AC-576": "DAP-525",
+      "DAP-AC-577": "DAP-525",
+      "DAP-AC-578": "DAP-526",
+      "DAP-AC-579": "DAP-526",
+      "DAP-AC-580": "DAP-526",
+      "DAP-AC-581": "DAP-527",
+      "DAP-AC-582": "DAP-527",
+      "DAP-AC-583": "DAP-527",
+      "DAP-AC-584": "DAP-528",
+      "DAP-AC-585": "DAP-528",
+      "DAP-AC-586": "DAP-528",
+      "DAP-AC-587": "DAP-529",
+      "DAP-AC-588": "DAP-529",
+      "DAP-AC-589": "DAP-529",
+      "DAP-AC-590": "DAP-530",
+      "DAP-AC-591": "DAP-530",
+      "DAP-AC-592": "DAP-530",
+      "DAP-AC-593": "DAP-531",
+      "DAP-AC-594": "DAP-531",
+      "DAP-AC-595": "DAP-531",
+      "DAP-AC-596": "DAP-532",
+      "DAP-AC-597": "DAP-532",
+      "DAP-AC-598": "DAP-532",
+      "DAP-AC-599": "DAP-533",
+      "DAP-AC-600": "DAP-533",
+      "DAP-AC-601": "DAP-533",
+      "DAP-AC-602": "DAP-534",
+      "DAP-AC-603": "DAP-534",
+      "DAP-AC-604": "DAP-534",
+      "DAP-AC-605": "DAP-535",
+      "DAP-AC-606": "DAP-535",
+      "DAP-AC-607": "DAP-535",
+      "DAP-AC-608": "DAP-536",
+      "DAP-AC-609": "DAP-536",
+      "DAP-AC-610": "DAP-536",
+      "DAP-AC-611": "DAP-537",
+      "DAP-AC-612": "DAP-537",
+      "DAP-AC-613": "DAP-537",
+      "DAP-AC-614": "DAP-538",
+      "DAP-AC-615": "DAP-538",
+      "DAP-AC-616": "DAP-538",
+      "DAP-AC-617": "DAP-539",
+      "DAP-AC-618": "DAP-539",
+      "DAP-AC-619": "DAP-539",
+      "DAP-AC-620": "DAP-540",
+      "DAP-AC-621": "DAP-540",
+      "DAP-AC-622": "DAP-540",
+      "DAP-AC-623": "DAP-541",
+      "DAP-AC-624": "DAP-541",
+      "DAP-AC-625": "DAP-541",
+      "DAP-AC-626": "DAP-542",
+      "DAP-AC-627": "DAP-542",
+      "DAP-AC-628": "DAP-542",
+      "DAP-AC-629": "DAP-543",
+      "DAP-AC-630": "DAP-543",
+      "DAP-AC-631": "DAP-543"
+    },
+    "sourceRows": []
+  }
+}
