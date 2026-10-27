@@ -18211,11 +18211,28 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "全部保护表单、算法参数/可逆性、源目标边界、密钥生命周期与水印检测",
-        "objectBoundary": "保护任务、算法/字典版本、输出对象与密钥引用",
+        "criticalDecisions": "版本化DTO/成功错误/权限、算法密钥生命周期、水印随机源/MD5兼容、执行状态/原表影响/恢复、引用版本和审计合同",
+        "objectBoundary": "任务/执行实例、元数据列/配置子项、字典词条/临时cacheId、算法/密钥版本、水印规则/镶嵌列/追踪记录分别标识",
         "expandedOperations": [
           "DSPS-100",
           "DSPS-001"
+        ],
+        "functionalAcceptanceCases": 104,
+        "nonfunctionalRequirements": 17,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "DSPS-500",
+          "DSPS-501",
+          "DSPS-502",
+          "DSPS-503",
+          "DSPS-504",
+          "DSPS-505",
+          "DSPS-506",
+          "DSPS-507",
+          "DSPS-508",
+          "DSPS-509",
+          "DSPS-510"
         ]
       }
     },
