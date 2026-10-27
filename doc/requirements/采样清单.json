@@ -7144,8 +7144,8 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "子表配置、增量/CDC/分页/文件规则、并发和限速单位、运行状态下变更及断点恢复",
-        "objectBoundary": "任务定义、输入集合、输出集合、映射与运行实例",
+        "criticalDecisions": "32项主/子规格与323条功能验收已细化；DTO/权限与状态准入、真实文件协议、数据引擎与检查点/去重恢复、统计口径及新增质量目标仍需依赖交付",
+        "objectBoundary": "任务定义、源/目标与列映射、执行实例/明细/日志、对账与补数及统计分别建模",
         "expandedOperations": [
           "DIS-100",
           "DIS-102",
@@ -7159,6 +7159,32 @@
           "DIS-120",
           "DIS-122",
           "DIS-001"
+        ],
+        "reviewedAt": "2026-10-27",
+        "auditFile": "核查记录.md",
+        "nonfunctionalRequirements": 17,
+        "functionalAcceptanceCases": 323,
+        "expandedSubOperations": [
+          "DIS-500",
+          "DIS-513",
+          "DIS-519",
+          "DIS-514",
+          "DIS-520",
+          "DIS-515",
+          "DIS-516",
+          "DIS-517",
+          "DIS-518",
+          "DIS-521",
+          "DIS-522",
+          "DIS-523",
+          "DIS-524",
+          "DIS-525",
+          "DIS-526",
+          "DIS-527",
+          "DIS-528",
+          "DIS-529",
+          "DIS-530",
+          "DIS-531"
         ]
       },
       "aiProposals": [

@@ -13,6 +13,7 @@ const { MAIN: dbmsMain, SUB: dbmsSub, renderFeature: renderDbmsFeature } = requi
 const { MAIN: cmsMain, SUB: cmsSub, renderFeature: renderCmsFeature } = require('./cms-requirement-spec');
 const { MAIN: woMain, SUB: woSub, renderFeature: renderWoFeature } = require('./wo-requirement-spec');
 const { MAIN: dsMain, SUB: dsSub, renderFeature: renderDsFeature } = require('./ds-requirement-spec');
+const { MAIN: disMain, SUB: disSub, renderFeature: renderDisFeature } = require('./dis-requirement-spec');
 const { MAIN: dmsMain, SUB: dmsSub, renderFeature: renderDmsFeature } = require('./dms-requirement-spec');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -483,6 +484,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...woMain, ...woSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed WO requirement: ' + id);
       text = text.slice(0, start) + renderWoFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- dis:generated-spec-v1 -->')) {
+      const entry = [...disMain, ...disSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DIS requirement: ' + id);
+      text = text.slice(0, start) + renderDisFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     if (originalText.includes('<!-- ds:generated-spec-v1 -->')) {
