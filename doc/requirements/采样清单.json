@@ -15501,14 +15501,34 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "来源唯一域、周期与策略组合、状态迁移、日志/版本/变更及取消返回异常",
-        "objectBoundary": "采集任务定义、调度策略、执行实例、元数据快照与变更",
+        "criticalDecisions": "服务端DTO/权限、调度终态和时区、申请与源库执行、快照一致性、批量与导入取消合同",
+        "objectBoundary": "采集任务/实例、调度策略、物理表/业务扩展、申请、版本、映射导入批次分别标识",
         "expandedOperations": [
           "MDM-100",
           "MDM-102",
           "MDM-103",
           "MDM-104",
           "MDM-001"
+        ],
+        "functionalAcceptanceCases": 162,
+        "nonfunctionalRequirements": 16,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "MDM-500",
+          "MDM-508",
+          "MDM-501",
+          "MDM-502",
+          "MDM-503",
+          "MDM-504",
+          "MDM-505",
+          "MDM-509",
+          "MDM-510",
+          "MDM-506",
+          "MDM-511",
+          "MDM-512",
+          "MDM-513",
+          "MDM-507"
         ]
       },
       "aiProposals": [

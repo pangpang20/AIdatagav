@@ -550,6 +550,13 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       text = text.slice(0, start) + renderDseFeature(entry) + '\n' + text.slice(end);
       continue;
     }
+    if (originalText.includes('<!-- mdm:generated-spec-v1 -->')) {
+      const { MAIN, SUB, renderFeature } = require('./mdm-requirement-spec');
+      const entry = [...MAIN, ...SUB].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed MDM requirement: ' + id);
+      text = text.slice(0, start) + renderFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
     if (originalText.includes('<!-- dcs:generated-spec-v1 -->')) {
       const entry = [...dcsMain, ...dcsSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed DCS requirement: ' + id);
