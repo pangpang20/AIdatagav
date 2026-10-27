@@ -13210,11 +13210,27 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "交换协议、映射/调度、前置机心跳、幂等和重试/停止/恢复策略",
+        "criticalDecisions": "三类模型DTO、聚合与时间口径、订阅建任务、引擎控制终态/幂等、逐对象权限与监控新鲜度",
         "objectBoundary": "交换任务、输入输出、前置机与交换运行实例",
         "expandedOperations": [
           "DSE-001",
           "DSE-002"
+        ],
+        "functionalAcceptanceCases": 94,
+        "nonfunctionalRequirements": 16,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "DSE-500",
+          "DSE-501",
+          "DSE-502",
+          "DSE-503",
+          "DSE-504",
+          "DSE-505",
+          "DSE-506",
+          "DSE-507",
+          "DSE-508",
+          "DSE-509"
         ]
       }
     },

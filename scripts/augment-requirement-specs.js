@@ -20,6 +20,8 @@ const { MAIN: gdrsMain, SUB: gdrsSub, renderFeature: renderGdrsFeature } = requi
 const { MAIN: dssMain, SUB: dssSub, renderFeature: renderDssFeature } = require('./dss-requirement-spec');
 const { MAIN: dqMain, SUB: dqSub, renderFeature: renderDqFeature } = require('./dq-requirement-spec');
 
+const { MAIN: dseMain, SUB: dseSub, renderFeature: renderDseFeature } = require('./dse-requirement-spec');
+
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
 const EVIDENCE = path.join(REQUIREMENTS, 'evidence', 'live-recheck-20261022');
@@ -530,6 +532,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...dqMain, ...dqSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed DQ requirement: ' + id);
       text = text.slice(0, start) + renderDqFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- dse:generated-spec-v1 -->')) {
+      const entry = [...dseMain, ...dseSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DSE requirement: ' + id);
+      text = text.slice(0, start) + renderDseFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)
