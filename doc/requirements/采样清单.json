@@ -10101,7 +10101,7 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "字段/代码页、审批状态机、标准编号唯一域、日期关系、文件和引用保护策略",
+        "criticalDecisions": "后端DTO/错误合同、角色资源矩阵、编码唯一域、并发与审批快照事务、引用版本/派生/评分、导入逐行结果及文件生命周期；应用验收未执行",
         "objectBoundary": "标准文档、术语、模型表、字段、代码及审批版本",
         "expandedOperations": [
           "DSS-100",
@@ -10116,7 +10116,13 @@
           "DSS-112",
           "DSS-113",
           "DSS-114"
-        ]
+        ],
+        "reviewedAt": "2026-10-27",
+        "auditFile": "11-数据标准管理/核查记录.md",
+        "specificationFormat": "plain-v1",
+        "functionalAcceptanceCases": 312,
+        "nonfunctionalRequirements": 14,
+        "reviewStatus": "reviewed-evidence-bounded"
       },
       "aiProposals": [
         "AI-002"
