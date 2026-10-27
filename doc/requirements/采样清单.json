@@ -8208,8 +8208,8 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "画布节点/连线、循环检测、依赖参数、调度时区/补数、停止与重跑范围",
-        "objectBoundary": "流程组、流程定义/版本、调度计划、执行实例与归集表",
+        "criticalDecisions": "已核41项字段/交互/静态接口；仍需后端DTO/逐项回执、画布与表DDL、Cron时区/补偿、引用版本/幂等、初始化恢复、动作权限/文件沙箱和隔离验收",
+        "objectBoundary": "流程组/定义/版本、策略与实例、周期/实时/告警、表/分类、代码集/映射/函数/算法包、平台初始化与组件环境独立",
         "expandedOperations": [
           "SMS-100",
           "SMS-105",

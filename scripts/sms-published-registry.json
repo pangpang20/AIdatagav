@@ -1,0 +1,1455 @@
+{
+  "main": {
+    "entries": [
+      {
+        "id": "SMS-100",
+        "title": "查询流程开发",
+        "acceptance": [
+          "SMS-AC-611",
+          "SMS-AC-612",
+          "SMS-AC-613",
+          "SMS-AC-614",
+          "SMS-AC-615"
+        ],
+        "sources": []
+      },
+      {
+        "id": "SMS-105",
+        "title": "查询流程调度",
+        "acceptance": [
+          "SMS-AC-616",
+          "SMS-AC-617",
+          "SMS-AC-618",
+          "SMS-AC-619",
+          "SMS-AC-620"
+        ],
+        "sources": []
+      },
+      {
+        "id": "SMS-110",
+        "title": "查询归集表查询",
+        "acceptance": [
+          "SMS-AC-621",
+          "SMS-AC-622",
+          "SMS-AC-623",
+          "SMS-AC-624",
+          "SMS-AC-625"
+        ],
+        "sources": []
+      },
+      {
+        "id": "SMS-001",
+        "title": "查看流程运行概况",
+        "acceptance": [
+          "SMS-AC-626",
+          "SMS-AC-627",
+          "SMS-AC-628",
+          "SMS-AC-629",
+          "SMS-AC-630"
+        ],
+        "sources": []
+      }
+    ],
+    "sourceRows": [
+      "| SMS-100 | [F128-SMS-flow-list](../evidence/F128-SMS-flow-list.png) | [调研细节](./调研记录.md#sms-100-流程开发--查询与列表) |",
+      "| SMS-105 | [F191-SMS-schedule-reset](../evidence/F191-SMS-schedule-reset.png)；[F190-SMS-schedule-query](../evidence/F190-SMS-schedule-query.png) | [调研细节](./调研记录.md#sms-105-流程调度--查询与列表) |",
+      "| SMS-110 | [F193-SMS-resource-list](../evidence/F193-SMS-resource-list.png) | [调研细节](./调研记录.md#sms-110-归集表查询--查询与列表) |",
+      "| SMS-001 | [E029-scheduling](../evidence/E029-scheduling.png)；[E030-process-dev-nav](../evidence/E030-process-dev-nav.png)；[E031-process-schedule-nav](../evidence/E031-process-schedule-nav.png) | [原始记录](./调研记录.md) |"
+    ],
+    "central": [
+      {
+        "id": "SMS-AC-001",
+        "ref": "SMS-100"
+      },
+      {
+        "id": "SMS-AC-002",
+        "ref": "SMS-100"
+      },
+      {
+        "id": "SMS-AC-003",
+        "ref": "SMS-105"
+      },
+      {
+        "id": "SMS-AC-004",
+        "ref": "SMS-105"
+      },
+      {
+        "id": "SMS-AC-005",
+        "ref": "SMS-110"
+      },
+      {
+        "id": "SMS-AC-006",
+        "ref": "SMS-110"
+      },
+      {
+        "id": "SMS-AC-007",
+        "ref": "SMS-001"
+      },
+      {
+        "id": "SMS-AC-008",
+        "ref": "SMS-100"
+      },
+      {
+        "id": "SMS-AC-009",
+        "ref": "SMS-100"
+      },
+      {
+        "id": "SMS-AC-010",
+        "ref": "SMS-105"
+      },
+      {
+        "id": "SMS-AC-011",
+        "ref": "SMS-105"
+      },
+      {
+        "id": "SMS-AC-012",
+        "ref": "SMS-110"
+      },
+      {
+        "id": "SMS-AC-013",
+        "ref": "SMS-110"
+      },
+      {
+        "id": "SMS-AC-014",
+        "ref": "SMS-001"
+      }
+    ],
+    "allAcceptance": [
+      "SMS-AC-611",
+      "SMS-AC-612",
+      "SMS-AC-613",
+      "SMS-AC-614",
+      "SMS-AC-615",
+      "SMS-AC-616",
+      "SMS-AC-617",
+      "SMS-AC-618",
+      "SMS-AC-619",
+      "SMS-AC-620",
+      "SMS-AC-621",
+      "SMS-AC-622",
+      "SMS-AC-623",
+      "SMS-AC-624",
+      "SMS-AC-625",
+      "SMS-AC-626",
+      "SMS-AC-627",
+      "SMS-AC-628",
+      "SMS-AC-629",
+      "SMS-AC-630",
+      "SMS-AC-001",
+      "SMS-AC-002",
+      "SMS-AC-003",
+      "SMS-AC-004",
+      "SMS-AC-005",
+      "SMS-AC-006",
+      "SMS-AC-007",
+      "SMS-AC-008",
+      "SMS-AC-009",
+      "SMS-AC-010",
+      "SMS-AC-011",
+      "SMS-AC-012",
+      "SMS-AC-013",
+      "SMS-AC-014"
+    ],
+    "boundaryRows": [
+      "| SMS-101 | 查看流程开发 | 详情内容、关联项及查看权限；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-102 | 新增流程开发 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-103 | 修改流程开发 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-104 | 删除流程开发 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-106 | 查看流程调度 | 详情内容、关联项及查看权限；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-107 | 新增流程调度 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-108 | 修改流程调度 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-109 | 删除流程调度 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-111 | 查看归集表查询 | 详情内容、关联项及查看权限；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-112 | 新增归集表查询 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-113 | 修改归集表查询 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-114 | 删除归集表查询 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| SMS-115 | 查询开发表管理 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：表定义、字段类型/主键、依赖、物理表与开发区移除的区别 |",
+      "| SMS-116 | 查看开发表管理 | 详情内容、关联项及查看权限；业务范围涉及：表定义、字段类型/主键、依赖、物理表与开发区移除的区别 |",
+      "| SMS-117 | 新增开发表管理 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：表定义、字段类型/主键、依赖、物理表与开发区移除的区别 |",
+      "| SMS-118 | 修改开发表管理 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：表定义、字段类型/主键、依赖、物理表与开发区移除的区别 |",
+      "| SMS-119 | 删除开发表管理 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：表定义、字段类型/主键、依赖、物理表与开发区移除的区别 |",
+      "| SMS-120 | 查询函数开发 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：参数和返回值、代码版本、被SQL/流程引用时的变更和删除 |",
+      "| SMS-121 | 查看函数开发 | 详情内容、关联项及查看权限；业务范围涉及：参数和返回值、代码版本、被SQL/流程引用时的变更和删除 |",
+      "| SMS-122 | 新增函数开发 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：参数和返回值、代码版本、被SQL/流程引用时的变更和删除 |",
+      "| SMS-123 | 修改函数开发 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：参数和返回值、代码版本、被SQL/流程引用时的变更和删除 |",
+      "| SMS-124 | 删除函数开发 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：参数和返回值、代码版本、被SQL/流程引用时的变更和删除 |",
+      "| SMS-125 | 查询脚本开发 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：脚本类型、内容、参数、版本和任务引用保护 |",
+      "| SMS-126 | 查看脚本开发 | 详情内容、关联项及查看权限；业务范围涉及：脚本类型、内容、参数、版本和任务引用保护 |",
+      "| SMS-127 | 新增脚本开发 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：脚本类型、内容、参数、版本和任务引用保护 |",
+      "| SMS-128 | 修改脚本开发 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：脚本类型、内容、参数、版本和任务引用保护 |",
+      "| SMS-129 | 删除脚本开发 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：脚本类型、内容、参数、版本和任务引用保护 |"
+    ]
+  },
+  "sub": {
+    "entries": [
+      {
+        "id": "SMS-500",
+        "title": "概览",
+        "acceptance": [
+          "SMS-AC-631",
+          "SMS-AC-632",
+          "SMS-AC-633",
+          "SMS-AC-634",
+          "SMS-AC-635"
+        ],
+        "sources": [
+          "H-SMS-001"
+        ]
+      },
+      {
+        "id": "SMS-526",
+        "title": "流程开发 → 我的流程",
+        "acceptance": [
+          "SMS-AC-636",
+          "SMS-AC-637",
+          "SMS-AC-638",
+          "SMS-AC-639",
+          "SMS-AC-640"
+        ],
+        "sources": [
+          "H-SMS-002"
+        ]
+      },
+      {
+        "id": "SMS-527",
+        "title": "流程调度 → 流程调度管理",
+        "acceptance": [
+          "SMS-AC-641",
+          "SMS-AC-642",
+          "SMS-AC-643",
+          "SMS-AC-644",
+          "SMS-AC-645"
+        ],
+        "sources": [
+          "H-SMS-003"
+        ]
+      },
+      {
+        "id": "SMS-528",
+        "title": "流程调度 → 流程监控 → · 周期任务作业监控",
+        "acceptance": [
+          "SMS-AC-646",
+          "SMS-AC-647",
+          "SMS-AC-648",
+          "SMS-AC-649",
+          "SMS-AC-650"
+        ],
+        "sources": [
+          "H-SMS-004"
+        ]
+      },
+      {
+        "id": "SMS-529",
+        "title": "流程调度 → 流程监控 → · 实时任务作业监控",
+        "acceptance": [
+          "SMS-AC-651",
+          "SMS-AC-652",
+          "SMS-AC-653",
+          "SMS-AC-654",
+          "SMS-AC-655"
+        ],
+        "sources": [
+          "H-SMS-005"
+        ]
+      },
+      {
+        "id": "SMS-530",
+        "title": "流程调度 → 告警管理 → · 告警信息查询",
+        "acceptance": [
+          "SMS-AC-656",
+          "SMS-AC-657",
+          "SMS-AC-658",
+          "SMS-AC-659",
+          "SMS-AC-660"
+        ],
+        "sources": [
+          "H-SMS-006"
+        ]
+      },
+      {
+        "id": "SMS-531",
+        "title": "流程调度 → 告警管理 → · 告警推送管理",
+        "acceptance": [
+          "SMS-AC-661",
+          "SMS-AC-662",
+          "SMS-AC-663",
+          "SMS-AC-664",
+          "SMS-AC-665"
+        ],
+        "sources": [
+          "H-SMS-007"
+        ]
+      },
+      {
+        "id": "SMS-532",
+        "title": "流程调度 → 告警管理 → · 告警推送管理 → 新增",
+        "acceptance": [
+          "SMS-AC-666",
+          "SMS-AC-667",
+          "SMS-AC-668",
+          "SMS-AC-669",
+          "SMS-AC-670"
+        ],
+        "sources": [
+          "H-SMS-007-op1",
+          "H-SMS-007-op1-options0",
+          "H-SMS-007-op1-options1",
+          "H-SMS-007-op1-options2"
+        ]
+      },
+      {
+        "id": "SMS-533",
+        "title": "资源管理 → 归集表查询",
+        "acceptance": [
+          "SMS-AC-671",
+          "SMS-AC-672",
+          "SMS-AC-673",
+          "SMS-AC-674",
+          "SMS-AC-675"
+        ],
+        "sources": [
+          "H-SMS-008"
+        ]
+      },
+      {
+        "id": "SMS-534",
+        "title": "资源管理 → 开发表管理",
+        "acceptance": [
+          "SMS-AC-676",
+          "SMS-AC-677",
+          "SMS-AC-678",
+          "SMS-AC-679",
+          "SMS-AC-680"
+        ],
+        "sources": [
+          "H-SMS-009"
+        ]
+      },
+      {
+        "id": "SMS-535",
+        "title": "资源管理 → 开发表管理 → 新增",
+        "acceptance": [
+          "SMS-AC-681",
+          "SMS-AC-682",
+          "SMS-AC-683",
+          "SMS-AC-684",
+          "SMS-AC-685"
+        ],
+        "sources": [
+          "H-SMS-009-op1"
+        ]
+      },
+      {
+        "id": "SMS-536",
+        "title": "资源管理 → 函数开发",
+        "acceptance": [
+          "SMS-AC-686",
+          "SMS-AC-687",
+          "SMS-AC-688",
+          "SMS-AC-689",
+          "SMS-AC-690"
+        ],
+        "sources": [
+          "H-SMS-010"
+        ]
+      },
+      {
+        "id": "SMS-537",
+        "title": "资源管理 → 脚本开发",
+        "acceptance": [
+          "SMS-AC-691",
+          "SMS-AC-692",
+          "SMS-AC-693",
+          "SMS-AC-694",
+          "SMS-AC-695"
+        ],
+        "sources": [
+          "H-SMS-011"
+        ]
+      },
+      {
+        "id": "SMS-538",
+        "title": "资源管理 → 脚本开发 → 新增",
+        "acceptance": [
+          "SMS-AC-696",
+          "SMS-AC-697",
+          "SMS-AC-698",
+          "SMS-AC-699",
+          "SMS-AC-700"
+        ],
+        "sources": [
+          "H-SMS-011-op1"
+        ]
+      },
+      {
+        "id": "SMS-539",
+        "title": "GLDM开发IDE → 标化加工IDE → · 标准层",
+        "acceptance": [
+          "SMS-AC-701",
+          "SMS-AC-702",
+          "SMS-AC-703",
+          "SMS-AC-704",
+          "SMS-AC-705"
+        ],
+        "sources": [
+          "H-SMS-012"
+        ]
+      },
+      {
+        "id": "SMS-540",
+        "title": "GLDM开发IDE → 标化加工IDE → · 标准层 → 新增",
+        "acceptance": [
+          "SMS-AC-706",
+          "SMS-AC-707",
+          "SMS-AC-708",
+          "SMS-AC-709",
+          "SMS-AC-710"
+        ],
+        "sources": [
+          "H-SMS-012-op1"
+        ]
+      },
+      {
+        "id": "SMS-541",
+        "title": "GLDM开发IDE → 分层开发IDE → · 原子层",
+        "acceptance": [
+          "SMS-AC-711",
+          "SMS-AC-712",
+          "SMS-AC-713",
+          "SMS-AC-714",
+          "SMS-AC-715"
+        ],
+        "sources": [
+          "H-SMS-013"
+        ]
+      },
+      {
+        "id": "SMS-542",
+        "title": "GLDM开发IDE → 分层开发IDE → · 原子层 → 新增",
+        "acceptance": [
+          "SMS-AC-716",
+          "SMS-AC-717",
+          "SMS-AC-718",
+          "SMS-AC-719",
+          "SMS-AC-720"
+        ],
+        "sources": [
+          "H-SMS-013-op1"
+        ]
+      },
+      {
+        "id": "SMS-543",
+        "title": "GLDM开发IDE → 分层开发IDE → · 整合层",
+        "acceptance": [
+          "SMS-AC-721",
+          "SMS-AC-722",
+          "SMS-AC-723",
+          "SMS-AC-724",
+          "SMS-AC-725"
+        ],
+        "sources": [
+          "H-SMS-014"
+        ]
+      },
+      {
+        "id": "SMS-544",
+        "title": "GLDM开发IDE → 分层开发IDE → · 主题层",
+        "acceptance": [
+          "SMS-AC-726",
+          "SMS-AC-727",
+          "SMS-AC-728",
+          "SMS-AC-729",
+          "SMS-AC-730"
+        ],
+        "sources": [
+          "H-SMS-015"
+        ]
+      },
+      {
+        "id": "SMS-545",
+        "title": "GLDM开发IDE → 分层开发IDE → · 安全层",
+        "acceptance": [
+          "SMS-AC-731",
+          "SMS-AC-732",
+          "SMS-AC-733",
+          "SMS-AC-734",
+          "SMS-AC-735"
+        ],
+        "sources": [
+          "H-SMS-016"
+        ]
+      },
+      {
+        "id": "SMS-546",
+        "title": "GLDM开发IDE → 分层开发IDE → · 安全层 → 新增",
+        "acceptance": [
+          "SMS-AC-736",
+          "SMS-AC-737",
+          "SMS-AC-738",
+          "SMS-AC-739",
+          "SMS-AC-740"
+        ],
+        "sources": [
+          "H-SMS-016-op1"
+        ]
+      },
+      {
+        "id": "SMS-547",
+        "title": "GLDM开发IDE → 规则配置 → · 标准代码集查询",
+        "acceptance": [
+          "SMS-AC-741",
+          "SMS-AC-742",
+          "SMS-AC-743",
+          "SMS-AC-744",
+          "SMS-AC-745"
+        ],
+        "sources": [
+          "H-SMS-017"
+        ]
+      },
+      {
+        "id": "SMS-548",
+        "title": "GLDM开发IDE → 规则配置 → · 标准代码集查询 → 新增",
+        "acceptance": [
+          "SMS-AC-746",
+          "SMS-AC-747",
+          "SMS-AC-748",
+          "SMS-AC-749",
+          "SMS-AC-750"
+        ],
+        "sources": [
+          "H-SMS-017-op1"
+        ]
+      },
+      {
+        "id": "SMS-549",
+        "title": "GLDM开发IDE → 规则配置 → · 源系统代码集管理",
+        "acceptance": [
+          "SMS-AC-751",
+          "SMS-AC-752",
+          "SMS-AC-753",
+          "SMS-AC-754",
+          "SMS-AC-755"
+        ],
+        "sources": [
+          "H-SMS-018"
+        ]
+      },
+      {
+        "id": "SMS-550",
+        "title": "GLDM开发IDE → 规则配置 → · 源系统代码集管理 → 新增",
+        "acceptance": [
+          "SMS-AC-756",
+          "SMS-AC-757",
+          "SMS-AC-758",
+          "SMS-AC-759",
+          "SMS-AC-760"
+        ],
+        "sources": [
+          "H-SMS-018-op1"
+        ]
+      },
+      {
+        "id": "SMS-551",
+        "title": "GLDM开发IDE → 规则配置 → · 源与标准映射管理",
+        "acceptance": [
+          "SMS-AC-761",
+          "SMS-AC-762",
+          "SMS-AC-763",
+          "SMS-AC-764",
+          "SMS-AC-765"
+        ],
+        "sources": [
+          "H-SMS-019"
+        ]
+      },
+      {
+        "id": "SMS-553",
+        "title": "GLDM开发IDE → 规则配置 → · 函数管理",
+        "acceptance": [
+          "SMS-AC-766",
+          "SMS-AC-767",
+          "SMS-AC-768",
+          "SMS-AC-769",
+          "SMS-AC-770"
+        ],
+        "sources": [
+          "L-SMS-020"
+        ]
+      },
+      {
+        "id": "SMS-554",
+        "title": "GLDM开发IDE → 规则配置 → · 函数管理 → 新增",
+        "acceptance": [
+          "SMS-AC-771",
+          "SMS-AC-772",
+          "SMS-AC-773",
+          "SMS-AC-774",
+          "SMS-AC-775"
+        ],
+        "sources": [
+          "H-SMS-020-op1"
+        ]
+      },
+      {
+        "id": "SMS-555",
+        "title": "GLDM开发IDE → 规则配置 → · 算法包管理",
+        "acceptance": [
+          "SMS-AC-776",
+          "SMS-AC-777",
+          "SMS-AC-778",
+          "SMS-AC-779",
+          "SMS-AC-780"
+        ],
+        "sources": [
+          "H-SMS-021"
+        ]
+      },
+      {
+        "id": "SMS-556",
+        "title": "GLDM开发IDE → 规则配置 → · 算法包管理 → 新增",
+        "acceptance": [
+          "SMS-AC-781",
+          "SMS-AC-782",
+          "SMS-AC-783",
+          "SMS-AC-784",
+          "SMS-AC-785"
+        ],
+        "sources": [
+          "H-SMS-021-op1"
+        ]
+      },
+      {
+        "id": "SMS-557",
+        "title": "GLDM开发IDE → IDE平台配置 → · IDE平台初始化",
+        "acceptance": [
+          "SMS-AC-786",
+          "SMS-AC-787",
+          "SMS-AC-788",
+          "SMS-AC-789",
+          "SMS-AC-790"
+        ],
+        "sources": [
+          "H-SMS-022"
+        ]
+      },
+      {
+        "id": "SMS-522",
+        "title": "调度统计",
+        "acceptance": [
+          "SMS-AC-791",
+          "SMS-AC-792",
+          "SMS-AC-793",
+          "SMS-AC-794",
+          "SMS-AC-795"
+        ],
+        "sources": [
+          "H-SMS-023"
+        ]
+      },
+      {
+        "id": "SMS-558",
+        "title": "配置管理 → 系统管理",
+        "acceptance": [
+          "SMS-AC-796",
+          "SMS-AC-797",
+          "SMS-AC-798",
+          "SMS-AC-799",
+          "SMS-AC-800"
+        ],
+        "sources": [
+          "H-SMS-024"
+        ]
+      },
+      {
+        "id": "SMS-559",
+        "title": "配置管理 → 组件管理",
+        "acceptance": [
+          "SMS-AC-801",
+          "SMS-AC-802",
+          "SMS-AC-803",
+          "SMS-AC-804",
+          "SMS-AC-805"
+        ],
+        "sources": [
+          "H-SMS-025"
+        ]
+      },
+      {
+        "id": "SMS-560",
+        "title": "配置管理 → 组件管理 → 编辑",
+        "acceptance": [
+          "SMS-AC-806",
+          "SMS-AC-807",
+          "SMS-AC-808",
+          "SMS-AC-809",
+          "SMS-AC-810"
+        ],
+        "sources": [
+          "H-SMS-025-op1",
+          "H-SMS-025-op1-options0"
+        ]
+      },
+      {
+        "id": "SMS-561",
+        "title": "配置管理 → 初始化",
+        "acceptance": [
+          "SMS-AC-811",
+          "SMS-AC-812",
+          "SMS-AC-813",
+          "SMS-AC-814",
+          "SMS-AC-815"
+        ],
+        "sources": [
+          "H-SMS-026"
+        ]
+      }
+    ],
+    "sourceRows": [],
+    "central": [
+      {
+        "id": "SMS-AC-500",
+        "ref": "SMS-500"
+      },
+      {
+        "id": "SMS-AC-501",
+        "ref": "SMS-500"
+      },
+      {
+        "id": "SMS-AC-502",
+        "ref": "SMS-500"
+      },
+      {
+        "id": "SMS-AC-503",
+        "ref": "SMS-526"
+      },
+      {
+        "id": "SMS-AC-504",
+        "ref": "SMS-526"
+      },
+      {
+        "id": "SMS-AC-505",
+        "ref": "SMS-526"
+      },
+      {
+        "id": "SMS-AC-506",
+        "ref": "SMS-527"
+      },
+      {
+        "id": "SMS-AC-507",
+        "ref": "SMS-527"
+      },
+      {
+        "id": "SMS-AC-508",
+        "ref": "SMS-527"
+      },
+      {
+        "id": "SMS-AC-509",
+        "ref": "SMS-528"
+      },
+      {
+        "id": "SMS-AC-510",
+        "ref": "SMS-528"
+      },
+      {
+        "id": "SMS-AC-511",
+        "ref": "SMS-528"
+      },
+      {
+        "id": "SMS-AC-512",
+        "ref": "SMS-529"
+      },
+      {
+        "id": "SMS-AC-513",
+        "ref": "SMS-529"
+      },
+      {
+        "id": "SMS-AC-514",
+        "ref": "SMS-529"
+      },
+      {
+        "id": "SMS-AC-515",
+        "ref": "SMS-530"
+      },
+      {
+        "id": "SMS-AC-516",
+        "ref": "SMS-530"
+      },
+      {
+        "id": "SMS-AC-517",
+        "ref": "SMS-530"
+      },
+      {
+        "id": "SMS-AC-518",
+        "ref": "SMS-531"
+      },
+      {
+        "id": "SMS-AC-519",
+        "ref": "SMS-531"
+      },
+      {
+        "id": "SMS-AC-520",
+        "ref": "SMS-531"
+      },
+      {
+        "id": "SMS-AC-521",
+        "ref": "SMS-532"
+      },
+      {
+        "id": "SMS-AC-522",
+        "ref": "SMS-532"
+      },
+      {
+        "id": "SMS-AC-523",
+        "ref": "SMS-532"
+      },
+      {
+        "id": "SMS-AC-524",
+        "ref": "SMS-533"
+      },
+      {
+        "id": "SMS-AC-525",
+        "ref": "SMS-533"
+      },
+      {
+        "id": "SMS-AC-526",
+        "ref": "SMS-533"
+      },
+      {
+        "id": "SMS-AC-527",
+        "ref": "SMS-534"
+      },
+      {
+        "id": "SMS-AC-528",
+        "ref": "SMS-534"
+      },
+      {
+        "id": "SMS-AC-529",
+        "ref": "SMS-534"
+      },
+      {
+        "id": "SMS-AC-530",
+        "ref": "SMS-535"
+      },
+      {
+        "id": "SMS-AC-531",
+        "ref": "SMS-535"
+      },
+      {
+        "id": "SMS-AC-532",
+        "ref": "SMS-535"
+      },
+      {
+        "id": "SMS-AC-533",
+        "ref": "SMS-536"
+      },
+      {
+        "id": "SMS-AC-534",
+        "ref": "SMS-536"
+      },
+      {
+        "id": "SMS-AC-535",
+        "ref": "SMS-536"
+      },
+      {
+        "id": "SMS-AC-536",
+        "ref": "SMS-537"
+      },
+      {
+        "id": "SMS-AC-537",
+        "ref": "SMS-537"
+      },
+      {
+        "id": "SMS-AC-538",
+        "ref": "SMS-537"
+      },
+      {
+        "id": "SMS-AC-539",
+        "ref": "SMS-538"
+      },
+      {
+        "id": "SMS-AC-540",
+        "ref": "SMS-538"
+      },
+      {
+        "id": "SMS-AC-541",
+        "ref": "SMS-538"
+      },
+      {
+        "id": "SMS-AC-542",
+        "ref": "SMS-539"
+      },
+      {
+        "id": "SMS-AC-543",
+        "ref": "SMS-539"
+      },
+      {
+        "id": "SMS-AC-544",
+        "ref": "SMS-539"
+      },
+      {
+        "id": "SMS-AC-545",
+        "ref": "SMS-540"
+      },
+      {
+        "id": "SMS-AC-546",
+        "ref": "SMS-540"
+      },
+      {
+        "id": "SMS-AC-547",
+        "ref": "SMS-540"
+      },
+      {
+        "id": "SMS-AC-548",
+        "ref": "SMS-541"
+      },
+      {
+        "id": "SMS-AC-549",
+        "ref": "SMS-541"
+      },
+      {
+        "id": "SMS-AC-550",
+        "ref": "SMS-541"
+      },
+      {
+        "id": "SMS-AC-551",
+        "ref": "SMS-542"
+      },
+      {
+        "id": "SMS-AC-552",
+        "ref": "SMS-542"
+      },
+      {
+        "id": "SMS-AC-553",
+        "ref": "SMS-542"
+      },
+      {
+        "id": "SMS-AC-554",
+        "ref": "SMS-543"
+      },
+      {
+        "id": "SMS-AC-555",
+        "ref": "SMS-543"
+      },
+      {
+        "id": "SMS-AC-556",
+        "ref": "SMS-543"
+      },
+      {
+        "id": "SMS-AC-557",
+        "ref": "SMS-544"
+      },
+      {
+        "id": "SMS-AC-558",
+        "ref": "SMS-544"
+      },
+      {
+        "id": "SMS-AC-559",
+        "ref": "SMS-544"
+      },
+      {
+        "id": "SMS-AC-560",
+        "ref": "SMS-545"
+      },
+      {
+        "id": "SMS-AC-561",
+        "ref": "SMS-545"
+      },
+      {
+        "id": "SMS-AC-562",
+        "ref": "SMS-545"
+      },
+      {
+        "id": "SMS-AC-563",
+        "ref": "SMS-546"
+      },
+      {
+        "id": "SMS-AC-564",
+        "ref": "SMS-546"
+      },
+      {
+        "id": "SMS-AC-565",
+        "ref": "SMS-546"
+      },
+      {
+        "id": "SMS-AC-566",
+        "ref": "SMS-547"
+      },
+      {
+        "id": "SMS-AC-567",
+        "ref": "SMS-547"
+      },
+      {
+        "id": "SMS-AC-568",
+        "ref": "SMS-547"
+      },
+      {
+        "id": "SMS-AC-569",
+        "ref": "SMS-548"
+      },
+      {
+        "id": "SMS-AC-570",
+        "ref": "SMS-548"
+      },
+      {
+        "id": "SMS-AC-571",
+        "ref": "SMS-548"
+      },
+      {
+        "id": "SMS-AC-572",
+        "ref": "SMS-549"
+      },
+      {
+        "id": "SMS-AC-573",
+        "ref": "SMS-549"
+      },
+      {
+        "id": "SMS-AC-574",
+        "ref": "SMS-549"
+      },
+      {
+        "id": "SMS-AC-575",
+        "ref": "SMS-550"
+      },
+      {
+        "id": "SMS-AC-576",
+        "ref": "SMS-550"
+      },
+      {
+        "id": "SMS-AC-577",
+        "ref": "SMS-550"
+      },
+      {
+        "id": "SMS-AC-578",
+        "ref": "SMS-551"
+      },
+      {
+        "id": "SMS-AC-579",
+        "ref": "SMS-551"
+      },
+      {
+        "id": "SMS-AC-580",
+        "ref": "SMS-551"
+      },
+      {
+        "id": "SMS-AC-581",
+        "ref": "SMS-553"
+      },
+      {
+        "id": "SMS-AC-582",
+        "ref": "SMS-553"
+      },
+      {
+        "id": "SMS-AC-583",
+        "ref": "SMS-553"
+      },
+      {
+        "id": "SMS-AC-584",
+        "ref": "SMS-554"
+      },
+      {
+        "id": "SMS-AC-585",
+        "ref": "SMS-554"
+      },
+      {
+        "id": "SMS-AC-586",
+        "ref": "SMS-554"
+      },
+      {
+        "id": "SMS-AC-587",
+        "ref": "SMS-555"
+      },
+      {
+        "id": "SMS-AC-588",
+        "ref": "SMS-555"
+      },
+      {
+        "id": "SMS-AC-589",
+        "ref": "SMS-555"
+      },
+      {
+        "id": "SMS-AC-590",
+        "ref": "SMS-556"
+      },
+      {
+        "id": "SMS-AC-591",
+        "ref": "SMS-556"
+      },
+      {
+        "id": "SMS-AC-592",
+        "ref": "SMS-556"
+      },
+      {
+        "id": "SMS-AC-593",
+        "ref": "SMS-557"
+      },
+      {
+        "id": "SMS-AC-594",
+        "ref": "SMS-557"
+      },
+      {
+        "id": "SMS-AC-595",
+        "ref": "SMS-557"
+      },
+      {
+        "id": "SMS-AC-596",
+        "ref": "SMS-522"
+      },
+      {
+        "id": "SMS-AC-597",
+        "ref": "SMS-522"
+      },
+      {
+        "id": "SMS-AC-598",
+        "ref": "SMS-522"
+      },
+      {
+        "id": "SMS-AC-599",
+        "ref": "SMS-558"
+      },
+      {
+        "id": "SMS-AC-600",
+        "ref": "SMS-558"
+      },
+      {
+        "id": "SMS-AC-601",
+        "ref": "SMS-558"
+      },
+      {
+        "id": "SMS-AC-602",
+        "ref": "SMS-559"
+      },
+      {
+        "id": "SMS-AC-603",
+        "ref": "SMS-559"
+      },
+      {
+        "id": "SMS-AC-604",
+        "ref": "SMS-559"
+      },
+      {
+        "id": "SMS-AC-605",
+        "ref": "SMS-560"
+      },
+      {
+        "id": "SMS-AC-606",
+        "ref": "SMS-560"
+      },
+      {
+        "id": "SMS-AC-607",
+        "ref": "SMS-560"
+      },
+      {
+        "id": "SMS-AC-608",
+        "ref": "SMS-561"
+      },
+      {
+        "id": "SMS-AC-609",
+        "ref": "SMS-561"
+      },
+      {
+        "id": "SMS-AC-610",
+        "ref": "SMS-561"
+      }
+    ],
+    "allAcceptance": [
+      "SMS-AC-631",
+      "SMS-AC-632",
+      "SMS-AC-633",
+      "SMS-AC-634",
+      "SMS-AC-635",
+      "SMS-AC-636",
+      "SMS-AC-637",
+      "SMS-AC-638",
+      "SMS-AC-639",
+      "SMS-AC-640",
+      "SMS-AC-641",
+      "SMS-AC-642",
+      "SMS-AC-643",
+      "SMS-AC-644",
+      "SMS-AC-645",
+      "SMS-AC-646",
+      "SMS-AC-647",
+      "SMS-AC-648",
+      "SMS-AC-649",
+      "SMS-AC-650",
+      "SMS-AC-651",
+      "SMS-AC-652",
+      "SMS-AC-653",
+      "SMS-AC-654",
+      "SMS-AC-655",
+      "SMS-AC-656",
+      "SMS-AC-657",
+      "SMS-AC-658",
+      "SMS-AC-659",
+      "SMS-AC-660",
+      "SMS-AC-661",
+      "SMS-AC-662",
+      "SMS-AC-663",
+      "SMS-AC-664",
+      "SMS-AC-665",
+      "SMS-AC-666",
+      "SMS-AC-667",
+      "SMS-AC-668",
+      "SMS-AC-669",
+      "SMS-AC-670",
+      "SMS-AC-671",
+      "SMS-AC-672",
+      "SMS-AC-673",
+      "SMS-AC-674",
+      "SMS-AC-675",
+      "SMS-AC-676",
+      "SMS-AC-677",
+      "SMS-AC-678",
+      "SMS-AC-679",
+      "SMS-AC-680",
+      "SMS-AC-681",
+      "SMS-AC-682",
+      "SMS-AC-683",
+      "SMS-AC-684",
+      "SMS-AC-685",
+      "SMS-AC-686",
+      "SMS-AC-687",
+      "SMS-AC-688",
+      "SMS-AC-689",
+      "SMS-AC-690",
+      "SMS-AC-691",
+      "SMS-AC-692",
+      "SMS-AC-693",
+      "SMS-AC-694",
+      "SMS-AC-695",
+      "SMS-AC-696",
+      "SMS-AC-697",
+      "SMS-AC-698",
+      "SMS-AC-699",
+      "SMS-AC-700",
+      "SMS-AC-701",
+      "SMS-AC-702",
+      "SMS-AC-703",
+      "SMS-AC-704",
+      "SMS-AC-705",
+      "SMS-AC-706",
+      "SMS-AC-707",
+      "SMS-AC-708",
+      "SMS-AC-709",
+      "SMS-AC-710",
+      "SMS-AC-711",
+      "SMS-AC-712",
+      "SMS-AC-713",
+      "SMS-AC-714",
+      "SMS-AC-715",
+      "SMS-AC-716",
+      "SMS-AC-717",
+      "SMS-AC-718",
+      "SMS-AC-719",
+      "SMS-AC-720",
+      "SMS-AC-721",
+      "SMS-AC-722",
+      "SMS-AC-723",
+      "SMS-AC-724",
+      "SMS-AC-725",
+      "SMS-AC-726",
+      "SMS-AC-727",
+      "SMS-AC-728",
+      "SMS-AC-729",
+      "SMS-AC-730",
+      "SMS-AC-731",
+      "SMS-AC-732",
+      "SMS-AC-733",
+      "SMS-AC-734",
+      "SMS-AC-735",
+      "SMS-AC-736",
+      "SMS-AC-737",
+      "SMS-AC-738",
+      "SMS-AC-739",
+      "SMS-AC-740",
+      "SMS-AC-741",
+      "SMS-AC-742",
+      "SMS-AC-743",
+      "SMS-AC-744",
+      "SMS-AC-745",
+      "SMS-AC-746",
+      "SMS-AC-747",
+      "SMS-AC-748",
+      "SMS-AC-749",
+      "SMS-AC-750",
+      "SMS-AC-751",
+      "SMS-AC-752",
+      "SMS-AC-753",
+      "SMS-AC-754",
+      "SMS-AC-755",
+      "SMS-AC-756",
+      "SMS-AC-757",
+      "SMS-AC-758",
+      "SMS-AC-759",
+      "SMS-AC-760",
+      "SMS-AC-761",
+      "SMS-AC-762",
+      "SMS-AC-763",
+      "SMS-AC-764",
+      "SMS-AC-765",
+      "SMS-AC-766",
+      "SMS-AC-767",
+      "SMS-AC-768",
+      "SMS-AC-769",
+      "SMS-AC-770",
+      "SMS-AC-771",
+      "SMS-AC-772",
+      "SMS-AC-773",
+      "SMS-AC-774",
+      "SMS-AC-775",
+      "SMS-AC-776",
+      "SMS-AC-777",
+      "SMS-AC-778",
+      "SMS-AC-779",
+      "SMS-AC-780",
+      "SMS-AC-781",
+      "SMS-AC-782",
+      "SMS-AC-783",
+      "SMS-AC-784",
+      "SMS-AC-785",
+      "SMS-AC-786",
+      "SMS-AC-787",
+      "SMS-AC-788",
+      "SMS-AC-789",
+      "SMS-AC-790",
+      "SMS-AC-791",
+      "SMS-AC-792",
+      "SMS-AC-793",
+      "SMS-AC-794",
+      "SMS-AC-795",
+      "SMS-AC-796",
+      "SMS-AC-797",
+      "SMS-AC-798",
+      "SMS-AC-799",
+      "SMS-AC-800",
+      "SMS-AC-801",
+      "SMS-AC-802",
+      "SMS-AC-803",
+      "SMS-AC-804",
+      "SMS-AC-805",
+      "SMS-AC-806",
+      "SMS-AC-807",
+      "SMS-AC-808",
+      "SMS-AC-809",
+      "SMS-AC-810",
+      "SMS-AC-811",
+      "SMS-AC-812",
+      "SMS-AC-813",
+      "SMS-AC-814",
+      "SMS-AC-815",
+      "SMS-AC-500",
+      "SMS-AC-501",
+      "SMS-AC-502",
+      "SMS-AC-503",
+      "SMS-AC-504",
+      "SMS-AC-505",
+      "SMS-AC-506",
+      "SMS-AC-507",
+      "SMS-AC-508",
+      "SMS-AC-509",
+      "SMS-AC-510",
+      "SMS-AC-511",
+      "SMS-AC-512",
+      "SMS-AC-513",
+      "SMS-AC-514",
+      "SMS-AC-515",
+      "SMS-AC-516",
+      "SMS-AC-517",
+      "SMS-AC-518",
+      "SMS-AC-519",
+      "SMS-AC-520",
+      "SMS-AC-521",
+      "SMS-AC-522",
+      "SMS-AC-523",
+      "SMS-AC-524",
+      "SMS-AC-525",
+      "SMS-AC-526",
+      "SMS-AC-527",
+      "SMS-AC-528",
+      "SMS-AC-529",
+      "SMS-AC-530",
+      "SMS-AC-531",
+      "SMS-AC-532",
+      "SMS-AC-533",
+      "SMS-AC-534",
+      "SMS-AC-535",
+      "SMS-AC-536",
+      "SMS-AC-537",
+      "SMS-AC-538",
+      "SMS-AC-539",
+      "SMS-AC-540",
+      "SMS-AC-541",
+      "SMS-AC-542",
+      "SMS-AC-543",
+      "SMS-AC-544",
+      "SMS-AC-545",
+      "SMS-AC-546",
+      "SMS-AC-547",
+      "SMS-AC-548",
+      "SMS-AC-549",
+      "SMS-AC-550",
+      "SMS-AC-551",
+      "SMS-AC-552",
+      "SMS-AC-553",
+      "SMS-AC-554",
+      "SMS-AC-555",
+      "SMS-AC-556",
+      "SMS-AC-557",
+      "SMS-AC-558",
+      "SMS-AC-559",
+      "SMS-AC-560",
+      "SMS-AC-561",
+      "SMS-AC-562",
+      "SMS-AC-563",
+      "SMS-AC-564",
+      "SMS-AC-565",
+      "SMS-AC-566",
+      "SMS-AC-567",
+      "SMS-AC-568",
+      "SMS-AC-569",
+      "SMS-AC-570",
+      "SMS-AC-571",
+      "SMS-AC-572",
+      "SMS-AC-573",
+      "SMS-AC-574",
+      "SMS-AC-575",
+      "SMS-AC-576",
+      "SMS-AC-577",
+      "SMS-AC-578",
+      "SMS-AC-579",
+      "SMS-AC-580",
+      "SMS-AC-581",
+      "SMS-AC-582",
+      "SMS-AC-583",
+      "SMS-AC-584",
+      "SMS-AC-585",
+      "SMS-AC-586",
+      "SMS-AC-587",
+      "SMS-AC-588",
+      "SMS-AC-589",
+      "SMS-AC-590",
+      "SMS-AC-591",
+      "SMS-AC-592",
+      "SMS-AC-593",
+      "SMS-AC-594",
+      "SMS-AC-595",
+      "SMS-AC-596",
+      "SMS-AC-597",
+      "SMS-AC-598",
+      "SMS-AC-599",
+      "SMS-AC-600",
+      "SMS-AC-601",
+      "SMS-AC-602",
+      "SMS-AC-603",
+      "SMS-AC-604",
+      "SMS-AC-605",
+      "SMS-AC-606",
+      "SMS-AC-607",
+      "SMS-AC-608",
+      "SMS-AC-609",
+      "SMS-AC-610"
+    ],
+    "boundaryRows": []
+  }
+}

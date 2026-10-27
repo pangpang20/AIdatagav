@@ -5,6 +5,12 @@ const crypto = require('node:crypto');
 const { REVIEW, specs, sourceSelections, renderReviewedSpec } = require('./source-review-specs');
 const root = path.resolve(__dirname, '..', 'doc', 'requirements');
 const sha = value => crypto.createHash('sha256').update(value).digest('hex');
+function reviewedSupplement(requirementsRoot, group) {
+  if (group !== '09-任务编排与调度') return null;
+  const main = path.join(requirementsRoot, group, '需求说明.md');
+  if (!fs.existsSync(main) || !fs.readFileSync(main, 'utf8').includes('<!-- sms:generated-spec-v1 -->')) return null;
+  return require('./sms-requirement-spec').renderSourceNote();
+}
 function extract(text, anchor, size = 4300) {
   const index = text.indexOf(anchor);
   if (index < 0) throw new Error(`missing source anchor: ${anchor}`);
@@ -50,6 +56,11 @@ function prepare(sourceDirectory) {
   ].join('\n');
   fs.writeFileSync(path.join(directory, 'README.md'), index);
   for (const group of new Set(Object.values(specs).map(spec => spec.group))) {
+    const reviewed = reviewedSupplement(root, group);
+    if (reviewed !== null) {
+      fs.writeFileSync(path.join(root, group, '源码核对补充.md'), reviewed);
+      continue;
+    }
     const contents = ['# 前端源码核对补充', '',
       '本文件与正式需求共用同一份可重建规格；只确认客户端定义。未知字段单元格留空，应用业务验收全部未执行，接口仍需Network及后端核对。', '',
       '[源码证据](../evidence/' + REVIEW + '/README.md) · [正式需求](./需求说明.md) · [业务验收执行计划](../业务验收执行计划.md)', '',
@@ -68,4 +79,4 @@ if (require.main === module) {
   if (argument < 0 || !process.argv[argument + 1]) throw new Error('offline source directory required: --source-dir <directory>');
   console.log(JSON.stringify(prepare(path.resolve(process.argv[argument + 1]))));
 }
-module.exports = { extract, prepare };
+module.exports = { extract, prepare, reviewedSupplement };
