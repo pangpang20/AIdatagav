@@ -1,0 +1,114 @@
+/* Domain-specific query requirements. Evidence and target differences are separate. */
+const fs=require('node:fs'),path=require('node:path');
+const registry=require('./dq-published-registry.json');
+const ROOT=path.resolve(__dirname,'../doc/requirements');
+const MAIN=[{id:'DQ-100',title:'查看我的查询',kind:'mine',start:509,sources:['C017-original-content']},{id:'DQ-001',title:'查找个人查询记录与进入查询工作区',kind:'entry',start:514,sources:['E036-query']}];
+const SUB=[{id:'DQ-500',title:'数据查询 → 我的查询',kind:'mine',start:519,sources:['O-DQ-001']},{id:'DQ-501',title:'数据查询 → SQL查询',kind:'sql',start:524,sources:['O-DQ-002']},{id:'DQ-502',title:'数据查询 → 日志记录',kind:'log',start:529,sources:['O-DQ-003']}];
+const table=(heads,rows)=>['| '+heads.join(' | ')+' |','|'+heads.map(()=>'---').join('|')+'|',...rows.map(row=>'| '+row.map(v=>String(v??'').replaceAll('|','&#124;')).join(' | ')+' |'),''];
+const f=(name,type,required='',initial='',limit='',rule='',error='',state='')=>[name,type,required,initial,limit,rule,error,state];
+const page=[f('列表分页（pageRequest）','object','是','pageNo=1；pageSize=20；order=[{prop:"id",asc:false}]','正整数','首次加载和重置回第一页；条数改变回第一页','','不是执行结果分页')];
+const date=[f('执行时间（createTimeRange → beginCreateTime/endCreateTime）','datetime range','否','[]','','yyyy-MM-ddTHH:mm:ss；日内默认00:00:00及23:59:59；清空映射空字符串；起止顺序合法','起始不得晚于结束','筛选草稿')];
+const user=[f('执行人（userIds）','array<ID> / 多选','否','[]','','候选id/name；搜索obscureName，pageNo从1、pageSize=20追加；提交ID','','可清空、远程搜索及滚动加载')];
+const status=f('任务/执行状态（status）','number / 单选','否','','1执行中；2执行成功；3执行失败','按原始数值判断，未知值不映射成功','','我的查询筛选与结果状态');
+const resultFields=[f('查询标识（queryId；行结果为logId）','ID / hidden','是','','','query返回queryId；已有记录以logId取结果；与我的查询行id分开','','只绑定当前执行'),f('结果状态（status/msg）','number/string / display','','0为本地未发起','1/2/3','1每五秒继续；2成功；3失败显示msg；未知状态报协议错误','','HTTP成功不等于SQL成功'),f('结果列（header/headerCn）','array<string> / display','','','','按索引组成columnName/mixName；中文名可空；重复显示名保留列序身份','','结果元数据'),f('结果行（body）','array<array> / table','','','','逐行逐列映射；保留null、0、false；空body且status=2是成功空结果','','不自动分页或声称全量'),f('显示列（choiceFieldDataList[].columnName）','array<string> / checkbox','至少1项','','从当前header选择','仅本地设置，不改变SQL、数据库或权限','至少选择一个显示字段','取消保持已应用列；新结果重建')];
+const mineFields=[f('标签关键字（tagKeyword）','string / input','否','','','trim；可清空；匹配算法按服务端合同','','筛选'),...date,...user,status,...page,
+ f('行身份（id / logId / dataSourceId）','ID / hidden','','','','id用于标签、删除、重执行；logId读结果；dataSourceId为来源','','不用序号代替'),
+ f('执行时间（createTime）','datetime / display','','','','公共时间格式化','','只读列'),f('执行时长（costSec）','number / display','','','秒','使用costSec，不按更新时间差重算','','只读列'),f('发起IP/人（optIp/createUsername）','string / display','','','','文本转义，按授权脱敏','','不是可编辑字段'),f('查询源/SQL（dataSourceName/sqlContent）','string / display','','','','长内容完整提示；不当HTML解析','','只读列'),f('自定查询标签（tags）','array<string> / display','','','','以空格连接，空显示短横线','','只读行值'),
+ f('批量选择（multipleTableList[].id）','array<ID> / checkbox','删除时至少1项','[]','','只选当前允许记录，确认本次ID集合','请选择要删除的数据','筛选/换页清理失效选择'),
+ f('新增标签（tagObj.formInfo.tagName）','string / input','添加时非空','空字符串','最多10字符','目标按trim后非空、精确去重；新增保存仅写草稿','此标签已存在；标签不能为空','最多5个'),
+ f('标签集合（dynamicTags → tags）','array<string> / closable tag','否','复制当前行tags或[]','最多5个，每项最多10字符','确定提交{myQueryId:行id,tags}；取消丢弃副本','','不可共享修改行数组'),...resultFields];
+const sqlFields=[f('数据源（dataSourceId）','ID / searchable select','执行/保存入口必选','空字符串','','候选dataSourceId/dataSourceName；route query代码一元+转换，目标拒绝NaN及越权来源','','刷新不自动执行'),f('表搜索（tableListFilter → obsName）','string / input','否','空字符串','','输入过滤已加载列表；搜索按钮请求服务器第一页','','不是obscureName用户搜索'),f('表分页（pageRequest）','object','是','{pageNo:1,pageSize:50}','','滚到底追加；切来源/搜索重置；失败重试原页','','内部滚动'),f('表信息（id/name/schemaName/columns）','ID/string/array / display','','','','详情读columns[].columnName/columnNameCN；schemaName可空','','只读元数据'),f('SQL草稿（sqlContent → sql）','string / CodeMirror','执行时非空','空字符串','','保留原文；空白语句阻断；不trim改写字符串常量；语言text/x-sql','','无单独参数表单'),...resultFields,f('近30次历史（historyList）','array<object> / list','','[]','标题窗口30条','读取服务端数组；点击dataSourceId/sqlContent复制并格式化；不自动执行','','30不是结果上限或日志保留期'),f('宽屏（widescreenObj.show）','boolean / toggle','否','false','','隐藏上部编辑和历史，放大结果；恢复文案显示SQL查询','','不新建执行')];
+const logFields=[...date,...user,...page,f('操作用户（createUsername）','string / display','','','','文本转义','','只读列'),f('操作时间（createTime）','datetime / display','','','','公共日期格式化','','只读列'),f('操作模块（optModule）','string / display','','','','按返回文本展示，不擅自重编码','','只读列'),f('操作IP（optIp）','string / display','','','','按授权脱敏；不固化样例地址','','只读列'),f('日志标识（id）','ID / hidden','','','','稳定行身份，不用序号代替','','不提供维护入口'),f('模块常量（optModuleList）','array / 内部常量','','1我的查询；2日志记录；3 SQL查询','','模板没有模块筛选，不因常量添加字段','','非请求必填'),f('导出条件（audaqueSearchMixin）','object','导出时','当前筛选','','按筛选快照传JSON；现代码可能带pageRequest；范围合同必须明确','','Blob不证明完整全量')];
+const api=(title,method,url,input,read)=>[title,method,url,input,read], B='/back/mdm/portal';
+const userApi=api('执行人候选','POST','/back/common/user/user/page','JSON {pageRequest:{pageNo,pageSize:20},obscureName:queryStr}；undefined可能省略','datas追加、total停止；失败解除loading并重试原页');
+const resultApi=api('结果读取','GET',B+'/dataQuery/result/{queryId}','path本次queryId或行logId；不发送SQL','status、header、headerCn、body、msg；非终态5000ms后继续');
+const mineApis=[userApi,api('我的查询列表','POST',B+'/dataQuery/myQueryPage','JSON {tagKeyword,beginCreateTime,endCreateTime,userIds,status,pageRequest}；未赋值属性可省略','datas/total；最后一次查询生效'),api('标签确定','POST',B+'/dataQuery/tagMyQuery','JSON {myQueryId:choiceRow.id,tags:标签副本}','提示打标签成功后回读；不编造成功码'),api('单条/批量删除','POST',B+'/dataQuery/rmMyQuery','JSON ID数组；公共删除mixin确认当前选择','成功回读；不推定删除日志、缓存或源表'),api('直接重新执行','POST',B+'/dataQuery/reExec/{id}','path我的查询行id；无SQL body','返回queryId后轮询；文案说明覆盖原状态及结果'),resultApi];
+const sqlApis=[api('授权数据源','POST',B+'/dataQuery/datasource/list','调用端无业务body','数组dataSourceId/dataSourceName'),api('来源表分页','POST',B+'/dataQuery/datasource/tabPage','JSON {pageRequest:{pageNo,pageSize:50},dataSourceId,obsName:tableListFilter}','datas/total；切来源丢弃旧响应'),api('表详情','GET',B+'/metatable/tableDetail/{id}','path表id','schemaName、columns；生成草稿不执行'),api('立即查询','POST',B+'/dataQuery/query','JSON {dataSourceId,sql:sqlContent}；两字段快照','返回queryId只证明受理，继续结果读取'),resultApi,api('最近历史','POST',B+'/dataQuery/myLastLog','无业务body','数组dataSourceId/sqlContent/status；项数服务端控制'),api('清除所有历史','POST',B+'/dataQuery/clearMyLastLog','无业务body；确认当前个人历史范围','提示后回读；不等于删除个人保存记录或审计'),api('保存到我的查询','POST',B+'/dataQuery/saveToMyQuery/{queryId}','path当前SQL/来源的执行；无SQL body','成功提示后回读；重复按真实合同处理')];
+const logApis=[userApi,api('操作日志分页','POST',B+'/dataQuery/logPage','JSON {beginCreateTime,endCreateTime,userIds,pageRequest}','datas/total；createUsername/createTime/optModule/optIp'),api('日志导出','POST',B+'/dataQuery/exportLogPage','JSON筛选快照；responseType=blob，performance.rawData=true','原响应交保存工具；检查媒体类型，防止错误JSON下载为文件')];
+const listControls=[['筛选/查询/展开','输入更新草稿；日期change拆起止；查询回第一页；展开只显示更多筛选。','加载/失败保持条件；日期非法定位阻断。'],['重置/分页','恢复初始条件及日期[]、userIds[]，回第一页重新读取；pageSize改变回第一页；返回恢复已提交条件。','迟到响应不覆盖新条件；空结果与失败分开。'],['执行人/滚动','搜索重置用户候选页并追加，按id去重；到total停止；不影响主表分页。','失败解除loading重试同页；旧关键词响应丢弃。']];
+const mineControls=[...listControls,['创建查询','进入/dataQuery/sqlQuery空白草稿，不是普通新增表单。','进入不自动执行。'],['标签/新增保存/标签叉号/确定/取消','600px标签配置复制tags；小保存加入草稿、叉号删除草稿；确定才tagMyQuery；取消、X/ESC丢弃副本。','5项×10字符；空白/重复阻断；失败留草稿，不先改原行。'],['行/批量删除','有选择才确认本次ID集合；取消无请求；确定rmMyQuery。','锁定提交；成功回读处理末页；未知结果先核查。'],['查看结果/列设置/下载脚本/关闭','行logId取结果；900px结果窗，800px列选择至少一项；下载脚本为本地sql脚本.sql及choiceRow.sqlContent。','关闭停止本地轮询，不表示数据库取消；新对象清理旧结果。'],['重新执行/去修改后执行/直接执行/取消','450px确认说明覆盖状态/结果；去修改携dataSourceId/sqlContent导航编辑器；直接执行reExec；取消关闭。','仅直接执行提交SQL任务；受理前锁定，终态刷新；失败留可恢复状态。']];
+const sqlControls=[['来源/刷新/搜索/表滚动','候选可搜索清空；选源/搜索读表第一页；到底追加50条；输入同时过滤已加载表。','快速换源只接最新响应；无来源不读表/执行；失败重试同页。'],['表更多：查询字段/生成表查询SQL/插入表名到SQL','查字段读详情，800px只读窗不显示选择框；生成按列名及可选schemaName拼select替换并格式化；插表名追加到草稿尾。','覆盖非空草稿先提示；方言/标识符引用由合同约束，生成不证明可执行。'],['编辑/格式化代码/全屏编辑','sqlContent双向更新；sql-formatter本地setValue；CodeMirror全屏由ESC/X退出并回焦。','格式化失败保留原文；编辑器不证明只读限制。'],['保存SQL脚本','本地文本下载sql脚本.sql；模板要求非空SQL及来源；没有服务端脚本保存调用。','空内容提示sql 内容不能为空！；下载失败反馈。'],['立即查询/查询中','校验来源/SQL，冻结快照，清旧结果及保存关联；POST query后立即GET result，1时5000ms后再读。','统一锁覆盖受理和轮询；2含空结果成功、3显示msg；断网/协议异常解除忙碌并核查未知结果。'],['保存到我的查询','只有当前来源/SQL匹配的执行标识有效才开放；POST saveToMyQuery/{queryId}。','编辑、换源、重置、新执行即使旧关联失效；不把新草稿保存到旧结果。'],['历史/复制到编辑器/清除所有','点击历史复制来源/SQL并格式化，不执行；清除所有是服务端写操作，确认个人历史范围。','复制不保存；清除成功才刷新，失败保留；无单条历史删除API。'],['重置/宽屏/显示列/离开','重置清SQL并使旧关联失效；宽屏隐藏上半区不更换来源；列设置至少一项、取消保持；未保存草稿离开提示。','停轮询/监听不等于取消数据库；无取消API不得提示已终止执行。']];
+const logControls=[...listControls,['导出','export权限通过，冻结筛选后人工点击一次POST；下载范围按合同。','忙碌去重；错误JSON、空Blob、失权不报成功。'],['只读列表/离开','日志不提供人工新增、编辑、删除、详情或SQL结果操作。','保留条件；无编辑草稿无需离页确认，不产生业务写入。']];
+const profiles={
+ mine:{route:'/mdm-dq/dataQuery/myQuery',goal:'按标签、执行时间、执行人和状态检索个人保存查询，配置标签、查看结果，并分别授权删除或重新执行。',fields:mineFields,controls:mineControls,apis:mineApis,layout:'右侧顶部我的查询标题；白色筛选条左至右标签、日期、执行人，右查询/重置/展开，展开区任务状态。下方卡片右上批量删除、创建查询；表头选择、序号、执行时间、执行时长(秒)、状态、发起IP、人、来源、SQL、标签、操作；底部分页靠右。长SQL/标签完整提示。结果/标签/重执行/列选择为居中弹窗，主体独立滚动、底部按钮可达。',flow:['会话及范围校验后分别加载用户候选和列表，行以id识别。','筛选→查询→datas/total；成功空结果与失败分开；重置/翻页独立管理当前条件。','标签先建副本草稿，校验后人工确定；删除确认所选ID后提交。','logId查看结果按1/2/3轮询；重执行确认覆盖后以id受理取得queryId；去修改只导航。','成功回读；关闭/离页/失权清理轮询及受限数据；超时先核查，不自动重复执行。']},
+ sql:{route:'/mdm-dq/dataQuery/sqlQuery',goal:'在有权来源查看表结构、编写SQL草稿，分别完成本地下载、人工执行、结果阅读及保存个人查询。',fields:sqlFields,controls:sqlControls,apis:sqlApis,layout:'1500×1000历史样本：顶部全局栏与左菜单保留；内容左侧白色来源/表卡，来源下拉与刷新、表搜索与搜索按钮，下方内部滚动表清单；右侧上部左SQL编辑器、右近30次查询历史及清除图标。编辑器顶右格式化/全屏，左行号；底部左保存SQL脚本/保存到我的查询，右重置/立即查询；下部查询结果右端宽屏及有结果时显示列。左卡/历史模板宽260px、编辑器高450px仅作样本参数，窄屏响应适配。',flow:['进入加载来源和最近历史；route query回填来源/SQL时格式化，不自动执行；选源读表。','元数据→查看列/生成草稿/追加表名；编辑/格式化/全屏/本地下载不发送执行请求。','人工执行校验权限、只读语句与配额，POST两字段快照返回queryId后轮询。','1继续五秒轮询，2按header/headerCn/body渲染，3显示msg；空body成功不判失败，畸形字段不伪造空结果。','当前执行与草稿匹配方可保存；历史只复制，清除历史单独确认回读。','断网、未知状态、离页停止本地轮询；数据库可能继续，按queryId核对，禁止自动重放。']},
+ log:{route:'/mdm-dq/dataQuery/logList',goal:'按时间和执行人检索操作审计，按独立导出权限与范围下载筛选结果。',fields:logFields,controls:logControls,apis:logApis,layout:'日志记录标题下白色筛选条，左日期范围/执行人，右查询/重置；结果卡右上导出；列序号、操作用户、操作时间、操作模块、操作IP；表主体纵向滚动，底部分页靠右。没有SQL结果、标签或维护弹窗，不以执行历史表替代审计表。',flow:['入口鉴权，分别加载用户候选和授权日志，不由菜单可见推断全员日志权。','日期/多用户组合、重置、翻页使datas/total与条件一致，失败不作空结果。','optModule显示原文本，IP按授权脱敏；不增设常量未绑定的模块筛选。','导出冻结筛选，服务端重验权限/配额；正常Blob下载，错误响应恢复。','离开保留条件、清受限缓存；无人工新增/改写/删除审计请求。']},
+};
+profiles.entry={...profiles.mine,route:'/mdm-dq/dataQuery/myQuery → /mdm-dq/dataQuery/sqlQuery 或 /mdm-dq/dataQuery/logList',goal:'通过三个独立入口分清个人保存查询、SQL执行和操作审计，不把导航当创建/执行成功。',fields:[f('目标路径（route.path）','route','是','','三个登记路径','标题/正文与目标一致，独立验权','','不能只菜单高亮'),...mineFields.slice(0,6)],controls:[['我的查询/SQL查询/日志记录','分别进登记路由；创建查询只到SQL工作区。','失效会话按公共处理，恢复不自动重放SQL。'],['返回/重入','恢复适用条件/页码；草稿恢复须限定同账号/授权范围。','新身份/来源不复用旧敏感SQL或结果。']],apis:[mineApis[1],sqlApis[0],sqlApis[5],logApis[1]],flow:['数据开发→数据查询系统，识别会话及三个目标。','个人保存记录、执行工作区、操作审计分别请求各自资源。','导航/返回恢复适用条件；无权、登录过期、加载失败分开。','打开、格式化或本地下载均不自动执行、清除历史或修改标签。']};
+const NFR=[
+ ['001','权限与会话','来源、表/列、结果、个人记录、标签、重执行、删除和日志/导出逐对象鉴权；行列权限不可被任意SQL绕过。','隔离双身份/资源矩阵直接改来源、表id、queryId、logId、myQueryId，越权均拒绝，泄露0项。'],
+ ['002','执行安全','服务端以解析器和只读数据库权限限制批准语法；禁止写库、DDL、多语句绕过及危险函数；正则或隐藏按钮不能替代。','隔离数据库使用批准合法/非法语句集合；被拒绝请求源库变更0次，白名单合同交付后执行。'],
+ ['003','传输与隐私','业务使用TLS，SQL、结果、IP按分类授权展示；密码、令牌、Cookie及来源连接秘密不得进入日志/URL/浏览器持久存储。','检查网关、请求与存储泄露0项；SQL路由query改用受控短期上下文，不承诺F12保密。'],
+ ['004','执行一致性','每次受理锁定来源+SQL+标识；一次人工动作仅受理一次，草稿变化使旧保存关联失效。','延迟受理/连点/换源/重置/历史复制和旧响应注入，错存与重复执行0次。'],
+ ['005','可靠性与恢复','轮询单在途，仅运行态继续；失败/未知状态/离页释放锁，停止等待不误报数据库取消，未知结果不自动重执行。','断网/5xx/畸形响应后1秒内解除本地忙碌，提供queryId核查；新旧任务不混入。'],
+ ['006','数据正确性','header/headerCn/body维度合法；null、0、false、重复列名及大整数/小数按合同保真；costSec单位秒。','固定数据集逐值比对，重复列名无覆盖，非法结构报协议错误，零伪造成功。'],
+ ['007','容量与截断','SQL长度、执行时限、并发、结果行/字节及导出必须有限服务端配额；标明截断与实际行数；缺配额阻断执行交付。','隔离按批准L-1/L/L+1测试；10000行×20列仅前端基准集，不是现网上限。'],
+ ['008','页面性能','10000条保存/审计记录、20条列表页及1000张表，冷启动到可操作P95≤3秒；按钮/编辑本地反馈P95≤100ms。','Windows11/8核16GB、Chrome/Edge发布稳定版、RTT≤50ms/20Mbps，冷/热各30次；不足不判通过。'],
+ ['009','列表接口性能','10独立授权会话、每会话1在途及1秒思考时，列表P95≤2秒、P99≤5秒，合法请求非预期失败率≤1%。','隔离2核4GB应用/4核8GB数据库、10万条日志及索引固定；预热2分钟统计10分钟且≥1000样本；不套SQL时长。'],
+ ['010','标签与删除','标签最多5项、每项1至10字符且去重；取消无行/服务端变更；批删按确认集合，部分失败可识别。','两会话并发编辑/删除、关闭重入、空白/重名/超限和引用保护，丢改/误删0条。'],
+ ['011','导出与留存','导出重验权限，范围/总数/截断明确；审计不可人工改写；文件名、媒体类型、错误JSON和临时文件生命周期明确。','跨页样本核对下载条数/范围；错误Blob不报成功；留存/删除策略按批准合同。'],
+ ['012','审计与可观测性','主体、资源、操作、时间/时区、执行标识、结果、耗时、失败原因及关联ID可追踪；SQL按分类脱敏。','隔离成功/失败/越权串联界面、网关、执行器和数据库审计，敏感值0泄露；不假设头已落库。'],
+ ['013','兼容与可访问性','登记Chrome/Edge完整版本；1366×768/1920×1080、100%/200%筛选/编辑/弹窗可操作，键盘可退出全屏。','矩阵检查标签、错误关联、焦点返回及非仅颜色状态；缩放不挡按钮，局部通过不宣称全面达标。'],
+ ['014','资源与稳定性','离页/切来源/关结果清定时器、scroll、keydown、MutationObserver及objectURL，缓存限定当前身份。','重复开关100次、运行态离页，活动轮询/监听回到基线，无旧结果回写，记录内存趋势。'],
+ ['015','契约与维护','配置覆盖顺序可查；功能/验收ID、证据及生成刷新可重复；未知响应不用code=0或空数组兜底。','生成器、原文哈希、链接/负例回归，刷新字节不变；状态/错误/配额变更有契约测试。'],
+];
+function shot(id){const dir=id.startsWith('O-')?'live-recheck-20261022/':'';return '['+id+'](../evidence/'+dir+id+'.png) / [元素](../evidence/'+dir+id+'.json)';}
+function checks(kind){
+ if(kind==='sql')return ['选授权来源、搜索表及滚动追加，查看字段/生成SQL/插表名仅改草稿，越权表拒绝。','格式化/全屏ESC和X/本地脚本下载/重置/历史复制逐项核对，无执行/保存请求。','执行仅提交dataSourceId/sql快照；1→2有行/空行与1→3错误分开；header/headerCn/body逐值保真。','受理连点、轮询5xx/超时/未知状态、换源和迟到响应不串结果；未知结果先查queryId，不重放。','编辑后不能保存旧queryId；保存回读个人记录；清除历史确认/取消/失权分验，不误删审计。'];
+ if(kind==='log')return ['核对路由、五列、时间及滚动分页；无人工新增/编辑/删除/SQL执行。','日期/多执行人组合、重置及首末页，datas/total匹配；模块按返回文本。','空记录/无权/候选失败/接口失败/错误Blob分开，空结果不显示网络失败。','快速筛选/翻页只收当前响应；导出冻结筛选且单在途，核对跨页范围/配额。','隔离身份直接读他人日志及导出均拒绝，离页缓存失效且无业务写入。'];
+ return ['路由/字段、状态1/2/3、costSec秒与总数正确；创建查询仅导航。','标签/日期/用户/状态组合、重置、列表页与候选页互不覆盖，空结果与故障分开。','标签5×10边界、空白/重复/取消/确定回读；单/批删确认ID集合一致。','logId读结果，1→2/3及未知结果、五秒轮询与至少1列；脚本下载在本地。','重执行说明覆盖，取消无请求，去修改不执行，直接执行单次受理；关闭/失权/切对象不串。'];
+}
+function renderFeature(e){const p=profiles[e.kind];return [
+ '### '+e.id+' '+e.title,'','**业务目的**：'+p.goal,'','**入口/前置条件**：'+p.route+'；有效会话及当前资源/操作授权。角色矩阵依服务端合同，菜单可见不代替鉴权。操作类型：'+(e.kind==='sql'?'草稿编辑、执行、结果读取及条件保存':e.kind==='log'?'审计读取与授权导出':'查询读取及明确的条件动作')+'。','','<!-- 完整规格:'+e.id+' -->','',
+ '#### 1. 页面字段清单（'+e.id+'）','',...table(['字段名称与绑定名','类型/控件','是否必填','默认值','长度/范围/单位','格式及校验规则','错误提示','条件/状态'],p.fields),'空白属性没有已交付证据，不表示无约束；由核查记录具名依赖约束，开发者不得自选后端协议。','',
+ '#### 2. 页面交互规则（'+e.id+'）','','**操作与规则**：按下表分别处理本地草稿、读取与需要确认的业务提交，按钮状态与实际请求一致。','',...table(['控件/触发','行为与联动','忙碌、失败及草稿处理'],p.controls),
+ '#### 3. 业务流程与异常分支（'+e.id+'）','',...p.flow.map((v,i)=>(i+1)+'. '+v),'','**结果与异常处理**：空结果、无权、会话失效、业务拒绝、超时、网络与解析错误分开。校验失败定位输入，来源失效阻止执行。保存/删除/执行结果未知先核查；离页只停止本地等待，不承诺服务端回滚。','',
+ '#### 4. 接口与数据规则（'+e.id+'）','',...table(['用途','HTTP方法','相对路径','请求参数、来源与转换','返回读取与页面处理'],p.apis),'**开发处理细则**：身份以id、logId、queryId及dataSourceId分别管理；读取按条件快照接收，写操作锁定本次确认范围，成功回读、失败解锁、结果未知先核查。公共JSON、全局错误、超时及类型按[公共契约](./子页面与操作细化.md#4-字段与业务规则)。后端状态/权限/错误与任务合同见核查记录，不以客户端提示视为持久化通过。','',
+ '#### 5. 验收标准（'+e.id+'）','',...table(['验收编号','前提、操作与可检查结果','关联需求','状态'],checks(e.kind).map((v,i)=>['DQ-AC-'+(e.start+i),v,e.id,'未执行'])),
+ '#### 6. 权限与安全要求（'+e.id+'）','','服务端逐对象核验来源、表/列、结果及动作的授权范围，行列权限限制SQL与导出；改ID/URL或会话失效不能扩大范围。SQL/结果/IP按授权脱敏，凭据/Cookie/Token不记日志；内容作文本转义，服务端只读策略及配额独立生效。前端addTag/result/execute/delete/export门控不推导实际角色名称。','',
+ '#### 7. 页面布局与状态（'+e.id+'）','',p.layout,'','初始化、候选加载、运行中、成功有行/空行、SQL失败、网络失败、失权及来源失效分别可见。弹窗清理前一对象状态并回焦；长SQL、宽表、窄屏/200%下关键操作可达，不为无维护表单对象套编辑布局。','',
+ '#### 8. 关联文档（'+e.id+'）','',e.sources.map(shot).join('；'),'','[核查记录](./核查记录.md) · [规则依据及采样边界](../evidence/dq-review-20261027/README.md) · [调研归档](./调研记录.md)','',
+ '#### 9. 非功能性需求（'+e.id+'）','','关联DQ-NFR-001至015，按场景执行权限、并发/轮询、数据保真、容量/性能、隐私/审计、兼容与回收。日志不承担SQL执行时延，SQL执行不套分页接口指标。质量验收全部未执行。','',
+ ].join('\n');}
+const boundaries=[['101','我的查询详情','DQ-500以logId读结果弹窗，不是普通详情维护页。'],['102','我的查询新增','创建查询仅导航，执行后saveToMyQuery引用queryId。'],['103','我的查询修改','标签和去修改后执行分开；无任意字段PUT接口。'],['104','我的查询删除','rmMyQuery确认ID集合；关联缓存/审计影响依合同。'],['105','SQL查询列表','来源表、近30次历史及执行结果三对象，不套实体CRUD。'],['106','SQL查询详情','表详情/结果各自ID，列设置只改本地。'],['107','SQL查询新增','草稿不落库，query执行与保存引用分别确认。'],['108','SQL查询修改','草稿/历史复制/来源变化使旧执行关联失效。'],['109','SQL查询删除','重置清草稿；clearMyLastLog清个人历史，不删源数据/审计。'],['110','查询日志查询','DQ-502日期/用户分页与授权导出。'],['111','查询日志详情','模板仅五列，无独立详情/SQL结果业务。'],['112','查询日志新增','系统操作产生审计，无人工新增。'],['113','查询日志修改','不提供人工改写审计。'],['114','查询日志删除','无普通删除，留存由批准后台策略管理。']];
+const baseChecks={
+ 'DQ-AC-001':'有权限进入我的查询，组合标签/时间/执行人/状态，核对结果列与datas/total；无匹配显示成功空列表。',
+ 'DQ-AC-002':'读取失败后重试保留条件；重置恢复初始条件、页1和id降序，候选分页不干扰主列表；越权不重试为成功。',
+ 'DQ-AC-003':'由个人查询入口查找记录、查看结果，再创建导航SQL和进入日志；目标页独立验权，失败可恢复，导航不自动提交。',
+ 'DQ-AC-004':'条件A先发后回、B后发先回，最终为B的结果/总数；关闭结果返回恢复已提交条件/页码/排序，失败不冒充新结果。',
+ 'DQ-AC-005':'同一用户分别在两个批准授权范围查询，并直接变更请求对象标识；仅返回各自可见记录，无权来源/行列/结果由服务端拒绝。',
+ 'DQ-AC-006':'列表加载失败显示未取得数据而不填0；成功总数来自本次total、costSec显示秒；菜单目标页独立验权，不新增无依据统计指标。',
+ 'DQ-AC-500':'有权进入我的查询路径，核对标题、筛选/结果字段；空样本保留条件，创建查询只导航，结果以行logId读取。',
+ 'DQ-AC-501':'我的查询读取/候选失败后重试保留条件，loading解除；迟到响应不能覆盖新条件，关闭结果不丢列表上下文。',
+ 'DQ-AC-502':'两身份直接请求他人个人引用、logId和标签/删除/重执行，服务端拒绝；隐藏按钮不代替对象与行列授权。',
+ 'DQ-AC-503':'有权进入SQL页，来源/表、编辑器/历史、结果布局一致；无来源/空草稿保留上下文且阻止执行，不自动运行历史。',
+ 'DQ-AC-504':'来源/表/历史读取失败重试原页，保留SQL草稿；快速换源旧响应丢弃；执行受理或轮询异常先核查原queryId，不自动重放SQL。',
+ 'DQ-AC-505':'更换来源/表/列/queryId及跨身份结果标识，服务端独立拒绝越权；编辑器按钮和显示列设置均不能扩大读取范围。',
+ 'DQ-AC-506':'有权进入日志页，核对五列及筛选/分页；空样本保留日期和执行人，不出现人工维护或SQL执行入口。',
+ 'DQ-AC-507':'日志及用户候选加载失败可重试并保留条件；新筛选/页码先后响应只显示当前快照，不把旧行当本次成功。',
+ 'DQ-AC-508':'两身份及批准范围直接请求日志与导出，服务端拒绝越权；改筛选/ID不能扩大记录范围，退出清理受限缓存。',
+};
+function renderDocument(type,previous){
+ const ledger=registry[type],entries=type==='main'?MAIN:SUB;
+ const ids=[...previous.matchAll(/^### (DQ-\d{3}) /gm)].map(m=>m[1]);if(JSON.stringify(ids)!==JSON.stringify(ledger.ids))throw new Error('DQ requirement IDs lost');
+ const ac=[...previous.matchAll(/^\| (DQ-AC-\d{3}) \|/gm)].map(m=>m[1]);if(JSON.stringify(ac)!==JSON.stringify(ledger.acceptance))throw new Error('DQ acceptance ledger lost or reordered');
+ if(previous.includes('<!-- dq:generated-spec-v1 -->')&&!previous.includes('<!-- 业务规格格式:plain-v1 -->'))throw new Error('DQ plain format missing');
+ if(type==='main'&&!ledger.sourceRows.every(row=>previous.includes(row)))throw new Error('DQ source rows lost');
+ const top=type==='main'?['## 1. 业务目标与使用角色','','面向有权查询使用者及审计/导出使用者，检索个人保存查询、浏览结构、人工执行SQL及阅读结果和日志。真实角色与来源/行列矩阵由服务端定义，不据单账号推定管理员权限。','','## 2. 业务范围','',...table(['对象','入口','边界'],[['我的查询','/mdm-dq/dataQuery/myQuery','筛选、标签、结果、重执行、删除；创建导航SQL'],['SQL查询','/mdm-dq/dataQuery/sqlQuery','来源/表、草稿、本地下载、执行/结果、历史及保存引用'],['日志记录','/mdm-dq/dataQuery/logList','只读审计及授权导出，无人工CRUD']])]:['## 1. 范围与入口','','补充[主规格](./需求说明.md)。个人引用、SQL执行、结果缓存和操作日志的ID、权限、删除/留存分别管理。','','## 2. 页面与操作范围','',...table(['子页面','历史页面材料','业务对象'],SUB.map(e=>[e.title,e.sources.map(shot).join('；'),profiles[e.kind].goal])),'弹窗/候选的当前取证边界见核查记录；静态模板不等于已打开或业务通过。',''];
+ const base=ledger.acceptance.filter(id=>!entries.some(e=>{const n=+id.split('-').at(-1);return n>=e.start&&n<e.start+5;}));
+ if(base.some(id=>!baseChecks[id]||!ledger.associations[id]))throw new Error('DQ acceptance scenario mapping missing');
+ return ['# 数据查询系统'+(type==='main'?'业务需求说明':'子页面与操作需求细化'),'','<!-- 业务规格格式:plain-v1 -->','<!-- dq:generated-spec-v1 -->','','规格供产品、研发及测试评审；依据、实现差异、合同缺口及取证边界见[核查记录](./核查记录.md)。所有功能及质量应用验收未执行。','',...top,
+ '## 3. 功能需求','',...entries.map(renderFeature),
+ '## 4. 字段与业务规则','','### 公共请求与响应契约','','父应用getRequestInstance提供会话客户端，MODULE_URL_PREFIX.mdm覆盖默认/mdm/portal，commonUser覆盖/common/user；路径按默认网关/back列出。普通POST为application/json对象或ID数组，GET标识置path；undefined可能序列化省略，不把省略/null/空字符串混同。列表pageNo=1、pageSize=20、order=[{prop:"id",asc:false}]来自公共mixin；用户候选20条、表清单50条为独立分页。','','withCredentials及会话头按父配置，仅登记名称adq-token、条件X-CSRF-TOKEN、X-TIMESTAMP/X-NONCE/X-SIGN不记值。普通正常链解包response.data；HTTP 202业务错误reject，无code=0默认协议。1002认证失效、1003无权限、1109转改密、1012刷新按父应用处理；局部错误finally解锁，恢复不重放SQL。导出rawData/blob保留原响应交文件工具。','','超时路径非负配置优先，再取请求number timeout，缺省回退20000ms；0未排除，不能保证现网20秒结束。目标要求有限期限与恢复；HTTP等待、SQL执行时限、会话有效期分开定义，实际值由服务端/部署合同交付。','',
+ '### 身份、结果和草稿','','行id用于标签/删除/reExec，logId及新queryId用于result；dataSourceId为来源，不以名称/序号替代。SQL执行body只有dataSourceId、sql；无schema独立选择及SQL参数表单，schemaName来自表元数据。生成select按列顺序及schema/table构成草稿，不代表方言、只读、权限验证完成。','','header/headerCn按索引映射，body行数组；显示列仅视图操作，不构成字段授权。重复mixName不得覆盖列，合法null/0/false及精度、空中文名、空结果/错误分别测。已查无结果分页/取消API，不编造URL或“已终止数据库任务”。标签10字符/5条；目标新增trim后非空/唯一性/副本编辑，差异见核查记录。','','日期yyyy-MM-ddTHH:mm:ss无时区后缀，服务端时区/端点包含性、标签匹配和限额必须合同交付，不由AI自选。optModuleList常量存在但页面无模块筛选，optModule按返回文本展示。','',
+ '### 响应分支','',...table(['分支','判断与读取','页面及恢复'],[['列表/候选','datas/total或来源/历史数组','按快照替换/追加；非法结构报协议错误，读取可重试'],['执行受理','query/reExec标识','仅受理；按标识GET result核查'],['运行/成功/失败','status=1/2/3及header/headerCn/body/msg','1等5000ms；2含空行成功；3显示安全msg；失败不自动重执行'],['HTTP/业务失败','202/全局错误、5xx/超时/网络/解析异常','区分无权/拒绝/故障，保留安全草稿并解锁'],['写结果未知','无明确业务终态/回读','先核查已生效范围，不臆断幂等/事务回滚'],['导出','rawData Blob','校验媒体类型、错误消息、文件名/范围，失败留条件并释放objectURL']]),
+ '## 5. 主要业务流程','','入口/来源授权→读取表或个人记录→本地筛选/编辑→人工执行取得queryId→明确终态→保存当前执行引用→logId查看结果；审计独立记录/查询。本地下载、保存引用、受理、成功、清历史和删个人记录分别验收。','',
+ '## 6. 验收标准','','保留既有编号，与功能用例合并执行；记录隔离环境/身份、前提数据、操作/请求、回读、期望/实际及证据。应用用例全部未执行。','',...table(['验收编号','前提、操作与可检查结果','关联需求','状态'],base.map(id=>[id,baseChecks[id],ledger.associations[id],'未执行'])),
+ '## 7. 实现与交付边界','',...(type==='main'?table(['历史编号','操作名称','归属与约束'],boundaries.map(([n,t,b])=>['DQ-'+n,t,b])):[]),'可开发三页/草稿/筛选、已查调用端及目标恢复。服务端语句白名单、只读执行、行列权限、参数/错误/ID类型、执行取消/并发、配额/截断/精度、保存/删除/留存及导出范围须完成核查记录交付包；不据静态定义宣称生产执行/审计就绪。','','来源连接配置及账号密码策略不在此重新定义；没有批准SLA不造月度可用率及RTO/RPO，恢复依隔离演练。AI-004仅保留[独立规划](../AI能力规划.md#ai-004-自然语言查询与sql草稿拟定需求)引用，本次不扩展AI实现。','',
+ '## 8. 需求依据与关联资料','',...(type==='main'?['| 需求编号 | 界面依据 | 详细记录 |','|---|---|---|',...ledger.sourceRows,'']:table(['需求编号','历史页面','规则核查'],entries.map(e=>[e.id,e.sources.map(shot).join('；'),'[核查记录](./核查记录.md)']))),'[主规格](./需求说明.md) · [子页面细则](./子页面与操作细化.md) · [核查记录](./核查记录.md) · [历史调研](./调研记录.md) · [专项证据](../evidence/dq-review-20261027/README.md) · [总索引](../README.md)','',
+ ...(type==='main'?['## 9. 非功能性需求','','以下数值是本次新增交付目标，尚无实测，来源/取舍见核查记录，验收全部未执行。测量登记构建/依赖/索引/安全配置、完整浏览器版本、冷热缓存、数据规模及实际资源；SQL按复杂度分层。分位取升序第ceil(p×N)项，报P50/P95/P99/最大值、N、失败次数与实际吞吐；合法请求的限流/5xx/超时/解析及错误业务结果计失败，不移出分母；零/不足样本不判通过。','',...table(['编号','质量属性','需求与指标/不变量','环境、方法及失败判定','关联功能','状态'],NFR.map(([n,q,r,v])=>['DQ-NFR-'+n,q,r,v,'DQ-100、DQ-001、DQ-500至502','未执行']))]:[]),
+ ].join('\n');
+}
+function write(root=ROOT){let changed=0;for(const [type,name]of [['main','需求说明.md'],['sub','子页面与操作细化.md']]){const file=path.join(root,'13-数据查询系统',name),before=fs.readFileSync(file,'utf8'),after=renderDocument(type,before);if(before!==after){fs.writeFileSync(file,after);changed++;}}return {changed,requirements:5,acceptance:40,nonfunctional:15};}
+if(require.main===module)console.log(JSON.stringify(write()));
+module.exports={MAIN,SUB,NFR,renderFeature,renderDocument,write};

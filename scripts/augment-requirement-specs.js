@@ -16,6 +16,7 @@ const { MAIN: dsMain, SUB: dsSub, renderFeature: renderDsFeature } = require('./
 const { MAIN: smsMain, SUB: smsSub, renderFeature: renderSmsFeature } = require('./sms-requirement-spec');
 const { MAIN: disMain, SUB: disSub, renderFeature: renderDisFeature } = require('./dis-requirement-spec');
 const { MAIN: dmsMain, SUB: dmsSub, renderFeature: renderDmsFeature } = require('./dms-requirement-spec');
+const { MAIN: dqMain, SUB: dqSub, renderFeature: renderDqFeature } = require('./dq-requirement-spec');
 
 const ROOT = path.resolve(__dirname, '..');
 const REQUIREMENTS = path.join(ROOT, 'doc', 'requirements');
@@ -509,6 +510,12 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       const entry = [...dmsMain, ...dmsSub].find(item => item.id === id);
       if (!entry) throw new Error('Unregistered reviewed DMS requirement: ' + id);
       text = text.slice(0, start) + renderDmsFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
+    if (originalText.includes('<!-- dq:generated-spec-v1 -->')) {
+      const entry = [...dqMain, ...dqSub].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DQ requirement: ' + id);
+      text = text.slice(0, start) + renderDqFeature(entry) + '\n' + text.slice(end);
       continue;
     }
     const spec = id === 'AUTH-001' ? renderLoginSpec(acceptanceStart)

@@ -12217,11 +12217,20 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "SQL编辑器/来源选择、只读语句判定、行列权限、超时/截断与日志留存",
-        "objectBoundary": "查询定义、SQL执行与查询日志",
+        "criticalDecisions": "服务端只读语句、行列权限、执行/结果/配额、标签删除事务、导出范围与留存",
+        "objectBoundary": "个人保存引用、SQL执行/结果、操作审计分别管理",
         "expandedOperations": [
           "DQ-100",
           "DQ-001"
+        ],
+        "functionalAcceptanceCases": 40,
+        "nonfunctionalRequirements": 15,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "DQ-500",
+          "DQ-501",
+          "DQ-502"
         ]
       },
       "aiProposals": [
