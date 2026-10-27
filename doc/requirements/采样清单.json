@@ -16813,11 +16813,24 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "范围配置页、关联表/连接条件、运算符、排序分页、自然语言/SQL边界",
-        "objectBoundary": "查询范围、条件/显示列配置、保存配置与查询结果",
+        "criticalDecisions": "正式DTO/范围角色部门与行列授权、全部表与配置覆盖版本、SQL只读预算/取消、真实模型/音频隐私、导出筛选与图表契约",
+        "objectBoundary": "范围与授权、查询定义、查询结果/历史问题、推荐、图表uuid分别标识；保存/生成/执行/下载分开",
         "expandedOperations": [
           "IDQS-001",
           "IDQS-002"
+        ],
+        "functionalAcceptanceCases": 70,
+        "nonfunctionalRequirements": 18,
+        "auditFile": "核查记录.md",
+        "reviewedAt": "2026-10-27",
+        "expandedSubOperations": [
+          "IDQS-500",
+          "IDQS-501",
+          "IDQS-502",
+          "IDQS-503",
+          "IDQS-504",
+          "IDQS-505",
+          "IDQS-506"
         ]
       },
       "aiProposals": [
