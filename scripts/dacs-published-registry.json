@@ -1,0 +1,523 @@
+{
+  "main": {
+    "requirements": [
+      {
+        "id": "DACS-001",
+        "title": "查看资源和资产规模",
+        "route": "/dacs/overview/overview",
+        "evidence": ["E048-asset-catalog"],
+        "acceptance": [
+          "DACS-AC-539",
+          "DACS-AC-540",
+          "DACS-AC-541",
+          "DACS-AC-542",
+          "DACS-AC-543"
+        ]
+      },
+      {
+        "id": "DACS-002",
+        "title": "进入资产管理分区",
+        "route": "/dacs/overview/overview",
+        "evidence": ["E048-asset-catalog"],
+        "acceptance": [
+          "DACS-AC-544",
+          "DACS-AC-545",
+          "DACS-AC-546",
+          "DACS-AC-547",
+          "DACS-AC-548"
+        ]
+      },
+      {
+        "id": "DACS-003",
+        "title": "区分同名目录指标",
+        "route": "/dacs/overview/overview",
+        "evidence": ["E048-asset-catalog"],
+        "acceptance": [
+          "DACS-AC-549",
+          "DACS-AC-550",
+          "DACS-AC-551",
+          "DACS-AC-552",
+          "DACS-AC-553"
+        ]
+      }
+    ],
+    "acceptance": [
+      "DACS-AC-539",
+      "DACS-AC-540",
+      "DACS-AC-541",
+      "DACS-AC-542",
+      "DACS-AC-543",
+      "DACS-AC-544",
+      "DACS-AC-545",
+      "DACS-AC-546",
+      "DACS-AC-547",
+      "DACS-AC-548",
+      "DACS-AC-549",
+      "DACS-AC-550",
+      "DACS-AC-551",
+      "DACS-AC-552",
+      "DACS-AC-553",
+      "DACS-AC-001",
+      "DACS-AC-002",
+      "DACS-AC-003",
+      "DACS-AC-004",
+      "DACS-AC-005",
+      "DACS-AC-006"
+    ],
+    "associations": {
+      "DACS-AC-539": "DACS-001",
+      "DACS-AC-540": "DACS-001",
+      "DACS-AC-541": "DACS-001",
+      "DACS-AC-542": "DACS-001",
+      "DACS-AC-543": "DACS-001",
+      "DACS-AC-544": "DACS-002",
+      "DACS-AC-545": "DACS-002",
+      "DACS-AC-546": "DACS-002",
+      "DACS-AC-547": "DACS-002",
+      "DACS-AC-548": "DACS-002",
+      "DACS-AC-549": "DACS-003",
+      "DACS-AC-550": "DACS-003",
+      "DACS-AC-551": "DACS-003",
+      "DACS-AC-552": "DACS-003",
+      "DACS-AC-553": "DACS-003",
+      "DACS-AC-001": "DACS-001",
+      "DACS-AC-002": "DACS-002",
+      "DACS-AC-003": "DACS-003",
+      "DACS-AC-004": "DACS-001",
+      "DACS-AC-005": "DACS-002",
+      "DACS-AC-006": "DACS-003"
+    },
+    "sourceRows": [
+      "| DACS-100 | 查询数据资源 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资源类型、来源、责任人、分类和目录/资产引用 |",
+      "| DACS-101 | 查看数据资源 | 详情内容、关联项及查看权限；业务范围涉及：资源类型、来源、责任人、分类和目录/资产引用 |",
+      "| DACS-102 | 新增数据资源 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资源类型、来源、责任人、分类和目录/资产引用 |",
+      "| DACS-103 | 修改数据资源 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资源类型、来源、责任人、分类和目录/资产引用 |",
+      "| DACS-104 | 删除数据资源 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资源类型、来源、责任人、分类和目录/资产引用 |",
+      "| DACS-105 | 查询数据资产 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资产登记、资源关联、审批/发布、授权与下架 |",
+      "| DACS-106 | 查看数据资产 | 详情内容、关联项及查看权限；业务范围涉及：资产登记、资源关联、审批/发布、授权与下架 |",
+      "| DACS-107 | 新增数据资产 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资产登记、资源关联、审批/发布、授权与下架 |",
+      "| DACS-108 | 修改数据资产 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资产登记、资源关联、审批/发布、授权与下架 |",
+      "| DACS-109 | 删除数据资产 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资产登记、资源关联、审批/发布、授权与下架 |",
+      "| DACS-110 | 查询资产台账 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：资产明细、部门、价值口径、形成方式和审计修订 |",
+      "| DACS-111 | 查看资产台账 | 详情内容、关联项及查看权限；业务范围涉及：资产明细、部门、价值口径、形成方式和审计修订 |",
+      "| DACS-112 | 新增资产台账 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：资产明细、部门、价值口径、形成方式和审计修订 |",
+      "| DACS-113 | 修改资产台账 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：资产明细、部门、价值口径、形成方式和审计修订 |",
+      "| DACS-114 | 删除资产台账 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：资产明细、部门、价值口径、形成方式和审计修订 |",
+      "| DACS-001 | [E048-asset-catalog](../evidence/E048-asset-catalog.png) | [原始记录](./调研记录.md) |",
+      "| DACS-002 | [E048-asset-catalog](../evidence/E048-asset-catalog.png) | [原始记录](./调研记录.md) |",
+      "| DACS-003 | [E048-asset-catalog](../evidence/E048-asset-catalog.png) | [原始记录](./调研记录.md) |"
+    ]
+  },
+  "sub": {
+    "requirements": [
+      {
+        "id": "DACS-500",
+        "title": "概览 → 整体概览",
+        "route": "/dacs/overview/overview",
+        "evidence": [
+          "V-DACS-001"
+        ],
+        "acceptance": [
+          "DACS-AC-554",
+          "DACS-AC-555",
+          "DACS-AC-556",
+          "DACS-AC-557",
+          "DACS-AC-558"
+        ]
+      },
+      {
+        "id": "DACS-501",
+        "title": "数据资源 → 数据资源目录",
+        "route": "/dacs/dataResource/resourceCatalog",
+        "evidence": [
+          "V-DACS-002"
+        ],
+        "acceptance": [
+          "DACS-AC-559",
+          "DACS-AC-560",
+          "DACS-AC-561",
+          "DACS-AC-562",
+          "DACS-AC-563"
+        ]
+      },
+      {
+        "id": "DACS-502",
+        "title": "数据资产 → 数据资产目录",
+        "route": "/dacs/dataAsset/assetCatalog",
+        "evidence": [
+          "V-DACS-003"
+        ],
+        "acceptance": [
+          "DACS-AC-564",
+          "DACS-AC-565",
+          "DACS-AC-566",
+          "DACS-AC-567",
+          "DACS-AC-568"
+        ]
+      },
+      {
+        "id": "DACS-503",
+        "title": "数据资产 → 数据资产目录 → 新增（资产类目）",
+        "route": "/dacs/dataAsset/assetCatalog",
+        "evidence": [
+          "V-DACS-003-op1"
+        ],
+        "acceptance": [
+          "DACS-AC-569",
+          "DACS-AC-570",
+          "DACS-AC-571",
+          "DACS-AC-572",
+          "DACS-AC-573"
+        ]
+      },
+      {
+        "id": "DACS-504",
+        "title": "数据资产 → 数据资产目录 → 修改（资产类目）",
+        "route": "/dacs/dataAsset/assetCatalog",
+        "evidence": [
+          "V-DACS-003-op2"
+        ],
+        "acceptance": [
+          "DACS-AC-574",
+          "DACS-AC-575",
+          "DACS-AC-576",
+          "DACS-AC-577",
+          "DACS-AC-578"
+        ]
+      },
+      {
+        "id": "DACS-509",
+        "title": "审批中心 → 我的待办",
+        "route": "/dacs/approve/backlog",
+        "evidence": [
+          "V-DACS-004"
+        ],
+        "acceptance": [
+          "DACS-AC-579",
+          "DACS-AC-580",
+          "DACS-AC-581",
+          "DACS-AC-582",
+          "DACS-AC-583"
+        ]
+      },
+      {
+        "id": "DACS-505",
+        "title": "审批中心 → 我的已办",
+        "route": "/dacs/approve/replied",
+        "evidence": [
+          "V-DACS-005"
+        ],
+        "acceptance": [
+          "DACS-AC-584",
+          "DACS-AC-585",
+          "DACS-AC-586",
+          "DACS-AC-587",
+          "DACS-AC-588"
+        ]
+      },
+      {
+        "id": "DACS-506",
+        "title": "审批中心 → 全部审批记录",
+        "route": "/dacs/approve/recordList",
+        "evidence": [
+          "V-DACS-006"
+        ],
+        "acceptance": [
+          "DACS-AC-589",
+          "DACS-AC-590",
+          "DACS-AC-591",
+          "DACS-AC-592",
+          "DACS-AC-593"
+        ]
+      },
+      {
+        "id": "DACS-510",
+        "title": "资产台账 → 资产画像",
+        "route": "/dacs/assetsLeger/assetPortrait",
+        "evidence": [
+          "V-DACS-007"
+        ],
+        "acceptance": [
+          "DACS-AC-594",
+          "DACS-AC-595",
+          "DACS-AC-596",
+          "DACS-AC-597",
+          "DACS-AC-598"
+        ]
+      },
+      {
+        "id": "DACS-507",
+        "title": "资产台账 → 资产血缘",
+        "route": "/dacs/assetsLeger/assetConsanguinity",
+        "evidence": [
+          "V-DACS-008"
+        ],
+        "acceptance": [
+          "DACS-AC-599",
+          "DACS-AC-600",
+          "DACS-AC-601",
+          "DACS-AC-602",
+          "DACS-AC-603"
+        ]
+      },
+      {
+        "id": "DACS-508",
+        "title": "资产台账 → 标签管理",
+        "route": "/dacs/assetsLeger/tagManagement",
+        "evidence": [
+          "V-DACS-009"
+        ],
+        "acceptance": [
+          "DACS-AC-604",
+          "DACS-AC-605",
+          "DACS-AC-606",
+          "DACS-AC-607",
+          "DACS-AC-608"
+        ]
+      },
+      {
+        "id": "DACS-511",
+        "title": "资产台账 → 标签管理 → 新增",
+        "route": "/dacs/assetsLeger/tagManagement",
+        "evidence": [
+          "V-DACS-009-op1"
+        ],
+        "acceptance": [
+          "DACS-AC-609",
+          "DACS-AC-610",
+          "DACS-AC-611",
+          "DACS-AC-612",
+          "DACS-AC-613"
+        ]
+      },
+      {
+        "id": "DACS-512",
+        "title": "资产台账 → 标签管理 → 修改",
+        "route": "/dacs/assetsLeger/tagManagement",
+        "evidence": [
+          "V-DACS-009-op2"
+        ],
+        "acceptance": [
+          "DACS-AC-614",
+          "DACS-AC-615",
+          "DACS-AC-616",
+          "DACS-AC-617",
+          "DACS-AC-618"
+        ]
+      }
+    ],
+    "acceptance": [
+      "DACS-AC-554",
+      "DACS-AC-555",
+      "DACS-AC-556",
+      "DACS-AC-557",
+      "DACS-AC-558",
+      "DACS-AC-559",
+      "DACS-AC-560",
+      "DACS-AC-561",
+      "DACS-AC-562",
+      "DACS-AC-563",
+      "DACS-AC-564",
+      "DACS-AC-565",
+      "DACS-AC-566",
+      "DACS-AC-567",
+      "DACS-AC-568",
+      "DACS-AC-569",
+      "DACS-AC-570",
+      "DACS-AC-571",
+      "DACS-AC-572",
+      "DACS-AC-573",
+      "DACS-AC-574",
+      "DACS-AC-575",
+      "DACS-AC-576",
+      "DACS-AC-577",
+      "DACS-AC-578",
+      "DACS-AC-579",
+      "DACS-AC-580",
+      "DACS-AC-581",
+      "DACS-AC-582",
+      "DACS-AC-583",
+      "DACS-AC-584",
+      "DACS-AC-585",
+      "DACS-AC-586",
+      "DACS-AC-587",
+      "DACS-AC-588",
+      "DACS-AC-589",
+      "DACS-AC-590",
+      "DACS-AC-591",
+      "DACS-AC-592",
+      "DACS-AC-593",
+      "DACS-AC-594",
+      "DACS-AC-595",
+      "DACS-AC-596",
+      "DACS-AC-597",
+      "DACS-AC-598",
+      "DACS-AC-599",
+      "DACS-AC-600",
+      "DACS-AC-601",
+      "DACS-AC-602",
+      "DACS-AC-603",
+      "DACS-AC-604",
+      "DACS-AC-605",
+      "DACS-AC-606",
+      "DACS-AC-607",
+      "DACS-AC-608",
+      "DACS-AC-609",
+      "DACS-AC-610",
+      "DACS-AC-611",
+      "DACS-AC-612",
+      "DACS-AC-613",
+      "DACS-AC-614",
+      "DACS-AC-615",
+      "DACS-AC-616",
+      "DACS-AC-617",
+      "DACS-AC-618",
+      "DACS-AC-500",
+      "DACS-AC-501",
+      "DACS-AC-502",
+      "DACS-AC-503",
+      "DACS-AC-504",
+      "DACS-AC-505",
+      "DACS-AC-506",
+      "DACS-AC-507",
+      "DACS-AC-508",
+      "DACS-AC-509",
+      "DACS-AC-510",
+      "DACS-AC-511",
+      "DACS-AC-512",
+      "DACS-AC-513",
+      "DACS-AC-514",
+      "DACS-AC-515",
+      "DACS-AC-516",
+      "DACS-AC-517",
+      "DACS-AC-518",
+      "DACS-AC-519",
+      "DACS-AC-520",
+      "DACS-AC-521",
+      "DACS-AC-522",
+      "DACS-AC-523",
+      "DACS-AC-524",
+      "DACS-AC-525",
+      "DACS-AC-526",
+      "DACS-AC-527",
+      "DACS-AC-528",
+      "DACS-AC-529",
+      "DACS-AC-530",
+      "DACS-AC-531",
+      "DACS-AC-532",
+      "DACS-AC-533",
+      "DACS-AC-534",
+      "DACS-AC-535",
+      "DACS-AC-536",
+      "DACS-AC-537",
+      "DACS-AC-538"
+    ],
+    "associations": {
+      "DACS-AC-554": "DACS-500",
+      "DACS-AC-555": "DACS-500",
+      "DACS-AC-556": "DACS-500",
+      "DACS-AC-557": "DACS-500",
+      "DACS-AC-558": "DACS-500",
+      "DACS-AC-559": "DACS-501",
+      "DACS-AC-560": "DACS-501",
+      "DACS-AC-561": "DACS-501",
+      "DACS-AC-562": "DACS-501",
+      "DACS-AC-563": "DACS-501",
+      "DACS-AC-564": "DACS-502",
+      "DACS-AC-565": "DACS-502",
+      "DACS-AC-566": "DACS-502",
+      "DACS-AC-567": "DACS-502",
+      "DACS-AC-568": "DACS-502",
+      "DACS-AC-569": "DACS-503",
+      "DACS-AC-570": "DACS-503",
+      "DACS-AC-571": "DACS-503",
+      "DACS-AC-572": "DACS-503",
+      "DACS-AC-573": "DACS-503",
+      "DACS-AC-574": "DACS-504",
+      "DACS-AC-575": "DACS-504",
+      "DACS-AC-576": "DACS-504",
+      "DACS-AC-577": "DACS-504",
+      "DACS-AC-578": "DACS-504",
+      "DACS-AC-579": "DACS-509",
+      "DACS-AC-580": "DACS-509",
+      "DACS-AC-581": "DACS-509",
+      "DACS-AC-582": "DACS-509",
+      "DACS-AC-583": "DACS-509",
+      "DACS-AC-584": "DACS-505",
+      "DACS-AC-585": "DACS-505",
+      "DACS-AC-586": "DACS-505",
+      "DACS-AC-587": "DACS-505",
+      "DACS-AC-588": "DACS-505",
+      "DACS-AC-589": "DACS-506",
+      "DACS-AC-590": "DACS-506",
+      "DACS-AC-591": "DACS-506",
+      "DACS-AC-592": "DACS-506",
+      "DACS-AC-593": "DACS-506",
+      "DACS-AC-594": "DACS-510",
+      "DACS-AC-595": "DACS-510",
+      "DACS-AC-596": "DACS-510",
+      "DACS-AC-597": "DACS-510",
+      "DACS-AC-598": "DACS-510",
+      "DACS-AC-599": "DACS-507",
+      "DACS-AC-600": "DACS-507",
+      "DACS-AC-601": "DACS-507",
+      "DACS-AC-602": "DACS-507",
+      "DACS-AC-603": "DACS-507",
+      "DACS-AC-604": "DACS-508",
+      "DACS-AC-605": "DACS-508",
+      "DACS-AC-606": "DACS-508",
+      "DACS-AC-607": "DACS-508",
+      "DACS-AC-608": "DACS-508",
+      "DACS-AC-609": "DACS-511",
+      "DACS-AC-610": "DACS-511",
+      "DACS-AC-611": "DACS-511",
+      "DACS-AC-612": "DACS-511",
+      "DACS-AC-613": "DACS-511",
+      "DACS-AC-614": "DACS-512",
+      "DACS-AC-615": "DACS-512",
+      "DACS-AC-616": "DACS-512",
+      "DACS-AC-617": "DACS-512",
+      "DACS-AC-618": "DACS-512",
+      "DACS-AC-500": "DACS-500",
+      "DACS-AC-501": "DACS-500",
+      "DACS-AC-502": "DACS-500",
+      "DACS-AC-503": "DACS-501",
+      "DACS-AC-504": "DACS-501",
+      "DACS-AC-505": "DACS-501",
+      "DACS-AC-506": "DACS-502",
+      "DACS-AC-507": "DACS-502",
+      "DACS-AC-508": "DACS-502",
+      "DACS-AC-509": "DACS-503",
+      "DACS-AC-510": "DACS-503",
+      "DACS-AC-511": "DACS-503",
+      "DACS-AC-512": "DACS-504",
+      "DACS-AC-513": "DACS-504",
+      "DACS-AC-514": "DACS-504",
+      "DACS-AC-515": "DACS-509",
+      "DACS-AC-516": "DACS-509",
+      "DACS-AC-517": "DACS-509",
+      "DACS-AC-518": "DACS-505",
+      "DACS-AC-519": "DACS-505",
+      "DACS-AC-520": "DACS-505",
+      "DACS-AC-521": "DACS-506",
+      "DACS-AC-522": "DACS-506",
+      "DACS-AC-523": "DACS-506",
+      "DACS-AC-524": "DACS-510",
+      "DACS-AC-525": "DACS-510",
+      "DACS-AC-526": "DACS-510",
+      "DACS-AC-527": "DACS-507",
+      "DACS-AC-528": "DACS-507",
+      "DACS-AC-529": "DACS-507",
+      "DACS-AC-530": "DACS-508",
+      "DACS-AC-531": "DACS-508",
+      "DACS-AC-532": "DACS-508",
+      "DACS-AC-533": "DACS-511",
+      "DACS-AC-534": "DACS-511",
+      "DACS-AC-535": "DACS-511",
+      "DACS-AC-536": "DACS-512",
+      "DACS-AC-537": "DACS-512",
+      "DACS-AC-538": "DACS-512"
+    },
+    "sourceRows": []
+  }
+}

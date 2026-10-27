@@ -17390,7 +17390,7 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "三目标页字段、资源转资产、审批/授权/下架和估值/台账口径",
+        "criticalDecisions": "16项规格、125条功能验收和13项NFR已细化；后端DTO/权限、审批状态机、文件与关系合同、统计/台账口径仍限制真实交付",
         "objectBoundary": "数据资源、资产登记、审批与资产台账",
         "expandedOperations": [
           "DACS-001",

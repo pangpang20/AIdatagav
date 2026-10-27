@@ -591,6 +591,13 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       text = text.slice(0, start) + renderFeature(entry) + '\n' + text.slice(end);
       continue;
     }
+    if (originalText.includes('<!-- dacs:generated-spec-v1 -->')) {
+      const { MAIN, SUB, renderFeature } = require('./dacs-requirement-spec');
+      const entry = [...MAIN, ...SUB].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DACS requirement: ' + id);
+      text = text.slice(0, start) + renderFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
     if (originalText.includes('<!-- dap:generated-spec-v1 -->')) {
       const { MAIN, SUB, renderFeature } = require('./dap-requirement-spec');
       const entry = [...MAIN, ...SUB].find(item => item.id === id);
