@@ -35862,7 +35862,223 @@
               "R036-kafka-sources"
             ]
           }
-        ]
+        ],
+        "qualityRequirements": [
+          {
+            "id": "BCF-NFR-001",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-002",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-003",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-004",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-005",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-006",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-007",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-008",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-009",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-010",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-011",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          },
+          {
+            "id": "BCF-NFR-012",
+            "relatedRequirements": [
+              "BCF-001",
+              "BCF-002",
+              "BCF-003",
+              "BCF-004",
+              "BCF-005",
+              "BCF-006",
+              "BCF-007",
+              "BCF-008"
+            ]
+          }
+        ],
+        "businessAcceptance": [
+          "BCF-AC-011",
+          "BCF-AC-012",
+          "BCF-AC-013",
+          "BCF-AC-014",
+          "BCF-AC-015",
+          "BCF-AC-016",
+          "BCF-AC-017",
+          "BCF-AC-018",
+          "BCF-AC-019",
+          "BCF-AC-020",
+          "BCF-AC-021",
+          "BCF-AC-022",
+          "BCF-AC-023",
+          "BCF-AC-024",
+          "BCF-AC-025",
+          "BCF-AC-026",
+          "BCF-AC-027",
+          "BCF-AC-028",
+          "BCF-AC-029",
+          "BCF-AC-030",
+          "BCF-AC-031",
+          "BCF-AC-032",
+          "BCF-AC-033",
+          "BCF-AC-034",
+          "BCF-AC-035",
+          "BCF-AC-036",
+          "BCF-AC-037",
+          "BCF-AC-038",
+          "BCF-AC-039",
+          "BCF-AC-040",
+          "BCF-AC-041",
+          "BCF-AC-042",
+          "BCF-AC-043",
+          "BCF-AC-044",
+          "BCF-AC-045",
+          "BCF-AC-046",
+          "BCF-AC-047",
+          "BCF-AC-048",
+          "BCF-AC-049",
+          "BCF-AC-050",
+          "BCF-AC-001",
+          "BCF-AC-002",
+          "BCF-AC-003",
+          "BCF-AC-004",
+          "BCF-AC-005",
+          "BCF-AC-006",
+          "BCF-AC-007",
+          "BCF-AC-008",
+          "BCF-AC-009",
+          "BCF-AC-010"
+        ],
+        "developmentReview": {
+          "status": "partial-ui-only",
+          "productionReady": false,
+          "audit": "37-后台配置管理/核查记录.md",
+          "generator": "scripts/bcf-requirement-spec.js"
+        }
       },
       {
         "code": "BWM",

@@ -433,6 +433,11 @@ function buildSpec(id, title, block, sourceIds, acceptanceStart = 1) {
 
 function augmentFile(file, acceptanceCounters = new Map()) {
   const originalText = read(file);
+  if (originalText.includes('<!-- bcf:reviewed-spec-v1 -->')) {
+    const bcf = require('./bcf-requirement-spec');
+    if (path.basename(file) === '需求说明.md') bcf.validateLedger(originalText);
+    return { file, requirements: [...originalText.matchAll(/^### BCF-\d{3}\b/gm)].length, changed: false };
+  }
   if (originalText.includes('<!-- space:reviewed-spec-v1 -->')) {
     return { file, requirements: [...originalText.matchAll(/^### SPACE-\d{3}\b/gm)].length, changed: false };
   }

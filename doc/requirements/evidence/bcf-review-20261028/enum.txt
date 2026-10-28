@@ -1,0 +1,1 @@
+a={VERSION:"4.6.0.0"},i=[{id:1,name:e.default.t("assetsJsConfigJs.internalApplication")},{id:2,name:e.default.t("assetsJsConfigJs.externalApplication")}],o=[{id:"1",name:e.default.t("assetsJsConfigJs.applicationAccess")},{id:"2",name:e.default.t("assetsJsConfigJs.gatewayAccess")}]}}]);
