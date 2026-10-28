@@ -441,6 +441,9 @@ function augmentFile(file, acceptanceCounters = new Map()) {
   if (originalText.includes('<!-- oss:generated-spec-v1 -->')) {
     return { file, requirements: [...originalText.matchAll(/^### OSS-\d{3}\b/gm)].length, changed: false };
   }
+  if (originalText.includes('<!-- rtms:reviewed-spec-v1 -->')) {
+    return { file, requirements: [...originalText.matchAll(/^### RTMS-\d{3}\b/gm)].length, changed: false };
+  }
   let text = originalText;
   const heading = /^### ([A-Z]+-\d{3})([^\n]*)\n/gm;
   const matches = [...text.matchAll(heading)];

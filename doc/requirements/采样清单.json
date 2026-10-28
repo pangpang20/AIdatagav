@@ -22522,6 +22522,73 @@
         "RTMS-AC-030",
         "RTMS-AC-031"
       ],
+      "qualityRequirements": [
+        {
+          "id": "RTMS-NFR-001",
+          "relatedRequirements": [
+            "RTMS-100",
+            "RTMS-500"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-002",
+          "relatedRequirements": [
+            "RTMS-102",
+            "RTMS-103"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-003",
+          "relatedRequirements": [
+            "RTMS-100",
+            "RTMS-102",
+            "RTMS-103",
+            "RTMS-104",
+            "RTMS-001"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-004",
+          "relatedRequirements": [
+            "RTMS-100",
+            "RTMS-102",
+            "RTMS-103",
+            "RTMS-104"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-005",
+          "relatedRequirements": [
+            "RTMS-500",
+            "RTMS-501",
+            "RTMS-502"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-006",
+          "relatedRequirements": [
+            "RTMS-100",
+            "RTMS-102",
+            "RTMS-103",
+            "RTMS-104"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-007",
+          "relatedRequirements": [
+            "RTMS-102",
+            "RTMS-103",
+            "RTMS-104"
+          ]
+        },
+        {
+          "id": "RTMS-NFR-008",
+          "relatedRequirements": [
+            "RTMS-102",
+            "RTMS-103"
+          ]
+        }
+      ],
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
