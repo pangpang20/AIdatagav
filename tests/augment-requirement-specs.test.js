@@ -76,7 +76,7 @@ test('all formal requirements contain the eight implementation specification sec
     }
   }
 
-  assert.equal(documents, 71, 'formal document count changed; review the registry before updating this expectation');
+  assert.equal(documents, 72, 'formal document count changed; review the registry before updating this expectation');
   assert.equal(seenRequirements.size, 694, 'formal requirement count changed; review the registry before updating this expectation');
 });
 

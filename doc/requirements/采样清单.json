@@ -36190,7 +36190,210 @@
               "U-BWM-form-visible"
             ]
           }
-        ]
+        ],
+        "qualityRequirements": [
+          {
+            "id": "BWM-NFR-001",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-002",
+              "BWM-003",
+              "BWM-004",
+              "BWM-005",
+              "BWM-006",
+              "BWM-007",
+              "BWM-008",
+              "BWM-009",
+              "BWM-010",
+              "BWM-011",
+              "BWM-012",
+              "BWM-013",
+              "BWM-014",
+              "BWM-015"
+            ]
+          },
+          {
+            "id": "BWM-NFR-002",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-002",
+              "BWM-003",
+              "BWM-004",
+              "BWM-005",
+              "BWM-006",
+              "BWM-007",
+              "BWM-008",
+              "BWM-009",
+              "BWM-010",
+              "BWM-011",
+              "BWM-012",
+              "BWM-013",
+              "BWM-014",
+              "BWM-015"
+            ]
+          },
+          {
+            "id": "BWM-NFR-003",
+            "relatedRequirements": [
+              "BWM-002",
+              "BWM-003",
+              "BWM-006",
+              "BWM-008",
+              "BWM-009",
+              "BWM-011"
+            ]
+          },
+          {
+            "id": "BWM-NFR-004",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-004",
+              "BWM-007",
+              "BWM-010",
+              "BWM-012",
+              "BWM-014"
+            ]
+          },
+          {
+            "id": "BWM-NFR-005",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-004",
+              "BWM-007",
+              "BWM-010",
+              "BWM-012"
+            ]
+          },
+          {
+            "id": "BWM-NFR-006",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-002",
+              "BWM-003",
+              "BWM-004",
+              "BWM-005",
+              "BWM-006",
+              "BWM-007",
+              "BWM-008",
+              "BWM-009",
+              "BWM-010",
+              "BWM-011",
+              "BWM-012",
+              "BWM-013",
+              "BWM-014",
+              "BWM-015"
+            ]
+          },
+          {
+            "id": "BWM-NFR-007",
+            "relatedRequirements": [
+              "BWM-002",
+              "BWM-003",
+              "BWM-004",
+              "BWM-005",
+              "BWM-006",
+              "BWM-007",
+              "BWM-008",
+              "BWM-009",
+              "BWM-010",
+              "BWM-011"
+            ]
+          },
+          {
+            "id": "BWM-NFR-008",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-002",
+              "BWM-003",
+              "BWM-004",
+              "BWM-005",
+              "BWM-006",
+              "BWM-007",
+              "BWM-008",
+              "BWM-009",
+              "BWM-010",
+              "BWM-011",
+              "BWM-012",
+              "BWM-013",
+              "BWM-014",
+              "BWM-015"
+            ]
+          },
+          {
+            "id": "BWM-NFR-009",
+            "relatedRequirements": [
+              "BWM-003",
+              "BWM-004",
+              "BWM-005",
+              "BWM-006",
+              "BWM-007",
+              "BWM-011",
+              "BWM-012",
+              "BWM-014"
+            ]
+          },
+          {
+            "id": "BWM-NFR-010",
+            "relatedRequirements": [
+              "BWM-001",
+              "BWM-009",
+              "BWM-012",
+              "BWM-013",
+              "BWM-014",
+              "BWM-015"
+            ]
+          },
+          {
+            "id": "BWM-NFR-011",
+            "relatedRequirements": [
+              "BWM-003",
+              "BWM-006",
+              "BWM-013",
+              "BWM-014"
+            ]
+          },
+          {
+            "id": "BWM-NFR-012",
+            "relatedRequirements": [
+              "BWM-007",
+              "BWM-009",
+              "BWM-010",
+              "BWM-011",
+              "BWM-013"
+            ]
+          },
+          {
+            "id": "BWM-NFR-013",
+            "relatedRequirements": [
+              "BWM-002",
+              "BWM-003",
+              "BWM-005",
+              "BWM-008",
+              "BWM-009",
+              "BWM-011",
+              "BWM-012",
+              "BWM-015"
+            ]
+          },
+          {
+            "id": "BWM-NFR-014",
+            "relatedRequirements": [
+              "BWM-003",
+              "BWM-004",
+              "BWM-006",
+              "BWM-007"
+            ]
+          }
+        ],
+        "developmentReview": {
+          "reviewedAt": "2026-10-28",
+          "functionalRequirements": 15,
+          "acceptanceCases": 94,
+          "nonfunctionalRequirements": 14,
+          "applicationAcceptanceExecuted": false,
+          "productionReady": false,
+          "auditFile": "38-后台消息工作流与审计/核查记录.md"
+        }
       },
       {
         "code": "DRMS",

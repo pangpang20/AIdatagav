@@ -433,6 +433,10 @@ function buildSpec(id, title, block, sourceIds, acceptanceStart = 1) {
 
 function augmentFile(file, acceptanceCounters = new Map()) {
   const originalText = read(file);
+  if (originalText.includes('<!-- bwm:reviewed-spec-v1 -->')) {
+    if (path.basename(file) === '需求说明.md') require('./bwm-requirement-spec').validateLedger(originalText);
+    return { file, requirements: [...originalText.matchAll(/^### BWM-\d{3}\b/gm)].length, changed: false };
+  }
   if (originalText.includes('<!-- bcf:reviewed-spec-v1 -->')) {
     const bcf = require('./bcf-requirement-spec');
     if (path.basename(file) === '需求说明.md') bcf.validateLedger(originalText);

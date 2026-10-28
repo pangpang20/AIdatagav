@@ -1,0 +1,912 @@
+{
+  "schemaVersion": 1,
+  "requirements": [
+    {
+      "id": "BWM-001",
+      "evidence": [
+        "R043-alerts"
+      ],
+      "title": "查询平台告警",
+      "originalFields": [
+        "| 告警名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 告警ID | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 告警级别 | text |  |  |  |  |  | 只读（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-002",
+      "evidence": [
+        "R069-msgtype-0",
+        "R070-channel-1"
+      ],
+      "title": "维护消息类型与渠道分类",
+      "originalFields": [
+        "|  | text | 是（页面必填标记） |  | maxlength=24 |  |  | 启用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  | maxlength=20 |  |  | 启用（页面DOM） |",
+        "|  | textarea |  |  | maxlength=100 |  |  | 启用（页面DOM） |",
+        "| 消息类型 | text |  |  | maxlength=24 |  |  | 启用（页面DOM） |",
+        "| 类型编号 | text |  |  | maxlength=20 |  |  | 启用（页面DOM） |",
+        "| 备注 |  |  |  | maxlength=100 |  |  | 启用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  | maxlength=100 |  |  | 禁用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  |  |  |  | 只读（页面DOM） |",
+        "| 渠道名称 | text |  |  | maxlength=100 |  |  | 禁用（页面DOM） |",
+        "| 消息类型 | text |  |  |  |  |  | 只读（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-003",
+      "evidence": [
+        "R071-template-0",
+        "R071-template-1"
+      ],
+      "title": "编写与维护消息模板",
+      "originalFields": [
+        "| 模板标题 | text | 是（页面必填标记） |  | maxlength=64 |  |  | 启用（页面DOM） |",
+        "| 模板编码 | text | 是（页面必填标记） |  | maxlength=64 |  |  | 启用（页面DOM） |",
+        "| 模板用途 | text | 是（页面必填标记） |  |  |  |  | 只读（页面DOM） |",
+        "|  | textarea |  |  | maxlength=1000 |  |  | 启用（页面DOM） |",
+        "| 模板格式 |  |  |  | maxlength=1000 |  |  | 启用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-004",
+      "evidence": [
+        "R047-messages",
+        "R072-message-0"
+      ],
+      "title": "查询投递状态和消息详情",
+      "originalFields": [
+        "| 消息码 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 应用名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 消息标题 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "|  | checkbox |  |  |  |  |  | 启用（页面DOM） |",
+        "|  | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | number |  |  | min=1；max=17 |  |  | 启用（页面DOM） |",
+        "| 标题 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 摘要 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 消息类型 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 通知对象 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 紧急程度 | text |  |  |  |  |  | 禁用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-005",
+      "evidence": [
+        "R048-my-messages"
+      ],
+      "title": "查询我的消息与已读状态",
+      "originalFields": [
+        "| 消息码 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 应用名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 消息标题 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "|  | checkbox |  |  |  |  |  | 禁用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-006",
+      "evidence": [
+        "R073-announcement-0"
+      ],
+      "title": "创建和管理公告",
+      "originalFields": [
+        "| 标题 | text | 是（页面必填标记） |  | maxlength=64 |  |  | 启用（页面DOM） |",
+        "| 摘要 | textarea |  |  | maxlength=1000 |  |  | 启用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  |  |  |  | 只读（页面DOM） |",
+        "| 摘要 |  |  |  | maxlength=1000 |  |  | 启用（页面DOM） |",
+        "| 紧急程度 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "| 通知对象 | text |  |  |  |  |  | 只读（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-007",
+      "evidence": [
+        "R053-workflow-apply",
+        "R054-workflow-orders",
+        "R055-workflow-todo",
+        "R056-workflow-done",
+        "R057-workflow-cc"
+      ],
+      "title": "查询本人相关工单",
+      "originalFields": [
+        "| 表单名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 业务名称 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "| 申请标题 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 流程状态 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | number |  |  | min=1；max=1 |  |  | 启用（页面DOM） |",
+        "| 发起人 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 状态 | text |  |  |  |  |  | 只读（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-008",
+      "evidence": [
+        "R074-business-0",
+        "R074-business-1"
+      ],
+      "title": "注册可使用工作流的业务",
+      "originalFields": [
+        "|  | text | 是（页面必填标记） |  | maxlength=24 |  |  | 启用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  | maxlength=30 |  |  | 启用（页面DOM） |",
+        "|  | textarea |  |  | maxlength=100 |  |  | 启用（页面DOM） |",
+        "| 业务名称 | text |  |  | maxlength=24 |  |  | 启用（页面DOM） |",
+        "| 业务编号 | text |  |  | maxlength=30 |  |  | 启用（页面DOM） |",
+        "| 备注 |  |  |  | maxlength=100 |  |  | 启用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-009",
+      "evidence": [
+        "R075-model-0",
+        "R075-model-1"
+      ],
+      "title": "设计流程模型及管理版本",
+      "originalFields": [
+        "|  | text | 是（页面必填标记） |  | maxlength=100 |  |  | 启用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  |  |  |  | 只读（页面DOM） |",
+        "|  | textarea |  |  | maxlength=500 |  |  | 启用（页面DOM） |",
+        "| 模型名称 ： | text |  |  | maxlength=100 |  |  | 启用（页面DOM） |",
+        "| 业务名称 ： | text |  |  |  |  |  | 只读（页面DOM） |",
+        "| 流程标识key ： | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 所属部门 ： | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 节点描述 ： |  |  |  | maxlength=500 |  |  | 启用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-010",
+      "evidence": [
+        "R060-flow-monitor"
+      ],
+      "title": "监控运行实例",
+      "originalFields": [
+        "| 业务名称 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "| 申请标题 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 状态 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | number |  |  | min=1；max=4 |  |  | 启用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-011",
+      "evidence": [
+        "R076-form-0"
+      ],
+      "title": "新增业务表单定义",
+      "originalFields": [
+        "|  | radio | 是（页面必填标记） |  |  |  |  | 启用（页面DOM） |",
+        "| 表单名称 | text | 是（页面必填标记） |  | maxlength=24 |  |  | 启用（页面DOM） |",
+        "| 业务名称 | text | 是（页面必填标记） |  |  |  |  | 只读（页面DOM） |",
+        "| 数据库表名称 | text | 是（页面必填标记） |  | maxlength=64 |  |  | 启用（页面DOM） |",
+        "| 表单备注 | textarea |  |  | maxlength=64 |  |  | 启用（页面DOM） |",
+        "| 表单名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 数据库表名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 数据类型 | radio |  |  |  |  |  | 启用（页面DOM） |",
+        "| 表单备注 |  |  |  | maxlength=64 |  |  | 启用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-012",
+      "evidence": [
+        "R050-operation-logs",
+        "R051-login-logs"
+      ],
+      "title": "查询操作与登录审计",
+      "originalFields": [
+        "|  | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 操作类型 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "| 操作用户 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 开始日期 |  |  |  |  |  |  | 启用（页面DOM） |",
+        "| 结束日期 |  |  |  |  |  |  | 启用（页面DOM） |",
+        "|  | number |  |  | min=1；max=24651 |  |  | 启用（页面DOM） |",
+        "| 用户账号 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 是否成功 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | number |  |  | min=1；max=197 |  |  | 启用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-013",
+      "evidence": [
+        "U-BWM-model-diagram-ready",
+        "U-BWM-model-node",
+        "U-BWM-node-config-ready",
+        "U-BWM-node-config-bottom"
+      ],
+      "title": "在只读流程图中核对审批节点及配置",
+      "originalFields": [
+        "|  | text | 是（页面必填标记） |  | maxlength=100 |  |  | 禁用（页面DOM） |",
+        "|  | text | 是（页面必填标记） |  |  |  |  | 禁用（页面DOM） |",
+        "|  | textarea |  |  | maxlength=500 |  |  | 禁用（页面DOM） |",
+        "| 模型名称 ： | text |  |  | maxlength=100 |  |  | 禁用（页面DOM） |",
+        "| 业务名称 ： | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 流程标识key ： | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 节点描述 ： |  |  |  | maxlength=500 |  |  | 禁用（页面DOM） |",
+        "|  | text |  |  | maxlength=30 |  |  | 禁用（页面DOM） |",
+        "| 节点 id ： | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 节点名称 ： | text |  |  | maxlength=30 |  |  | 禁用（页面DOM） |",
+        "|  | radio | 是（页面必填标记） |  |  |  |  | 禁用（页面DOM） |",
+        "|  | checkbox | 是（页面必填标记） |  |  |  |  | 禁用（页面DOM） |",
+        "| 正整数 | text |  |  | maxlength=3 |  |  | 禁用（页面DOM） |",
+        "| 正整数 | text |  |  | maxlength=4 |  |  | 禁用（页面DOM） |",
+        "| 节点类型 | radio |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 审核类型 | checkbox |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 多审批人时如何取值 | radio |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 会签审批 | text |  |  | maxlength=3 |  |  | 禁用（页面DOM） |",
+        "| 催办提醒 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 催办提醒 | text |  |  | maxlength=4 |  |  | 禁用（页面DOM） |",
+        "| 节点期限 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 节点期限 | text |  |  | maxlength=4 |  |  | 禁用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-014",
+      "evidence": [
+        "U-WO-detail-basic",
+        "U-WO-detail-form",
+        "U-WO-detail-history"
+      ],
+      "title": "分别读取工单基本信息、表单和审核历史",
+      "originalFields": [
+        "|  | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 业务编号 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 业务名称 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 申请标题 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 申请时间 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 已流转 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 流程状态 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 来源应用 | text |  |  |  |  |  | 禁用（页面DOM） |",
+        "| 工单类型 | text |  |  |  |  |  | 禁用（页面DOM） |"
+      ]
+    },
+    {
+      "id": "BWM-015",
+      "evidence": [
+        "U-BWM-model-visible",
+        "U-BWM-form-visible"
+      ],
+      "title": "按当前可见权限显示模型和表单操作",
+      "originalFields": [
+        "| 流程名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 业务编号 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | text |  |  |  |  |  | 只读（页面DOM） |",
+        "|  | number |  |  | min=1；max=2 |  |  | 启用（页面DOM） |",
+        "| 表单名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "| 业务名称 | text |  |  |  |  |  | 只读（页面DOM） |",
+        "| 数据库表名称 | text |  |  |  |  |  | 启用（页面DOM） |",
+        "|  | number |  |  | min=1；max=1 |  |  | 启用（页面DOM） |"
+      ]
+    }
+  ],
+  "originalCases": [
+    {
+      "id": "BWM-AC-020",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-001"
+    },
+    {
+      "id": "BWM-AC-021",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-001"
+    },
+    {
+      "id": "BWM-AC-022",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-001"
+    },
+    {
+      "id": "BWM-AC-023",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-001"
+    },
+    {
+      "id": "BWM-AC-024",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-001"
+    },
+    {
+      "id": "BWM-AC-025",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-002"
+    },
+    {
+      "id": "BWM-AC-026",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-002"
+    },
+    {
+      "id": "BWM-AC-027",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-002"
+    },
+    {
+      "id": "BWM-AC-028",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-002"
+    },
+    {
+      "id": "BWM-AC-029",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-002"
+    },
+    {
+      "id": "BWM-AC-030",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-031",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-032",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-033",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-034",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-035",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-004"
+    },
+    {
+      "id": "BWM-AC-036",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-004"
+    },
+    {
+      "id": "BWM-AC-037",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-004"
+    },
+    {
+      "id": "BWM-AC-038",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-004"
+    },
+    {
+      "id": "BWM-AC-039",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-004"
+    },
+    {
+      "id": "BWM-AC-040",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-005"
+    },
+    {
+      "id": "BWM-AC-041",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-005"
+    },
+    {
+      "id": "BWM-AC-042",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-005"
+    },
+    {
+      "id": "BWM-AC-043",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-005"
+    },
+    {
+      "id": "BWM-AC-044",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-005"
+    },
+    {
+      "id": "BWM-AC-045",
+      "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+      "requirement": "BWM-006"
+    },
+    {
+      "id": "BWM-AC-046",
+      "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+      "requirement": "BWM-006"
+    },
+    {
+      "id": "BWM-AC-047",
+      "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-006"
+    },
+    {
+      "id": "BWM-AC-048",
+      "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-006"
+    },
+    {
+      "id": "BWM-AC-049",
+      "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+      "requirement": "BWM-006"
+    },
+    {
+      "id": "BWM-AC-050",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-051",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-052",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-053",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-054",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-055",
+      "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+      "requirement": "BWM-008"
+    },
+    {
+      "id": "BWM-AC-056",
+      "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+      "requirement": "BWM-008"
+    },
+    {
+      "id": "BWM-AC-057",
+      "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-008"
+    },
+    {
+      "id": "BWM-AC-058",
+      "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-008"
+    },
+    {
+      "id": "BWM-AC-059",
+      "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+      "requirement": "BWM-008"
+    },
+    {
+      "id": "BWM-AC-060",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-061",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-062",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-063",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-064",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-065",
+      "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+      "requirement": "BWM-010"
+    },
+    {
+      "id": "BWM-AC-066",
+      "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+      "requirement": "BWM-010"
+    },
+    {
+      "id": "BWM-AC-067",
+      "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-010"
+    },
+    {
+      "id": "BWM-AC-068",
+      "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-010"
+    },
+    {
+      "id": "BWM-AC-069",
+      "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+      "requirement": "BWM-010"
+    },
+    {
+      "id": "BWM-AC-070",
+      "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+      "requirement": "BWM-011"
+    },
+    {
+      "id": "BWM-AC-071",
+      "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+      "requirement": "BWM-011"
+    },
+    {
+      "id": "BWM-AC-072",
+      "text": "必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-011"
+    },
+    {
+      "id": "BWM-AC-073",
+      "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-011"
+    },
+    {
+      "id": "BWM-AC-074",
+      "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+      "requirement": "BWM-011"
+    },
+    {
+      "id": "BWM-AC-075",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-012"
+    },
+    {
+      "id": "BWM-AC-076",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-012"
+    },
+    {
+      "id": "BWM-AC-077",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-012"
+    },
+    {
+      "id": "BWM-AC-078",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-012"
+    },
+    {
+      "id": "BWM-AC-079",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-012"
+    },
+    {
+      "id": "BWM-AC-080",
+      "text": "页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-081",
+      "text": "合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-082",
+      "text": "前置状态不满足、重复触发和权限不足时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-083",
+      "text": "网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-084",
+      "text": "取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-085",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-014"
+    },
+    {
+      "id": "BWM-AC-086",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-014"
+    },
+    {
+      "id": "BWM-AC-087",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-014"
+    },
+    {
+      "id": "BWM-AC-088",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-014"
+    },
+    {
+      "id": "BWM-AC-089",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-014"
+    },
+    {
+      "id": "BWM-AC-090",
+      "text": "页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。",
+      "requirement": "BWM-015"
+    },
+    {
+      "id": "BWM-AC-091",
+      "text": "合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。",
+      "requirement": "BWM-015"
+    },
+    {
+      "id": "BWM-AC-092",
+      "text": "空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。",
+      "requirement": "BWM-015"
+    },
+    {
+      "id": "BWM-AC-093",
+      "text": "网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。",
+      "requirement": "BWM-015"
+    },
+    {
+      "id": "BWM-AC-094",
+      "text": "取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。",
+      "requirement": "BWM-015"
+    },
+    {
+      "id": "BWM-AC-001",
+      "text": "告警筛选、空结果、加载失败、定位目标越权与恢复事件按批准规则处理",
+      "requirement": "BWM-001"
+    },
+    {
+      "id": "BWM-AC-002",
+      "text": "类型24/25、编号20/21、备注100/101、重复编号和内置引用保护；渠道更改类型/禁用对在途消息影响明确",
+      "requirement": "BWM-002"
+    },
+    {
+      "id": "BWM-AC-003",
+      "text": "模板64/65和格式1000/1001边界、变量缺失/未知、HTML安全、编码不可改、取消/重复/并发均验证",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-004",
+      "text": "测试消息只发给明确对象，预览不发送，模板更新不篡改历史投递内容",
+      "requirement": "BWM-003"
+    },
+    {
+      "id": "BWM-AC-005",
+      "text": "投递状态、渠道失败明细、重发去重、部分成功、超时恢复、删除范围和权限分别验证",
+      "requirement": "BWM-004"
+    },
+    {
+      "id": "BWM-AC-006",
+      "text": "我的消息只含本人范围；查看/批量已读/删除及当前页与全部结果选择分别测试，跨用户缓存不泄露",
+      "requirement": "BWM-005"
+    },
+    {
+      "id": "BWM-AC-007",
+      "text": "公告标题64/65、摘要1000/1001、空/失效对象、重复发布、撤销、取消和并发符合批准策略",
+      "requirement": "BWM-006"
+    },
+    {
+      "id": "BWM-AC-008",
+      "text": "发起/待办/已办/抄送分区关系与直接路由权限一致；源业务详情和轨迹可定位",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-009",
+      "text": "重复办理、失权、撤回跨节点、催办频率、取消与失败重试不产生重复业务变更和通知",
+      "requirement": "BWM-007"
+    },
+    {
+      "id": "BWM-AC-010",
+      "text": "业务名称24/25、编号30/31、备注100/101、重复、编辑编号伪造及被模型引用删除分别验证",
+      "requirement": "BWM-008"
+    },
+    {
+      "id": "BWM-AC-011",
+      "text": "模型名100/101、描述500/501、节点必填、断连/循环/网关条件、办理范围及取消草稿按批准规则处理",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-012",
+      "text": "保存/部署/复制/生成工单相互独立；版本冲突、重复部署及旧实例绑定按批准策略验证",
+      "requirement": "BWM-009"
+    },
+    {
+      "id": "BWM-AC-013",
+      "text": "实例结束/挂起/恢复/跳转分别验权和审计，重复与并行节点不绕过审批，失败补偿明确",
+      "requirement": "BWM-010"
+    },
+    {
+      "id": "BWM-AC-014",
+      "text": "表单名24/25、表名64/65、备注64/65、业务失效、重名/建表冲突和版本引用符合批准契约",
+      "requirement": "BWM-011"
+    },
+    {
+      "id": "BWM-AC-015",
+      "text": "两类日志按权限/时区/时间范围查询，失败与空值分开，秘密不入日志，审计记录不能经AI修改",
+      "requirement": "BWM-012"
+    },
+    {
+      "id": "BWM-AC-016",
+      "text": "只读图、节点及配置引用同一模型版本，禁用状态明确；跳转或刷新不串用另一模型",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-017",
+      "text": "会签百分比、多人并集/交集、期限与提醒单位按批准规则校验；不可用人数、缺员和超时有明确处理",
+      "requirement": "BWM-013"
+    },
+    {
+      "id": "BWM-AC-018",
+      "text": "三标签按同一工单加载，空表单、失败和越权分别提示；切换工单不残留旧轨迹",
+      "requirement": "BWM-014"
+    },
+    {
+      "id": "BWM-AC-019",
+      "text": "角色/对象状态改变后可见动作与服务端权限一致，隐藏DOM无法绕过鉴权；取消和并发失败可恢复",
+      "requirement": "BWM-015"
+    }
+  ],
+  "acceptanceOrder": [
+    "BWM-AC-020",
+    "BWM-AC-021",
+    "BWM-AC-022",
+    "BWM-AC-023",
+    "BWM-AC-024",
+    "BWM-AC-025",
+    "BWM-AC-026",
+    "BWM-AC-027",
+    "BWM-AC-028",
+    "BWM-AC-029",
+    "BWM-AC-030",
+    "BWM-AC-031",
+    "BWM-AC-032",
+    "BWM-AC-033",
+    "BWM-AC-034",
+    "BWM-AC-035",
+    "BWM-AC-036",
+    "BWM-AC-037",
+    "BWM-AC-038",
+    "BWM-AC-039",
+    "BWM-AC-040",
+    "BWM-AC-041",
+    "BWM-AC-042",
+    "BWM-AC-043",
+    "BWM-AC-044",
+    "BWM-AC-045",
+    "BWM-AC-046",
+    "BWM-AC-047",
+    "BWM-AC-048",
+    "BWM-AC-049",
+    "BWM-AC-050",
+    "BWM-AC-051",
+    "BWM-AC-052",
+    "BWM-AC-053",
+    "BWM-AC-054",
+    "BWM-AC-055",
+    "BWM-AC-056",
+    "BWM-AC-057",
+    "BWM-AC-058",
+    "BWM-AC-059",
+    "BWM-AC-060",
+    "BWM-AC-061",
+    "BWM-AC-062",
+    "BWM-AC-063",
+    "BWM-AC-064",
+    "BWM-AC-065",
+    "BWM-AC-066",
+    "BWM-AC-067",
+    "BWM-AC-068",
+    "BWM-AC-069",
+    "BWM-AC-070",
+    "BWM-AC-071",
+    "BWM-AC-072",
+    "BWM-AC-073",
+    "BWM-AC-074",
+    "BWM-AC-075",
+    "BWM-AC-076",
+    "BWM-AC-077",
+    "BWM-AC-078",
+    "BWM-AC-079",
+    "BWM-AC-080",
+    "BWM-AC-081",
+    "BWM-AC-082",
+    "BWM-AC-083",
+    "BWM-AC-084",
+    "BWM-AC-085",
+    "BWM-AC-086",
+    "BWM-AC-087",
+    "BWM-AC-088",
+    "BWM-AC-089",
+    "BWM-AC-090",
+    "BWM-AC-091",
+    "BWM-AC-092",
+    "BWM-AC-093",
+    "BWM-AC-094",
+    "BWM-AC-001",
+    "BWM-AC-002",
+    "BWM-AC-003",
+    "BWM-AC-004",
+    "BWM-AC-005",
+    "BWM-AC-006",
+    "BWM-AC-007",
+    "BWM-AC-008",
+    "BWM-AC-009",
+    "BWM-AC-010",
+    "BWM-AC-011",
+    "BWM-AC-012",
+    "BWM-AC-013",
+    "BWM-AC-014",
+    "BWM-AC-015",
+    "BWM-AC-016",
+    "BWM-AC-017",
+    "BWM-AC-018",
+    "BWM-AC-019"
+  ],
+  "group": "38-后台消息工作流与审计",
+  "evidenceHashes": {
+    "R043-alerts.png": "70da811f83353ee88997dd0e4e0a77803f2e7d52d1c3aba21fdf7352b2143921",
+    "R043-alerts.json": "cb6b1eb90b4b50b1410728082a8a62a26c563db792ef4f205078623f20c9bbf4",
+    "R069-msgtype-0.png": "4ea8923b12a02505c569b362aca6d480fa4c0a7b0c8d5c3195765aec857507dd",
+    "R069-msgtype-0.json": "5b915c4861f66e488f4a2480e02659c5626cf8770bc67d500c3b818cc70afe17",
+    "R070-channel-1.png": "bf7b521d291144bd1424d116648e9da39000e0e7923b2094a442d4d7f0869d7f",
+    "R070-channel-1.json": "7c60c687f20c54685ce9baa871c0f21f14592ba1d4bb3e0fb088f59a325f506c",
+    "R071-template-0.png": "3e8d58d458dd1fd636fb577a9fc77ca0ddac6f025c03a4ad3331619fb2431d93",
+    "R071-template-0.json": "dd67285697793d05830876b8d6670f15abc728e131fa8fd934dda0577faab28c",
+    "R071-template-1.png": "143f009cc958cb25dfbed3bf2e9af74aae5555d8338b2027bba04ea486efd160",
+    "R071-template-1.json": "142cc2bfd1fb6078bc36577a733524b1341ebe62910e43d941ce142921c67d44",
+    "R047-messages.png": "e03ba584403fc47cce6ed7e241ce1ad45aa038e0d1d8e51fab9977f2e8c72325",
+    "R047-messages.json": "7e6a22f0dcc75d01be62d9b1d71df7869bc7d5e2951e80c0c741072aa02acb8f",
+    "R072-message-0.png": "c2da36f005f1d585316745239c84d7f0d7bdd3f97cf85eac83fee40cd7a685ec",
+    "R072-message-0.json": "e40c97e2fc227a3c2e81cd81fb4c9370b8bbd42fa4da1e8bf9a4f9f07b099012",
+    "R048-my-messages.png": "c8c56a7940fc1e261adda56f67985f33c02bbc6a632e7fa9ce282056521fe0a9",
+    "R048-my-messages.json": "b1f00e3f77c7806be40d920f7427803be30252397bb1a5bb62ef414d9b3b0813",
+    "R073-announcement-0.png": "0b113bc8319bea4cbc48dc46a406d318639c0dc8ad54af1da4112ca832ee55ac",
+    "R073-announcement-0.json": "c3972e38f110ca62c971a3323044fae8edbe20bbc71ef1ffadc32d8db218731a",
+    "R053-workflow-apply.png": "9d7ad7fe44f747c64d59f1a7ab8c117579a867732afee9f4c07fc38ace499878",
+    "R053-workflow-apply.json": "4b648d9d0841a499d7c299c979d65185a53f03500d4b3380a3197d06687bace6",
+    "R054-workflow-orders.png": "59f24dd8aa4c4a798dfe6039f3c63a88b55f90a7e8cca2129b1e9198b4c5834b",
+    "R054-workflow-orders.json": "8595d6d5ee50997d0902f5223b6ed8fa225454438aca9b059a1e9b7e2265e2a1",
+    "R055-workflow-todo.png": "a7f85bde8b68364331db5dfbae435957b3177261789f67e05c5b80c51734bc4c",
+    "R055-workflow-todo.json": "04963a85502c6396e7581721e8114112db1a540eeb7e114330a7772a37e3054a",
+    "R056-workflow-done.png": "8079d1a29c2c2c18661c5e937af78b88b2f10b8657b946dcd13125022e885e30",
+    "R056-workflow-done.json": "273512ae611215866626968516eb684885e0f254d46eb6600fd6702d0c2e1544",
+    "R057-workflow-cc.png": "22ecfbf3abb1297804ff9a935fe1e79e9b6d4d5ddac00b595c4d22f741d8d30e",
+    "R057-workflow-cc.json": "09c655faac9b6a5303e112e8074a2b4852632e85ec19eb1191a807fd0ae1f7ac",
+    "R074-business-0.png": "b72799fec1471849028d5f981345548acef1d7ee97e2505a4f94cdff56281060",
+    "R074-business-0.json": "c8525eec3bf736eddefb8532b40e11093616cf14558d2bb4c25503c69907cb67",
+    "R074-business-1.png": "b1a0e4dbbae8d892c488cb1a76d3050f56dea10e782f170dbcdd9a2ff0c07d51",
+    "R074-business-1.json": "757cb0ed4d1da1da100b38417989ee20007f7c6bd34fd9e2635cdf0f875f1249",
+    "R075-model-0.png": "1bd3ccfaa9add212105315da8e4faaaf844b9f82ac2f92cf6c8eaf5674d63f33",
+    "R075-model-0.json": "08c73273718b63055c593c0cdcc6c776738cd0a6ecbffb5f0be121d12758586d",
+    "R075-model-1.png": "4da347f7750019e45514951af39dcf0fcfa0d7c0b044b703ef26d599fff59353",
+    "R075-model-1.json": "d67ee0db0a0d484a34f96ba7b2fcea124043459c28478c07fbd621ce704971d9",
+    "R060-flow-monitor.png": "8eff5929ab571aeafb91f15325abfad1bae5d2e3e1f848b1e1a935abef8cea30",
+    "R060-flow-monitor.json": "bcf43e842a31dc7ca8e4024ab43483b312a2fcb68bfd07484ae1915e7d73b57d",
+    "R076-form-0.png": "3b9fa32c7c1bd6a7a26726c642fea76b92d05d209f73795009f1fc1c9f8870b4",
+    "R076-form-0.json": "b074b1ae8570335b660de2b281078bb69868ee5809bfa50ce03241ae185d7812",
+    "R050-operation-logs.png": "0ac59157e59d2b9aa2641262b1ab3d43dbc4ccb811232b1fb4a56efee81d0df7",
+    "R050-operation-logs.json": "6dde62bf3fcb2d306e5d0997b36825fac7f168881e31544eaddbc36ebd3229c3",
+    "R051-login-logs.png": "0b909fb5d5f912d70c30b4553b9cb113cb040f25e52f670814848eb2930ebaf6",
+    "R051-login-logs.json": "8d600581c1acb25190399cb9c78b9b813e0318d7c1d3163eee0b4fcdc7f31607",
+    "U-BWM-model-diagram-ready.png": "40be37aaec0bb2f12cd8724afd5a37b20e16732d8e470f932dd8d1c72450449a",
+    "U-BWM-model-diagram-ready.json": "92ef0ab828e24c017cb638e7328d0535f9aeed9d6191f4d2a7998b6b7119793c",
+    "U-BWM-model-node.png": "7c2f9d2cbe05cd723a9d1692388a4f4bcdd481d8ead9ddd026cf71b3563c230d",
+    "U-BWM-model-node.json": "5acc8b7ba659ee37626785522c6fb3a54f4a98ceaf69927bc52e10acd64dc5c2",
+    "U-BWM-node-config-ready.png": "d2e570de51b0d9d163bbf2dd20e726254f68376c8444e7b77db979f5c1bddb7f",
+    "U-BWM-node-config-ready.json": "5d6b34c5318909bf4cc64b1d84dac317b32a1e526429198b38922a3e56465b4b",
+    "U-BWM-node-config-bottom.png": "b2d79efc60a69eaf45743fa509a350186b700b388e879df652f6f43958d494b3",
+    "U-BWM-node-config-bottom.json": "5b07ba78146a9b48af15b8165ad84d44206df43a7dbd4d3c52a3f2f047c26182",
+    "U-WO-detail-basic.png": "1e2fbdce4130009d560c2296e14abc043fca2e9102e1a87e1f84f203c783a57e",
+    "U-WO-detail-basic.json": "aab1315d2719b2183568f571f6f3d17c88b50d35b7a19059272481b433a87cc8",
+    "U-WO-detail-form.png": "c7b36b768951f5977df51d5cc1bf1ee09f132a88aa11cee804a29012266a8611",
+    "U-WO-detail-form.json": "ccce2de951b4baba54b5cdd7733db480ac1f96b1119fb9fc15c43f06cf843b2a",
+    "U-WO-detail-history.png": "cf29954b4e617e7eb16afe91518b4ef6a9db5379a69a49f474651586ac35b7b1",
+    "U-WO-detail-history.json": "086ad67a87d273f955ce3ae85e0cf98e80f320e3332f287559ea7b1485cbbc6a",
+    "U-BWM-model-visible.png": "e95dec9eafc62151bcb16619c29dfcaf6276c695c32721db33af13d4cf37de90",
+    "U-BWM-model-visible.json": "d75e090afe8b9ee593845f8bf9bd40b5cebe2f51871e7a265f34de6a564f92b4",
+    "U-BWM-form-visible.png": "8bdcb46a48148ce9b77e236b2cce3ed6b30131908b4a57dd9378bc7c640d6ef9",
+    "U-BWM-form-visible.json": "b6de29a30f148b6e14656fd6e49caacfcf14823307d8d484d081d831736bca08"
+  }
+}
