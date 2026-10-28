@@ -18766,6 +18766,17 @@
         "OSS-AC-005",
         "OSS-AC-006"
       ],
+      "qualityRequirements": [
+        { "id": "OSS-NFR-001", "relatedRequirements": ["OSS-001", "OSS-002", "OSS-100", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-002", "relatedRequirements": ["OSS-001", "OSS-002", "OSS-100", "OSS-101", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-003", "relatedRequirements": ["OSS-100", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-004", "relatedRequirements": ["OSS-001", "OSS-002", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-005", "relatedRequirements": ["OSS-003", "OSS-100", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-006", "relatedRequirements": ["OSS-001", "OSS-002", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-007", "relatedRequirements": ["OSS-001", "OSS-002", "OSS-500", "OSS-501", "OSS-502"] },
+        { "id": "OSS-NFR-008", "relatedRequirements": ["OSS-004", "OSS-100", "OSS-101", "OSS-502"] },
+        { "id": "OSS-NFR-009", "relatedRequirements": ["OSS-003", "OSS-004", "OSS-100", "OSS-101", "OSS-102", "OSS-103", "OSS-104", "OSS-500", "OSS-501", "OSS-502"] }
+      ],
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,

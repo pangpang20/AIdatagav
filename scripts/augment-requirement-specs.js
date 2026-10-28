@@ -433,6 +433,10 @@ function buildSpec(id, title, block, sourceIds, acceptanceStart = 1) {
 
 function augmentFile(file, acceptanceCounters = new Map()) {
   const originalText = read(file);
+  // OSS is a reviewed specification; generic refresh must preserve its evidence and IDs.
+  if (originalText.includes('<!-- oss:generated-spec-v1 -->')) {
+    return { file, requirements: [...originalText.matchAll(/^### OSS-\d{3}\b/gm)].length, changed: false };
+  }
   let text = originalText;
   const heading = /^### ([A-Z]+-\d{3})([^\n]*)\n/gm;
   const matches = [...text.matchAll(heading)];
