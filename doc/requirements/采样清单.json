@@ -22838,6 +22838,42 @@
           "proposedResults": true
         },
         {
+          "id": "SPACE-101",
+          "object": "工作空间",
+          "operation": "detail",
+          "evidence": [
+            "E060-workspaces"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SPACE-102",
+          "object": "工作空间",
+          "operation": "add",
+          "evidence": [
+            "E060-workspaces"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SPACE-103",
+          "object": "工作空间",
+          "operation": "edit",
+          "evidence": [
+            "E060-workspaces"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "SPACE-104",
+          "object": "工作空间",
+          "operation": "delete",
+          "evidence": [
+            "E060-workspaces"
+          ],
+          "proposedResults": true
+        },
+        {
           "id": "SPACE-001",
           "object": "工作空间",
           "operation": "entry",
@@ -22853,6 +22889,26 @@
         "SPACE-AC-505",
         "SPACE-AC-506",
         "SPACE-AC-507",
+        "SPACE-AC-518",
+        "SPACE-AC-519",
+        "SPACE-AC-520",
+        "SPACE-AC-521",
+        "SPACE-AC-522",
+        "SPACE-AC-523",
+        "SPACE-AC-524",
+        "SPACE-AC-525",
+        "SPACE-AC-526",
+        "SPACE-AC-527",
+        "SPACE-AC-528",
+        "SPACE-AC-529",
+        "SPACE-AC-530",
+        "SPACE-AC-531",
+        "SPACE-AC-532",
+        "SPACE-AC-533",
+        "SPACE-AC-534",
+        "SPACE-AC-535",
+        "SPACE-AC-536",
+        "SPACE-AC-537",
         "SPACE-AC-508",
         "SPACE-AC-509",
         "SPACE-AC-510",
@@ -22868,13 +22924,106 @@
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,
-        "criticalDecisions": "创建/成员页、空间隔离、角色继承、配额、删除/归档与当前空间保护",
+        "criticalDecisions": "后端DTO与成功判断、角色/部门继承、配额与唯一性、引用和当前空间保护、切换隔离、并发及结果核查",
         "objectBoundary": "工作空间、成员角色与业务对象归属",
         "expandedOperations": [
           "SPACE-100",
+          "SPACE-101",
+          "SPACE-102",
+          "SPACE-103",
+          "SPACE-104",
           "SPACE-001"
         ]
-      }
+      },
+      "qualityRequirements": [
+        {
+          "id": "SPACE-NFR-001",
+          "relatedRequirements": [
+            "SPACE-100",
+            "SPACE-101",
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-104",
+            "SPACE-001"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-002",
+          "relatedRequirements": [
+            "SPACE-101",
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-104",
+            "SPACE-001"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-003",
+          "relatedRequirements": [
+            "SPACE-100",
+            "SPACE-500"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-004",
+          "relatedRequirements": [
+            "SPACE-100",
+            "SPACE-101",
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-104",
+            "SPACE-001"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-005",
+          "relatedRequirements": [
+            "SPACE-500",
+            "SPACE-101",
+            "SPACE-102",
+            "SPACE-103"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-006",
+          "relatedRequirements": [
+            "SPACE-500",
+            "SPACE-101",
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-104",
+            "SPACE-001"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-007",
+          "relatedRequirements": [
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-104",
+            "SPACE-001"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-008",
+          "relatedRequirements": [
+            "SPACE-100",
+            "SPACE-101",
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-001"
+          ]
+        },
+        {
+          "id": "SPACE-NFR-009",
+          "relatedRequirements": [
+            "SPACE-102",
+            "SPACE-103",
+            "SPACE-104",
+            "SPACE-001"
+          ]
+        }
+      ]
     },
     {
       "code": "OMMS",

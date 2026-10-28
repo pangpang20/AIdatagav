@@ -433,6 +433,9 @@ function buildSpec(id, title, block, sourceIds, acceptanceStart = 1) {
 
 function augmentFile(file, acceptanceCounters = new Map()) {
   const originalText = read(file);
+  if (originalText.includes('<!-- space:reviewed-spec-v1 -->')) {
+    return { file, requirements: [...originalText.matchAll(/^### SPACE-\d{3}\b/gm)].length, changed: false };
+  }
   if (originalText.includes('<!-- bas:reviewed-spec-v1 -->')) {
     const bas = require('./bas-requirement-spec');
     if (path.basename(file) === '需求说明.md') bas.validateLedger(originalText);
