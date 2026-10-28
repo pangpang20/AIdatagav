@@ -23239,16 +23239,25 @@
             "E061-monitoring"
           ],
           "proposedResults": true
+        },
+        {
+          "id": "OMMS-500",
+          "object": "监控总览",
+          "operation": "overview",
+          "evidence": [
+            "E061-monitoring"
+          ],
+          "proposedResults": true
         }
       ],
       "businessAcceptance": [
+        "OMMS-AC-001",
+        "OMMS-AC-002",
         "OMMS-AC-548",
         "OMMS-AC-549",
         "OMMS-AC-550",
         "OMMS-AC-551",
-        "OMMS-AC-552",
-        "OMMS-AC-001",
-        "OMMS-AC-002"
+        "OMMS-AC-552"
       ],
       "developmentReview": {
         "status": "partial-ui-only",
@@ -23256,7 +23265,8 @@
         "criticalDecisions": "目标/告警页、采样/轮询周期、阈值/抑制、通知渠道及恢复条件",
         "objectBoundary": "监控目标、指标采样、告警规则与告警事件",
         "expandedOperations": [
-          "OMMS-001"
+          "OMMS-001",
+          "OMMS-500"
         ]
       },
       "aiProposals": [
