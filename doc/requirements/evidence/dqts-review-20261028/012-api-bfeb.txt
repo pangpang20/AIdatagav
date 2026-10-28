@@ -1,0 +1,1 @@
+bfeb:function(e,t,a){"use strict";a.r(t),a.d(t,"ANALYSIS_TYPE",(function(){return n})),a.d(t,"TASK_STATUS",(function(){return o}));var n=[{value:1,label:"基本分析"},{value:2,label:"结构分析"}],o=[{value:0,label:"新建",type:"ready"},{value:1,label:"执行成功",type:"pass"},{value:2,label:"执行失败",type:"reject"},{value:3,label:"执行中",type:"start"}]}
