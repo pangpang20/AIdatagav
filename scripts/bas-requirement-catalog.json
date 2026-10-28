@@ -1,0 +1,1797 @@
+{
+  "version": 1,
+  "group": "36-后台系统管理",
+  "baselineSha256": "1cc95f5b69117779ac1dc4835cc491b04ea6dd80ff90040c1a18aad37bec4aa0",
+  "requirements": [
+    {
+      "id": "BAS-001",
+      "evidence": [
+        "R011-admin-users-ready"
+      ]
+    },
+    {
+      "id": "BAS-002",
+      "evidence": [
+        "R013-admin-user-add-options"
+      ]
+    },
+    {
+      "id": "BAS-003",
+      "evidence": [
+        "R014-admin-user-edit"
+      ]
+    },
+    {
+      "id": "BAS-004",
+      "evidence": [
+        "R015-user-validity"
+      ]
+    },
+    {
+      "id": "BAS-005",
+      "evidence": [
+        "R016-user-more",
+        "R017-user-roles"
+      ]
+    },
+    {
+      "id": "BAS-006",
+      "evidence": [
+        "R018-departments",
+        "R020-department-types",
+        "R023-department-edit-selected"
+      ]
+    },
+    {
+      "id": "BAS-007",
+      "evidence": [
+        "R024-department-member-add"
+      ]
+    },
+    {
+      "id": "BAS-008",
+      "evidence": [
+        "R026-roles",
+        "R027-role-add",
+        "R028-role-edit",
+        "R029-role-permissions"
+      ]
+    },
+    {
+      "id": "BAS-009",
+      "evidence": [
+        "R030-tenants",
+        "R062-tenant-0",
+        "R062-tenant-1",
+        "R062-tenant-2"
+      ]
+    },
+    {
+      "id": "BAS-010",
+      "evidence": [
+        "R031-my-users",
+        "R032-my-departments"
+      ]
+    },
+    {
+      "id": "BAS-011",
+      "evidence": [
+        "R033-admin-tags"
+      ]
+    },
+    {
+      "id": "BAS-012",
+      "evidence": [
+        "R034-account-unlock"
+      ]
+    }
+  ],
+  "acceptanceOrder": [
+    "BAS-AC-018",
+    "BAS-AC-019",
+    "BAS-AC-020",
+    "BAS-AC-021",
+    "BAS-AC-022",
+    "BAS-AC-023",
+    "BAS-AC-024",
+    "BAS-AC-025",
+    "BAS-AC-026",
+    "BAS-AC-027",
+    "BAS-AC-028",
+    "BAS-AC-029",
+    "BAS-AC-030",
+    "BAS-AC-031",
+    "BAS-AC-032",
+    "BAS-AC-033",
+    "BAS-AC-034",
+    "BAS-AC-035",
+    "BAS-AC-036",
+    "BAS-AC-037",
+    "BAS-AC-038",
+    "BAS-AC-039",
+    "BAS-AC-040",
+    "BAS-AC-041",
+    "BAS-AC-042",
+    "BAS-AC-043",
+    "BAS-AC-044",
+    "BAS-AC-045",
+    "BAS-AC-046",
+    "BAS-AC-047",
+    "BAS-AC-048",
+    "BAS-AC-049",
+    "BAS-AC-050",
+    "BAS-AC-051",
+    "BAS-AC-052",
+    "BAS-AC-053",
+    "BAS-AC-054",
+    "BAS-AC-055",
+    "BAS-AC-056",
+    "BAS-AC-057",
+    "BAS-AC-058",
+    "BAS-AC-059",
+    "BAS-AC-060",
+    "BAS-AC-061",
+    "BAS-AC-062",
+    "BAS-AC-063",
+    "BAS-AC-064",
+    "BAS-AC-065",
+    "BAS-AC-066",
+    "BAS-AC-067",
+    "BAS-AC-068",
+    "BAS-AC-069",
+    "BAS-AC-070",
+    "BAS-AC-071",
+    "BAS-AC-072",
+    "BAS-AC-073",
+    "BAS-AC-074",
+    "BAS-AC-075",
+    "BAS-AC-076",
+    "BAS-AC-077",
+    "BAS-AC-001",
+    "BAS-AC-002",
+    "BAS-AC-003",
+    "BAS-AC-004",
+    "BAS-AC-005",
+    "BAS-AC-006",
+    "BAS-AC-007",
+    "BAS-AC-008",
+    "BAS-AC-009",
+    "BAS-AC-010",
+    "BAS-AC-011",
+    "BAS-AC-012",
+    "BAS-AC-013",
+    "BAS-AC-014",
+    "BAS-AC-015",
+    "BAS-AC-016",
+    "BAS-AC-017"
+  ],
+  "originalCases": [
+    {
+      "id": "BAS-AC-018",
+      "requirement": "BAS-001",
+      "text": "按测试账号查询并核对返回行身份。"
+    },
+    {
+      "id": "BAS-AC-019",
+      "requirement": "BAS-001",
+      "text": "无匹配结果显示空状态，保留条件。"
+    },
+    {
+      "id": "BAS-AC-020",
+      "requirement": "BAS-001",
+      "text": "分别验证无权与服务错误，不能都显示为空列表。"
+    },
+    {
+      "id": "BAS-AC-021",
+      "requirement": "BAS-001",
+      "text": "快速切换页码及条件，核对迟到响应。"
+    },
+    {
+      "id": "BAS-AC-022",
+      "requirement": "BAS-001",
+      "text": "重置后确认筛选、页码及实际请求；不把样本总数写成容量。"
+    },
+    {
+      "id": "BAS-AC-023",
+      "requirement": "BAS-002",
+      "text": "合法4/20位账号及合法资料创建；检查newPwd请求键并回读真实id。"
+    },
+    {
+      "id": "BAS-AC-024",
+      "requirement": "BAS-002",
+      "text": "分别输入3/21位、含下划线/中文账号；前端不得正常提交；绕过前端的后端校验另测。"
+    },
+    {
+      "id": "BAS-AC-025",
+      "requirement": "BAS-002",
+      "text": "两次密码不一致阻止提交；重复账号由真实后端拒绝且不能覆盖原用户。"
+    },
+    {
+      "id": "BAS-AC-026",
+      "requirement": "BAS-002",
+      "text": "模拟网络中断与业务拒绝，核对loading清除、错误显示及草稿；超时先回读再重试。"
+    },
+    {
+      "id": "BAS-AC-027",
+      "requirement": "BAS-002",
+      "text": "取消后无创建/更新请求；普通用户直接访问和重复提交分别检查授权及单次写入。"
+    },
+    {
+      "id": "BAS-AC-028",
+      "requirement": "BAS-003",
+      "text": "读取测试用户；账号不可编辑，保存后回读除账号外的允许修改字段。"
+    },
+    {
+      "id": "BAS-AC-029",
+      "requirement": "BAS-003",
+      "text": "分别输入3/21位、含下划线/中文账号；前端不得正常提交；绕过前端的后端校验另测。"
+    },
+    {
+      "id": "BAS-AC-030",
+      "requirement": "BAS-003",
+      "text": "联系方式未变/改变分别检查null和加密参数；gender空值检查-1。"
+    },
+    {
+      "id": "BAS-AC-031",
+      "requirement": "BAS-003",
+      "text": "模拟网络中断与业务拒绝，核对loading清除、错误显示及草稿；超时先回读再重试。"
+    },
+    {
+      "id": "BAS-AC-032",
+      "requirement": "BAS-003",
+      "text": "取消后无创建/更新请求；普通用户直接访问和重复提交分别检查授权及单次写入。"
+    },
+    {
+      "id": "BAS-AC-033",
+      "requirement": "BAS-004",
+      "text": "保存合法范围并回读边界。"
+    },
+    {
+      "id": "BAS-AC-034",
+      "requirement": "BAS-004",
+      "text": "检查两个默认时刻和实际发送格式。"
+    },
+    {
+      "id": "BAS-AC-035",
+      "requirement": "BAS-004",
+      "text": "结束早于开始、相同边界及过期账号由后端规则确认后验收。"
+    },
+    {
+      "id": "BAS-AC-036",
+      "requirement": "BAS-004",
+      "text": "清空后回读并确认其真实业务含义。"
+    },
+    {
+      "id": "BAS-AC-037",
+      "requirement": "BAS-004",
+      "text": "取消不请求；无权、超时与重复保存不伪报成功。"
+    },
+    {
+      "id": "BAS-AC-038",
+      "requirement": "BAS-005",
+      "text": "不可管理的既有角色不能被页面误删除；回读最终角色集合。"
+    },
+    {
+      "id": "BAS-AC-039",
+      "requirement": "BAS-005",
+      "text": "取消启停/强制退出确认，不发请求；确认后只处理目标测试账号。"
+    },
+    {
+      "id": "BAS-AC-040",
+      "requirement": "BAS-005",
+      "text": "分别测试两种重置配置；不记录密码或加密结果。"
+    },
+    {
+      "id": "BAS-AC-041",
+      "requirement": "BAS-005",
+      "text": "密码不一致、管理员密码错误、无权与服务失败应拒绝且不伪报成功。"
+    },
+    {
+      "id": "BAS-AC-042",
+      "requirement": "BAS-005",
+      "text": "核对强制退出实际会话范围、角色生效时机和审计；超时先回读，避免重复操作。"
+    },
+    {
+      "id": "BAS-AC-043",
+      "requirement": "BAS-006",
+      "text": "编码1/20位通过客户端，空/21位/中文编码阻止。"
+    },
+    {
+      "id": "BAS-AC-044",
+      "requirement": "BAS-006",
+      "text": "名称100/101位、纯空白、混合空白分别核对；一级节点编辑状态正确。"
+    },
+    {
+      "id": "BAS-AC-045",
+      "requirement": "BAS-006",
+      "text": "父节点pid对应所选节点；新增和编辑回读同一树。"
+    },
+    {
+      "id": "BAS-AC-046",
+      "requirement": "BAS-006",
+      "text": "禁用候选不被越权提交；删除有子部门/成员时按后端规则保护。"
+    },
+    {
+      "id": "BAS-AC-047",
+      "requirement": "BAS-006",
+      "text": "取消、失败、重复和并发移动均核对树及人员关系不误变更。"
+    },
+    {
+      "id": "BAS-AC-048",
+      "requirement": "BAS-007",
+      "text": "排除现有成员且编辑人员不可替换；重复绑定由后端拒绝。"
+    },
+    {
+      "id": "BAS-AC-049",
+      "requirement": "BAS-007",
+      "text": "职位空与100/101位边界，leader=false可以表达非领导。"
+    },
+    {
+      "id": "BAS-AC-050",
+      "requirement": "BAS-007",
+      "text": "回读关系id、用户id和部门id；移除后用户账号仍存在。"
+    },
+    {
+      "id": "BAS-AC-051",
+      "requirement": "BAS-007",
+      "text": "取消移除无DELETE；本人关系移除后的页面和主部门需核对。"
+    },
+    {
+      "id": "BAS-AC-052",
+      "requirement": "BAS-007",
+      "text": "跨部门越权、网络失败、重复与并发绑定核对成员集合和审计。"
+    },
+    {
+      "id": "BAS-AC-053",
+      "requirement": "BAS-008",
+      "text": "空/50/51位名称分别核对客户端规则及后端结果。"
+    },
+    {
+      "id": "BAS-AC-054",
+      "requirement": "BAS-008",
+      "text": "勾选依赖权限，取消被依赖权限，核对本地集合。"
+    },
+    {
+      "id": "BAS-AC-055",
+      "requirement": "BAS-008",
+      "text": "保存和回读叶节点，确认父节点不被误当业务授权。"
+    },
+    {
+      "id": "BAS-AC-056",
+      "requirement": "BAS-008",
+      "text": "取消全选/取消页面不提交；删除已绑定角色保护待后端规则明确后执行。"
+    },
+    {
+      "id": "BAS-AC-057",
+      "requirement": "BAS-008",
+      "text": "普通用户直达、跨租户授权、重复及并发保存应由后端鉴权并审计。"
+    },
+    {
+      "id": "BAS-AC-058",
+      "requirement": "BAS-009",
+      "text": "名称空/100/101位和纯空白边界；管理员缺失阻止提交。"
+    },
+    {
+      "id": "BAS-AC-059",
+      "requirement": "BAS-009",
+      "text": "分别核对启用工作区两个开关及编辑禁用；不把true强加给后端默认。"
+    },
+    {
+      "id": "BAS-AC-060",
+      "requirement": "BAS-009",
+      "text": "多选绑定和移除回读关系集合；原账号仍存在。"
+    },
+    {
+      "id": "BAS-AC-061",
+      "requirement": "BAS-009",
+      "text": "租户保存通知顶栏刷新；取消不发送租户或成员写请求。"
+    },
+    {
+      "id": "BAS-AC-062",
+      "requirement": "BAS-009",
+      "text": "跨租户访问/授权、删除非空租户、并发绑定、网络与重复请求按后端结果验收。"
+    },
+    {
+      "id": "BAS-AC-063",
+      "requirement": "BAS-010",
+      "text": "同账号比较全局与本人范围，记录服务端对象集合。"
+    },
+    {
+      "id": "BAS-AC-064",
+      "requirement": "BAS-010",
+      "text": "无可管理对象呈空态，不能显示系统错误。"
+    },
+    {
+      "id": "BAS-AC-065",
+      "requirement": "BAS-010",
+      "text": "跨范围id直接请求应拒绝，不能仅隐藏菜单。"
+    },
+    {
+      "id": "BAS-AC-066",
+      "requirement": "BAS-010",
+      "text": "失权/过期会话不能提交；刷新后范围更新。"
+    },
+    {
+      "id": "BAS-AC-067",
+      "requirement": "BAS-010",
+      "text": "核对my写接口、失败及审计；未确定接口参数前不照搬全局写契约。"
+    },
+    {
+      "id": "BAS-AC-068",
+      "requirement": "BAS-011",
+      "text": "编码1/20/21位及非法字符分别检查。"
+    },
+    {
+      "id": "BAS-AC-069",
+      "requirement": "BAS-011",
+      "text": "名称空、100/101位及纯空白记录实际前后端差别。"
+    },
+    {
+      "id": "BAS-AC-070",
+      "requirement": "BAS-011",
+      "text": "业务类型空转null；多个英文逗号段与非法分隔符校验。"
+    },
+    {
+      "id": "BAS-AC-071",
+      "requirement": "BAS-011",
+      "text": "被部门或人员引用时删除保护，规则确认后验收。"
+    },
+    {
+      "id": "BAS-AC-072",
+      "requirement": "BAS-011",
+      "text": "取消、失败、重复、无权与跨租户操作不误更新标签关系。"
+    },
+    {
+      "id": "BAS-AC-073",
+      "requirement": "BAS-012",
+      "text": "账号4/20位，3/21位与非法字符分别检查。"
+    },
+    {
+      "id": "BAS-AC-074",
+      "requirement": "BAS-012",
+      "text": "只填账号可走账号分支，IP为空不应阻挡该分支。"
+    },
+    {
+      "id": "BAS-AC-075",
+      "requirement": "BAS-012",
+      "text": "只填合法IP走IP分支；非法IP前端阻止。"
+    },
+    {
+      "id": "BAS-AC-076",
+      "requirement": "BAS-012",
+      "text": "无锁定对象、无权、失败与超时不能伪报已解禁。"
+    },
+    {
+      "id": "BAS-AC-077",
+      "requirement": "BAS-012",
+      "text": "重复解禁与审计、解禁后登录由隔离账号验证；取消不请求。"
+    },
+    {
+      "id": "BAS-AC-001",
+      "requirement": "BAS-001",
+      "text": "按账号/姓名/状态组合查询、清空重查和翻页；空值、无匹配、加载失败可恢复，过期与启用分别展示"
+    },
+    {
+      "id": "BAS-AC-002",
+      "requirement": "BAS-002",
+      "text": "用户账号20/21、姓名10/11、联系方式边界及非法格式分别验证客户端与服务端；密码遵循批准策略"
+    },
+    {
+      "id": "BAS-AC-003",
+      "requirement": "BAS-002",
+      "text": "同账号并发创建只生成一个批准范围内的用户；失败、重复提交、取消不生成半成品角色/成员关系"
+    },
+    {
+      "id": "BAS-AC-004",
+      "requirement": "BAS-003",
+      "text": "编辑不能改账号、附加密码或越权用户标识；并发冲突不覆盖新版本，取消后原值保持"
+    },
+    {
+      "id": "BAS-AC-005",
+      "requirement": "BAS-004",
+      "text": "有效期未设置、相等起止、逆序、过期、清空及时区切换按批准规则处理；超时先回读再重试"
+    },
+    {
+      "id": "BAS-AC-006",
+      "requirement": "BAS-005",
+      "text": "角色双列含已选/可选，失权候选拒绝提交；提交成功只改变目标用户关系"
+    },
+    {
+      "id": "BAS-AC-007",
+      "requirement": "BAS-005",
+      "text": "重置密码、禁用默认租户、禁用账号、强制退出和删除分别确认对象、权限、结果及审计，取消不生效"
+    },
+    {
+      "id": "BAS-AC-008",
+      "requirement": "BAS-006",
+      "text": "未选节点、根节点和普通节点的新增/修改/删除权限正确；编码20/21、名称100/101及同级冲突明确"
+    },
+    {
+      "id": "BAS-AC-009",
+      "requirement": "BAS-006",
+      "text": "带子部门/成员/主部门引用时删除受批准保护；上下移失败不误显示成功，刷新保持真实顺序"
+    },
+    {
+      "id": "BAS-AC-010",
+      "requirement": "BAS-007",
+      "text": "重复人员、无候选、失效账号、角色/标签组合和领导属性按批准规则验证；删除部门关系不误删账号"
+    },
+    {
+      "id": "BAS-AC-011",
+      "requirement": "BAS-008",
+      "text": "角色名50/51、重名、权限树父子/半选、全选/取消全选和越权权限伪造均有明确处理"
+    },
+    {
+      "id": "BAS-AC-012",
+      "requirement": "BAS-008",
+      "text": "角色授权撤回的生效时机与审计符合批准规则；被引用角色不能无提示删除"
+    },
+    {
+      "id": "BAS-AC-013",
+      "requirement": "BAS-009",
+      "text": "租户名100/101、管理域500/501、管理员失效、许可配额及空间选项编辑禁用均按批准规则验证"
+    },
+    {
+      "id": "BAS-AC-014",
+      "requirement": "BAS-009",
+      "text": "租户创建失败不留半成品，成员重复和跨租户请求被正确处理，删除成员不误删平台用户"
+    },
+    {
+      "id": "BAS-AC-015",
+      "requirement": "BAS-010",
+      "text": "我的用户/部门按管理关系隔离，空结果与失败分开，直接路径和伪造范围不能获得全量数据"
+    },
+    {
+      "id": "BAS-AC-016",
+      "requirement": "BAS-011",
+      "text": "有维护权限后验证自定义标签新增、重名、引用保护；内置样本无操作不被误解释成全局禁止维护"
+    },
+    {
+      "id": "BAS-AC-017",
+      "requirement": "BAS-012",
+      "text": "账号20/21、IP15/16及IPv6输入与批准规则一致；无对应限制、重复解除、失败重试、越权均有明确结果"
+    }
+  ],
+  "features": [
+    {
+      "id": "BAS-001",
+      "group": "36-后台系统管理",
+      "title": "查询和定位平台用户",
+      "sources": [
+        "SRC-USER-API",
+        "SRC-USER-LIST"
+      ],
+      "fields": [
+        [
+          "账号 account",
+          "string",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "姓名 name",
+          "string",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "分页 pageRequest",
+          "object",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "查询/分页",
+          "列表调用userPage，传筛选对象和pageRequest；这里是POST读取接口，不能只按HTTP方法判定写操作。"
+        ]
+      ],
+      "flow": [
+        "设置账号、姓名及页面状态条件。",
+        "调用列表接口并使用返回列表；真实分页响应键和失败结构待验证。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/user/page",
+          "页面筛选对象，含pageRequest；完整运行时序列化待验证"
+        ]
+      ],
+      "checks": [
+        "按测试账号查询并核对返回行身份。",
+        "无匹配结果显示空状态，保留条件。",
+        "分别验证无权与服务错误，不能都显示为空列表。",
+        "快速切换页码及条件，核对迟到响应。",
+        "重置后确认筛选、页码及实际请求；不把样本总数写成容量。"
+      ],
+      "layout": "原R011列表截图；筛选在列表上方，表格和分页分区。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-002",
+      "group": "36-后台系统管理",
+      "title": "创建用户并设置初始资料",
+      "sources": [
+        "SRC-USER-FORM",
+        "SRC-USER-API",
+        "SRC-SHARED"
+      ],
+      "fields": [
+        [
+          "账号 account",
+          "string",
+          "是（客户端）",
+          "\"\"（新增草稿）",
+          "maxlength=20",
+          "^[a-zA-Z0-9]{4,20}$",
+          "locale: pleaseInputUsername / pleaseEnterTheAccountNumberInTheCorrectFormat",
+          "编辑禁用"
+        ],
+        [
+          "姓名 name",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "maxlength=10",
+          "",
+          "locale: pleaseTypeInYourName",
+          ""
+        ],
+        [
+          "初始密码 password",
+          "password",
+          "是（新增客户端）",
+          "\"\"",
+          "",
+          "pwdValidate；系统密码配置",
+          "",
+          "仅新增显示；focus清空，blur处理"
+        ],
+        [
+          "确认初始密码 confirmPassword",
+          "password",
+          "是（新增客户端）",
+          "\"\"",
+          "",
+          "与初始密码一致",
+          "locale: viewsManageUserUserEditVue.theInitialPasswordIsInconsistent",
+          "仅新增显示"
+        ],
+        [
+          "手机号码 mobilephone",
+          "string",
+          "由USERINFO_REQUIRE.mobilephone控制",
+          "\"\"",
+          "maxlength=11",
+          "isMobilePhone校验器",
+          "locale: viewsManageUserUserEditVue.pleaseEnterAValidPhoneNumber",
+          ""
+        ],
+        [
+          "邮箱 email",
+          "string",
+          "由USERINFO_REQUIRE.email控制",
+          "\"\"",
+          "maxlength=50",
+          "isEmail校验器",
+          "",
+          ""
+        ],
+        [
+          "昵称 nickname",
+          "string",
+          "",
+          "\"\"",
+          "maxlength=10",
+          "",
+          "",
+          ""
+        ],
+        [
+          "英文名 englishName",
+          "string",
+          "否（客户端required=false）",
+          "\"\"",
+          "maxlength=50",
+          "notContainChinese校验器",
+          "",
+          ""
+        ],
+        [
+          "工号 workNum",
+          "string",
+          "由USERINFO_REQUIRE.workNum控制",
+          "\"\"",
+          "maxlength=20",
+          "",
+          "",
+          ""
+        ],
+        [
+          "性别 gender",
+          "枚举",
+          "",
+          "\"\"",
+          "",
+          "男=0，女=1；编辑空值转换为-1",
+          "",
+          ""
+        ],
+        [
+          "用户类型 type",
+          "字典枚举",
+          "",
+          "\"\"",
+          "",
+          "categoryKey=userType；候选value用parseInt转换",
+          "",
+          "字典有数据才显示"
+        ],
+        [
+          "隐私同意 privacyChecked",
+          "array",
+          "显示时要求非空（客户端）",
+          "[]",
+          "",
+          "数组校验",
+          "locale: pleaseReadThePrivacyStatement",
+          "privacyStatementUrl有值才显示"
+        ]
+      ],
+      "interactions": [
+        [
+          "输入与校验",
+          "账号、姓名及联系方式在blur校验；性别候选值是0/1。密码策略取systemConfig，不将静态样本或HTML min当作服务端策略。"
+        ],
+        [
+          "提交",
+          "公共提交器validate→beforeHandle转换→loading=true→创建或更新；resolve/reject均清loading。用户页未传is-loading，不能据此认定提交按钮已禁用。"
+        ],
+        [
+          "取消/返回",
+          "公共返回实现为router.go(-1)；该实现没有显示脏数据确认。提交catch没有重置表单代码；具体控件是否保留秘密值需运行验证。"
+        ]
+      ],
+      "flow": [
+        "初始化空字符串草稿；按配置决定联系方式必填和条件字段显示。",
+        "按客户端规则校验，再复制草稿并删除password、confirmPassword。",
+        "密码加密写入newPwd；手机与邮箱经RSA加密，原密码与确认密码不作为同名请求键发送。",
+        "调用API包装器；公共成功分支显示提示，提示确认/关闭后返回。真实响应、重复账号错误、实际记录变化未验证。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/user",
+          "account,name,nickname,englishName,mobilephone,email,workNum,gender,type,privacyChecked及newPwd；保留复制对象中的其他现有键"
+        ]
+      ],
+      "checks": [
+        "合法4/20位账号及合法资料创建；检查newPwd请求键并回读真实id。",
+        "分别输入3/21位、含下划线/中文账号；前端不得正常提交；绕过前端的后端校验另测。",
+        "两次密码不一致阻止提交；重复账号由真实后端拒绝且不能覆盖原用户。",
+        "模拟网络中断与业务拒绝，核对loading清除、错误显示及草稿；超时先回读再重试。",
+        "取消后无创建/更新请求；普通用户直接访问和重复提交分别检查授权及单次写入。"
+      ],
+      "layout": "原R013新增/R014编辑截图；labelWidth=150px，字段顺序为账号、姓名、两项新增密码、手机、邮箱、昵称、英文名、工号、性别；用户类型和隐私声明按配置条件显示。",
+      "pending": [
+        "源码复制privacyChecked到请求，但服务端是否接收、是否过滤该键待验证；不把前端草稿直接当作后端DTO。",
+        "页面没有已确认的部门、角色或租户输入；这些绑定由独立功能处理。",
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-003",
+      "group": "36-后台系统管理",
+      "title": "修改用户资料",
+      "sources": [
+        "SRC-USER-FORM",
+        "SRC-USER-API",
+        "SRC-SHARED"
+      ],
+      "fields": [
+        [
+          "账号 account",
+          "string",
+          "是（客户端）",
+          "\"\"（新增草稿）",
+          "maxlength=20",
+          "^[a-zA-Z0-9]{4,20}$",
+          "locale: pleaseInputUsername / pleaseEnterTheAccountNumberInTheCorrectFormat",
+          "编辑禁用"
+        ],
+        [
+          "姓名 name",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "maxlength=10",
+          "",
+          "locale: pleaseTypeInYourName",
+          ""
+        ],
+        [
+          "手机号码 mobilephone",
+          "string",
+          "由USERINFO_REQUIRE.mobilephone控制",
+          "\"\"",
+          "maxlength=11",
+          "isMobilePhone校验器",
+          "locale: viewsManageUserUserEditVue.pleaseEnterAValidPhoneNumber",
+          ""
+        ],
+        [
+          "邮箱 email",
+          "string",
+          "由USERINFO_REQUIRE.email控制",
+          "\"\"",
+          "maxlength=50",
+          "isEmail校验器",
+          "",
+          ""
+        ],
+        [
+          "昵称 nickname",
+          "string",
+          "",
+          "\"\"",
+          "maxlength=10",
+          "",
+          "",
+          ""
+        ],
+        [
+          "英文名 englishName",
+          "string",
+          "否（客户端required=false）",
+          "\"\"",
+          "maxlength=50",
+          "notContainChinese校验器",
+          "",
+          ""
+        ],
+        [
+          "工号 workNum",
+          "string",
+          "由USERINFO_REQUIRE.workNum控制",
+          "\"\"",
+          "maxlength=20",
+          "",
+          "",
+          ""
+        ],
+        [
+          "性别 gender",
+          "枚举",
+          "",
+          "\"\"",
+          "",
+          "男=0，女=1；编辑空值转换为-1",
+          "",
+          ""
+        ],
+        [
+          "用户类型 type",
+          "字典枚举",
+          "",
+          "\"\"",
+          "",
+          "categoryKey=userType；候选value用parseInt转换",
+          "",
+          "字典有数据才显示"
+        ],
+        [
+          "隐私同意 privacyChecked",
+          "array",
+          "显示时要求非空（客户端）",
+          "[]",
+          "",
+          "数组校验",
+          "locale: pleaseReadThePrivacyStatement",
+          "privacyStatementUrl有值才显示"
+        ]
+      ],
+      "interactions": [
+        [
+          "输入与校验",
+          "账号、姓名及联系方式在blur校验；性别候选值是0/1。密码策略取systemConfig，不将静态样本或HTML min当作服务端策略。"
+        ],
+        [
+          "提交",
+          "公共提交器validate→beforeHandle转换→loading=true→创建或更新；resolve/reject均清loading。用户页未传is-loading，不能据此认定提交按钮已禁用。"
+        ],
+        [
+          "取消/返回",
+          "公共返回实现为router.go(-1)；该实现没有显示脏数据确认。提交catch没有重置表单代码；具体控件是否保留秘密值需运行验证。"
+        ]
+      ],
+      "flow": [
+        "按id读取并回填资料，账号控件禁用。",
+        "按客户端规则校验，再复制草稿并删除password、confirmPassword。",
+        "空gender/type转换为-1；未改联系方式发送null，已改联系方式RSA加密。",
+        "调用API包装器；公共成功分支显示提示，提示确认/关闭后返回。真实响应、重复账号错误、实际记录变化未验证。"
+      ],
+      "apis": [
+        [
+          "GET",
+          "/common/user/user/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/user/{id}",
+          "复制资料；gender/type转换；联系方式未改=null、已改=RSA结果"
+        ]
+      ],
+      "checks": [
+        "读取测试用户；账号不可编辑，保存后回读除账号外的允许修改字段。",
+        "分别输入3/21位、含下划线/中文账号；前端不得正常提交；绕过前端的后端校验另测。",
+        "联系方式未变/改变分别检查null和加密参数；gender空值检查-1。",
+        "模拟网络中断与业务拒绝，核对loading清除、错误显示及草稿；超时先回读再重试。",
+        "取消后无创建/更新请求；普通用户直接访问和重复提交分别检查授权及单次写入。"
+      ],
+      "layout": "原R013新增/R014编辑截图；labelWidth=150px，字段顺序为账号、姓名、两项新增密码、手机、邮箱、昵称、英文名、工号、性别；用户类型和隐私声明按配置条件显示。",
+      "pending": [
+        "源码复制privacyChecked到请求，但服务端是否接收、是否过滤该键待验证；不把前端草稿直接当作后端DTO。",
+        "页面没有已确认的部门、角色或租户输入；这些绑定由独立功能处理。",
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-004",
+      "group": "36-后台系统管理",
+      "title": "设置账号有效期",
+      "sources": [
+        "SRC-USER-LIST",
+        "SRC-USER-API"
+      ],
+      "fields": [
+        [
+          "有效期 date",
+          "datetimerange",
+          "",
+          "",
+          "",
+          "yyyy-MM-ddTHH:mm:ss；default-time为00:00:00与23:59:59",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "打开",
+          "600px弹窗，date校验数组为空。默认时刻只用于日期时间选择，不等于账号默认有效期。"
+        ],
+        [
+          "确认",
+          "非空范围转effectTime/expiredTime；清空转两个空字符串后调用接口。"
+        ]
+      ],
+      "flow": [
+        "打开目标账号有效期弹窗。",
+        "选范围或清空，确认后发送两个时间字段；服务端清空语义仍需确认。"
+      ],
+      "apis": [
+        [
+          "PUT",
+          "/common/user/user/effectExpired/{id}",
+          "{effectTime,expiredTime}；清空时两者为\"\""
+        ]
+      ],
+      "checks": [
+        "保存合法范围并回读边界。",
+        "检查两个默认时刻和实际发送格式。",
+        "结束早于开始、相同边界及过期账号由后端规则确认后验收。",
+        "清空后回读并确认其真实业务含义。",
+        "取消不请求；无权、超时与重复保存不伪报成功。"
+      ],
+      "layout": "600px弹窗，依据R015。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-005",
+      "group": "36-后台系统管理",
+      "title": "用户角色与高影响操作",
+      "sources": [
+        "SRC-USER-LIST",
+        "SRC-USER-ROLE",
+        "SRC-USER-API",
+        "SRC-SHARED"
+      ],
+      "fields": [
+        [
+          "角色 bindRoleList",
+          "ID数组",
+          "",
+          "[]",
+          "",
+          "角色候选roleType=1；不可管理的既有角色禁用",
+          "",
+          ""
+        ],
+        [
+          "管理员密码 pwd",
+          "password",
+          "配置分支内校验",
+          "\"\"",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "新密码 newPwd",
+          "password",
+          "配置分支内校验",
+          "\"\"",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "确认密码 newPwd2",
+          "password",
+          "配置分支内校验",
+          "\"\"",
+          "",
+          "需一致",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "绑定角色",
+          "候选取role/my/list；绑定分页pageSize=500只是本次请求大小。既有且不在候选内的角色补入禁用，提交整个绑定ID数组。"
+        ],
+        [
+          "启用/禁用/强制退出",
+          "warn确认的okEvent内才调用接口；本轮均未调用。"
+        ],
+        [
+          "重置密码",
+          "RESET_PASSWORD_SHOULD_INPUT_PASSWORD为真时输入管理员密码、新密码、确认密码，发adminPwd/newPwd的RSA结果；假时不传密码体。失败清loading并显示e.data.msg。"
+        ]
+      ],
+      "flow": [
+        "定位账号与角色。",
+        "按具体操作分支确认影响；确认角色是集合覆盖而非追加。",
+        "成功后重新读取；配置分支无密码体不能推断系统默认密码。"
+      ],
+      "apis": [
+        [
+          "GET",
+          "/common/user/role/my/list",
+          "{roleType:1}"
+        ],
+        [
+          "POST",
+          "/common/user/userrole/role",
+          "{roleType:1,leftId:id,pageRequest:{pageSize:500,order:[{prop:\"createTime\",asc:false}]}}"
+        ],
+        [
+          "POST",
+          "/common/user/userrole/reset/{id}",
+          "角色ID数组"
+        ],
+        [
+          "PUT",
+          "/common/user/user/enable/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/user/disable/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/user/logout/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/user/password/{id}",
+          "配置分支：{adminPwd:RSA结果,newPwd:RSA结果}或无密码体"
+        ]
+      ],
+      "checks": [
+        "不可管理的既有角色不能被页面误删除；回读最终角色集合。",
+        "取消启停/强制退出确认，不发请求；确认后只处理目标测试账号。",
+        "分别测试两种重置配置；不记录密码或加密结果。",
+        "密码不一致、管理员密码错误、无权与服务失败应拒绝且不伪报成功。",
+        "核对强制退出实际会话范围、角色生效时机和审计；超时先回读，避免重复操作。"
+      ],
+      "layout": "R016更多菜单、R017角色页；角色页和重置弹窗是独立分支。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-006",
+      "group": "36-后台系统管理",
+      "title": "维护部门树",
+      "sources": [
+        "SRC-DEPT-FORM",
+        "SRC-DEPT-API"
+      ],
+      "fields": [
+        [
+          "编码 code",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "maxlength=20",
+          "^[a-zA-Z0-9]{1,20}$",
+          "",
+          "编辑禁用"
+        ],
+        [
+          "名称 name",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "maxlength=100",
+          "1–100位英文字母、数字、空白或U+4E00–U+9FA5；拒绝纯空白",
+          "",
+          "一级节点编辑禁用"
+        ],
+        [
+          "类型 type",
+          "字典枚举",
+          "是（客户端）",
+          "\"\"",
+          "",
+          "deptType字典",
+          "",
+          ""
+        ],
+        [
+          "角色 roleIds",
+          "ID数组",
+          "",
+          "[]",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "标签 tagIds",
+          "ID数组",
+          "",
+          "[]",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "新增/编辑",
+          "新增pid取选中节点id；编辑pid取当前节点pid，目标id用于路径；role/tag候选canModify=false时禁用。"
+        ],
+        [
+          "删除",
+          "源码定义删除接口；依赖、根节点与已有成员保护尚需后端验证。"
+        ]
+      ],
+      "flow": [
+        "先选择真实部门节点。",
+        "填写编码、名称、类型及可管理角色/标签。",
+        "分别调用新增或更新，回读树；不将一级节点禁用状态推广为所有部门不可改名。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/dept/tree",
+          "查询对象"
+        ],
+        [
+          "POST",
+          "/common/user/dept",
+          "{name,code,type,tagIds,roleIds,pid}"
+        ],
+        [
+          "PUT",
+          "/common/user/dept/{id}",
+          "上述资料及pid"
+        ],
+        [
+          "DELETE",
+          "/common/user/dept/{id}",
+          "路径id"
+        ],
+        [
+          "POST",
+          "/common/user/deptadmin/reset/{id}",
+          "管理员ID数组"
+        ]
+      ],
+      "checks": [
+        "编码1/20位通过客户端，空/21位/中文编码阻止。",
+        "名称100/101位、纯空白、混合空白分别核对；一级节点编辑状态正确。",
+        "父节点pid对应所选节点；新增和编辑回读同一树。",
+        "禁用候选不被越权提交；删除有子部门/成员时按后端规则保护。",
+        "取消、失败、重复和并发移动均核对树及人员关系不误变更。"
+      ],
+      "layout": "800px弹窗；编码→名称→类型→角色多选→标签多选；R018/R020/R023。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-007",
+      "group": "36-后台系统管理",
+      "title": "维护部门人员及职位",
+      "sources": [
+        "SRC-DEPT-MEMBER",
+        "SRC-DEPT-API"
+      ],
+      "fields": [
+        [
+          "人员 id",
+          "用户ID",
+          "是（客户端）",
+          "\"\"",
+          "",
+          "obscureName搜索；excludeDeptId=当前部门",
+          "",
+          "编辑时人员文本禁用"
+        ],
+        [
+          "职位 position",
+          "string",
+          "否（客户端允许空）",
+          "\"\"",
+          "非空1–100位",
+          "英文字母、数字、空白或U+4E00–U+9FA5",
+          "",
+          ""
+        ],
+        [
+          "是否领导 leader",
+          "boolean",
+          "是（客户端）",
+          "false",
+          "",
+          "true/false",
+          "",
+          ""
+        ],
+        [
+          "角色 roleIds",
+          "ID数组",
+          "",
+          "[]",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "标签 tagIds",
+          "ID数组",
+          "",
+          "[]",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "新增",
+          "人员候选排除当前部门成员；提交当前部门leftId及人员rightId。"
+        ],
+        [
+          "修改",
+          "路径用部门成员关系id；body保留leftId/rightId，不能把关系id当用户id。"
+        ],
+        [
+          "移除",
+          "warn确认后发送关系ID数组；移除成员关系不等于删除用户。"
+        ]
+      ],
+      "flow": [
+        "选择部门，打开800px成员弹窗。",
+        "选择人员、职位、领导标记及角色/标签。",
+        "创建或更新关系；成功刷新成员列表。移除当前本人所在部门的特殊分支会重新初始化页面。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/deptuser/page",
+          "部门筛选与分页"
+        ],
+        [
+          "POST",
+          "/common/user/deptuser/bind",
+          "{position,leftId:deptId,rightId:userId,tagIds,roleIds,leader}"
+        ],
+        [
+          "PUT",
+          "/common/user/deptuser/{relationId}",
+          "{position,leftId,rightId,tagIds,roleIds,leader}"
+        ],
+        [
+          "DELETE",
+          "/common/user/deptuser/remove",
+          "[relationId]"
+        ],
+        [
+          "POST",
+          "/common/user/deptuser/move",
+          "排序参数结构待验证"
+        ]
+      ],
+      "checks": [
+        "排除现有成员且编辑人员不可替换；重复绑定由后端拒绝。",
+        "职位空与100/101位边界，leader=false可以表达非领导。",
+        "回读关系id、用户id和部门id；移除后用户账号仍存在。",
+        "取消移除无DELETE；本人关系移除后的页面和主部门需核对。",
+        "跨部门越权、网络失败、重复与并发绑定核对成员集合和审计。"
+      ],
+      "layout": "R024成员弹窗，800px；人员、职位、领导、角色和标签分别维护。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-008",
+      "group": "36-后台系统管理",
+      "title": "维护角色与权限依赖",
+      "sources": [
+        "SRC-ROLE-FORM",
+        "SRC-PERMISSION",
+        "SRC-ROLE-API"
+      ],
+      "fields": [
+        [
+          "角色名称 name",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "maxlength=50",
+          "",
+          "",
+          ""
+        ],
+        [
+          "权限选择",
+          "树叶节点ID数组",
+          "",
+          "",
+          "",
+          "node-key=id；提交getCheckedNodes(true).map(id).filter(Boolean)",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "新增/修改角色",
+          "角色名非空；roleEdit把loading绑定给详情表单。"
+        ],
+        [
+          "全选/取消全选",
+          "改变本地树勾选；保存前不代表服务端授权已变。"
+        ],
+        [
+          "权限联动",
+          "选中权限补directDepend；取消会移除同父节点内依赖该权限的勾选。不能推断循环或跨层依赖均已正确处理。"
+        ]
+      ],
+      "flow": [
+        "创建/编辑角色名称。",
+        "进入permissionType=2权限树，勾选和依赖联动。",
+        "提交叶节点ID数组并回读；租户permissionType=3使用另一接口。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/role",
+          "{name}"
+        ],
+        [
+          "GET",
+          "/common/user/role/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/role/{id}",
+          "{name}"
+        ],
+        [
+          "DELETE",
+          "/common/user/role/{id}",
+          "路径id"
+        ],
+        [
+          "POST",
+          "/common/user/rolepermission/reset/{id}",
+          "叶节点ID数组"
+        ]
+      ],
+      "checks": [
+        "空/50/51位名称分别核对客户端规则及后端结果。",
+        "勾选依赖权限，取消被依赖权限，核对本地集合。",
+        "保存和回读叶节点，确认父节点不被误当业务授权。",
+        "取消全选/取消页面不提交；删除已绑定角色保护待后端规则明确后执行。",
+        "普通用户直达、跨租户授权、重复及并发保存应由后端鉴权并审计。"
+      ],
+      "layout": "R026列表、R027/R028角色名页、R029权限树。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-009",
+      "group": "36-后台系统管理",
+      "title": "维护租户及成员",
+      "sources": [
+        "SRC-TENANT-FORM",
+        "SRC-TENANT-MEMBER",
+        "SRC-TENANT-API",
+        "SRC-PERMISSION"
+      ],
+      "fields": [
+        [
+          "名称 name",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "maxlength=100",
+          "1–100位英文字母、数字、空白或U+4E00–U+9FA5；拒绝纯空白",
+          "",
+          ""
+        ],
+        [
+          "管理员 managerId",
+          "用户ID",
+          "是（客户端）",
+          "\"\"",
+          "",
+          "obscureAccount搜索；containAdmin=false",
+          "",
+          ""
+        ],
+        [
+          "启用工作区 enabledDop",
+          "boolean",
+          "",
+          "true（新增草稿）",
+          "",
+          "",
+          "",
+          "ENABLED_DOP且DOP_MULTI_SPACE显示；编辑禁用"
+        ],
+        [
+          "领域 realm",
+          "textarea/string",
+          "",
+          "\"\"",
+          "maxlength=500",
+          "",
+          "",
+          ""
+        ],
+        [
+          "租户成员 ids",
+          "ID数组",
+          "绑定时非空（客户端）",
+          "",
+          "",
+          "containAdmin=false；notInTenant=tenantId",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "保存租户",
+          "成功通知父应用isUpdateTenantList=true后返回。"
+        ],
+        [
+          "绑定成员",
+          "ids映射为leftId=tenantId/rightId=userId对象数组。"
+        ],
+        [
+          "移除成员",
+          "确认后DELETE，参数为用户rightId数组；不能描述为删除用户账号。"
+        ],
+        [
+          "租户授权",
+          "permissionType=3提交叶权限id数组，不能套用角色授权接口。"
+        ]
+      ],
+      "flow": [
+        "建立租户资料并指定管理员。",
+        "读取租户成员；仅选择符合候选条件的用户。",
+        "绑定/移除后回读成员关系；授权采用租户权限接口。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/tenant",
+          "{name,managerId,realm,enabledDop}"
+        ],
+        [
+          "GET",
+          "/common/user/tenant/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/tenant/{id}",
+          "租户资料"
+        ],
+        [
+          "DELETE",
+          "/common/user/tenant/{id}",
+          "路径id"
+        ],
+        [
+          "POST",
+          "/common/user/tenantuser/binds",
+          "[{leftId:tenantId,rightId:userId},...]"
+        ],
+        [
+          "DELETE",
+          "/common/user/tenantuser/remove/{tenantId}",
+          "[userRightId]"
+        ],
+        [
+          "POST",
+          "/common/user/tenantpermission/reset/{id}",
+          "叶权限ID数组"
+        ]
+      ],
+      "checks": [
+        "名称空/100/101位和纯空白边界；管理员缺失阻止提交。",
+        "分别核对启用工作区两个开关及编辑禁用；不把true强加给后端默认。",
+        "多选绑定和移除回读关系集合；原账号仍存在。",
+        "租户保存通知顶栏刷新；取消不发送租户或成员写请求。",
+        "跨租户访问/授权、删除非空租户、并发绑定、网络与重复请求按后端结果验收。"
+      ],
+      "layout": "R030/R062系列；名称、管理员、条件开关、领域及独立租户用户列表。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-010",
+      "group": "36-后台系统管理",
+      "title": "本人可管理用户与部门",
+      "sources": [
+        "SRC-USER-API",
+        "SRC-DEPT-API"
+      ],
+      "fields": [],
+      "interactions": [
+        [
+          "范围区分",
+          "myUser、myDept包装器独立于全局user/dept；空列表不证明没有人员，也不证明没有写权限。"
+        ]
+      ],
+      "flow": [
+        "进入我的用户/我的部门。",
+        "按本人范围读取；写操作使用相应my接口，不自动回退全局接口。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/myUser/page",
+          "本人范围查询"
+        ],
+        [
+          "POST",
+          "/common/user/myDept/tree",
+          "本人部门树查询"
+        ]
+      ],
+      "checks": [
+        "同账号比较全局与本人范围，记录服务端对象集合。",
+        "无可管理对象呈空态，不能显示系统错误。",
+        "跨范围id直接请求应拒绝，不能仅隐藏菜单。",
+        "失权/过期会话不能提交；刷新后范围更新。",
+        "核对my写接口、失败及审计；未确定接口参数前不照搬全局写契约。"
+      ],
+      "layout": "R031/R032；本人范围与全局管理为不同入口。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-011",
+      "group": "36-后台系统管理",
+      "title": "维护管理标签",
+      "sources": [
+        "SRC-TAG-FORM",
+        "SRC-TAG-API"
+      ],
+      "fields": [
+        [
+          "名称 name",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "1–100位",
+          "英文字母、数字、空白或U+4E00–U+9FFF",
+          "",
+          ""
+        ],
+        [
+          "业务编码 bizCode",
+          "string",
+          "是（客户端）",
+          "\"\"",
+          "1–20位",
+          "^[a-zA-Z0-9]{1,20}$",
+          "",
+          ""
+        ],
+        [
+          "业务类型 bizType",
+          "string/null",
+          "否（非空才校验）",
+          "\"\"",
+          "非空≤100位",
+          "英文逗号分隔的英文字母、数字、空白或中文段；空提交null",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "新增/修改",
+          "表单初始三个空字符串；bizType空值转null。源码补得表单不等于历史R033已打开该表单。"
+        ],
+        [
+          "删除",
+          "API定义指向taguser；与数据资产标签是不同对象。"
+        ]
+      ],
+      "flow": [
+        "进入管理标签维护表单。",
+        "按客户端正则填写；保存时转换可空业务类型。",
+        "调用taguser接口并回读；纯空白名称的服务端行为待验证。"
+      ],
+      "apis": [
+        [
+          "POST",
+          "/common/user/taguser/page",
+          "查询对象"
+        ],
+        [
+          "POST",
+          "/common/user/taguser",
+          "{name,bizCode,bizType}"
+        ],
+        [
+          "GET",
+          "/common/user/taguser/{id}",
+          "路径id"
+        ],
+        [
+          "PUT",
+          "/common/user/taguser/{id}",
+          "标签资料"
+        ],
+        [
+          "DELETE",
+          "/common/user/taguser/{id}",
+          "路径id"
+        ]
+      ],
+      "checks": [
+        "编码1/20/21位及非法字符分别检查。",
+        "名称空、100/101位及纯空白记录实际前后端差别。",
+        "业务类型空转null；多个英文逗号段与非法分隔符校验。",
+        "被部门或人员引用时删除保护，规则确认后验收。",
+        "取消、失败、重复、无权与跨租户操作不误更新标签关系。"
+      ],
+      "layout": "历史只有R033列表截图；新增/修改表单布局来自静态模板，仍需补现场截图。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    },
+    {
+      "id": "BAS-012",
+      "group": "36-后台系统管理",
+      "title": "账号和IP解禁",
+      "sources": [
+        "SRC-UNLOCK-FORM",
+        "SRC-UNLOCK-API"
+      ],
+      "fields": [
+        [
+          "账号 account",
+          "string",
+          "点击账号解禁时非空",
+          "\"\"",
+          "4–20位",
+          "^[a-zA-Z0-9]{4,20}$",
+          "",
+          ""
+        ],
+        [
+          "IP ip",
+          "string",
+          "点击IP解禁时非空",
+          "\"\"",
+          "",
+          "isIP校验器",
+          "",
+          ""
+        ]
+      ],
+      "interactions": [
+        [
+          "两个解禁按钮",
+          "各自validateField(account/ip)，不是必须同时填写两个字段；校验后调用有副作用的DELETE接口，未执行。"
+        ]
+      ],
+      "flow": [
+        "选择要解除限制的账号或IP分支。",
+        "只校验该分支字段，调用对应解禁包装器。",
+        "锁定状态回读和解禁影响范围待后端验证。"
+      ],
+      "apis": [
+        [
+          "DELETE",
+          "/common/auth/recover/account/{account}",
+          "路径账号"
+        ],
+        [
+          "DELETE",
+          "/common/auth/recover/ip/{ip}",
+          "路径IP"
+        ]
+      ],
+      "checks": [
+        "账号4/20位，3/21位与非法字符分别检查。",
+        "只填账号可走账号分支，IP为空不应阻挡该分支。",
+        "只填合法IP走IP分支；非法IP前端阻止。",
+        "无锁定对象、无权、失败与超时不能伪报已解禁。",
+        "重复解禁与审计、解禁后登录由隔离账号验证；取消不请求。"
+      ],
+      "layout": "R034两行字段与独立按钮。",
+      "pending": [
+        "P0：服务端必填、唯一范围、授权矩阵、响应业务码、审计及持久化结果仍需接口或后端证据。",
+        "P1：超时结果核实、重复提交保护、取消确认和失败恢复需要在获授权的隔离测试环境验证。"
+      ]
+    }
+  ]
+}

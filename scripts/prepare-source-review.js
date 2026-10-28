@@ -6,6 +6,13 @@ const { REVIEW, specs, sourceSelections, renderReviewedSpec } = require('./sourc
 const root = path.resolve(__dirname, '..', 'doc', 'requirements');
 const sha = value => crypto.createHash('sha256').update(value).digest('hex');
 function reviewedSupplement(requirementsRoot, group) {
+  if (group === '36-后台系统管理') {
+    const basMain = path.join(requirementsRoot, group, '需求说明.md');
+    if (fs.existsSync(basMain) && fs.readFileSync(basMain, 'utf8').includes('<!-- bas:reviewed-spec-v1 -->')) {
+      require('./bas-requirement-spec').validateLedger(fs.readFileSync(basMain, 'utf8'));
+      return require('./bas-requirement-spec').renderSourceNote();
+    }
+  }
   if (group !== '09-任务编排与调度') return null;
   const main = path.join(requirementsRoot, group, '需求说明.md');
   if (!fs.existsSync(main) || !fs.readFileSync(main, 'utf8').includes('<!-- sms:generated-spec-v1 -->')) return null;

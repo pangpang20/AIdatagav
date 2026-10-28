@@ -433,6 +433,11 @@ function buildSpec(id, title, block, sourceIds, acceptanceStart = 1) {
 
 function augmentFile(file, acceptanceCounters = new Map()) {
   const originalText = read(file);
+  if (originalText.includes('<!-- bas:reviewed-spec-v1 -->')) {
+    const bas = require('./bas-requirement-spec');
+    if (path.basename(file) === '需求说明.md') bas.validateLedger(originalText);
+    return { file, requirements: [...originalText.matchAll(/^### BAS-\d{3}\b/gm)].length, changed: false };
+  }
   // Reviewed DQTS specifications are maintained sources, including under --refresh.
   if (originalText.includes('<!-- dqts:generated-spec-v1 -->')) {
     return { file, requirements: [...originalText.matchAll(/^### DQTS-\d{3}\b/gm)].length, changed: false };
