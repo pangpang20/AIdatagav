@@ -24044,16 +24044,39 @@
             "E062-platform"
           ],
           "proposedResults": true
+        },
+        {
+          "id": "PLAT-002",
+          "object": "后台导航",
+          "operation": "navigation",
+          "evidence": [
+            "E062-platform"
+          ],
+          "proposedResults": true
+        },
+        {
+          "id": "PLAT-003",
+          "object": "目标页面",
+          "operation": "loading-and-query-recovery",
+          "evidence": [],
+          "basis": "target"
+        },
+        {
+          "id": "PLAT-004",
+          "object": "平台资源",
+          "operation": "authorization-and-audit",
+          "evidence": [],
+          "basis": "target"
         }
       ],
       "businessAcceptance": [
+        "PLAT-AC-001",
+        "PLAT-AC-002",
         "PLAT-AC-632",
         "PLAT-AC-633",
         "PLAT-AC-634",
         "PLAT-AC-635",
-        "PLAT-AC-636",
-        "PLAT-AC-001",
-        "PLAT-AC-002"
+        "PLAT-AC-636"
       ],
       "developmentReview": {
         "status": "partial-ui-only",
@@ -24061,7 +24084,10 @@
         "criticalDecisions": "全部目标页、实际子对象清单、配置生效、工作流版本、权限与日志留存",
         "objectBoundary": "平台管理分区及其独立配置/工作流/日志对象",
         "expandedOperations": [
-          "PLAT-001"
+          "PLAT-001",
+          "PLAT-002",
+          "PLAT-003",
+          "PLAT-004"
         ]
       }
     }

@@ -210,7 +210,7 @@ def collect(groups, samples):
 def preserve_reviewed(root,module,registered):
     """Keep a reviewed domain document and its exact published ledger."""
     code=module.get('code')
-    if code not in ('DRMS','DBMS','CMS','WO','DS','DIS','DSS','DMS','SMS','DQ','GDRS','GSB','DSE','DCS','GSP','GSPA','MDM','DAP','TMS','IDQS','DACS','DTM','DSPS','DSTS','OSS','DSETS','DQTS','RTMS','SPACE'):return None
+    if code not in ('DRMS','DBMS','CMS','WO','DS','DIS','DSS','DMS','SMS','DQ','GDRS','GSB','DSE','DCS','GSP','GSPA','MDM','DAP','TMS','IDQS','DACS','DTM','DSPS','DSTS','OSS','DSETS','DQTS','RTMS','PLAT'):return None
     target=root/module['directory']/'子页面与操作细化.md'
     if not target.is_file():return None
     text=target.read_text(encoding='utf-8')

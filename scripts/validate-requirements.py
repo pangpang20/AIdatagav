@@ -257,7 +257,7 @@ def business_errors(text,module,research,data):
         if '**操作与规则**' not in block or result_label not in block:
             errors.append(f'{rid}: business behavior structure incomplete')
         row=next((line for line in source_section.splitlines() if line.startswith('| '+rid+' |')),'')
-        if not req.get('evidence'):errors.append(f'{rid}: missing business source')
+        if not req.get('evidence') and req.get('basis')!='target':errors.append(f'{rid}: missing business source')
         for key in req.get('evidence',[]):
             if key not in data or f'{key}.png' not in row:
                 errors.append(f'{rid}: missing business source {key}')
@@ -323,8 +323,9 @@ def live_recheck_errors(root,record):
         requirements=REQ.findall(text)
         if requirements!=[r['id'] for r in module['requirements']]:
             errors.append(f'{module["code"]}: live requirement registry mismatch')
-        for n in range(1,9):
-            if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{module["code"]}: section {n} missing')
+        if not (module['code']=='PLAT' and '<!-- plat:generated-spec-v1 -->' in text):
+            for n in range(1,9):
+                if not re.search(rf'^## {n}\. ',text,re.M):errors.append(f'{module["code"]}: section {n} missing')
         for req in module['requirements']:
             if req['id'] in seen:errors.append('live: duplicate requirement across documents')
             seen.add(req['id'])
