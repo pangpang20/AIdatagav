@@ -1,0 +1,368 @@
+{
+  "main": {
+    "entries": [
+      {
+        "id": "DSTS-100",
+        "title": "查询检测方案",
+        "sources": [
+          "../evidence/C030-original-content.png"
+        ],
+        "route": "/dsts/standard/plan/list"
+      },
+      {
+        "id": "DSTS-001",
+        "title": "查找标准检测方案",
+        "sources": [
+          "../evidence/E053-standard-check.png",
+          "../evidence/C030-original-content.png"
+        ],
+        "route": "/dsts/standard/plan/list"
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "DSTS-AC-515",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-515 | 页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-516",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-516 | 合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-517",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-517 | 空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-518",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-518 | 网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-519",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-519 | 取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-520",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-520 | 页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。 | DSTS-001 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-521",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-521 | 合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。 | DSTS-001 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-522",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-522 | 空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-001 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-523",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-523 | 网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-001 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-524",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-524 | 取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。 | DSTS-001 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-001",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-001 | 查询与结果 | 在具备本模块访问权限时进入检测方案，使用已定义条件查询，核对本需求列出的结果列；无匹配时显示空结果。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-002",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-002 | 异常与边界 | 查询失败、重试及重置；恢复默认条件并核对分页、排序和授权范围。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-003",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-003 | 查找标准检测方案 | 按所列入口完成主流程，并核对失败/失权时的提示；规则未明确的分支先评审。 | DSTS-001 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-004",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-004 | 查询竞态与返回恢复 | 先发条件A再发B，使A后返回；界面最终显示B的结果及总数。进入方案详情再返回，应按已批准策略恢复条件和分页；旧结果不能冒充新结果。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-005",
+        "requirement": "DSTS-100",
+        "row": "| DSTS-AC-005 | 数据隔离 | 使用不同授权主体及篡改方案ID/所属范围直调列表和详情；服务端逐对象拒绝越权读取。 | DSTS-100 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-006",
+        "requirement": "DSTS-001",
+        "row": "| DSTS-AC-006 | 空值与访问分离 | 空结果、接口失败、无权和缺失字段显示为不同状态；菜单可见、数量或页面文案不代替独立对象授权。 | DSTS-001 | 【拟定，未执行】 |"
+      }
+    ],
+    "sourceRows": [
+      "| DSTS-100 | [C030-original-content](../evidence/C030-original-content.png) | [调研细节](./调研记录.md#dsts-100-检测方案--查询与列表) |",
+      "| DSTS-001 | [E053-standard-check](../evidence/E053-standard-check.png) | [原始记录](./调研记录.md) |"
+    ],
+    "boundaries": [
+      "| DSTS-101 | 查看检测方案 | 详情内容、关联项及查看权限；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| DSTS-102 | 新增检测方案 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| DSTS-103 | 修改检测方案 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| DSTS-104 | 删除检测方案 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：该对象的维护范围、状态条件及与关联业务的关系 |",
+      "| DSTS-105 | 查询标准检测报告 | 查询条件、结果列、默认排序和数据可见范围；业务范围涉及：方案和任务关联、符合性明细、生成与报告留存 |",
+      "| DSTS-106 | 查看标准检测报告 | 详情内容、关联项及查看权限；业务范围涉及：方案和任务关联、符合性明细、生成与报告留存 |",
+      "| DSTS-107 | 新增标准检测报告 | 是否允许人工新增、必填字段、提交结果与取消规则；业务范围涉及：方案和任务关联、符合性明细、生成与报告留存 |",
+      "| DSTS-108 | 修改标准检测报告 | 是否允许修改、可修改字段、状态限制和并发处理；业务范围涉及：方案和任务关联、符合性明细、生成与报告留存 |",
+      "| DSTS-109 | 删除标准检测报告 | 是否允许删除、引用保护、数据影响与历史留存；业务范围涉及：方案和任务关联、符合性明细、生成与报告留存 |"
+    ]
+  },
+  "sub": {
+    "entries": [
+      {
+        "id": "DSTS-500",
+        "title": "标准检测 → 检测方案",
+        "sources": [
+          "../evidence/live-recheck-20261022/F-DSTS-001.png"
+        ],
+        "route": "/dsts/standard/plan/list"
+      },
+      {
+        "id": "DSTS-501",
+        "title": "标准检测 → 标准检测",
+        "sources": [
+          "../evidence/live-recheck-20261022/F-DSTS-002.png"
+        ],
+        "route": "/dsts/standard/test/listPage"
+      },
+      {
+        "id": "DSTS-502",
+        "title": "标准检测 → 标准检测 → 新增",
+        "sources": [
+          "../evidence/live-recheck-20261022/F-DSTS-002-op1.png",
+          "../evidence/live-recheck-20261022/F-DSTS-002-op1-options0.png",
+          "../evidence/live-recheck-20261022/F-DSTS-002-op1-options1.png"
+        ],
+        "route": "/dsts/standard/test/detail"
+      },
+      {
+        "id": "DSTS-503",
+        "title": "标准检测 → 检测报告",
+        "sources": [
+          "../evidence/live-recheck-20261022/F-DSTS-003.png"
+        ],
+        "route": "/dsts/standard/report/list"
+      },
+      {
+        "id": "DSTS-504",
+        "title": "数据评价 → 评价任务",
+        "sources": [
+          "../evidence/live-recheck-20261022/F-DSTS-004.png"
+        ],
+        "route": "/dsts/evaluate/taskPage"
+      }
+    ],
+    "acceptance": [
+      {
+        "id": "DSTS-AC-525",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-525 | 页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-526",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-526 | 合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-527",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-527 | 空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-528",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-528 | 网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-529",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-529 | 取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-530",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-530 | 页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-531",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-531 | 合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-532",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-532 | 空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-533",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-533 | 网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-534",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-534 | 取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-535",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-535 | 页面打开后标题、路由、字段顺序、按钮和写入对象与证据一致。 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-536",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-536 | 合法输入提交后显示服务端成功结果并回读目标记录；不把页面文案当成后端成功。 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-537",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-537 | 必填缺失、长度/格式错误、重复对象和服务端校验失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-538",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-538 | 网络超时、服务不可用、权限不足和并发或重复请求均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-539",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-539 | 取消、关闭、返回和重复点击符合交互规则；取消不新增/修改/删除/执行记录。 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-540",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-540 | 页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-541",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-541 | 合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-542",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-542 | 空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-543",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-543 | 网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-544",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-544 | 取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-545",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-545 | 页面打开后标题、路由、字段顺序、按钮和查询对象与证据一致。 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-546",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-546 | 合法输入查询后展示结果、空结果和分页状态；不把页面文案当成后端成功。 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-547",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-547 | 空结果、无权限和服务端查询失败时显示相应状态，不伪报成功并保留可恢复上下文。 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-548",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-548 | 网络超时、服务不可用、权限不足和查询状态恢复均有明确处理；重试不会重复写入或覆盖新版本。 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-549",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-549 | 取消、关闭、返回和重复点击符合交互规则；新条件不会被旧响应覆盖。 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-500",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-500 | 有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-501",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-501 | 加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-502",
+        "requirement": "DSTS-500",
+        "row": "| DSTS-AC-502 | 越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权 | DSTS-500 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-503",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-503 | 有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-504",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-504 | 加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-505",
+        "requirement": "DSTS-501",
+        "row": "| DSTS-AC-505 | 越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权 | DSTS-501 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-506",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-506 | 打开目标后必填与长度边界、禁用字段和关联对象校验分别符合批准规则 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-507",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-507 | 取消后原记录不变；保存失败可修正；超时核查结果后重试，重复提交只产生一次效果 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-508",
+        "requirement": "DSTS-502",
+        "row": "| DSTS-AC-508 | 无权限、并发更新或关联对象失效时拒绝提交且给出可恢复提示 | DSTS-502 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-509",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-509 | 有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-510",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-510 | 加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-511",
+        "requirement": "DSTS-503",
+        "row": "| DSTS-AC-511 | 越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权 | DSTS-503 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-512",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-512 | 有权限时进入所列路径，页面标题、字段与对象一致；无样本仍保留正确上下文 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-513",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-513 | 加载失败后重试，保留已提交查询条件；迟到响应不能覆盖新条件 | DSTS-504 | 【拟定，未执行】 |"
+      },
+      {
+        "id": "DSTS-AC-514",
+        "requirement": "DSTS-504",
+        "row": "| DSTS-AC-514 | 越权对象和跨空间标识被服务端拒绝，列表隐藏不能代替服务端鉴权 | DSTS-504 | 【拟定，未执行】 |"
+      }
+    ]
+  }
+}

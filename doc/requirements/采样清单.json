@@ -19178,6 +19178,26 @@
         "DSTS-AC-005",
         "DSTS-AC-006"
       ],
+      "qualityRequirements": [
+        { "id": "DSTS-NFR-001", "relatedRequirements": ["DSTS-100", "DSTS-001", "DSTS-500", "DSTS-501", "DSTS-503", "DSTS-504"] },
+        { "id": "DSTS-NFR-002", "relatedRequirements": ["DSTS-100"] },
+        { "id": "DSTS-NFR-003", "relatedRequirements": ["DSTS-100", "DSTS-001", "DSTS-500", "DSTS-501", "DSTS-504"] },
+        { "id": "DSTS-NFR-004", "relatedRequirements": ["DSTS-500"] },
+        { "id": "DSTS-NFR-005", "relatedRequirements": ["DSTS-500", "DSTS-502"] },
+        { "id": "DSTS-NFR-006", "relatedRequirements": ["DSTS-501", "DSTS-502"] },
+        { "id": "DSTS-NFR-007", "relatedRequirements": ["DSTS-501", "DSTS-502"] },
+        { "id": "DSTS-NFR-008", "relatedRequirements": ["DSTS-502"] },
+        { "id": "DSTS-NFR-009", "relatedRequirements": ["DSTS-503"] },
+        { "id": "DSTS-NFR-010", "relatedRequirements": ["DSTS-503"] },
+        { "id": "DSTS-NFR-011", "relatedRequirements": ["DSTS-503"] },
+        { "id": "DSTS-NFR-012", "relatedRequirements": ["DSTS-504"] },
+        { "id": "DSTS-NFR-013", "relatedRequirements": ["DSTS-504"] },
+        { "id": "DSTS-NFR-014", "relatedRequirements": ["DSTS-504"] },
+        { "id": "DSTS-NFR-015", "relatedRequirements": ["DSTS-001"] },
+        { "id": "DSTS-NFR-016", "relatedRequirements": ["DSTS-100", "DSTS-001", "DSTS-500", "DSTS-501", "DSTS-502", "DSTS-503", "DSTS-504"] },
+        { "id": "DSTS-NFR-017", "relatedRequirements": ["DSTS-503"] },
+        { "id": "DSTS-NFR-018", "relatedRequirements": ["DSTS-001"] }
+      ],
       "developmentReview": {
         "status": "partial-ui-only",
         "productionReady": false,

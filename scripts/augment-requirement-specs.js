@@ -595,6 +595,13 @@ function augmentFile(file, acceptanceCounters = new Map()) {
       text = text.slice(0, start) + renderFeature(entry) + '\n' + text.slice(end);
       continue;
     }
+    if (originalText.includes('<!-- dsts:generated-spec-v1 -->')) {
+      const { MAIN, SUB, renderFeature } = require('./dsts-requirement-spec');
+      const entry = [...MAIN, ...SUB].find(item => item.id === id);
+      if (!entry) throw new Error('Unregistered reviewed DSTS requirement: ' + id);
+      text = text.slice(0, start) + renderFeature(entry) + '\n' + text.slice(end);
+      continue;
+    }
     if (originalText.includes('<!-- idqs:generated-spec-v1 -->')) {
       const { MAIN, SUB, renderFeature } = require('./idqs-requirement-spec');
       const entry = [...MAIN, ...SUB].find(item => item.id === id);
